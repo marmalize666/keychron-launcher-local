@@ -32,15 +32,18 @@ python server.py --port=3000
 
 ```
 ├── server.py                     # 本地服务器（静态服务 + apiproxy + 注入 + 回源缓存）
-├── Start-Keychron-Launcher.bat   # 双击启动脚本
-├── index.html                    # 官方入口（已注入 URL 重写层、移除 GA）
+├── Start-Keychron-Launcher.bat   # 双击启动脚本（英文环境名）
+├── KeychronLauncher本地版.bat    # 双击启动脚本（中文界面）
+├── app/                          # Angular SPA 应用本体
+│   ├── index.html                # 入口（已注入 URL 重写层、移除 GA）
+│   ├── main.*.js / *.css         # Angular 构建产物
+│   └── chevron.*.svg
 ├── api_cache/                    # 固化的 vapi 接口数据（layouts / version / product）
 ├── static/
 │   ├── layouts/                  # keycode-{布局}-{win|mac}.json 键位码表
 │   ├── i18n/                     # 25 个语言包
 │   └── device/                   # 设备 JSON（按需缓存）
-├── assets/                       # 图标、字体、键帽素材
-└── main.*.js / *.css             # Angular 应用本体
+└── assets/                       # 图标、字体、键帽素材
 ```
 
 ## 说明
