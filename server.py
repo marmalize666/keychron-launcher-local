@@ -20,6 +20,7 @@ import urllib.error
 from http.server import HTTPServer, SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+APP = os.path.join(ROOT, 'app')        # Angular SPA 文档根
 STATIC = os.path.join(ROOT, 'static')
 
 UPSTREAMS = [
@@ -118,10 +119,10 @@ class LauncherHandler(SimpleHTTPRequestHandler):
         path = path.split('?', 1)[0].split('#', 1)[0]
         # SPA 根路径
         if path in ('/', ''):
-            return os.path.join(ROOT, 'index.html')
-        # 去掉开头斜杠，映射到 ROOT
+            return os.path.join(APP, 'index.html')
+        # 去掉开头斜杠，映射到 APP (SPA 文档根)
         rel = path.lstrip('/')
-        return os.path.join(ROOT, rel.replace('/', os.sep))
+        return os.path.join(APP, rel.replace('/', os.sep))
 
     def end_headers(self):
         # 允许 WebHID 页面本地使用；禁用缓存避免更新混乱
@@ -193,7 +194,7 @@ class LauncherHandler(SimpleHTTPRequestHandler):
 
         # SPA 路由回退：无扩展名的路径回退到 index.html
         if '.' not in os.path.basename(path_only):
-            index = os.path.join(ROOT, 'index.html')
+            index = os.path.join(APP, 'index.html')
             if os.path.isfile(index):
                 data = open(index, 'rb').read()
                 self.send_response(200)
@@ -303,7 +304,7 @@ def main():
                 pass
     server = ThreadingHTTPServer(('127.0.0.1', port), LauncherHandler)
     print(f'Keychron Launcher local server running at http://127.0.0.1:{port}/')
-    print('Root:', ROOT)
+    print('Root:', APP)
     print('Ctrl+C to stop.')
     try:
         server.serve_forever()
