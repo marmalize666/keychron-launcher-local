@@ -1,0 +1,1707 @@
+{
+  "advance": {
+    "common": {
+      "notice": "通知:"
+    },
+    "debounce": {
+      "defer_global": "キーボード全体でのデバウンス処理について。\n\n状態変化が発生したとき：\nグローバルタイマー（全体用タイマー）が設定されます。\n\nDEBOUNCEミリ秒の間、追加の変化がなかった場合：\nその間に発生したすべての入力変化が確定し、一括でプッシュされます。",
+      "defer_per_key": "キーごとのデバウンス処理について：\nキーの状態が変化するたびに、そのキー専用のタイマーが設定されます。設定した時間（ミリ秒）の間、そのキーで追加の変化が起きなかった場合にのみ、キーの状態変化が確定されます。",
+      "eager_defer_per_key": "キーごとのデバウンス処理について。\n\nキー押下の状態変化：\n入力は即時に反応します。その後、そのキーに対して DEBOUNCEミリ秒の間、追加の入力を受け付けない ように処理されます。\n\nキー解放の状態変化：\nそのキー専用のタイマーが設定されます。もし DEBOUNCEミリ秒の間、追加の変化が起こらなければ、キー解放の状態変化が確定されます。",
+      "eager_per_key": "キーごとのデバウンス処理。いずれかの状態変化が発生すると即座に反応し、その後、そのキーに対してはDEBOUNCEミリ秒の間追加の入力を受け付けません。",
+      "none": "デバウンス処理は行われません。",
+      "tip": {
+        "1": "「EAGER PER KEY」は推奨されるデバウンスモードで、キーを押すと即座に反応しますが、その後の入力は、設定した応答時間中は無視されます。",
+        "2": "他のデバウンスモードを選択したい場合は、上部の「?」ボタンをクリックして、それぞれのデバウンスモードの説明をご確認ください。",
+        "3": "応答時間がほぼ 0ms に近づくと、ダブルクリックの問題が発生する可能性があります。"
+      }
+    },
+    "macro": {
+      "gesture": "常にジェスチャーモードを有効にする",
+      "gesture_description": "オンにすると、トラックボールは常にジェスチャーモードになり、カーソル操作が無効lになります。",
+      "gesture_not_configured": "有効にできません。「キー機能-トラックボール」設定で出力値を設定してください。",
+      "scroll": "常にスクロールモードを有効にする",
+      "scroll_description": "オンにすると、トラックボールは常にスクロールモードになり、カーソル操作が無効lになります。",
+      "title": "マクロパッド向け設定（1つのみ選択可）"
+    },
+    "nkro": {
+      "desc": "NKRO（Nキー・ロールオーバー）は、キーボード入力技術の一つで、無制限のキーを同時に押しても入力の衝突や信号の欠落が発生しない仕組みです。\nNKROを無効にすると、キーボードは最大6キーまでの同時押下を正しく認識します。",
+      "title": "NKRO設定"
+    },
+    "performance": {
+      "mode_battery": "バッテリーモード",
+      "mode_high": "パフォーマンスモード",
+      "mode_normal": "デフォルトモード",
+      "title": "パフォーマンスモード切替"
+    },
+    "poll_rate": "ポーリングレート設定",
+    "poll_rate_tip": {
+      "bt": "Bluetooth接続モード",
+      "bt_desc": "Bluetooth接続モードではポーリングレートは125Hzに固定されます。接続の制約により、この設定は変更できません。",
+      "fr": "2.4GHz接続モード",
+      "usb": "ケーブル接続モード"
+    },
+    "sleep": {
+      "backlight": "オートバックライトオフ開始時間",
+      "magnet": "キーボードマトリックススキャン待機時間",
+      "magnet_range": "マトリックススキャンの待機時間は、バックライト消灯の遅延より長く、スリープタイムアウト期間より短く設定する必要があります。",
+      "magnet_tip": "ホールエフェクトキーボードのマトリックススキャン待機時間は60秒以上でなければなりません。",
+      "time": "オートスリープモード開始時間"
+    },
+    "tips": {
+      "keepLayer_close": "2. オフにした場合、「レイヤー1」の編集画面に移動するとNape Proも連動して「レイヤー1」に切り替わります",
+      "keepLayer_enable": "1. オンにすると、例えばNape Proが「レイヤー0」で動作している場合、「レイヤー1」の編集画面に移動してもNape Proは「レイヤー0」のキーマップのまま使用できます"
+    },
+    "title": {
+      "keepLayer": "レイヤー編集モード"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "デバイスが接続されました",
+        "idle": "タップしてデバイスを接続",
+        "pending": "認証を起動しています…"
+      },
+      "download_assistant": {
+        "idle": "クリックして最新のAssistantをダウンロード"
+      },
+      "resume_assistant": {
+        "done": "処理を続行",
+        "idle": "Assistantを有効にしました",
+        "pending": "処理を続行中…",
+        "prompt": "開きました"
+      },
+      "undo_remap": {
+        "done": "キー再マッピングを元に戻しました",
+        "idle": "このキー再マッピングを元に戻す",
+        "pending": "元に戻しています…"
+      }
+    },
+    "clear_tooltip": "会話をクリア",
+    "close_tooltip": "閉じる",
+    "deep_thinking": "ディープシンキング",
+    "generated_content_notice": "AI生成の内容に誤りがある可能性があります。ご確認ください。",
+    "input_placeholder": "Keychron AIに質問する",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "素早い応答に特化",
+        "label": "より高速"
+      },
+      "deepseek-v4-pro": {
+        "description": "より複雑なタスク向け",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "バランス",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "標準",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "実行は完了しましたが、表示できる応答を受信できませんでした。",
+    "pin": {
+      "tooltip_off": "固定を解除",
+      "tooltip_on": "チャットウィンドウを固定"
+    },
+    "pinned_success": "チャットウィンドウは固定されており、ドラッグできません。",
+    "quick": {
+      "connect_keyboard": "スペースキーをAに変更",
+      "remap_space": "ライト効果をBand Spiral Valに変更",
+      "set_light": "Discordを開く"
+    },
+    "result": {
+      "connect_failed": "接続に失敗しました: {{error}}",
+      "device_connected": "デバイスが接続されました",
+      "no_device_undo": "デバイスが接続されていないため、キー再マッピングを元に戻せません。",
+      "no_remap_to_undo": "元に戻す再マッピングはありません。",
+      "undo_failed": "キー再マッピングを元に戻せませんでした: {{error}}",
+      "undo_success": "最後のキー再マッピングを元に戻し、{{count}} 個のキーを復元しました。"
+    },
+    "select_model": "モデルを選択",
+    "status": {
+      "answering": "返信中",
+      "executing": "実行中",
+      "loading": "読み込み中",
+      "thinking": "思考中",
+      "verifying": "検証中"
+    },
+    "stopped": "停止しました",
+    "title": "Keychron AI",
+    "unpinned_success": "固定を解除しました",
+    "welcome": "こんにちは！「Keychron AI アシスタント」は、デバイスの接続、キーの再マッピング、RGBライト効果のカスタマイズ、マクロの作成などをお手伝いします。"
+  },
+  "application": {
+    "addr": "クイック起動ウェブページ",
+    "add_addr": "アドレスを追加",
+    "apple_silicon_version": "Apple Silicon 用ダウンロード（.pkg）",
+    "app_duplicate": "そのアプリケーションはすでに存在します。再度追加する必要はありません。",
+    "app_hint": "ショートカットキーを設定できます。すぐに開きたいソフトを選択し、それをキーに割り当ててください。",
+    "app_placeholder": "アプリケーションを選択してください。",
+    "clear_all": "すべて削除",
+    "desktop_old_content": "この機能を使用するには、最新版のデスクトップサービスをダウンロードしてインストールしてください。",
+    "desktop_old_title": "古いバージョンのデスクトップサービスを検出しました。",
+    "download_keychron_assistant": "インストールされていない場合は、クリックしてダウンロードしてください。",
+    "download_new_assistant_tip": "すべての機能を使用するには、最新のKeychron Assistantをダウンロードしてください。",
+    "download_zip_tip": "注意：Keychron Assist をインストールする前に、ダウンロードしたファイルを解凍する必要があります。",
+    "file_not_found": "ファイルが存在しません",
+    "intel_version": "Intel Mac 用ダウンロード（.dmg）",
+    "keySetting": "このキーにはすでにショートカットが割り当てられています！",
+    "key_no_conf": "ショートカットキーが設定されていません。",
+    "limited": "最大制限を超えています。現在、クイック起動の上限は5です。将来的にこの数を増やす予定です。",
+    "need_keychron_assistant": "この機能を使用するには、Keychron Assistant が実行されている必要があります。",
+    "no_key_selected": "キーが選択されていません",
+    "open_assistant_no_response_tip": "「開く」をクリックしても反応がない場合は、最新のAssistantをダウンロードしてから再試行してください。",
+    "open_tip1": "1. クイックスタート機能とは、起動したいアプリケーションをボタンに割り当て、そのボタンをクリックするとアプリケーションをすばやく起動できる機能です。",
+    "open_tip2": "2. 先にAssistをダウンロードし、起動したいアプリケーションを追加してください。最後にキーボードランチャーに戻ってキーの割り当てと起動を行います。",
+    "select_key_to_bind": "この設定を割り当てるキーをキーボードから選択してください。",
+    "soft": "クイックスタートアプリケーション",
+    "submit_hint": "すぐに開きたいソフトを選択し、［送信］をクリックしてください。送信後、クイックオープンを有効化して使用できます。",
+    "title_placeholder": "カスタムタイトル（任意）",
+    "unsupported_feature": "この機能はサポートされていません",
+    "unsupported_feature_download_new_version": "この機能はサポートされていません。最新バージョンをダウンロードしてお試しください。",
+    "url": "素早くウェブページを開く",
+    "url_hint": "ショートカットキーを設定できます。素早く開きたいウェブアドレスを選択し、それをキーに割り当ててください。",
+    "url_placeholder": "有効なURLを入力してください。"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "続ける",
+      "later": "後で",
+      "openSystemPreferences": "システム環境設定を開く",
+      "restartMessage": "アクセシビリティ権限が正常に取得されました。適用にはアプリの再起動が必要です。",
+      "restartNow": "今すぐ再起動",
+      "restartTitle": "権限を取得しました",
+      "step1": "下のボタンをクリックして、システムのアクセシビリティ権限ページに移動します",
+      "step2": "Launcher Assistantのスイッチを見つけてオンにし、権限を付与します",
+      "step3": "パスワードを入力してください",
+      "step4": "認証後、アプリを終了して再度開くと有効になります",
+      "welcomeTitle": "Assistantへようこそ"
+    },
+    "click_no_response_tip": "ポインター、スクロール、クリックのオプションを調整するには、コンピューターのマウス設定を開いてください。",
+    "common": {
+      "add": "追加",
+      "back": "戻る",
+      "delete": "削除",
+      "info": "情報",
+      "refresh": "更新",
+      "settings": "設定"
+    },
+    "hint_reset": "デバイスの変更を検出しました。レイアウトの違いにより、一部のキーがクイックスタートに表示されている通りに動作しない可能性があります。新しいレイアウトに合わせて設定をリセットしますか？",
+    "hint_reset_1": "別のデバイスに切り替えたことが検出されました。設定をリセットしますか？",
+    "hint_reset_2": "（注：モデル間でキー配列が異なるため、クイックスタートの表示が実際の機能と一致せず、一部のキーが動作しない場合があります。）",
+    "home": {
+      "addAddress": "アドレスを追加",
+      "addSoftwareDescription": "下にすぐ開きたいソフトを追加し、「クイックスタート」をクリックしてLauncherよりボタンを割り当ててください。",
+      "delete": "削除",
+      "onceAddedDescription": "下にアプリを追加したら、ボタンをクリックして戻ってください。",
+      "quickStartApplication": "クイックスタートアプリケーション",
+      "search": "検索",
+      "setUpQuickStart": "クイックスタート設定",
+      "tooltipText1": "クイックスタート機能とは、特定のボタンに素早く起動したいアプリケーションを割り当て、そのボタンをクリックするとアプリを即座に起動できる機能です。",
+      "tooltipText2": "2. 下の「＋」マークをクリックして、起動したいクイックスタートを選択し、「クイックスタートを開く」をクリックすると、Launcherに戻ってキー割り当てを行い、開始できます。"
+    },
+    "license": {
+      "agree": "同意",
+      "disagreeAndWithdraw": "同意せず取り消す",
+      "userLicenseAgreement": "ユーザー使用許諾契約",
+      "welcomeDescription": "同意してください",
+      "welcomeDescriptionEnd": "より良いサービスをご提供できるようにするために",
+      "welcomeTitle": "Assistantへようこそ"
+    },
+    "open_title": "1. クイックスタートを使用するには、Assistをダウンロードする必要があります",
+    "open_title2": "2. ソフトウェアの更新により、最新版のAssistのダウンロードとインストールを推奨します",
+    "settings": {
+      "aikeyUpdate": "AIKey機能のアップグレード：カスタムテンプレートとクイックトリガーを追加し、コマンドのディスパッチと応答処理を最適化して、安定性と使いやすさを大幅に向上させました。",
+      "autostart": "起動時に開始する",
+      "currentLatestVersion": "現在の最新バージョン",
+      "endUserLicenseAgreement": "エンドユーザー使用許諾契約",
+      "fixedKnownIssues": "既知の不具合を修正しました",
+      "interfaceOptimization": "インターフェース最適化",
+      "language": "言語",
+      "mosUpdate": "MOSスクロール/加速度アルゴリズムの最適化：加速度カーブとサンプリング戦略を再構築し、低速・高速の両シーンでより滑らかで一貫性のある操作感を実現しました。",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Keychron Assistantの商標はKeychronに帰属します。",
+      "nkroDescription2": "NKROを無効にすると、キーボードは最大6キーまでの同時押下を正しく認識します。",
+      "selectLanguage": "言語を選択",
+      "title": "設定",
+      "updateLog": "更新ログ"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade 磁気スイッチ",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast 磁気スイッチ",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "一部のキーがキャリブレーションに失敗しました。キーボード上のスイッチおよびキーの設定を確認してください。",
+    "set_successfully": "スイッチ構成が正常に変更されました。",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "キーボード上で交換した磁気スイッチが、選択した磁気スイッチのオプションと一致しているか確認してください。",
+    "sure_content2": "下の「確認」ボタンをクリックすると、これらのキーを調整するためのキャリブレーションページに進みます。",
+    "sure_title": "スイッチタイプを変更してもよろしいですか？",
+    "switch_type_settings": "スイッチタイプ設定",
+    "tip": {
+      "1": "この機能を使うと、キーボード全体の磁気スイッチタイプを設定できます。\n設定後は、選択した磁気スイッチタイプに応じてキーの枠の色が変わります。\n\n設定手順は以下の通りです：",
+      "2": "まずキーボード上のすべての磁気スイッチを交換してください（キーボード全体でサポートできる磁気スイッチは1種類のみです）。その後、交換したスイッチが下のリストに表示されているか確認してください。",
+      "3": "下の磁気スイッチタイプのオプションを選択し、「すべてのキーを設定」ボタンをクリックして設定を完了してください。",
+      "4": "磁気スイッチの種類による差異の影響を避けるため、すべてのキーを再キャリブレーションしてください。"
+    },
+    "tip_reset": "このリセットボタンをクリックすると、以前に設定したすべてのクイック起動アイテムがクリアされます。",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM 磁気スイッチ"
+  },
+  "common": {
+    "advance": "アドバンス",
+    "basic": "ベーシック",
+    "beta_test_version": "ベータテスト版",
+    "cancel": "クローズ",
+    "cancel_btn": "キャンセル",
+    "clear": "クリア",
+    "close": "オフ",
+    "connected": "接続完了",
+    "connect_btn": "接続",
+    "connect_tip": "HIDデバイスに接続しようとしています",
+    "create": "作成",
+    "delete": "削除",
+    "deleteConfirm": "このデータをリセットしてもよろしいですか？",
+    "disconnected": "接続していません",
+    "download": "ダウンロード",
+    "empty": "空",
+    "error": "エラー",
+    "export": "エクスポート",
+    "general": "一般",
+    "hide": "非表示",
+    "iknow": "承知しました",
+    "import": "インポート",
+    "is": "はい",
+    "keyboard": "キーボード",
+    "key_back": "元に戻す",
+    "key_confirm": "確定",
+    "loading": "ローディング",
+    "matrix": "テストマトリックス",
+    "max_string_length": "テキストが最大文字数制限を超えています",
+    "min": "分",
+    "mouse": "マウス",
+    "noResult": "結果なし",
+    "not": "いいえ",
+    "notSubmit": "未送信のデータです。今すぐ送信しますか？",
+    "on": "オン",
+    "open": "オン",
+    "paired": "ペアリング済み",
+    "plugged_in": "接続済み",
+    "plug_and_ret": "デバイスをケーブルで接続してから再試行してください。",
+    "plug_and_retry": "デバイスをケーブルで接続してから再試行してください",
+    "recover": "回復する",
+    "reset": "リセット",
+    "resetLayout": "レイアウトをリセット",
+    "reset_single": "単一リセット",
+    "resolution_not_support": "ブラウザのウィンドウが小さすぎるため、キーボードマップを表示できません。",
+    "results": "件の結果",
+    "save": "保存",
+    "search": "検索",
+    "select": "選択",
+    "selectall": "すべて選択",
+    "status": {
+      "update_success": "更新に成功しました"
+    },
+    "submit": "保存",
+    "timeSync": "画面時間のキャリブレーション",
+    "turnoff": "オフにする",
+    "turnon": "オンにする",
+    "type": "タイプ",
+    "upload": "アップロード",
+    "view": "表示",
+    "warring": "例外アラート",
+    "window_too_small": "ウィンドウが小さすぎるため、プレビューを表示できません"
+  },
+  "connecting": "接続中",
+  "cross": {
+    "btn": {
+      "active": "キーボード/マウス クロススクリーン",
+      "agree": "同意",
+      "cancel": "キャンセル",
+      "close": "閉じる",
+      "connect": "接続",
+      "disconnect": "切断",
+      "minimize": "最小化",
+      "quick": {
+        "connect": "ワンタッチ接続"
+      },
+      "reject": "拒否",
+      "reject_cancel": "キャンセル",
+      "trust": "デバイスを信頼",
+      "waiting": "待機中..."
+    },
+    "disconnect_confirm": {
+      "content": "接続を切断すると転送が停止します。開始済みの転送は履歴に保存され、待機中のファイルは破棄されます。",
+      "title": "ファイル転送中"
+    },
+    "file_transfer": {
+      "average_speed": "平均速度",
+      "change": "変更",
+      "clear": "クリア",
+      "clear_failed_desc": "ローカルの転送履歴を消去できません",
+      "clear_failed_title": "クリア失敗",
+      "connected": "接続済み",
+      "delete": "削除",
+      "desc": "あらゆるファイル形式に対応 · 接続済みPCへ安定して転送",
+      "direction": {
+        "receive": "受信",
+        "send": "送信"
+      },
+      "dir_err_desc": "選択した受信フォルダーは使用できません",
+      "dir_err_title": "フォルダーの更新に失敗しました",
+      "dir_ok_desc": "新しく受信したファイルは選択したフォルダーに保存されます",
+      "dir_ok_title": "保存フォルダーを更新しました",
+      "drop_unavailable_desc": "「選択」ボタンでこのファイルを選んでください",
+      "drop_unavailable_title": "ファイルパスを読み取れません",
+      "elapsed_label": "経過時間",
+      "enable": "ファイル転送を有効化",
+      "file_missing_desc": "元のファイルが移動または削除されたため再送できません。",
+      "file_missing_title": "元のファイルが存在しません",
+      "history": "転送履歴",
+      "no_active": "進行中の転送はありません",
+      "no_history": "転送履歴がありません",
+      "open": "設定",
+      "open_err_desc": "受信フォルダーを開けません",
+      "open_err_title": "フォルダーを開けません",
+      "open_folder": "開く",
+      "peer_cancelled": "相手のデバイスが転送をキャンセルしました",
+      "quick_send": "クイック送信",
+      "quick_send_desc": "ファイルを選んで接続済みPCへ直接送信",
+      "receive_failed_desc": "ファイルが不完全か、ローカルに保存できませんでした",
+      "receive_failed_title": "ファイル受信失敗",
+      "receiving": "受信中",
+      "receiving_path": "ローカル保存先",
+      "resend": "再送信",
+      "select_button": "ファイルを選択",
+      "select_desc": "転送するファイルを選択",
+      "select_title": "クリックしてファイルを選択",
+      "sending": "送信中",
+      "send_failed_desc": "選択したファイルを送信できません",
+      "send_failed_title": "ファイル転送失敗",
+      "send_to": "送信先",
+      "status": {
+        "cancelled": "キャンセル済み",
+        "failed": "失敗",
+        "received": "受信済み",
+        "receive_error": "受信エラー",
+        "sent": "送信済み"
+      },
+      "title": "ファイル転送",
+      "transfer_time": "転送時間",
+      "transmitting": "転送中",
+      "unsupported_file": "このファイル形式は転送に対応していません",
+      "waiting": "転送待ち"
+    },
+    "notification": {
+      "conn_end_t": "切断されました",
+      "conn_err_t": "接続失敗",
+      "conn_lost_t": "接続が切断されました",
+      "conn_reject_t": "接続リクエストが拒否されました",
+      "conn_req_err": "接続リクエストの送信に失敗しました",
+      "hist_clear_err": "接続履歴の消去に失敗しました",
+      "hist_clear_ok": "接続履歴を消去しました",
+      "id_err_t": "認証失敗",
+      "network_lost": "ネットワーク接続が切断され、クロススクリーンが終了しました。",
+      "op_err_t": "操作に失敗しました",
+      "op_ok_t": "成功",
+      "pair_id_err": "ペアリング済みデバイスの認証に失敗しました",
+      "pair_ok": "デバイスのペアリングが完了しました",
+      "pair_ok_t": "ペアリング完了",
+      "peer_end": "相手のデバイスがクロススクリーン接続を終了しました",
+      "peer_reject": "相手のデバイスが接続リクエストを拒否しました",
+      "reconfirm_t": "再確認が必要です",
+      "sync_err_t": "同期失敗",
+      "trust_id_changed": "信頼済みデバイスのID情報が変更されました。接続リクエストを再確認してください。",
+      "trust_id_err": "信頼済みデバイスの認証に失敗しました",
+      "trust_rm_err": "信頼済みデバイスの削除に失敗しました",
+      "trust_sync_err": "信頼資格情報が相手のデバイスに同期されていません"
+    },
+    "page": {
+      "sub_desc": "2台のPCを接続し、キーボード・マウスを画面をまたいで使用 · クリップボードの手動同期 · ファイルをドラッグして即転送 — 1台のPCのように自然に",
+      "sub_title": "機能プレビュー",
+      "title": "クロススクリーン"
+    },
+    "panel": {
+      "desc": "最大2台のPCを接続(本機を含む) · 接続後に機能を使用可能",
+      "found": "台検出",
+      "history": {
+        "active": "発信",
+        "passive": "着信",
+        "subtitle": "最近接続",
+        "title": "接続履歴"
+      },
+      "network": {
+        "ethernet": "イーサネット",
+        "other": "その他",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "同じルーターのすべてのWi-Fi PCをスキャン",
+        "start": "スキャン開始",
+        "stop": "スキャン停止",
+        "title": "ローカルネットワークをスキャン中.."
+      },
+      "tag_1": "信頼済み",
+      "title": "PCに接続"
+    },
+    "scan": {
+      "incoming_notice": "同意すると、相手がこのPCとクロススクリーン接続を確立できます",
+      "incoming_subtitle": "このコンピュータへの接続を要求しています",
+      "incoming_title": "接続リクエストを受信",
+      "network_changed_cancel": "後で",
+      "network_changed_confirm": "再スキャン",
+      "network_changed_desc": "ネットワーク環境が変化しました。再スキャンしますか？",
+      "network_changed_title": "ネットワークが変化しました",
+      "rejected": "相手のデバイスが接続リクエストを拒否しました",
+      "request_confirm": "相手の確認を待機中... 接続リクエストは間もなく期限切れになります",
+      "request_tip": "接続リクエスト先",
+      "trust": "このデバイスを信頼し、次回以降の接続を自動的に許可します。",
+      "unavailable": "相手のデバイスに一時的に接続できません"
+    },
+    "settings": {
+      "automatic_connection": "デバイス自動接続",
+      "automatic_connection_help": "自動接続:このPCの信頼済みデバイス一覧から1台を選んで自動接続できます。Assistant起動後に自動接続するには、両方のデバイスで設定が必要です。",
+      "automatic_connection_hint": "(両方のデバイスで設定が必要です)",
+      "clear_automatic_device": "自動接続デバイスをクリア",
+      "close": "閉じる",
+      "confirm": "確認",
+      "disconnect_shortcut": "クロススクリーンを切断",
+      "disconnect_shortcut_help": "クロススクリーンが動作しないときは、このショートカットで接続を切断できます。このショートカットは変更のみ可能で、削除はできません。",
+      "enter_shortcut_key": "カスタムキーを入力",
+      "no_trusted_devices": "信頼済みデバイスなし",
+      "remove_confirmation": "{device} の信頼を解除しますか？",
+      "remove_device": "信頼済みデバイスを削除",
+      "select_device": "信頼済みデバイスを選択",
+      "shortcut_hint": "(英字・数字・F1–F12に対応。BackspaceまたはDeleteで設定をクリア)",
+      "shortcut_keys": "ショートカット",
+      "system_lock_shortcut": "画面をロック",
+      "title": "信頼と自動接続",
+      "trusted_count": "信頼済みデバイス ({count})",
+      "trust_help": "デバイスの信頼:信頼済みデバイスは次回接続時、このPCの承認なしで接続できます。"
+    },
+    "step": {
+      "collapse": "折りたたむ",
+      "connected": "接続済み",
+      "desc": "Keychron Assistantで別のPCをスキャンしてペアリング · 接続後、キーボード・マウスのクロススクリーンとファイル転送が使用可能になります",
+      "desc_1": "同じローカルネットワークのPCを自動検出し、接続リクエストを送信します",
+      "desc_2": "相手が「許可」をクリックするとペアリングが完了します",
+      "desc_3": "すべてのクロススクリーン機能が使用可能",
+      "expand": "展開",
+      "local": "本機",
+      "title": "接続フロー",
+      "title_1": "スキャンして要求",
+      "title_2": "相手が確認",
+      "title_3": "接続完了",
+      "trust": "接続済み · 信頼済み",
+      "wait_1": "待機中",
+      "wait_2": "「許可」をクリック",
+      "wait_3": "別のPCとペアリング中"
+    },
+    "tabs": {
+      "file_transfer": "ファイル転送",
+      "settings": "設定"
+    },
+    "time": {
+      "ago": "前",
+      "days": "日",
+      "hours": "時間",
+      "just_now": "たった今",
+      "last": "過去",
+      "last_connection": "前回の接続",
+      "minutes": "分",
+      "months": "か月",
+      "seconds": "秒"
+    },
+    "view": {
+      "bottom": "下",
+      "desc": "マウスカーソルが指定した画面の端を越えると、このコンピュータのキーボードとマウスで接続先のデバイスを操作できます。",
+      "left": "左",
+      "off": "オフ",
+      "right": "右",
+      "title": "画面切り替えの端を設定",
+      "top": "上"
+    },
+    "web": {
+      "auto_connect_target": "自動接続先",
+      "center_cursor": "カーソルを中央に",
+      "clipboard": "クリップボード",
+      "clipboard_desc": "PC間でコピーした内容を手動で同期",
+      "connect_assistant": "Assistantを開く",
+      "connect_hint": "接続機能はAssistant内で行う必要があります。",
+      "custom_screenshot": "カスタムスクリーンショット",
+      "direction": "方向",
+      "drop_box_key": "ドロップボックスのショートカット",
+      "exit_application": "切断",
+      "file_transfer": "ファイル転送",
+      "file_transfer_desc": "ファイルを選択、またはショートカットでドロップボックスを開く",
+      "hold_ctrl": "Ctrlを押しながら画面を移動",
+      "in_progress": "件のタスク",
+      "items": "件",
+      "keyboard_mouse": "キーボード / マウス共有",
+      "keyboard_mouse_desc": "カーソルが画面の端を越えると制御を切り替え",
+      "loading": "Assistantからクロススクリーンの状態を取得中…",
+      "lock_pc": "PCをロック",
+      "max": "最大",
+      "not_set": "未設定",
+      "off": "オフ",
+      "on": "オン",
+      "ongoing": "進行中",
+      "read_only": "表示のみ · 設定はKeychron Assistantで変更してください",
+      "recent_items": "最近の項目",
+      "save_dir": "保存フォルダー",
+      "settings": "設定",
+      "settings_desc": "信頼済みデバイス · 自動接続 · ショートカット",
+      "shortcut_mapping": "ショートカット割り当て",
+      "switch_pc": "PCを切り替え",
+      "sync_mode": "同期モード",
+      "target_device": "対象デバイス",
+      "title": "クロススクリーンの状態",
+      "trusted_devices": "信頼済みデバイス数",
+      "trust_auto_connect": "信頼と自動接続"
+    }
+  },
+  "debounce": {
+    "backlight": "バックライトのスリープ時間は5秒未満に設定できません。",
+    "mode": "デバウンスモード",
+    "press": "プレスダウン秒",
+    "release": "リセット秒",
+    "response": "応答秒数",
+    "scan": "スキャン速度",
+    "setting": "キーボードバウンス時間設定",
+    "sleep_limit": "スリープ時間は1分未満に設定できません。",
+    "tip": "自動バックライトオフの開始時間は、自動スリープモードの開始時間よりも短く設定する必要があります。",
+    "warning": {
+      "content": "（注：10ms未満に設定するとチャタリング（連打）のリスクがあるため、慎重に設定してください。）",
+      "title": "設定してよろしいですか？"
+    }
+  },
+  "demo": {
+    "device_keyboard": "キーボードデモ",
+    "device_mouse": "マウスデモ",
+    "exit": "デモモードを終了",
+    "keyboard": "キーボードなしでお試し",
+    "mode": "デモモード",
+    "mouse": "マウスなしでお試し",
+    "tip": "注意：現在デモモードです。表示のみで実際の機能はありません。",
+    "title": "デモ"
+  },
+  "device": {
+    "version": "デバイスバージョン"
+  },
+  "device_add": "接続",
+  "device_select": {
+    "notify": "続行するにはリストからデバイスを選択してください。",
+    "select": "続き",
+    "un_select": "デバイスが選択されていません。"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "タイピングテスト"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "接続",
+      "2": "次へ",
+      "3": "前へ",
+      "6": "次へ更新",
+      "enterBootloaderMode": "アップグレードモードに入る",
+      "flash": "ファームウェアの更新",
+      "matchDevice": "デバイスをマッチさせる",
+      "retry": "再試行",
+      "startUpgrading": "アップグレードを開始"
+    },
+    "description": "説明",
+    "downloadFailed": "ファームウェアファイルのダウンロードに失敗しました",
+    "error": {
+      "diff_model": "デバイスのファームウェアモデルが一致しません",
+      "get_dfu_version": "デバイスのファームウェア更新バージョンの取得に失敗しました"
+    },
+    "flashError": "ファームウェアのダウンロードに失敗",
+    "flashSuccess": "ファームウェアのアップデートに成功しました。",
+    "info": {
+      "currentVersion": "現在のバージョン",
+      "latestVersion": "最新バージョン",
+      "updateSize": "ファームウェアサイズ",
+      "updateTime": "最終更新"
+    },
+    "mouse": {
+      "step1_hid_device": "キーボードの K、E、Y キーを順番に押してください。HIDデバイス接続のプロンプトが表示されたら、次のステップに進んでください。"
+    },
+    "notFound": "デバイスの最新ファームウェアが見つかりませんでした。",
+    "productNotExist": "デバイス情報が取得できない",
+    "requestFail": "デバイスの取得に失敗しました。他のプログラムで使用されていないか確認してください。",
+    "syncQuickStart": "クイックスタートを同期",
+    "tip": {
+      "confirm": "確認してください",
+      "currentSelect": "現在選択中"
+    },
+    "tips": {
+      "0": "現在のデバイスにはファームウェアのアップデートはありません。",
+      "4": "Windowsデバイスを使用し、QMK Toolbox Driverをインストールしていない場合は、以下の手順に従ってください。すでにQMK Toolbox Driverをインストールしている場合は、[次へ]をクリックします。",
+      "5": "下の「Toolboxダウンロード」ボタンをクリックして、Toolboxをダウンロードし、解凍します。",
+      "6": "ファイルを解凍した後、Toolboxアイコンを右クリックするか、システムの検索バーで「driver」を検索し、「管理者として実行」を選択して開きます。",
+      "7": "開いたらメニュー「ツール」をクリックする。",
+      "8": "「ドライバのインストール」をクリックし、引き続き「はい」をクリックしてファームウェアドライバのインストールを開始し、インストールを待ちます。",
+      "9": "インストールが完了したら、「次へ」をクリックしてファームウェアの更新プロセスを開始します。",
+      "10": "注：クリックできます",
+      "11": "以下の手順に従ってください。",
+      "12": "現在の状態で、キーボードのUSBケーブルを抜き、キーボードの接続を解除します。",
+      "13": "キーボードを外した状態で、キーボードのESCを長押しし、同時にキーボードをUSBケーブルでパソコンに接続します。キーボードをファームウェアのアップデート準備状態にします。",
+      "15": "照合に成功すると、「Flash Firmware」ボタンが表示されますので、クリックしてファームウェアのアップデートを開始します。",
+      "16": "ファームウェア書き込み中は、デバイスとコンピューターの接続を切断しないでください。",
+      "18": "Toolboxのダウンロード",
+      "19": "Toolboxドライバーのインストール説明ビデオ",
+      "20": "Toolbox Driverのインストール手順の詳細をご覧ください。",
+      "22": "1.Toggle the keyboard switch to Windows mode.",
+      "23": "青色のインジケーターが点灯するまで、キーボードの Fnキー と 「－」キー を同時に5秒以上押し続けて、ファームウェア更新の準備をしてください。",
+      "24": "マッチングに成功すると「ファームウェアをフラッシュ」ボタンが表示されます。クリックしてファームウェアの更新を開始してください。",
+      "25": "下の「デバイスをマッチ」ボタンをクリックし、({{ mode }}) で始まるデバイスを選択してマッチングしてください。",
+      "26": "Bluetoothモジュールをアップグレードする場合は、有線接続を使用してください。",
+      "27": "下のボタンをクリックして、最新バージョンのファームウェアを取得してください。",
+      "28": "キーボードの接続が切断されている状態で、キーボード左上のキーを押し続け、同時にUSBケーブルでキーボードをコンピューターに接続します。キーボードをファームウェア更新の準備状態にします。",
+      "bl-exceeded": "再試行回数を超えました。データケーブルを再接続してください",
+      "clickMatchBtn": "下の「デバイスをマッチング」ボタンをクリックし、{{dfuName}} で始まるデバイスを選択してマッチングします",
+      "currentDongle": "（キーボード/マウスのアップグレードには有線接続を使用してください。現在はレシーバーのページです）",
+      "link_wired_content": "ワイヤレスアップグレード中はマウスがスリープ状態になり操作できません",
+      "link_wired_title": "アップグレード前に有線接続してください",
+      "longPress": "まずESCを押し、次にTabキーを同時に3秒間押し続けます。",
+      "matchErr": "現在ペアリングされていません。アップグレードするデバイスを手動で選択してください。",
+      "mouseTip2": "2. すでにリンクされていて、マッチが利用可能な場合、ファームウェアの更新をクリックして更新を開始します。",
+      "mouseTip4": "Connect Deviceボタンをクリックし、Bootloaderを選択します。",
+      "mouseTip6": "（ファームウェアをフラッシュしている間は、レシーバーをコンピュータから取り外さないでください。）",
+      "mouseTip7": "更新が完了するまでお待ちください。成功メッセージが表示されます。",
+      "patch": {
+        "1": "このアップデートはセキュリティパッチです。先に以下のチュートリアルに従って更新してください。",
+        "2": "現在の状態で、キーボードのUSBケーブルを抜いてキーボードの接続を切断します。",
+        "3": "キーボードの接続が切断されている状態で、「スペース」キーのキーキャップを外し、スイッチの横にある小さな金属板ボタンを見つけます。",
+        "4": "ボタンを押し続け、USBケーブルでキーボードをコンピューターに接続します。",
+        "5": "下の「デバイスをマッチング」ボタンをクリックし、(DFU)と表示されたデバイスを選択してマッチングします。",
+        "6": "マッチングに成功すると「ファームウェアを書き込む」ボタンが表示されます。クリックするとセキュリティパッチの更新が開始されます。"
+      },
+      "toFlash": "マッチングに成功すると「ファームウェアを書き込む」ボタンが表示されます。クリックするとファームウェアの更新が開始されます。"
+    },
+    "update": {
+      "dfu_check": "選択したDFUデバイスが正しいか確認してください"
+    },
+    "update_available": "アップグレード可能なファームウェアがあります。",
+    "update_latest": "これは最新のファームウェアバージョンです。",
+    "update_success": "更新に成功しました。「接続」ボタンをクリックして現在のデバイスに接続してください。",
+    "warning": "ファームウェアの書き込み中は、デバイスへの潜在的な損傷を防ぐためにデバイスを取り外したり、ページを更新したりしないでください。",
+    "write": "書き込み"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "デバイスマニュアル",
+      "tutorial": "チュートリアル",
+      "user_feedback": "ユーザーフィードバック"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Launcherで自動スリープモードとバックライトオフの開始時間を設定する方法は？",
+        "set_keyboard_bounce_time": "Launcherでキーボードのバウンス時間を設定する方法は？"
+      },
+      "backlight": {
+        "set_backlight_keys": "Launcherでバックライトキーを設定する方法は？",
+        "set_mix_rgb": "LauncherでMix RGBを設定する方法は？",
+        "set_per_key_rgb": "LauncherでキーごとのRGBを設定する方法は？"
+      },
+      "bridge_firmware_update": "Keychronレシーバーのファームウェアを書き込む方法",
+      "create_mouse_macro": "Launcherでマウスマクロを作成する方法",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Launcherで工場出荷時設定への復元とファームウェアの更新を行う方法は？"
+      },
+      "he_mode": {
+        "manage_he_profile": "LauncherでHEプロファイルを管理する方法は？",
+        "set_gamepad_analog_and_curves": "Launcherでゲームパッドのアナログとカーブを設定する方法は？",
+        "set_long_press_switch": "Launcherで長押しスイッチを設定する方法は？",
+        "set_one_key_multiple_commands": "Launcherで1つのキーに複数のコマンドを設定する方法は？",
+        "set_snap_click": "LauncherでSnap Clickを設定する方法は？",
+        "use_he_mode": "Keychron LauncherでHEモードを使用する方法は？"
+      },
+      "keymap": {
+        "fn_keys_function": "KeychronキーボードでFnキーはどのように機能しますか？",
+        "remap_key": "Launcherでキーをリマップする方法は？",
+        "set_keymap_language": "Launcherでキーマップ言語を設定する方法は？",
+        "use_different_function_layers": "異なる機能レイヤーを使用する方法は？"
+      },
+      "key_test": {
+        "custom_sounds": "キーボードのサウンドをカスタマイズする方法",
+        "perform_keyboard_key_testing": "Launcherでキーボードキーテストを実行する方法は？"
+      },
+      "macro": {
+        "create_macro": "Launcherでマクロを作成する方法は？"
+      },
+      "make_mouse_factory_reset_setting": "Launcherでマウスを工場出荷時設定にリセットする方法",
+      "mouse_angle_adjustment": "Launcherの角度調整機能を使用する方法",
+      "mouse_firmware_update": "マウスファームウェア更新チュートリアル",
+      "mouse_receiver_firmware_update": "Keychronレシーバーのファームウェアを書き込む方法",
+      "quick_start": {
+        "download_and_install_assistant": "Keychron-Assistantのダウンロードとインストール方法は？",
+        "set_quick_start": "Launcherでクイックスタートを設定する方法は？"
+      },
+      "set_mouse_customize_buttons": "Launcherでマウスのカスタムボタンを設定する方法",
+      "set_mouse_debounce_time": "Launcherでマウスのデバウンス時間を設定する方法",
+      "set_mouse_dpi_and_polling_rate": "LauncherでマウスのDPIとポーリングレートを設定する方法",
+      "set_mouse_system_features_setting": "Launcherでマウスのシステム機能を設定する方法"
+    },
+    "user_manual": "ユーザーマニュアル"
+  },
+  "issue": {
+    "content": "内容",
+    "device": "デバイス",
+    "email": "Eメール",
+    "tips": {
+      "content": "コンテンツは必須です",
+      "device": "デバイスは必須です",
+      "email": "無効なメールアドレス",
+      "input": "内容を入力してください",
+      "send": "レポート送信",
+      "title": "タイトルは必須です"
+    },
+    "type": {
+      "1": "ボタンが効かない/応答なし",
+      "2": "接続の問題",
+      "3": "ハードウェアの故障",
+      "4": "レイアウト/サイズが不適切",
+      "5": "ドライバーの問題",
+      "6": "その他",
+      "7": "フィードバックの種類を選択してください"
+    }
+  },
+  "keycap": {
+    "character": "英字キー",
+    "fnc": "ファンクションキー",
+    "general": "一般",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "数字キー",
+    "symbol": "記号キー",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "長押し = 上のキー（修飾キー）・ 単押し = 下のキー"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "キーコンビネーション",
+      "combo_description": "カスタムショートカットキー",
+      "launch_app": "アプリを起動",
+      "launch_app_description": "ワンクリックでアプリを起動",
+      "launch_web": "ウェブページを開く",
+      "launch_web_description": "ワンクリックでウェブページを開く",
+      "macro": "マクロ",
+      "macro_description": "一連の操作",
+      "remap": "キーの再マッピング",
+      "remap_description": "他のキーを割り当て",
+      "title": "{{key}} を変更"
+    },
+    "codeInput": "キーを選択",
+    "knob_not_support": "現在のファームウエアはノブのカスタムをサポートしていません。ファームウエアをアップデートしてください。",
+    "layer": {
+      "1": "1. 長押しで対象レイヤーを一時的に有効にし、キーを離すと元の値に戻ります",
+      "2": "2. 低いレイヤーから高いレイヤーへの適用のみ有効で、高いレイヤーから低いレイヤーへの適用は無効です",
+      "3": "1. クリックで対象レイヤーをオフ/有効にします。対象レイヤーをオフにすると、有効状態の最上位レイヤーが採用されます",
+      "4": "2. デフォルトレイヤーはオフにできません。すべてのレイヤーがオフになるとデフォルトレイヤーが採用されます",
+      "5": "長押し機能はMOと同じで、5回クリック機能はTGと同じです",
+      "6": "1. クリック/長押しでレイヤーを有効にします。低いレイヤーから高いレイヤーへのみ有効化できます",
+      "7": "Snap Tapは磁気スイッチキーのみサポートしています",
+      "8": "クリックで対象レイヤーを一方向に有効にし、高低レイヤーを区別しません",
+      "9": "クリックで対象のデフォルトレイヤーを一時的に一方向で有効にし、高低レイヤーを区別しません",
+      "10": "1. キーボードの電源が切れると、システムスイッチに対応するデフォルトレイヤーに戻ります。例：winはlayer 2、macはlayer 0に対応",
+      "11": "2. 一部のキーボードモデルには物理的なシステムスイッチがないため、通常は固定のデフォルトレイヤーに戻ります。例：layer 0",
+      "error_info": "キーボードのシステムスイッチとコンピューターのシステムが一致していないため、修飾キーの機能が変わる可能性があります",
+      "tip": "ヒント："
+    },
+    "modal": {
+      "combo": {
+        "description": "1つ以上の修飾キーと1つのメインキーを選択し、1つのキーでトリガーします。",
+        "modifier_keys": "修飾キー",
+        "press_primary_key": "メインキーを押してください",
+        "primary_key": "メインキー",
+        "title": "キーコンビネーション"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "このボタンをクリックして、割り当てられたアプリを開きます。",
+        "no_available_apps": "利用可能なアプリがありません",
+        "search_apps": "アプリを検索",
+        "title": "アプリを起動"
+      },
+      "launch_web": {
+        "description": "このボタンをクリックして、割り当てられたウェブページを開きます。",
+        "title": "ウェブページを開く",
+        "web_page_url": "ウェブページのURL"
+      },
+      "macro": {
+        "description": "入力ボックスで直接マクロを録音します：押したキーが一連の操作として記録されます。",
+        "macro_keys": "マクロキー",
+        "press_key": "録音するキーを押してください",
+        "title": "マクロを録音"
+      },
+      "remap": {
+        "description": "「{{key}}」を何に変更しますか？",
+        "press_key": "割り当てるキーを押してください",
+        "primary_keys": "メインキー",
+        "title": "キーの再マッピング"
+      }
+    },
+    "reset": {
+      "all": "すべての設定をリセットしてもよろしいですか？",
+      "single": "このキーの設定をリセットしてもよろしいですか？",
+      "title": "リセットしてもよろしいですか？"
+    },
+    "tabs": {
+      "assist": "クイックスタート",
+      "basic": "基本",
+      "custom": "カスタム",
+      "layers": "レイヤー",
+      "macro": "マクロ",
+      "media": "メディア",
+      "modtap": "長押し / 単押し",
+      "mouse": "マウス",
+      "qmk_lighting": "ライトニング",
+      "special": "スペシャル",
+      "wt_lighting": "ライトニング"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "カスタム",
+      "default_layer": "デフォルトレイヤー",
+      "display": "表示レイヤーを選択",
+      "functional": "実際の機能レイヤー",
+      "funtional": "現在",
+      "warn": "キーが効かない場合は、システムスイッチを切り替えて再通電してください"
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": "…に切り替えますか？",
+    "connect": {
+      "1": "ケーブルまたは2.4Gレシーバーを使用してデバイスを接続します。\n（一部のモデルは有線モードのみ対応）",
+      "2": "左上の「接続」をクリックし、リストからデバイスを選択します"
+    },
+    "detectedKeyboardLanguage": "キーボードの言語が…であることを検出しました。",
+    "guide_tip": "下記のガイドに従ってデバイスを接続してください。",
+    "keepCurrentSetting": "現在の設定を保持",
+    "lang": "レイアウト言語",
+    "resetSuccessContent": "キーボードのレイアウトが正常にリセットされました。",
+    "resetSuccessTitle": "リセットに成功しました。",
+    "select_device": "接続したいデバイスを選択してください",
+    "switchImmediately": "今すぐ切り替え"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "明るさ",
+    "color": "カラー",
+    "common": {
+      "setting_color": "色の設定"
+    },
+    "commonColor": "共通カラー",
+    "customColor": "色を定義",
+    "decorate_light": {
+      "0": "なし",
+      "1": "単色ライティング効果",
+      "2": "ブリージングライト効果",
+      "3": "色相循環",
+      "4": "イルミネーション効果"
+    },
+    "effect": "効果",
+    "effect speed": "スピード",
+    "hue": "色度",
+    "layer2": "RGB ゾーン",
+    "led": {
+      "sub": {
+        "title": "ヒント：ライトバーの色を設定するときは、下のライトバーを選択してください。"
+      },
+      "title": "ライトバー"
+    },
+    "level": "レベル",
+    "mix": {
+      "config": "照明効果設定",
+      "hxxg": {
+        "hue": "色相",
+        "saturability": "彩度",
+        "speed": "スピード"
+      },
+      "rk": "この機能を使うと、同じキーボード上に2つの異なるキーゾーンを設定し、それぞれに異なるRGBライティング効果を適用できます。各ゾーンでは、ループ内で異なる時間帯を設定でき、さらに各時間帯ごとに異なるRGBライティング効果を設定できます。",
+      "timeLine": {
+        "second_tips": "秒数の入力値が大きすぎるか小さすぎます。",
+        "title": "タイムライン"
+      },
+      "verify_duration": {
+        "tip1": "入力値は数値であり、1より大きく99未満でなければなりません！",
+        "tip2": "小数点以下は2桁までしか入力できません。",
+        "tip3": "入力された値が大きすぎます",
+        "tip4": "入力された値が小さすぎます。"
+      }
+    },
+    "notSupport": "デバイスがライト設定をサポートしていません",
+    "perkey": {
+      "effect": "効果選択",
+      "effects": {
+        "0": "一般",
+        "1": "ブリージング",
+        "2": "シングルキー・レスポンス",
+        "3": "隣接キー・レスポンス",
+        "4": "キーボード全体"
+      },
+      "redo": "やり直し",
+      "region": "エリア選択",
+      "region_select": "領域選択",
+      "region_tip": "キーボードキーでエリアを選択し、色を設定します。保存]をクリックすると、対応する領域の色が変更されます。",
+      "rk": "各キーの色は個別に設定できます。キーを選択し、色設定エリアをクリックして色を変更し、保存することでキーの色を変更できます。",
+      "save_warn": "RGBゾーンが多すぎます。いくつかのRGBゾーンを削除してから、もう一度お試しください。",
+      "select_tip": "選択されたボタンでは領域を作成できません。",
+      "select_warn": "ボタンを選択してください。",
+      "undo": "元に戻す"
+    },
+    "saturation": "彩度",
+    "settingAllBrightnessArea": "すべてのゾーンの明るさを設定",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "装飾ライト",
+      "indication": "インジケーター ライト",
+      "led_light": "ライトストリップ制御",
+      "mix_rgb": "ミックス RGB",
+      "perkey_rgb": "キーごとのRGB",
+      "screen": "画面調整",
+      "selection": "バックライト"
+    },
+    "underglow brightness": "明るさ"
+  },
+  "lights": {
+    "0. None": "なし",
+    "1. Solid Color": "ソリッドカラー",
+    "10. Cycle Pinwheel": "サイクル・ピンホイール",
+    "11. Cycle Spiral": "サイクル・スパイラル",
+    "12. Dual Beacon": "デュアル・ビーコン",
+    "13. Rainbow Beacon": "スペクトルランプ",
+    "14. Jellybean Raindrops": "ジェリービーンズ・レインドロップス",
+    "15. Pixel Rain": "ピクセルレイン",
+    "16. Typing Heatmap": "タイピング・ヒートマップ",
+    "17. Digital Rain": "デジタル・ライ",
+    "18. Reactive Simple": "リアクティブ・シンプル",
+    "19. Reactive Multiwide": "リアクティブ・マルチワイド",
+    "2. Breathing": "ブリージング",
+    "20. Reactive Multinexus": "リアクティブ・マルチネクサス",
+    "21. Splash": "スプラッシュ",
+    "22. Solid Splash": "ソリッドスプラッシュ",
+    "23. Per Key Rgb": "キーごとのRGB",
+    "3. Band Spiral Val": "バンドスパイラルバル",
+    "4. Cycle All": "サイクル・オール",
+    "5. Cycle Left Right": "サイクル・左右",
+    "6. Cycle Up Down": "サイクル・アップダウン",
+    "7. Rainbow Moving Chevron": "レインボー・ムービング・シェブロン",
+    "8. Cycle Out In": "サイクル・アウトイン",
+    "9. Cycle Out In Dual": "サイクル・アウトインデュアル"
+  },
+  "macro": {
+    "allchar": "すべての文字",
+    "closeDelay": "ディレイの無効化",
+    "code": "コード入力",
+    "common": {
+      "flash": "フラッシュ",
+      "title": "マクロを選択し、上のキー図の目的のキーをクリックしてマクロを割り当てます"
+    },
+    "config": "配置",
+    "delay": "遅延",
+    "delaySet": "ディレイの設定",
+    "dynamicDelay": "ダイナミック ディレイ",
+    "endREC": "録音を停止",
+    "enterDown": "下方への挿入",
+    "enterUp": "上方への挿入",
+    "fixedDelay": "固定ディレイ",
+    "inputdelay": "ディレイ時間を入力してください。",
+    "inputtexct": "テキスト入力",
+    "insertDelay": "ディレイを挿入",
+    "keydown": "押下",
+    "keyup": "解除",
+    "loopCount": "ループ回数",
+    "loopCurrentDown": "もう一度押すまで",
+    "loopDown": "任意のキー 停止",
+    "loopOne": "1回ループ",
+    "loopSet": "ループ設定",
+    "loopUp": "リリース停止",
+    "macroReccord": "記録",
+    "macroSetup": "マクロ",
+    "mouse": "マウス",
+    "notEqual": "ディテクト・フローイング・キーが解除されていません、継続しますか？",
+    "record": "記録",
+    "rename": "リネーム",
+    "save": "保存",
+    "setRepeatCount": "繰り返し回数を設定",
+    "specialText": "テキストの詳細指定",
+    "startREC": "録音を開始",
+    "stop": "ストップ",
+    "text": "インサート ディレイ",
+    "texttype": "英語、数字、基本的な記号のみ入力できます。",
+    "tip": {
+      "clickCopy": "クリックしてテキストをコピー",
+      "fixDelay": "ここでいう固定ディレイとは、各イベントに組み込まれている遅延のことを指します。つまり、そのイベント自体が遅延を含んでいます。",
+      "keyDelay": "ディレイ：{200}、単位：ミリ秒",
+      "keyDown": "リセット：{-KC_A}",
+      "keyText": "テキスト：ABCDEF",
+      "keyUp": "押下： {+KC_A}",
+      "macro_text": "実行するマクロテキストを入力してください"
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "磁気スイッチ",
+      "mechanical": "メカニカルスイッチ",
+      "tip": "ヒント",
+      "title": "スイッチ統計"
+    },
+    "calibration": {
+      "1": "キャリブレーション中にUSBケーブルを抜いたり、デバイスの接続を外したり、デバイスの電源を切ったりしないでください。デバイスがクラッシュする可能性があります。",
+      "2": "キャリブレーション開始",
+      "3": "キャリブレーション開始をクリックする2秒前にキーボードキーを押さないでください。",
+      "4": "キーを1秒間長押しするとキャリブレーションが完了します。",
+      "5": "キャリブレーションが成功すると、バックグラウンドライトが緑色に点灯します。",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "カーブ・プリセットモード",
+      "save": "カーブの保存",
+      "title": "ロッカー・カーブ設定"
+    },
+    "directive": {
+      "bottomBack": "バウンスバック、リバウンド復帰",
+      "bottomIn": "下部からのイン、下からスライドイン",
+      "bottomOut": "底突き、最下部に到達",
+      "trigger": "開始トリガー、起動トリガー"
+    },
+    "distance": {
+      "advance_mode": "アドバンス",
+      "basic_mode": "ベーシック",
+      "current": "現在のキー",
+      "globalDis": "全てのオペレーション距離を設定",
+      "globalRt": "すべてのキートリガーを設定する",
+      "limitTip": "数値が上限を超えています。もう一度入力してください",
+      "magnet_calibrate": "トリガーデモ",
+      "magnet_calibrate_point": "トリガーポイント",
+      "magnet_calibrate_tip": "トリガーデモはシングルキーのみをサポートします",
+      "magnet_calibrate_tip_desc": "キーを選択し、右上のスイッチボタンをオンにすると、選択したキーのトリガーシミュレートされます。",
+      "magnet_calibrate_tip_empty": "キーを選択してください",
+      "profile_help": "\"fn\" + \"p\" + \"z / x / c\"を押すと、プロファイルを素早くプロファイル1/2/3に切り替えることができます。",
+      "result": "入力キーの値",
+      "sensitive": "感度",
+      "setting": "動作距離の設定",
+      "show_mode_dis": "作動距離",
+      "show_mode_hide": "データなし",
+      "show_mode_rt": "ラピッドトリガー",
+      "speed_trigger": "ラピッドトリガー",
+      "trigger_distance": "(押す）トリガー距離",
+      "trigger_distance_reset": "(解除）リセット距離",
+      "trigger_distance_twice": "(押す）トリガー距離"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "マッピングをクリア",
+      "left_emu": "左ジョイスティックシミュレーション",
+      "reflect": {
+        "conflict": "このキーは設定されています"
+      },
+      "titles": {
+        "1": "ジョイスティックボタンの選択",
+        "2": "ジョイスティックボタンの設定",
+        "4": "キーボードのキーを有効または無効にする",
+        "5": "ジョイスティックのシミュレート中にタイピングができる場合は有効に、できない場合は無効にしてください。",
+        "6": "ジョイスティック・エフェクトのデモ",
+        "7": "コントローラー認識機能",
+        "8": "1. 無効にすると、キーボードはコントローラーとして認識されなくなります",
+        "9": "2. この機能に関連するすべての操作の後、ケーブルを抜き差しして有効にする必要があります",
+        "10": "標準コントローラー",
+        "11": "Xboxコントローラー",
+        "12": "コントローラーモードの選択",
+        "13": "コントローラーモードを切り替えた後、ケーブルを抜き差しして有効にする必要があります",
+        "xbox": "1. Xboxのオン/オフ後、ケーブルを抜き差しして有効にする必要があります</br>2. macOSシステムではXboxを使用できません"
+      }
+    },
+    "mode": {
+      "default": "デフォルト",
+      "gamepad": "ゲームパッド",
+      "gaming": "ゲーミング"
+    },
+    "multi_cmd": {
+      "b": "ボトムイン",
+      "fulfilled": "スペースがいっぱいです。既存のコマンドを削除して新しいコマンドを設定して下さい。",
+      "list": "バインディングリスト",
+      "setting": "1つのキーで複数のコマンド",
+      "test": "テストキー"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "ラピッドスナッピーは磁気スイッチキーのみサポートしています",
+      "only_support_magnetic": "現在選択されているのはメカニカルスイッチです。このメニューは磁気スイッチのみサポートしています"
+    },
+    "profile": "プロフィール",
+    "rename": "リネーム",
+    "simulate": "シミュレートする",
+    "snap_tap": {
+      "absolute_priority": "絶対優先",
+      "AP": "2つのキーが同時に押されたときに、一方のキーに高いトリガー優先度を割り当てます。</br>*キー中央のアイコンをクリックして優先度を切り替えます。",
+      "cancel_mode": "ニュートラル",
+      "CM": "2つのボタンを設定できます。2つのボタンが同時に押されたとき、どちらのボタンもトリガーされません",
+      "create": "作成",
+      "key_exist": "その設定キーは既に存在します。",
+      "last_key_priority": "後入力優先",
+      "LKP": "2つのキーを同時に押すと、最後にトリガーされたキーがトリガーされ、もう一方のキーがリセッ トされるように設定することができる。\n\n2キーを選択すると、2つのキーがバインドされ、最後にトリガーされたキーがトリガーされたままになり、もう一方のキーがリリースされるようになります。",
+      "SC": "2つのキーを設定し、両方のキーが同時に押されたとき、より深く押された方がトリガーされ、もう一方がリセットされるようにすることができる。",
+      "snap_click": "ラピッドスナッピー"
+    },
+    "sure_switch_gamepad": "切り替えてよろしいですか？",
+    "sure_switch_gamepad_desc": "ゲームコントローラーモードに切り替えると、一部のボタンが機能しなくなります",
+    "tab": {
+      "calibration": "キャリブレーション",
+      "curve": "カーブ",
+      "distance": "動作距離",
+      "exit_calibration": "キャリブレーションを終了",
+      "joystick_reflect": "ゲームパッド アナログ",
+      "multi_cmd": "1つのキーで複数のコマンド",
+      "snap_tap": "スナップ・アクション",
+      "toggle": "長押しスイッチ",
+      "toggle_tip": "この機能を使うと、1回押すだけで特定のキーをすばやく連続してトリガーできます。",
+      "turbo": "ターボチャージ",
+      "turbo_tip": "ボタンを押している間、連続クリック効果を発生させます"
+    },
+    "toggle": {
+      "drk_guide_tip": "この機能は、キーを深く押すほど、より多くトリガーできます。",
+      "keySpeed": {
+        "times": "最大トリガー回数",
+        "title": "キー押下速度",
+        "unit": "回/秒"
+      },
+      "selected": "選択済みキー",
+      "set": "キーセット",
+      "title": "オープン"
+    }
+  },
+  "menu": {
+    "addconnect": "デバイスを追加",
+    "assist": "クイックスタート",
+    "bluetooth_firmware": "ワイヤレスファームウェア",
+    "disconnect": "切断",
+    "expTools": "拡張ツール",
+    "fr_firmware": "受信機のアップデート",
+    "help": "ヘルプセンター",
+    "issue": "バグレポート",
+    "keyboard_advance": "アドバンスモード",
+    "keyboard_firmware": "ファームウェアアップデート",
+    "keyboard_he": "HEモード",
+    "keyboard_light": "ライトニング",
+    "keyboard_macro": "マクロ",
+    "keyboard_map": "キーマップ",
+    "keyboard_test": "キーテスト",
+    "keyset": "スナップアクション",
+    "scroll": "拡張スクロール",
+    "setting": "設定",
+    "switchSetting": "スイッチ設定"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "このボタンを無効にしてよろしいですか？",
+      "resetAll": "この操作により、保存されたデータはすべて削除されます。続行しますか？",
+      "resetBtn": "デフォルト設定に戻しますか？"
+    },
+    "dpi": {
+      "cable": "有線",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI（1インチあたりのドット数）はカーソルの感度を設定します。値が高いほど、同じ手の移動量でカーソルが遠くへ移動します。",
+      "gear": "レベル",
+      "previousSetting": "{{time}}秒間操作がない場合、自動的に確認されます。「戻す」をクリックすると、前の設定に戻ります。",
+      "properties": "マウスシステム設定",
+      "properties_open": "マウスシステム設定を開く",
+      "properties_tip": "反応がない？Assistantをダウンロードしてから再試行してください。",
+      "reportRate": "ポーリングレート",
+      "reportRateDesc": "最大8000Hzをサポート",
+      "reportTip": "デバイスがコンピュータにレポートを送信する頻度を調整します。",
+      "title": "DPI 設定",
+      "wireless": "2.4GHz",
+      "xyTip": "X 軸 DPI はマウスの水平方向カーソル感度を制御し、Y 軸 DPI は垂直方向カーソル感度を制御します。数値が大きいほど、対応する方向のカーソルの反応が敏感になります。",
+      "xy_split_label": "X/Y分離"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "左右ボタン独立",
+      "gear": "段",
+      "left_btn": "左ボタン",
+      "light_blocked": "光路遮断",
+      "light_desc": "静止時は光ビームが遮断されるため、クリックは記録されません。ボタンを押すと光路が導通します——光がセンサーに到達してクリックがトリガーされます。金属接点はありません。",
+      "light_led": "LED",
+      "light_mode": "光学スイッチ",
+      "light_pd": "Image Sensor",
+      "light_triggered": "トリガー済み",
+      "magnet_desc": "クリックが記録されるまでの押下ストロークを設定します。浅いほど高速にトリガーされ、深いほど誤操作しにくくなります。",
+      "magnet_mode": "磁気スイッチ",
+      "motor_trigger": "触覚フィードバック設定",
+      "right_btn": "右ボタン",
+      "shared_btn": "マウスボタン",
+      "title": "マウスキートリガー設定",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "作動ストローク設定"
+    },
+    "key": {
+      "backward": "戻る",
+      "brightnessDown": "画面輝度を下げる",
+      "brightnessUp": "画面輝度を上げる",
+      "calculate": "電卓",
+      "colorSwitch": "Lamp color switching",
+      "copy": "コピー",
+      "customDpi": "カスタムDPI",
+      "cut": "カット",
+      "dock": "Dock オン/オフ",
+      "downScroll": "下スクロール",
+      "dpiLoop": "DPIサイクル",
+      "email": "メール",
+      "forward": "進む",
+      "he": "光学/磁気マイクロモーション",
+      "home": "デスクトップを表示",
+      "homePage": "ホームページを開く",
+      "launchPad": "Launchpad",
+      "left": "左クリック",
+      "leftClick": "左クリック",
+      "leftDouble": "左ダブルクリック",
+      "leftLock": "左クリックロック",
+      "leftScroll": "左スクロール",
+      "leftScrollSustain": "左へ連続スクロール",
+      "leftTilt": "左に傾ける",
+      "left_lock": "左クリックロック",
+      "lickDoubleClick": "左ダブルクリック",
+      "light": "ランプ効果",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "ループ",
+      "loopColorfulBreathing": "カラフルブリージングサイクル",
+      "loopDpi": "DPIサイクル",
+      "loopOpticalMagnetic": "光学磁気サイクル",
+      "loopPollingRate": "ポーリングレートサイクル",
+      "middle": "ミドルクリック",
+      "middleClick": "中クリック",
+      "modeToggleAll": "光学/磁気マイクロモーション",
+      "mute": "ミュート",
+      "myComputer": "マイコンピュータ",
+      "next": "次へ",
+      "nextDpi": "次のDPI",
+      "nextPollingRate": "次のポーリングレート",
+      "pageDown": "ページダウン",
+      "pageUp": "ページアップ",
+      "paste": "貼り付け",
+      "pause": "再生/一時停止",
+      "player": "プレーヤー",
+      "prevDpi": "前のDPI",
+      "previous": "前へ",
+      "prevPollingRate": "前のポーリングレート",
+      "refresh": "リフレッシュ",
+      "restoreFactory": "工場出荷時設定にリセット",
+      "right": "右クリック",
+      "rightClick": "右クリック",
+      "rightScroll": "右スクロール",
+      "rightScrollSustain": "右へ連続スクロール",
+      "rightTilt": "右に傾ける",
+      "screenshot": "スクリーンショット",
+      "scrollLeftClick": "スクロール左クリック",
+      "scrollRightClick": "右クリック",
+      "sideKey": "サイドキー",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "停止",
+      "swichLight": "ライト効果の切り替え",
+      "switchApp": "アプリケーション切り替え",
+      "task": "Mission Control",
+      "trackballToScroll": "トラックボールをスクロールに変換",
+      "upScroll": "上にスクロール",
+      "volumeDown": "音量-",
+      "volumeUp": "音量+",
+      "webLessen": "縮小",
+      "webMagnify": "拡大"
+    },
+    "keyboard": "キーボード",
+    "key_fun": {
+      "basic": "基本ボタン",
+      "disable": "ボタンを無効化",
+      "dpi": "DPI",
+      "game": "ゲーミングキー",
+      "game_tip": "割り当てたキーを押し続けると、選択したキー入力を自動的に繰り返し出力でき、回数と頻度をカスタマイズできます。",
+      "keyboard": "キーボードショートカット",
+      "keyboard_tip": "複数の修飾キーを選択してから、通常キーを追加できます。入力ボックスをクリックしてキーを入力するか、右側からキーコードを選択します。",
+      "macro": "マクロ",
+      "media": "マルチメディアキー",
+      "pollingRate": "ポーリングレート",
+      "profile": "プロファイル",
+      "sensitive": "感度",
+      "shortCut": "ショートカットキー"
+    },
+    "key_game": {
+      "count": "回数",
+      "infinite": "無制限",
+      "rate": "レート"
+    },
+    "light": {
+      "colorFlowing": "ワーウィック ストリーマー",
+      "flashLight": "点滅するネオンライト",
+      "fullColorCycle": "フルカラーサイクル",
+      "soleBreathe": "ブリージング",
+      "soleFlowing": "競馬",
+      "soleLight": "ソリッドカラー"
+    },
+    "menu": {
+      "angle": "角度調整",
+      "dpi": "DPI 設定",
+      "key": "カスタマイズ",
+      "light": "ライト",
+      "macro": "マクロ",
+      "poll_rate": "ポーリングレート",
+      "profile": "プロファイル",
+      "sys": "アドバンス"
+    },
+    "mouse": "マウス",
+    "polling_rate": {
+      "daily": "オフィス",
+      "fps20k": "センサーサンプリングモード",
+      "game": "ゲーミング",
+      "office_mode": "標準モード",
+      "office_mode_desc": "滑らかな操作と安定したスキャン",
+      "rage_content": "競技モードを有効にすると消費電力が増加します。",
+      "rage_desc": "≥20Kのセンサースキャンレートで、より低い遅延と高い精度を実現します。消費電力は高くなります。",
+      "rage_mode": "競技モード",
+      "rage_title": "競技モードを有効にしてよろしいですか？"
+    },
+    "profile_tab": {
+      "changeIcon": "アイコンを変更",
+      "selectMode": "選択モード"
+    },
+    "scroll": {
+      "acceleration": "速度加速",
+      "consecutive_times": "連続スクロール回数",
+      "demo": "スクロールデモ",
+      "direction": "スクロール方向",
+      "duration": "スクロール時間",
+      "interval": "スクロール間隔(ms)",
+      "scroll": "横スクロール",
+      "speed": "スクロール速度",
+      "step": "最小スクロールステップ",
+      "tip_acceleration": "スクロール加速を現在の値の倍数に設定します。",
+      "tip_consecutive_times": "連続スクロール後、自動的にスムーズスクロールに切り替わります",
+      "tip_demo": "ここで拡張スクロール設定を試すことができます",
+      "tip_direction": "マウススクロールの方向を変更",
+      "tip_disconnect": "スクロール拡張を使用するには、Assistをダウンロードする必要があります",
+      "tip_interval": "連続スクロールの間隔時間",
+      "tip_speed": "スクロール速度を上げる"
+    },
+    "shortcut_tooltip": {
+      "general": "以下の機能を設定すると、MacシステムとWindowsシステムの両方で有効になります",
+      "mac": "以下の機能を設定すると、Macシステムでのみ有効になります",
+      "win": "以下の機能を設定すると、Windowsシステムでのみ有効になります"
+    },
+    "sys": {
+      "angle": "角度調整",
+      "angle_correction_after": "調整後",
+      "angle_correction_no": "調整前",
+      "angle_preview": "前後の比較",
+      "angle_reset_btn": "0°にリセット",
+      "backward": "反転",
+      "battery_indicator": "バッテリーインジケーター",
+      "delay": "デバウンス時間",
+      "forward": "標準",
+      "funConfig": "マウスシステム機能",
+      "keyResponseTime": "キー応答時間",
+      "leftLock": "左クリックロック",
+      "line": "アングルスナップ",
+      "lock": "ロック",
+      "lod": "リフトオフ距離",
+      "motion": "モーションシンク",
+      "pairBond": "ペアリングショートカット",
+      "pairLimit": "ペアリングキーは1〜3キーのみ対応しています。",
+      "power": "電源管理",
+      "respSeconds": "応答時間（ミリ秒）",
+      "scroll": "スクロール方向",
+      "sensor": "センサー性能",
+      "sleep": "デバイススリープ",
+      "unlock": "ロック解除",
+      "wave": "リップルコントロール"
+    },
+    "tip": {
+      "leftLock": "左クリック設定がロックされており、設定できません。"
+    },
+    "tips": {
+      "advanceDelayDesc": "アドバンスモードでは、各キーに独立した応答遅延（0〜20ミリ秒）を個別に設定できます。",
+      "angleDesc": "マウスセンサーの角度を調整して、傾いた状態でも正確な水平移動を実現します。",
+      "delayDesc": "マウスの高速クリックやジッターによる誤トリガーを防ぐため、遅延時間を設定します。",
+      "factorySetDesc": "このボタンをクリックすると、デバイスの現在の設定が消去され、工場出荷時のデフォルトに戻ります",
+      "fps20kDesc": "マウスセンサーは毎秒20,000フレームのマウスパッド表面画像をキャプチャし、正確で遅延のないトラッキングを提供します。",
+      "indicatorDesc": "このスイッチは、2.4Gモードでの通常のバッテリー状態の表示のみを制御します",
+      "leftLockDesc": "「左クリックロック」がオンの場合、左ボタンは再マッピングできません。",
+      "lineDesc": "手の小さなジッターをインテリジェントにフィルタリングして、水平・垂直方向の軌跡のずれを減らします。",
+      "lodCurr": "現在のマウスのリフトオフ距離",
+      "lodDesc": "マウスの動きが検出および追跡される最大の動作距離。",
+      "motionDesc": "センサーデータとシステム応答を同期して、カーソルのジャンプやカクつきを減らします。",
+      "pairBondDesc": "キーの組み合わせをカスタマイズし、4秒間同時に押すとBluetooth/2.4Gペアリングモードに入ります。",
+      "scrollDirDesc": "マウスホイールを上下にスクロールしたときの画面上のコンテンツの移動方向を設定します",
+      "sensorDesc": "直線、円、その他の軌跡を描く際のマウスの精度と安定性を向上させます。",
+      "sleepDesc": "ワイヤレスモードで、デバイスが一定時間アイドル状態になると自動的にスリープすることをサポートします。",
+      "waveDesc": "手の微細な震えによる波状の軌跡を減らし、カーソルの動きをより滑らかにします。"
+    },
+    "wheel": {
+      "adjustTimeout": "キャリブレーションタイムアウト",
+      "sensitivity": "感度"
+    }
+  },
+  "notify": {
+    "emptyHid": "HIDデバイスが選択されていません",
+    "fail": "失敗",
+    "fr_not_connect": "デバイスがスリープに入るとドライバーを使用できません。デバイスの任意のキーに触れてウェイクアップできます",
+    "hidAlreadyConnected": "HIDデバイスが接続されました",
+    "hidConfNotBrand": "現在のブランドのデバイスはサポートされていません",
+    "hidConfNotFound": "有効なHIDデバイス構成が見つかりません",
+    "hidDeviceNotFount": "HIDデバイスが存在しない",
+    "hidUnconnected": "HIDデバイスが接続されていません",
+    "import": {
+      "layout": "キーボードのレイアウトが正常にインポートされました。",
+      "title": "インポート成功"
+    },
+    "invalid_macro_json": "無効な構成",
+    "invalid_rgb_json": "無効な構成",
+    "keyboard_not_support_wireless": "このキーボードのファームウェアはワイヤレスをサポートしていません",
+    "keycodeNotFound": "キーコード設定エラー",
+    "limited": "上限を超えました",
+    "macroSizeLimit": "マクロサイズが使用可能サイズを超えています",
+    "notSupportHid": "このデバイスはHIDサービスの対象外です",
+    "sleep": "接続されたデバイスがないか、デバイスがスリープモードになっています。",
+    "success": "成功",
+    "success_competitive": "競技モードへの切り替えに成功しました",
+    "success_connect": "接続に成功しました",
+    "success_office": "標準モードへの切り替えに成功しました",
+    "unknownErr": "不明なエラー"
+  },
+  "onboarding": {
+    "completed": "ガイドが正常に完了しました 🎉",
+    "connect": {
+      "description": "USBケーブルでキーボードをコンピューターに接続し、「接続」をクリックして、ダイアログでデバイスを選択します。",
+      "title": "キーボードを接続"
+    },
+    "entry": "はじめに",
+    "flow": {
+      "connect": "デバイスを接続",
+      "keymap": "キーの再マッピング",
+      "light": "バックライト効果"
+    },
+    "hint": "ハイライトされた領域をクリックして操作を完了するか、「ガイドをスキップ」をクリックします。",
+    "keymap": {
+      "select_a": {
+        "description": "下の機能パネルで「A」をクリックすると、スペースキーがAに変更されます。完了するとガイドは自動的に閉じます。",
+        "title": "ステップ 2・「A」に変更"
+      },
+      "select_space": {
+        "description": "まずキーボード下部の「スペースキー」をクリックして選択します。",
+        "title": "ステップ 1・「スペースキー」を選択"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "右側のカラーピッカーで色を緑に設定します（ピッカーをドラッグするか、RGB 0, 255, 0 を入力）。設定するとガイドは自動的に閉じます。",
+        "title": "ステップ 2・緑に設定"
+      },
+      "select_static": {
+        "description": "下のライト効果リストで「Solid Color」を選択して、キーボードを静的単色効果に設定します。",
+        "title": "ステップ 1・「Solid Color」を選択"
+      }
+    },
+    "skip": "ガイドをスキップ",
+    "step": "ステップ"
+  },
+  "screen": {
+    "format": {
+      "limit": "画像形式はPNG、JPG、GIFのみ可能です"
+    },
+    "resolution": {
+      "limit": "画像サイズは240×240を超えることはできません"
+    },
+    "size": {
+      "limit": "画像ファイルサイズは300KBを超えることはできません"
+    },
+    "upload": {
+      "format": "PNGまたはJPG（最大500KB）"
+    }
+  },
+  "selection": {
+    "limitation": "この機能では最大{{count}}個のキーを選択できます"
+  },
+  "setting": {
+    "debounce": {
+      "scan": "スキャン間隔"
+    },
+    "file_extra_properties_not_supported": "ファイルに未対応の属性が含まれています。",
+    "file_import_failed": "ファイルのインポートに失敗しました",
+    "file_upload_no_config_file": "構成ファイルが検出されません。アップロードしてください。",
+    "info": "デバイス情報",
+    "infos": {
+      "bluVersion": "Bluetoothバージョン",
+      "deviceDesc": "ファームウェアバージョン",
+      "name": "製品名"
+    },
+    "json_config": "Json設定",
+    "lng": "言語",
+    "log": "実行ログ",
+    "onlyview": "このキーボードは設定を変更できません",
+    "other": "その他",
+    "others": {
+      "debounce": {
+        "name": "キー遅延応答",
+        "tip": "有効にすると、最小遅延応答を0msに設定できます",
+        "title": "最小値を調整",
+        "warning": {
+          "title": "有効にしてよろしいですか？"
+        }
+      }
+    },
+    "theme": "テーマ切り替え",
+    "updateLog": "バージョン履歴"
+  },
+  "snap": {
+    "list": "コマンド割り当てリスト"
+  },
+  "test": {
+    "btn": {
+      "reset": "再テスト",
+      "reset_bindings": "バインドをクリア"
+    },
+    "msg": {
+      "bind_success": "{{count}} 個のキーが {{audioName}} にバインドされました",
+      "bind_success_single": "{{keyName}} キーが {{audioName}} にバインドされました",
+      "no_key_selected": "バインドするキーを先に選択してください",
+      "reset_success": "リセットに成功しました",
+      "storage_full": "ストレージ容量が不足しています",
+      "unsupported_format": "サポートされていない音声形式です。MP3、WAV、OGG、M4Aを使用してください",
+      "upload_success": "音声のアップロードに成功しました"
+    },
+    "per_key_sound": {
+      "desc": "各キーに個別の効果音を割り当てます。この機能を無効にすると、すべてのキーが選択した効果音をデフォルトで使用します。",
+      "tip": "非テストマトリックスモードでは、統一されたキー応答音のみ設定できます。"
+    },
+    "sound": {
+      "tip": "スイッチがオンのとき、キーのテストで音によるフィードバックが有効になります。お好みのサウンドを選択できます。"
+    },
+    "sound_btn": {
+      "Balloon": "風船",
+      "CarHorn": "CarHorn",
+      "Cartoon": "漫画",
+      "CoinCollecting": "コイン収集",
+      "custom": "カスタム",
+      "default": "デフォルト",
+      "DogBarking": "犬の鳴き声",
+      "Donkey": "ロバ",
+      "Glass": "ガラス",
+      "PartyHorn": "パーティーホーン",
+      "PhoneDial": "電話ダイヤル",
+      "Punch": "パンチ",
+      "RubberChicken": "ラバーチキン",
+      "RubberToy": "ラバートイ",
+      "Sneeze": "くしゃみ"
+    },
+    "title": {
+      "custom_sound": "カスタムサウンドライブラリ",
+      "per_key_sound": "キーごとのサウンド割り当て",
+      "reset_custom_bindings": "音声バインディングをリセットしてよろしいですか？",
+      "sound": "サウンドエフェクトを有効にする",
+      "sound_effect": "サウンドエフェクト選択",
+      "uploaded_sounds": "アップロード済みの効果音"
+    },
+    "upload": {
+      "browse": "クリックしてアップロード",
+      "info": "対応形式：MP3、WAV、OGG、M4A・合計上限：25 MB・推奨音声時間：1〜2秒",
+      "placeholder": "音声ファイルをここにドラッグ＆ドロップ、または"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "先にキーを選択してください"
+    },
+    "key": {
+      "direction": "8方向を切り替え ",
+      "gesture": "ボールジェスチャ",
+      "held": "ホールド",
+      "scroll": "ボールスクロール",
+      "tap": "タップ"
+    },
+    "keycode": {
+      "key": "通常キー",
+      "modifiers": "修飾キー"
+    },
+    "key_fun": {
+      "basic": "基本",
+      "comb": "ショートカット",
+      "feature": "OctaShift",
+      "keyCombination": "ショートカット",
+      "layer": "レイヤー",
+      "macro": "マクロ",
+      "simulate": "同時押し",
+      "single": "応用",
+      "special": "特殊キー",
+      "trackball": "トラックボール"
+    },
+    "onlyOneNormalKey": "設定できる標準キーは1つのみです",
+    "placeholder": {
+      "selectionKeys": "選択キー"
+    },
+    "selectInputFirst": "先に入力ボックスを選択してください",
+    "slide": {
+      "leftSlide": "左",
+      "rightSlide": "右",
+      "underSlide": "下",
+      "upSlide": "上"
+    },
+    "tips": {
+      "angleGearsDesc": "例：キー4に「90°」を割り当てた場合、キー4をクリックすると現在のレイヤーの使用向きが90°（横向き）に設定されます。",
+      "directionDesc": "例：キー4に「8方向を切り替え」機能を割り当てた場合、キー4をクリックするたびに、トラックボールの方向が時計回りに45度回転します",
+      "disTapLayer": "レイヤーは長押しでのみ設定できます",
+      "disTwoMs": "2つのマウスキーを同時に設定することはできません",
+      "gestureDesc": "例：Key 4に「Gesture Mode」が割り当てられており、かつ「Trackball」セクション内で任意のキー値が設定されている場合、その後、Key 4を押しながらトラックボールを上下左右にスライドさせると、前述のキー値が出力されます。",
+      "held": "（長く押し続けたとき）",
+      "knobNotSupportSet": "ノブはこの機能を設定できません",
+      "layerDesc1": "0〜7層に対応し、各層のキーはそれぞれ異なる角度や機能に設定可能です。",
+      "layerDesc2": "例：レイヤー0のキー4には「スクロール（上/下）」を割り当て、レイヤー1のキー4には「8方向トグル」を割り当てることができます。",
+      "layerHeaderDesc": "デフォルトレイヤーは 0 です。 以下はレイヤーを有効・無効にするコマンドです。 複数のレイヤーが有効な場合、数字の大きいレイヤーのキーマップが優先されます。 基本的には、一時的に使うレイヤーには MO(n)、切り替えて使うレイヤーには TO(n) を使うのがおすすめです。 ※TG(n) はオン／オフの状態を自分で管理する必要があるため、意図しないレイヤーが有効なまま残ることがあります。",
+      "layerMODesc": "キーを押している間だけ、レイヤー n を有効にします。 キーを離すと、元の状態に戻ります。 Fn キーのように、一時的に別レイヤーを使いたいときに向いています。",
+      "layerTGDesc": "レイヤー n の有効／無効を切り替えます。 レイヤー n が無効なら有効にし、有効なら無効にします。 キーを離しても状態は変わらず、もう一度押すまで維持されます。 常にオン／オフを意識して使う必要があるため、通常は MO(n) または TO(n) のほうが扱いやすいです",
+      "layerTODesc": "一度押すと、レイヤー n に切り替えます。 このとき、デフォルトレイヤー以外の他のレイヤーはすべて無効になります。 特定のレイヤーをメインの操作レイヤーとして使いたいときに向いています。",
+      "scrollDesc": "例：キー4に「垂直スクロール」を割り当てると、キー4を押している間、トラックボールでウィンドウの垂直方向の移動を操作できるようになります。",
+      "selectKey": "選択キー",
+      "simulateAlreadyAddRow": "追加する前に、現在のリスト内容を先に送信してください",
+      "simulateAlreadyExists": "この数字キーの組み合わせは既に存在します",
+      "simulateAntiGhosting": "このキーの組み合わせはリセット機能です。他の組み合わせを設定してください",
+      "simulateMaxLen": "最大4つのキーのみ選択できます",
+      "simulateMaxList": "最大保存数量を超えました",
+      "simulateMinLen": "少なくとも2つのキーを選択してください",
+      "tap": "（短く押したとき）",
+      "title_placehokder": "タイトルを入力",
+      "title_placeholder": "タイトルを入力"
+    },
+    "title": {
+      "advanceFeatures": "レイヤー操作キー",
+      "basickey": "基本キー",
+      "bindList": "同時押しリスト",
+      "defaultFeatures": "オクタシフト",
+      "dpiReturnRate": "DPI／ポーリングレート",
+      "gesture": "トラックボールジェスチャ",
+      "modifierKey": "修飾キー"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcherは選択されたデバイスのVIA jsonファイルを必要とします。下の「確認」ボタンをクリックし、選択されたデバイスのjsonファイルをアップロードしてください。VIA jsonファイルは製品提供元から入手できます。",
+      "title": "VIA JSONファイルのアップロード"
+    }
+  }
+}
