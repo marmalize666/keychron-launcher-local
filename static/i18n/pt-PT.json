@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Aviso:"
+    },
+    "debounce": {
+      "defer_global": "Debouncing por teclado. Em qualquer alteração de estado, é definido um temporizador global. Quando não ocorrem alterações durante DEBOUNCE milissegundos, todas as alterações de entrada são enviadas. Este é o algoritmo de melhor desempenho com menor utilização de memória e é resistente ao ruído.",
+      "defer_per_key": "Debouncing por tecla. Em qualquer alteração de estado, é definido um temporizador por tecla. Quando DEBOUNCE milissegundos sem alterações ocorrem nessa tecla, a alteração do estado da tecla é enviada",
+      "eager_defer_per_key": "Debouncing por tecla. Numa mudança de estado de tecla pressionada, a resposta é imediata, seguida por DEBOUNCE milissegundos sem nenhuma entrada adicional para essa tecla. Numa mudança de estado de tecla solta, um temporizador por tecla é definido. Quando DEBOUNCE milissegundos sem nenhuma mudança ocorrerem nessa tecla, a mudança de estado de tecla solta é enviada.",
+      "eager_per_key": "Antirricochete por tecla. Em qualquer alteração de estado, a resposta é imediata, seguida por milissegundos de antirricochete sem mais entradas para essa tecla",
+      "none": "Não é realizado nenhum processamento de debounce",
+      "tip": {
+        "1": "“EAGER PER KEY” é o modo de debounce recomendado, no qual, quando pressiona uma tecla, ela responde imediatamente, mas todas as entradas posteriores dessa tecla serão ignoradas nos segundos de resposta que escolher",
+        "2": "Se pretender selecionar outros modos de debounce, clique no botão «?» na parte superior para obter a explicação dos outros modos de debounce.",
+        "3": "Quando os segundos de resposta estão próximos de 0 ms, pode ocorrer o problema do clique duplo"
+      }
+    },
+    "macro": {
+      "gesture": "Manter o modo gesto sempre ativado",
+      "gesture_description": "Após ativar, não é necessário atribuir uma tecla de gesto.",
+      "gesture_not_configured": "Não foi possível abrir. Vá para « Função de tecla – Trackball » para definir o valor de saída.",
+      "scroll": "Manter o modo de rolagem sempre ativado",
+      "scroll_description": "Após a ativação, não é necessário associá-lo às teclas de gesto.",
+      "title": "Comportamento do gesto (selecione uma opção)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) é uma tecnologia de entrada de teclado que permite pressionar simultaneamente um número ilimitado de teclas sem conflitos de entrada ou sinais perdidos. Desativar o NKRO significa que o teclado registrará corretamente até 6 pressionamentos simultâneos de teclas",
+      "title": "Definição NKRO"
+    },
+    "performance": {
+      "mode_battery": "Modo de bateria",
+      "mode_high": "Modo de alto desempenho",
+      "mode_normal": "Modo padrão",
+      "title": "Mudança do modo de desempenho"
+    },
+    "poll_rate": "Definição da taxa de sondagem",
+    "poll_rate_tip": {
+      "bt": "Modo de ligação Bluetooth",
+      "bt_desc": "No modo de ligação Bluetooth, a taxa de sondagem é fixada em 125 Hz. Esta configuração não pode ser alterada devido a limitações de ligação.",
+      "fr": "Modo de ligação de 2,4 GHz",
+      "usb": "Modo de ligação por cabo"
+    },
+    "sleep": {
+      "backlight": "Hora de desligamento automático da retroiluminação",
+      "magnet": "Tempo de inatividade da matriz de varredura do teclado",
+      "magnet_range": "O tempo de inatividade da matriz de digitalização deve ser maior do que o atraso de desligamento da luz de fundo e menor do que o período de tempo limite de suspensão.",
+      "magnet_tip": "Tempo de inatividade da varredura da matriz do teclado com efeito Hall deve ser superior a 60 segundos",
+      "time": "Hora de início do modo de suspensão automática"
+    },
+    "tips": {
+      "keepLayer_close": "2. Se esta opção estiver desativada, o NapePro alternará junto com a « Camada 1 » quando você acessar a tela de edição « Camada 1 ».",
+      "keepLayer_enable": "1. Se esta opção estiver ativada, por exemplo, se o NapePro estiver rodando na « Camada 0 », ele permanecerá na « Camada 0 » mesmo se você acessar a tela de edição « Camada 1 »."
+    },
+    "title": {
+      "keepLayer": "Modo de edição de camadas"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Dispositivo conectado",
+        "idle": "Toque para conectar o dispositivo",
+        "pending": "Iniciando autorização..."
+      },
+      "download_assistant": {
+        "idle": "Clique para baixar o Assistant mais recente"
+      },
+      "resume_assistant": {
+        "done": "Continuar processando",
+        "idle": "Assistant ativado",
+        "pending": "Continuando o processamento...",
+        "prompt": "Abri"
+      },
+      "undo_remap": {
+        "done": "Remapeamento de teclas desfeito",
+        "idle": "Desfazer este remapeamento de teclas",
+        "pending": "Desfazendo..."
+      }
+    },
+    "clear_tooltip": "Limpar conversa",
+    "close_tooltip": "Fechar",
+    "deep_thinking": "Raciocínio profundo",
+    "generated_content_notice": "O conteúdo gerado por IA pode conter erros. Verifique.",
+    "input_placeholder": "Perguntar ao Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Focar em resposta rápida",
+        "label": "Mais rápido"
+      },
+      "deepseek-v4-pro": {
+        "description": "Para tarefas mais complexas",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Equilibrado",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "A execução foi concluída, mas nenhuma resposta exibível foi recebida.",
+    "pin": {
+      "tooltip_off": "Desafixar",
+      "tooltip_on": "Fixar janela de conversa"
+    },
+    "pinned_success": "A janela de diálogo está fixada e não pode ser arrastada.",
+    "quick": {
+      "connect_keyboard": "Remapear a tecla Espaço para A",
+      "remap_space": "Alterar o efeito de luz para Band Spiral Val",
+      "set_light": "Abrir Discord"
+    },
+    "result": {
+      "connect_failed": "Falha na conexão: {{error}}",
+      "device_connected": "Dispositivo conectado",
+      "no_device_undo": "Nenhum dispositivo está conectado, portanto o remapeamento não pode ser desfeito.",
+      "no_remap_to_undo": "Não há remapeamento para desfazer.",
+      "undo_failed": "Falha ao desfazer o remapeamento: {{error}}",
+      "undo_success": "O último remapeamento foi desfeito e {{count}} tecla(s) restaurada(s)."
+    },
+    "select_model": "Selecionar modelo",
+    "status": {
+      "answering": "Respondendo",
+      "executing": "Executando",
+      "loading": "Carregando",
+      "thinking": "Pensando",
+      "verifying": "Verificando"
+    },
+    "stopped": "Parado",
+    "title": "Keychron AI",
+    "unpinned_success": "Desafixado",
+    "welcome": "Olá! O « Assistente Keychron AI » pode ajudá-lo a conectar dispositivos, remapear teclas, personalizar efeitos RGB, criar macros e muito mais."
+  },
+  "application": {
+    "addr": "Página web de arranque rápido",
+    "add_addr": "Adicionar endereço",
+    "apple_silicon_version": "Download para Apple Silicon (.pkg)",
+    "app_duplicate": "A aplicação já existe, não é necessário adicioná-la novamente.",
+    "app_hint": "Pode definir uma tecla de atalho, selecionar o software que deseja abrir rapidamente e, em seguida, associá-lo a uma tecla.",
+    "app_placeholder": "Selecione uma aplicação",
+    "clear_all": "Limpar tudo",
+    "desktop_old_content": "Baixe e instale a versão mais recente do serviço de desktop para usar este recurso.",
+    "desktop_old_title": "Serviço de desktop desatualizado detectado.",
+    "download_keychron_assistant": "Se não estiver instalado, clique para fazer o download",
+    "download_new_assistant_tip": "Baixe a versão mais recente do Keychron Assistant para usar todos os recursos.",
+    "download_zip_tip": "Aviso?Antes de instalar o Keychron Assist, é necessário descomprimir o ficheiro descarregado.",
+    "file_not_found": "O arquivo não existe",
+    "intel_version": "Download para Macs Intel (.dmg)",
+    "keySetting": "Esta tecla já tem um atalho!",
+    "key_no_conf": "Nenhuma tecla de atalho foi definida",
+    "limited": "Limite máximo excedido. Atualmente, o limite para lançamentos rápidos é 5. Pretendemos aumentar este número no futuro",
+    "need_keychron_assistant": "Esta funcionalidade requer que o Keychron Assistant esteja em execução",
+    "no_key_selected": "Nenhuma tecla selecionada",
+    "open_assistant_no_response_tip": "Se nada acontecer após clicar em « Abrir », baixe o Assistant mais recente e tente novamente.",
+    "open_tip1": "1. O recurso de início rápido consiste em vincular o aplicativo que você deseja abrir rapidamente a um botão. Ao clicar nesse botão, o aplicativo é aberto rapidamente.",
+    "open_tip2": "2. Baixe o Assist primeiro e adicione o aplicativo a ser aberto rapidamente. Depois, volte ao iniciador do teclado para vincular e acionar as teclas.",
+    "select_key_to_bind": "Selecione as teclas do teclado para associar esta configuração",
+    "soft": "Aplicação de início rápido",
+    "submit_hint": "Selecione o software que deseja abrir rapidamente e clique em [Enviar]. Após o envio, a abertura rápida pode ser ativada e utilizada",
+    "title_placeholder": "Título personalizado (opcional)",
+    "unsupported_feature": "Recurso não compatível",
+    "unsupported_feature_download_new_version": "Este recurso não é compatível. Baixe a versão mais recente para experimentá-lo.",
+    "url": "Abra rapidamente uma página da Web",
+    "url_hint": "Pode definir uma tecla de atalho, selecionar o endereço da web que deseja abrir rapidamente e, em seguida, associá-lo a uma tecla",
+    "url_placeholder": "Insira um URL válido"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Continuar",
+      "later": "Mais tarde",
+      "openSystemPreferences": "Abrir Preferências do Sistema",
+      "restartMessage": "A permissão de acessibilidade foi concedida com sucesso. É necessário reiniciar o aplicativo para que faça efeito.",
+      "restartNow": "Reiniciar agora",
+      "restartTitle": "Permissão concedida",
+      "step1": "Clique no botão abaixo para acessar a página de permissões de acessibilidade do sistema.",
+      "step2": "Encontre e ative o interruptor do Launcher Assistant para autorizar.",
+      "step3": "Digite sua senha",
+      "step4": "Após a autorização, saia do aplicativo e abra-o novamente para que as alterações tenham efeito.",
+      "welcomeTitle": "Bem-vindo ao Assistente de Utilização"
+    },
+    "click_no_response_tip": "Abra as configurações do mouse do seu computador para ajustar as opções de ponteiro, rolagem e clique.",
+    "common": {
+      "add": "Adicionar",
+      "back": "Voltar",
+      "delete": "Apagar",
+      "info": "Informações",
+      "refresh": "Atualizar",
+      "settings": "Definições"
+    },
+    "hint_reset": "Detetada alteração no dispositivo. Devido a diferenças no layout, algumas teclas podem não funcionar conforme mostrado no Guia de Início Rápido. Deseja redefinir as configurações para corresponder ao novo layout?",
+    "hint_reset_1": "Detetou que mudou para um dispositivo diferente. Deseja redefinir as suas configurações?",
+    "hint_reset_2": "(Observação: devido às diferenças no layout das teclas entre os modelos, a exibição do Quick Start pode não corresponder às funções reais, resultando em teclas não funcionais.)",
+    "home": {
+      "addAddress": "Adicionar endereço",
+      "addSoftwareDescription": "Adicione o software que deseja abrir rapidamente abaixo e clique em «Início rápido» para vincular o botão no iniciador",
+      "delete": "Elimine",
+      "onceAddedDescription": "Depois de adicionar a sua aplicação abaixo, clique no botão para voltar",
+      "quickStartApplication": "Aplicação de início rápido",
+      "search": "Pesquisar",
+      "setUpQuickStart": "Configurar início rápido",
+      "tooltipText1": "1. A função de início rápido refere-se à ligação da aplicação que pretende iniciar rapidamente a um determinado botão. Clique no botão para iniciar rapidamente.",
+      "tooltipText2": "2. Clique no sinal \\\"+\\\" abaixo para selecionar o início rápido que deseja iniciar e clique em \\\"Abrir Início Rápido\\\" para voltar ao iniciador para definir teclas e iniciar."
+    },
+    "license": {
+      "agree": "Concordo",
+      "disagreeAndWithdraw": "Discordar e retirar",
+      "userLicenseAgreement": "Contrato de licença do utilizador",
+      "welcomeDescription": "Aceite os",
+      "welcomeDescriptionEnd": "para que possamos atendê-lo melhor",
+      "welcomeTitle": "Bem-vindo ao Assistente de Utilização"
+    },
+    "open_title": "1. Você precisa baixar o Assist para usar o início rápido.",
+    "open_title2": "2. Devido às atualizações do software, é recomendável baixar e instalar a versão mais recente do Assist.",
+    "settings": {
+      "aikeyUpdate": "Atualização do AIKey: adicionadas predefinições personalizadas e ativação rápida, otimização do envio de comandos e do processamento de respostas, melhorando notavelmente a estabilidade e a facilidade de uso.",
+      "autostart": "Iniciar automaticamente na inicialização",
+      "currentLatestVersion": "versão mais recente atual",
+      "endUserLicenseAgreement": "Contrato de Licença de Utilizador Final",
+      "fixedKnownIssues": "Problemas conhecidos corrigidos",
+      "interfaceOptimization": "Otimização da interface",
+      "language": "Idioma",
+      "mosUpdate": "Otimização do algoritmo de rolagem/aceleração MOS: curva de aceleração e estratégia de amostragem reconstruídas para uma experiência mais suave e consistente em baixa e alta velocidade, com menos tremor e latência.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. A marca Keychron Assistant pertence à Keychron.",
+      "nkroDescription2": "Desativar o NKRO significa que o teclado registará corretamente até 6 pressionamentos de teclas simultâneos.",
+      "selectLanguage": "selecionar idioma",
+      "title": "Definições",
+      "updateLog": "Registo de atualizações"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Interruptor magnético Gateron Jade",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetic Switc",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Algumas teclas não foram calibradas, verifique o interruptor no teclado e a configuração das teclas!",
+    "set_successfully": "A configuração do interruptor foi alterada com sucesso.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Verifique se o interruptor magnético substituído no teclado é consistente com a opção de interruptor magnético selecionada",
+    "sure_content2": "Clique no botão «Confirmar» abaixo para aceder à página de calibração e calibrar estas teclas.",
+    "sure_title": "Tem a certeza de que deseja alterar o tipo de interruptor?",
+    "switch_type_settings": "Configurações do tipo de interruptor",
+    "tip": {
+      "1": "Esta funcionalidade permite definir o tipo de interruptor magnético de todo o teclado. Após configurá-lo, a cor da borda das teclas mudará de acordo com o tipo de interruptor magnético escolhido. A ordem de configuração é a seguinte:",
+      "2": "Substitua primeiro todos os interruptores magnéticos do teclado (o teclado inteiro só suporta um tipo de interruptor magnético) e verifique se os interruptores substituídos estão na lista abaixo.",
+      "3": "Escolha a opção do tipo de interruptor magnético abaixo e clique no botão «Definir todas as teclas» para concluir a configuração.",
+      "4": "Recalibre todas as teclas para evitar o impacto das diferenças nos tipos de interruptores magnéticos"
+    },
+    "tip_reset": "Clicar neste botão de reinicialização irá limpar todos os itens de inicialização rápida configurados anteriormente.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "Interruptor magnético TTC KOM"
+  },
+  "common": {
+    "advance": "Avançado",
+    "basic": "Básico",
+    "beta_test_version": "Versão beta",
+    "cancel": "Fechar",
+    "cancel_btn": "Cancelar",
+    "clear": "Limpar",
+    "close": "Desligado",
+    "connected": "Conectado",
+    "connect_btn": "Ligar",
+    "connect_tip": "Deseja ligar a um dispositivo HID",
+    "create": "Criar",
+    "delete": "Eliminar",
+    "deleteConfirm": "Confirmar para redefinir estes dados?",
+    "disconnected": "Não conectado",
+    "download": "Transferir",
+    "empty": "Vazio",
+    "error": "Erro",
+    "export": "Exportar",
+    "general": "Geral",
+    "hide": "Ocultar",
+    "iknow": "Entendi",
+    "import": "Importação",
+    "is": "Sim",
+    "keyboard": "Teclado",
+    "key_back": "Reverter",
+    "key_confirm": "Confirmar",
+    "loading": "Carregando...",
+    "matrix": "Matriz de teste",
+    "max_string_length": "O texto excede o comprimento máximo",
+    "min": "Minutos",
+    "mouse": "Rato",
+    "noResult": "Sem resultados",
+    "not": "Não",
+    "notSubmit": "Dados não enviados. Enviar agora?",
+    "on": "ligado",
+    "open": "Ligar",
+    "paired": "Emparelhado",
+    "plugged_in": "Conectado",
+    "plug_and_ret": "Conecte o dispositivo e tente novamente.",
+    "plug_and_retry": "Conecte o dispositivo e tente novamente.",
+    "recover": "Recuperar",
+    "reset": "Repor",
+    "resetLayout": "Redefinir layout",
+    "reset_single": "Redefinição única",
+    "resolution_not_support": "O mapa do teclado não pode ser exibido porque a janela do navegador é muito pequena",
+    "results": "Resultados",
+    "save": "Guardar",
+    "search": "Pesquisar",
+    "select": "Selecionar",
+    "selectall": "Selecionar tudo",
+    "status": {
+      "update_success": "Atualizado com sucesso"
+    },
+    "submit": "Confirmar",
+    "timeSync": "Calibrar tempo de tela",
+    "turnoff": "DESLIGAR",
+    "turnon": "LIGAR",
+    "type": "Tipo",
+    "upload": "Carregar",
+    "view": "Visualizar",
+    "warring": "Aviso",
+    "window_too_small": "A pré-visualização não pode ser exibida porque a janela é muito pequena"
+  },
+  "connecting": "Ligação",
+  "cross": {
+    "btn": {
+      "active": "Teclado/mouse multiplataforma",
+      "agree": "Aceitar",
+      "cancel": "Cancelar conexão",
+      "close": "Fechar",
+      "connect": "Conectar",
+      "disconnect": "Desconectar",
+      "minimize": "Minimizar janela",
+      "quick": {
+        "connect": "Conexão com um clique"
+      },
+      "reject": "Recusar",
+      "reject_cancel": "cancel",
+      "trust": "Dispositivo confiável",
+      "waiting": "Aguardando"
+    },
+    "disconnect_confirm": {
+      "content": "Após desconectar, a transferência é interrompida. As transferências já iniciadas são salvas no histórico e os arquivos pendentes são descartados.",
+      "title": "Transferência de arquivo em andamento"
+    },
+    "file_transfer": {
+      "average_speed": "Velocidade média",
+      "change": "Alterar",
+      "clear": "Limpar",
+      "clear_failed_desc": "Não foi possível limpar o histórico de transferências local",
+      "clear_failed_title": "Falha ao limpar",
+      "connected": "Conectado",
+      "delete": "Excluir",
+      "desc": "Suporta qualquer tipo de arquivo · Transferência estável para computadores conectados",
+      "direction": {
+        "receive": "Receber",
+        "send": "Enviar"
+      },
+      "dir_err_desc": "Não foi possível usar a pasta de recebimento selecionada",
+      "dir_err_title": "Falha ao atualizar a pasta",
+      "dir_ok_desc": "Os novos arquivos recebidos serão salvos na pasta selecionada",
+      "dir_ok_title": "Pasta de salvamento atualizada",
+      "drop_unavailable_desc": "Use o botão « Selecionar » para escolher este arquivo",
+      "drop_unavailable_title": "Não foi possível ler o caminho do arquivo",
+      "elapsed_label": "Tempo decorrido",
+      "enable": "Ativar transferência de arquivos",
+      "file_missing_desc": "O arquivo original foi movido ou excluído, não é possível reenviar",
+      "file_missing_title": "O arquivo original não existe",
+      "history": "Histórico de transferências",
+      "no_active": "Nenhuma transferência de arquivo em andamento",
+      "no_history": "Nenhum histórico de transferências de arquivos",
+      "open": "Configurações",
+      "open_err_desc": "Não foi possível abrir a pasta de recebimento de arquivos",
+      "open_err_title": "Não foi possível abrir a pasta",
+      "open_folder": "Abrir",
+      "peer_cancelled": "A outra parte cancelou a transferência",
+      "quick_send": "Envio rápido",
+      "quick_send_desc": "Selecionar arquivo e enviar diretamente para o computador conectado",
+      "receive_failed_desc": "Recebimento do arquivo incompleto ou não foi possível gravar localmente",
+      "receive_failed_title": "Falha ao receber o arquivo",
+      "receiving": "Recebendo",
+      "receiving_path": "Caminho de recebimento local",
+      "resend": "Reenviar",
+      "select_button": "Selecionar arquivo",
+      "select_desc": "Selecionar um arquivo específico para transferir",
+      "select_title": "Clique para selecionar um arquivo",
+      "sending": "Enviando",
+      "send_failed_desc": "Não foi possível enviar o arquivo selecionado",
+      "send_failed_title": "Falha na transferência do arquivo",
+      "send_to": "Enviar para",
+      "status": {
+        "cancelled": "Cancelado",
+        "failed": "Falha ao enviar",
+        "received": "Recebido",
+        "receive_error": "Erro de recebimento",
+        "sent": "Enviado"
+      },
+      "title": "Transferência de arquivos",
+      "transfer_time": "Tempo de transferência",
+      "transmitting": "Transferindo",
+      "unsupported_file": "O formato do arquivo não é compatível para transferência",
+      "waiting": "Aguardando transferência"
+    },
+    "notification": {
+      "conn_end_t": "Conexão interrompida",
+      "conn_err_t": "Falha na conexão",
+      "conn_lost_t": "Conexão interrompida",
+      "conn_reject_t": "Solicitação de conexão recusada",
+      "conn_req_err": "Falha ao enviar a solicitação de conexão",
+      "hist_clear_err": "Falha ao limpar o histórico de conexões",
+      "hist_clear_ok": "Histórico de conexões limpo",
+      "id_err_t": "Falha na verificação de identidade",
+      "network_lost": "Conexão de rede interrompida, sessão multiplataforma encerrada",
+      "op_err_t": "Falha na operação",
+      "op_ok_t": "Operação bem-sucedida",
+      "pair_id_err": "Falha na verificação de identidade do dispositivo pareado",
+      "pair_ok": "Dispositivo pareado com sucesso",
+      "pair_ok_t": "Emparelhamento bem-sucedido",
+      "peer_end": "A outra parte desconectou a sessão multiplataforma",
+      "peer_reject": "A outra parte recusou a solicitação de conexão",
+      "reconfirm_t": "Reconfirmação necessária",
+      "sync_err_t": "Falha na sincronização",
+      "trust_id_changed": "A identidade do dispositivo confiável mudou. Confirme novamente a solicitação de conexão.",
+      "trust_id_err": "Falha na verificação de identidade do dispositivo confiável",
+      "trust_rm_err": "Falha ao excluir o dispositivo confiável",
+      "trust_sync_err": "As credenciais de confiança não foram sincronizadas com a outra parte"
+    },
+    "page": {
+      "sub_desc": "Conecte dois computadores, use o teclado/mouse multiplataforma · Sincronize a área de transferência manualmente · Arraste e solte arquivos — tão natural quanto em um único computador.",
+      "sub_title": "Pré-visualização dos recursos",
+      "title": "Multiplataforma"
+    },
+    "panel": {
+      "desc": "Até 2 computadores conectados (incluindo este) · Os recursos do dispositivo são liberados após a conexão",
+      "found": "Detectar dispositivos",
+      "history": {
+        "active": "Conexão ativa",
+        "passive": "Conexão passiva",
+        "subtitle": "Conexões recentes",
+        "title": "Histórico de conexões"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Outros",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Escanear todas as redes Wi-Fi do mesmo roteador",
+        "start": "Iniciar varredura",
+        "stop": "Parar varredura",
+        "title": "Escaneando rede local.."
+      },
+      "tag_1": "Confiado",
+      "title": "Conectar computador"
+    },
+    "scan": {
+      "incoming_notice": "Após o seu consentimento, a outra parte poderá estabelecer uma conexão multiplataforma com este computador.",
+      "incoming_subtitle": "Deseja se conectar a este computador",
+      "incoming_title": "Solicitação de conexão recebida",
+      "network_changed_cancel": "Agora não",
+      "network_changed_confirm": "Escanear novamente",
+      "network_changed_desc": "O ambiente de rede mudou. Escanear novamente?",
+      "network_changed_title": "Ambiente de rede alterado",
+      "rejected": "A outra parte recusou a solicitação de conexão",
+      "request_confirm": "Aguardando confirmação da outra parte... A solicitação de conexão vai expirar em breve",
+      "request_tip": "Solicitação de conexão para",
+      "trust": "Confiar neste dispositivo e aceitar automaticamente as solicitações de conexão no futuro",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Conexão automática",
+      "automatic_connection_help": "Conexão automática: Selecione um dispositivo na lista de dispositivos confiáveis deste computador. Ambos os dispositivos devem se configurar mutuamente para conectar automaticamente após iniciar o Assistant.",
+      "automatic_connection_hint": "(Ambos os dispositivos precisam ser configurados)",
+      "clear_automatic_device": "Excluir dispositivo de conexão automática",
+      "close": "Fechar",
+      "confirm": "Confirmar",
+      "disconnect_shortcut": "Desconectar sessão multiplataforma",
+      "disconnect_shortcut_help": "Se o recurso multiplataforma não funcionar, você pode desconectar com esta combinação de teclas. Esta combinação pode ser alterada, mas não excluída.",
+      "enter_shortcut_key": "Inserir tecla personalizada",
+      "no_trusted_devices": "Nenhum dispositivo confiável",
+      "remove_confirmation": "Confirmar revogação da confiança em {device}?",
+      "remove_device": "Excluir dispositivo confiável",
+      "select_device": "Selecionar dispositivo confiável",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Atalho de teclado",
+      "system_lock_shortcut": "Bloquear computador",
+      "title": "Confiança e conexão automática",
+      "trusted_count": "Número de dispositivos confiáveis ({count})",
+      "trust_help": "Dispositivo confiável: Um dispositivo confiável pode se conectar na próxima vez sem exigir aprovação neste computador."
+    },
+    "step": {
+      "collapse": "Recolher",
+      "connected": "Conectado",
+      "desc": "Escaneie e pareie outros computadores no Keychron Assistant · Após a conexão, o teclado/mouse multiplataforma e a transferência de arquivos estarão disponíveis",
+      "desc_1": "Detectar automaticamente computadores na mesma rede local e enviar solicitação de conexão",
+      "desc_2": "A outra parte clica em « Aceitar » para concluir o emparelhamento",
+      "desc_3": "Todos os recursos multiplataforma estão disponíveis",
+      "expand": "Expandir",
+      "local": "Este computador",
+      "title": "Processo de conexão",
+      "title_1": "Escanear e enviar solicitação",
+      "title_2": "Confirmação da outra parte",
+      "title_3": "Conectado",
+      "trust": "Conectado · Confiado",
+      "wait_1": "Aguardando",
+      "wait_2": "Clicar em « Permitir »",
+      "wait_3": "Emparelhando outros computadores"
+    },
+    "tabs": {
+      "file_transfer": "Transferência de arquivos",
+      "settings": "Configurações"
+    },
+    "time": {
+      "ago": "Antes",
+      "days": "Dias",
+      "hours": "Horas",
+      "just_now": "Há pouco",
+      "last": "Passado",
+      "last_connection": "Última conexão",
+      "minutes": "Minutos",
+      "months": "Meses",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Inferior",
+      "desc": "Quando o cursor do mouse cruza a borda especificada da tela, o teclado e o mouse do computador podem operar o dispositivo conectado.",
+      "left": "Esquerda",
+      "off": "Desativado",
+      "right": "Direita",
+      "title": "Definir borda de cruzamento da tela",
+      "top": "Superior"
+    },
+    "web": {
+      "auto_connect_target": "Destino da conexão automática",
+      "center_cursor": "Centralizar cursor",
+      "clipboard": "Área de transferência",
+      "clipboard_desc": "Sincronizar manualmente o conteúdo copiado entre computadores",
+      "connect_assistant": "Abrir Assistant",
+      "connect_hint": "As funções de conexão devem ser realizadas dentro do Assistant",
+      "custom_screenshot": "Captura de tela personalizada",
+      "direction": "Direção",
+      "drop_box_key": "Atalho do painel de soltar",
+      "exit_application": "Desconectar",
+      "file_transfer": "Transferência de arquivos",
+      "file_transfer_desc": "Selecionar arquivo ou usar o atalho para abrir o painel de soltar",
+      "hold_ctrl": "Manter Ctrl para multiplataforma",
+      "in_progress": "tarefas",
+      "items": "itens",
+      "keyboard_mouse": "Teclado / mouse multiplataforma",
+      "keyboard_mouse_desc": "Alternar o controle quando o cursor cruza a borda da tela",
+      "loading": "Obtendo o status multiplataforma do Assistant...",
+      "lock_pc": "Bloquear computador",
+      "max": "Máximo",
+      "not_set": "Não configurado",
+      "off": "Desativado",
+      "on": "Ativado",
+      "ongoing": "Em andamento",
+      "read_only": "Somente leitura · Modifique as configurações no Keychron Assistant",
+      "recent_items": "Itens recentes",
+      "save_dir": "Pasta de salvamento de arquivos",
+      "settings": "Configurações",
+      "settings_desc": "Dispositivos confiáveis · Conexão automática · Atalhos",
+      "shortcut_mapping": "Mapeamento de atalhos",
+      "switch_pc": "Trocar de computador",
+      "sync_mode": "Modo de sincronização",
+      "target_device": "Dispositivo de destino",
+      "title": "Status dos recursos multiplataforma",
+      "trusted_devices": "Número de dispositivos confiáveis",
+      "trust_auto_connect": "Confiança e conexão automática"
+    }
+  },
+  "debounce": {
+    "backlight": "O tempo de suspensão da luz de fundo não pode ser inferior a 5 segundos.",
+    "mode": "Modo Debounce",
+    "press": "Pressione por segundos",
+    "release": "Redefinir segundos",
+    "response": "Segundos de resposta",
+    "scan": "Taxa de digitalização",
+    "setting": "Definições do tempo de rebote do teclado",
+    "sleep_limit": "O tempo de suspensão não pode ser inferior a 1 minuto",
+    "tip": "A hora de início do desligamento automático da retroiluminação deve ser anterior à hora de início do modo de suspensão automática",
+    "warning": {
+      "content": "(Observação: configurações abaixo de 10 ms podem causar risco de clique duplo. Configure com cuidado.)",
+      "title": "Deseja realmente definir?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Demonstração de teclado",
+    "device_mouse": "Demonstração de mouse",
+    "exit": "Sair do modo de demonstração",
+    "keyboard": "Experimentar sem teclado",
+    "mode": "Modo de demonstração",
+    "mouse": "Experimentar sem mouse",
+    "tip": "Observação: você está no modo de demonstração, que serve apenas para apresentação e não tem funções reais.",
+    "title": "Demonstração"
+  },
+  "device": {
+    "version": "Versão do dispositivo"
+  },
+  "device_add": "Ligar",
+  "device_select": {
+    "notify": "Escolha um dispositivo da lista para continuar.",
+    "select": "Continuar",
+    "un_select": "Nenhum dispositivo selecionado"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Teste de digitação"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Ligar",
+      "2": "Seguinte",
+      "3": "Anterior",
+      "6": "Próxima atualização",
+      "enterBootloaderMode": "Entrar no modo de atualização",
+      "flash": "Atualizar firmware",
+      "matchDevice": "Corresponder dispositivo",
+      "retry": "Tentar novamente",
+      "startUpgrading": "Iniciar atualização"
+    },
+    "description": "Notas da versão",
+    "downloadFailed": "Falha ao baixar o arquivo do firmware",
+    "error": {
+      "diff_model": "Os modelos de firmware dos dispositivos são inconsistentes",
+      "get_dfu_version": "Falha ao obter a versão de atualização do firmware do dispositivo"
+    },
+    "flashError": "Falha ao descarregar o firmware",
+    "flashSuccess": "Firmware atualizado com sucesso",
+    "info": {
+      "currentVersion": "Versão atual",
+      "latestVersion": "Versão mais recente",
+      "updateSize": "Tamanho do firmware",
+      "updateTime": "Última atualização"
+    },
+    "mouse": {
+      "step1_hid_device": "Pressione as teclas K, E, Y no teclado em ordem e continue para a próxima etapa assim que o prompt de conexão do dispositivo HID aparecer."
+    },
+    "notFound": "Não foi encontrado o firmware mais recente do dispositivo",
+    "productNotExist": "Informações do dispositivo não obtidas",
+    "requestFail": "Falha ao obter o dispositivo verifique se ele está a ser utilizado por outros programas.",
+    "syncQuickStart": "Sincronizar início rápido",
+    "tip": {
+      "confirm": "Por favor, confirme",
+      "currentSelect": "Selecionado atualmente"
+    },
+    "tips": {
+      "0": "Não há atualização de firmware para o dispositivo atual.",
+      "4": "Siga as etapas abaixo se utilizar um dispositivo Windows e não tiver instalado o QMK Toolbox Driver. Se já tiver instalado o QMK Toolbox Driver, clique em Avançar.",
+      "5": "Clique no botão «Descarregar Toolbox» abaixo para descarregar e descompactar a Toolbox.",
+      "6": "Depois de extrair os arquivos, clique com o botão direito do mouse no ícone do Toolbox ou pesquise “driver” na barra de pesquisa do sistema e, em seguida, selecione “Executar como administrador” para abri-lo.",
+      "7": "Abra-o e clique no menu «Ferramenta»",
+      "8": "Clique em «Instalar controladores», continue a clicar em «Sim» para iniciar a instalação dos controladores de firmware e aguarde a instalação.",
+      "9": "Após a conclusão da instalação, pode clicar em Avançar para iniciar o processo de atualização do firmware.",
+      "10": "Nota: Pode clicar em",
+      "11": "Siga os passos abaixo.",
+      "12": "No estado atual, desligue o cabo USB do teclado e deixe o teclado desligar-se.",
+      "13": "«Enquanto o teclado estiver desconectado, mantenha pressionada a tecla ESC ou «?» do teclado e, simultaneamente, conecte o teclado ao computador com o cabo USB. Deixe o teclado entrar no estado de preparação para atualizar o firmware.»",
+      "15": "Após a correspondência bem-sucedida, o botão «Flash Firmware» aparecerá. Clique nele para iniciar a atualização do firmware.",
+      "16": "Não desconecte o dispositivo do computador durante a atualização do firmware.",
+      "18": "Descarregar a caixa de ferramentas",
+      "19": "Vídeo instrutivo sobre a instalação do driver da caixa de ferramentas",
+      "20": "para compreender o processo detalhado de instalação do driver Toolbox",
+      "22": "Clique no botão \"Ligar\" para ligar o dispositivo atual, e o sistema irá encontrar automaticamente a versão mais recente do firmware do dispositivo",
+      "23": "Mantenha pressionadas as teclas Fn e - do teclado por pelo menos 5 segundos para preparar o teclado para atualizar o firmware até que o indicador azul acenda.",
+      "24": "Após a correspondência ser bem-sucedida, o botão «Flash Firmware» aparecerá. Clique para iniciar a atualização do firmware.",
+      "25": "Clique no botão Correspondência do dispositivo abaixo, selecione o dispositivo que começa com ({{ modo }}) e faça a correspondência.",
+      "26": "Atualize o módulo Bluetooth no modo USB.",
+      "27": "Clique no botão abaixo para obter a versão mais recente do firmware.",
+      "28": "Com o teclado desconectado, mantenha pressionada a tecla no canto superior esquerdo do teclado e conecte simultaneamente o teclado ao computador via cabo USB para que ele entre no estado de preparação para atualização do firmware.",
+      "bl-exceeded": "Número de tentativas excedido. Reconecte o cabo de dados.",
+      "clickMatchBtn": "Clique no botão « Dispositivos correspondentes » abaixo e selecione o dispositivo que começa com {{dfuName}}.",
+      "currentDongle": "(Use conexão com fio para atualizar teclado/mouse. Você está atualmente na página do receptor.)",
+      "link_wired_content": "Durante a atualização sem fio, o mouse entra no modo de espera e não pode ser operado",
+      "link_wired_title": "Conecte o cabo antes da atualização",
+      "longPress": "Pressione primeiro ESC e, em seguida, mantenha a tecla Tab pressionada simultaneamente por 3 segundos.",
+      "matchErr": "Atualmente não pareado. Selecione manualmente o dispositivo a ser atualizado.",
+      "mouseTip2": "2. Se o link já estiver ligado e a correspondência já estiver disponível. Clique no firmware da escova para iniciar a escova",
+      "mouseTip4": "Clique no botão «Ligar» abaixo, selecione o «Dispositivo Bootloader» e ligue-o.",
+      "mouseTip6": "(Não desligue o recetor do computador enquanto estiver a atualizar o firmware.)",
+      "mouseTip7": "Aguarde até que a atualização seja concluída - uma mensagem de sucesso será exibida",
+      "patch": {
+        "1": "Esta atualização é um patch de segurança. Siga primeiro o tutorial abaixo para atualizar.",
+        "2": "No estado atual, desconecte o cabo USB do teclado para desconectá-lo.",
+        "3": "Com o teclado desconectado, remova a tecla « Espaço » e encontre o pequeno botão de placa metálica ao lado do interruptor.",
+        "4": "Mantenha o botão pressionado e reconecte o teclado ao computador via cabo USB.",
+        "5": "Clique no botão « Dispositivos correspondentes » abaixo e selecione o dispositivo marcado (DFU).",
+        "6": "Após o emparelhamento bem-sucedido, aparecerá um botão « Gravar firmware ». Clique nele para iniciar a atualização do patch de segurança."
+      },
+      "toFlash": "Após o emparelhamento bem-sucedido, aparecerá um botão « Gravar firmware ». Clique nele para iniciar a atualização do firmware."
+    },
+    "update": {
+      "dfu_check": "Verifique se o dispositivo DFU selecionado está correto."
+    },
+    "update_available": "Existe uma versão de firmware atualizável",
+    "update_latest": "Esta é a versão mais recente do firmware",
+    "update_success": "«Atualização bem-sucedida, clique no botão «Ligar» para ligar o dispositivo atual.»",
+    "warning": "Não remova o dispositivo nem atualize a página para evitar possíveis danos ao dispositivo.",
+    "write": "Durante a gravação do firmware"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Manual do dispositivo",
+      "tutorial": "Tutorial",
+      "user_feedback": "Feedback do usuário"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Como definir o modo de suspensão automática e o tempo de início do desligamento da retroiluminção no Launcher?",
+        "set_keyboard_bounce_time": "Como definir o tempo de rebote do teclado no Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Como definir as teclas de retroiluminação no Launcher?",
+        "set_mix_rgb": "Como definir o Mix RGB no Launcher?",
+        "set_per_key_rgb": "Como definir o RGB por tecla no Launcher?"
+      },
+      "bridge_firmware_update": "Como gravar o firmware do receptor Keychron",
+      "create_mouse_macro": "Como criar uma macro de mouse no Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Como restaurar as configurações de fábrica e atualizar o firmware no Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Como gerenciar seu perfil HE no Launcher?",
+        "set_gamepad_analog_and_curves": "Como definir o analógico e as curvas do gamepad no Launcher?",
+        "set_long_press_switch": "Como definir o interruptor de pressão longa no Launcher?",
+        "set_one_key_multiple_commands": "Como definir vários comandos para uma tecla no Launcher?",
+        "set_snap_click": "Como definir o Snap Click no Launcher?",
+        "use_he_mode": "Como usar o modo HE no Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Como as teclas Fn funcionam nos teclados Keychron?",
+        "remap_key": "Como remapear uma tecla no Launcher?",
+        "set_keymap_language": "Como definir o idioma do mapa de teclas no Launcher?",
+        "use_different_function_layers": "Como usar as diferentes camadas de funções?"
+      },
+      "key_test": {
+        "custom_sounds": "Como personalizar o som do seu teclado?",
+        "perform_keyboard_key_testing": "Como realizar o teste de teclas do teclado no Launcher?"
+      },
+      "macro": {
+        "create_macro": "Como criar uma macro no Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Como redefinir o mouse para os padrões de fábrica no Launcher",
+      "mouse_angle_adjustment": "Como usar o ajuste de ângulo no Launcher",
+      "mouse_firmware_update": "Tutorial de atualização do firmware do mouse",
+      "mouse_receiver_firmware_update": "Como gravar o firmware do receptor Keychron",
+      "quick_start": {
+        "download_and_install_assistant": "Como baixar e instalar o Keychron-Assistant?",
+        "set_quick_start": "Como definir o Início Rápido no Launcher?"
+      },
+      "set_mouse_customize_buttons": "Como definir botões personalizados do mouse no Launcher",
+      "set_mouse_debounce_time": "Como ajustar o tempo de debounce do mouse no Launcher",
+      "set_mouse_dpi_and_polling_rate": "Como definir DPI e taxa de polling do mouse no Launcher",
+      "set_mouse_system_features_setting": "Como definir funções do sistema do mouse no Launcher"
+    },
+    "user_manual": "Manual do usuário"
+  },
+  "issue": {
+    "content": "Conteúdo",
+    "device": "Dispositivo",
+    "email": "E-mail",
+    "tips": {
+      "content": "O conteúdo é obrigatório",
+      "device": "É necessário um dispositivo",
+      "email": "Endereço de e-mail inválido",
+      "input": "Insira um conteúdo",
+      "send": "Relatório enviado",
+      "title": "É necessário um título"
+    },
+    "type": {
+      "1": "Botão com defeito / sem resposta",
+      "2": "Problemas de conexão",
+      "3": "Falha de hardware",
+      "4": "Layout / dimensões inadequados",
+      "5": "Problema de driver",
+      "6": "Outros",
+      "7": "Selecione o tipo de feedback"
+    }
+  },
+  "keycap": {
+    "character": "Teclas de letras",
+    "fnc": "Teclas de função",
+    "general": "Geral",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Teclas numéricas",
+    "symbol": "Teclas de símbolos",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Manter = tecla superior (modificador) · Tocar = tecla inferior"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Combinação de teclas",
+      "combo_description": "Atalho de teclado personalizado",
+      "launch_app": "Iniciar aplicativo",
+      "launch_app_description": "Iniciar aplicativo com um clique",
+      "launch_web": "Abrir página da web",
+      "launch_web_description": "Abrir página da web com um clique",
+      "macro": "Macro",
+      "macro_description": "Uma série de ações",
+      "remap": "Remapear",
+      "remap_description": "Atribuir outra tecla",
+      "title": "Remapear {{key}}"
+    },
+    "codeInput": "Entrada de tecla",
+    "knob_not_support": "O firmware atual não suporta personalização do botão, atualize o firmware",
+    "layer": {
+      "1": "1. Manter pressionado ativa temporariamente a camada de destino; soltar a tecla restaura o valor original.",
+      "2": "2. Só se aplica de uma camada inferior para uma superior; de uma camada superior para uma inferior, não tem efeito.",
+      "3": "1. Um clique desativa/ativa a camada de destino; após desativar, a camada ativa mais alta é adotada.",
+      "4": "2. A camada padrão não pode ser desativada; se todas as camadas estiverem desativadas, a camada padrão é adotada.",
+      "5": "A função de manter pressionado é igual a MO; 5 cliques equivalem a TG.",
+      "6": "1. Clicar/manter pressionado ativa uma camada; a ativação só ocorre de baixo para cima.",
+      "7": "Snap Tap só suporta teclas de interruptor magnético.",
+      "8": "Um clique ativa a camada de destino de forma unidirecional, sem distinguir camadas altas e baixas.",
+      "9": "Um clique ativa temporariamente a camada padrão do alvo de forma unidirecional, sem distinguir camadas altas e baixas.",
+      "10": "1. Após um corte de energia, o teclado volta para a camada padrão correspondente ao interruptor do sistema, por ex., Win = camada 2, Mac = camada 0.",
+      "11": "2. Alguns modelos de teclado não têm interruptor físico do sistema e geralmente voltam para uma camada padrão fixa, por ex., camada 0.",
+      "error_info": "O interruptor do sistema do seu teclado não corresponde ao sistema do computador; as funções dos modificadores podem mudar.",
+      "tip": "Dica:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Selecione uma ou mais teclas modificadoras e uma tecla principal e, em seguida, acione com uma única tecla.",
+        "modifier_keys": "Teclas modificadoras",
+        "press_primary_key": "Pressione a tecla principal",
+        "primary_key": "Tecla principal",
+        "title": "Combinação de teclas"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Clique neste botão para abrir o aplicativo atribuído.",
+        "no_available_apps": "Nenhum aplicativo disponível",
+        "search_apps": "Pesquisar aplicativos",
+        "title": "Iniciar aplicativo"
+      },
+      "launch_web": {
+        "description": "Clique neste botão para abrir a página da web atribuída.",
+        "title": "Abrir página da web",
+        "web_page_url": "URL da página da web"
+      },
+      "macro": {
+        "description": "Grave uma macro diretamente no campo de entrada: as teclas que você pressionar serão registradas como uma sequência de ações.",
+        "macro_keys": "Teclas de macro",
+        "press_key": "Pressione a tecla a ser gravada",
+        "title": "Gravar macro"
+      },
+      "remap": {
+        "description": "O que « {{key}} » deve se tornar?",
+        "press_key": "Pressione a tecla a ser atribuída",
+        "primary_keys": "Teclas principais",
+        "title": "Remapear teclas"
+      }
+    },
+    "reset": {
+      "all": "Confirmar para redefinir todas as configurações?",
+      "single": "Confirmar para redefinir as configurações desta tecla?",
+      "title": "Tem a certeza de que deseja reiniciar?"
+    },
+    "tabs": {
+      "assist": "Início rápido",
+      "basic": "Básico",
+      "custom": "Personalizar",
+      "layers": "Camada",
+      "macro": "Macro",
+      "media": "Mídia",
+      "modtap": "Manter / Tocar",
+      "mouse": "Mouse",
+      "qmk_lighting": "Iluminação",
+      "special": "Tecla especial",
+      "wt_lighting": "Iluminação"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Personalizado",
+      "default_layer": "Camada padrão",
+      "display": "Selecionar camada de exibição",
+      "functional": "Camada funcional real",
+      "funtional": "Atual",
+      "warn": "Se as teclas não funcionarem, alterne o interruptor do sistema e ligue novamente."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": ".Deseja mudar para...",
+    "connect": {
+      "1": "Conecte seu dispositivo via cabo ou receptor 2.4G.\n(Alguns modelos só suportam o modo com fio)",
+      "2": "Clique em « Conectar » no canto superior esquerdo e selecione seu dispositivo na lista."
+    },
+    "detectedKeyboardLanguage": "Detetámos que o idioma do seu teclado é...",
+    "guide_tip": "Siga o guia abaixo para conectar o seu dispositivo",
+    "keepCurrentSetting": "Manter as configurações atuais",
+    "lang": "Idioma do layout",
+    "resetSuccessContent": "O layout do teclado foi redefinido com sucesso",
+    "resetSuccessTitle": "Reposição bem-sucedida",
+    "select_device": "Selecione o dispositivo que deseja conectar.",
+    "switchImmediately": "Mudar agora"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Brilho",
+    "color": "Cor",
+    "common": {
+      "setting_color": "Definir cor"
+    },
+    "commonColor": "Cores comuns",
+    "customColor": "Definir cores",
+    "decorate_light": {
+      "0": "Nenhuma",
+      "1": "Sólido",
+      "2": "Respiração",
+      "3": "Matiz cíclico",
+      "4": "Corrida de cavalos"
+    },
+    "effect": "Efeito",
+    "effect speed": "Velocidade",
+    "hue": "Cromaticidade",
+    "layer2": "Zona RGB",
+    "led": {
+      "sub": {
+        "title": "Dica: selecione a barra de LED abaixo ao definir sua cor."
+      },
+      "title": "Barra de luz"
+    },
+    "level": "Nível",
+    "mix": {
+      "config": "Definições do efeito de iluminação",
+      "hxxg": {
+        "hue": "Matiz",
+        "saturability": "Saturação",
+        "speed": "Velocidade"
+      },
+      "rk": "Esta funcionalidade permite configurar duas zonas de teclas diferentes no mesmo teclado para diferentes efeitos de luz RGB. Para cada zona, pode definir diferentes períodos de tempo em loop, e cada período de tempo pode ser definido com diferentes efeitos de luz RGB.",
+      "timeLine": {
+        "second_tips": "A entrada para segundos é muito grande ou muito pequena.",
+        "title": "Linha do tempo"
+      },
+      "verify_duration": {
+        "tip1": "O valor de entrada deve ser um número e deve ser maior que 1 e menor que 99!",
+        "tip2": "Apenas duas casas decimais podem ser inseridas",
+        "tip3": "O valor introduzido é demasiado grande",
+        "tip4": "O valor introduzido é demasiado pequeno"
+      }
+    },
+    "notSupport": "O dispositivo não suporta configurações de luz",
+    "perkey": {
+      "effect": "Seleção de efeito",
+      "effects": {
+        "0": "Geral",
+        "1": "Respiração",
+        "2": "Resposta de tecla única",
+        "3": "Resposta das teclas vizinhas",
+        "4": "Teclado inteiro"
+      },
+      "redo": "refazer",
+      "region": "Seleção de área",
+      "region_select": "Selecionar área",
+      "region_tip": "Selecione a área nas teclas do teclado e defina a cor. Clique em Guardar para alterar a cor da área correspondente.",
+      "rk": "A cor de cada tecla pode ser definida individualmente. Pode alterar a cor da tecla selecionando-a, clicando na área onde a cor está definida, alterando a cor e guardando-a.",
+      "save_warn": "Existem demasiadas zonas RGB, elimine algumas zonas RGB e tente novamente.",
+      "select_tip": "O botão selecionado não cria uma região",
+      "select_warn": "Selecione o botão",
+      "undo": "Desfazer"
+    },
+    "saturation": "Saturação",
+    "settingAllBrightnessArea": "Definição do brilho de todas as zonas",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Decorar luz",
+      "indication": "Luz indicadora",
+      "led_light": "Controle da faixa de luz",
+      "mix_rgb": "Misturar RGB",
+      "perkey_rgb": "RGB por tecla",
+      "screen": "Ajuste de tela",
+      "selection": "Luz de fundo"
+    },
+    "underglow brightness": "Brilho"
+  },
+  "lights": {
+    "0. None": "Nenhum",
+    "1. Solid Color": "Cor sólida",
+    "10. Cycle Pinwheel": "Ciclo Pinwheel",
+    "11. Cycle Spiral": "Ciclo espiral",
+    "12. Dual Beacon": "Sinalizador duplo",
+    "13. Rainbow Beacon": "Rainbow Beacon",
+    "14. Jellybean Raindrops": "Gotas de chuva de jujuba",
+    "15. Pixel Rain": "Chuva de pixels",
+    "16. Typing Heatmap": "Mapa de calor de digitação",
+    "17. Digital Rain": "Chuva digital",
+    "18. Reactive Simple": "Reativo simples",
+    "19. Reactive Multiwide": "Multilargura reativa",
+    "2. Breathing": "Respiração",
+    "20. Reactive Multinexus": "Multinexus reativo",
+    "21. Splash": "Splash",
+    "22. Solid Splash": "Splash sólido",
+    "23. Per Key Rgb": "RGB por tecla",
+    "3. Band Spiral Val": "Valor da espiral da banda",
+    "4. Cycle All": "Ciclo completo",
+    "5. Cycle Left Right": "Ciclo esquerda-direita",
+    "6. Cycle Up Down": "Ciclo para cima/para baixo",
+    "7. Rainbow Moving Chevron": "Chevron móvel arco-íris",
+    "8. Cycle Out In": "Ciclo para fora e para dentro",
+    "9. Cycle Out In Dual": "Ciclo externo em modo duplo"
+  },
+  "macro": {
+    "allchar": "Todos os personagens",
+    "closeDelay": "Desativar atraso",
+    "code": "Entrada de código",
+    "common": {
+      "flash": "Armazenamento flash",
+      "title": "Para atribuir uma macro, selecione-a e depois clique na tecla de destino no mapa de teclas acima."
+    },
+    "config": "Configuração",
+    "delay": "Atrasos",
+    "delaySet": "Atraso de tempo",
+    "dynamicDelay": "Atraso dinâmico",
+    "endREC": "Parar gravação",
+    "enterDown": "Inserir para baixo",
+    "enterUp": "Inserir para cima",
+    "fixedDelay": "Atraso fixo",
+    "inputdelay": "Introduzir tempo de atraso",
+    "inputtexct": "Introduzir texto",
+    "insertDelay": "Atraso de inserção",
+    "keydown": "Pressionar",
+    "keyup": "Liberação",
+    "loopCount": "Contagem de loops",
+    "loopCurrentDown": "Pressionar Parar/STOP",
+    "loopDown": "Tecla arbitrária Parar",
+    "loopOne": "Loop único",
+    "loopSet": "Configurações de loop",
+    "loopUp": "Liberar parada",
+    "macroReccord": "Gravar",
+    "macroSetup": "Configurações de macro",
+    "mouse": "Rato",
+    "notEqual": "Detetar que a tecla de fluxo não é libertada, continua?",
+    "record": "Gravar",
+    "rename": "Renomear",
+    "save": "Salvar",
+    "setRepeatCount": "Número de repetições",
+    "specialText": "Especificidade textual",
+    "startREC": "Iniciar gravação",
+    "stop": "Parar",
+    "text": "Texto",
+    "texttype": "Apenas inglês, números e símbolos básicos podem ser introduzidos",
+    "tip": {
+      "clickCopy": "Clique para copiar o texto",
+      "fixDelay": "Aqui, o atraso fixo indica que está incorporado em cada evento, e o evento contém o evento atrasado.",
+      "keyDelay": "Atraso: {200},Unidade:MS",
+      "keyDown": "Reiniciar: {-KC_A}",
+      "keyText": "Texto: ABCDEF",
+      "keyUp": "Pressionar para baixo: {+KC_A}",
+      "macro_text": "Insira a macro que deseja executar..."
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnético",
+      "mechanical": "Mecânico",
+      "tip": "Dica",
+      "title": "Estatísticas de interruptores"
+    },
+    "calibration": {
+      "1": "Não desligue o cabo USB, desconecte o dispositivo ou desligue o dispositivo durante a calibração. Caso contrário, o dispositivo poderá apresentar uma condição de falha.",
+      "2": "Iniciar calibração",
+      "3": "Não pressione a tecla do teclado 2 segundos antes de clicar em «Iniciar calibração».",
+      "4": "Mantenha a tecla pressionada por 1 segundo para concluir a calibração.",
+      "5": "Quando a calibração for bem-sucedida, a luz de fundo ficará verde.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Perfil da curva analógica",
+      "save": "Guardar curvatura",
+      "title": "Configurações da curva do botão oscilante"
+    },
+    "directive": {
+      "bottomBack": "Ricochete de volta",
+      "bottomIn": "Entrada pela parte inferior",
+      "bottomOut": "Chegar ao fundo",
+      "trigger": "Gatilho de início"
+    },
+    "distance": {
+      "advance_mode": "Avançado",
+      "basic_mode": "Básico",
+      "current": "Teclas atuais",
+      "globalDis": "Selecionar tudo",
+      "globalRt": "Definir todos os gatilhos de teclas",
+      "limitTip": "O valor excede o limite. Digite novamente.",
+      "magnet_calibrate": "Demonstração do gatilho",
+      "magnet_calibrate_point": "Ponto de acionamento",
+      "magnet_calibrate_tip": "A demonstração do Trigger suporta apenas uma única tecla",
+      "magnet_calibrate_tip_desc": "Selecione uma tecla e ative o botão no canto superior direito para demonstrar o acionamento da tecla selecionada",
+      "magnet_calibrate_tip_empty": "Selecione uma tecla",
+      "profile_help": "Pressione \"fn\" + \"p\" + \"z / x / c\", para alternar rapidamente entre os perfis 1 / 2 / 3",
+      "result": "Valores das teclas de entrada",
+      "sensitive": "Sensibilidade",
+      "setting": "Definir distância de atuação",
+      "show_mode_dis": "Distância de acionamento",
+      "show_mode_hide": "Sem dados",
+      "show_mode_rt": "Acionamento rápido",
+      "speed_trigger": "Gatilho rápido",
+      "trigger_distance": "Distância do gatilho (pressionar)",
+      "trigger_distance_reset": "(Soltar) Redefinir distância",
+      "trigger_distance_twice": "(Pressionar) Distância do gatilho"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Limpar mapeamento",
+      "left_emu": "Emular esquerda",
+      "reflect": {
+        "conflict": "Esta tecla foi definida"
+      },
+      "titles": {
+        "1": "Seleção do botão do joystick",
+        "2": "Configuração do botão do joystick",
+        "4": "Ativar ou desativar teclas do teclado",
+        "5": "Ative se conseguir digitar enquanto o joystick está a ser simulado, desative se não conseguir digitar enquanto o joystick está a ser simulado.",
+        "6": "Demonstração do efeito do joystick",
+        "7": "Função de reconhecimento de controle",
+        "8": "1. Quando desativada, o teclado não será mais reconhecido como um controle.",
+        "9": "2. Após qualquer operação relacionada a esta função, você deve desconectar e reconectar o cabo para aplicá-la.",
+        "10": "Controle padrão",
+        "11": "Controle Xbox",
+        "12": "Seleção do modo de controle",
+        "13": "Após alterar o modo de controle, você precisa desconectar e reconectar o cabo para aplicar a alteração.",
+        "xbox": "1. Após ativar/desativar o Xbox, o cabo deve ser desconectado e reconectado para aplicar a alteração.</br>2. O Xbox não está disponível no macOS."
+      }
+    },
+    "mode": {
+      "default": "Padrão",
+      "gamepad": "Gamepad",
+      "gaming": "Modo de jogo"
+    },
+    "multi_cmd": {
+      "b": "Parte inferior",
+      "fulfilled": "Espaço cheio. Apague o comando existente para definir um novo",
+      "list": "Lista de ligações de comandos",
+      "setting": "Uma tecla, vários comandos",
+      "test": "Testar teclas"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy só suporta teclas de interruptor magnético.",
+      "only_support_magnetic": "Teclas mecânicas estão selecionadas atualmente. Este menu só suporta interruptores magnéticos."
+    },
+    "profile": "Perfil",
+    "rename": "Renomear",
+    "simulate": "Simular",
+    "snap_tap": {
+      "absolute_priority": "Prioridade absoluta",
+      "AP": "Atribua uma prioridade de acionamento mais alta a uma das duas teclas quando pressionadas simultaneamente.</br>*Clique no ícone no centro da tecla para alternar a prioridade.",
+      "cancel_mode": "Neutro",
+      "CM": "Você pode definir dois botões. Quando ambos são pressionados simultaneamente, nenhum dos dois é acionado.",
+      "create": "Criar",
+      "key_exist": "A tecla de configuração existe",
+      "last_key_priority": "Prioridade da última tecla",
+      "LKP": "É possível configurar duas teclas para que, quando ambas forem pressionadas ao mesmo tempo, a última tecla acionada seja acionada ao mesmo tempo que a outra tecla é reiniciada.",
+      "SC": "Você pode configurar duas teclas para que, quando ambas forem pressionadas ao mesmo tempo, a que for pressionada com mais força acione o gatilho e a outra seja reiniciada",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Deseja realmente alternar?",
+    "sure_switch_gamepad_desc": "Após alternar para o modo de controle de jogo, alguns botões deixarão de funcionar.",
+    "tab": {
+      "calibration": "Calibração",
+      "curve": "Curva",
+      "distance": "Distância de acionamento",
+      "exit_calibration": "Sair da calibração",
+      "joystick_reflect": "Analógico do comando",
+      "multi_cmd": "Várias comandos com uma tecla",
+      "snap_tap": "Ação instantânea",
+      "toggle": "Interruptor de pressão longa",
+      "toggle_tip": "Esta funcionalidade permite acionar uma tecla em rápida sucessão com um único toque",
+      "turbo": "Turbo",
+      "turbo_tip": "Produz um efeito de clique contínuo ao pressionar um botão."
+    },
+    "toggle": {
+      "drk_guide_tip": "Esta função faz com que, quanto mais fundo você pressionar uma tecla, mais vezes ela é acionada.",
+      "keySpeed": {
+        "times": "Número máximo de acionamentos",
+        "title": "Velocidade de digitação",
+        "unit": "vezes/s"
+      },
+      "selected": "Teclas selecionadas",
+      "set": "Teclas definidas",
+      "title": "Abrir"
+    }
+  },
+  "menu": {
+    "addconnect": "Adicionar dispositivo",
+    "assist": "Início rápido",
+    "bluetooth_firmware": "Firmware sem fios",
+    "disconnect": "Desligar",
+    "expTools": "Ferramentas de extensão",
+    "fr_firmware": "Atualização do recetor",
+    "help": "Central de Ajuda",
+    "issue": "Feedback do utilizador",
+    "keyboard_advance": "Modo avançado",
+    "keyboard_firmware": "Atualização do firmware",
+    "keyboard_he": "Funções magnéticas",
+    "keyboard_light": "Luz de fundo",
+    "keyboard_macro": "Macros de teclado",
+    "keyboard_map": "Mapa de teclas",
+    "keyboard_test": "Teste da tecla",
+    "keyset": "Snap Action",
+    "scroll": "Rolagem aprimorada",
+    "setting": "Configurações",
+    "switchSetting": "Definição do interruptor"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Deseja realmente desativar este botão?",
+      "resetAll": "Esta operação irá eliminar todos os dados guardados. Continuar?",
+      "resetBtn": "Restaurar para as configurações padrão?"
+    },
+    "dpi": {
+      "cable": "Com fio",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "O DPI (pontos por polegada) define a sensibilidade do cursor — quanto maior o valor, mais longe o cursor se move com o mesmo movimento da mão.",
+      "gear": "Níveis",
+      "previousSetting": "Se não houver nenhuma ação por {{time}} segundos, a confirmação será automática. Clique em \"Reverter\" para retornar às configurações anteriores.",
+      "properties": "Configurações do sistema do mouse",
+      "properties_open": "Abrir configurações do sistema do mouse",
+      "properties_tip": "Sem reação? Baixe o « Assistant » e tente novamente.",
+      "reportRate": "Taxa de sondagem",
+      "reportRateDesc": "Suporta até 8000 Hz",
+      "reportTip": "Ajuste a frequência com que o dispositivo envia relatórios para o computador.",
+      "title": "Definições DPI",
+      "wireless": "2.4GHz",
+      "xyTip": "X‑axis DPI controls the cursor sensitivity in the horizontal direction, while Y‑axis DPI controls the sensitivity in the vertical direction. Higher values make the cursor more responsive in the corresponding direction.",
+      "xy_split_label": "Separação X/Y"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Botões esquerdo/direito independentes",
+      "gear": "Nível",
+      "left_btn": "Botão esquerdo",
+      "light_blocked": "Trajeto óptico bloqueado",
+      "light_desc": "Em repouso, o feixe de luz está bloqueado, então nenhum clique é registrado. Pressione o botão para que o trajeto de luz conduza: a luz atinge o sensor e aciona o clique. Sem contatos metálicos, sem desgaste.",
+      "light_led": "LED",
+      "light_mode": "Interruptor óptico",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Acionado",
+      "magnet_desc": "Escolha quanto pressionar antes de um clique ser registrado. Mais curto = mais rápido, mais fundo = menos erros.",
+      "magnet_mode": "Interruptor magnético",
+      "motor_trigger": "Configurações de feedback tátil",
+      "right_btn": "Botão direito",
+      "shared_btn": "Botões do mouse",
+      "title": "Definições de ativação das teclas do rato",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Configurações de curso de acionamento"
+    },
+    "key": {
+      "backward": "Botão traseiro",
+      "brightnessDown": "Diminuir brilho da tela",
+      "brightnessUp": "Aumentar brilho da tela",
+      "calculate": "Calculadora",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Copiar",
+      "customDpi": "DPI personalizado",
+      "cut": "Recortar",
+      "dock": "Ativar/desativar encaixe",
+      "downScroll": "Desça a página",
+      "dpiLoop": "Ciclo de DPI",
+      "email": "Correio",
+      "forward": "Avançar",
+      "he": "Micro movimento óptico / magnético",
+      "home": "Mostrar área de trabalho",
+      "homePage": "Abrir página inicial",
+      "launchPad": "Launchpad",
+      "left": "Clique esquerdo",
+      "leftClick": "Clique esquerdo",
+      "leftDouble": "Duplo clique esquerdo",
+      "leftLock": "Bloqueio do clique esquerdo",
+      "leftScroll": "Rolar para a esquerda",
+      "leftScrollSustain": "Rolagem contínua para a esquerda",
+      "leftTilt": "Inclinar para a esquerda",
+      "left_lock": "Bloqueio do clique esquerdo",
+      "lickDoubleClick": "Duplo clique esquerdo",
+      "light": "Efeito de lâmpada",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Repetir",
+      "loopColorfulBreathing": "Ciclo de respiração colorido",
+      "loopDpi": "Ciclo de DPI",
+      "loopOpticalMagnetic": "Ciclo óptico-magnético",
+      "loopPollingRate": "Ciclo de taxa de polling",
+      "middle": "Clique do meio",
+      "middleClick": "Clique do meio",
+      "modeToggleAll": "Micro movimento óptico / magnético",
+      "mute": "Silenciar",
+      "myComputer": "Meu computador",
+      "next": "Próximo",
+      "nextDpi": "DPI seguinte",
+      "nextPollingRate": "Próxima taxa de polling",
+      "pageDown": "Página para baixo",
+      "pageUp": "Página para cima",
+      "paste": "Colar",
+      "pause": "Reproduzir/Pausar",
+      "player": "reprodutor",
+      "prevDpi": "DPI anterior",
+      "previous": "Anterior",
+      "prevPollingRate": "Taxa de sondagem anterior",
+      "refresh": "Atualizar",
+      "restoreFactory": "Restauração de fábrica",
+      "right": "Clique com o botão direito",
+      "rightClick": "Clique com o botão direito",
+      "rightScroll": "Rolar para a direita",
+      "rightScrollSustain": "Rolagem contínua para a direita",
+      "rightTilt": "Inclinar para a direita",
+      "screenshot": "Captura de ecrã",
+      "scrollLeftClick": "Inclinar para a direita",
+      "scrollRightClick": "Inclinar para a esquerda",
+      "sideKey": "Tecla lateral",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Parar",
+      "swichLight": "Alternância de efeito de luz",
+      "switchApp": "Alternar aplicação",
+      "task": "Controlo de Missão",
+      "trackballToScroll": "Trackball para rolagem",
+      "upScroll": "Rolar para cima",
+      "volumeDown": "Volume -",
+      "volumeUp": "Volume +",
+      "webLessen": "Reduzir zoom",
+      "webMagnify": "Ampliar zoom"
+    },
+    "keyboard": "Teclado",
+    "key_fun": {
+      "basic": "Botões básicos",
+      "disable": "Desativar botão",
+      "dpi": "DPI",
+      "game": "Teclas de jogo",
+      "game_tip": "Mantenha pressionada a tecla mapeada para repetir automaticamente as digitações selecionadas, com número e frequência personalizáveis.",
+      "keyboard": "Combinações de teclas",
+      "keyboard_tip": "Selecione uma ou mais teclas modificadoras e depois adicione uma tecla padrão. Clique no campo para digitar uma tecla ou selecione um código de tecla à direita.",
+      "macro": "Macro",
+      "media": "Teclas multimédia",
+      "pollingRate": "Taxa de sondagem",
+      "profile": "Perfil",
+      "sensitive": "Sensibilidade",
+      "shortCut": "Teclas de atalho"
+    },
+    "key_game": {
+      "count": "Contagem",
+      "infinite": "Ilimitado",
+      "rate": "Avalie"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "De luzes de néon intermitentes",
+      "fullColorCycle": "Ciclo de cores completo",
+      "soleBreathe": "Respiração monocromática",
+      "soleFlowing": "Corrida de cavalos",
+      "soleLight": "Luz monocromática constante"
+    },
+    "menu": {
+      "angle": "Ajuste de ângulo",
+      "dpi": "Definições DPI",
+      "key": "Personalizar",
+      "light": "Luz",
+      "macro": "Configurações de macro",
+      "poll_rate": "Taxa de sondagem",
+      "profile": "Perfil",
+      "sys": "Avançado"
+    },
+    "mouse": "Rato",
+    "polling_rate": {
+      "daily": "Escritório",
+      "fps20k": "Modo de amostragem do sensor",
+      "game": "Jogo",
+      "office_mode": "Modo padrão",
+      "office_mode_desc": "Operação suave, varredura estável",
+      "rage_content": "O consumo de energia aumentará quando o modo competitivo estiver ativado.",
+      "rage_desc": "Taxa de varredura do sensor ≥20K para menor latência e maior precisão. Consome mais energia.",
+      "rage_mode": "Modo competitivo",
+      "rage_title": "Confirmar a ativação do modo competitivo?"
+    },
+    "profile_tab": {
+      "changeIcon": "Alterar ícone",
+      "selectMode": "Selecionar modo"
+    },
+    "scroll": {
+      "acceleration": "Aceleração de velocidade",
+      "consecutive_times": "Número de rolagens contínuas",
+      "demo": "Demonstração de rolagem",
+      "direction": "Direção de rolagem",
+      "duration": "Duração da rolagem",
+      "interval": "Intervalo de rolagem (ms)",
+      "scroll": "Rolagem horizontal",
+      "speed": "Velocidade de rolagem",
+      "step": "Passo mínimo de rolagem",
+      "tip_acceleration": "Definir a aceleração de rolagem como um múltiplo do valor atual.",
+      "tip_consecutive_times": "Após a rolagem contínua, ele alternará automaticamente para a rolagem suave.",
+      "tip_demo": "Você pode experimentar as configurações de rolagem aprimorada aqui.",
+      "tip_direction": "Alterar a direção de rolagem do mouse",
+      "tip_disconnect": "Para usar a rolagem aprimorada, você precisa baixar o Assist.",
+      "tip_interval": "Tempo de intervalo da rolagem contínua",
+      "tip_speed": "Aumentar a velocidade de rolagem"
+    },
+    "shortcut_tooltip": {
+      "general": "Após configurar, os seguintes recursos se aplicarão tanto no Mac quanto no Windows.",
+      "mac": "Após configurar, os seguintes recursos se aplicarão apenas no Mac.",
+      "win": "Após configurar, os seguintes recursos se aplicarão apenas no Windows."
+    },
+    "sys": {
+      "angle": "Ajuste de ângulo",
+      "angle_correction_after": "Depois do ajuste",
+      "angle_correction_no": "Antes do ajuste",
+      "angle_preview": "Antes e depois",
+      "angle_reset_btn": "Redefinir para 0°",
+      "backward": "Inverter",
+      "battery_indicator": "Indicador de bateria",
+      "delay": "Tempo de rebote",
+      "forward": "Padrão",
+      "funConfig": "Funções do sistema do mouse",
+      "keyResponseTime": "Tempo de resposta das teclas",
+      "leftLock": "Bloqueio do clique esquerdo",
+      "line": "Ajustar ângulo",
+      "lock": "Bloquear",
+      "lod": "Distância de decolagem",
+      "motion": "Sincronização de movimento",
+      "pairBond": "Atalho de emparelhamento",
+      "pairLimit": "As chaves de emparelhamento suportam apenas 1-3 chaves",
+      "power": "Gerenciamento de energia",
+      "respSeconds": "Tempo de resposta (ms)",
+      "scroll": "Direção de rolagem",
+      "sensor": "Desempenho do sensor",
+      "sleep": "Modo de espera do dispositivo",
+      "unlock": "Desbloquear",
+      "wave": "Controlo de ondulação"
+    },
+    "tip": {
+      "leftLock": "A configuração do botão esquerdo do rato está bloqueada e não pode ser configurada."
+    },
+    "tips": {
+      "advanceDelayDesc": "No modo avançado, você pode definir um atraso de resposta independente (0–20 ms) para cada tecla.",
+      "angleDesc": "Ajuste o ângulo do sensor do mouse para que um mouse levemente inclinado faça movimentos horizontais precisos.",
+      "delayDesc": "Defina um atraso para evitar acionamentos acidentais por cliques rápidos ou vibrações.",
+      "factorySetDesc": "Clicar neste botão limpará as configurações atuais do dispositivo e restaurará os padrões de fábrica.",
+      "fps20kDesc": "O sensor do mouse captura 20 000 imagens da superfície do mousepad por segundo, proporcionando rastreamento preciso e sem latência.",
+      "indicatorDesc": "Este interruptor controla apenas a exibição do estado normal da bateria no modo 2.4G.",
+      "leftLockDesc": "Quando o « Bloqueio do clique esquerdo » está ativado, o botão esquerdo não pode ser remapeado.",
+      "lineDesc": "Filtra inteligentemente os tremores leves da mão para reduzir desvios horizontais e verticais.",
+      "lodCurr": "Distância de decolagem atual do mouse",
+      "lodDesc": "A altura máxima na qual os movimentos do mouse ainda são detectados e rastreados.",
+      "motionDesc": "Sincroniza a entrada do sensor com a resposta do sistema para reduzir saltos ou solavancos do cursor.",
+      "pairBondDesc": "Personalize a combinação de teclas e mantenha-a pressionada por 4 segundos para entrar no modo de emparelhamento Bluetooth/2.4G.",
+      "scrollDirDesc": "A direção do movimento do conteúdo na tela quando a roda do mouse rola para cima ou para baixo",
+      "sensorDesc": "Melhora a precisão e a estabilidade do mouse ao desenhar linhas, círculos e outras trajetórias.",
+      "sleepDesc": "Suporta o modo de espera automático no modo sem fio quando o dispositivo fica inativo por um tempo.",
+      "waveDesc": "Reduz trajetórias onduladas causadas por tremores da mão para movimentos mais suaves."
+    },
+    "wheel": {
+      "adjustTimeout": "Tempo limite de calibração",
+      "sensitivity": "Sensibilidade"
+    }
+  },
+  "notify": {
+    "emptyHid": "Nenhum dispositivo HID selecionado",
+    "fail": "Falha",
+    "fr_not_connect": "O driver não pode ser usado depois que o dispositivo entra em modo de espera; pressione qualquer tecla para ativá-lo.",
+    "hidAlreadyConnected": "Dispositivo HID conectado",
+    "hidConfNotBrand": "Dispositivos desta marca não são compatíveis atualmente.",
+    "hidConfNotFound": "Não foi encontrada nenhuma configuração válida do dispositivo HID",
+    "hidDeviceNotFount": "Dispositivo HID não presente",
+    "hidUnconnected": "Dispositivo HID não conectado",
+    "import": {
+      "layout": "O layout do teclado foi importado com sucesso",
+      "title": "Importação bem-sucedida"
+    },
+    "invalid_macro_json": "Configuração de macro inválida",
+    "invalid_rgb_json": "Configuração inválida",
+    "keyboard_not_support_wireless": "O firmware do teclado não suporta conexão sem fio",
+    "keycodeNotFound": "Erro de configuração do código da tecla",
+    "limited": "Limite máximo excedido",
+    "macroSizeLimit": "O tamanho da macro excede o tamanho disponível",
+    "notSupportHid": "Este navegador não suporta conexão HID. Use o navegador Chrome, Edge ou Opera para se conectar",
+    "sleep": "Nenhum dispositivo conectado ou o dispositivo está em modo de suspensão",
+    "success": "Sucesso",
+    "success_competitive": "Alternado com sucesso para o modo competitivo",
+    "success_connect": "Conexão bem-sucedida",
+    "success_office": "Alternado com sucesso para o modo padrão",
+    "unknownErr": "Erro desconhecido"
+  },
+  "onboarding": {
+    "completed": "Guia concluída com sucesso 🎉",
+    "connect": {
+      "description": "Conecte seu teclado ao computador com um cabo USB, clique em « Conectar » e selecione seu dispositivo na caixa de diálogo.",
+      "title": "Conecte seu teclado"
+    },
+    "entry": "Primeiros passos",
+    "flow": {
+      "connect": "Conectar dispositivo",
+      "keymap": "Remapear teclas",
+      "light": "Efeitos de retroiluminação"
+    },
+    "hint": "Clique na área destacada para concluir a ação ou em « Pular guia ».",
+    "keymap": {
+      "select_a": {
+        "description": "Clique em « A » no painel de funções abaixo para remapear a tecla Espaço para A. A guia se fechará automaticamente quando terminar.",
+        "title": "Passo 2 · Remapeá-la para « A »"
+      },
+      "select_space": {
+        "description": "Clique na tecla Espaço na parte inferior do teclado para selecioná-la.",
+        "title": "Passo 1 · Selecionar a tecla Espaço"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Use o seletor de cores à direita para definir a cor como verde (arraste o seletor ou insira RGB 0, 255, 0). A guia se fechará automaticamente.",
+        "title": "Passo 2 · Definir para verde"
+      },
+      "select_static": {
+        "description": "Selecione « Solid Color » na lista de efeitos abaixo para definir o teclado em um efeito monocromático estático.",
+        "title": "Passo 1 · Selecionar « Solid Color »"
+      }
+    },
+    "skip": "Pular guia",
+    "step": "PASSO"
+  },
+  "screen": {
+    "format": {
+      "limit": "O formato da imagem só pode ser PNG, JPG ou GIF."
+    },
+    "resolution": {
+      "limit": "O tamanho da imagem não pode exceder 240×240."
+    },
+    "size": {
+      "limit": "O tamanho do arquivo de imagem não pode exceder 300 KB."
+    },
+    "upload": {
+      "format": "PNG ou JPG (máx. 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Este recurso permite selecionar no máximo {{count}} teclas."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Intervalo de digitalização"
+    },
+    "file_extra_properties_not_supported": "O ficheiro contém atributos não suportados",
+    "file_import_failed": "Falha ao importar o ficheiro",
+    "file_upload_no_config_file": "Ficheiro de configuração não detetado. Carregue",
+    "info": "Informações do dispositivo",
+    "infos": {
+      "bluVersion": "Versão do Bluetooth",
+      "deviceDesc": "Versão do firmware",
+      "name": "Nome"
+    },
+    "json_config": "Configuração Json",
+    "lng": "Idioma",
+    "log": "Notas de execução",
+    "onlyview": "A configuração deste teclado não pode ser modificada.",
+    "other": "Outros",
+    "others": {
+      "debounce": {
+        "name": "Resposta de atraso das teclas",
+        "tip": "Após ativar, o atraso mínimo de resposta pode ser configurado para 0 ms.",
+        "title": "Ajustar valor mínimo",
+        "warning": {
+          "title": "Deseja realmente ativá-lo?"
+        }
+      }
+    },
+    "theme": "Troca de tema",
+    "updateLog": "Histórico de versões"
+  },
+  "snap": {
+    "list": "Lista de ligações de comandos"
+  },
+  "test": {
+    "btn": {
+      "reset": "Testar novamente",
+      "reset_bindings": "Limpar vinculações"
+    },
+    "msg": {
+      "bind_success": "{{count}} teclas foram vinculadas a {{audioName}}.",
+      "bind_success_single": "A tecla {{keyName}} foi vinculada a {{audioName}}.",
+      "no_key_selected": "Selecione primeiro a tecla a ser vinculada.",
+      "reset_success": "Redefinição bem-sucedida",
+      "storage_full": "Espaço de armazenamento insuficiente",
+      "unsupported_format": "Formato de áudio não compatível. Use MP3, WAV, OGG ou M4A.",
+      "upload_success": "Áudio enviado com sucesso"
+    },
+    "per_key_sound": {
+      "desc": "Atribua um som exclusivo a cada tecla. Quando este recurso está desativado, todas as teclas usam o som selecionado por padrão.",
+      "tip": "No modo sem matriz de teste, você só pode configurar um som de resposta de tecla unificado."
+    },
+    "sound": {
+      "tip": "Quando o interruptor estiver ligado, o teste das teclas terá feedback sonoro e poderá escolher o som preferido."
+    },
+    "sound_btn": {
+      "Balloon": "Balão",
+      "CarHorn": "CarHorn",
+      "Cartoon": "Desenhos animados",
+      "CoinCollecting": "Colecionismo de moedas",
+      "custom": "Personalizado",
+      "default": "Padrão",
+      "DogBarking": "Latido de cão",
+      "Donkey": "Burro",
+      "Glass": "Vidro",
+      "PartyHorn": "Buzina de festa",
+      "PhoneDial": "Disco telefónico",
+      "Punch": "Punch",
+      "RubberChicken": "Frango de borracha",
+      "RubberToy": "Brinquedo de borracha",
+      "Sneeze": "Espirro"
+    },
+    "title": {
+      "custom_sound": "Biblioteca de sons personalizada",
+      "per_key_sound": "Atribuição de som por tecla",
+      "reset_custom_bindings": "Deseja realmente redefinir as vinculações de áudio?",
+      "sound": "Ativar efeitos sonoros",
+      "sound_effect": "Seleção de efeito sonoro",
+      "uploaded_sounds": "Sons enviados"
+    },
+    "upload": {
+      "browse": "Clique para enviar",
+      "info": "Compatível: MP3, WAV, OGG, M4A · Limite total: 25 MB · Duração de áudio recomendada: 1–2 segundos",
+      "placeholder": "Arraste e solte os arquivos de áudio aqui, ou"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Selecione primeiro uma tecla."
+    },
+    "key": {
+      "direction": "Bloqueio de ângulo de 8 direções",
+      "gesture": "Modo de gesto",
+      "held": "Manter",
+      "scroll": "Rolar",
+      "tap": "Tocar"
+    },
+    "keycode": {
+      "key": "Tecla base",
+      "modifiers": "Modificadores"
+    },
+    "key_fun": {
+      "basic": "Base",
+      "comb": "Tecla de combinação",
+      "feature": "Bloqueio de ângulo",
+      "keyCombination": "Combinação de teclas",
+      "layer": "Camada",
+      "macro": "Macro",
+      "simulate": "Pressionar simultaneamente",
+      "single": "Tocar / Manter",
+      "special": "Teclas especiais",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Você só pode configurar uma tecla padrão.",
+    "placeholder": {
+      "selectionKeys": "Teclas de seleção"
+    },
+    "selectInputFirst": "Selecione primeiro um campo de entrada.",
+    "slide": {
+      "leftSlide": "Deslizar para a esquerda",
+      "rightSlide": "Deslizar para a direita",
+      "underSlide": "Deslizar para baixo",
+      "upSlide": "Deslizar para cima"
+    },
+    "tips": {
+      "angleGearsDesc": "Por exemplo, se você atribuir « 90° » à tecla 4, clicar na tecla 4 definirá a direção da camada atual em 90° (paisagem).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Teclas básicas",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "O Launcher requer o VIA json do dispositivo selecionado. Clique no botão “Confirmar” abaixo e carregue o ficheiro json do dispositivo selecionado para usar o Launcher. Pode obter o ficheiro VIA json junto do fornecedor do produto.",
+      "title": "VIA upload de ficheiro Json"
+    }
+  }
+}
