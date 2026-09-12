@@ -1,0 +1,1706 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Bemærk:"
+    },
+    "debounce": {
+      "defer_global": "Debounce pr. tastatur. Ved enhver tilstandsændring indstilles en global timer. Når der er gået DEBOUNCE millisekunder uden ændringer, sendes alle inputændringer. Dette er algoritmen med højeste ydeevne, lavest hukommelsesforbrug og god støjmodstand.",
+      "defer_per_key": "Debounce pr. tast. Ved enhver tilstandsændring indstilles en timer pr. tast. Når der er gået DEBOUNCE millisekunder uden ændringer på den tast, sendes tastens statusændring.",
+      "eager_defer_per_key": "Debounce pr. tast. Ved en tast-ned-ændring er responsen øjeblikkelig, efterfulgt af DEBOUNCE millisekunder uden yderligere input for den tast. Ved en tast-op-ændring indstilles en timer pr. tast. Når der er gået DEBOUNCE millisekunder uden ændringer på den tast, sendes tast-op-statusændringen.",
+      "eager_per_key": "Debounce pr. tast. Ved enhver tilstandsændring er responsen øjeblikkelig, efterfulgt af DEBOUNCE millisekunder uden yderligere input for den tast.",
+      "none": "Der udføres ingen debounce-behandling.",
+      "tip": {
+        "1": "“Eager Per Key” er den anbefalede debounce-tilstand: når du trykker på en tast, reagerer den øjeblikkeligt, men alle yderligere input for den tast ignoreres i det antal sekunder, du vælger.",
+        "2": "Hvis du vil reducere responstiden til under 10 ms, skal du gå til Indstillinger - Andet for at foretage justeringen.",
+        "3": "Når responstiden er tæt på 0 ms, kan der opstå dobbeltklik-problemer."
+      }
+    },
+    "macro": {
+      "gesture": "Hold altid Gestustilstand slået til",
+      "gesture_description": "Når dette er aktiveret, behøver du ikke at tildele en gestusknap.",
+      "gesture_not_configured": "Den kan ikke åbnes. Gå først til indstillingen \"Knapfunktion - Trackball\" for at angive outputværdien.",
+      "scroll": "Hold altid Rulletilstand slået til",
+      "scroll_description": "Efter aktivering er der ingen grund til at knytte den til gestusknapperne.",
+      "title": "Gestusadfærd (vælg én)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) er en tastaturinputteknologi, der gør det muligt at trykke på et ubegrænset antal taster samtidigt uden inputkonflikter eller tabte signaler. Deaktivering af NKRO betyder, at tastaturet korrekt registrerer op til 6 samtidige tastetryk.",
+      "title": "NKRO-indstilling"
+    },
+    "performance": {
+      "mode_battery": "Batteritilstand",
+      "mode_high": "Ydeevnetilstand",
+      "mode_normal": "Standardtilstand",
+      "title": "Skift af ydeevnetilstand"
+    },
+    "poll_rate": "Indstillinger for pollingrate",
+    "poll_rate_tip": {
+      "bt": "Bluetooth-forbindelsestilstand",
+      "bt_desc": "I Bluetooth-forbindelsestilstand er pollingraten fast på 125Hz. Denne indstilling kan ikke ændres på grund af forbindelsesbegrænsninger.",
+      "fr": "2.4GHz-forbindelsestilstand",
+      "usb": "Kablet tilstand"
+    },
+    "sleep": {
+      "backlight": "Timeout for automatisk baggrundslys fra",
+      "magnet": "Inaktiv tid for tastaturmatrixscanning",
+      "magnet_range": "Den inaktive tid for matrixscanning skal være længere end forsinkelsen for baggrundslys fra og kortere end timeout for dvale.",
+      "magnet_tip": "Inaktiv tid for matrixscanning på Hall Effect-tastatur skal være mere end 60 sekunder",
+      "time": "Timeout for automatisk dvale"
+    },
+    "tips": {
+      "keepLayer_close": "2. Hvis denne indstilling er deaktiveret, skifter NapePro sammen med Lag 1, når du går til redigeringsskærmen for Lag 1.",
+      "keepLayer_enable": "1. Hvis denne indstilling er aktiveret, og NapePro f.eks. kører på \"Lag 0\", bevarer NapePro tastetildelingen for \"Lag 0\", selv hvis du skifter til redigeringsskærmen for \"Lag 1\"."
+    },
+    "title": {
+      "keepLayer": "Lagredigeringstilstand"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Enhed tilsluttet",
+        "idle": "Tryk for at tilslutte enheden",
+        "pending": "Starter autorisation..."
+      },
+      "download_assistant": {
+        "idle": "Klik for at downloade den nyeste Assistant"
+      },
+      "resume_assistant": {
+        "done": "Fortsæt behandling",
+        "idle": "Assistant aktiveret",
+        "pending": "Behandlingen fortsætter…",
+        "prompt": "Jeg har åbnet den"
+      },
+      "undo_remap": {
+        "done": "Tastetildeling fortrudt",
+        "idle": "Fortryd denne tastetildeling",
+        "pending": "Fortryder..."
+      }
+    },
+    "clear_tooltip": "Ryd samtale",
+    "close_tooltip": "lukket",
+    "deep_thinking": "Dyb tænkning",
+    "generated_content_notice": "AI-genereret indhold kan indeholde fejl. Bekræft det.",
+    "input_placeholder": "Spørg Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Fokus på hurtig respons",
+        "label": "Hurtigere"
+      },
+      "deepseek-v4-pro": {
+        "description": "Til mere komplekse opgaver",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Balanceret",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Udførelse fuldført, men der blev ikke modtaget noget svar, der kan vises.",
+    "pin": {
+      "tooltip_off": "Frigør",
+      "tooltip_on": "Fastgør chatvinduet"
+    },
+    "pinned_success": "Dialogvinduet er blevet fastgjort og kan ikke trækkes.",
+    "quick": {
+      "connect_keyboard": "Tildel mellemrumstasten til A",
+      "remap_space": "Skift lyseffekten til Band Spiral Val",
+      "set_light": "Hjælp mig med at åbne Discord"
+    },
+    "result": {
+      "connect_failed": "Kunne ikke tilslutte: {{error}}",
+      "device_connected": "Enhed tilsluttet",
+      "no_device_undo": "Der er ingen enhed tilsluttet, så tildelingen kan ikke fortrydes.",
+      "no_remap_to_undo": "Der er ingen tildeling at fortryde.",
+      "undo_failed": "Kunne ikke fortryde tildelingen: {{error}}",
+      "undo_success": "Fortrød den seneste tildeling og gendannede {{count}} tast(er)."
+    },
+    "select_model": "Vælg model",
+    "status": {
+      "answering": "Svarer",
+      "executing": "Udfører",
+      "loading": "Indlæser",
+      "thinking": "Tænker",
+      "verifying": "Bekræfter"
+    },
+    "stopped": "Stoppet",
+    "title": "Keychron AI",
+    "unpinned_success": "Frigjort",
+    "welcome": "Hej! \"Keychron AI Assistant\" kan hjælpe dig med at tilslutte enheder, tildele taster, tilpasse lyseffekter, oprette makroer og meget mere. Spørg mig endelig om hvad som helst!"
+  },
+  "application": {
+    "addr": "Hurtig åbning af webside",
+    "add_addr": "Tilføj adresse",
+    "apple_silicon_version": "Download til Apple Silicon (.pkg)",
+    "app_duplicate": "Applikationen findes allerede og behøver ikke at blive tilføjet igen.",
+    "app_hint": "Du kan angive en genvejstast, vælge den software, du hurtigt vil åbne, og derefter binde den til en tast.",
+    "app_placeholder": "Vælg en applikation",
+    "clear_all": "Ryd alt",
+    "desktop_old_content": "Download og installer den nyeste version af desktoptjenesten for at bruge denne funktion.",
+    "desktop_old_title": "Der blev registreret en forældet desktoptjeneste.",
+    "download_keychron_assistant": "Hvis den ikke er installeret endnu, kan du klikke for at downloade den.",
+    "download_new_assistant_tip": "Download den nyeste Keychron Assistant for at bruge alle funktioner.",
+    "download_zip_tip": "Bemærk: Før du installerer Keychron Assist, skal du udpakke den downloadede fil.",
+    "file_not_found": "Filen findes ikke",
+    "intel_version": "Download til Intel-Mac (.dmg)",
+    "keySetting": "Denne tast har allerede en genvej!",
+    "key_no_conf": "Der er ikke angivet nogen genvejstaster",
+    "limited": "Den maksimale grænse er overskredet. I øjeblikket er grænsen for hurtige åbninger 5. Vi planlægger at øge dette antal i fremtiden.",
+    "need_keychron_assistant": "Denne funktion kræver, at Keychron Assistant kører.",
+    "no_key_selected": "Ingen tast valgt",
+    "open_assistant_no_response_tip": "Hvis der ikke sker noget, efter du klikker på \"Åbn\", skal du downloade den nyeste Assistant og prøve igen.",
+    "open_tip1": "1. Funktionen til hurtig start henviser til at binde den applikation, du hurtigt vil starte, til en bestemt knap; klik på knappen for at starte hurtigt.",
+    "open_tip2": "2. Download først Assist, og tilføj derefter den applikation, du hurtigt vil starte. Vend til sidst tilbage til launcheren for at binde og starte tasten.",
+    "select_key_to_bind": "Vælg taster fra tastaturet for at binde denne indstilling",
+    "soft": "Applikation til hurtig start",
+    "submit_hint": "Vælg den software, du hurtigt vil åbne, og klik derefter på [Send]. Efter afsendelse kan den hurtige åbning aktiveres og bruges.",
+    "title_placeholder": "Brugerdefineret titel (valgfrit)",
+    "unsupported_feature": "Ikke-understøttet funktion",
+    "unsupported_feature_download_new_version": "Denne funktion understøttes ikke. Download den nyeste version for at prøve den.",
+    "url": "Åbn hurtigt en webside",
+    "url_hint": "Du kan angive en genvejstast, vælge den webadresse, du hurtigt vil åbne, og derefter binde den til en tast.",
+    "url_placeholder": "Indtast en gyldig URL"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Fortsæt",
+      "later": "Senere",
+      "openSystemPreferences": "Åbn Systemindstillinger",
+      "restartMessage": "Tilladelse til tilgængelighed er blevet tildelt. Appen skal genstartes for at træde i kraft.",
+      "restartNow": "Genstart nu",
+      "restartTitle": "Tilladelse tildelt",
+      "step1": "Klik på knappen nedenfor for at gå til systemets side for tilgængelighedstilladelser",
+      "step2": "Find og aktivér autorisationskontakten for Launcher Assistant",
+      "step3": "Indtast din adgangskode",
+      "step4": "Efter autorisation skal du afslutte appen og genåbne den for at træde i kraft\"",
+      "welcomeTitle": "Velkommen til Assistant"
+    },
+    "click_no_response_tip": "Åbn din computers museindstillinger for muligheder for markør, rulning og klik.",
+    "common": {
+      "add": "Tilføj",
+      "back": "Tilbage",
+      "delete": "Slet",
+      "info": "Info",
+      "refresh": "Opdater",
+      "settings": "Indstillinger"
+    },
+    "hint_reset": "Enhedsændring registreret. På grund af layoutforskelle fungerer nogle taster muligvis ikke som vist i Hurtig start. Nulstil indstillingerne, så de passer til det nye layout?",
+    "hint_reset_1": "Det blev registreret, at du er skiftet til en anden enhed. Vil du nulstille dine indstillinger?",
+    "hint_reset_2": "(Bemærk: På grund af forskelle i tastelayout mellem modeller matcher Hurtig start-visningen muligvis ikke de faktiske funktioner, hvilket resulterer i ikke-fungerende taster.)",
+    "home": {
+      "addAddress": "Tilføj adresse",
+      "addSoftwareDescription": "Tilføj den software, du hurtigt vil åbne, nedenfor, og klik derefter på 「Hurtig start」 for at binde knappen i launcheren",
+      "delete": "slet",
+      "onceAddedDescription": "Når du har tilføjet din app nedenfor, skal du klikke på knappen for at gå tilbage",
+      "quickStartApplication": "Applikation til hurtig start",
+      "search": "Søg",
+      "setUpQuickStart": "Konfigurer Hurtig start",
+      "tooltipText1": "1. Funktionen til hurtig start henviser til at binde den applikation, du hurtigt vil starte, til en bestemt knap; klik på knappen for at starte hurtigt.",
+      "tooltipText2": "2. Klik på \\\"+\\\"-tegnet nedenfor for at vælge den hurtige start, du vil starte, og klik på \\\"Åbn Hurtig start\\\" for at gå tilbage til launcheren for at binde og starte tasten."
+    },
+    "license": {
+      "agree": "Accepter",
+      "disagreeAndWithdraw": "Afvis og træk tilbage",
+      "userLicenseAgreement": "Slutbrugerlicensaftale",
+      "welcomeDescription": "Accepter venligst",
+      "welcomeDescriptionEnd": "så vi kan betjene dig bedre",
+      "welcomeTitle": "Velkommen til Assistant"
+    },
+    "open_title": "1. For at hurtig start kan fungere skal du downloade Assist for at bruge det",
+    "open_title2": "2. Det anbefales at downloade og installere den nyeste version af Assist på grund af softwareopdateringen.",
+    "settings": {
+      "aikeyUpdate": "AIKey-forbedringer: brugerdefinerbare skabeloner og hurtig udløsning, forbedret kommandoafsendelse og svarhåndtering, hvilket giver bedre stabilitet og brugervenlighed.",
+      "autostart": "Start automatisk ved opstart",
+      "currentLatestVersion": "aktuel nyeste version",
+      "endUserLicenseAgreement": "Slutbrugerlicensaftale",
+      "fixedKnownIssues": "Rettede kendte problemer",
+      "interfaceOptimization": "Grænsefladeoptimering",
+      "language": "Sprog",
+      "mosUpdate": "Optimering af MOS-rulning/-acceleration: omarbejdet accelerationskurve og samplingsstrategi for mere jævn og ensartet kontrol ved både lave og høje hastigheder, med reduceret jitter og latens.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Varemærket Keychron Assistant ejes af Keychron eller er registreret hos de relevante myndigheder. Alle andre varemærker tilhører deres respektive ejere.",
+      "nkroDescription2": "Deaktivering af NKRO betyder, at tastaturet korrekt registrerer op til 6 samtidige tastetryk.",
+      "selectLanguage": "vælg sprog",
+      "title": "Indstillinger",
+      "updateLog": "Opdateringslog"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Magnetic Switch",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetic Switc",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Nogle taster kunne ikke kalibreres. Kontroller switchen på tastaturet og tastens indstilling!",
+    "set_successfully": "Switch-konfigurationen er blevet ændret.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Kontroller, om den udskiftede magnetiske switch på tastaturet stemmer overens med den valgte magnetiske switch-indstilling.",
+    "sure_content2": "Klik på knappen “Bekræft” nedenfor for at gå til kalibreringssiden og kalibrere disse taster.",
+    "sure_title": "Er du sikker på, at du vil ændre switch-typen?",
+    "switch_type_settings": "Indstillinger for switch-type",
+    "tip": {
+      "1": "Med denne funktion kan du indstille den magnetiske switch-type for hele tastaturet. Efter konfiguration ændres tastens kantfarve alt efter den magnetiske switch-type, du vælger. Fremgangsmåden er som følger:",
+      "2": "Udskift først alle de magnetiske switche på tastaturet (hele tastaturet kan kun understøtte én magnetisk switch-type), og kontroller, om de udskiftede switche vises på listen nedenfor.",
+      "3": "Vælg den magnetiske switch-type nedenfor, og klik på knappen \"Indstil alle taster\" for at fuldføre konfigurationen.",
+      "4": "Rekalibrer alle taster for at undgå påvirkning fra forskelle i magnetiske switch-typer."
+    },
+    "tip_reset": "Når du klikker på denne nulstillingsknap, ryddes alle tidligere konfigurerede hurtigstart-elementer.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Magnetic Switch"
+  },
+  "common": {
+    "advance": "Avanceret",
+    "basic": "Grundlæggende",
+    "beta_test_version": "Betatest",
+    "cancel": "Luk",
+    "cancel_btn": "Annuller",
+    "clear": "Ryd",
+    "close": "Fra",
+    "connected": "Tilsluttet",
+    "connect_btn": "Tilslut",
+    "connect_tip": "vil oprette forbindelse til en HID-enhed",
+    "create": "Opret",
+    "delete": "Slet",
+    "deleteConfirm": "Bekræft nulstilling af disse data?",
+    "disconnected": "Ikke tilsluttet",
+    "download": "Download",
+    "empty": "Tom",
+    "error": "Fejl",
+    "export": "Eksporter",
+    "general": "Generelt",
+    "hide": "Skjul",
+    "iknow": "Bekræftet",
+    "import": "Importer",
+    "is": "Ja",
+    "keyboard": "Tastatur",
+    "key_back": "Fortryd",
+    "key_confirm": "Bekræft",
+    "loading": "Indlæser...",
+    "matrix": "Testmatrix",
+    "max_string_length": "Teksten overskrider den maksimale længdegrænse",
+    "min": "Minut",
+    "mouse": "Mus",
+    "noResult": "Ingen resultater",
+    "not": "Nej",
+    "notSubmit": "Ikke-indsendte data. Indsend nu?",
+    "on": "Til",
+    "open": "Åbn",
+    "paired": "parret",
+    "plugged_in": "Tilsluttet",
+    "plug_and_ret": "Tilslut enheden, og prøv igen.",
+    "plug_and_retry": "Tilslut enheden, og prøv igen",
+    "recover": "Gendan",
+    "reset": "Nulstil",
+    "resetLayout": "Nulstil layout",
+    "reset_single": "Enkelt nulstilling",
+    "resolution_not_support": "Tastaturkortet kan ikke vises, fordi browservinduet er for lille.",
+    "results": "Resultater",
+    "save": "Gem",
+    "search": "Søg",
+    "select": "Vælg",
+    "selectall": "Vælg alt",
+    "status": {
+      "update_success": "Opdateret"
+    },
+    "submit": "Bekræft",
+    "timeSync": "Kalibrer skærmtid",
+    "turnoff": "SLÅ FRA",
+    "turnon": "SLÅ TIL",
+    "type": "Type",
+    "upload": "Bekræft upload",
+    "view": "Vis",
+    "warring": "Advarsel",
+    "window_too_small": "Forhåndsvisningen kan ikke vises, fordi vinduet er for lille"
+  },
+  "connecting": "Opretter forbindelse",
+  "cross": {
+    "btn": {
+      "active": "Tastatur/mus på tværs af skærme",
+      "agree": "Accepter",
+      "cancel": "Annuller",
+      "close": "Luk",
+      "connect": "Tilslut",
+      "disconnect": "Afbryd",
+      "minimize": "Minimer",
+      "quick": {
+        "connect": "Hurtig tilslutning"
+      },
+      "reject": "Afvis",
+      "reject_cancel": "Annuller",
+      "trust": "Stol på enhed",
+      "waiting": "Venter..."
+    },
+    "disconnect_confirm": {
+      "content": "Hvis du afbryder forbindelsen, stopper filoverførsler. Påbegyndte overførsler gemmes i historikken, og ventende filer kasseres.",
+      "title": "Filoverførsel i gang"
+    },
+    "file_transfer": {
+      "average_speed": "Gns. hastighed",
+      "change": "Skift",
+      "clear": "Ryd",
+      "clear_failed_desc": "Kan ikke rydde lokal overførselshistorik",
+      "clear_failed_title": "Rydning mislykkedes",
+      "connected": "Tilsluttet",
+      "delete": "Slet",
+      "desc": "Enhver filtype · Stabil overførsel til tilsluttede computere",
+      "direction": {
+        "receive": "Modtag",
+        "send": "Send"
+      },
+      "dir_err_desc": "Den valgte modtagemappe kan ikke bruges",
+      "dir_err_title": "Opdatering af mappe mislykkedes",
+      "dir_ok_desc": "Nye filer gemmes i den valgte mappe",
+      "dir_ok_title": "Gemmemappe opdateret",
+      "drop_unavailable_desc": "Brug knappen “Vælg” for at vælge denne fil",
+      "drop_unavailable_title": "Kan ikke læse filsti",
+      "elapsed_label": "Forløbet tid",
+      "enable": "Aktivér filoverførsel",
+      "file_missing_desc": "Den oprindelige fil er blevet flyttet eller slettet og kan ikke sendes igen.",
+      "file_missing_title": "Den oprindelige fil findes ikke",
+      "history": "Overførselshistorik",
+      "no_active": "Ingen aktive overførsler",
+      "no_history": "Ingen overførselshistorik",
+      "open": "Indstillinger",
+      "open_err_desc": "Kan ikke åbne modtagemappen",
+      "open_err_title": "Kan ikke åbne mappe",
+      "open_folder": "Åbn",
+      "peer_cancelled": "Den anden enhed annullerede overførslen",
+      "quick_send": "Hurtig afsendelse",
+      "quick_send_desc": "Vælg filer, og send direkte til den tilsluttede pc",
+      "receive_failed_desc": "Filen er ufuldstændig eller kunne ikke gemmes lokalt",
+      "receive_failed_title": "Modtagelse af fil mislykkedes",
+      "receiving": "Modtager",
+      "receiving_path": "Lokal gemmesti",
+      "resend": "Send igen",
+      "select_button": "Vælg filer",
+      "select_desc": "Vælg bestemte filer, der skal overføres",
+      "select_title": "Klik for at vælge filer",
+      "sending": "Sender",
+      "send_failed_desc": "Kan ikke sende den valgte fil",
+      "send_failed_title": "Filoverførsel mislykkedes",
+      "send_to": "Send til",
+      "status": {
+        "cancelled": "Annulleret",
+        "failed": "Mislykkedes",
+        "received": "Modtaget",
+        "receive_error": "Modtagefejl",
+        "sent": "Sendt"
+      },
+      "title": "Filoverførsel",
+      "transfer_time": "Overførselstid",
+      "transmitting": "Overfører",
+      "unsupported_file": "Filformatet understøttes ikke til overførsel",
+      "waiting": "Venter"
+    },
+    "notification": {
+      "conn_end_t": "Afbrudt",
+      "conn_err_t": "Forbindelse mislykkedes",
+      "conn_lost_t": "Forbindelse mistet",
+      "conn_reject_t": "Forbindelsesanmodning afvist",
+      "conn_req_err": "Kunne ikke sende forbindelsesanmodning",
+      "hist_clear_err": "Kunne ikke rydde forbindelseshistorik",
+      "hist_clear_ok": "Forbindelseshistorik ryddet",
+      "id_err_t": "Verificering mislykkedes",
+      "network_lost": "Netværksforbindelsen blev mistet. Sessionen på tværs af skærme er afsluttet.",
+      "op_err_t": "Handling mislykkedes",
+      "op_ok_t": "Udført",
+      "pair_id_err": "Verificering af parret enhed mislykkedes",
+      "pair_ok": "Enhed parret",
+      "pair_ok_t": "Parret",
+      "peer_end": "Den anden enhed afsluttede sessionen på tværs af skærme",
+      "peer_reject": "Den anden enhed afviste anmodningen",
+      "reconfirm_t": "Bekræftelse påkrævet igen",
+      "sync_err_t": "Synkronisering mislykkedes",
+      "trust_id_changed": "Den betroede enheds identitet er ændret. Bekræft forbindelsesanmodningen igen.",
+      "trust_id_err": "Verificering af betroet enhed mislykkedes",
+      "trust_rm_err": "Kunne ikke fjerne betroet enhed",
+      "trust_sync_err": "Tillidsoplysninger blev ikke synkroniseret til den anden enhed"
+    },
+    "page": {
+      "sub_desc": "Forbind to pc'er · Tastatur/mus på tværs af skærme · Manuel synkronisering af udklipsholder · Træk filer direkte — lige så naturligt som én pc",
+      "sub_title": "Funktionsforhåndsvisning",
+      "title": "På tværs af skærme"
+    },
+    "panel": {
+      "desc": "Op til 2 pc'er forbundet (inkl. lokal) · Enhedsfunktioner tilgængelige efter parring",
+      "found": "enheder fundet",
+      "history": {
+        "active": "Udgående",
+        "passive": "Indgående",
+        "subtitle": "Senest forbundet",
+        "title": "Forbindelseshistorik"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Andet",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Scanner alle pc'er på den samme Wi-Fi-router",
+        "start": "Start scanning",
+        "stop": "Stop scanning",
+        "title": "Scanner lokalt netværk..."
+      },
+      "tag_1": "Betroet",
+      "title": "Forbind pc"
+    },
+    "scan": {
+      "incoming_notice": "Når du accepterer, kan den anden side oprette en cross-screen-forbindelse til denne computer",
+      "incoming_subtitle": "Anmodninger om at oprette forbindelse til denne computer",
+      "incoming_title": "Indgående forbindelsesanmodning",
+      "network_changed_cancel": "Ikke nu",
+      "network_changed_confirm": "Scan igen",
+      "network_changed_desc": "Netværksmiljøet er ændret. Vil du scanne igen?",
+      "network_changed_title": "Netværk ændret",
+      "rejected": "Forbindelsesanmodningen blev afvist af den anden enhed",
+      "request_confirm": "Venter på bekræftelse fra den anden part... Anmodningen udløber om",
+      "request_tip": "Anmod om forbindelse til",
+      "trust": "Stol på denne enhed ved fremtidige forbindelser.",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Forbind enhed automatisk",
+      "automatic_connection_help": "Automatisk forbindelse: Vælg en enhed fra denne computers liste over betroede enheder. Begge enheder skal konfigurere hinanden for at kunne oprette forbindelse automatisk, når Assistant starter.",
+      "automatic_connection_hint": "(Begge enheder skal være konfigureret)",
+      "clear_automatic_device": "Ryd enhed til automatisk forbindelse",
+      "close": "Luk",
+      "confirm": "Bekræft",
+      "disconnect_shortcut": "Afbryd på tværs af skærme",
+      "disconnect_shortcut_help": "Hvis cross-screen ikke fungerer, kan du afbryde forbindelsen med denne tastaturgenvej. Denne genvej kan ændres, men ikke slettes.",
+      "enter_shortcut_key": "Indtast brugerdefineret tast",
+      "no_trusted_devices": "Ingen betroede enheder",
+      "remove_confirmation": "Stop med at stole på {device}?",
+      "remove_device": "Fjern betroet enhed",
+      "select_device": "Vælg betroet enhed",
+      "shortcut_hint": "(Understøtter bogstaver, tal og F1–F12; tryk på Backspace eller Delete for at rydde)",
+      "shortcut_keys": "Genveje",
+      "system_lock_shortcut": "Lås skærm",
+      "title": "Tillid og automatisk forbindelse",
+      "trusted_count": "Betroede enheder ({count})",
+      "trust_help": "Betroet enhed: En betroet enhed kan oprette forbindelse næste gang uden at kræve godkendelse på denne computer."
+    },
+    "step": {
+      "collapse": "Skjul",
+      "connected": "Forbundet",
+      "desc": "Scan og par en anden pc i Keychron Assistant · Når der er forbindelse, bliver tastatur- og musestyring på tværs af skærme samt filoverførsel tilgængelig",
+      "desc_1": "Find automatisk pc'er på det samme lokale netværk og send anmodning",
+      "desc_2": "Den anden part klikker på \"Tillad\" for at fuldføre parringen",
+      "desc_3": "Alle funktioner på tværs af skærme er tilgængelige",
+      "expand": "Udvid",
+      "local": "Lokal",
+      "title": "Forbindelsesforløb",
+      "title_1": "Scan og anmod",
+      "title_2": "Den anden part bekræfter",
+      "title_3": "Forbundet",
+      "trust": "Forbundet · Betroet",
+      "wait_1": "Venter på",
+      "wait_2": "at klikke på “Tillad”",
+      "wait_3": "Parrer med en anden pc"
+    },
+    "tabs": {
+      "file_transfer": "Filoverførsel",
+      "settings": "Indstillinger"
+    },
+    "time": {
+      "ago": "siden",
+      "days": "dage",
+      "hours": "timer",
+      "just_now": "lige nu",
+      "last": "Sidste",
+      "last_connection": "Seneste forbindelse",
+      "minutes": "minutter",
+      "months": "måneder",
+      "seconds": "s"
+    },
+    "view": {
+      "bottom": "Nederst",
+      "desc": "Når musemarkøren krydser den angivne skærmkant, vil dit tastatur og din mus betjene den forbundne enhed.",
+      "left": "Venstre",
+      "off": "Fra",
+      "right": "Højre",
+      "title": "Angiv skærmkant til overgang",
+      "top": "Øverst"
+    },
+    "web": {
+      "auto_connect_target": "Mål for automatisk forbindelse",
+      "center_cursor": "Centrér markør",
+      "clipboard": "Udklipsholder",
+      "clipboard_desc": "Synkronisér manuelt kopieret indhold mellem pc'er",
+      "connect_assistant": "Åbn Assistant",
+      "connect_hint": "Forbindelsesfunktionen skal udføres i Assistant.",
+      "custom_screenshot": "Brugerdefineret skærmbillede",
+      "direction": "Retning",
+      "drop_box_key": "Genvej til afleveringsboks",
+      "exit_application": "Afbryd",
+      "file_transfer": "Filoverførsel",
+      "file_transfer_desc": "Vælg filer, eller tryk på genvejen for at åbne afleveringsboksen",
+      "hold_ctrl": "Hold Ctrl nede for at krydse skærme",
+      "in_progress": "opgaver",
+      "items": "elementer",
+      "keyboard_mouse": "Deling af tastatur/mus",
+      "keyboard_mouse_desc": "Skift styring, når markøren krydser skærmkanten",
+      "loading": "Henter status på tværs af skærme fra Assistant…",
+      "lock_pc": "Lås pc",
+      "max": "Maks.",
+      "not_set": "Nej",
+      "off": "Fra",
+      "on": "Til",
+      "ongoing": "I gang",
+      "read_only": "Kun visning · Skift indstillinger i Keychron Assistant",
+      "recent_items": "Seneste elementer",
+      "save_dir": "Destinationsmappe",
+      "settings": "Indstillinger",
+      "settings_desc": "Betroede enheder · Automatisk forbindelse · Genveje",
+      "shortcut_mapping": "Genvejstildeling",
+      "switch_pc": "Skift pc",
+      "sync_mode": "Synkroniseringstilstand",
+      "target_device": "Målenhed",
+      "title": "Status på tværs af skærme",
+      "trusted_devices": "Betroede enheder",
+      "trust_auto_connect": "Tillid og automatisk forbindelse"
+    }
+  },
+  "debounce": {
+    "backlight": "Baggrundslysets dvaletid kan ikke være mindre end 5 sekunder.",
+    "mode": "Debounce-tilstand",
+    "press": "Nedtryk (sekunder)",
+    "release": "Slip/nulstilling (sekunder)",
+    "response": "Responstid",
+    "scan": "Scanningsfrekvens",
+    "setting": "Indstillinger for tastaturets debounce-tid",
+    "sleep_limit": "Dvaletiden kan ikke være mindre end 1 minut.",
+    "tip": "Starttidspunktet for automatisk slukning af baggrundslys skal være tidligere end starttidspunktet for automatisk dvaletilstand.",
+    "warning": {
+      "content": "(Bemærk: Indstillinger under 10 ms kan medføre risiko for dobbeltklik. Indstil med forsigtighed.)",
+      "title": "Er du sikker på, at du vil indstille det?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Tastaturdemo",
+    "device_mouse": "Musedemo",
+    "exit": "Afslut demotilstand",
+    "keyboard": "Prøv uden et tastatur",
+    "mode": "Demotilstand",
+    "mouse": "Prøv uden en mus",
+    "tip": "Bemærk: Dette er i øjeblikket i demotilstand og fungerer kun som en demonstration uden reel funktionalitet",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Enhedsversion"
+  },
+  "device_add": "Forbind",
+  "device_select": {
+    "notify": "Vælg en enhed fra listen for at fortsætte.",
+    "select": "Fortsæt",
+    "un_select": "Ingen enhed valgt"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Skrivetest"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Forbind",
+      "2": "Næste",
+      "3": "Forrige",
+      "6": "Videre til opdatering",
+      "enterBootloaderMode": "Gå i opgraderingstilstand",
+      "flash": "Flash firmware",
+      "matchDevice": "Match enhed",
+      "retry": "Prøv igen",
+      "startUpgrading": "Start opgradering"
+    },
+    "description": "Beskrivelse",
+    "downloadFailed": "Download af firmwarefilen mislykkedes",
+    "error": {
+      "diff_model": "Enhedernes firmwaremodeller stemmer ikke overens",
+      "get_dfu_version": "Kunne ikke hente enhedens firmwareopdateringsversion"
+    },
+    "flashError": "Firmwareopgradering mislykkedes",
+    "flashSuccess": "Firmware opdateret",
+    "info": {
+      "currentVersion": "Nuværende version",
+      "latestVersion": "Nyeste version",
+      "updateSize": "Firmwarestørrelse",
+      "updateTime": "Seneste opdatering"
+    },
+    "mouse": {
+      "step1_hid_device": "Tryk på tasterne K, E, Y på tastaturet i rækkefølge, og fortsæt til næste trin, når meddelelsen om HID-enhedsforbindelse vises."
+    },
+    "notFound": "Enhedens nyeste firmware blev ikke fundet",
+    "productNotExist": "Enhedsoplysninger blev ikke hentet",
+    "requestFail": "Kunne ikke hente enheden; kontrollér, om den bruges af andre programmer.",
+    "syncQuickStart": "Synkronisér hurtig start",
+    "tip": {
+      "confirm": "Bekræft venligst",
+      "currentSelect": "Aktuelt valgt"
+    },
+    "tips": {
+      "0": "Der er ingen tilgængelig firmwareopdatering til denne enhed.",
+      "4": "Følg trinene nedenfor, hvis du bruger en Windows-enhed og ikke har installeret QMK Toolbox Driver. Hvis du allerede har installeret QMK Toolbox Driver, skal du klikke på Næste.",
+      "5": "Klik på knappen 'Download Toolbox' nedenfor for at downloade og udpakke Toolbox.",
+      "6": "Når filerne er pakket ud, skal du højreklikke på Toolbox-ikonet eller søge efter “driver” i systemets søgefelt og derefter vælge “Kør som administrator” for at åbne det.",
+      "7": "Åbn det, og klik på menuen 'Tool'.",
+      "8": "Klik på 'Install Drivers', fortsæt med at klikke på 'yes' for at begynde installationen af firmwaredrivere, og vent på installationen.",
+      "9": "Når installationen er fuldført, kan du klikke på Næste for at starte processen med at flashe firmwaren.",
+      "10": "Bemærk: Du kan klikke på",
+      "11": "Følg trinene nedenfor.",
+      "12": "I den nuværende tilstand skal du frakoble tastaturets USB-kabel og lade tastaturet afbryde forbindelsen.",
+      "13": "Mens tastaturet er afbrudt, skal du holde ESC eller \"○\" på tastaturet nede og samtidig forbinde tastaturet til computeren med USB-kablet. Lad tastaturet gå i tilstanden, hvor det forbereder firmwareopdatering.",
+      "15": "Efter vellykket matchning vises knappen 'Flash firmware'. Klik på den for at begynde opdateringen af firmwaren.",
+      "16": "Afbryd ikke enheden under firmwareopdateringen.",
+      "18": "Download Toolbox",
+      "19": "Instruktionsvideo til installation af Toolbox Driver",
+      "20": "for at forstå den detaljerede proces for installation af Toolbox Driver.",
+      "22": "Klik på knappen \"Forbind\" for at forbinde den aktuelle enhed, hvorefter systemet automatisk finder enhedens nyeste firmwareversion",
+      "23": "Hold tastaturets Fn- og \"-\"-tast nede i mindst 5 sekunder ...",
+      "24": "Efter vellykket matchning vises knappen “Flash firmware”. Klik for at begynde opdateringen af firmwaren.",
+      "25": "Klik på knappen Match enhed nedenfor, vælg den enhed, der starter med ({{ mode }}), og match den.",
+      "26": "Opgradér Bluetooth-modulet i USB-tilstand.",
+      "27": "Klik på knappen nedenfor for at hente den nyeste firmwareversion.",
+      "28": "Mens tastaturet er afbrudt, skal du holde tasten i øverste venstre hjørne af tastaturet nede og samtidig forbinde tastaturet til computeren med USB-kablet. Lad tastaturet gå i tilstanden til forberedelse af firmwareopdatering.",
+      "bl-exceeded": "Antallet af forsøg er overskredet. Tilslut datakablet igen.",
+      "clickMatchBtn": "Klik på knappen 'Match enhed' nedenfor, vælg den enhed, der starter med {{dfuName}}, og match den",
+      "currentDongle": "(Brug en kabelforbindelse til at opgradere dit tastatur/din mus. Denne side viser i øjeblikket modtageren.)",
+      "link_wired_content": "Musen går i dvaletilstand under den trådløse firmwareopdatering, hvilket gør den ubrugelig",
+      "link_wired_title": "Opret en kabelforbindelse, før du opgraderer",
+      "longPress": "Tryk først på ESC, og tryk derefter samtidig på Tab-tasten i 3 sekunder.",
+      "matchErr": "I øjeblikket ikke parret. Vælg manuelt den enhed, der skal opgraderes.",
+      "mouseTip2": "2. Hvis linket allerede er forbundet, og matchningen allerede er tilgængelig. Klik på Flash firmware for at starte flashningen.",
+      "mouseTip4": "Klik på knappen “Forbind” nedenfor, vælg “Bootloader-enheden”, og forbind den.",
+      "mouseTip6": "(Frakobl ikke modtageren fra computeren, mens du flasher firmware.)",
+      "mouseTip7": "Vent, til opdateringen er fuldført – en bekræftelsesmeddelelse vil blive vist.",
+      "patch": {
+        "1": "Denne opdatering er en sikkerhedsrettelse. Følg trinene nedenfor for at opdatere først.",
+        "2": "I den nuværende tilstand skal du frakoble tastaturets USB-kabel for at afbryde forbindelsen.",
+        "3": "Mens tastaturet er afbrudt, skal du fjerne tastehætten på mellemrumstasten og finde den lille metalknap ved siden af switchen.",
+        "4": "Hold knappen nede, og tilslut tastaturet til computeren igen ved hjælp af USB-kablet.",
+        "5": "Klik på knappen Match enhed nedenfor, vælg derefter den enhed, der er mærket (DFU), og par den.",
+        "6": "Efter vellykket parring vises knappen Flash firmware. Klik på den for at begynde opdateringen af sikkerhedsrettelsen."
+      },
+      "toFlash": "Efter vellykket matchning vises knappen \"Flash firmware\". Klik på den for at begynde opdateringen af firmwaren"
+    },
+    "update": {
+      "dfu_check": "Kontrollér, om den valgte DFU-enhed er korrekt"
+    },
+    "update_available": "Der findes en firmwareversion, der kan opgraderes",
+    "update_latest": "Dette er den nyeste firmwareversion",
+    "update_success": "Opdateringen lykkedes. Klik på knappen \"Forbind\" for at forbinde den aktuelle enhed.",
+    "warning": "Fjern ikke enheden, og opdatér ikke siden, for at undgå potentiel skade på enheden.",
+    "write": "Under firmwareskrivning"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Enhedsmanual",
+      "tutorial": "Vejledning",
+      "user_feedback": "Brugerfeedback"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Hvordan indstiller man automatisk dvaletilstand og starttidspunkt for slukning af baggrundslys i Launcher?",
+        "set_keyboard_bounce_time": "Hvordan indstiller man tastaturets debounce-tid i Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Hvordan indstiller man baggrundslys-taster i Launcher?",
+        "set_mix_rgb": "Hvordan indstiller man Mix RGB i Launcher?",
+        "set_per_key_rgb": "Hvordan indstiller man RGB pr. tast i Launcher?"
+      },
+      "bridge_firmware_update": "Sådan flasher du firmwaren til Keychron-modtageren",
+      "create_mouse_macro": "Sådan opretter du en musemakro i Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Hvordan gendanner man fabriksindstillinger og opdaterer firmware i Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Hvordan administrerer man sin HE-profil i Launcher?",
+        "set_gamepad_analog_and_curves": "Hvordan indstiller man gamepad-analog og gamepad-kurver i Launcher?",
+        "set_long_press_switch": "Hvordan indstiller man langt tryk-switch i Launcher?",
+        "set_one_key_multiple_commands": "Hvordan tildeler man flere kommandoer til én tast?",
+        "set_snap_click": "Hvordan indstiller man Snap Click i Launcher?",
+        "use_he_mode": "Hvordan bruger man HE-tilstand i Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Hvordan fungerer Fn-tastkombinationer på Keychron-tastaturer?",
+        "remap_key": "Hvordan omdefinerer man en tast i Launcher?",
+        "set_keymap_language": "Hvordan indstiller man tastaturlayoutets sprog i Launcher?",
+        "use_different_function_layers": "Skift og aktivering af lag: Effektiv tilpasning af tastaturet?"
+      },
+      "key_test": {
+        "custom_sounds": "Hvordan tilpasser man lyden af sit tastatur?",
+        "perform_keyboard_key_testing": "Hvordan udfører man test af tastaturtaster i Launcher?"
+      },
+      "macro": {
+        "create_macro": "Hvordan opretter man en makro i Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Sådan foretager du fabriksnulstilling af musen i Launcher",
+      "mouse_angle_adjustment": "Sådan bruger du vinkeljusteringen i Launcher",
+      "mouse_firmware_update": "Vejledning til firmwareopdatering af mus",
+      "mouse_receiver_firmware_update": "Sådan flasher du firmwaren til Keychron-modtageren",
+      "quick_start": {
+        "download_and_install_assistant": "Hvordan downloader og installerer man Keychron Assist?",
+        "set_quick_start": "Hvordan bruger man Hurtig start i Launcher?"
+      },
+      "set_mouse_customize_buttons": "Sådan indstiller du brugerdefinerede museknapper i Launcher",
+      "set_mouse_debounce_time": "Sådan indstiller du musens debounce-tid i Launcher",
+      "set_mouse_dpi_and_polling_rate": "Sådan indstiller du musens DPI og polling rate i Launcher",
+      "set_mouse_system_features_setting": "Sådan indstiller du musens systemfunktioner i Launcher"
+    },
+    "user_manual": "Brugermanual"
+  },
+  "issue": {
+    "content": "Indhold",
+    "device": "Enhed",
+    "email": "E-mail",
+    "tips": {
+      "content": "Indhold er påkrævet",
+      "device": "Enhed er påkrævet",
+      "email": "Ugyldig e-mailadresse",
+      "input": "Indtast venligst et indhold",
+      "send": "Rapport sendt",
+      "title": "Titel er påkrævet"
+    },
+    "type": {
+      "1": "Knapfejl/ingen respons",
+      "2": "Forbindelsesproblemer",
+      "3": "Hardwarefejl",
+      "4": "Layout/dimension er uhensigtsmæssig",
+      "5": "Driverproblem",
+      "6": "Andet",
+      "7": "Vælg venligst typen af spørgsmål"
+    }
+  },
+  "keycap": {
+    "character": "Bogstavtaster",
+    "fnc": "Funktionstaster",
+    "general": "Generelt",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Taltaster",
+    "symbol": "Symboltaster",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Hold = den øverste tast (modifikator) · Tryk = den nederste tast"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Tastkombination",
+      "combo_description": "Brugerdefineret tastaturgenvej",
+      "launch_app": "Start app",
+      "launch_app_description": "Start app med ét klik",
+      "launch_web": "Åbn webside",
+      "launch_web_description": "Åbn webside med ét klik",
+      "macro": "Makro",
+      "macro_description": "En række handlinger",
+      "remap": "Omprogrammer tast",
+      "remap_description": "Tildel en anden tast",
+      "title": "Omprogrammer {{key}}"
+    },
+    "codeInput": "Indtast et tastetryk",
+    "knob_not_support": "Den nuværende firmware understøtter ikke tilpasning af drejeknappen. Opdatér venligst firmwaren.",
+    "layer": {
+      "1": "1. Hold nede for midlertidigt at aktivere mållaget; den oprindelige værdi gendannes, når tasten slippes.",
+      "2": "2. Det træder kun i kraft, når det anvendes fra et lavere lag til et højere lag; anvendelse fra et højere lag til et lavere lag har ingen effekt.",
+      "3": "1. Klik for at slå mållaget fra/til; når mållaget er slået fra, vælges det højeste aktive lag.",
+      "4": "2. Standardlaget kan ikke slås fra; hvis alle lag er slået fra, bruges standardlaget.",
+      "5": "Langt tryk-funktionen er den samme som MO; 5-klik-funktionen er den samme som TG",
+      "6": "1. Klik/hold nede for at aktivere et lag; aktivering er kun mulig fra et lavere niveau til et højere niveau.",
+      "7": "Snap Tap understøtter kun magnetiske switch-taster",
+      "8": "Klik for at aktivere mållaget envejs, uden at skelne mellem øvre og nedre lag.",
+      "9": "Ved at klikke på et enkelt element aktiveres målets standardlag midlertidigt, uden at skelne mellem øvre og nedre lag.",
+      "10": "1. Når tastaturet mister strøm, vender det tilbage til standardlaget, der svarer til systemkontaktens indstilling (f.eks. svarer Windows til Lag 2, og macOS svarer til Lag 0).",
+      "11": "2. Nogle tastaturmodeller mangler en fysisk systemkontakt; de vender typisk tilbage til et fast standardlag, såsom Lag 0.",
+      "error_info": "Dit tastaturs systemindstilling matcher ikke dit computersystem; modifikatortasternes funktioner kan ændre sig.",
+      "tip": "Tip:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Vælg en eller flere modifikatortaster og en hovedtast, og udløs derefter med én tast.",
+        "modifier_keys": "Modifikatortaster",
+        "press_primary_key": "Tryk på hovedtasten",
+        "primary_key": "Hovedtast",
+        "title": "Tastkombination"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Tryk på denne knap for at åbne den tildelte app.",
+        "no_available_apps": "Ingen tilgængelige apps",
+        "search_apps": "Søg apps",
+        "title": "Start app"
+      },
+      "launch_web": {
+        "description": "Tryk på denne knap for at åbne den tildelte webside.",
+        "title": "Åbn webside",
+        "web_page_url": "Webside-URL"
+      },
+      "macro": {
+        "description": "Optag en makro direkte i inputfeltet: De taster, du trykker på, registreres som en række handlinger.",
+        "macro_keys": "Makrotaster",
+        "press_key": "Tryk på den tast, du vil optage",
+        "title": "Optag makro"
+      },
+      "remap": {
+        "description": "Hvad skal “{{key}}” ændres til?",
+        "press_key": "Tryk på den tast, du vil tildele",
+        "primary_keys": "Hovedtaster",
+        "title": "Omprogrammer taster"
+      }
+    },
+    "reset": {
+      "all": "Bekræft nulstilling af alle indstillinger?",
+      "single": "Bekræft nulstilling af denne tasts indstillinger?",
+      "title": "Er du sikker på, at du vil nulstille?"
+    },
+    "tabs": {
+      "assist": "Hurtig start",
+      "basic": "Grundlæggende",
+      "custom": "Brugerdefineret",
+      "layers": "Lag",
+      "macro": "Makro",
+      "media": "Medier",
+      "modtap": "Hold / Tryk",
+      "mouse": "Mus",
+      "qmk_lighting": "Belysning",
+      "special": "Specialtaster",
+      "wt_lighting": "Belysning"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Brugerdefineret",
+      "default_layer": "Standardlag",
+      "display": "Vælg visningslag",
+      "functional": "Faktisk funktionelt lag",
+      "funtional": "Aktuel",
+      "warn": "Hvis tasterne ikke fungerer, skal du skifte systemkontakten og tænde igen."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": ".Vil du skifte til...",
+    "connect": {
+      "1": "Tilslut din enhed med et kabel eller en 2.4G-modtager. \n(nogle modeller understøtter kun kablet tilstand)",
+      "2": "Klik på knappen \"Tilslut\" i øverste venstre hjørne, og vælg den enhed, du vil konfigurere."
+    },
+    "detectedKeyboardLanguage": "Vi registrerede, at dit tastatursprog er...",
+    "guide_tip": "Følg vejledningen nedenfor for at tilslutte din enhed",
+    "keepCurrentSetting": "Behold aktuelle indstillinger",
+    "lang": "Layoutsprog",
+    "resetSuccessContent": "Dit tastaturlayout er blevet nulstillet",
+    "resetSuccessTitle": "Nulstillet",
+    "select_device": "Vælg den enhed, du vil tilslutte",
+    "switchImmediately": "Skift nu"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Lysstyrke",
+    "color": "Farve",
+    "common": {
+      "setting_color": "Indstil farve"
+    },
+    "commonColor": "Almindelige farver",
+    "customColor": "Definér farver",
+    "decorate_light": {
+      "0": "Ingen",
+      "1": "Ensfarvet",
+      "2": "Åndende",
+      "3": "Farvecyklus",
+      "4": "Kapløb"
+    },
+    "effect": "Effekt",
+    "effect speed": "Hastighed",
+    "hue": "Kromaticitet",
+    "layer2": "RGB-zone",
+    "led": {
+      "sub": {
+        "title": "Tip: Vælg LED-stribe nedenfor, når du indstiller dens farve."
+      },
+      "title": "Lysbjælke"
+    },
+    "level": "Niveau",
+    "mix": {
+      "config": "Indstillinger for lyseffekt",
+      "hxxg": {
+        "hue": "Farvetone",
+        "saturability": "Mætning",
+        "speed": "Hastighed"
+      },
+      "rk": "Denne funktion giver dig mulighed for at oprette 2 forskellige tastezoner på samme tastatur til forskellige RGB-lyseffekter. For hver zone kan du indstille forskellige tidsperioder i en løkke, og hver tidsperiode kan indstilles med forskellige RGB-lyseffekter.",
+      "timeLine": {
+        "second_tips": "Inputtet for sekunder er for stort eller for lille.",
+        "title": "Tidslinje"
+      },
+      "verify_duration": {
+        "tip1": "Inputværdien skal være et tal og skal være større end 1 og mindre end 99!",
+        "tip2": "Der kan kun indtastes to decimaler",
+        "tip3": "Den indtastede værdi er for stor",
+        "tip4": "Den indtastede værdi er for lille"
+      }
+    },
+    "notSupport": "Enheden understøtter ikke lysindstillinger",
+    "perkey": {
+      "effect": "Valg af effekt",
+      "effects": {
+        "0": "Generel",
+        "1": "Åndende",
+        "2": "Enkelttastrespons",
+        "3": "Respons for nabotaster",
+        "4": "Hele tastaturet"
+      },
+      "redo": "gentag",
+      "region": "Områdevalg",
+      "region_select": "Vælg område",
+      "region_tip": "Vælg området i tastaturets taster, og indstil farven. Klik på Gem for at ændre farven på det tilsvarende område.",
+      "rk": "Farven på hver tast kan indstilles individuelt. Du kan ændre tastens farve ved at vælge den, klikke på området, hvor farven indstilles, ændre farven og gemme den.",
+      "save_warn": "For mange RGB-zoner, slet venligst nogle RGB-zoner og prøv igen.",
+      "select_tip": "Den valgte knap opretter ikke et område",
+      "select_warn": "Vælg venligst en knap",
+      "undo": "fortryd"
+    },
+    "saturation": "Mætning",
+    "settingAllBrightnessArea": "Indstiller alle zoners lysstyrke",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Dekorativt lys",
+      "indication": "Indikatorlys",
+      "led_light": "Lysstribestyring",
+      "mix_rgb": "Blandet RGB",
+      "perkey_rgb": "RGB pr. tast",
+      "screen": "Skærmjustering",
+      "selection": "Baggrundslys"
+    },
+    "underglow brightness": "Lysstyrke"
+  },
+  "lights": {
+    "0. None": "Ingen",
+    "1. Solid Color": "Ensfarvet",
+    "10. Cycle Pinwheel": "Cykel-pinwheel",
+    "11. Cycle Spiral": "Cykel-spiral",
+    "12. Dual Beacon": "Dobbelt fyr",
+    "13. Rainbow Beacon": "Regnbue-fyr",
+    "14. Jellybean Raindrops": "Jellybean-regndråber",
+    "15. Pixel Rain": "Pixelregn",
+    "16. Typing Heatmap": "Skrive-heatmap",
+    "17. Digital Rain": "Digital regn",
+    "18. Reactive Simple": "Reaktiv enkel",
+    "19. Reactive Multiwide": "Reaktiv multiwide",
+    "2. Breathing": "Åndende",
+    "20. Reactive Multinexus": "Reaktiv multinexus",
+    "21. Splash": "Sprøjt",
+    "22. Solid Splash": "Solid sprøjt",
+    "23. Per Key Rgb": "RGB pr. tast",
+    "3. Band Spiral Val": "Båndspiral-val",
+    "4. Cycle All": "Cykel alle",
+    "5. Cycle Left Right": "Cykel venstre-højre",
+    "6. Cycle Up Down": "Cykel op-ned",
+    "7. Rainbow Moving Chevron": "Regnbue-bevægelig chevron",
+    "8. Cycle Out In": "Cykel ud-ind",
+    "9. Cycle Out In Dual": "Cykel ud-ind dual"
+  },
+  "macro": {
+    "allchar": "Alle tegn",
+    "closeDelay": "Deaktivér forsinkelse",
+    "code": "Kodeindtastning",
+    "common": {
+      "flash": "Blink",
+      "title": "For at tildele en makro skal du vælge den og derefter klikke på en tast på tastaturet ovenfor."
+    },
+    "config": "Konfiguration",
+    "delay": "Forsinkelser",
+    "delaySet": "Tidsforsinkelse",
+    "dynamicDelay": "Dynamisk forsinkelse",
+    "endREC": "Stop optagelse",
+    "enterDown": "Indsæt ned",
+    "enterUp": "Indsæt op",
+    "fixedDelay": "Fast forsinkelse",
+    "inputdelay": "Indtast forsinkelsestid",
+    "inputtexct": "Indtast tekst",
+    "insertDelay": "Indsæt forsinkelse",
+    "keydown": "Tryk ned",
+    "keyup": "Slip",
+    "loopCount": "Antal løkker",
+    "loopCurrentDown": "Stop ved tryk",
+    "loopDown": "Stop ved enhver tast",
+    "loopOne": "Kør én gang",
+    "loopSet": "Løkkeindstillinger",
+    "loopUp": "Stop ved slip",
+    "macroReccord": "Optag",
+    "macroSetup": "Makro",
+    "mouse": "Mus",
+    "notEqual": "Registrer at den aktive tast ikke er sluppet, fortsæt?",
+    "record": "Optag",
+    "rename": "Omdøb",
+    "save": "Gem",
+    "setRepeatCount": "Antal gentagelser",
+    "specialText": "Tekstspecificitet",
+    "startREC": "Start optagelse",
+    "stop": "Stop",
+    "text": "Tekst",
+    "texttype": "Kun engelsk, tal og grundlæggende symboler kan indtastes.",
+    "tip": {
+      "clickCopy": "Klik for at kopiere teksten",
+      "fixDelay": "Her betyder den faste forsinkelse, at den er indlejret i hver hændelse, og hændelsen indeholder den forsinkede hændelse.",
+      "keyDelay": "Forsinkelse: {200}, Enhed: MS",
+      "keyDown": "Nulstil: {-KC_A}",
+      "keyText": "Tekst: ABCDEF",
+      "keyUp": "Tryk ned: {+KC_A}",
+      "macro_text": "Indtast den makro, du vil udføre.."
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnetisk",
+      "mechanical": "Mekanisk",
+      "tip": "tip",
+      "title": "Switch-statistik"
+    },
+    "calibration": {
+      "1": "Frakobl ikke USB-kablet, afbryd ikke enheden, og sluk ikke enheden under kalibrering. Ellers kan enheden gå ned.",
+      "2": "Start kalibrering",
+      "3": "Tryk ikke på nogen tast inden for 2 sekunder, før du klikker på \"Start kalibrering\".",
+      "4": "Tryk og hold tasten nede i 1 sekund for at fuldføre kalibreringen.",
+      "5": "Når kalibreringen lykkes, lyser baggrundslyset grønt.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Analog kurveprofil",
+      "save": "Gem kurve",
+      "title": "Indstillinger for joystick-kurve"
+    },
+    "directive": {
+      "bottomBack": "Tilbageslag",
+      "bottomIn": "Bund ind",
+      "bottomOut": "Bund ud",
+      "trigger": "Startudløser"
+    },
+    "distance": {
+      "advance_mode": "Avanceret",
+      "basic_mode": "Grundlæggende",
+      "current": "Aktuelle taster",
+      "globalDis": "Vælg alle",
+      "globalRt": "Indstil alle tastudløsere",
+      "limitTip": "Værdien har overskredet grænsen. Udfyld venligst igen.",
+      "magnet_calibrate": "Udløserdemo",
+      "magnet_calibrate_point": "Udløserpunkt",
+      "magnet_calibrate_tip": "Udløserdemo understøtter kun en enkelt tast",
+      "magnet_calibrate_tip_desc": "Vælg en tast, og tænd for kontaktknappen øverst til højre for at demonstrere udløsningen af den valgte tast.",
+      "magnet_calibrate_tip_empty": "Vælg venligst en tast",
+      "profile_help": "tryk på \"fn\" + \"p\" + \"z / x / c\", så kan du hurtigt skifte profilen til profil 1 / 2 / 3",
+      "result": "Indtast tastværdier",
+      "sensitive": "Følsomhed",
+      "setting": "Indstil aktiveringsafstand",
+      "show_mode_dis": "Aktiveringsafstand",
+      "show_mode_hide": "Ingen data",
+      "show_mode_rt": "Hurtig udløsning",
+      "speed_trigger": "Hurtig udløsning",
+      "trigger_distance": "(Tryk) Udløserafstand",
+      "trigger_distance_reset": "(Slip) Nulstillingsafstand",
+      "trigger_distance_twice": "(Tryk) Udløserafstand"
+    },
+    "dkr": {
+      "desc": "Maks. antal udløsninger:(6-100)",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Ryd tildeling",
+      "left_emu": "Emulér venstre",
+      "reflect": {
+        "conflict": "Denne tast er allerede indstillet"
+      },
+      "titles": {
+        "1": "Valg af joystick-knap",
+        "2": "Indstilling af joystick-knap",
+        "4": "Aktivér eller deaktivér tastaturtaster",
+        "5": "Aktivér, hvis du kan skrive, mens joysticket simuleres, deaktivér, hvis du ikke kan skrive, mens joysticket simuleres.",
+        "6": "Joystick-effektdemo",
+        "7": "Controller-genkendelsesfunktion",
+        "8": "1.Når den er deaktiveret, genkendes tastaturet ikke længere som en controller.",
+        "9": "2.Efter at have udført handlinger relateret til denne funktion skal du frakoble og tilslutte kablet igen, for at ændringerne træder i kraft.",
+        "10": "Standard-controller",
+        "11": "Xbox-controller",
+        "12": "Valg af controller-tilstand",
+        "13": "Efter at have skiftet til controller-tilstand skal du frakoble og tilslutte kablet igen, for at ændringen træder i kraft.",
+        "xbox": "1.Ændringerne træder først i kraft, når kablet frakobles og tilsluttes igen, når Xbox tændes eller slukkes.</br>2.Xbox er ikke kompatibel med macOS-systemet."
+      }
+    },
+    "mode": {
+      "default": "Standard",
+      "gamepad": "Gamepad",
+      "gaming": "Spiltilstand"
+    },
+    "multi_cmd": {
+      "b": "Bund ind",
+      "fulfilled": "Pladsen er fuld. Slet en eksisterende kommando for at indstille en ny.",
+      "list": "Bundne kommandoer",
+      "setting": "Én tast, flere kommandoer",
+      "test": "Test taster"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy understøtter kun magnetiske switch-taster",
+      "only_support_magnetic": "Mekaniske switch-taster er valgt. Denne menu understøtter kun magnetiske switch-taster."
+    },
+    "profile": "Profil",
+    "rename": "Omdøb",
+    "simulate": "Simulér",
+    "snap_tap": {
+      "absolute_priority": "Absolut prioritet",
+      "AP": "Tildel en højere udløserprioritet til en af de to taster, når de trykkes samtidigt.</br>*Klik på tastens midterikon for at skifte prioritet.",
+      "cancel_mode": "Neutral",
+      "CM": "Du kan indstille to knapper. Når de to knapper trykkes samtidigt, udløses ingen af de to knapper.",
+      "create": "opret",
+      "key_exist": "Konfigurationstasten findes allerede",
+      "last_key_priority": "Sidste tast-prioritet",
+      "LKP": "To taster kan indstilles, så når begge taster trykkes samtidigt, udløses den sidst udløste tast, samtidig med at den anden tast nulstilles.",
+      "SC": "Du kan indstille to taster, så når begge taster trykkes samtidigt, kan du få den, der trykkes dybest, til at udløse, og den anden til at nulstille.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Er du sikker på, at du vil skifte?",
+    "sure_switch_gamepad_desc": "Efter at have skiftet til spilcontroller-tilstand vil nogle knapper ikke længere fungere.",
+    "tab": {
+      "calibration": "Kalibrering",
+      "curve": "Kurve",
+      "distance": "Aktiveringsafstand",
+      "exit_calibration": "Afslut kalibrering",
+      "joystick_reflect": "Gamepad-analog",
+      "multi_cmd": "Én tast, flere kommandoer",
+      "snap_tap": "SOCD",
+      "toggle": "Skift ved langt tryk",
+      "toggle_tip": "Denne funktion giver dig mulighed for at udløse en tast i hurtig rækkefølge med ét tryk.",
+      "turbo": "Turbo",
+      "turbo_tip": "Skaber en kontinuerlig klikeffekt, når du trykker på en knap"
+    },
+    "toggle": {
+      "drk_guide_tip": "Denne funktion giver dig mulighed for at trykke en tast dybere, jo flere gange den udløses.",
+      "keySpeed": {
+        "times": "Maks. antal udløsninger",
+        "title": "Tasttrykhastighed",
+        "unit": "gange"
+      },
+      "selected": "Valgte taster",
+      "set": "Taster indstillet",
+      "title": "Åbn"
+    }
+  },
+  "menu": {
+    "addconnect": "Tilføj enhed",
+    "assist": "Hurtig start",
+    "bluetooth_firmware": "Trådløs firmware",
+    "disconnect": "Afbryd",
+    "expTools": "Udvidelsesværktøjer",
+    "fr_firmware": "Modtageropdatering",
+    "help": "Hjælpecenter",
+    "issue": "Tilbagemelding",
+    "keyboard_advance": "Avanceret tilstand",
+    "keyboard_firmware": "Firmwareopdatering",
+    "keyboard_he": "HE-tilstand",
+    "keyboard_light": "Baggrundslys",
+    "keyboard_macro": "Makro",
+    "keyboard_map": "Tastaturlayout",
+    "keyboard_test": "Tastetest",
+    "keyset": "Snap Action",
+    "scroll": "Forbedret scrolling",
+    "setting": "Indstillinger",
+    "switchSetting": "Skift indstillinger"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Er du sikker på, at du vil deaktivere denne knap?",
+      "resetAll": "Denne handling sletter alle gemte data. Fortsæt?",
+      "resetBtn": "Gendan til standardindstillinger?"
+    },
+    "dpi": {
+      "cable": "Kablet",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (dots per inch) indstiller markørens følsomhed — en højere værdi flytter markøren længere for den samme håndbevægelse.",
+      "gear": "Niveauer",
+      "previousSetting": "Hvis der ikke sker nogen handling i {{time}} sekunder, bekræftes det automatisk. Klik på \"Fortryd\" for at vende tilbage til de forrige indstillinger.",
+      "properties": "Systemets museindstillinger",
+      "properties_open": "Åbn systemets museindstillinger",
+      "properties_tip": "Blev der ikke åbnet noget? Prøv venligst igen efter at have downloadet Assistant.",
+      "reportRate": "Pollingfrekvens",
+      "reportRateDesc": "Understøtter op til 8000Hz",
+      "reportTip": "Justér, hvor ofte enheden sender rapporter tilbage til computeren.",
+      "title": "DPI-indstillinger",
+      "wireless": "2.4GHz",
+      "xyTip": "X‑akse DPI styrer markørfølsomheden i horisontal retning, Y‑akse DPI styrer følsomheden i vertikal retning. Højere værdier gør markøren mere responsiv i den tilsvarende retning.",
+      "xy_split_label": "X/Y-opdeling"
+    },
+    "he": {
+      "deep": "Dyb",
+      "distinguish_key": "Uafhængige venstre/højre-knapper",
+      "gear": "trin",
+      "left_btn": "Venstre knap",
+      "light_blocked": "Optisk sti blokeret",
+      "light_desc": "I hviletilstand er lysstrålen blokeret, så der registreres intet klik. Tryk på knappen for at frigøre stien — lyset når sensoren og udløser klikket, uden metalkontakter, der kan slides eller give dobbeltklik over tid.",
+      "light_led": "LED",
+      "light_mode": "Optisk switch",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Udløst",
+      "magnet_desc": "Vælg, hvor langt der skal trykkes, før et klik registreres. Lavere = hurtigere, dybere = færre fejlklik.",
+      "magnet_mode": "Magnetisk switch",
+      "motor_trigger": "Indstillinger for haptisk feedback",
+      "right_btn": "Højre knap",
+      "shared_btn": "Museknapper",
+      "title": "Indstillinger for museknaptrigger",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Aktiveringsindstillinger"
+    },
+    "key": {
+      "backward": "Tilbage",
+      "brightnessDown": "Lysstyrke ned",
+      "brightnessUp": "Lysstyrke op",
+      "calculate": "Lommeregner",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Kopiér",
+      "customDpi": "Brugerdefineret DPI",
+      "cut": "Klip",
+      "dock": "Dock til/fra",
+      "downScroll": "Rul ned",
+      "dpiLoop": "Skift DPI",
+      "email": "Mail",
+      "forward": "Frem",
+      "he": "Optisk / magnetisk mikro-bevægelse",
+      "home": "Vis skrivebord",
+      "homePage": "Åbn startside",
+      "launchPad": "Launchpad",
+      "left": "Venstreklik",
+      "leftClick": "Venstreklik",
+      "leftDouble": "Dobbelt venstreklik",
+      "leftLock": "Venstre-klik-lås",
+      "leftScroll": "Rul til venstre",
+      "leftScrollSustain": "Kontinuerlig rulning til venstre",
+      "leftTilt": "Vip til venstre",
+      "left_lock": "Venstre-klik-lås",
+      "lickDoubleClick": "Dobbelt venstreklik",
+      "light": "Lampeeffekt",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Løkke",
+      "loopColorfulBreathing": "Regnbue-åndende cyklus",
+      "loopDpi": "Skift DPI",
+      "loopOpticalMagnetic": "Optisk-magnetisk cyklus",
+      "loopPollingRate": "Skift pollingfrekvens",
+      "middle": "Midterklik",
+      "middleClick": "Midterklik",
+      "modeToggleAll": "Optisk / magnetisk mikro-bevægelse",
+      "mute": "Slå lyd fra",
+      "myComputer": "Denne computer",
+      "next": "Næste",
+      "nextDpi": "Næste DPI",
+      "nextPollingRate": "Næste pollingfrekvens",
+      "pageDown": "Side ned",
+      "pageUp": "Side op",
+      "paste": "Sæt ind",
+      "pause": "Afspil/pause",
+      "player": "afspiller",
+      "prevDpi": "Forrige DPI",
+      "previous": "Forrige",
+      "prevPollingRate": "Forrige pollingfrekvens",
+      "refresh": "Opdater",
+      "restoreFactory": "Fabriksnulstilling",
+      "right": "Højreklik",
+      "rightClick": "Højreklik",
+      "rightScroll": "Rul til højre",
+      "rightScrollSustain": "Kontinuerlig rulning til højre",
+      "rightTilt": "Vip til højre",
+      "screenshot": "Skærmbillede",
+      "scrollLeftClick": "Vip til højre",
+      "scrollRightClick": "Vip til venstre",
+      "sideKey": "Sideknap",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Stop",
+      "swichLight": "Skift af lyseffekt",
+      "switchApp": "Skift program",
+      "task": "Mission Control",
+      "trackballToScroll": "Trackball til rulning",
+      "upScroll": "Rul op",
+      "volumeDown": "Skru ned",
+      "volumeUp": "Skru op",
+      "webLessen": "Zoom ud",
+      "webMagnify": "Zoom ind"
+    },
+    "keyboard": "Tastatur",
+    "key_fun": {
+      "basic": "Grundlæggende knapper",
+      "disable": "Deaktivér knap",
+      "dpi": "DPI",
+      "game": "Gamingtaster",
+      "game_tip": "Hold den tildelte tast nede for gentagne gange at sende de valgte tastetryk, med justerbart antal og frekvens.",
+      "keyboard": "Tastekombinationer",
+      "keyboard_tip": "Vælg en eller flere modifikatortaster, og tilføj derefter en standardtast. Klik på feltet og tryk på en tast, eller vælg en fra højre.",
+      "macro": "Makro",
+      "media": "Multimedietaster",
+      "pollingRate": "Pollingfrekvens",
+      "profile": "Profil",
+      "sensitive": "Følsomhed",
+      "shortCut": "Genvejstaster"
+    },
+    "key_game": {
+      "count": "Antal",
+      "infinite": "Ubegrænset",
+      "rate": "Frekvens"
+    },
+    "light": {
+      "colorFlowing": "Warwick-streamer",
+      "flashLight": "Blinkende neonlys",
+      "fullColorCycle": "Fuld farvecyklus",
+      "soleBreathe": "Monokromatisk åndedræt",
+      "soleFlowing": "Hestevæddeløb",
+      "soleLight": "Monokromt konstant lys"
+    },
+    "menu": {
+      "angle": "Vinkeljustering",
+      "dpi": "DPI-indstillinger",
+      "key": "Tilpas",
+      "light": "Lys",
+      "macro": "Makro",
+      "poll_rate": "Pollingfrekvens",
+      "profile": "Profil",
+      "sys": "Avanceret"
+    },
+    "mouse": "Mus",
+    "polling_rate": {
+      "daily": "Kontor",
+      "fps20k": "Sensorsamplingtilstand",
+      "game": "Spiltilstand",
+      "office_mode": "Standardtilstand",
+      "office_mode_desc": "Jævn drift med stabil scanning.",
+      "rage_content": "Strømforbruget stiger, når konkurrencetilstand er aktiveret.",
+      "rage_desc": "≥20K sensorscanningsfrekvens for lavere latenstid og højere præcision. Bruger mere strøm.",
+      "rage_mode": "Konkurrencetilstand",
+      "rage_title": "Bekræft aktivering af konkurrencetilstand?"
+    },
+    "profile_tab": {
+      "changeIcon": "Skift ikon",
+      "selectMode": "Vælg tilstand"
+    },
+    "scroll": {
+      "acceleration": "Hastighedsacceleration",
+      "consecutive_times": "Antal kontinuerlige rulninger",
+      "demo": "Rulledemo",
+      "direction": "Rulleretning",
+      "duration": "Rullevarighed",
+      "interval": "Rulleinterval (ms)",
+      "scroll": "Vandret rulning",
+      "speed": "Rullehastighed",
+      "step": "Minimum rulletrin",
+      "tip_acceleration": "Indstil rulleacceleration til et multiplum af den aktuelle værdi.",
+      "tip_consecutive_times": "Efter kontinuerlig rulning skifter den automatisk til jævn rulning",
+      "tip_demo": "Du kan afprøve den forbedrede bølgeindstilling her",
+      "tip_direction": "Skift retningen for musens rulning",
+      "tip_disconnect": "Forbedret rulning kræver, at du downloader Assist for at bruge det",
+      "tip_interval": "Intervaltid for kontinuerlig rulning",
+      "tip_speed": "Øg rullehastigheden"
+    },
+    "shortcut_tooltip": {
+      "general": "Når følgende funktioner er indstillet, vil de træde i kraft på både Mac- og Windows-systemer",
+      "mac": "Følgende funktionsindstillinger træder kun i kraft på Mac-systemet",
+      "win": "Følgende funktionsindstillinger træder kun i kraft på Windows-systemet"
+    },
+    "sys": {
+      "angle": "Vinkeljustering",
+      "angle_correction_after": "Efter justering",
+      "angle_correction_no": "Før justering",
+      "angle_preview": "Før og efter",
+      "angle_reset_btn": "Nulstil til 0°",
+      "backward": "Omvendt",
+      "battery_indicator": "Batteriindikator",
+      "delay": "Debounce-tid",
+      "forward": "Standard",
+      "funConfig": "Systemfunktioner",
+      "keyResponseTime": "Tastens responstid",
+      "leftLock": "Lås venstreklik",
+      "line": "Vinkellås",
+      "lock": "Lås",
+      "lod": "Løfteafstand",
+      "motion": "Motion Sync",
+      "pairBond": "Parringsgenvej",
+      "pairLimit": "Parringstaster understøtter kun 1-3 taster",
+      "power": "Strømstyring",
+      "respSeconds": "Responstid (ms)",
+      "scroll": "Rulleretning",
+      "sensor": "Sensorydelse",
+      "sleep": "Enhedsdvale",
+      "unlock": "Lås op",
+      "wave": "Ripple-kontrol"
+    },
+    "tip": {
+      "leftLock": "Konfiguration af venstreklik er låst og kan ikke konfigureres."
+    },
+    "tips": {
+      "advanceDelayDesc": "I avanceret tilstand kan du indstille en uafhængig responsforsinkelse (0-20 ms) for hver tast individuelt.",
+      "angleDesc": "Justér musesensorens vinkel, så en mus, der holdes let skråt, stadig sporer præcist på den vandrette akse.",
+      "delayDesc": "Indstil forsinkelse for at undgå fejludløsninger fra hurtige museklik/jitter.",
+      "factorySetDesc": "Ved at klikke her slettes de aktuelle indstillinger på din enhed, og den gendannes til fabriksindstillingerne",
+      "fps20kDesc": "Musesensoren fanger 20.000 billeder af musemåttens overflade pr. sekund og leverer præcis og forsinkelsesfri sporing af musebevægelser.",
+      "indicatorDesc": "Denne kontakt styrer kun visningen af normal batteristatus i 2.4G-tilstand",
+      "leftLockDesc": "Når lås af venstreklik er aktiveret, kan den venstre knap ikke tildeles en ny funktion.",
+      "lineDesc": "Filtrerer intelligent mindre håndrystelser for at reducere baneafvigelser langs den vandrette og lodrette akse.",
+      "lodCurr": "Aktuel løfteafstand for musen",
+      "lodDesc": "Den maksimale højde, hvor musebevægelse stadig registreres og spores.",
+      "motionDesc": "Synkroniserer sensorinput med systemets respons for at reducere hakken eller forsinkelse af markøren.",
+      "pairBondDesc": "Tilpas tastekombinationen, og tryk på den samtidigt i 4 sekunder for at gå i Bluetooth/2.4G-parringstilstand.",
+      "scrollDirDesc": "Retningen for indholdets bevægelse på skærmen, når musehjulet rulles op eller ned",
+      "sensorDesc": "Forbedrer musens præcision og stabilitet ved tegning af lineære, cirkulære og andre baner.",
+      "sleepDesc": "Understøtter automatisk dvale, når enheden er inaktiv efter en timeout i trådløs tilstand.",
+      "waveDesc": "Reducerer bølgede markørspor forårsaget af håndrystelser for jævnere bevægelse."
+    },
+    "wheel": {
+      "adjustTimeout": "Kalibreringstimeout",
+      "sensitivity": "Følsomhed"
+    }
+  },
+  "notify": {
+    "emptyHid": "Ingen HID-enhed valgt",
+    "fail": "Mislykkedes",
+    "fr_not_connect": "Driveren kan ikke bruges, efter enheden går i dvaletilstand; du kan vække enheden ved at berøre en af dens knapper",
+    "hidAlreadyConnected": "HID-enhed tilsluttet",
+    "hidConfNotBrand": "Dette mærke understøttes ikke i øjeblikket",
+    "hidConfNotFound": "Ingen gyldig HID-enhedskonfiguration fundet",
+    "hidDeviceNotFount": "HID-enhed ikke til stede",
+    "hidUnconnected": "HID-enhed ikke tilsluttet",
+    "import": {
+      "layout": "Dit tastaturlayout er blevet importeret",
+      "title": "Import gennemført"
+    },
+    "invalid_macro_json": "Ugyldig makrokonfiguration",
+    "invalid_rgb_json": "Ugyldig konfiguration",
+    "keyboard_not_support_wireless": "Tastaturets firmware understøtter ikke trådløs",
+    "keycodeNotFound": "Fejl i tastekodekonfiguration",
+    "limited": "Maksimumgrænse overskredet",
+    "macroSizeLimit": "Makrostørrelse overskrider tilgængelig plads",
+    "notSupportHid": "Denne browser understøtter ikke HID-forbindelse. Brug Chrome, Edge eller Opera til at oprette forbindelse",
+    "sleep": "Ingen tilsluttet enhed, eller enheden er i dvaletilstand",
+    "success": "Lykkedes",
+    "success_competitive": "Skift til konkurrencetilstand",
+    "success_connect": "Forbindelse gennemført",
+    "success_office": "Skift til standardtilstand",
+    "unknownErr": "Ukendt fejl"
+  },
+  "onboarding": {
+    "completed": "Vejledningen er fuldført 🎉",
+    "connect": {
+      "description": "Forbind dit tastatur til computeren med et USB-kabel, klik på “Forbind”, og vælg derefter din enhed i dialogen.",
+      "title": "Forbind dit tastatur"
+    },
+    "entry": "Kom godt i gang",
+    "flow": {
+      "connect": "Forbind enhed",
+      "keymap": "Omprogrammer taster",
+      "light": "Baggrundsbelysningseffekter"
+    },
+    "hint": "Klik på det markerede område for at fuldføre handlingen, eller klik på “Spring vejledning over”.",
+    "keymap": {
+      "select_a": {
+        "description": "Klik på “A” i funktionspanelet nedenfor for at omprogrammere mellemrumstasten til A. Vejledningen lukkes automatisk, når du er færdig.",
+        "title": "Trin 2 · Omprogrammer til “A”"
+      },
+      "select_space": {
+        "description": "Klik på mellemrumstasten nederst på tastaturet for at vælge den.",
+        "title": "Trin 1 · Vælg mellemrumstasten"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Brug farvevælgeren til højre til at indstille farven til grøn (træk i vælgeren eller indtast RGB 0, 255, 0). Vejledningen lukkes automatisk, når du er færdig.",
+        "title": "Trin 2 · Indstil til grøn"
+      },
+      "select_static": {
+        "description": "Vælg “Solid Color” i liseffektlisten nedenfor for at indstille tastaturet til en statisk enkeltfarveeffekt.",
+        "title": "Trin 1 · Vælg “Solid Color”"
+      }
+    },
+    "skip": "Spring vejledning over",
+    "step": "TRIN"
+  },
+  "screen": {
+    "format": {
+      "limit": "Billedformatet kan kun være PNG, JPG eller GIF"
+    },
+    "resolution": {
+      "limit": "Billedstørrelsen kan ikke overstige 240×240"
+    },
+    "size": {
+      "limit": "Billedfilens størrelse kan ikke overstige 300KB"
+    },
+    "upload": {
+      "format": "PNG eller JPG (maks. 500KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Denne funktion kan højst vælge {{count}} tastepositioner"
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Scanningsinterval"
+    },
+    "file_extra_properties_not_supported": "Filen indeholder attributter, der ikke understøttes",
+    "file_import_failed": "Kunne ikke importere fil",
+    "file_upload_no_config_file": "Konfigurationsfil ikke registreret. Upload venligst",
+    "info": "Enhedsoplysninger",
+    "infos": {
+      "bluVersion": "Bluetooth-version",
+      "deviceDesc": "Firmwareversion",
+      "name": "Navn"
+    },
+    "json_config": "Json-indstilling",
+    "lng": "Sprog",
+    "log": "Udgivelsesnoter",
+    "onlyview": "Dette tastaturs konfiguration kan ikke ændres.",
+    "other": "Andet",
+    "others": {
+      "debounce": {
+        "name": "Forsinket tasterespons",
+        "tip": "Efter aktivering kan den mindste responsforsinkelse indstilles til 0ms",
+        "title": "Justér minimumværdi",
+        "warning": {
+          "title": "Er du sikker på, at du vil aktivere det?"
+        }
+      }
+    },
+    "theme": "Udseende",
+    "updateLog": "Versionshistorik"
+  },
+  "snap": {
+    "list": "Bundne kommandoer"
+  },
+  "test": {
+    "btn": {
+      "reset": "Test igen",
+      "reset_bindings": "Ryd bindinger"
+    },
+    "msg": {
+      "bind_success": "{{count}} taster er blevet bundet til {{audioName}}",
+      "bind_success_single": "{{keyName}}-tasten er blevet bundet til {{audioName}}",
+      "no_key_selected": "Vælg først den tast, der skal bindes",
+      "reset_success": "Nulstilling gennemført",
+      "storage_full": "Utilstrækkelig lagerplads",
+      "unsupported_format": "Lydformat understøttes ikke. Brug MP3, WAV, OGG eller M4A.",
+      "upload_success": "Lyd uploadet"
+    },
+    "per_key_sound": {
+      "desc": "Tildel en unik lyd til hver tast. Når denne funktion er deaktiveret, bruger alle taster som standard den valgte lyd.",
+      "tip": "I andre tilstande end testmatrix kan du kun indstille en samlet tasteresponslyd."
+    },
+    "sound": {
+      "tip": "Når kontakten er slået til, giver tastetesten lydfeedback, og du kan vælge din foretrukne lyd."
+    },
+    "sound_btn": {
+      "Balloon": "Ballon",
+      "CarHorn": "Bilhorn",
+      "Cartoon": "Tegnefilm",
+      "CoinCollecting": "Møntopsamling",
+      "custom": "Brugerdefineret",
+      "default": "Standard",
+      "DogBarking": "Hundegøen",
+      "Donkey": "Æsel",
+      "Glass": "Glas",
+      "PartyHorn": "Festfløjte",
+      "PhoneDial": "Telefonopkald",
+      "Punch": "Slag",
+      "RubberChicken": "Gummikylling",
+      "RubberToy": "Gummilegetøj",
+      "Sneeze": "Nys"
+    },
+    "title": {
+      "custom_sound": "Brugerdefineret lydbibliotek",
+      "per_key_sound": "Lydtildeling pr. tast",
+      "reset_custom_bindings": "Er du sikker på, at du vil nulstille lydbindingerne?",
+      "sound": "Aktivér lydeffekter",
+      "sound_effect": "Valg af lydeffekt",
+      "uploaded_sounds": "Uploadede lyde"
+    },
+    "upload": {
+      "browse": "gennemse for at uploade",
+      "info": "Understøttet: MP3, WAV, OGG, M4A ·  Samlet grænse: 25 MB  ·  Anbefalet lyd: 1-2 sekunder",
+      "placeholder": "Træk og slip lydfiler her, eller"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Vælg venligst en tast først."
+    },
+    "key": {
+      "direction": "8-vejs vinkellås",
+      "gesture": "Gestustilstand",
+      "held": "Hold",
+      "scroll": "Rul",
+      "tap": "Tryk"
+    },
+    "keycode": {
+      "key": "tast",
+      "modifiers": "Modifikatorer"
+    },
+    "key_fun": {
+      "basic": "Grundlæggende",
+      "comb": "Kombinationstast",
+      "feature": "Vinkellås",
+      "keyCombination": "Tastekombination",
+      "layer": "Lag",
+      "macro": "Makro",
+      "simulate": "Tryk samtidigt",
+      "single": "Tryk / hold",
+      "special": "Specialtaster",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Du kan kun indstille én standardtast.",
+    "placeholder": {
+      "selectionKeys": "Valgtaster"
+    },
+    "selectInputFirst": "Vælg venligst et inputfelt først.",
+    "slide": {
+      "leftSlide": "Stryg til venstre",
+      "rightSlide": "Stryg til højre",
+      "underSlide": "Stryg ned",
+      "upSlide": "Stryg op"
+    },
+    "tips": {
+      "angleGearsDesc": "Hvis du f.eks. tildeler \"90°\" til tast 4, vil et klik på tast 4 indstille orienteringen af det aktuelle lag til 90° (vandret).",
+      "directionDesc": "For eksempel: Når tast 4 er bundet til funktionen \"otte-vejs navigation\", vil trackballen ved et klik på tast 4 rotere 45 grader med uret. Gentagne klik vil forårsage yderligere en 45-graders rotation, og så videre.",
+      "disTapLayer": "Laget kan kun indstilles ved langt tryk",
+      "disTwoMs": "To museknapper kan ikke indstilles samtidigt",
+      "gestureDesc": "For eksempel: Når tast 4 er tildelt \"gestustilstand\", og den ønskede tasteværdi, der skal sendes, er bundet i kolonnen \"trackball\", kan den indstillede tasteværdi sendes ved at trykke på tast 4 og stryge trackballen op, ned, til venstre eller til højre.",
+      "held": "Mens den holdes",
+      "knobNotSupportSet": "Knappen kan ikke indstille denne funktion",
+      "layerDesc1": "Understøtter 0-7 lag, og hvert lags taster kan indstilles til at binde forskellige vinkler og funktioner.",
+      "layerDesc2": "For eksempel kan tast 4 på lag 0 bindes til \"rul op og ned\", og tast 4 på lag 1 kan bindes til \"otte-vejs skift\".",
+      "layerHeaderDesc": "Standardlaget er 0. Kommandoerne herunder bruges til at aktivere og deaktivere lag. Hvis flere lag er aktive samtidigt, har tastekortet for laget med det højeste nummer forrang. Som en generel regel anbefales det at bruge `MO(n)` til lag beregnet til midlertidig brug og `TO(n)` til lag beregnet til skift. *Bemærk: Da `TG(n)` kræver, at du selv styrer dets til/fra-tilstand, er der mulighed for, at et utilsigtet lag kan forblive aktivt.",
+      "layerMODesc": "Denne tast aktiverer kun det n'te lag, når der trykkes på den. Slip tasten, og systemet vender tilbage til sin oprindelige tilstand. Denne funktion er meget nyttig, når du midlertidigt vil bruge et andet lag, i lighed med Fn-tasten.",
+      "layerTGDesc": "Skift til/fra-tilstanden for lag n. Hvis lag n er slået fra, aktiveres det; hvis det er aktiveret, deaktiveres det. Tilstanden forbliver uændret, efter at knappen slippes, indtil der trykkes på den igen. Da det er nødvendigt løbende at overvåge lagenes til/fra-tilstand, er det normalt mere praktisk at bruge MO(n) eller TO(n).",
+      "layerTODesc": "Tryk på denne knap én gang for at skifte til lag n. På dette tidspunkt vil alle lag—undtagen standardlaget—være deaktiveret. Denne funktion er ideel, når du ønsker at udpege et bestemt lag som dit primære arbejdslag.",
+      "scrollDesc": "For eksempel: Når tast 4 er bundet til \"rul op og ned\", kan trackballen ved tryk på tast 4 styre vinduets lodrette bevægelse. For eksempel: Når tast 4 er bundet til \"rul op og ned\", kan trackballen ved tryk på tast 4 styre vinduets lodrette bevægelse.",
+      "selectKey": "Valgtaster",
+      "simulateAlreadyAddRow": "Indsend venligst det aktuelle listeindhold, før du tilføjer flere.",
+      "simulateAlreadyExists": "Denne kombination af taltaster findes allerede.",
+      "simulateAntiGhosting": "Denne tastekombination er til nulstillingsfunktionen. Vælg venligst andre kombinationer",
+      "simulateMaxLen": "Der kan maksimalt vælges fire taster",
+      "simulateMaxList": "Den maksimale lagermængde er overskredet",
+      "simulateMinLen": "Vælg venligst mindst to taster",
+      "tap": "Ved tryk",
+      "title_placeholder": "Indtast venligst en titel"
+    },
+    "title": {
+      "advanceFeatures": "Avancerede lagkontroller",
+      "basickey": "Grundlæggende taster",
+      "bindList": "Bundne kommandoer",
+      "defaultFeatures": "Snap-vinkel",
+      "dpiReturnRate": "DPI / pollingfrekvens",
+      "gesture": "Trackball-bevægelse",
+      "modifierKey": "Modifikatortaster"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcher kræver VIA-json-filen for den valgte enhed. Klik på knappen “Bekræft” nedenfor, og upload json-filen for den valgte enhed for at bruge Launcher. Du kan få VIA-json-filen fra produktudbyderen.",
+      "title": "Upload af VIA-json-fil"
+    }
+  }
+}
