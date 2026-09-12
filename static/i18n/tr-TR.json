@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Uyarı:"
+    },
+    "debounce": {
+      "defer_global": "Klavye başına debouncing. Herhangi bir durum değişikliğinde, genel bir zamanlayıcı ayarlanır. DEBOUNCE milisaniye boyunca hiçbir değişiklik olmadığında, tüm giriş değişiklikleri gönderilir. Bu, en düşük bellek kullanımıyla en yüksek performanslı algoritmadır ve gürültüye karşı dayanıklıdır.",
+      "defer_per_key": "Tuş başına zamanlayıcı. Herhangi bir durum değişikliğinde, tuş başına bir zamanlayıcı ayarlanır. Bu tuşta milisaniye boyunca herhangi bir değişiklik olmadığında, tuş durum değişikliği gönderilir.",
+      "eager_defer_per_key": "Tuş başına arıza giderme. Tuş basılı durum değişikliğinde, yanıt anında verilir ve ardından bu tuş için milisaniye boyunca başka giriş yapılmaz. Tuş bırakma durum değişikliğinde, tuş başına bir zamanlayıcı ayarlanır. Bu tuşta milisaniye boyunca değişiklik olmadığında, tuş bırakma durum değişikliği gönderilir.",
+      "eager_per_key": "Her tuş için hata giderme. Herhangi bir durum değişikliğinde, yanıt anında verilir ve ardından o tuş için DEBOUNCE milisaniye boyunca başka giriş yapılmaz.",
+      "none": "Debounce işlemi gerçekleştirilmez.",
+      "tip": {
+        "1": "“EAGER PER KEY” (Tuş Başına Hevesli), bir tuşa bastığınızda tuşun hemen yanıt verdiği, ancak seçtiğiniz yanıt saniyeleri içinde o tuşa yapılan tüm diğer girişlerin yok sayıldığı önerilen debounce modudur.",
+        "2": "Diğer debounce modlarını seçmek istiyorsanız, üstteki “?” düğmesine tıklayarak diğer debounce modlarının açıklamalarını görüntüleyebilirsiniz.",
+        "3": "Tepki süresi 0 ms'ye yakın olduğunda, çift tıklama sorunu ortaya çıkabilir."
+      }
+    },
+    "macro": {
+      "gesture": "Hareket modunu her zaman açık tut",
+      "gesture_description": "Etkinleştirildikten sonra bir hareket tuşu atamaya gerek yoktur.",
+      "gesture_not_configured": "Açılamıyor. « Tuş İşlevi – Trackball » bölümüne gidin ve çıkış değerini ayarlayın.",
+      "scroll": "Kaydırma modunu her zaman açık tut",
+      "scroll_description": "Etkinleştirildikten sonra hareket tuşlarına bağlanması gerekmez.",
+      "title": "Hareket davranışı (bir seçenek seçin)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover), herhangi bir giriş çakışması veya sinyal kaybı olmadan sınırsız sayıda tuşa aynı anda basılmasını sağlayan bir klavye giriş teknolojisidir. NKRO'yu devre dışı bırakmak, klavyenin aynı anda 6 tuşa kadar basılmasını doğru şekilde kaydedeceği anlamına gelir.",
+      "title": "NKRO Ayarı"
+    },
+    "performance": {
+      "mode_battery": "Pil Modu",
+      "mode_high": "Yüksek performans modu",
+      "mode_normal": "Varsayılan Mod",
+      "title": "Performans Modu Değiştirme"
+    },
+    "poll_rate": "Sorgulama Hızı Ayarı",
+    "poll_rate_tip": {
+      "bt": "Bluetooth bağlantı modu",
+      "bt_desc": "Bluetooth bağlantı modunda, yoklama hızı 125 Hz olarak sabitlenmiştir. Bu ayar, bağlantı sınırlamaları nedeniyle değiştirilemez.",
+      "fr": "2,4 GHz bağlantı modu",
+      "usb": "Kablo bağlantı modu"
+    },
+    "sleep": {
+      "backlight": "Otomatik arka ışık kapanma başlangıç zamanı",
+      "magnet": "Klavye Matrisi Tarama Bekleme Süresi",
+      "magnet_range": "Matris tarama bekleme süresi, arka ışık kapanma gecikmesinden daha uzun ve uyku zaman aşımı süresinden daha kısa olmalıdır.",
+      "magnet_tip": "Hall Etkisi Klavye Matrisi Tarama Boşta Kalma Süresi 60 Saniyeden Fazla Olmalıdır",
+      "time": "Otomatik Uyku Modu Başlangıç Zamanı"
+    },
+    "tips": {
+      "keepLayer_close": "2. Bu seçenek kapalıysa, « Katman 1 » düzenleme ekranına girdiğinizde NapePro, « Katman 1 » ile birlikte geçiş yapar.",
+      "keepLayer_enable": "1. Bu seçenek açıksa, ör. NapePro « Katman 0 » üzerinde çalışıyorsa, « Katman 1 » düzenleme ekranına girseniz bile « Katman 0 » üzerinde kalır."
+    },
+    "title": {
+      "keepLayer": "Katman düzenleme modu"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Cihaz bağlandı",
+        "idle": "Cihazı bağlamak için dokunun",
+        "pending": "Yetkilendirme başlatılıyor..."
+      },
+      "download_assistant": {
+        "idle": "En son Assistant sürümünü indirmek için tıklayın"
+      },
+      "resume_assistant": {
+        "done": "İşlemeye devam et",
+        "idle": "Assistant açık",
+        "pending": "İşlemeye devam ediliyor...",
+        "prompt": "Açtım"
+      },
+      "undo_remap": {
+        "done": "Tuş ataması geri alındı",
+        "idle": "Bu tuş atamasını geri al",
+        "pending": "Geri alınıyor..."
+      }
+    },
+    "clear_tooltip": "Sohbeti temizle",
+    "close_tooltip": "Kapat",
+    "deep_thinking": "Derin düşünme",
+    "generated_content_notice": "AI tarafından oluşturulan içerik hatalar içerebilir. Kontrol edin.",
+    "input_placeholder": "Keychron AI'ya sor",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Hızlı yanıta odaklan",
+        "label": "Daha hızlı"
+      },
+      "deepseek-v4-pro": {
+        "description": "Daha karmaşık görevler için",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Dengeli",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Yürütme tamamlandı ancak görüntülenebilir bir yanıt alınmadı.",
+    "pin": {
+      "tooltip_off": "Ayır",
+      "tooltip_on": "Sohbet penceresini sabitle"
+    },
+    "pinned_success": "İletişim kutusu sabitlendi, taşınamaz.",
+    "quick": {
+      "connect_keyboard": "Boşluk tuşunu A'ya ata",
+      "remap_space": "Işık efektini Band Spiral Val olarak değiştir",
+      "set_light": "Discord'u aç"
+    },
+    "result": {
+      "connect_failed": "Bağlantı hatası: {{error}}",
+      "device_connected": "Cihaz bağlandı",
+      "no_device_undo": "Bağlı cihaz yok, bu nedenle atama geri alınamaz.",
+      "no_remap_to_undo": "Geri alınacak bir atama yok.",
+      "undo_failed": "Atama geri alınamadı: {{error}}",
+      "undo_success": "Son atama geri alındı ve {{count}} tuş geri yüklendi."
+    },
+    "select_model": "Modeli seç",
+    "status": {
+      "answering": "Yanıtlıyor",
+      "executing": "Yürütülüyor",
+      "loading": "Yükleniyor",
+      "thinking": "Düşünülüyor",
+      "verifying": "Doğrulanıyor"
+    },
+    "stopped": "Durduruldu",
+    "title": "Keychron AI",
+    "unpinned_success": "Ayrıldı",
+    "welcome": "Merhaba! « Keychron AI Asistanı », cihazları bağlama, tuş atama, RGB efektlerini özelleştirme, makro oluşturma ve çok daha fazlasında size yardımcı olabilir."
+  },
+  "application": {
+    "addr": "Hızlı başlatma web sayfası",
+    "add_addr": "Adres ekle",
+    "apple_silicon_version": "Apple Silicon için indirin (.pkg)",
+    "app_duplicate": "Uygulama zaten mevcut, tekrar eklemenize gerek yok.",
+    "app_hint": "Kısayol tuşu ayarlayabilir, hızlıca açmak istediğiniz yazılımı seçebilir ve ardından bir tuşa atayabilirsiniz.",
+    "app_placeholder": "Lütfen bir uygulama seçin",
+    "clear_all": "Tümünü temizle",
+    "desktop_old_content": "Bu özelliği kullanmak için masaüstü hizmetinin en son sürümünü indirip kurun.",
+    "desktop_old_title": "Eski bir masaüstü hizmeti algılandı.",
+    "download_keychron_assistant": "Yüklü değilse, indirmek için tıklayın",
+    "download_new_assistant_tip": "Tüm özellikleri kullanmak için Keychron Assistant'ın en son sürümünü indirin.",
+    "download_zip_tip": "Uyarı: Keychron Assist'i yüklemeden önce, indirilen dosyayı açmanız gerekir.",
+    "file_not_found": "Dosya mevcut değil",
+    "intel_version": "Intel Mac'ler için indir (.dmg)",
+    "keySetting": "Bu tuşun zaten bir kısayolu var!",
+    "key_no_conf": "Kısayol tuşları ayarlanmamıştır.",
+    "limited": "Maksimum sınır aşıldı. Şu anda hızlı başlatma sınırı 5'tir. Gelecekte bu sayıyı artırmayı planlıyoruz.",
+    "need_keychron_assistant": "Bu özellik Keychron Assistant'ın çalışır durumda olmasını gerektirir.",
+    "no_key_selected": "Seçili anahtar yok",
+    "open_assistant_no_response_tip": "« Aç » seçeneğine tıkladıktan sonra hiçbir şey olmazsa, en son Assistant'ı indirip tekrar deneyin.",
+    "open_tip1": "1. Hızlı başlatma özelliği, hızlı başlatmak istediğiniz uygulamayı bir düğmeye bağlar. Bu düğmeye tıklayarak uygulama hızlıca başlatılır.",
+    "open_tip2": "2. Önce Assist'i indirin ve hızlı başlatma uygulamasını ekleyin. Ardından klavye başlatıcısına dönün, tuşları bağlayın ve başlatın.",
+    "select_key_to_bind": "Bu ayarı bağlamak için klavyeden tuşları seçin",
+    "soft": "Hızlı Başlangıç Uygulaması",
+    "submit_hint": "Hızlı açmak istediğiniz yazılımı seçin ve ardından [Gönder] düğmesine tıklayın. Gönderildikten sonra, hızlı açma özelliği etkinleştirilebilir ve kullanılabilir.",
+    "title_placeholder": "Özel ad (isteğe bağlı)",
+    "unsupported_feature": "Desteklenmeyen özellik",
+    "unsupported_feature_download_new_version": "Bu özellik desteklenmiyor. En son sürümü indirip deneyin.",
+    "url": "Bir web sayfasını hızlıca açın",
+    "url_hint": "Kısayol tuşu ayarlayabilir, hızlıca açmak istediğiniz web adresini seçebilir ve ardından bir tuşa atayabilirsiniz.",
+    "url_placeholder": "Lütfen geçerli bir URL girin"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Devam et",
+      "later": "Sonra",
+      "openSystemPreferences": "Sistem Tercihlerini aç",
+      "restartMessage": "Erişilebilirlik izni başarıyla verildi. Kullanım için uygulamanın yeniden başlatılması gerekiyor.",
+      "restartNow": "Şimdi yeniden başlat",
+      "restartTitle": "İzin verildi",
+      "step1": "Sistemin erişilebilirlik izinleri sayfasına gitmek için aşağıdaki düğmeye tıklayın.",
+      "step2": "Yetkilendirme için Launcher Assistant anahtarını bulun ve açın.",
+      "step3": "Şifrenizi girin",
+      "step4": "Yetkilendirmeden sonra değişikliklerin uygulanması için uygulamadan çıkıp yeniden açın.",
+      "welcomeTitle": "Kullanım Asistanına Hoş Geldiniz"
+    },
+    "click_no_response_tip": "Bilgisayarınızdaki fare ayarlarını açın ve işaretçi, kaydırma ve tıklama seçeneklerini ayarlayın.",
+    "common": {
+      "add": "Ekle",
+      "back": "Geri",
+      "delete": "Sil",
+      "info": "Bilgi",
+      "refresh": "Yenile",
+      "settings": "Ayarlar"
+    },
+    "hint_reset": "Cihaz değişikliği algılandı. Yerleşim farklılıkları nedeniyle, bazı tuşlar Hızlı Başlangıç'ta gösterildiği gibi çalışmayabilir. Yeni yerleşime uyacak şekilde ayarları sıfırlayacak mısınız?",
+    "hint_reset_1": "Farklı bir cihaza geçtiğiniz tespit edildi. Ayarlarınızı sıfırlamak ister misiniz?",
+    "hint_reset_2": "(Not: Modeller arasındaki tuş düzeni farklılıkları nedeniyle, Hızlı Başlangıç ekranı gerçek işlevlerle eşleşmeyebilir ve bu da tuşların çalışmamasına neden olabilir.",
+    "home": {
+      "addAddress": "Adres ekle",
+      "addSoftwareDescription": "Hızlı açmak istediğiniz yazılımı aşağıya ekleyin ve ardından 「Hızlı Başlat」 düğmesini tıklayarak başlatıcıdaki düğmeyi bağlayın.",
+      "delete": "sil",
+      "onceAddedDescription": "Uygulamanızı aşağıya ekledikten sonra, geri dönmek için düğmeye tıklayın.",
+      "quickStartApplication": "Hızlı Başlangıç Uygulaması",
+      "search": "Arama",
+      "setUpQuickStart": "Hızlı Başlangıç Kurulum",
+      "tooltipText1": "1. Hızlı başlatma işlevi, hızlı bir şekilde başlatmak istediğiniz uygulamayı belirli bir düğmeye bağlamayı ifade eder; hızlı bir şekilde başlatmak için düğmeye tıklayın.",
+      "tooltipText2": "2. Başlamak istediğiniz hızlı başlangıcı seçmek için aşağıdaki “+” işaretine tıklayın ve “Hızlı Başlangıcı Aç”a tıklayarak başlatıcıya geri dönün, tuş ataması yapın ve başlatın."
+    },
+    "license": {
+      "agree": "Kabul ediyorum",
+      "disagreeAndWithdraw": "Katılmıyorum ve Geri Çekiyorum",
+      "userLicenseAgreement": "Kullanıcı Lisans Sözleşmesi",
+      "welcomeDescription": "Lütfen kabul edin",
+      "welcomeDescriptionEnd": "size daha iyi hizmet verebilmemiz için",
+      "welcomeTitle": "Asistanı Kullanmaya Hoş Geldiniz"
+    },
+    "open_title": "1. Hızlı başlatmayı kullanmak için Assist'i indirmeniz gerekir.",
+    "open_title2": "2. Yazılım güncellemeleri nedeniyle Assist'in en son sürümünü indirip kurmanız önerilir.",
+    "settings": {
+      "aikeyUpdate": "AIKey iyileştirmesi: özel ön ayarlar ve hızlı başlatma eklendi, komut gönderme ve yanıt işleme optimize edildi, kararlılık ve kullanılabilirlik önemli ölçüde iyileştirildi.",
+      "autostart": "Başlangıçta otomatik başlat",
+      "currentLatestVersion": "güncel En Son Sürüm",
+      "endUserLicenseAgreement": "Son Kullanıcı Lisans Sözleşmesi",
+      "fixedKnownIssues": "Bilinen sorunlar düzeltildi",
+      "interfaceOptimization": "Arayüz optimizasyonu",
+      "language": "dil",
+      "mosUpdate": "MOS kaydırma/hızlandırma algoritması optimizasyonu: düşük ve yüksek hızlarda daha akıcı ve tutarlı bir deneyim için hızlanma eğrisi ve örnekleme stratejisi yeniden oluşturuldu, daha az titreme ve gecikme ile.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Keychron Assistant ticari markası Keychron'a aittir.",
+      "nkroDescription2": "NKRO'yu devre dışı bırakmak, klavyenin aynı anda 6 tuşa kadar basılmasını doğru şekilde kaydedeceği anlamına gelir.",
+      "selectLanguage": "Dil seç",
+      "title": "Ayarlar",
+      "updateLog": "Güncelleme Günlüğü"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Manyetik Anahtar",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Manyetik Anahtar",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Bazı tuşlar kalibre edilemedi, lütfen klavyedeki anahtarı ve tuşun ayarını kontrol edin!",
+    "set_successfully": "Anahtar yapılandırması başarıyla değiştirildi.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Klavye üzerindeki değiştirilen manyetik anahtarın, seçilen manyetik anahtar seçeneği ile tutarlı olup olmadığını kontrol edin.",
+    "sure_content2": "Aşağıdaki “Onayla” düğmesini tıklayın, bu tuşları kalibre etmek için kalibrasyon sayfasına gireceksiniz.",
+    "sure_title": "Anahtar Türünü Değiştirmek İstediğinizden Emin misiniz?",
+    "switch_type_settings": "Anahtar Türü Ayarları",
+    "tip": {
+      "1": "Bu özellik, tüm klavyenin manyetik anahtar türünü ayarlamanıza olanak tanır. Yapılandırdıktan sonra, tuş kenar rengi seçtiğiniz manyetik anahtar türüne göre değişir. Ayar sırası aşağıdaki gibidir:",
+      "2": "Önce klavyedeki tüm manyetik anahtarları değiştirin (klavyenin tamamı yalnızca bir manyetik anahtar türünü destekler) ve değiştirilen anahtarların aşağıdaki listede olup olmadığını kontrol edin.",
+      "3": "Aşağıdaki manyetik anahtar tipi seçeneğini seçin ve yapılandırmayı tamamlamak için “Tüm tuşları ayarla” düğmesine tıklayın.",
+      "4": "Manyetik anahtar türlerindeki farklılıkların etkisini önlemek için tüm tuşları yeniden kalibre edin."
+    },
+    "tip_reset": "Bu sıfırlama düğmesine tıklandığında, önceden yapılandırılmış tüm hızlı başlatma öğeleri silinir.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Manyetik Anahtar"
+  },
+  "common": {
+    "advance": "Gelişmiş",
+    "basic": "Temel",
+    "beta_test_version": "Beta sürüm",
+    "cancel": "Kapat",
+    "cancel_btn": "İptal",
+    "clear": "Temizle",
+    "close": "Kapalı",
+    "connected": "Bağlandı",
+    "connect_btn": "Bağlan",
+    "connect_tip": "HID cihazına bağlanmak istiyor",
+    "create": "Oluştur",
+    "delete": "Sil",
+    "deleteConfirm": "Bu verileri sıfırlamak için onaylayın.",
+    "disconnected": "Bağlanmadı",
+    "download": "İndir",
+    "empty": "Boş",
+    "error": "Hata",
+    "export": "Dışa Aktar",
+    "general": "Genel",
+    "hide": "Gizle",
+    "iknow": "Anlıyorum",
+    "import": "İçe Aktar",
+    "is": "Evet",
+    "keyboard": "Klavye",
+    "key_back": "Geri Al",
+    "key_confirm": "Onayla",
+    "loading": "Yükleniyor…",
+    "matrix": "Test Matrixi",
+    "max_string_length": "Metin maksimum uzunluğu aşıyor",
+    "min": "Dakika",
+    "mouse": "Fare",
+    "noResult": "Sonuç yok",
+    "not": "Hayır",
+    "notSubmit": "Gönderilmemiş veriler. Şimdi göndermek ister misiniz?",
+    "on": "açık",
+    "open": "Açık",
+    "paired": "eşleştirildi",
+    "plugged_in": "Bağlandı",
+    "plug_and_ret": "Cihazı bağlayıp tekrar deneyin.",
+    "plug_and_retry": "Cihazı bağlayıp tekrar deneyin.",
+    "recover": "Kurtar",
+    "reset": "Yeniden Başlat",
+    "resetLayout": "Düzeni Sıfırla",
+    "reset_single": "Basit sıfırlama",
+    "resolution_not_support": "Tarayıcı penceresi çok küçük olduğu için klavye haritası görüntülenemiyor.",
+    "results": "Sonuçlar",
+    "save": "Kaydet",
+    "search": "Arama",
+    "select": "Seç",
+    "selectall": "Tümünü Seç",
+    "status": {
+      "update_success": "Başarıyla Güncellendi"
+    },
+    "submit": "Onayla",
+    "timeSync": "Ekran süresini kalibre et",
+    "turnoff": "KAPAT",
+    "turnon": "AÇ",
+    "type": "Tür",
+    "upload": "Yükle",
+    "view": "Görüntüle",
+    "warring": "Uyarı !",
+    "window_too_small": "Pencere çok küçük olduğu için önizleme görüntülenemiyor"
+  },
+  "connecting": "Bağlanıyor",
+  "cross": {
+    "btn": {
+      "active": "Çok platformlu klavye/fare",
+      "agree": "Kabul et",
+      "cancel": "Bağlantıyı iptal et",
+      "close": "Kapat",
+      "connect": "Bağla",
+      "disconnect": "Ayır",
+      "minimize": "Pencereyi küçült",
+      "quick": {
+        "connect": "Tek tıklamayla bağlan"
+      },
+      "reject": "Reddet",
+      "reject_cancel": "cancel",
+      "trust": "Güvenilir cihaz",
+      "waiting": "Bekleniyor"
+    },
+    "disconnect_confirm": {
+      "content": "Ayrıldıktan sonra aktarım durur. Başlatılan aktarımlar geçmişte kalır, bekleyen dosyalar atılır.",
+      "title": "Dosya aktarımı sürüyor"
+    },
+    "file_transfer": {
+      "average_speed": "Ortalama hız",
+      "change": "Değiştir",
+      "clear": "Temizle",
+      "clear_failed_desc": "Yerel aktarım geçmişi temizlenemiyor",
+      "clear_failed_title": "Temizleme başarısız",
+      "connected": "Bağlandı",
+      "delete": "Sil",
+      "desc": "Her tür dosyayı destekler · Bağlı bilgisayarlara kararlı aktarım",
+      "direction": {
+        "receive": "Al",
+        "send": "Gönder"
+      },
+      "dir_err_desc": "Seçilen alım klasörü kullanılamıyor",
+      "dir_err_title": "Klasör güncellemesi başarısız",
+      "dir_ok_desc": "Yeni alınan dosyalar seçilen klasöre kaydedilir",
+      "dir_ok_title": "Depolama klasörü güncellendi",
+      "drop_unavailable_desc": "« Seç » düğmesini kullanarak bu dosyayı seçin",
+      "drop_unavailable_title": "Dosya yolu okunamıyor",
+      "elapsed_label": "Geçen süre",
+      "enable": "Dosya aktarımını etkinleştir",
+      "file_missing_desc": "Orijinal dosya taşındı veya silindi, yeniden gönderilemiyor",
+      "file_missing_title": "Orijinal dosya mevcut değil",
+      "history": "Aktarım geçmişi",
+      "no_active": "Sürmekte olan dosya aktarımı yok",
+      "no_history": "Dosya aktarım geçmişi yok",
+      "open": "Ayarlar",
+      "open_err_desc": "Dosya alım klasörü açılamıyor",
+      "open_err_title": "Klasör açılamıyor",
+      "open_folder": "Aç",
+      "peer_cancelled": "Karşı taraf aktarımı iptal etti",
+      "quick_send": "Hızlı gönderim",
+      "quick_send_desc": "Bir dosya seçin ve bağlı bilgisayara doğrudan gönderin",
+      "receive_failed_desc": "Dosya alımı eksik veya yerel olarak yazılamıyor",
+      "receive_failed_title": "Dosya alınırken hata",
+      "receiving": "Alınıyor...",
+      "receiving_path": "Yerel alım yolu",
+      "resend": "Yeniden gönder",
+      "select_button": "Dosya seç",
+      "select_desc": "Aktarım için belirli bir dosya seçin",
+      "select_title": "Dosya seçmek için tıklayın",
+      "sending": "Gönderiliyor...",
+      "send_failed_desc": "Seçilen dosya gönderilemiyor",
+      "send_failed_title": "Dosya aktarımı başarısız",
+      "send_to": "Şuraya gönder:",
+      "status": {
+        "cancelled": "İptal edildi",
+        "failed": "Gönderim başarısız",
+        "received": "Alındı",
+        "receive_error": "Alım hatası",
+        "sent": "Gönderildi"
+      },
+      "title": "Dosya aktarımı",
+      "transfer_time": "Aktarım süresi",
+      "transmitting": "Aktarılıyor...",
+      "unsupported_file": "Dosya biçimi aktarım için desteklenmiyor",
+      "waiting": "Aktarım bekleniyor"
+    },
+    "notification": {
+      "conn_end_t": "Bağlantı kesildi",
+      "conn_err_t": "Bağlantı hatası",
+      "conn_lost_t": "Bağlantı kesildi",
+      "conn_reject_t": "Bağlantı isteği reddedildi",
+      "conn_req_err": "Bağlantı isteği gönderilirken hata",
+      "hist_clear_err": "Bağlantı geçmişi temizlenirken hata",
+      "hist_clear_ok": "Bağlantı geçmişi temizlendi",
+      "id_err_t": "Kimlik doğrulama hatası",
+      "network_lost": "Ağ bağlantısı kesildi, çok platformlu oturum sonlandırıldı",
+      "op_err_t": "İşlem başarısız",
+      "op_ok_t": "İşlem başarılı",
+      "pair_id_err": "Eşleştirilen cihazın kimlik doğrulama hatası",
+      "pair_ok": "Cihaz başarıyla eşleştirildi",
+      "pair_ok_t": "Eşleştirme başarılı",
+      "peer_end": "Karşı taraf çok platformlu oturumu ayırdı",
+      "peer_reject": "Karşı taraf bağlantı isteğini reddetti",
+      "reconfirm_t": "Yeni onay gerekiyor",
+      "sync_err_t": "Senkronizasyon başarısız",
+      "trust_id_changed": "Güvenilir cihazın kimliği değişti. Bağlantı isteğini yeniden onaylayın.",
+      "trust_id_err": "Güvenilir cihazın kimlik doğrulama hatası",
+      "trust_rm_err": "Güvenilir cihaz kaldırılırken hata",
+      "trust_sync_err": "Güven kimlik bilgileri karşı tarafla senkronize edilmedi"
+    },
+    "page": {
+      "sub_desc": "İki bilgisayarı bağlayın, çok platformlu klavye/fareyi kullanın · Panoyu manuel senkronize edin · Dosyaları sürükleyin — tek bir bilgisayardaki kadar doğal.",
+      "sub_title": "Özellik önizleme",
+      "title": "Çok platformlu"
+    },
+    "panel": {
+      "desc": "2'ye kadar bağlı bilgisayar (bu dahil) · Cihaz özellikleri bağlantıdan sonra açılır",
+      "found": "Cihazları algıla",
+      "history": {
+        "active": "Aktif bağlantı",
+        "passive": "Pasif bağlantı",
+        "subtitle": "Son bağlantılar",
+        "title": "Bağlantı geçmişi"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Diğer",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Aynı yönlendiricinin tüm Wi-Fi ağlarını tara",
+        "start": "Taramayı başlat",
+        "stop": "Taramayı durdur",
+        "title": "Yerel ağ taranıyor.."
+      },
+      "tag_1": "Güvenilir",
+      "title": "Bilgisayarı bağla"
+    },
+    "scan": {
+      "incoming_notice": "Onayınızdan sonra karşı taraf bu bilgisayara çok platformlu bir bağlantı kurabilir.",
+      "incoming_subtitle": "Bu bilgisayara bağlanmak istiyor",
+      "incoming_title": "Bağlantı isteği alındı",
+      "network_changed_cancel": "Şimdi değil",
+      "network_changed_confirm": "Yeniden tara",
+      "network_changed_desc": "Ağ ortamı değişti. Yeniden taransın mı?",
+      "network_changed_title": "Ağ ortamı değişti",
+      "rejected": "Karşı taraf bağlantı isteğini reddetti",
+      "request_confirm": "Karşı tarafın onayı bekleniyor... Bağlantı isteği yakında sona erecek",
+      "request_tip": "Bağlantı isteği:",
+      "trust": "Bu cihaza güven ve gelecekte bağlantı isteklerini otomatik kabul et",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Otomatik bağlanma",
+      "automatic_connection_help": "Otomatik bağlanma: Bu bilgisayarın güvenilir cihaz listesinden bir cihaz seçin. Her iki cihazın da birbirine yapılandırılması gerekir, böylece Assistant başlatıldığında otomatik olarak bağlanırlar.",
+      "automatic_connection_hint": "(Her iki cihaz da yapılandırılmalıdır)",
+      "clear_automatic_device": "Otomatik bağlanma cihazını kaldır",
+      "close": "Kapat",
+      "confirm": "Onayla",
+      "disconnect_shortcut": "Çok platformlu oturumu ayır",
+      "disconnect_shortcut_help": "Çok platformlu özellik çalışmazsa, bu tuş kombinasyonuyla ayırabilirsiniz. Bu kombinasyon değiştirilebilir ancak kaldırılamaz.",
+      "enter_shortcut_key": "Özel tuş gir",
+      "no_trusted_devices": "Güvenilir cihaz yok",
+      "remove_confirmation": "{device} için güveni kaldırmayı onaylıyor musunuz?",
+      "remove_device": "Güvenilir cihazı kaldır",
+      "select_device": "Güvenilir cihaz seç",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Klavye kısayolu",
+      "system_lock_shortcut": "Bilgisayarı kilitle",
+      "title": "Güven ve otomatik bağlanma",
+      "trusted_count": "Güvenilir cihaz sayısı ({count})",
+      "trust_help": "Güvenilir cihaz: Güvenilir cihaz bir dahaki sefere bu bilgisayarda onay gerektirmeden bağlanabilir."
+    },
+    "step": {
+      "collapse": "Daralt",
+      "connected": "Bağlandı",
+      "desc": "Keychron Assistant'ta ek bilgisayarları tarayın ve eşleştirin · Bağlandıktan sonra çok platformlu klavye/fare ve dosya aktarımı kullanılabilir",
+      "desc_1": "Aynı yerel ağdaki bilgisayarları otomatik algılar ve bağlantı isteği gönderir",
+      "desc_2": "Karşı taraf, eşleştirmeyi tamamlamak için « Kabul Et » öğesine tıklar",
+      "desc_3": "Tüm çok platformlu özellikler kullanılabilir",
+      "expand": "Genişlet",
+      "local": "Bu bilgisayar",
+      "title": "Bağlantı süreci",
+      "title_1": "Tara ve istek gönder",
+      "title_2": "Karşı tarafın onayı",
+      "title_3": "Bağlantı kuruldu",
+      "trust": "Bağlandı · Güvenilir",
+      "wait_1": "Bekleniyor",
+      "wait_2": "« İzin Ver » öğesine tıklayın",
+      "wait_3": "Ek bilgisayarları eşleştir"
+    },
+    "tabs": {
+      "file_transfer": "Dosya aktarımı",
+      "settings": "Ayarlar"
+    },
+    "time": {
+      "ago": "Önce",
+      "days": "Gün",
+      "hours": "Saat",
+      "just_now": "Az önce",
+      "last": "Geçmiş",
+      "last_connection": "Son bağlantı",
+      "minutes": "Dakika",
+      "months": "Ay",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Aşağı",
+      "desc": "Fare imleci belirtilen ekran kenarını geçtiğinde, bilgisayarın klavyesi ve faresi bağlı cihazı kontrol edebilir.",
+      "left": "Sol",
+      "off": "Kapalı",
+      "right": "Sağ",
+      "title": "Ekran geçiş kenarını ayarla",
+      "top": "Yukarı"
+    },
+    "web": {
+      "auto_connect_target": "Otomatik bağlanma hedefi",
+      "center_cursor": "İmleci ortala",
+      "clipboard": "Pano",
+      "clipboard_desc": "Kopyalanan içeriği bilgisayarlar arasında manuel senkronize et",
+      "connect_assistant": "Assistant'ı aç",
+      "connect_hint": "Bağlantı işlevleri Assistant içinde gerçekleştirilmelidir",
+      "custom_screenshot": "Özel ekran görüntüsü",
+      "direction": "Yön",
+      "drop_box_key": "Sürükle paneli kısayolu",
+      "exit_application": "Ayır",
+      "file_transfer": "Dosya aktarımı",
+      "file_transfer_desc": "Bir dosya seçin veya sürükle panelini açmak için kısayolu kullanın",
+      "hold_ctrl": "Çok platformlu için Ctrl'yi basılı tutun",
+      "in_progress": "görev",
+      "items": "öğe",
+      "keyboard_mouse": "Çok platformlu klavye / fare",
+      "keyboard_mouse_desc": "İmleç ekran kenarını geçtiğinde kontrolü değiştir",
+      "loading": "Assistant'tan çok platformlu durum alınıyor...",
+      "lock_pc": "Bilgisayarı kilitle",
+      "max": "Maksimum",
+      "not_set": "Ayarlanmadı",
+      "off": "Kapalı",
+      "on": "Açık",
+      "ongoing": "Devam ediyor",
+      "read_only": "Yalnızca okunur · Ayarları Keychron Assistant'ta değiştirin",
+      "recent_items": "Son öğeler",
+      "save_dir": "Dosya depolama klasörü",
+      "settings": "Ayarlar",
+      "settings_desc": "Güvenilir cihazlar · Otomatik bağlanma · Kısayollar",
+      "shortcut_mapping": "Kısayol atama",
+      "switch_pc": "Bilgisayarı değiştir",
+      "sync_mode": "Senkronizasyon modu",
+      "target_device": "Hedef cihaz",
+      "title": "Çok platformlu özelliklerin durumu",
+      "trusted_devices": "Güvenilir cihaz sayısı",
+      "trust_auto_connect": "Güven ve otomatik bağlanma"
+    }
+  },
+  "debounce": {
+    "backlight": "Arka ışık uyku süresi 5 saniyeden az olamaz.",
+    "mode": "Sarsıntı Önleme Modu",
+    "press": "Basılı tutma süresi",
+    "release": "Saniyeleri Sıfırla",
+    "response": "Yanıt süresi (saniye)",
+    "scan": "Tarama Hızı",
+    "setting": "Keyboard Bouncee Time Settings",
+    "sleep_limit": "Uyku süresi 1 dakikadan az olamaz.",
+    "tip": "Otomatik arka ışığın kapanma başlangıç zamanı, otomatik uyku modunun başlangıç zamanından daha az olmalıdır.",
+    "warning": {
+      "content": "(Not: 10 ms altındaki ayarlar çift tıklama riskine neden olabilir. Dikkatli yapılandırın.)",
+      "title": "Gerçekten ayarlansın mı?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Klavye demosu",
+    "device_mouse": "Fare demosu",
+    "exit": "Demo modundan çık",
+    "keyboard": "Klavyesiz dene",
+    "mode": "Demo modu",
+    "mouse": "Faresiz dene",
+    "tip": "Not: Yalnızca tanıtım amaçlı olan demo modundasınız, gerçek işlevleri yoktur.",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Cihaz sürümü"
+  },
+  "device_add": "Bağlan",
+  "device_select": {
+    "notify": "Devam etmek için lütfen listeden bir cihaz seçin.",
+    "select": "Devam et",
+    "un_select": "Seçili cihaz yok"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Yazma testi"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "bağlamak",
+      "2": "Sonraki",
+      "3": "Önceki",
+      "6": "Güncelleme Sırası",
+      "enterBootloaderMode": "Güncelleme moduna gir",
+      "flash": "Flash Yazılımı",
+      "matchDevice": "Cihaz Eşleştirme",
+      "retry": "Tekrar dene",
+      "startUpgrading": "Güncellemeyi başlat"
+    },
+    "description": "Sürüm notları",
+    "downloadFailed": "Üretici yazılımı dosyası indirilirken hata",
+    "error": {
+      "diff_model": "Cihazların donanım yazılımı modelleri tutarsız",
+      "get_dfu_version": "Cihaz donanım yazılımı güncelleme sürümünü alamadı"
+    },
+    "flashError": "Yazılım indirme işlemi başarısız oldu",
+    "flashSuccess": "Yazılım güncellemesi başarıyla tamamlandı",
+    "info": {
+      "currentVersion": "Mevcut sürüm",
+      "latestVersion": "En Son Sürüm",
+      "updateSize": "Üretici yazılımı boyutu",
+      "updateTime": "Son Güncelleme"
+    },
+    "mouse": {
+      "step1_hid_device": "Klavyedeki K, E, Y tuşlarına sırayla basın ve HID cihaz bağlantısı istemini gördüğünüzde bir sonraki adıma geçin."
+    },
+    "notFound": "Cihazın en son ürün yazılımı bulunamadı",
+    "productNotExist": "Cihaz bilgileri alınamadı",
+    "requestFail": "Cihazı elde edemedi; başka programlar tarafından kullanılıp kullanılmadığını kontrol edin.",
+    "syncQuickStart": "Hızlı başlatmayı senkronize et",
+    "tip": {
+      "confirm": "Onayla",
+      "currentSelect": "Şu anda seçili"
+    },
+    "tips": {
+      "0": "Mevcut cihaz için ürün yazılımı güncellemesi yoktur.",
+      "4": "Windows cihaz kullanıyorsanız ve Araç Kutusu Sürücüsünü yüklemediyseniz, lütfen aşağıdaki adımları izleyin. Araç Kutusu Sürücüsünü zaten yüklediyseniz, İleri'ye tıklayın.",
+      "5": "Araç Kutusunu indirmek ve açmak için aşağıdaki ‘Araç Kutusunu İndir’ düğmesine tıklayın.",
+      "6": "Dosyaları çıkardıktan sonra Toolbox simgesine sağ tıklayın veya sistem arama çubuğunda “driver” aratın, ardından açmak için “Yönetici olarak çalıştır” seçeneğini belirleyin.",
+      "7": "Açın ve “Araç” menüsünü tıklayın.",
+      "8": "“Sürücüleri Yükle”yi tıklayın, “Evet”i tıklayarak ürün yazılımı sürücülerinin yüklenmesini başlatın ve yükleme işleminin tamamlanmasını bekleyin.",
+      "9": "Kurulum tamamlandıktan sonra, İleri'ye tıklayarak ürün yazılımını güncelleme işlemini başlatabilirsiniz.",
+      "10": "Not: Tıklayabilirsiniz",
+      "11": "Aşağıdaki adımları izleyin.",
+      "12": "Mevcut durumda, klavyenin USB kablosunu çıkarın ve klavyenin bağlantısının kesilmesini bekleyin.",
+      "13": "Klavye bağlantısı kesikken, klavyenin ESC veya “○” tuşunu basılı tutun ve aynı anda klavyeyi USB kablosuyla bilgisayara bağlayın. Klavyenin donanım yazılımını güncellemeye hazır hale gelmesini bekleyin.",
+      "15": "Eşleştirme başarılı olduktan sonra, ‘Flash Firmware’ düğmesi görünecektir, yazılım güncellemesini başlatmak için bu düğmeye tıklayın.",
+      "16": "Üretici yazılımı güncellemesi sırasında cihazı bilgisayardan ayırmayın.",
+      "18": "Araç Kutusunu İndir",
+      "19": "Alet Kutusu Sürücüsünü Yükleme eğitim videosu",
+      "20": "Alet kutusu Sürücüsünü yüklemenin ayrıntılı sürecini anlamak için.",
+      "22": "Mevcut cihazı bağlamak için “Bağlan” düğmesine tıklayın, sistem cihazın en son ürün yazılımı sürümünü otomatik olarak bulacaktır.",
+      "23": "Mavi gösterge yanana kadar klavyeyi güncellemeye hazır hale getirmek için klavyenin Fn ve - tuşlarını en az 5 saniye basılı tutun.",
+      "24": "Eşleştirme başarılı olduktan sonra, “Flash Firmware” düğmesi görünecektir, tıklayarak firmware güncellemesini başlatın.",
+      "25": "Aşağıdaki Cihazı Eşleştir düğmesine tıklayın, ({{ mode }}) ile başlayan cihazı seçin ve eşleştirin.",
+      "26": "Bluetooth modülünü USB modunda güncelleyin.",
+      "27": "En son üretici yazılımı sürümünü almak için aşağıdaki düğmeye tıklayın.",
+      "28": "Klavye ayrıyken, klavyenin sol üst köşesindeki tuşa basılı tutun ve aynı anda klavyeyi USB kablosuyla bilgisayara bağlayarak üretici yazılımı güncellemeye hazır duruma getirin.",
+      "bl-exceeded": "Deneme sayısı aşıldı. Veri kablosunu yeniden bağlayın.",
+      "clickMatchBtn": "Aşağıdaki « İlgili Cihazlar » düğmesine tıklayın ve {{dfuName}} ile başlayan cihazı seçin.",
+      "currentDongle": "(Klavye/fare güncellemesi için kablolu bağlantı kullanın. Şu anda alıcı sayfasındasınız.)",
+      "link_wired_content": "Kablosuz güncelleme sırasında fare uyku moduna geçer ve kullanılamaz",
+      "link_wired_title": "Güncellemeden önce kabloyu bağlayın",
+      "longPress": "Önce ESC'ye basın, ardından Tab tuşunu aynı anda 3 saniye basılı tutun.",
+      "matchErr": "Şu anda eşleştirilmedi. Güncellenecek cihazı manuel seçin.",
+      "mouseTip2": "2. Bağlantı zaten kurulmuşsa ve eşleşme zaten mevcutsa. Fırçayı başlatmak için Fırça ürün yazılımına tıklayın.",
+      "mouseTip4": "Aşağıdaki “Bağlan” düğmesini tıklayın, “ Önyükleme aygıtı”nı seçin ve bağlayın.",
+      "mouseTip6": "( Yazılım güncellemesi sırasında alıcıyı bilgisayardan ayırmayın.)",
+      "mouseTip7": "Güncellemenin tamamlanmasını bekleyin - başarılı olduğu mesajı görünecektir.",
+      "patch": {
+        "1": "Bu güncelleme bir güvenlik yamasıdır. Önce aşağıdaki kılavuza göre güncellemeyi gerçekleştirin.",
+        "2": "Mevcut durumda klavyeyi ayırmak için klavyenin USB kablosunu çıkarın.",
+        "3": "Klavye ayrıyken « Boşluk » tuşunu çıkarın ve anahtarın yanındaki metal plaka üzerindeki küçük düğmeyi bulun.",
+        "4": "Düğmeye basılı tutun ve klavyeyi USB kablosuyla bilgisayara yeniden bağlayın.",
+        "5": "Aşağıdaki « İlgili Cihazlar » düğmesine tıklayın ve (DFU) işaretli cihazı seçin.",
+        "6": "Eşleştirme başarılı olduktan sonra « Üretici yazılımını yükle » düğmesi görünür. Güvenlik yaması güncellemesini başlatmak için tıklayın."
+      },
+      "toFlash": "Eşleştirme başarılı olduktan sonra « Üretici yazılımını yükle » düğmesi görünür. Üretici yazılımı güncellemesini başlatmak için tıklayın."
+    },
+    "update": {
+      "dfu_check": "Seçilen DFU cihazının doğru olduğunu kontrol edin."
+    },
+    "update_available": "Yükseltilebilir bir ürün yazılımı sürümü var",
+    "update_latest": "Bu, en son donanım yazılımı sürümüdür.",
+    "update_success": "Güncelleme başarıyla tamamlandı, mevcut cihazı bağlamak için “Bağlan” düğmesine tıklayın.",
+    "warning": "Cihaza Olası Zarar Vermemek İçin Lütfen Cihazı Çıkarmayın Veya Sayfayı Yenilemeyin.",
+    "write": "Yazılım Yazma Sırasında"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Cihaz Kılavuzu",
+      "tutorial": "Öğretici",
+      "user_feedback": "Kullanıcı Geri Bildirimi"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Launcher'da otomatik uyku modu ve aydınlatma kapanma başlangıç süresi nasıl ayarlanır?",
+        "set_keyboard_bounce_time": "Launcher'da klavye sekme süresi nasıl ayarlanır?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Launcher'da aydınlatma tuşları nasıl ayarlanır?",
+        "set_mix_rgb": "Launcher'da Karışık RGB nasıl ayarlanır?",
+        "set_per_key_rgb": "Launcher'da her tuş için ayrı RGB nasıl ayarlanır?"
+      },
+      "bridge_firmware_update": "Keychron alıcısının üretici yazılımı nasıl yüklenir",
+      "create_mouse_macro": "Launcher'da fare makrosu nasıl oluşturulur",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Launcher'da fabrika ayarlarına dönme ve bellenim güncelleme nasıl yapılır?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Launcher'da HE profilinizi nasıl yönetirsiniz?",
+        "set_gamepad_analog_and_curves": "Launcher'da Gamepad Analog ve eğrileri nasıl ayarlanır?",
+        "set_long_press_switch": "Launcher'da uzun basma anahtarı nasıl ayarlanır?",
+        "set_one_key_multiple_commands": "Launcher'da bir tuşa birden fazla komut nasıl atanır?",
+        "set_snap_click": "Launcher'da Snap Click nasıl ayarlanır?",
+        "use_he_mode": "Keychron Launcher'da HE modu nasıl kullanılır?"
+      },
+      "keymap": {
+        "fn_keys_function": "Keychron klavyelerde Fn tuşları nasıl çalışır?",
+        "remap_key": "Launcher'da tuş eşlemesi nasıl değiştirilir?",
+        "set_keymap_language": "Launcher'da klavye düzeni dili nasıl ayarlanır?",
+        "use_different_function_layers": "Farklı işlev katmanları nasıl kullanılır?"
+      },
+      "key_test": {
+        "custom_sounds": "Klavyenizin sesini nasıl özelleştirirsiniz?",
+        "perform_keyboard_key_testing": "Launcher'da klavye tuş testi nasıl yapılır?"
+      },
+      "macro": {
+        "create_macro": "Launcher'da makro nasıl oluşturulur?"
+      },
+      "make_mouse_factory_reset_setting": "Launcher'da fare fabrika ayarlarına nasıl sıfırlanır",
+      "mouse_angle_adjustment": "Launcher'da açı ayarı nasıl kullanılır",
+      "mouse_firmware_update": "Fare üretici yazılımı güncelleme kılavuzu",
+      "mouse_receiver_firmware_update": "Keychron alıcısının üretici yazılımı nasıl yüklenir",
+      "quick_start": {
+        "download_and_install_assistant": "Keychron-Assistant nasıl indirilir ve kurulur?",
+        "set_quick_start": "Launcher'da Hızlı Başlatma nasıl ayarlanır?"
+      },
+      "set_mouse_customize_buttons": "Launcher'da özel fare düğmeleri nasıl ayarlanır",
+      "set_mouse_debounce_time": "Launcher'da fare debounce süresi nasıl değiştirilir",
+      "set_mouse_dpi_and_polling_rate": "Launcher'da fare DPI ve polling rate nasıl ayarlanır",
+      "set_mouse_system_features_setting": "Launcher'da fare sistem işlevleri nasıl ayarlanır"
+    },
+    "user_manual": "Kullanıcı Kılavuzu"
+  },
+  "issue": {
+    "content": "İçerik",
+    "device": "Aygıt",
+    "email": "E-posta",
+    "tips": {
+      "content": "İçerik Gerekli",
+      "device": "Cihaz Gerekli",
+      "email": "Geçersiz E-posta Adresi",
+      "input": "Lütfen bir içerik girin",
+      "send": "Rapor Gönderildi",
+      "title": "Başlık Gerekli"
+    },
+    "type": {
+      "1": "Arızalı düğme / yanıt yok",
+      "2": "Bağlantı sorunları",
+      "3": "Donanım arızası",
+      "4": "Uygun olmayan düzen / boyutlar",
+      "5": "Sürücü sorunu",
+      "6": "Diğer",
+      "7": "Geri bildirim türünü seçin"
+    }
+  },
+  "keycap": {
+    "character": "Harf tuşları",
+    "fnc": "İşlev tuşları",
+    "general": "Genel",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Sayı tuşları",
+    "symbol": "Sembol tuşları",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Basılı tutma = üst tuş (değiştirici) · Dokunma = alt tuş"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Tuş kombinasyonu",
+      "combo_description": "Özel kısayol",
+      "launch_app": "Uygulama başlat",
+      "launch_app_description": "Tek tıklamayla uygulama başlat",
+      "launch_web": "Web sitesi aç",
+      "launch_web_description": "Tek tıklamayla web sitesi aç",
+      "macro": "Makro",
+      "macro_description": "Eylem dizisi",
+      "remap": "Yeniden ata",
+      "remap_description": "Başka bir tuş ata",
+      "title": "{{key}} tuşunu yeniden ata"
+    },
+    "codeInput": "Tuş girişi",
+    "knob_not_support": "Mevcut donanım yazılımı, düğme özelleştirmesini desteklemiyor; lütfen donanım yazılımını güncelleyin.",
+    "layer": {
+      "1": "1. Basılı tutma hedef katmanı geçici olarak etkinleştirir; tuş bırakıldığında orijinal değer geri yüklenir.",
+      "2": "2. Yalnızca alt katmandan üst katmana doğru geçerlidir; üstten alta doğru etkisi yoktur.",
+      "3": "1. Tek tıklama hedef katmanı kapatır/açar; kapatıldıktan sonra en yüksek aktif katman kabul edilir.",
+      "4": "2. Varsayılan katman kapatılamaz; tüm katmanlar kapatılırsa varsayılan katman kabul edilir.",
+      "5": "Basılı tutma işlevi MO ile aynıdır; 5 tıklama TG'ye karşılık gelir.",
+      "6": "1. Tıklama/basılı tutma katmanı etkinleştirir; etkinleştirme yalnızca aşağıdan yukarıya doğru gerçekleşir.",
+      "7": "Snap Tap yalnızca manyetik anahtarlı tuşları destekler.",
+      "8": "Tek tıklama hedef katmanı tek yönlü olarak etkinleştirir, yüksek ve düşük katmanlar arasında ayrım yapmaz.",
+      "9": "Tek tıklama hedefin varsayılan katmanını tek yönlü olarak geçici olarak etkinleştirir, yüksek ve düşük katmanlar arasında ayrım yapmaz.",
+      "10": "1. Güç kesintisinden sonra klavye, sistem anahtarına karşılık gelen varsayılan katmana döner, ör. Win = katman 2, Mac = katman 0.",
+      "11": "2. Bazı klavye modellerinde fiziksel sistem anahtarı yoktur ve genellikle sabit bir varsayılan katmana dönerler, ör. katman 0.",
+      "error_info": "Klavyenizin sistem anahtarı bilgisayarın sistemiyle uyuşmuyor; değiştirici tuş işlevleri değişebilir.",
+      "tip": "İpucu:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Bir veya daha fazla değiştirici tuş ve bir ana tuş seçin, ardından tek tuşla etkinleştirin.",
+        "modifier_keys": "Değiştirici tuşlar",
+        "press_primary_key": "Ana tuşa basın",
+        "primary_key": "Ana tuş",
+        "title": "Tuş kombinasyonu"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Atanan uygulamayı açmak için bu düğmeye tıklayın.",
+        "no_available_apps": "Kullanılabilir uygulama yok",
+        "search_apps": "Uygulamaları ara",
+        "title": "Uygulama başlat"
+      },
+      "launch_web": {
+        "description": "Atanan web sitesini açmak için bu düğmeye tıklayın.",
+        "title": "Web sitesi aç",
+        "web_page_url": "Web sitesi URL'si"
+      },
+      "macro": {
+        "description": "Makroyu doğrudan giriş alanına kaydedin: bastığınız tuşlar bir eylem dizisi olarak kaydedilir.",
+        "macro_keys": "Makro tuşları",
+        "press_key": "Kaydetmek için bir tuşa basın",
+        "title": "Makro kaydet"
+      },
+      "remap": {
+        "description": "« {{key}} » neye dönüşsün?",
+        "press_key": "Atamak için bir tuşa basın",
+        "primary_keys": "Ana tuşlar",
+        "title": "Tuşları yeniden ata"
+      }
+    },
+    "reset": {
+      "all": "Tüm ayarları sıfırlamak için onaylayın ?",
+      "single": "Bu tuşun ayarlarını sıfırlamak için onaylayın ?",
+      "title": "Sıfırlamaktan emin misiniz?"
+    },
+    "tabs": {
+      "assist": "Hızlı başlatma",
+      "basic": "Temel",
+      "custom": "Özelleştirme",
+      "layers": "Katman",
+      "macro": "Makro",
+      "media": "Medya",
+      "modtap": "Basılı tutma / Dokunma",
+      "mouse": "Fare",
+      "qmk_lighting": "Aydınlatma",
+      "special": "Özel anahtar",
+      "wt_lighting": "Aydınlatma"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Özel",
+      "default_layer": "Varsayılan katman",
+      "display": "Görüntüleme katmanını seç",
+      "functional": "Gerçek işlev katmanı",
+      "funtional": "Mevcut",
+      "warn": "Tuşlar çalışmıyorsa, sistem anahtarını değiştirin ve cihazı yeniden açın."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": ".Şuna geçmek ister misiniz...",
+    "connect": {
+      "1": "Cihazı kabloyla veya 2.4G alıcıyla bağlayın.\n(Bazı modeller yalnızca kablolu modu destekler)",
+      "2": "Sol üst köşedeki « Bağla » öğesine tıklayın ve listeden cihazı seçin."
+    },
+    "detectedKeyboardLanguage": "Klavye dilinizin... olduğunu tespit ettik.",
+    "guide_tip": "Cihazınızı Bağlamak İçin Aşağıdaki Kılavuzu İzleyin",
+    "keepCurrentSetting": "Mevcut ayarları koru",
+    "lang": "Düzen dili",
+    "resetSuccessContent": "Klavye düzeniniz başarıyla sıfırlandı",
+    "resetSuccessTitle": "Sıfırlama başarıyla gerçekleştirildi.",
+    "select_device": "Bağlamak istediğiniz cihazı seçin.",
+    "switchImmediately": "Şimdi değiştir"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Parlaklık",
+    "color": "Renk",
+    "common": {
+      "setting_color": "Renk Ayarı"
+    },
+    "commonColor": "Ortak Renkler",
+    "customColor": "Renkleri Tanımlayın",
+    "decorate_light": {
+      "0": "Hiç",
+      "1": "Katı",
+      "2": "Nefes alma",
+      "3": "Döngü Tonu",
+      "4": "At Yarışı"
+    },
+    "effect": "Efekt",
+    "effect speed": "Hız",
+    "hue": "Kromatiklik",
+    "layer2": "RGB Bölgesi",
+    "led": {
+      "sub": {
+        "title": "İpucu: renk ayarlarken aşağıdaki LED şeridi seçin."
+      },
+      "title": "Işık şeridi"
+    },
+    "level": "Seviye",
+    "mix": {
+      "config": "Aydınlatma Efekti Ayarları",
+      "hxxg": {
+        "hue": "Ton",
+        "saturability": "Doygunluk",
+        "speed": "Hız"
+      },
+      "rk": "Bu özellik, farklı RGB ışık efektleri için aynı klavyede 2 farklı tuş bölgesi ayarlamanıza olanak tanır. Her bölge için döngüde farklı süreler ayarlayabilir ve her süre için farklı RGB ışık efektleri belirleyebilirsiniz.",
+      "timeLine": {
+        "second_tips": "Saniye girişi çok büyük veya çok küçük.",
+        "title": "Zaman çizelgesi"
+      },
+      "verify_duration": {
+        "tip1": "Giriş değeri bir sayı olmalı ve 1'den büyük, 99'dan küçük olmalıdır!",
+        "tip2": "Sadece iki ondalık basamak girilebilir",
+        "tip3": "Girilen değer çok büyük",
+        "tip4": "Girilen değer çok küçük"
+      }
+    },
+    "notSupport": "Cihaz aydınlatma ayarlarını desteklemiyor",
+    "perkey": {
+      "effect": "Etki Seçimi",
+      "effects": {
+        "0": "Genel",
+        "1": "Soluk alma",
+        "2": "Tek Anahtar Yanıtı",
+        "3": "Komşu tuş tepkisi",
+        "4": "Tüm Klavye"
+      },
+      "redo": "yeniden yap",
+      "region": "Alan Seçimi",
+      "region_select": "Alanı Seçin",
+      "region_tip": "Klavye tuşlarında alanı seçin ve rengi ayarlayın. İlgili alanın rengini değiştirmek için Kaydet'i tıklayın.",
+      "rk": "Her tuşun rengi ayrı ayrı ayarlanabilir. Tuşun rengini değiştirmek için tuşu seçin, rengin ayarlandığı alana tıklayın, rengi değiştirin ve kaydedin.",
+      "save_warn": "Çok fazla rgb bölgesi var, lütfen bazı rgb bölgelerini silin ve tekrar deneyin.",
+      "select_tip": "Seçilen düğme bir bölge oluşturmuyor",
+      "select_warn": "Lütfen düğmeyi seçin",
+      "undo": "geri al"
+    },
+    "saturation": "Doygunluk",
+    "settingAllBrightnessArea": "Tüm Bölgelerin Parlaklığını Ayarlama",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Işık Süsleme",
+      "indication": "Gösterge Işığı",
+      "led_light": "Işık şeridi kontrolü",
+      "mix_rgb": "RGB Karıştır",
+      "perkey_rgb": "Tuş Başına RGB",
+      "screen": "Ekran ayarı",
+      "selection": "Arka Aydınlatma"
+    },
+    "underglow brightness": "Parlaklık"
+  },
+  "lights": {
+    "0. None": "Hiçbiri",
+    "1. Solid Color": "Düz Renk",
+    "10. Cycle Pinwheel": "Döngü Pinwheel",
+    "11. Cycle Spiral": "Döngü Spiral",
+    "12. Dual Beacon": "Çift İşaret",
+    "13. Rainbow Beacon": "Gökkuşağı Feneri",
+    "14. Jellybean Raindrops": "Jellybean Yağmur Damlaları",
+    "15. Pixel Rain": "Piksel Yağmuru",
+    "16. Typing Heatmap": "Yazma Isı Haritası",
+    "17. Digital Rain": "Dijital Yağmur",
+    "18. Reactive Simple": "Reaktif Basit",
+    "19. Reactive Multiwide": "Reaktif Çok Amaçlı",
+    "2. Breathing": "Soluk",
+    "20. Reactive Multinexus": "Reaktif Çok Eksenlilik",
+    "21. Splash": "Sıçrama",
+    "22. Solid Splash": "Sabit sıçrama",
+    "23. Per Key Rgb": "Tuş Başına RGB",
+    "3. Band Spiral Val": "Bant Spiral Val",
+    "4. Cycle All": "Tam döngü",
+    "5. Cycle Left Right": "Sola Sağa Döndür",
+    "6. Cycle Up Down": "Döngü Yukarı Aşağı",
+    "7. Rainbow Moving Chevron": "Gökkuşağı Hareketli Chevron",
+    "8. Cycle Out In": "Dışa ve içe döngü",
+    "9. Cycle Out In Dual": "Çift Çıkışlı Döngü"
+  },
+  "macro": {
+    "allchar": "Tüm Karakterler",
+    "closeDelay": "Gecikmeyi Devre Dışı Bırak",
+    "code": "Kod Girişi",
+    "common": {
+      "flash": "Flash depolama",
+      "title": "Makro atamak için seçin ve ardından yukarıdaki tuş haritasında hedef tuşa tıklayın."
+    },
+    "config": "Yapılandırma",
+    "delay": "Gecikmeler",
+    "delaySet": "Zaman Gecikmesi",
+    "dynamicDelay": "Dinamik Gecikme",
+    "endREC": "Kaydı durdur",
+    "enterDown": "Ekle",
+    "enterUp": "Yukarı ekle",
+    "fixedDelay": "Sabit Gecikme",
+    "inputdelay": "Gecikme Süresini Girin",
+    "inputtexct": "Metin girin",
+    "insertDelay": "Gecikme Ekle",
+    "keydown": "Aşağı Bas",
+    "keyup": "Serbest Bırak",
+    "loopCount": "Döngü Sayısı",
+    "loopCurrentDown": "Durdura Basın",
+    "loopDown": "İsteğe bağlı tuş Durdur",
+    "loopOne": "Tek döngü",
+    "loopSet": "Döngü ayarı",
+    "loopUp": "Serbest Bırakma Durdurma",
+    "macroReccord": "Kayıt",
+    "macroSetup": "Makro ayarı",
+    "mouse": "Fare",
+    "notEqual": "Basılan tuş hareketi serbest bırakılmadı, devam ediyor mu?",
+    "record": "Kayıt",
+    "rename": "Yeniden Adlandır",
+    "save": "Kaydet",
+    "setRepeatCount": "Tekrar sayısı",
+    "specialText": "Metinsel Özgüllük",
+    "startREC": "Kaydı başlat",
+    "stop": "Durdur",
+    "text": "Metin",
+    "texttype": "Yalnızca İngilizce, rakamlar ve temel semboller girilebilir.",
+    "tip": {
+      "clickCopy": "Metni kopyalamak için tıklayın",
+      "fixDelay": "Burada, sabit gecikme her etkinin içine gömülü olduğunu ve etkinin gecikmeli etkinin içerdiğini gösterir.",
+      "keyDelay": "Gecikme: 200ms",
+      "keyDown": "Yeniden Başlat: +KC_A",
+      "keyText": "Metin: ABCDEF",
+      "keyUp": "Aşağı Bas: +KC_A",
+      "macro_text": "Yürütmek istediğiniz makroyu girin."
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Manyetik",
+      "mechanical": "Mekanik",
+      "tip": "İpucu",
+      "title": "Anahtar istatistikleri"
+    },
+    "calibration": {
+      "1": "Kalibrasyon sırasında USB kablosunu çıkarmayın, cihazı bağlantısını kesmeyin veya cihazı kapatmayın. Aksi takdirde, cihazda bir çökme durumu meydana gelebilir.",
+      "2": "Ayarlamayı Başlat",
+      "3": "“Kalibrasyonu Başlat” düğmesine basmadan önce klavye tuşuna 2 saniye basılı tutmayın.",
+      "4": "Kalibrasyonu tamamlamak için tuşu 1 saniye basılı tutun.",
+      "5": "Kalibrasyon başarılı olduğunda, arka ışık yeşil renkte yanacaktır.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Analog Eğri Profili",
+      "save": "Eğriliği Kaydet",
+      "title": "Rocker Eğrisi Ayarları"
+    },
+    "directive": {
+      "bottomBack": "Geri Sekme",
+      "bottomIn": "Alttan Giriş",
+      "bottomOut": "Dibe Ulaşmak",
+      "trigger": "Başlama Tetikleyicisi"
+    },
+    "distance": {
+      "advance_mode": "Gelişmiş",
+      "basic_mode": "Temel",
+      "current": "Güncel Tuşlar",
+      "globalDis": "Tüm Çalışma Mesafesini Ayarla",
+      "globalRt": "Tüm Tuş Tetikleyicileri Ayarla",
+      "limitTip": "Değer sınırı aşıyor. Yeniden girin.",
+      "magnet_calibrate": "Tetikleyici Demosu",
+      "magnet_calibrate_point": "Tetik noktası",
+      "magnet_calibrate_tip": "Trigger Demo yalnızca tek bir tuşu destekler",
+      "magnet_calibrate_tip_desc": "Bir tuş seçin ve sağ üstteki anahtar düğmesini açarak seçilen tuşun tetikleyicisini gösterin.",
+      "magnet_calibrate_tip_empty": "Lütfen bir tuş seçin",
+      "profile_help": "“fn” + ‘p’ + “z / x / c” tuşlarına basarak profili hızlı bir şekilde profil 1 / 2 / 3'e geçirebilirsiniz",
+      "result": "Giriş Tuşu Değerleri",
+      "sensitive": "Hassasiyet",
+      "setting": "Çalıştırma Mesafesini Ayarla",
+      "show_mode_dis": "Çalıştırma Mesafesi",
+      "show_mode_hide": "Veri Yok",
+      "show_mode_rt": "Hızlı Tetikleme",
+      "speed_trigger": "Hızlı Tetikleme",
+      "trigger_distance": "(Bas) Tetik Mesafesi",
+      "trigger_distance_reset": "(Bırak) Mesafeyi Sıfırla",
+      "trigger_distance_twice": "(Bas) Tetik Mesafesi"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Atamayı temizle",
+      "left_emu": "Sola Emüle Et",
+      "reflect": {
+        "conflict": "Bu tuş ayarlandı"
+      },
+      "titles": {
+        "1": "Kumanda Düğmesi Seçimi",
+        "2": "Oyun Kumandası Düğmesi Ayarı",
+        "4": "Klavye tuşlarını etkinleştir veya devre dışı bırak",
+        "5": "Oyun konsolu simüle edilirken yazabiliyorsanız etkinleştirin, oyun konsolu simüle edilirken yazamıyorsanız devre dışı bırakın.",
+        "6": "Oyun Kumandası Etkisi Demosu",
+        "7": "Denetleyici tanıma işlevi",
+        "8": "1. Kapattıktan sonra klavye artık denetleyici olarak tanınmayacaktır.",
+        "9": "2. Bu işlevle ilgili her işlemden sonra uygulanması için kabloyu çıkarıp yeniden takmanız gerekir.",
+        "10": "Standart denetleyici",
+        "11": "Xbox denetleyici",
+        "12": "Denetleyici modu seçimi",
+        "13": "Denetleyici modunu değiştirdikten sonra değişikliğin uygulanması için kabloyu çıkarıp yeniden takmanız gerekir.",
+        "xbox": "1. Xbox açılıp kapatıldıktan sonra değişikliğin uygulanması için kabloyu çıkarıp yeniden takmak gerekir.</br>2. Xbox, macOS'ta kullanılamaz."
+      }
+    },
+    "mode": {
+      "default": "Varsayılan",
+      "gamepad": "Oyun Kumandası",
+      "gaming": "Oyun modu"
+    },
+    "multi_cmd": {
+      "b": "Altta",
+      "fulfilled": "Alan dolu. Yeni bir komut ayarlamak için mevcut komutu silin.",
+      "list": "Komut Bağlantıları Listesi",
+      "setting": "Birden Fazla Anahtar İçin Komut",
+      "test": "Test Anahtarları"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy yalnızca manyetik anahtarlı tuşları destekler.",
+      "only_support_magnetic": "Şu anda mekanik tuşlar seçili. Bu menü yalnızca manyetik anahtarları destekler."
+    },
+    "profile": "Profil",
+    "rename": "Yeniden Adlandır",
+    "simulate": "Simüle Et",
+    "snap_tap": {
+      "absolute_priority": "Mutlak öncelik",
+      "AP": "Aynı anda basıldığında iki tuştan birine daha yüksek başlatma önceliği atayın.</br>*Önceliği değiştirmek için tuşun ortasındaki simgeye tıklayın.",
+      "cancel_mode": "Nötr",
+      "CM": "İki düğme ayarlayabilirsiniz. İkisi de aynı anda basıldığında hiçbiri tetiklenmez.",
+      "create": "Oluştur",
+      "key_exist": "Yapılandırma anahtarı mevcut",
+      "last_key_priority": "Son tuş önceliği",
+      "LKP": "İki tuş, aynı anda basıldığında, son tetiklenen tuş diğer tuş sıfırlanırken aynı anda tetiklenecek şekilde ayarlanabilir.",
+      "SC": "İki tuş ayarlayabilirsiniz, böylece her iki tuşa aynı anda basıldığında, bir tuş daha derin basılabilir ve diğeri sıfırlanabilir.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Gerçekten değiştirilsin mi?",
+    "sure_switch_gamepad_desc": "Oyun denetleyici moduna geçtikten sonra bazı düğmeler çalışmayı durdurur.",
+    "tab": {
+      "calibration": "Kalibrasyon",
+      "curve": "Eğim",
+      "distance": "Çalıştırma Mesafesi",
+      "exit_calibration": "Kalibrasyondan Çıkış",
+      "joystick_reflect": "Oyun Kumandası Analogu",
+      "multi_cmd": "Birden Fazla Anahtar İçin Komut",
+      "snap_tap": "Hızlı Çalışma",
+      "toggle": "Tuşa Uzun Bas",
+      "toggle_tip": "Bu özellik, tek bir basışla bir tuşu hızlı bir şekilde art arda tetiklemenizi sağlar.",
+      "turbo": "Turbo",
+      "turbo_tip": "Düğmeye basıldığında sürekli tıklama efekti oluşturur."
+    },
+    "toggle": {
+      "drk_guide_tip": "Bu işlev, tuşa ne kadar derin basarsanız o kadar çok kez tetiklenmesini sağlar.",
+      "keySpeed": {
+        "times": "Maksimum tetikleme sayısı",
+        "title": "Yazma hızı",
+        "unit": "kez/sn"
+      },
+      "selected": "Seçili tuşlar",
+      "set": "Tuşlar Ayarı",
+      "title": "Aç"
+    }
+  },
+  "menu": {
+    "addconnect": "Cihaz ekle",
+    "assist": "Hızlı Başlangıç",
+    "bluetooth_firmware": "Kablosuz Ürün Yazılımı",
+    "disconnect": "Bağlantıyı Kes",
+    "expTools": "Genişletme araçları",
+    "fr_firmware": "Alıcı Güncellemesi",
+    "help": "Yardım Merkezi",
+    "issue": "Hata Raporu",
+    "keyboard_advance": "Gelişmiş Mod",
+    "keyboard_firmware": "Yazılım Güncellemesi",
+    "keyboard_he": "Manyetik işlevler",
+    "keyboard_light": "Arka Aydınlatma",
+    "keyboard_macro": "Klavye makroları",
+    "keyboard_map": "Tuş Düzeni",
+    "keyboard_test": "Anahtar Testi",
+    "keyset": "Snap Action",
+    "scroll": "Gelişmiş kaydırma",
+    "setting": "Ayarlar",
+    "switchSetting": "Anahtar Ayarı"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Bu düğme gerçekten kapatılsın mı?",
+      "resetAll": "Bu işlem kaydedilen tüm verileri silecektir. Devam etmek istiyor musunuz?",
+      "resetBtn": "Varsayılan ayarlara geri yüklemek ister misiniz?"
+    },
+    "dpi": {
+      "cable": "Kablolu",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (inç başına nokta) imleç hassasiyetini tanımlar — değer ne kadar yüksekse, aynı el hareketinde imleç o kadar uzağa hareket eder.",
+      "gear": "Seviyeler",
+      "previousSetting": "{{time}} saniye boyunca hiçbir işlem yapılmazsa, otomatik olarak onaylanır. Önceki ayarlara dönmek için “Geri Al”ı tıklayın.",
+      "properties": "Fare sistem ayarları",
+      "properties_open": "Fare sistem ayarlarını aç",
+      "properties_tip": "Yanıt yok mu? « Assistant » indirip tekrar deneyin.",
+      "reportRate": "Oylama Oranı",
+      "reportRateDesc": "8000 Hz'e kadar destekler",
+      "reportTip": "Cihazın bilgisayara rapor gönderme sıklığını ayarlayın.",
+      "title": "DPI Ayarları",
+      "wireless": "2.4GHz",
+      "xyTip": "X‑axis DPI controls the cursor sensitivity in the horizontal direction, while Y‑axis DPI controls the sensitivity in the vertical direction. Higher values make the cursor more responsive in the corresponding direction.",
+      "xy_split_label": "X/Y ayrımı"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Bağımsız sol/sağ düğmeler",
+      "gear": "Seviye",
+      "left_btn": "Sol düğme",
+      "light_blocked": "Optik yol engellendi",
+      "light_desc": "Hareketsiz durumda ışık huzmesi engellenir, bu nedenle tıklama kaydedilmez. Işık yolunun açılması için düğmeye basın: ışık sensöre ulaşır ve tıklamayı tetikler. Metal kontak yok, aşınma yok.",
+      "light_led": "LED",
+      "light_mode": "Optik anahtar",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Tetiklenmiş",
+      "magnet_desc": "Tıklama kaydedilmeden önce ne kadar derine basmanız gerektiğini seçin. Kısa = daha hızlı, derin = daha az hata.",
+      "magnet_mode": "Manyetik anahtar",
+      "motor_trigger": "Dokunsal geri bildirim ayarı",
+      "right_btn": "Sağ düğme",
+      "shared_btn": "Fare düğmeleri",
+      "title": "Fare Tuşu Tetikleme Ayarları",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Tetikleme yolu ayarı"
+    },
+    "key": {
+      "backward": "Arka düğme",
+      "brightnessDown": "Ekran parlaklığını azalt",
+      "brightnessUp": "Ekran parlaklığını artır",
+      "calculate": "Hesap Makinesi",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Kopyala",
+      "customDpi": "Özel DPI",
+      "cut": "Kes",
+      "dock": "Bağlan/Bağlantıyı Kes",
+      "downScroll": "Aşağı Kaydır",
+      "dpiLoop": "DPI döngüsü",
+      "email": "Posta",
+      "forward": "İleri",
+      "he": "Optik / manyetik mikro hareket",
+      "home": "Masaüstünü Göster",
+      "homePage": "Ana Sayfayı Aç",
+      "launchPad": "Launchpad",
+      "left": "Sol Tıkla",
+      "leftClick": "Sol Tıklama",
+      "leftDouble": "Sol çift tıklama",
+      "leftLock": "Sol tıklama kilidi",
+      "leftScroll": "Sola Kaydır",
+      "leftScrollSustain": "Sürekli sola kaydırma",
+      "leftTilt": "Sola eğ",
+      "left_lock": "Sol tıklama kilidi",
+      "lickDoubleClick": "Sol çift tıklama",
+      "light": "Lamba Efekti",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Döngü",
+      "loopColorfulBreathing": "Renkli nefes döngüsü",
+      "loopDpi": "DPI döngüsü",
+      "loopOpticalMagnetic": "Optik-manyetik döngü",
+      "loopPollingRate": "Polling rate döngüsü",
+      "middle": "Orta Tıklama",
+      "middleClick": "Orta Tıklama",
+      "modeToggleAll": "Optik / manyetik mikro hareket",
+      "mute": "Sessiz",
+      "myComputer": "Bilgisayarım",
+      "next": "Sonraki",
+      "nextDpi": "Sonraki DPI",
+      "nextPollingRate": "Sonraki polling rate",
+      "pageDown": "Sayfa Aşağı",
+      "pageUp": "Sayfa Yukarı",
+      "paste": "Yapıştır",
+      "pause": "Oynat/Duraklat",
+      "player": "Oynatıcı",
+      "prevDpi": "Önceki DPI",
+      "previous": "Önceki",
+      "prevPollingRate": "Önceki Anket Hızı",
+      "refresh": "Yenile",
+      "restoreFactory": "Fabrika sıfırlama",
+      "right": "Sağ Tıkla",
+      "rightClick": "Sağ Tıkla",
+      "rightScroll": "Sağa Kaydır",
+      "rightScrollSustain": "Sürekli sağa kaydırma",
+      "rightTilt": "Sağa Eğ",
+      "screenshot": "Ekran Görüntüsü",
+      "scrollLeftClick": "Sağa Eğ",
+      "scrollRightClick": "Sola Eğ",
+      "sideKey": "Yan Tuş",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Durdur",
+      "swichLight": "Işık Efekti Değiştirme",
+      "switchApp": "Uygulama Değiştir",
+      "task": "Görev Kontrolü",
+      "trackballToScroll": "Kaydırma için trackball",
+      "upScroll": "Yukarı Kaydır",
+      "volumeDown": "Ses -",
+      "volumeUp": "Ses +",
+      "webLessen": "Uzaklaştır",
+      "webMagnify": "Yakınlaştır"
+    },
+    "keyboard": "Klavye",
+    "key_fun": {
+      "basic": "Temel düğmeler",
+      "disable": "Düğmeyi kapat",
+      "dpi": "DPI",
+      "game": "Oyun tuşları",
+      "game_tip": "Seçilen basışları otomatik tekrarlamak için atanan tuşa basılı tutun; sayı ve frekans ayarlanabilir.",
+      "keyboard": "Tuş kombinasyonu",
+      "keyboard_tip": "Bir veya daha fazla değiştirici tuş seçin, ardından standart bir tuş ekleyin. Tuş girmek için alana tıklayın veya sağdaki tuş kodunu seçin.",
+      "macro": "Makro",
+      "media": "Multimedya Tuşları",
+      "pollingRate": "Anket Hızı",
+      "profile": "Profil",
+      "sensitive": "Hassasiyet",
+      "shortCut": "Kısayol Tuşları"
+    },
+    "key_game": {
+      "count": "Sayma",
+      "infinite": "Sınırsız",
+      "rate": "Oran"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "Yanıp sönen neon ışıklar",
+      "fullColorCycle": "Tam Renk Döngüsü",
+      "soleBreathe": "Tek Renkli Solunum",
+      "soleFlowing": "At yarışı",
+      "soleLight": "Tek Renkli Sabit Işık"
+    },
+    "menu": {
+      "angle": "Açı ayarı",
+      "dpi": "DPI Ayarları",
+      "key": "Özelleştir",
+      "light": "Işık",
+      "macro": "Makro ayarı",
+      "poll_rate": "Yoklama Oranı",
+      "profile": "Profil",
+      "sys": "Gelişmiş"
+    },
+    "mouse": "Fare",
+    "polling_rate": {
+      "daily": "Ofis",
+      "fps20k": "Sensör örnekleme modu",
+      "game": "Oyunlar",
+      "office_mode": "Standart mod",
+      "office_mode_desc": "Kesintisiz çalışma, kararlı tarama",
+      "rage_content": "Rekabet modu açıkken güç tüketimi artar.",
+      "rage_desc": "Daha düşük gecikme ve daha yüksek doğruluk için sensör tarama frekansı ≥20K. Daha fazla güç tüketir.",
+      "rage_mode": "Rekabet modu",
+      "rage_title": "Rekabet modunun etkinleştirilmesini onaylıyor musunuz?"
+    },
+    "profile_tab": {
+      "changeIcon": "Simgeyi Değiştir",
+      "selectMode": "Mod Seç"
+    },
+    "scroll": {
+      "acceleration": "Hız artışı",
+      "consecutive_times": "Sürekli kaydırma sayısı",
+      "demo": "Kaydırma demosu",
+      "direction": "Kaydırma yönü",
+      "duration": "Kaydırma süresi",
+      "interval": "Kaydırma aralığı (ms)",
+      "scroll": "Yatay kaydırma",
+      "speed": "Kaydırma hızı",
+      "step": "Minimum kaydırma adımı",
+      "tip_acceleration": "Kaydırma artışını mevcut değerin katı olarak ayarlayın.",
+      "tip_consecutive_times": "Sürekli kaydırmadan sonra otomatik olarak yumuşak kaydırmaya geçer.",
+      "tip_demo": "Gelişmiş kaydırma ayarlarını burada deneyebilirsiniz.",
+      "tip_direction": "Farenin kaydırma yönünü değiştir",
+      "tip_disconnect": "Gelişmiş kaydırmayı kullanmak için Assist'i indirmeniz gerekir.",
+      "tip_interval": "Sürekli kaydırma aralığı",
+      "tip_speed": "Kaydırma hızını artır"
+    },
+    "shortcut_tooltip": {
+      "general": "Yapılandırmadan sonra aşağıdaki işlevler hem Mac hem Windows'ta geçerlidir.",
+      "mac": "Yapılandırmadan sonra aşağıdaki işlevler yalnızca Mac'te geçerlidir.",
+      "win": "Yapılandırmadan sonra aşağıdaki işlevler yalnızca Windows'ta geçerlidir."
+    },
+    "sys": {
+      "angle": "Açı ayarı",
+      "angle_correction_after": "Ayarladıktan sonra",
+      "angle_correction_no": "Ayarlamadan önce",
+      "angle_preview": "Önce ve sonra",
+      "angle_reset_btn": "0°'ye sıfırla",
+      "backward": "Ters çevir",
+      "battery_indicator": "Pil göstergesi",
+      "delay": "Debounce Süresi",
+      "forward": "Standart",
+      "funConfig": "Fare sistem işlevleri",
+      "keyResponseTime": "Tuş yanıt süresi",
+      "leftLock": "Sol Tıklama Kilidi",
+      "line": "Açı Kilidi",
+      "lock": "Kilit",
+      "lod": "Kalkış mesafesi",
+      "motion": "Hareket Senkronizasyonu",
+      "pairBond": "Eşleştirme kısayolu",
+      "pairLimit": "Eşleştirme tuşları yalnızca 1-3 tuşu destekler",
+      "power": "Güç yönetimi",
+      "respSeconds": "Tepki Süresi (ms)",
+      "scroll": "Kaydırma Yönü",
+      "sensor": "Sensör Performansı",
+      "sleep": "Cihaz uyku modu",
+      "unlock": "Kilidi Aç",
+      "wave": "Ripple Kontrolü"
+    },
+    "tip": {
+      "leftLock": "Sol tıklama yapılandırması kilitlidir ve yapılandırılamaz."
+    },
+    "tips": {
+      "advanceDelayDesc": "Gelişmiş modda her tuş için bağımsız yanıt süresi (0–20 ms) ayarlayabilirsiniz.",
+      "angleDesc": "Fare sensörünün açısını ayarlayın, böylece hafifçe eğilmiş bir fare hassas yatay hareketler yapar.",
+      "delayDesc": "Hızlı tıklamalar veya titreme nedeniyle kazara tetiklenmeleri önlemek için gecikme ayarlayın.",
+      "factorySetDesc": "Bu düğmeye tıklamak cihazın mevcut ayarlarını temizler ve fabrika ayarlarını geri yükler.",
+      "fps20kDesc": "Fare sensörü, mouse pad yüzeyinden saniyede 20.000 kare yakalar ve gecikmesiz hassas takip sağlar.",
+      "indicatorDesc": "Bu anahtar yalnızca 2.4G modunda normal pil durumu görüntülemesini kontrol eder.",
+      "leftLockDesc": "« Sol tıklama kilidi » açıkken sol düğme yeniden atanamaz.",
+      "lineDesc": "El titremesini akıllıca filtreler, yatay ve dikey sapmaları azaltır.",
+      "lodCurr": "Farenin mevcut kalkış mesafesi",
+      "lodDesc": "Fare hareketlerinin hâlâ algılandığı ve izlendiği maksimum yükseklik.",
+      "motionDesc": "Sensör girişini sistem yanıtıyla senkronize eder, imleç sıçramalarını veya sarsıntılarını azaltır.",
+      "pairBondDesc": "Tuş kombinasyonunu özelleştirin ve Bluetooth/2.4G eşleştirme moduna girmek için 4 saniye basılı tutun.",
+      "scrollDirDesc": "Fare tekerleği yukarı veya aşağı kaydırıldığında ekrandaki içeriğin hareket yönü",
+      "sensorDesc": "Çizgiler, daireler ve diğer yörüngeler çizilirken farenin doğruluğunu ve kararlılığını artırır.",
+      "sleepDesc": "Cihaz uzun süre etkin olmadığında kablosuz modda otomatik uyku modunu destekler.",
+      "waveDesc": "Daha yumuşak hareketler için el titremesinin neden olduğu dalgalı yörüngeleri azaltır."
+    },
+    "wheel": {
+      "adjustTimeout": "Kalibrasyon zaman aşımı",
+      "sensitivity": "Hassasiyet"
+    }
+  },
+  "notify": {
+    "emptyHid": "HID cihazı seçilmedi",
+    "fail": "Başarısız",
+    "fr_not_connect": "Cihaz uyku moduna geçtikten sonra sürücü kullanılamaz; etkinleştirmek için herhangi bir tuşa basın.",
+    "hidAlreadyConnected": "HID Cihazı Bağlandı",
+    "hidConfNotBrand": "Bu markanın cihazları şu anda desteklenmiyor.",
+    "hidConfNotFound": "Geçerli HID Aygıt Yapılandırması Bulunamadı",
+    "hidDeviceNotFount": "HID Cihazı Mevcut Değil",
+    "hidUnconnected": "HID Cihazı Bağlı Değil",
+    "import": {
+      "layout": "Klavye düzeniniz başarıyla içe aktarıldı",
+      "title": "İçe Aktarma Başarılı"
+    },
+    "invalid_macro_json": "Geçersiz Makro Yapılandırması",
+    "invalid_rgb_json": "Geçersiz Yapılandırma",
+    "keyboard_not_support_wireless": "Klavye Donanım Yazılımı Kablosuz Bağlantıyı Desteklemiyor",
+    "keycodeNotFound": "Anahtar Kodu Yapılandırma Hatası",
+    "limited": "Maximum limit exceeded",
+    "macroSizeLimit": "Makro boyutu kullanılabilir boyutu aşıyor",
+    "notSupportHid": "Bu tarayıcı HID bağlantısını desteklemiyor, bağlanmak için lütfen Chrome, Edge veya Opera tarayıcısını kullanın",
+    "sleep": "Bağlı cihaz yok veya cihaz uyku modunda",
+    "success": "Başarılı",
+    "success_competitive": "Rekabet moduna başarıyla geçildi",
+    "success_connect": "Bağlantı başarılı",
+    "success_office": "Standart moda başarıyla geçildi",
+    "unknownErr": "Bilinmeyen Hata"
+  },
+  "onboarding": {
+    "completed": "Sihirbaz başarıyla tamamlandı 🎉",
+    "connect": {
+      "description": "Klavyeyi USB kablosuyla bilgisayara bağlayın, « Bağla » düğmesine tıklayın ve iletişim kutusunda cihazı seçin.",
+      "title": "Klavyenizi bağlayın"
+    },
+    "entry": "Başlayalım",
+    "flow": {
+      "connect": "Cihaz bağla",
+      "keymap": "Tuşları yeniden ata",
+      "light": "Arka ışık efektleri"
+    },
+    "hint": "Eylemi tamamlamak için vurgulanan alana veya « Sihirbazı Atla » öğesine tıklayın.",
+    "keymap": {
+      "select_a": {
+        "description": "Boşluk tuşunu A'ya atamak için aşağıdaki işlev panelindeki « A » öğesine tıklayın. Sihirbaz tamamlandıktan sonra otomatik olarak kapanır.",
+        "title": "Adım 2 · Onu « A » tuşuna atayın"
+      },
+      "select_space": {
+        "description": "Seçmek için klavyenin altındaki boşluk tuşuna tıklayın.",
+        "title": "Adım 1 · Boşluk tuşunu seçin"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Rengi yeşile ayarlamak için sağdaki renk seçiciyi kullanın (seçiciyi sürükleyin veya RGB 0, 255, 0 girin). Sihirbaz otomatik olarak kapanır.",
+        "title": "Adım 2 · Yeşile ayarlayın"
+      },
+      "select_static": {
+        "description": "Klavyeyi statik tek renkli efekte ayarlamak için aşağıdaki efekt listesinden « Solid Color » öğesini seçin.",
+        "title": "Adım 1 · « Solid Color » öğesini seçin"
+      }
+    },
+    "skip": "Sihirbazı atla",
+    "step": "ADIM"
+  },
+  "screen": {
+    "format": {
+      "limit": "Resim biçimi yalnızca PNG, JPG veya GIF olabilir."
+    },
+    "resolution": {
+      "limit": "Resim boyutu 240×240'ı aşamaz."
+    },
+    "size": {
+      "limit": "Resim dosyası boyutu 300 KB'ı aşamaz."
+    },
+    "upload": {
+      "format": "PNG veya JPG (maks 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Bu işlev en fazla {{count}} tuş seçimine izin verir."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Tarama Aralığı"
+    },
+    "file_extra_properties_not_supported": "Dosya desteklenmeyen öznitelikler içeriyor",
+    "file_import_failed": "Dosya içe aktarılamadı",
+    "file_upload_no_config_file": "Yapılandırma dosyası algılanmadı. Lütfen yükleyin",
+    "info": "Cihaz Bilgisi",
+    "infos": {
+      "bluVersion": "Bluetooth sürümü",
+      "deviceDesc": "Üretici yazılımı sürümü",
+      "name": "Ad"
+    },
+    "json_config": "Json Ayarı",
+    "lng": "Dil",
+    "log": "Çalıştırma Notları",
+    "onlyview": "Bu klavyenin yapılandırması değiştirilemez.",
+    "other": "Diğer",
+    "others": {
+      "debounce": {
+        "name": "Gecikmeli tuş yanıtı",
+        "tip": "Etkinleştirildikten sonra minimum yanıt süresi 0 ms olarak ayarlanabilir.",
+        "title": "Minimum değeri değiştir",
+        "warning": {
+          "title": "Gerçekten etkinleştirilsin mi?"
+        }
+      }
+    },
+    "theme": "Tema değişikliği",
+    "updateLog": "Sürüm geçmişi"
+  },
+  "snap": {
+    "list": "Komut Bağlantıları Listesi"
+  },
+  "test": {
+    "btn": {
+      "reset": "Yeniden test et",
+      "reset_bindings": "Bağlantıları temizle"
+    },
+    "msg": {
+      "bind_success": "{{count}} tuş, {{audioName}} ile bağlandı.",
+      "bind_success_single": "{{keyName}} tuşu, {{audioName}} ile bağlandı.",
+      "no_key_selected": "Önce bağlanacak bir tuş seçin.",
+      "reset_success": "Sıfırlama başarılı",
+      "storage_full": "Yetersiz depolama alanı",
+      "unsupported_format": "Ses biçimi desteklenmiyor. MP3, WAV, OGG veya M4A kullanın.",
+      "upload_success": "Ses başarıyla yüklendi"
+    },
+    "per_key_sound": {
+      "desc": "Her tuşa benzersiz bir ses atayın. Bu işlev kapalıyken tüm tuşlar varsayılan seçili sesi kullanır.",
+      "tip": "Test matrisi olmayan modda yalnızca tek tip tuş yanıt sesi ayarlayabilirsiniz."
+    },
+    "sound": {
+      "tip": "Anahtar açıkken, tuş testi sesli geri bildirim verecek ve tercih ettiğiniz sesi seçebileceksiniz."
+    },
+    "sound_btn": {
+      "Balloon": "Balon",
+      "CarHorn": "Araba Kornası",
+      "Cartoon": "Çizgi Film",
+      "CoinCollecting": "Para Toplama",
+      "custom": "Özel",
+      "default": "Varsayılan",
+      "DogBarking": "Köpek Havlaması",
+      "Donkey": "Eşek",
+      "Glass": "Cam",
+      "PartyHorn": "Parti Kornası",
+      "PhoneDial": "Telefon Tuşları",
+      "Punch": "Punch",
+      "RubberChicken": "Lastik Tavuk",
+      "RubberToy": "Lastik Oyuncak",
+      "Sneeze": "Hapşırma"
+    },
+    "title": {
+      "custom_sound": "Özel ses kitaplığı",
+      "per_key_sound": "Tuşa ses atama",
+      "reset_custom_bindings": "Ses bağlantıları gerçekten sıfırlansın mı?",
+      "sound": "Ses Efektlerini Etkinleştir",
+      "sound_effect": "Ses Efekti Seçimi",
+      "uploaded_sounds": "Kaydedilen sesler"
+    },
+    "upload": {
+      "browse": "Yüklemek için tıklayın",
+      "info": "Desteklenen: MP3, WAV, OGG, M4A · Toplam sınır: 25 MB · Önerilen ses uzunluğu: 1–2 saniye",
+      "placeholder": "Ses dosyalarını buraya sürükleyin veya"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Önce bir tuş seçin."
+    },
+    "key": {
+      "direction": "8 yönlü açı kilidi",
+      "gesture": "Hareket modu",
+      "held": "Basılı tutma",
+      "scroll": "Kaydırma",
+      "tap": "Dokunma"
+    },
+    "keycode": {
+      "key": "Temel tuş",
+      "modifiers": "Değiştiriciler"
+    },
+    "key_fun": {
+      "basic": "Temel",
+      "comb": "Birleşik tuş",
+      "feature": "Açı kilidi",
+      "keyCombination": "Tuş kombinasyonu",
+      "layer": "Katman",
+      "macro": "Makro",
+      "simulate": "Aynı anda basma",
+      "single": "Dokunma / Basılı tutma",
+      "special": "Özel tuşlar",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Yalnızca bir standart tuş ayarlayabilirsiniz.",
+    "placeholder": {
+      "selectionKeys": "Seçim tuşları"
+    },
+    "selectInputFirst": "Önce giriş alanını seçin.",
+    "slide": {
+      "leftSlide": "Sola kaydır",
+      "rightSlide": "Sağa kaydır",
+      "underSlide": "Aşağı kaydır",
+      "upSlide": "Yukarı kaydır"
+    },
+    "tips": {
+      "angleGearsDesc": "Örneğin, « 90° » değerini 4 tuşuna atarsanız, 4 tuşuna basmak mevcut katmanın yönünü 90° (yatay) olarak ayarlar.",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Temel Tuşlar",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Başlatma programı, seçilen cihazın VIA json dosyasını gerektirir. Lütfen aşağıdaki “Onayla” düğmesine tıklayın ve başlatma programını kullanmak için seçilen cihazın json dosyasını yükleyin. VIA json dosyasını ürün sağlayıcısından temin edebilirsiniz.",
+      "title": "VIA Json Dosya Yükleme"
+    }
+  }
+}
