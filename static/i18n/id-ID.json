@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Catatan"
+    },
+    "debounce": {
+      "defer_global": "Debouncing per Keyboard. Pada setiap perubahan status, timer global diatur. Saat tidak ada perubahan selama DEBOUNCE ms, semua input dikirim. Ini adalah algoritma dengan performa tertinggi, penggunaan memori paling rendah, dan tahan noise.",
+      "defer_per_key": "Debouncing per Key. Setiap perubahan status memulai timer per Key. Ketika tidak ada perubahan selama DEBOUNCE ms, status Key akan dikirim.",
+      "eager_defer_per_key": "Debouncing per Key. Pada Key-down respon langsung, lalu DEBOUNCE ms tanpa input lanjutan. Pada Key-up, timer diatur; jika tidak ada perubahan selama DEBOUNCE ms, status Key-up dikirim.",
+      "eager_per_key": "Debouncing per Key — respon langsung saat status berubah, diikuti jeda DEBOUNCE milidetik tanpa input tambahan",
+      "none": "Tidak ada proses Debounce yang dilakukan",
+      "tip": {
+        "1": "“EAGER PER KEY” adalah mode debounce yang direkomendasikan — Key merespons langsung saat ditekan, dan semua input berikutnya diabaikan sesuai waktu respon yang ditentukan",
+        "2": "Jika Anda ingin memilih mode Debounce lain, klik tombol “?” di bagian atas untuk penjelasan mode lain.",
+        "3": "Ketika waktu respon mendekati 0 ms, masalah double-click bisa terjadi"
+      }
+    },
+    "macro": {
+      "gesture": "Selalu aktifkan mode gerakan",
+      "gesture_description": "Setelah diaktifkan, tidak perlu menetapkan tombol gerakan.",
+      "gesture_not_configured": "Tidak dapat dibuka. Buka « Fungsi Tombol – Trackball » dan atur nilai keluaran.",
+      "scroll": "Selalu aktifkan mode gulir",
+      "scroll_description": "Setelah diaktifkan, tidak perlu menghubungkannya ke tombol gerakan.",
+      "title": "Perilaku gerakan (pilih satu opsi)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) adalah teknologi input Keyboard yang memungkinkan penekanan banyak Key secara bersamaan tanpa konflik input atau sinyal hilang. Menonaktifkan NKRO berarti Keyboard akan mendeteksi hingga 6 penekanan Key secara bersamaan dengan benar.",
+      "title": "Pengaturan NKRO"
+    },
+    "performance": {
+      "mode_battery": "Mode Baterai",
+      "mode_high": "Mode kinerja tinggi",
+      "mode_normal": "Mode Default",
+      "title": "Peralihan Mode Performa"
+    },
+    "poll_rate": "Pengaturan Polling Rate",
+    "poll_rate_tip": {
+      "bt": "Bluetooth Connection Mode",
+      "bt_desc": "Dalam mode koneksi Bluetooth, Polling Rate tetap di 125Hz dan tidak dapat diubah karena batas koneksi",
+      "fr": "Mode Koneksi 2.4GHz",
+      "usb": "Mode Koneksi Kabel"
+    },
+    "sleep": {
+      "backlight": "Auto Backlight Off Starting Time",
+      "magnet": "Waktu Idle Pemindaian Keyboard Matrix",
+      "magnet_range": "Waktu Idle pemindaian matrix harus lebih besar dari jeda mati lampu latar dan lebih kecil dari waktu tidur",
+      "magnet_tip": "Hall Effect Keyboard Matrix Scanning Idle Time harus lebih dari 60 detik.",
+      "time": "Auto Sleep Mode Starting Time"
+    },
+    "tips": {
+      "keepLayer_close": "2. Jika opsi ini nonaktif, NapePro akan beralih bersama « Lapisan 1 » saat Anda masuk ke layar pengeditan « Lapisan 1 ».",
+      "keepLayer_enable": "1. Jika opsi ini aktif, misalnya jika NapePro berjalan di « Lapisan 0 », ia akan tetap di « Lapisan 0 » bahkan jika Anda masuk ke layar pengeditan « Lapisan 1 »."
+    },
+    "title": {
+      "keepLayer": "Mode pengeditan lapisan"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Perangkat terhubung",
+        "idle": "Sentuh untuk menghubungkan perangkat",
+        "pending": "Memulai otorisasi..."
+      },
+      "download_assistant": {
+        "idle": "Klik untuk mengunduh Assistant terbaru"
+      },
+      "resume_assistant": {
+        "done": "Lanjutkan pemrosesan",
+        "idle": "Assistant aktif",
+        "pending": "Sedang melanjutkan pemrosesan...",
+        "prompt": "Terbuka"
+      },
+      "undo_remap": {
+        "done": "Pembatalan penetapan tombol",
+        "idle": "Batalkan penetapan tombol ini",
+        "pending": "Sedang membatalkan..."
+      }
+    },
+    "clear_tooltip": "Hapus percakapan",
+    "close_tooltip": "Tutup",
+    "deep_thinking": "Pemikiran mendalam",
+    "generated_content_notice": "Konten yang dihasilkan AI mungkin mengandung kesalahan. Harap periksa.",
+    "input_placeholder": "Tanya Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Fokus pada respons cepat",
+        "label": "Lebih cepat"
+      },
+      "deepseek-v4-pro": {
+        "description": "Untuk tugas yang lebih kompleks",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Seimbang",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Eksekusi selesai tetapi tidak ada respons yang dapat ditampilkan.",
+    "pin": {
+      "tooltip_off": "Putuskan koneksi",
+      "tooltip_on": "Sematkan jendela obrolan"
+    },
+    "pinned_success": "Kotak dialog telah disematkan, tidak dapat dipindahkan.",
+    "quick": {
+      "connect_keyboard": "Tetapkan tombol spasi ke A",
+      "remap_space": "Ubah efek pencahayaan menjadi Band Spiral Val",
+      "set_light": "Buka Discord"
+    },
+    "result": {
+      "connect_failed": "Kesalahan koneksi: {{error}}",
+      "device_connected": "Perangkat terhubung",
+      "no_device_undo": "Tidak ada perangkat yang terhubung, jadi tidak dapat membatalkan penetapan.",
+      "no_remap_to_undo": "Tidak ada penetapan yang akan dibatalkan.",
+      "undo_failed": "Gagal membatalkan penetapan: {{error}}",
+      "undo_success": "Penetapan terakhir dibatalkan dan {{count}} tombol dipulihkan."
+    },
+    "select_model": "Pilih model",
+    "status": {
+      "answering": "Menjawab",
+      "executing": "Sedang mengeksekusi",
+      "loading": "Sedang memuat",
+      "thinking": "Sedang berpikir",
+      "verifying": "Sedang memverifikasi"
+    },
+    "stopped": "Berhenti",
+    "title": "Keychron AI",
+    "unpinned_success": "Tidak terhubung",
+    "welcome": "Halo! « Asisten Keychron AI » dapat membantu Anda menghubungkan perangkat, menetapkan tombol, menyesuaikan efek RGB, membuat makro, dan banyak lagi."
+  },
+  "application": {
+    "addr": "Buka cepat halaman web",
+    "add_addr": "Tambah Alamat",
+    "apple_silicon_version": "Unduh untuk Apple Silicon (.pkg)",
+    "app_duplicate": "Aplikasi sudah ada, tidak perlu ditambahkan lagi",
+    "app_hint": "Anda dapat menetapkan Shortcut Key, pilih software yang ingin dibuka cepat, lalu hubungkan ke Key",
+    "app_placeholder": "Silakan pilih aplikasi",
+    "clear_all": "Hapus semua",
+    "desktop_old_content": "Unduh dan instal versi layanan desktop terbaru untuk menggunakan fungsi ini.",
+    "desktop_old_title": "Terdeteksi layanan desktop lama.",
+    "download_keychron_assistant": "Jika belum terinstal, klik untuk mengunduh.",
+    "download_new_assistant_tip": "Unduh Keychron Assistant terbaru untuk menggunakan semua fungsi.",
+    "download_zip_tip": "Catatan: Sebelum menginstal Keychron Assist, Anda perlu mengekstrak file yang diunduh",
+    "file_not_found": "File tidak ada",
+    "intel_version": "Unduh untuk Intel Macs (.dmg)",
+    "keySetting": "Key ini sudah memiliki Shortcut.",
+    "key_no_conf": "Tidak ada Shortcut Key yang diatur.",
+    "limited": "Batas maksimum tercapai. Saat ini batas quick launch adalah 5 item, kami berencana menambah jumlah ini di masa depan",
+    "need_keychron_assistant": "Fitur ini membutuhkan Keychron Assistant untuk dijalankan",
+    "no_key_selected": "Tidak ada Key yang dipilih",
+    "open_assistant_no_response_tip": "Jika tidak ada yang terjadi setelah mengklik « Buka », unduh Assistant terbaru dan coba lagi.",
+    "open_tip1": "1. Fungsi peluncuran cepat adalah menautkan aplikasi yang ingin Anda luncurkan dengan cepat ke sebuah tombol. Mengklik tombol ini akan meluncurkan aplikasi dengan cepat.",
+    "open_tip2": "2. Pertama unduh Assist dan tambahkan aplikasi peluncuran cepat. Kemudian kembali ke peluncur keyboard dan tautkan serta luncurkan tombolnya.",
+    "select_key_to_bind": "Pilih Key dari Keyboard untuk mengikat pengaturan ini",
+    "soft": "Mulai cepat aplikasi",
+    "submit_hint": "Pilih software yang ingin dibuka cepat, lalu klik [Submit]. Setelah dikirim, fitur quick launch akan aktif dan dapat digunakan",
+    "title_placeholder": "Nama kustom (opsional)",
+    "unsupported_feature": "Fungsi tidak didukung",
+    "unsupported_feature_download_new_version": "Fungsi ini tidak didukung. Unduh versi terbaru dan coba.",
+    "url": "Buka halaman web dengan cepat.",
+    "url_hint": "Anda dapat mengatur Shortcut Key, pilih alamat web yang ingin dibuka dengan cepat, lalu hubungkan ke Key.",
+    "url_placeholder": "Silakan masukkan URL yang valid"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Lanjutkan",
+      "later": "Nanti",
+      "openSystemPreferences": "Buka System Preferences",
+      "restartMessage": "Izin akses berhasil diberikan. Aplikasi perlu dimulai ulang untuk digunakan.",
+      "restartNow": "Mulai ulang sekarang",
+      "restartTitle": "Izin diberikan",
+      "step1": "Klik tombol di bawah untuk membuka halaman izin akses sistem.",
+      "step2": "Temukan dan aktifkan sakelar Launcher Assistant untuk mengotorisasi.",
+      "step3": "Masukkan kata sandi Anda",
+      "step4": "Setelah otorisasi, keluar dari aplikasi dan buka kembali agar perubahan berlaku.",
+      "welcomeTitle": "Selamat Datang di Assistant"
+    },
+    "click_no_response_tip": "Buka pengaturan mouse di komputer dan sesuaikan opsi kursor, gulir, dan klik.",
+    "common": {
+      "add": "Tambah",
+      "back": "Kembali",
+      "delete": "Hapus",
+      "info": "Info",
+      "refresh": "Segarkan",
+      "settings": "Pengaturan"
+    },
+    "hint_reset": "Perubahan Device terdeteksi. Karena perbedaan layout, beberapa Key mungkin tidak berfungsi seperti di Quick Start. Reset pengaturan untuk menyesuaikan layout baru?",
+    "hint_reset_1": "Terdeteksi bahwa Anda telah berpindah ke Device lain. Apakah Anda ingin mereset pengaturan Anda?",
+    "hint_reset_2": "(Catatan: Karena perbedaan layout antar model, tampilan Quick Start mungkin tidak sesuai fungsi sebenarnya sehingga beberapa Key tidak berfungsi)",
+    "home": {
+      "addAddress": "Tambah Alamat",
+      "addSoftwareDescription": "Tambahkan software yang ingin Anda buka cepat di bawah, lalu klik “Quick Start” untuk mengikat tombol di Launcher",
+      "delete": "Hapus",
+      "onceAddedDescription": "Setelah menambahkan aplikasi di bawah ini, klik tombol untuk kembali",
+      "quickStartApplication": "Aplikasi Quick Start",
+      "search": "Cari",
+      "setUpQuickStart": "Atur Mulai Cepat",
+      "tooltipText1": "Fungsi Quick Start digunakan untuk mengikat aplikasi agar dapat dibuka cepat dengan satu tombol",
+      "tooltipText2": "Klik tanda “+” untuk memilih Quick Start yang ingin digunakan, lalu klik “Open Quick Start” untuk kembali ke Launcher dan mulai mengatur Keybind"
+    },
+    "license": {
+      "agree": "Setuju",
+      "disagreeAndWithdraw": "Tidak setuju dan keluar",
+      "userLicenseAgreement": "Perjanjian Lisensi Pengguna",
+      "welcomeDescription": "Harap setujui terlebih dahulu",
+      "welcomeDescriptionEnd": "Agar kami dapat memberikan layanan yang lebih baik kepada Anda.",
+      "welcomeTitle": "Selamat datang menggunakan Assistant"
+    },
+    "open_title": "1. Untuk menggunakan peluncuran cepat, Anda harus mengunduh Assist.",
+    "open_title2": "2. Karena pembaruan perangkat lunak, disarankan untuk mengunduh dan menginstal versi Assist terbaru.",
+    "settings": {
+      "aikeyUpdate": "Peningkatan AIKey: menambahkan preset kustom dan peluncuran cepat, mengoptimalkan pengiriman perintah dan pemrosesan respons, peningkatan stabilitas dan kemudahan penggunaan yang signifikan.",
+      "autostart": "Jalankan otomatis saat startup",
+      "currentLatestVersion": "Versi terbaru saat ini",
+      "endUserLicenseAgreement": "Perjanjian Lisensi Pengguna Akhir",
+      "fixedKnownIssues": "Masalah yang diketahui telah diperbaiki",
+      "interfaceOptimization": "Optimasi Antarmuka",
+      "language": "Language",
+      "mosUpdate": "Optimasi algoritme gulir/akselerasi MOS: membangun ulang kurva akselerasi dan strategi pengambilan sampel untuk pengalaman yang lebih mulus dan stabil pada kecepatan rendah dan tinggi, dengan getaran dan latensi lebih rendah.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Merek dagang Keychron Assistant adalah milik Keychron.",
+      "nkroDescription2": "Menonaktifkan NKRO berarti Keyboard akan mendeteksi hingga 6 penekanan Key secara bersamaan dengan benar.",
+      "selectLanguage": "Pilih Bahasa",
+      "title": "Pengaturan",
+      "updateLog": "Log Pembaruan"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Magnetic Switch",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetic Switch",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Beberapa Key gagal dikalibrasi, periksa Switch pada Keyboard dan pengaturannya.",
+    "set_successfully": "Konfigurasi Switch berhasil diubah",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Periksa apakah Magnetic Switch yang diganti di Keyboard sesuai dengan opsi Magnetic Switch yang dipilih.",
+    "sure_content2": "Klik tombol “Confirm” di bawah untuk masuk halaman calibration dan kalibrasi Keys ini.",
+    "sure_title": "Apakah Anda yakin ingin mengubah jenis Switch?",
+    "switch_type_settings": "Pengaturan Jenis Switch",
+    "tip": {
+      "1": "Fitur ini memungkinkan Anda mengatur seluruh jenis Magnetic Switch pada Keyboard. Setelah dikonfigurasi, warna border Key akan berubah sesuai dengan tipe Magnetic Switch yang dipilih.",
+      "2": "Ganti semua Magnetic Switch pada Keyboard terlebih dahulu (seluruh Keyboard hanya mendukung satu tipe Magnetic Switch) dan periksa Switch yang telah diganti di daftar berikut.",
+      "3": "Pilih opsi Magnetic Switch Type di bawah ini dan klik tombol \"Set All Keys\" untuk menyelesaikan konfigurasi.",
+      "4": "Kalibrasi ulang semua Key untuk menghindari perbedaan pada jenis Magnetic Switch"
+    },
+    "tip_reset": "Menekan tombol Reset ini akan menghapus semua item quick launch yang telah dikonfigurasi",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Magnetic Switch"
+  },
+  "common": {
+    "advance": "Lanjutan",
+    "basic": "Dasar",
+    "beta_test_version": "Versi beta",
+    "cancel": "Tutup",
+    "cancel_btn": "Batal",
+    "clear": "Hapus",
+    "close": "Mati",
+    "connected": "Terhubung",
+    "connect_btn": "Hubungkan",
+    "connect_tip": "Ingin terhubung ke HID Device",
+    "create": "Buat",
+    "delete": "Hapus",
+    "deleteConfirm": "Konfirmasi untuk mereset data ini?",
+    "disconnected": "Tidak Terhubung",
+    "download": "Unduh",
+    "empty": "Kosong",
+    "error": "Kesalahan",
+    "export": "Ekspor",
+    "general": "Umum",
+    "hide": "Sembunyikan",
+    "iknow": "Saya mengerti",
+    "import": "Impor",
+    "is": "Ya",
+    "keyboard": "Papan ketik",
+    "key_back": "Kembalikan",
+    "key_confirm": "Konfirmasi",
+    "loading": "Memuat...",
+    "matrix": "Uji Matrix",
+    "max_string_length": "Teks melebihi panjang maksimum",
+    "min": "Menit",
+    "mouse": "Mouse",
+    "noResult": "Tidak ada hasil",
+    "not": "Tidak",
+    "notSubmit": "Data belum dikirim. Kirim sekarang?",
+    "on": "Aktif",
+    "open": "On",
+    "paired": "Paired",
+    "plugged_in": "Terhubung",
+    "plug_and_ret": "Silakan hubungkan perangkat lalu coba lagi.",
+    "plug_and_retry": "Silakan hubungkan perangkat lalu coba lagi.",
+    "recover": "Pulihkan",
+    "reset": "Atur ulang",
+    "resetLayout": "Atur ulang tata letak",
+    "reset_single": "Setel ulang sederhana",
+    "resolution_not_support": "Peta Keyboard tidak dapat ditampilkan karena jendela browser terlalu kecil.",
+    "results": "Hasil",
+    "save": "Simpan",
+    "search": "Cari",
+    "select": "Pilih",
+    "selectall": "Pilih semua",
+    "status": {
+      "update_success": "Berhasil diperbarui"
+    },
+    "submit": "Konfirmasi",
+    "timeSync": "Kalibrasi waktu layar",
+    "turnoff": "MATIKAN",
+    "turnon": "HIDUPKAN",
+    "type": "Jenis",
+    "upload": "Upload",
+    "view": "Lihat",
+    "warring": "Peringatan",
+    "window_too_small": "Pratinjau tidak dapat ditampilkan karena jendela terlalu kecil"
+  },
+  "connecting": "Menghubungkan",
+  "cross": {
+    "btn": {
+      "active": "Keyboard/mouse lintas platform",
+      "agree": "Terima",
+      "cancel": "Batalkan koneksi",
+      "close": "Tutup",
+      "connect": "Hubungkan",
+      "disconnect": "Putuskan",
+      "minimize": "Minimalkan jendela",
+      "quick": {
+        "connect": "Koneksi satu sentuhan"
+      },
+      "reject": "Tolak",
+      "reject_cancel": "cancel",
+      "trust": "Perangkat tepercaya",
+      "waiting": "Menunggu"
+    },
+    "disconnect_confirm": {
+      "content": "Setelah pemutusan, proses transfer akan berhenti. Transfer yang sudah dimulai akan tetap di riwayat, file yang menunggu akan dibuang.",
+      "title": "Transfer file sedang berlangsung"
+    },
+    "file_transfer": {
+      "average_speed": "Kecepatan rata-rata",
+      "change": "Ubah",
+      "clear": "Hapus",
+      "clear_failed_desc": "Tidak dapat menghapus riwayat transfer lokal",
+      "clear_failed_title": "Penghapusan gagal",
+      "connected": "Terhubung",
+      "delete": "Hapus",
+      "desc": "Mendukung semua jenis file · Transfer stabil ke komputer yang terhubung",
+      "direction": {
+        "receive": "Terima",
+        "send": "Kirim"
+      },
+      "dir_err_desc": "Folder penerima yang dipilih tidak dapat digunakan",
+      "dir_err_title": "Pembaruan folder gagal",
+      "dir_ok_desc": "File yang baru diterima akan disimpan ke folder yang dipilih",
+      "dir_ok_title": "Folder penyimpanan diperbarui",
+      "drop_unavailable_desc": "Gunakan tombol « Pilih » untuk memilih file ini",
+      "drop_unavailable_title": "Tidak dapat membaca jalur file",
+      "elapsed_label": "Waktu berlalu",
+      "enable": "Aktifkan transfer file",
+      "file_missing_desc": "File asli telah dipindahkan atau dihapus, tidak dapat dikirim ulang",
+      "file_missing_title": "File asli tidak ada",
+      "history": "Riwayat transfer",
+      "no_active": "Tidak ada transfer yang sedang berlangsung",
+      "no_history": "Tidak ada riwayat transfer file",
+      "open": "Pengaturan",
+      "open_err_desc": "Tidak dapat membuka folder penerima file",
+      "open_err_title": "Tidak dapat membuka folder",
+      "open_folder": "Buka",
+      "peer_cancelled": "Pihak lain membatalkan transfer",
+      "quick_send": "Kirim cepat",
+      "quick_send_desc": "Pilih file dan kirim langsung ke komputer yang terhubung",
+      "receive_failed_desc": "Penerimaan file tidak lengkap atau tidak dapat ditulis secara lokal",
+      "receive_failed_title": "Kesalahan saat menerima file",
+      "receiving": "Sedang menerima...",
+      "receiving_path": "Jalur penerimaan lokal",
+      "resend": "Kirim ulang",
+      "select_button": "Pilih file",
+      "select_desc": "Pilih file tertentu untuk ditransfer",
+      "select_title": "Klik untuk memilih file",
+      "sending": "Sedang mengirim...",
+      "send_failed_desc": "File yang dipilih tidak dapat dikirim",
+      "send_failed_title": "Transfer file gagal",
+      "send_to": "Kirim ke",
+      "status": {
+        "cancelled": "Dibatalkan",
+        "failed": "Pengiriman gagal",
+        "received": "Diterima",
+        "receive_error": "Kesalahan penerimaan",
+        "sent": "Terkirim"
+      },
+      "title": "Transfer file",
+      "transfer_time": "Waktu transfer",
+      "transmitting": "Sedang mentransfer...",
+      "unsupported_file": "Format file tidak didukung untuk transfer",
+      "waiting": "Menunggu transfer"
+    },
+    "notification": {
+      "conn_end_t": "Koneksi terputus",
+      "conn_err_t": "Kesalahan koneksi",
+      "conn_lost_t": "Koneksi terputus",
+      "conn_reject_t": "Permintaan koneksi ditolak",
+      "conn_req_err": "Kesalahan saat mengirim permintaan koneksi",
+      "hist_clear_err": "Kesalahan saat menghapus riwayat koneksi",
+      "hist_clear_ok": "Riwayat koneksi dihapus",
+      "id_err_t": "Kesalahan verifikasi identitas",
+      "network_lost": "Koneksi jaringan terputus, sesi lintas platform diakhiri",
+      "op_err_t": "Operasi gagal",
+      "op_ok_t": "Operasi berhasil",
+      "pair_id_err": "Kesalahan verifikasi identitas perangkat yang dipasangkan",
+      "pair_ok": "Perangkat berhasil dipasangkan",
+      "pair_ok_t": "Pemasangan berhasil",
+      "peer_end": "Pihak lain memutus sesi lintas platform",
+      "peer_reject": "Pihak lain menolak permintaan koneksi",
+      "reconfirm_t": "Diperlukan konfirmasi baru",
+      "sync_err_t": "Sinkronisasi gagal",
+      "trust_id_changed": "Identitas perangkat tepercaya berubah. Silakan konfirmasi ulang permintaan koneksi.",
+      "trust_id_err": "Kesalahan verifikasi identitas perangkat tepercaya",
+      "trust_rm_err": "Kesalahan saat menghapus perangkat tepercaya",
+      "trust_sync_err": "Data kepercayaan tidak disinkronkan dengan pihak lain"
+    },
+    "page": {
+      "sub_desc": "Hubungkan dua komputer, gunakan keyboard/mouse lintas platform · Sinkronkan clipboard secara manual · Seret file — sealami menggunakan satu komputer.",
+      "sub_title": "Pratinjau fungsi",
+      "title": "Lintas platform"
+    },
+    "panel": {
+      "desc": "Maksimal 2 komputer terhubung (termasuk ini) · Fungsi perangkat terbuka setelah terhubung",
+      "found": "Deteksi perangkat",
+      "history": {
+        "active": "Koneksi aktif",
+        "passive": "Koneksi pasif",
+        "subtitle": "Koneksi terakhir",
+        "title": "Riwayat koneksi"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Lainnya",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Pindai semua jaringan Wi-Fi dari router yang sama",
+        "start": "Mulai pemindaian",
+        "stop": "Hentikan pemindaian",
+        "title": "Memindai jaringan lokal.."
+      },
+      "tag_1": "Tepercaya",
+      "title": "Hubungkan komputer"
+    },
+    "scan": {
+      "incoming_notice": "Setelah Anda menyetujui, pihak lain akan dapat membuat koneksi lintas platform ke komputer ini.",
+      "incoming_subtitle": "Ingin terhubung ke komputer ini",
+      "incoming_title": "Permintaan koneksi diterima",
+      "network_changed_cancel": "Tidak sekarang",
+      "network_changed_confirm": "Pindai ulang",
+      "network_changed_desc": "Lingkungan jaringan berubah. Pindai ulang?",
+      "network_changed_title": "Lingkungan jaringan berubah",
+      "rejected": "Pihak lain menolak permintaan koneksi",
+      "request_confirm": "Menunggu konfirmasi pihak lain... Permintaan koneksi akan segera kedaluwarsa",
+      "request_tip": "Permintaan koneksi ke",
+      "trust": "Percayai perangkat ini dan otomatis terima permintaan koneksi di masa mendatang",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Koneksi otomatis",
+      "automatic_connection_help": "Koneksi otomatis: pilih perangkat dari daftar perangkat tepercaya komputer ini. Kedua perangkat harus dikonfigurasi satu sama lain untuk terhubung otomatis setelah Assistant dimulai.",
+      "automatic_connection_hint": "(Kedua perangkat harus dikonfigurasi)",
+      "clear_automatic_device": "Hapus perangkat koneksi otomatis",
+      "close": "Tutup",
+      "confirm": "Konfirmasi",
+      "disconnect_shortcut": "Putuskan sesi lintas platform",
+      "disconnect_shortcut_help": "Jika fungsi lintas platform tidak berfungsi, Anda dapat memutus koneksi menggunakan kombinasi tombol ini. Kombinasi ini dapat diubah tetapi tidak dapat dihapus.",
+      "enter_shortcut_key": "Masukkan tombol kustom",
+      "no_trusted_devices": "Tidak ada perangkat tepercaya",
+      "remove_confirmation": "Konfirmasi hapus kepercayaan untuk {device}?",
+      "remove_device": "Hapus perangkat tepercaya",
+      "select_device": "Pilih perangkat tepercaya",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Pintasan keyboard",
+      "system_lock_shortcut": "Kunci komputer",
+      "title": "Kepercayaan dan koneksi otomatis",
+      "trusted_count": "Jumlah perangkat tepercaya ({count})",
+      "trust_help": "Perangkat tepercaya: perangkat tepercaya dapat terhubung lain kali tanpa meminta persetujuan di komputer ini."
+    },
+    "step": {
+      "collapse": "Ciutkan",
+      "connected": "Terhubung",
+      "desc": "Pindai dan pasangkan komputer tambahan di Keychron Assistant · Setelah terhubung, keyboard/mouse lintas platform dan transfer file akan tersedia",
+      "desc_1": "Otomatis mendeteksi komputer di jaringan lokal yang sama dan mengirim permintaan koneksi",
+      "desc_2": "Pihak lain mengklik « Terima » untuk menyelesaikan pemasangan",
+      "desc_3": "Semua fungsi lintas platform tersedia",
+      "expand": "Perluas",
+      "local": "Komputer ini",
+      "title": "Proses koneksi",
+      "title_1": "Pindai dan kirim permintaan",
+      "title_2": "Konfirmasi pihak lain",
+      "title_3": "Connection Established",
+      "trust": "Terhubung · Tepercaya",
+      "wait_1": "Menunggu",
+      "wait_2": "Klik « Izinkan »",
+      "wait_3": "Pasangkan komputer tambahan"
+    },
+    "tabs": {
+      "file_transfer": "Transfer file",
+      "settings": "Pengaturan"
+    },
+    "time": {
+      "ago": "Sebelum",
+      "days": "Hari",
+      "hours": "Jam",
+      "just_now": "Baru saja",
+      "last": "Masa lalu",
+      "last_connection": "Koneksi terakhir",
+      "minutes": "Menit",
+      "months": "Bulan",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Bawah",
+      "desc": "Saat kursor mouse melintasi tepi layar yang ditentukan, keyboard dan mouse komputer dapat mengontrol perangkat yang terhubung.",
+      "left": "Kiri",
+      "off": "Nonaktif",
+      "right": "Kanan",
+      "title": "Atur tepi lintasan layar",
+      "top": "Atas"
+    },
+    "web": {
+      "auto_connect_target": "Target koneksi otomatis",
+      "center_cursor": "Pusatkan kursor",
+      "clipboard": "Papan klip",
+      "clipboard_desc": "Sinkronkan konten yang disalin secara manual antar komputer",
+      "connect_assistant": "Buka Assistant",
+      "connect_hint": "Fungsi koneksi harus dijalankan di dalam Assistant",
+      "custom_screenshot": "Screenshot kustom",
+      "direction": "Arah",
+      "drop_box_key": "Pintasan panel seret",
+      "exit_application": "Putuskan",
+      "file_transfer": "Transfer file",
+      "file_transfer_desc": "Pilih file atau gunakan pintasan untuk membuka panel seret",
+      "hold_ctrl": "Tahan Ctrl untuk lintas platform",
+      "in_progress": "tugas",
+      "items": "item",
+      "keyboard_mouse": "Keyboard / mouse lintas platform",
+      "keyboard_mouse_desc": "Alihkan kontrol saat kursor melintasi tepi layar",
+      "loading": "Mendapatkan status lintas platform dari Assistant...",
+      "lock_pc": "Kunci komputer",
+      "max": "Maksimum",
+      "not_set": "Belum diatur",
+      "off": "Nonaktif",
+      "on": "Aktif",
+      "ongoing": "Sedang berlangsung",
+      "read_only": "Hanya baca · Ubah pengaturan di Keychron Assistant",
+      "recent_items": "Item terakhir",
+      "save_dir": "Folder penyimpanan file",
+      "settings": "Pengaturan",
+      "settings_desc": "Perangkat tepercaya · Koneksi otomatis · Pintasan",
+      "shortcut_mapping": "Tetapkan pintasan",
+      "switch_pc": "Ganti komputer",
+      "sync_mode": "Mode sinkronisasi",
+      "target_device": "Perangkat target",
+      "title": "Status fungsi lintas platform",
+      "trusted_devices": "Jumlah perangkat tepercaya",
+      "trust_auto_connect": "Kepercayaan dan koneksi otomatis"
+    }
+  },
+  "debounce": {
+    "backlight": "Waktu tidur lampu latar tidak boleh kurang dari 5 detik",
+    "mode": "Mode Debounce",
+    "press": "Tekan ke Bawah (detik)",
+    "release": "Waktu Reset (detik)",
+    "response": "Response Seconds",
+    "scan": "Kecepatan Pemindaian",
+    "setting": "Pengaturan Waktu Debounce Papan Ketik",
+    "sleep_limit": "Waktu Sleep tidak boleh kurang dari 1 menit.",
+    "tip": "Waktu mulai Auto Backlight Off harus lebih kecil dari waktu mulai Auto Sleep Mode",
+    "warning": {
+      "content": "(Catatan: pengaturan di bawah 10 ms dapat menyebabkan risiko klik ganda. Harap konfigurasi dengan hati-hati.)",
+      "title": "Apakah Anda yakin ingin mengatur?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Demo keyboard",
+    "device_mouse": "Demo mouse",
+    "exit": "Keluar dari mode demo",
+    "keyboard": "Coba tanpa keyboard",
+    "mode": "Mode demo",
+    "mouse": "Coba tanpa mouse",
+    "tip": "Catatan: Anda sedang dalam mode demo, hanya untuk tujuan presentasi dan tidak memiliki fungsi nyata.",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Versi Device"
+  },
+  "device_add": "Hubungkan",
+  "device_select": {
+    "notify": "Silakan pilih Device dari daftar untuk melanjutkan.",
+    "select": "Lanjutkan",
+    "un_select": "Tidak ada Device yang dipilih"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Tes mengetik"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Hubungkan",
+      "2": "Berikutnya",
+      "3": "Sebelumnya",
+      "6": "Lanjut ke Pembaruan",
+      "enterBootloaderMode": "Masuk ke mode pembaruan",
+      "flash": "Flash Firmware",
+      "matchDevice": "Cocokkan perangkat",
+      "retry": "Coba lagi",
+      "startUpgrading": "Mulai pembaruan"
+    },
+    "description": "Catatan rilis",
+    "downloadFailed": "Kesalahan mengunduh file firmware",
+    "error": {
+      "diff_model": "Model Firmware antar Device tidak konsisten",
+      "get_dfu_version": "Gagal mendapatkan versi pembaruan Firmware Device"
+    },
+    "flashError": "Downloading Firmware Failed",
+    "flashSuccess": "Firmware berhasil diperbarui",
+    "info": {
+      "currentVersion": "Versi saat ini",
+      "latestVersion": "Versi Terbaru",
+      "updateSize": "Ukuran firmware",
+      "updateTime": "Pembaruan terakhir"
+    },
+    "mouse": {
+      "step1_hid_device": "Tekan Key K, E, Y pada Keyboard secara berurutan, lalu lanjutkan ke langkah berikutnya setelah prompt koneksi HID Device muncul."
+    },
+    "notFound": "Firmware terbaru untuk Device tidak ditemukan.",
+    "productNotExist": "Informasi Device tidak diperoleh",
+    "requestFail": "Gagal mendapatkan Device; periksa apakah sedang digunakan oleh program lain.",
+    "syncQuickStart": "Sinkronkan peluncuran cepat",
+    "tip": {
+      "confirm": "Konfirmasi",
+      "currentSelect": "Sedang dipilih"
+    },
+    "tips": {
+      "0": "Tidak ada pembaruan Firmware untuk Device ini.",
+      "4": "Ikuti langkah di bawah ini jika Anda menggunakan Windows dan belum menginstal QMK Toolbox Driver. Jika sudah, klik Next",
+      "5": "Klik tombol 'Download Toolbox' di bawah untuk mengunduh dan mengekstrak Toolbox",
+      "6": "Setelah mengekstrak file, klik kanan ikon Toolbox, atau cari “driver” di bilah pencarian sistem, lalu pilih “Jalankan sebagai administrator” untuk membukanya.",
+      "7": "Buka dan klik menu 'Tool'",
+      "8": "Klik 'Install Drivers', lalu klik 'Yes' untuk mulai menginstal driver Firmware, dan tunggu hingga selesai",
+      "9": "Setelah instalasi selesai, klik Next untuk memulai proses Flashing Firmware.",
+      "10": "Note: Anda dapat mengklik",
+      "11": "Ikuti langkah-langkah di bawah ini.",
+      "12": "Dalam kondisi saat ini, cabut kabel USB Keyboard dan biarkan Keyboard terputus.",
+      "13": "Saat Keyboard terputus, tekan dan tahan ESC atau \"○\" lalu sambungkan Keyboard ke komputer menggunakan kabel USB. Biarkan Keyboard masuk ke mode persiapan update Firmware",
+      "15": "Setelah pencocokan berhasil, tombol 'Flash Firmware' akan muncul, klik untuk memulai update Firmware",
+      "16": "Selama pembaruan firmware, jangan putuskan perangkat dari komputer.",
+      "18": "Unduh Toolbox",
+      "19": "Video Panduan Instalasi Toolbox Driver",
+      "20": "Untuk memahami proses detail instalasi Toolbox Driver",
+      "22": "Klik tombol “Connect” untuk menghubungkan Device saat ini, sistem akan otomatis menemukan versi Firmware terbaru",
+      "23": "Tekan dan tahan Keyboard Fn dan tombol “-” selama minimal 5 detik untuk menyiapkan Keyboard memperbarui Firmware hingga indikator biru menyala.",
+      "24": "Setelah pencocokan berhasil, tombol “Flash Firmware” akan muncul, klik untuk memulai update Firmware.",
+      "25": "Klik tombol Match Device di bawah, pilih Device yang dimulai dengan ({{ mode }}), lalu cocokkan",
+      "26": "Perbarui modul Bluetooth dalam mode USB.",
+      "27": "Klik tombol di bawah untuk mendapatkan versi firmware terbaru.",
+      "28": "Saat keyboard terputus, tahan tombol di sudut kiri atas keyboard dan pada saat yang sama sambungkan keyboard ke komputer melalui kabel USB untuk masuk ke status siap pembaruan firmware.",
+      "bl-exceeded": "Jumlah percobaan terlampaui. Harap sambungkan kembali kabel data.",
+      "clickMatchBtn": "Klik tombol « Perangkat yang Kompatibel » di bawah dan pilih perangkat yang dimulai dengan {{dfuName}}.",
+      "currentDongle": "(Untuk memperbarui keyboard/mouse, gunakan koneksi kabel. Anda sekarang berada di halaman penerima.)",
+      "link_wired_content": "Selama pembaruan nirkabel, mouse akan masuk ke mode tidur dan tidak dapat digunakan",
+      "link_wired_title": "Sambungkan kabel sebelum pembaruan",
+      "longPress": "Tekan ESC terlebih dahulu, lalu tahan tombol Tab secara bersamaan selama 3 detik.",
+      "matchErr": "Saat ini belum dipasangkan. Pilih secara manual perangkat yang akan diperbarui.",
+      "mouseTip2": "Jika koneksi sudah terhubung dan cocok, klik “Brush Firmware” untuk memulai proses flash",
+      "mouseTip4": "Klik tombol “Connect” di bawah, pilih “Bootloader Device”, dan Connect.",
+      "mouseTip6": "(Jangan cabut receiver dari komputer saat proses flashing firmware.)",
+      "mouseTip7": "Tunggu hingga update selesai — pesan sukses akan muncul",
+      "patch": {
+        "1": "Pembaruan ini adalah tambalan keamanan. Silakan perbarui terlebih dahulu sesuai panduan di bawah.",
+        "2": "Dalam kondisi saat ini, lepaskan kabel USB keyboard untuk memutuskan keyboard.",
+        "3": "Saat keyboard terputus, lepaskan tombol « Spasi » dan cari tombol kecil di pelat logam di samping sakelar.",
+        "4": "Tahan tombol dan sambungkan kembali keyboard ke komputer melalui kabel USB.",
+        "5": "Klik tombol « Perangkat yang Kompatibel » di bawah dan pilih perangkat yang ditandai (DFU).",
+        "6": "Setelah pemasangan berhasil, tombol « Flash Firmware » akan muncul. Klik untuk memulai pembaruan tambalan keamanan."
+      },
+      "toFlash": "Setelah pemasangan berhasil, tombol « Flash Firmware » akan muncul. Klik untuk memulai pembaruan firmware."
+    },
+    "update": {
+      "dfu_check": "Harap periksa apakah perangkat DFU yang dipilih sudah benar."
+    },
+    "update_available": "Tersedia versi Firmware yang dapat diperbarui",
+    "update_latest": "Ini adalah versi Firmware terbaru",
+    "update_success": "Update berhasil, klik tombol \"Connect\" untuk menghubungkan Device saat ini.",
+    "warning": "Jangan Lepas Device atau Refresh Halaman untuk mencegah potensi kerusakan pada Device",
+    "write": "Selama Penulisan Firmware"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Manual Perangkat",
+      "tutorial": "Tutorial",
+      "user_feedback": "Umpan Balik Pengguna"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Cara Mengatur Mode Tidur Otomatis dan Waktu Mulai Lampu Latar Mati di Launcher?",
+        "set_keyboard_bounce_time": "Cara Mengatur Waktu Pantulan Keyboard di Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Cara Mengatur Tombol Lampu Latar di Launcher?",
+        "set_mix_rgb": "Cara Mengatur Mix RGB di Launcher?",
+        "set_per_key_rgb": "Cara Mengatur RGB per Tombol di Launcher?"
+      },
+      "bridge_firmware_update": "Cara melakukan flash firmware untuk receiver Keychron",
+      "create_mouse_macro": "Cara membuat makro mouse di Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Cara Mengembalikan Pengaturan Pabrik dan Memperbarui Firmware di Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Cara Mengelola Profil HE Anda di Launcher?",
+        "set_gamepad_analog_and_curves": "Cara Mengatur Analog Gamepad dan Kurva Gamepad di Launcher?",
+        "set_long_press_switch": "Cara Mengatur Saklar Tekan Lama di Launcher?",
+        "set_one_key_multiple_commands": "Cara Mengatur Satu Tombol Banyak Perintah di Launcher?",
+        "set_snap_click": "Cara Mengatur Snap Click di Launcher?",
+        "use_he_mode": "Cara menggunakan mode HE di Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Bagaimana fungsi tombol Fn pada keyboard Keychron?",
+        "remap_key": "Cara Memetakan Ulang Tombol di Launcher?",
+        "set_keymap_language": "Cara Mengatur Bahasa Keymap di Launcher?",
+        "use_different_function_layers": "Cara menggunakan lapisan fungsi yang berbeda?"
+      },
+      "key_test": {
+        "custom_sounds": "Cara menyesuaikan suara keyboard Anda?",
+        "perform_keyboard_key_testing": "Cara melakukan pengujian tombol keyboard di Launcher?"
+      },
+      "macro": {
+        "create_macro": "Cara membuat makro di Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Cara mereset mouse ke pengaturan pabrik di Launcher",
+      "mouse_angle_adjustment": "Cara menggunakan pengaturan sudut di Launcher",
+      "mouse_firmware_update": "Panduan pembaruan firmware mouse",
+      "mouse_receiver_firmware_update": "Cara melakukan flash firmware untuk receiver Keychron",
+      "quick_start": {
+        "download_and_install_assistant": "Cara Mengunduh dan Menginstal Keychron-Assistant?",
+        "set_quick_start": "Cara Mengatur Quick Start di Launcher?"
+      },
+      "set_mouse_customize_buttons": "Cara mengatur tombol mouse kustom di Launcher",
+      "set_mouse_debounce_time": "Cara mengubah waktu debounce mouse di Launcher",
+      "set_mouse_dpi_and_polling_rate": "Cara mengatur DPI dan tingkat pelaporan mouse di Launcher",
+      "set_mouse_system_features_setting": "Cara mengatur fungsi sistem mouse di Launcher"
+    },
+    "user_manual": "Manual Pengguna"
+  },
+  "issue": {
+    "content": "Konten",
+    "device": "Perangkat",
+    "email": "Email",
+    "tips": {
+      "content": "Konten Diperlukan",
+      "device": "Perangkat wajib diisi",
+      "email": "Alamat Email Tidak Valid",
+      "input": "Masukkan konten",
+      "send": "Laporan Dikirim",
+      "title": "Judul Diperlukan"
+    },
+    "type": {
+      "1": "Tombol rusak / tidak merespons",
+      "2": "Masalah koneksi",
+      "3": "Kerusakan perangkat keras",
+      "4": "Tata letak/ukuran tidak sesuai",
+      "5": "Masalah driver",
+      "6": "Lainnya",
+      "7": "Pilih jenis umpan balik"
+    }
+  },
+  "keycap": {
+    "character": "Tombol huruf",
+    "fnc": "Tombol fungsi",
+    "general": "Umum",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Tombol angka",
+    "symbol": "Tombol simbol",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Tahan = tombol atas (pengubah) · Ketuk = tombol bawah"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Kombinasi tombol",
+      "combo_description": "Pintasan kustom",
+      "launch_app": "Luncurkan aplikasi",
+      "launch_app_description": "Luncurkan aplikasi dengan satu sentuhan",
+      "launch_web": "Buka situs web",
+      "launch_web_description": "Buka situs web dengan satu sentuhan",
+      "macro": "Makro",
+      "macro_description": "Rangkaian aksi",
+      "remap": "Tetapkan ulang",
+      "remap_description": "Tetapkan tombol lain",
+      "title": "Tetapkan ulang {{key}}"
+    },
+    "codeInput": "Masukan tombol",
+    "knob_not_support": "Firmware saat ini tidak mendukung knob customization, harap update Firmware.",
+    "layer": {
+      "1": "1. Menahan mengaktifkan sementara lapisan target; melepas tombol memulihkan nilai asli.",
+      "2": "2. Hanya berlaku dari lapisan rendah ke tinggi; dari tinggi ke rendah tidak berpengaruh.",
+      "3": "1. Satu ketukan untuk mematikan/mengaktifkan lapisan target; setelah mati, lapisan aktif tertinggi diterima.",
+      "4": "2. Lapisan default tidak dapat dimatikan; jika semua lapisan mati, lapisan default diterima.",
+      "5": "Fungsi tahan sama dengan MO; 5 ketukan sesuai dengan TG.",
+      "6": "1. Ketuk/tahan untuk mengaktifkan lapisan; aktivasi hanya terjadi dari bawah ke atas.",
+      "7": "Snap Tap hanya mendukung tombol dengan sakelar magnetik.",
+      "8": "Satu ketukan mengaktifkan lapisan target dalam satu arah, tanpa membedakan lapisan tinggi dan rendah.",
+      "9": "Satu ketukan mengaktifkan sementara lapisan default target dalam satu arah, tanpa membedakan lapisan tinggi dan rendah.",
+      "10": "1. Setelah listrik padam, keyboard kembali ke lapisan default yang sesuai dengan sakelar sistem, misalnya Win = lapisan 2, Mac = lapisan 0.",
+      "11": "2. Beberapa model keyboard tidak memiliki sakelar sistem fisik dan biasanya kembali ke lapisan default tetap, misalnya lapisan 0.",
+      "error_info": "Sakelar sistem keyboard tidak cocok dengan sistem komputer; fungsi pengubah dapat berubah.",
+      "tip": "Tips:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Pilih satu atau lebih tombol pengubah dan satu tombol utama, lalu aktifkan dengan satu tombol.",
+        "modifier_keys": "Tombol pengubah",
+        "press_primary_key": "Tekan tombol utama",
+        "primary_key": "Tombol utama",
+        "title": "Kombinasi tombol"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Klik tombol ini untuk membuka aplikasi yang ditetapkan.",
+        "no_available_apps": "Tidak ada aplikasi yang tersedia",
+        "search_apps": "Cari aplikasi",
+        "title": "Luncurkan aplikasi"
+      },
+      "launch_web": {
+        "description": "Klik tombol ini untuk membuka situs web yang ditetapkan.",
+        "title": "Buka situs web",
+        "web_page_url": "URL situs web"
+      },
+      "macro": {
+        "description": "Rekam makro langsung ke kolom input: tombol yang Anda tekan akan direkam sebagai rangkaian aksi.",
+        "macro_keys": "Tombol makro",
+        "press_key": "Tekan tombol untuk merekam",
+        "title": "Rekam makro"
+      },
+      "remap": {
+        "description": "« {{key}} » harus menjadi apa?",
+        "press_key": "Tekan tombol untuk menetapkan",
+        "primary_keys": "Tombol utama",
+        "title": "Tetapkan ulang tombol"
+      }
+    },
+    "reset": {
+      "all": "Konfirmasi untuk mereset semua pengaturan?",
+      "single": "Konfirmasi untuk mereset pengaturan Key ini?",
+      "title": "Apakah Anda yakin ingin mereset?"
+    },
+    "tabs": {
+      "assist": "Peluncuran cepat",
+      "basic": "Dasar",
+      "custom": "Kustom",
+      "layers": "Lapisan",
+      "macro": "Makro",
+      "media": "Media",
+      "modtap": "Tahan / Ketuk",
+      "mouse": "Mouse",
+      "qmk_lighting": "Pencahayaan",
+      "special": "Tombol Khusus",
+      "wt_lighting": "Pencahayaan"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Kustom",
+      "default_layer": "Lapisan default",
+      "display": "Pilih lapisan tampilan",
+      "functional": "Lapisan fungsi aktual",
+      "funtional": "Saat ini",
+      "warn": "Jika tombol tidak berfungsi, ganti sakelar sistem dan mulai ulang perangkat."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": "Apakah Anda ingin beralih ke...",
+    "connect": {
+      "1": "Hubungkan perangkat melalui kabel atau receiver 2.4G.\n(Beberapa model hanya mendukung mode kabel)",
+      "2": "Klik « Hubungkan » di sudut kiri atas dan pilih perangkat dari daftar."
+    },
+    "detectedKeyboardLanguage": "Kami mendeteksi bahasa Keyboard Anda...",
+    "guide_tip": "Ikuti panduan di bawah untuk menghubungkan Device.",
+    "keepCurrentSetting": "Keep Current Settings",
+    "lang": "Bahasa Layout",
+    "resetSuccessContent": "Layout Keyboard Anda berhasil direset.",
+    "resetSuccessTitle": "Reset berhasil",
+    "select_device": "Pilih perangkat yang ingin Anda hubungkan.",
+    "switchImmediately": "Ganti Sekarang"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Kecerahan",
+    "color": "Warna",
+    "common": {
+      "setting_color": "Atur Warna"
+    },
+    "commonColor": "Warna Umum",
+    "customColor": "Tentukan Warna",
+    "decorate_light": {
+      "0": "Tidak Ada",
+      "1": "Solid",
+      "2": "Efek Pernapasan",
+      "3": "Siklus Hue",
+      "4": "Efek Balapan"
+    },
+    "effect": "Efek",
+    "effect speed": "Kecepatan",
+    "hue": "Kromatisitas",
+    "layer2": "Zona RGB",
+    "led": {
+      "sub": {
+        "title": "Tips: Saat mengatur warna, pilih strip LED di bawah."
+      },
+      "title": "Strip cahaya"
+    },
+    "level": "Tingkat",
+    "mix": {
+      "config": "Pengaturan Efek Pencahayaan",
+      "hxxg": {
+        "hue": "Rona",
+        "saturability": "Saturasi",
+        "speed": "Kecepatan"
+      },
+      "rk": "Fitur ini memungkinkan Anda mengatur dua zona Key berbeda pada Keyboard yang sama untuk efek RGB berbeda, dengan periode waktu dan efek yang bisa diatur per zona",
+      "timeLine": {
+        "second_tips": "Input detik terlalu besar atau terlalu kecil",
+        "title": "Linimasa"
+      },
+      "verify_duration": {
+        "tip1": "Nilai input harus berupa angka antara 1 dan 99.",
+        "tip2": "Hanya dua digit desimal yang dapat dimasukkan.",
+        "tip3": "Nilai yang dimasukkan terlalu besar",
+        "tip4": "Nilai yang dimasukkan terlalu kecil."
+      }
+    },
+    "notSupport": "Device tidak mendukung pengaturan pencahayaan",
+    "perkey": {
+      "effect": "Pemilihan Efek",
+      "effects": {
+        "0": "Umum",
+        "1": "Efek Pernapasan",
+        "2": "Respons Tombol Tunggal",
+        "3": "Respons Key Tetangga",
+        "4": "Seluruh Keyboard"
+      },
+      "redo": "Ulangi",
+      "region": "Pemilihan Area",
+      "region_select": "Pilih Area",
+      "region_tip": "Pilih area pada Key Keyboard dan atur warnanya. Klik Simpan untuk mengubah warna area tersebut",
+      "rk": "Warna setiap Key dapat diatur secara individual. Pilih Key, klik area warna, ubah warna, lalu simpan",
+      "save_warn": "Terlalu banyak zona RGB, hapus beberapa zona RGB dan coba lagi.",
+      "select_tip": "Button yang dipilih tidak membuat region.",
+      "select_warn": "Silakan pilih Button.",
+      "undo": "Batalkan"
+    },
+    "saturation": "Saturasi",
+    "settingAllBrightnessArea": "Atur Kecerahan Semua Zona",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Cahaya Dekorasi",
+      "indication": "Lampu Indikator",
+      "led_light": "Kontrol strip cahaya",
+      "mix_rgb": "Campur RGB",
+      "perkey_rgb": "RGB per Key",
+      "screen": "Pengaturan layar",
+      "selection": "Lampu Latar"
+    },
+    "underglow brightness": "Kecerahan"
+  },
+  "lights": {
+    "0. None": "Tidak ada",
+    "1. Solid Color": "Warna Solid",
+    "10. Cycle Pinwheel": "Siklus Pinwheel",
+    "11. Cycle Spiral": "Siklus Spiral",
+    "12. Dual Beacon": "Beacon Ganda",
+    "13. Rainbow Beacon": "Suar Pelangi",
+    "14. Jellybean Raindrops": "Tetesan Jellybean",
+    "15. Pixel Rain": "Hujan Piksel",
+    "16. Typing Heatmap": "Peta Panas Mengetik",
+    "17. Digital Rain": "Hujan Digital",
+    "18. Reactive Simple": "Reaktif Sederhana",
+    "19. Reactive Multiwide": "Reaktif Multi-lebar",
+    "2. Breathing": "Efek Pernapasan",
+    "20. Reactive Multinexus": "Reaktif Multi-koneksi",
+    "21. Splash": "Cipratan",
+    "22. Solid Splash": "Cipratan Solid",
+    "23. Per Key Rgb": "RGB per Key",
+    "3. Band Spiral Val": "Nilai Spiral Band",
+    "4. Cycle All": "Siklus penuh",
+    "5. Cycle Left Right": "Siklus Kiri Kanan",
+    "6. Cycle Up Down": "Siklus Naik Turun",
+    "7. Rainbow Moving Chevron": "Chevron Pelangi Bergerak",
+    "8. Cycle Out In": "Siklus keluar dan masuk",
+    "9. Cycle Out In Dual": "Siklus Keluar Masuk Ganda"
+  },
+  "macro": {
+    "allchar": "Semua Karakter",
+    "closeDelay": "Nonaktifkan Penundaan",
+    "code": "Masukan Kode",
+    "common": {
+      "flash": "Penyimpanan flash",
+      "title": "Untuk menetapkan makro, pilih lalu klik tombol target di peta tombol di atas."
+    },
+    "config": "Konfigurasi",
+    "delay": "Penundaan",
+    "delaySet": "Penundaan Waktu",
+    "dynamicDelay": "Penundaan Dinamis",
+    "endREC": "Hentikan perekaman",
+    "enterDown": "Insert Down",
+    "enterUp": "Masukkan Ke Atas",
+    "fixedDelay": "Penundaan Tetap",
+    "inputdelay": "Masukkan Waktu Penundaan",
+    "inputtexct": "Masukkan Teks",
+    "insertDelay": "Masukkan Penundaan",
+    "keydown": "Tekan ke Bawah",
+    "keyup": "Lepaskan",
+    "loopCount": "Jumlah Loop",
+    "loopCurrentDown": "Berhenti saat Menekan",
+    "loopDown": "Hentikan Key Arbitrary",
+    "loopOne": "Satu siklus",
+    "loopSet": "Pengaturan siklus",
+    "loopUp": "Hentikan Lepas",
+    "macroReccord": "Rekam",
+    "macroSetup": "Pengaturan makro",
+    "mouse": "Mouse",
+    "notEqual": "Terdeteksi Key terus terpicu, lanjutkan?",
+    "record": "Rekam",
+    "rename": "Ganti Nama",
+    "save": "Simpan",
+    "setRepeatCount": "Jumlah pengulangan",
+    "specialText": "Kekhususan Teks",
+    "startREC": "Mulai perekaman",
+    "stop": "Berhenti",
+    "text": "Teks",
+    "texttype": "Hanya English, angka, dan simbol dasar yang dapat dimasukkan.",
+    "tip": {
+      "clickCopy": "Klik untuk menyalin teks",
+      "fixDelay": "Di sini, Fixed Delay berarti tertanam dalam setiap event, dan event tersebut berisi event Delay.",
+      "keyDelay": "Delay: {200}, Unit: MS",
+      "keyDown": "Atur Ulang: {-KC_A}",
+      "keyText": "Teks: ABCDEF",
+      "keyUp": "Tekan ke Bawah: {+KC_A}",
+      "macro_text": "Masukkan Macro yang ingin dijalankan"
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnetik",
+      "mechanical": "Mekanis",
+      "tip": "Tips",
+      "title": "Statistik sakelar"
+    },
+    "calibration": {
+      "1": "Jangan cabut kabel USB, lepaskan Device, atau matikan Device selama kalibrasi untuk menghindari crash",
+      "2": "Mulai Kalibrasi",
+      "3": "Jangan tekan Key pada Keyboard selama 2 detik sebelum menekan “Start Calibration”",
+      "4": "Tekan dan tahan Key selama 1 detik untuk menyelesaikan kalibrasi",
+      "5": "Ketika calibration berhasil, backlight akan berwarna hijau.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Profil Kurva Analog",
+      "save": "Simpan Lengkungan",
+      "title": "Pengaturan Kurva Rocker"
+    },
+    "directive": {
+      "bottomBack": "Memantul Kembali",
+      "bottomIn": "Masuk Dari Bawah",
+      "bottomOut": "Menyentuh Dasar",
+      "trigger": "Pemicu Mulai"
+    },
+    "distance": {
+      "advance_mode": "Lanjutan",
+      "basic_mode": "Dasar",
+      "current": "Tombol Saat Ini",
+      "globalDis": "Pilih Semua",
+      "globalRt": "Atur Semua Trigger Key",
+      "limitTip": "Nilai melebihi batas. Silakan masukkan ulang.",
+      "magnet_calibrate": "Demo Trigger",
+      "magnet_calibrate_point": "Titik Trigger",
+      "magnet_calibrate_tip": "Trigger Demo hanya mendukung satu Key.",
+      "magnet_calibrate_tip_desc": "Pilih Key lalu aktifkan tombol switch di kanan atas untuk menampilkan trigger dari Key yang dipilih",
+      "magnet_calibrate_tip_empty": "Silakan pilih Key.",
+      "profile_help": "Tekan \"fn\" + \"p\" + \"z / x / c\" untuk beralih cepat ke Profile 1 / 2 / 3",
+      "result": "Masukkan Nilai Tombol",
+      "sensitive": "Sensitivitas",
+      "setting": "Atur Jarak Aktuasi",
+      "show_mode_dis": "Jarak Aktuasi",
+      "show_mode_hide": "Tidak Ada Data",
+      "show_mode_rt": "Trigger Cepat",
+      "speed_trigger": "Trigger Cepat",
+      "trigger_distance": "(Press) Jarak Trigger",
+      "trigger_distance_reset": "(Lepas) Jarak Reset",
+      "trigger_distance_twice": "(Tekan) Jarak Pemicu"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Hapus penetapan",
+      "left_emu": "Emulasi Kiri",
+      "reflect": {
+        "conflict": "Key ini sudah diatur"
+      },
+      "titles": {
+        "1": "Pemilihan Tombol Stik",
+        "2": "Pengaturan Tombol Joystick",
+        "4": "Enable atau Disable Keyboard Keys",
+        "5": "Aktifkan jika Anda bisa mengetik saat Joystick disimulasikan, nonaktifkan jika tidak bisa.",
+        "6": "Demo Efek Stik",
+        "7": "Fungsi pengenalan kontroler",
+        "8": "1. Setelah dimatikan, keyboard tidak akan lagi dikenali sebagai kontroler.",
+        "9": "2. Setelah setiap operasi terkait fungsi ini, Anda harus mencabut dan menyambungkan kembali kabel agar berlaku.",
+        "10": "Kontroler standar",
+        "11": "Kontroler Xbox",
+        "12": "Pilih mode kontroler",
+        "13": "Setelah mengubah mode kontroler, Anda harus mencabut dan menyambungkan kembali kabel agar perubahan berlaku.",
+        "xbox": "1. Setelah menyalakan/mematikan Xbox, cabut dan sambungkan kembali kabel agar perubahan berlaku.</br>2. Xbox tidak tersedia di macOS."
+      }
+    },
+    "mode": {
+      "default": "Default",
+      "gamepad": "Gamepad",
+      "gaming": "Mode permainan"
+    },
+    "multi_cmd": {
+      "b": "Tekan ke Bawah",
+      "fulfilled": "Space penuh. Hapus command yang ada untuk membuat baru.",
+      "list": "Daftar Perintah Bindings",
+      "setting": "Satu Key Banyak Perintah",
+      "test": "Uji Tombol"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy hanya mendukung tombol dengan sakelar magnetik.",
+      "only_support_magnetic": "Saat ini tombol mekanis dipilih. Menu ini hanya mendukung sakelar magnetik."
+    },
+    "profile": "Profile",
+    "rename": "Ganti Nama",
+    "simulate": "Simulasi",
+    "snap_tap": {
+      "absolute_priority": "Prioritas mutlak",
+      "AP": "Berikan prioritas aktivasi lebih tinggi ke salah satu dari dua tombol saat ditekan bersamaan.</br>*Klik ikon di tengah tombol untuk mengganti prioritas.",
+      "cancel_mode": "Netral",
+      "CM": "Dapat mengatur dua tombol. Saat keduanya ditekan bersamaan, tidak ada yang diaktifkan.",
+      "create": "Create",
+      "key_exist": "Config Key sudah ada.",
+      "last_key_priority": "Prioritas tombol terakhir",
+      "LKP": "Dua Key dapat diatur agar ketika keduanya ditekan bersamaan, Key terakhir yang terpicu akan aktif bersamaan dengan Key lainnya yang di-reset.",
+      "SC": "Anda dapat mengatur dua Key agar ketika ditekan bersamaan, salah satu yang ditekan lebih dalam akan memicu, dan yang lain akan reset",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Apakah Anda yakin ingin mengganti?",
+    "sure_switch_gamepad_desc": "Setelah beralih ke mode kontroler game, beberapa tombol akan berhenti berfungsi.",
+    "tab": {
+      "calibration": "Kalibrasi",
+      "curve": "Kurva",
+      "distance": "Jarak Aktivasi",
+      "exit_calibration": "Keluar dari Kalibrasi",
+      "joystick_reflect": "Stik Analog",
+      "multi_cmd": "Satu Key Banyak Perintah",
+      "snap_tap": "Aksi Cepat",
+      "toggle": "Switch Tahan Lama",
+      "toggle_tip": "Fitur ini memungkinkan Anda men-trigger Key dengan cepat hanya dengan satu kali tekan",
+      "turbo": "Turbo",
+      "turbo_tip": "Menciptakan efek klik terus-menerus saat menekan tombol."
+    },
+    "toggle": {
+      "drk_guide_tip": "Fungsi ini membuat semakin dalam Anda menekan tombol, semakin banyak kali diaktifkan.",
+      "keySpeed": {
+        "times": "Jumlah aktivasi maksimum",
+        "title": "Kecepatan mengetik",
+        "unit": "kali/detik"
+      },
+      "selected": "Tombol yang dipilih",
+      "set": "Key Disetel",
+      "title": "Buka"
+    }
+  },
+  "menu": {
+    "addconnect": "Tambahkan perangkat",
+    "assist": "Mulai Cepat",
+    "bluetooth_firmware": "Firmware Nirkabel",
+    "disconnect": "Putuskan",
+    "expTools": "Alat ekstensi",
+    "fr_firmware": "Pembaruan Penerima",
+    "help": "Pusat Bantuan",
+    "issue": "Umpan Balik Pengguna",
+    "keyboard_advance": "Mode Lanjutan",
+    "keyboard_firmware": "Pembaruan Firmware",
+    "keyboard_he": "Fungsi magnetik",
+    "keyboard_light": "Lampu Latar",
+    "keyboard_macro": "Makro keyboard",
+    "keyboard_map": "Peta Tombol",
+    "keyboard_test": "Uji Tombol",
+    "keyset": "Snap Action",
+    "scroll": "Gulir yang disempurnakan",
+    "setting": "Pengaturan",
+    "switchSetting": "Switch Setting"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Apakah Anda yakin ingin mematikan tombol ini?",
+      "resetAll": "Operasi ini akan menghapus semua data yang disimpan. Lanjutkan?",
+      "resetBtn": "Pulihkan ke Pengaturan Default?"
+    },
+    "dpi": {
+      "cable": "Kabel",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (titik per inci) menentukan sensitivitas kursor — semakin tinggi nilainya, semakin jauh kursor bergerak dengan gerakan tangan yang sama.",
+      "gear": "Level",
+      "previousSetting": "Jika tidak ada aksi selama {{time}} detik, akan auto-confirm. Klik \"Revert\" untuk kembali ke pengaturan sebelumnya.",
+      "properties": "Pengaturan sistem mouse",
+      "properties_open": "Buka pengaturan sistem mouse",
+      "properties_tip": "Tidak merespons? Unduh « Assistant » dan coba lagi.",
+      "reportRate": "Tingkat Pelaporan",
+      "reportRateDesc": "Mendukung hingga 8000 Hz",
+      "reportTip": "Atur seberapa sering Device mengirim laporan ke komputer",
+      "title": "Pengaturan DPI",
+      "wireless": "2.4GHz",
+      "xyTip": "DPI sumbu X mengontrol sensitivitas kursor arah horizontal, DPI sumbu Y mengontrol sensitivitas arah vertikal. Semakin tinggi nilai, semakin responsif kursor pada arah yang sesuai.",
+      "xy_split_label": "Pisahkan X/Y"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Tombol kiri/kanan independen",
+      "gear": "Tingkat",
+      "left_btn": "Tombol kiri",
+      "light_blocked": "Jalur optik terhalang",
+      "light_desc": "Dalam keadaan diam, berkas cahaya terhalang, jadi tidak ada klik yang terdaftar. Tekan tombol untuk membuka jalur optik: cahaya mencapai sensor dan mengaktifkan klik. Tanpa kontak logam, tanpa keausan.",
+      "light_led": "LED",
+      "light_mode": "Sakelar optik",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Diaktifkan",
+      "magnet_desc": "Pilih seberapa dalam Anda perlu menekan sebelum klik terdaftar. Lebih pendek = lebih cepat, lebih dalam = lebih sedikit kesalahan.",
+      "magnet_mode": "Sakelar magnetik",
+      "motor_trigger": "Pengaturan umpan balik haptik",
+      "right_btn": "Tombol kanan",
+      "shared_btn": "Tombol mouse",
+      "title": "Pengaturan Pemicu Tombol Mouse",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Pengaturan perjalanan aktivasi"
+    },
+    "key": {
+      "backward": "Tombol belakang",
+      "brightnessDown": "Kurangi kecerahan layar",
+      "brightnessUp": "Tingkatkan kecerahan layar",
+      "calculate": "Kalkulator",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Salin",
+      "customDpi": "DPI kustom",
+      "cut": "Potong",
+      "dock": "Dock Hidup/Mati",
+      "downScroll": "Gulir ke Bawah",
+      "dpiLoop": "Siklus DPI",
+      "email": "Email",
+      "forward": "Maju",
+      "he": "Gerakan mikro optik/magnetik",
+      "home": "Tampilkan Desktop",
+      "homePage": "Buka Beranda",
+      "launchPad": "Launchpad",
+      "left": "Klik kiri",
+      "leftClick": "Klik Kiri",
+      "leftDouble": "Klik ganda kiri",
+      "leftLock": "Kunci klik kiri",
+      "leftScroll": "Gulir ke kiri",
+      "leftScrollSustain": "Gulir terus-menerus ke kiri",
+      "leftTilt": "Miring ke Kiri",
+      "left_lock": "Kunci klik kiri",
+      "lickDoubleClick": "Klik ganda kiri",
+      "light": "Efek Lampu",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Ulangi",
+      "loopColorfulBreathing": "Siklus napas warna",
+      "loopDpi": "Siklus DPI",
+      "loopOpticalMagnetic": "Siklus optik-magnetik",
+      "loopPollingRate": "Siklus tingkat pelaporan",
+      "middle": "Klik tengah",
+      "middleClick": "Klik Tengah",
+      "modeToggleAll": "Gerakan mikro optik/magnetik",
+      "mute": "Bisu",
+      "myComputer": "Komputer Saya",
+      "next": "Berikutnya",
+      "nextDpi": "DPI Berikutnya",
+      "nextPollingRate": "Tingkat pelaporan berikutnya",
+      "pageDown": "Halaman Turun",
+      "pageUp": "Halaman Naik",
+      "paste": "Tempel",
+      "pause": "Putar/Jeda",
+      "player": "Pemutar",
+      "prevDpi": "DPI Sebelumnya",
+      "previous": "Sebelumnya",
+      "prevPollingRate": "Polling Rate Sebelumnya",
+      "refresh": "Segarkan",
+      "restoreFactory": "Reset pabrik",
+      "right": "Klik kanan",
+      "rightClick": "Klik Kanan",
+      "rightScroll": "Gulir ke Kanan",
+      "rightScrollSustain": "Gulir terus-menerus ke kanan",
+      "rightTilt": "Miring ke kanan",
+      "screenshot": "Tangkapan Layar",
+      "scrollLeftClick": "Miring ke Kanan",
+      "scrollRightClick": "Miring ke Kiri",
+      "sideKey": "Tombol Samping",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Berhenti",
+      "swichLight": "Pengalihan Efek Lampu",
+      "switchApp": "Ganti Aplikasi",
+      "task": "Mission Control",
+      "trackballToScroll": "Trackball untuk menggulir",
+      "upScroll": "Gulir ke Atas",
+      "volumeDown": "Volume -",
+      "volumeUp": "Volume +",
+      "webLessen": "Perkecil",
+      "webMagnify": "Perbesar"
+    },
+    "keyboard": "Papan ketik",
+    "key_fun": {
+      "basic": "Tombol dasar",
+      "disable": "Matikan tombol",
+      "dpi": "DPI",
+      "game": "Tombol game",
+      "game_tip": "Tahan tombol yang ditetapkan untuk mengulang klik yang dipilih secara otomatis, dengan jumlah dan frekuensi yang dapat disesuaikan.",
+      "keyboard": "Kombinasi tombol",
+      "keyboard_tip": "Pilih satu atau lebih tombol pengubah lalu tambahkan tombol standar. Klik kolom untuk memasukkan tombol atau pilih kode tombol di kanan.",
+      "macro": "Makro",
+      "media": "Tombol Multimedia",
+      "pollingRate": "Tingkat Pelaporan",
+      "profile": "Profile",
+      "sensitive": "Sensitivitas",
+      "shortCut": "Shortcut Key"
+    },
+    "key_game": {
+      "count": "Jumlah",
+      "infinite": "Tidak Terbatas",
+      "rate": "Laju"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "Of Flashing Neon Lights",
+      "fullColorCycle": "Siklus Warna Penuh",
+      "soleBreathe": "Napas Monokromatik",
+      "soleFlowing": "Efek Balapan Kuda",
+      "soleLight": "Cahaya Tetap Monokrom"
+    },
+    "menu": {
+      "angle": "Pengaturan sudut",
+      "dpi": "Pengaturan DPI",
+      "key": "Kustomisasi",
+      "light": "Cahaya",
+      "macro": "Pengaturan makro",
+      "poll_rate": "Tingkat Pelaporan",
+      "profile": "Profile",
+      "sys": "Lanjutan"
+    },
+    "mouse": "Mouse",
+    "polling_rate": {
+      "daily": "Kantor",
+      "fps20k": "Mode pengambilan sampel sensor",
+      "game": "Game",
+      "office_mode": "Mode standar",
+      "office_mode_desc": "Pengoperasian mulus, pemindaian stabil",
+      "rage_content": "Konsumsi daya akan meningkat saat mode kompetisi diaktifkan.",
+      "rage_desc": "Frekuensi pemindaian sensor ≥20K untuk latensi lebih rendah dan akurasi lebih tinggi. Mengonsumsi lebih banyak daya.",
+      "rage_mode": "Mode kompetisi",
+      "rage_title": "Konfirmasi aktifkan mode kompetisi?"
+    },
+    "profile_tab": {
+      "changeIcon": "Ganti Ikon",
+      "selectMode": "Pilih Mode"
+    },
+    "scroll": {
+      "acceleration": "Akselerasi kecepatan",
+      "consecutive_times": "Jumlah gulir terus-menerus",
+      "demo": "Demo gulir",
+      "direction": "Arah gulir",
+      "duration": "Durasi gulir",
+      "interval": "Interval gulir (milidetik)",
+      "scroll": "Gulir horizontal",
+      "speed": "Kecepatan gulir",
+      "step": "Langkah gulir minimum",
+      "tip_acceleration": "Tetapkan akselerasi gulir sebagai kelipatan dari nilai saat ini.",
+      "tip_consecutive_times": "Setelah gulir terus-menerus, otomatis beralih ke gulir mulus.",
+      "tip_demo": "Di sini Anda dapat mencoba pengaturan gulir yang disempurnakan.",
+      "tip_direction": "Ubah arah gulir mouse",
+      "tip_disconnect": "Untuk menggunakan gulir yang disempurnakan, Anda harus mengunduh Assist.",
+      "tip_interval": "Interval gulir terus-menerus",
+      "tip_speed": "Tingkatkan kecepatan gulir"
+    },
+    "shortcut_tooltip": {
+      "general": "Setelah pengaturan, fungsi berikut berlaku untuk Mac dan Windows.",
+      "mac": "Setelah pengaturan, fungsi berikut hanya berlaku untuk Mac.",
+      "win": "Setelah pengaturan, fungsi berikut hanya berlaku untuk Windows."
+    },
+    "sys": {
+      "angle": "Pengaturan sudut",
+      "angle_correction_after": "Setelah pengaturan",
+      "angle_correction_no": "Sebelum pengaturan",
+      "angle_preview": "Sebelum dan sesudah",
+      "angle_reset_btn": "Setel ulang ke 0°",
+      "backward": "Balik",
+      "battery_indicator": "Indikator baterai",
+      "delay": "Waktu Debounce",
+      "forward": "Standar",
+      "funConfig": "Fungsi sistem mouse",
+      "keyResponseTime": "Waktu respons tombol",
+      "leftLock": "Kunci Klik Kiri",
+      "line": "Jepret Sudut",
+      "lock": "Kunci",
+      "lod": "Jarak angkat",
+      "motion": "Motion Sync",
+      "pairBond": "Pintasan pemasangan",
+      "pairLimit": "Key Pairing hanya mendukung 1–3 Key",
+      "power": "Manajemen daya",
+      "respSeconds": "Waktu Respons (ms)",
+      "scroll": "Arah Gulir",
+      "sensor": "Kinerja Sensor",
+      "sleep": "Mode tidur perangkat",
+      "unlock": "Buka Kunci",
+      "wave": "Kontrol Riak"
+    },
+    "tip": {
+      "leftLock": "Konfigurasi Klik Kiri terkunci dan tidak dapat diubah"
+    },
+    "tips": {
+      "advanceDelayDesc": "Dalam mode lanjutan, Anda dapat mengatur waktu respons independen (0–20 ms) untuk setiap tombol.",
+      "angleDesc": "Sesuaikan sudut sensor mouse sehingga mouse yang sedikit miring melakukan gerakan horizontal yang akurat.",
+      "delayDesc": "Atur penundaan untuk mencegah aktivasi yang tidak disengaja akibat klik cepat atau getaran.",
+      "factorySetDesc": "Mengklik tombol ini menghapus pengaturan perangkat saat ini dan memulihkan pengaturan pabrik.",
+      "fps20kDesc": "Sensor mouse menangkap 20.000 gambar permukaan per detik, memberikan pelacakan akurat tanpa latensi.",
+      "indicatorDesc": "Sakelar ini hanya mengontrol tampilan status baterai normal dalam mode 2.4G.",
+      "leftLockDesc": "Saat « Kunci klik kiri » aktif, tombol kiri tidak dapat ditetapkan ulang.",
+      "lineDesc": "Menyaring getaran tangan ringan secara cerdas, mengurangi penyimpangan horizontal dan vertikal.",
+      "lodCurr": "Jarak angkat mouse saat ini",
+      "lodDesc": "Tinggi maksimum di mana gerakan mouse masih terdeteksi dan dilacak.",
+      "motionDesc": "Menyinkronkan input sensor dengan respons sistem, mengurangi lompatan atau sentakan kursor.",
+      "pairBondDesc": "Sesuaikan kombinasi tombol dan tahan selama 4 detik untuk masuk ke mode pemasangan Bluetooth/2.4G.",
+      "scrollDirDesc": "Arah pergerakan konten di layar saat roda mouse digulir ke atas atau ke bawah",
+      "sensorDesc": "Meningkatkan akurasi dan stabilitas mouse saat menggambar garis, lingkaran, dan jalur lainnya.",
+      "sleepDesc": "Mendukung mode tidur otomatis dalam mode nirkabel saat perangkat tidak aktif dalam waktu lama.",
+      "waveDesc": "Mengurangi jalur bergelombang yang disebabkan getaran tangan untuk gerakan yang lebih mulus."
+    },
+    "wheel": {
+      "adjustTimeout": "Calibration Timeout",
+      "sensitivity": "Sensitivitas"
+    }
+  },
+  "notify": {
+    "emptyHid": "Tidak Ada HID Device yang Dipilih",
+    "fail": "Gagal",
+    "fr_not_connect": "Driver tidak dapat digunakan setelah perangkat masuk ke mode tidur; tekan tombol apa pun untuk membangunkan.",
+    "hidAlreadyConnected": "Perangkat HID Terhubung",
+    "hidConfNotBrand": "Perangkat merek ini saat ini tidak didukung.",
+    "hidConfNotFound": "Konfigurasi HID Device yang valid tidak ditemukan",
+    "hidDeviceNotFount": "HID Device Tidak Ditemukan",
+    "hidUnconnected": "HID Device Tidak Terhubung",
+    "import": {
+      "layout": "Layout Keyboard Anda berhasil diimpor.",
+      "title": "Impor Berhasil"
+    },
+    "invalid_macro_json": "Konfigurasi Makro Tidak Valid",
+    "invalid_rgb_json": "Konfigurasi Tidak Valid",
+    "keyboard_not_support_wireless": "Firmware Keyboard tidak mendukung koneksi nirkabel",
+    "keycodeNotFound": "Kesalahan Konfigurasi Keycode",
+    "limited": "Melebihi Batas Maksimum",
+    "macroSizeLimit": "Ukuran Makro Melebihi Ukuran yang Tersedia",
+    "notSupportHid": "Browser ini tidak mendukung koneksi HID, gunakan Chrome, Edge, atau Opera untuk Connect.",
+    "sleep": "Tidak ada Device yang terhubung atau Device dalam mode tidur",
+    "success": "Berhasil",
+    "success_competitive": "Berhasil beralih ke mode kompetisi",
+    "success_connect": "Koneksi berhasil",
+    "success_office": "Berhasil beralih ke mode standar",
+    "unknownErr": "Error Tidak Dikenal"
+  },
+  "onboarding": {
+    "completed": "Wisaya selesai dengan sukses 🎉",
+    "connect": {
+      "description": "Hubungkan keyboard ke komputer melalui kabel USB, klik « Hubungkan » dan pilih perangkat di kotak dialog.",
+      "title": "Hubungkan keyboard Anda"
+    },
+    "entry": "Mari kita mulai",
+    "flow": {
+      "connect": "Hubungkan perangkat",
+      "keymap": "Tetapkan ulang tombol",
+      "light": "Efek lampu latar"
+    },
+    "hint": "Klik area yang disorot untuk menyelesaikan tindakan, atau klik « Lewati Wisaya ».",
+    "keymap": {
+      "select_a": {
+        "description": "Klik « A » di papan fungsi di bawah untuk menetapkan spasi ke A. Wisaya akan menutup otomatis setelah selesai.",
+        "title": "Langkah 2 · Tetapkan ke « A »"
+      },
+      "select_space": {
+        "description": "Klik tombol spasi di bagian bawah keyboard untuk memilihnya.",
+        "title": "Langkah 1 · Pilih tombol spasi"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Gunakan pemilih warna di kanan untuk mengatur warna hijau (seret pemilih atau masukkan RGB 0, 255, 0). Wisaya akan menutup otomatis.",
+        "title": "Langkah 2 · Atur menjadi hijau"
+      },
+      "select_static": {
+        "description": "Pilih « Solid Color » dari daftar efek di bawah untuk mengatur keyboard ke efek satu warna statis.",
+        "title": "Langkah 1 · Pilih « Solid Color »"
+      }
+    },
+    "skip": "Lewati Wisaya",
+    "step": "Langkah"
+  },
+  "screen": {
+    "format": {
+      "limit": "Format gambar hanya bisa PNG, JPG, atau GIF."
+    },
+    "resolution": {
+      "limit": "Ukuran gambar tidak boleh melebihi 240×240."
+    },
+    "size": {
+      "limit": "Ukuran file gambar tidak boleh melebihi 300 KB."
+    },
+    "upload": {
+      "format": "PNG atau JPG (maksimum 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Fungsi ini memungkinkan pemilihan hingga {{count}} tombol."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Interval Pemindaian"
+    },
+    "file_extra_properties_not_supported": "File mengandung atribut yang tidak didukung.",
+    "file_import_failed": "Gagal mengimpor file",
+    "file_upload_no_config_file": "Configuration File tidak terdeteksi. Silakan Upload.",
+    "info": "Info Perangkat",
+    "infos": {
+      "bluVersion": "Versi Bluetooth",
+      "deviceDesc": "Versi firmware",
+      "name": "Nama"
+    },
+    "json_config": "Pengaturan JSON",
+    "lng": "Bahasa",
+    "log": "Catatan Rilis",
+    "onlyview": "Tidak dapat mengubah konfigurasi keyboard ini.",
+    "other": "Lainnya",
+    "others": {
+      "debounce": {
+        "name": "Respons tunda tombol",
+        "tip": "Setelah diaktifkan, waktu respons minimum dapat diatur ke 0 ms.",
+        "title": "Ubah nilai minimum",
+        "warning": {
+          "title": "Apakah Anda yakin ingin mengaktifkan?"
+        }
+      }
+    },
+    "theme": "Ganti tema",
+    "updateLog": "Riwayat versi"
+  },
+  "snap": {
+    "list": "Daftar Perintah Bindings"
+  },
+  "test": {
+    "btn": {
+      "reset": "Periksa lagi",
+      "reset_bindings": "Hapus tautan"
+    },
+    "msg": {
+      "bind_success": "{{count}} tombol ditautkan ke {{audioName}}.",
+      "bind_success_single": "Tombol {{keyName}} ditautkan ke {{audioName}}.",
+      "no_key_selected": "Pilih tombol terlebih dahulu untuk ditautkan.",
+      "reset_success": "Reset berhasil",
+      "storage_full": "Ruang penyimpanan tidak cukup",
+      "unsupported_format": "Format audio tidak didukung. Gunakan MP3, WAV, OGG, atau M4A.",
+      "upload_success": "Audio berhasil diunggah"
+    },
+    "per_key_sound": {
+      "desc": "Tetapkan suara unik untuk setiap tombol. Saat fungsi ini nonaktif, semua tombol menggunakan suara yang dipilih default.",
+      "tip": "Dalam mode tanpa matriks pengujian, hanya suara respons tombol yang seragam yang dapat diatur."
+    },
+    "sound": {
+      "tip": "Saat Switch aktif, pengujian Key akan memiliki umpan balik suara, dan Anda dapat memilih suara yang diinginkan."
+    },
+    "sound_btn": {
+      "Balloon": "Balon",
+      "CarHorn": "Klakson Mobil",
+      "Cartoon": "Kartun",
+      "CoinCollecting": "Koin Terkumpul",
+      "custom": "Kustom",
+      "default": "Default",
+      "DogBarking": "Anjing Menggonggong",
+      "Donkey": "Keledai",
+      "Glass": "Kaca Pecah",
+      "PartyHorn": "Klakson Pesta",
+      "PhoneDial": "Nada Telepon",
+      "Punch": "Punch",
+      "RubberChicken": "Ayam Karet",
+      "RubberToy": "Mainan Karet",
+      "Sneeze": "Bersin"
+    },
+    "title": {
+      "custom_sound": "Perpustakaan suara kustom",
+      "per_key_sound": "Tetapkan suara ke tombol",
+      "reset_custom_bindings": "Apakah Anda yakin ingin mereset tautan suara?",
+      "sound": "Aktifkan Efek Suara",
+      "sound_effect": "Pemilihan Efek Suara",
+      "uploaded_sounds": "Suara yang direkam"
+    },
+    "upload": {
+      "browse": "Klik untuk mengunggah",
+      "info": "Didukung: MP3, WAV, OGG, M4A · Batas total: 25 MB · Panjang suara yang disarankan: 1–2 detik",
+      "placeholder": "Seret file audio ke sini, atau"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Pilih tombol terlebih dahulu."
+    },
+    "key": {
+      "direction": "Kunci sudut 8 arah",
+      "gesture": "Mode gerakan",
+      "held": "Tahan",
+      "scroll": "Gulir",
+      "tap": "Ketuk"
+    },
+    "keycode": {
+      "key": "Tombol dasar",
+      "modifiers": "Pengubah"
+    },
+    "key_fun": {
+      "basic": "Dasar",
+      "comb": "Tombol gabungan",
+      "feature": "Kunci sudut",
+      "keyCombination": "Kombinasi tombol",
+      "layer": "Lapisan",
+      "macro": "Makro",
+      "simulate": "Tekan bersamaan",
+      "single": "Ketuk / Tahan",
+      "special": "Tombol khusus",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Hanya satu tombol standar yang dapat diatur.",
+    "placeholder": {
+      "selectionKeys": "Tombol pilihan"
+    },
+    "selectInputFirst": "Pilih kolom input terlebih dahulu.",
+    "slide": {
+      "leftSlide": "Geser ke kiri",
+      "rightSlide": "Geser ke kanan",
+      "underSlide": "Geser ke bawah",
+      "upSlide": "Geser ke atas"
+    },
+    "tips": {
+      "angleGearsDesc": "Misalnya, jika Anda menetapkan « 90° » ke tombol 4, menekan tombol 4 akan mengatur arah lapisan saat ini menjadi 90° (horizontal).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Tombol Dasar",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcher memerlukan VIA JSON dari Device yang dipilih. Klik tombol “Confirm” dan upload file JSON dari Device yang dipilih untuk menggunakan Launcher. Anda dapat mendapatkan file VIA JSON dari penyedia produk.",
+      "title": "Unggah File JSON VIA"
+    }
+  }
+}
