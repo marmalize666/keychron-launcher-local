@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Lưu ý: Bạn có thể nhấn video hướng dẫn “Cài driver Toolbox” để hiểu chi tiết quá trình cài driver Toolbox."
+    },
+    "debounce": {
+      "defer_global": "Debounce theo từng bàn phím. Khi có bất kỳ thay đổi trạng thái nào, một bộ đếm toàn cục sẽ được kích hoạt. Khi trong DEBOUNCE mili giây không có thay đổi nào xảy ra, tất cả các thay đổi nhập liệu sẽ được gửi đi. Đây là thuật toán có hiệu suất cao nhất, sử dụng bộ nhớ thấp nhất và chống nhiễu tốt.",
+      "defer_per_key": "Debouncing theo từng phím. Khi có bất kỳ thay đổi trạng thái nào, một bộ hẹn giờ cho từng phím sẽ được đặt. Khi không có thay đổi nào xảy ra trên phím đó trong DEBOUNCE mili giây, thay đổi trạng thái phím sẽ được gửi.",
+      "eager_defer_per_key": "Chống rung riêng cho từng phím. Khi trạng thái phím nhấn thay đổi, phản hồi ngay lập tức, tiếp theo là DEBOUNCE mili giây không có thêm nhập nào cho phím đó. Khi trạng thái phím thả thay đổi, bộ đếm thời gian riêng cho phím được đặt. Khi DEBOUNCE mili giây trôi qua mà không có thay đổi, trạng thái phím thả sẽ được ghi nhận.",
+      "eager_per_key": "Debounce theo từng phím. Khi có bất kỳ thay đổi trạng thái nào, phản hồi sẽ xảy ra ngay lập tức, sau đó chờ DEBOUNCE mili giây không có thêm input nào cho phím đó.",
+      "none": "Không thực hiện xử lý chống rung.",
+      "tip": {
+        "1": "là chế độ debounce được khuyến nghị, khi bạn nhấn một phím, phím sẽ phản hồi ngay lập tức, nhưng tất cả các lần nhập tiếp theo của phím đó sẽ bị bỏ qua trong số giây phản hồi bạn chọn.",
+        "2": "If you want to reduce the response time to less than 10 seconds, please go to Settings - Other to make the adjustment.",
+        "3": "Khi thời gian phản hồi gần 0 ms, có thể xảy ra vấn đề nhấp đôi"
+      }
+    },
+    "macro": {
+      "gesture": "Luôn bật chế độ cử chỉ",
+      "gesture_description": "Sau khi kích hoạt, không cần gán phím cử chỉ.",
+      "gesture_not_configured": "Không thể mở. Hãy vào « Chức năng phím – Trackball » và đặt giá trị đầu ra.",
+      "scroll": "Luôn bật chế độ cuộn",
+      "scroll_description": "Sau khi kích hoạt, không cần liên kết với phím cử chỉ.",
+      "title": "Hành vi cử chỉ (chọn một tùy chọn)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) là công nghệ bàn phím cho phép nhấn đồng thời số lượng phím không giới hạn mà không xung đột hoặc bỏ tín hiệu. Tắt NKRO có nghĩa là bàn phím chỉ nhận đúng tối đa 6 phím nhấn cùng lúc.",
+      "title": "Cài đặt NKRO"
+    },
+    "performance": {
+      "mode_battery": "Chế độ pin",
+      "mode_high": "Chế độ hiệu năng cao",
+      "mode_normal": "Chế độ mặc định",
+      "title": "Chuyển đổi chế độ hiệu năng"
+    },
+    "poll_rate": "Cài đặt tần số quét",
+    "poll_rate_tip": {
+      "bt": "Chế độ kết nối Bluetooth",
+      "bt_desc": "Trong chế độ kết nối Bluetooth, tốc độ polling cố định ở 125Hz. Cài đặt này không thể thay đổi do giới hạn kết nối.",
+      "fr": "Chế độ kết nối 2.4GHz",
+      "usb": "Chế độ kết nối cáp"
+    },
+    "sleep": {
+      "backlight": "Thời gian bắt đầu tắt đèn nền tự động",
+      "magnet": "Thời gian nhàn rỗi quét ma trận bàn phím",
+      "magnet_range": "Thời gian nhàn rỗi quét ma trận phải lớn hơn trễ tắt đèn nền và nhỏ hơn thời gian chờ chế độ ngủ",
+      "magnet_tip": "Thời gian quét ma trận bàn phím Hall Effect nhàn rỗi phải lớn hơn 60 giây",
+      "time": "Thời gian bắt đầu chế độ ngủ tự động"
+    },
+    "tips": {
+      "keepLayer_close": "2. Nếu tùy chọn này tắt, NapePro sẽ chuyển cùng với « Lớp 1 » khi bạn vào màn hình chỉnh sửa « Lớp 1 ».",
+      "keepLayer_enable": "1. Nếu tùy chọn này bật, ví dụ nếu NapePro đang chạy trên « Lớp 0 », nó sẽ giữ nguyên « Lớp 0 » ngay cả khi bạn vào màn hình chỉnh sửa « Lớp 1 »."
+    },
+    "title": {
+      "keepLayer": "Chế độ chỉnh sửa lớp"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Đã kết nối thiết bị",
+        "idle": "Chạm để kết nối thiết bị",
+        "pending": "Đang bắt đầu ủy quyền..."
+      },
+      "download_assistant": {
+        "idle": "Nhấp để tải Assistant mới nhất"
+      },
+      "resume_assistant": {
+        "done": "Tiếp tục xử lý",
+        "idle": "Assistant đã bật",
+        "pending": "Đang tiếp tục xử lý...",
+        "prompt": "Đã mở"
+      },
+      "undo_remap": {
+        "done": "Đã hủy gán phím",
+        "idle": "Hủy gán phím này",
+        "pending": "Đang hủy..."
+      }
+    },
+    "clear_tooltip": "Xóa cuộc trò chuyện",
+    "close_tooltip": "Đóng",
+    "deep_thinking": "Suy nghĩ sâu",
+    "generated_content_notice": "Nội dung do AI tạo có thể chứa lỗi. Vui lòng kiểm tra.",
+    "input_placeholder": "Hỏi Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Tập trung phản hồi nhanh",
+        "label": "Nhanh hơn"
+      },
+      "deepseek-v4-pro": {
+        "description": "Cho các tác vụ phức tạp hơn",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Cân bằng",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Bình thường",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Quá trình thực thi hoàn tất nhưng không nhận được phản hồi hiển thị được.",
+    "pin": {
+      "tooltip_off": "Ngắt kết nối",
+      "tooltip_on": "Ghim cửa sổ trò chuyện"
+    },
+    "pinned_success": "Hộp thoại đã được ghim, không thể di chuyển.",
+    "quick": {
+      "connect_keyboard": "Gán phím cách cho A",
+      "remap_space": "Đổi hiệu ứng ánh sáng thành Band Spiral Val",
+      "set_light": "Mở Discord"
+    },
+    "result": {
+      "connect_failed": "Lỗi kết nối: {{error}}",
+      "device_connected": "Thiết bị đã kết nối",
+      "no_device_undo": "Không có thiết bị được kết nối, vì vậy không thể hủy gán.",
+      "no_remap_to_undo": "Không có gán nào để hủy.",
+      "undo_failed": "Hủy gán không thành công: {{error}}",
+      "undo_success": "Đã hủy gán cuối cùng và khôi phục {{count}} phím."
+    },
+    "select_model": "Chọn mẫu",
+    "status": {
+      "answering": "Đang trả lời",
+      "executing": "Đang thực thi",
+      "loading": "Đang tải",
+      "thinking": "Đang suy nghĩ",
+      "verifying": "Đang xác minh"
+    },
+    "stopped": "Đã dừng",
+    "title": "Keychron AI",
+    "unpinned_success": "Đã ngắt kết nối",
+    "welcome": "Xin chào! « Trợ lý Keychron AI » có thể giúp bạn kết nối thiết bị, gán phím, tùy chỉnh hiệu ứng RGB, tạo macro và nhiều hơn nữa."
+  },
+  "application": {
+    "addr": "Khởi chạy nhanh trang web",
+    "add_addr": "Thêm địa chỉ",
+    "apple_silicon_version": "Tải về cho Apple Silicon (.pkg)",
+    "app_duplicate": "Ứng dụng đã tồn tại, không cần thêm lại",
+    "app_hint": "Bạn có thể thiết lập phím tắt, chọn phần mềm muốn mở nhanh và gán nó vào một phím.",
+    "app_placeholder": "Vui lòng chọn ứng dụng",
+    "clear_all": "Xóa tất cả",
+    "desktop_old_content": "Tải và cài đặt phiên bản dịch vụ desktop mới nhất để sử dụng chức năng này.",
+    "desktop_old_title": "Đã phát hiện dịch vụ desktop cũ.",
+    "download_keychron_assistant": "Nếu chưa cài đặt, nhấn để tải về",
+    "download_new_assistant_tip": "Tải Keychron Assistant mới nhất để sử dụng tất cả chức năng.",
+    "download_zip_tip": "Thông báo: Trước khi cài Keychron Assist, bạn cần giải nén tệp đã tải xuống.",
+    "file_not_found": "Tệp không tồn tại",
+    "intel_version": "Tải xuống cho Intel Mac (.dmg)",
+    "keySetting": "Phím này đã có phím tắt!",
+    "key_no_conf": "Chưa có phím tắt nào được thiết lập",
+    "limited": "Vượt quá giới hạn tối đa. Hiện tại, giới hạn khởi chạy nhanh là 5. Chúng tôi dự định tăng số này trong tương lai.",
+    "need_keychron_assistant": "Tính năng này yêu cầu Keychron Assistant đang chạy",
+    "no_key_selected": "Chưa chọn phím",
+    "open_assistant_no_response_tip": "Nếu nhấp vào « Mở » mà không có gì xảy ra, hãy tải Assistant mới nhất và thử lại.",
+    "open_tip1": "1. Chức năng khởi chạy nhanh là liên kết ứng dụng bạn muốn khởi chạy nhanh với một nút. Nhấp vào nút này để khởi chạy ứng dụng nhanh chóng.",
+    "open_tip2": "2. Đầu tiên tải Assist và thêm ứng dụng khởi chạy nhanh. Sau đó quay lại trình khởi chạy bàn phím và liên kết cũng như khởi chạy các phím.",
+    "select_key_to_bind": "Vui lòng chọn phím trên bàn phím để gán thiết lập này",
+    "soft": "Ứng dụng Khởi động nhanh",
+    "submit_hint": "Vui lòng chọn phần mềm muốn mở nhanh, sau đó nhấn [Gửi]. Sau khi gửi, chức năng mở nhanh có thể sử dụng.",
+    "title_placeholder": "Tên tùy chỉnh (tùy chọn)",
+    "unsupported_feature": "Chức năng không được hỗ trợ",
+    "unsupported_feature_download_new_version": "Chức năng này không được hỗ trợ. Hãy tải phiên bản mới nhất và thử.",
+    "url": "Mở trang web nhanh",
+    "url_hint": "Bạn có thể thiết lập phím tắt, chọn địa chỉ web muốn mở nhanh, rồi gán vào một phím.",
+    "url_placeholder": "Vui lòng nhập URL hợp lệ"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Tiếp tục",
+      "later": "Để sau",
+      "openSystemPreferences": "Mở Tùy chọn hệ thống",
+      "restartMessage": "Đã cấp quyền truy cập thành công. Cần khởi động lại ứng dụng để sử dụng.",
+      "restartNow": "Khởi động lại ngay",
+      "restartTitle": "Đã cấp quyền",
+      "step1": "Nhấp vào nút bên dưới để chuyển đến trang quyền truy cập của hệ thống.",
+      "step2": "Tìm và bật công tắc Launcher Assistant để ủy quyền.",
+      "step3": "Nhập mật khẩu của bạn",
+      "step4": "Sau khi ủy quyền, hãy thoát ứng dụng và mở lại để các thay đổi có hiệu lực.",
+      "welcomeTitle": "Chào mừng sử dụng Trợ lý"
+    },
+    "click_no_response_tip": "Mở cài đặt chuột trên máy tính và điều chỉnh các tùy chọn con trỏ, cuộn và nhấp.",
+    "common": {
+      "add": "Thêm",
+      "back": "2. Nhấn dấu “+” bên dưới để chọn khởi động nhanh muốn bắt đầu và nhấn “Open Quick Start” để quay lại launcher để gán phím và bắt đầu.",
+      "delete": "Xóa",
+      "info": "Thông tin",
+      "refresh": "Làm mới",
+      "settings": "Cài đặt"
+    },
+    "hint_reset": "Phát hiện thay đổi thiết bị. Do sự khác biệt về bố cục, một số phím có thể không hoạt động như hướng dẫn Khởi động nhanh. Đặt lại cài đặt để khớp với bố cục mới?",
+    "hint_reset_1": "Phát hiện bạn đã chuyển sang thiết bị khác. Bạn có muốn đặt lại cài đặt không?",
+    "hint_reset_2": "(Lưu ý: Do sự khác nhau về bố cục phím giữa các mẫu, màn hình Quick Start có thể không khớp với các chức năng thực tế, dẫn đến một số phím không hoạt động.)",
+    "home": {
+      "addAddress": "Thêm địa chỉ",
+      "addSoftwareDescription": "Thêm phần mềm bạn muốn mở nhanh bên dưới, sau đó nhấp 「Bắt đầu nhanh」 để gán nút trong launcher",
+      "delete": "Xóa",
+      "onceAddedDescription": "Sau khi thêm ứng dụng bên dưới, nhấn nút để quay lại",
+      "quickStartApplication": "Ứng dụng khởi động nhanh",
+      "search": "Tìm kiếm",
+      "setUpQuickStart": "Thiết lập Bắt đầu Nhanh",
+      "tooltipText1": "1. Chức năng khởi động nhanh là gán ứng dụng bạn muốn chạy nhanh vào một phím nhất định, nhấn phím đó để khởi chạy nhanh.",
+      "tooltipText2": "2. Nhấn dấu “+” bên dưới để chọn khởi động nhanh muốn bắt đầu và nhấn “Open Quick Start” để quay lại launcher để gán phím và bắt đầu."
+    },
+    "license": {
+      "agree": "Đồng ý",
+      "disagreeAndWithdraw": "Không đồng ý và rút lại",
+      "userLicenseAgreement": "Thỏa thuận cấp phép người dùng",
+      "welcomeDescription": "Vui lòng đồng ý với…",
+      "welcomeDescriptionEnd": "để chúng tôi phục vụ bạn tốt hơn",
+      "welcomeTitle": "Chào mừng sử dụng Trợ lý"
+    },
+    "open_title": "1. Để sử dụng khởi chạy nhanh, bạn phải tải Assist.",
+    "open_title2": "2. Do cập nhật phần mềm, nên tải và cài đặt phiên bản Assist mới nhất.",
+    "settings": {
+      "aikeyUpdate": "Cải tiến AIKey: thêm cài đặt trước tùy chỉnh và khởi chạy nhanh, tối ưu hóa gửi lệnh và xử lý phản hồi, cải thiện đáng kể độ ổn định và khả năng sử dụng.",
+      "autostart": "Tự động khởi chạy khi khởi động",
+      "currentLatestVersion": "Phiên bản mới nhất hiện tại",
+      "endUserLicenseAgreement": "Thỏa thuận cấp phép người dùng cuối",
+      "fixedKnownIssues": "Đã sửa các lỗi đã biết",
+      "interfaceOptimization": "Tối ưu giao diện",
+      "language": "Ngôn ngữ",
+      "mosUpdate": "Tối ưu hóa thuật toán cuộn/tăng tốc MOS: xây dựng lại đường cong tăng tốc và chiến lược lấy mẫu để trải nghiệm mượt mà và nhất quán hơn ở cả tốc độ thấp và cao, giảm rung và độ trễ.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Nhãn hiệu Keychron Assistant thuộc sở hữu của Keychron.",
+      "nkroDescription2": "Tắt NKRO có nghĩa là bàn phím chỉ nhận đúng tối đa 6 phím nhấn cùng lúc.",
+      "selectLanguage": "Chọn ngôn ngữ",
+      "title": "Cài đặt",
+      "updateLog": "Nhật ký cập nhật"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Công tắc từ Gateron Jade",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron switch từ tính Lime-fast",
+    "Lime-fast_Magnetic_Switch": "Công tắc Keychron Quick Lemon",
+    "set_error": "Một số phím không hiệu chuẩn được, vui lòng kiểm tra công tắc bàn phím và cài đặt phím!",
+    "set_successfully": "Cấu hình công tắc đã được thay đổi thành công",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Kiểm tra xem công tắc từ tính thay thế trên bàn phím có phù hợp với tùy chọn công tắc từ tính đã chọn không",
+    "sure_content2": "Nhấn nút “Xác nhận” bên dưới, bạn sẽ vào trang hiệu chuẩn để hiệu chuẩn các phím này.",
+    "sure_title": "Bạn có chắc muốn chuyển đổi switch không?",
+    "switch_type_settings": "Cài đặt loại công tắc",
+    "tip": {
+      "1": "Tính năng này cho phép bạn thiết lập loại switch từ tính cho toàn bộ bàn phím. Sau khi cấu hình, màu viền phím sẽ thay đổi theo loại switch từ tính bạn chọn, thứ tự thiết lập như sau:",
+      "2": "Trước tiên, hãy thay thế tất cả các công tắc từ tính trên bàn phím (toàn bộ bàn phím chỉ hỗ trợ một loại công tắc từ tính) và kiểm tra xem các công tắc đã thay thế có nằm trong danh sách bên dưới không.",
+      "3": "Chọn tùy chọn loại công tắc từ tính bên dưới và nhấn nút “Cấu hình tất cả phím” để hoàn tất",
+      "4": "Hiệu chỉnh lại tất cả các phím để tránh ảnh hưởng do sự khác biệt giữa các loại switch từ tính."
+    },
+    "tip_reset": "Nhấn nút Reset này sẽ xóa tất cả các mục khởi chạy nhanh đã thiết lập trước đó.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM switch từ tính"
+  },
+  "common": {
+    "advance": "Nâng cao",
+    "basic": "Phím Cơ bản",
+    "beta_test_version": "Phiên bản beta",
+    "cancel": "Đóng",
+    "cancel_btn": "Hủy",
+    "clear": "Xóa",
+    "close": "Tắt",
+    "connected": "Đã kết nối",
+    "connect_btn": "Kết nối",
+    "connect_tip": "muốn kết nối với thiết bị HID",
+    "create": "Tạo",
+    "delete": "Xóa",
+    "deleteConfirm": "Xác nhận đặt lại dữ liệu này?",
+    "disconnected": "Chưa kết nối",
+    "download": "Tải xuống",
+    "empty": "Trống",
+    "error": "Lỗi",
+    "export": "Xuất",
+    "general": "Chung",
+    "hide": "Ẩn",
+    "iknow": "Tôi hiểu",
+    "import": "Nhập",
+    "is": "Đồng ý",
+    "keyboard": "Bàn phím",
+    "key_back": "Khôi phục",
+    "key_confirm": "Xác nhận",
+    "loading": "Đang tải...",
+    "matrix": "Ma trận kiểm tra",
+    "max_string_length": "Văn bản vượt quá độ dài tối đa",
+    "min": "Phút",
+    "mouse": "Chuột",
+    "noResult": "Không có kết quả",
+    "not": "Không",
+    "notSubmit": "Dữ liệu chưa gửi. Gửi ngay bây giờ?",
+    "on": "Bật",
+    "open": "Bật",
+    "paired": "Đã ghép đôi",
+    "plugged_in": "Đã kết nối",
+    "plug_and_ret": "Vui lòng kết nối thiết bị rồi thử lại.",
+    "plug_and_retry": "Vui lòng kết nối thiết bị rồi thử lại.",
+    "recover": "Phục hồi",
+    "reset": "Đặt lại",
+    "resetLayout": "Đặt lại bố cục",
+    "reset_single": "Đặt lại đơn giản",
+    "resolution_not_support": "Bản đồ bàn phím không thể hiển thị vì cửa sổ trình duyệt quá nhỏ",
+    "results": "Kết quả",
+    "save": "Lưu",
+    "search": "Tìm kiếm",
+    "select": "Chọn",
+    "selectall": "Chọn tất cả",
+    "status": {
+      "update_success": "Cập nhật thành công"
+    },
+    "submit": "Xác nhận",
+    "timeSync": "Hiệu chỉnh thời gian màn hình",
+    "turnoff": "TẮT",
+    "turnon": "BẬT",
+    "type": "Loại",
+    "upload": "Tải lên",
+    "view": "Xem",
+    "warring": "Cảnh báo",
+    "window_too_small": "Xem trước không thể hiển thị vì cửa sổ quá nhỏ"
+  },
+  "connecting": "Đang kết nối...",
+  "cross": {
+    "btn": {
+      "active": "Bàn phím/chuột đa nền tảng",
+      "agree": "Chấp nhận",
+      "cancel": "Hủy kết nối",
+      "close": "Đóng",
+      "connect": "Kết nối",
+      "disconnect": "Ngắt kết nối",
+      "minimize": "Thu nhỏ cửa sổ",
+      "quick": {
+        "connect": "Kết nối một chạm"
+      },
+      "reject": "Từ chối",
+      "reject_cancel": "cancel",
+      "trust": "Thiết bị đáng tin cậy",
+      "waiting": "Đang chờ"
+    },
+    "disconnect_confirm": {
+      "content": "Sau khi ngắt kết nối, quá trình truyền sẽ dừng. Các truyền đã bắt đầu sẽ được lưu trong lịch sử, các tệp đang chờ sẽ bị hủy.",
+      "title": "Đang truyền tệp"
+    },
+    "file_transfer": {
+      "average_speed": "Tốc độ trung bình",
+      "change": "Thay đổi",
+      "clear": "Xóa",
+      "clear_failed_desc": "Không thể xóa lịch sử truyền cục bộ",
+      "clear_failed_title": "Xóa không thành công",
+      "connected": "Đã kết nối",
+      "delete": "Xóa",
+      "desc": "Hỗ trợ mọi loại tệp · Truyền ổn định đến các máy tính đã kết nối",
+      "direction": {
+        "receive": "Nhận",
+        "send": "Gửi"
+      },
+      "dir_err_desc": "Không thể sử dụng thư mục nhận đã chọn",
+      "dir_err_title": "Cập nhật thư mục không thành công",
+      "dir_ok_desc": "Các tệp mới nhận sẽ được lưu vào thư mục đã chọn",
+      "dir_ok_title": "Đã cập nhật thư mục lưu trữ",
+      "drop_unavailable_desc": "Sử dụng nút « Chọn » để chọn tệp này",
+      "drop_unavailable_title": "Không thể đọc đường dẫn tệp",
+      "elapsed_label": "Thời gian đã trôi qua",
+      "enable": "Bật truyền tệp",
+      "file_missing_desc": "Tệp gốc đã được di chuyển hoặc xóa, không thể gửi lại",
+      "file_missing_title": "Tệp gốc không tồn tại",
+      "history": "Lịch sử truyền",
+      "no_active": "Không có truyền tệp đang diễn ra",
+      "no_history": "Không có lịch sử truyền tệp",
+      "open": "Cài đặt",
+      "open_err_desc": "Không thể mở thư mục nhận tệp",
+      "open_err_title": "Không thể mở thư mục",
+      "open_folder": "Mở",
+      "peer_cancelled": "Bên kia đã hủy truyền",
+      "quick_send": "Gửi nhanh",
+      "quick_send_desc": "Chọn một tệp và gửi trực tiếp đến máy tính đã kết nối",
+      "receive_failed_desc": "Nhận tệp không đầy đủ hoặc không thể ghi cục bộ",
+      "receive_failed_title": "Lỗi khi nhận tệp",
+      "receiving": "Đang nhận...",
+      "receiving_path": "Đường dẫn nhận cục bộ",
+      "resend": "Gửi lại",
+      "select_button": "Chọn tệp",
+      "select_desc": "Chọn một tệp cụ thể để truyền",
+      "select_title": "Nhấp để chọn tệp",
+      "sending": "Đang gửi...",
+      "send_failed_desc": "Không thể gửi tệp đã chọn",
+      "send_failed_title": "Truyền tệp không thành công",
+      "send_to": "Gửi đến",
+      "status": {
+        "cancelled": "Đã hủy",
+        "failed": "Gửi không thành công",
+        "received": "Đã nhận",
+        "receive_error": "Lỗi nhận",
+        "sent": "Đã gửi"
+      },
+      "title": "Truyền tệp",
+      "transfer_time": "Thời gian truyền",
+      "transmitting": "Đang truyền...",
+      "unsupported_file": "Định dạng tệp không được hỗ trợ để truyền",
+      "waiting": "Đang chờ truyền"
+    },
+    "notification": {
+      "conn_end_t": "Kết nối bị gián đoạn",
+      "conn_err_t": "Lỗi kết nối",
+      "conn_lost_t": "Kết nối bị gián đoạn",
+      "conn_reject_t": "Yêu cầu kết nối bị từ chối",
+      "conn_req_err": "Lỗi khi gửi yêu cầu kết nối",
+      "hist_clear_err": "Lỗi khi xóa lịch sử kết nối",
+      "hist_clear_ok": "Đã xóa lịch sử kết nối",
+      "id_err_t": "Lỗi xác minh danh tính",
+      "network_lost": "Kết nối mạng bị gián đoạn, phiên đa nền tảng đã kết thúc",
+      "op_err_t": "Thao tác không thành công",
+      "op_ok_t": "Thao tác thành công",
+      "pair_id_err": "Lỗi xác minh danh tính của thiết bị đã ghép cặp",
+      "pair_ok": "Đã ghép cặp thiết bị thành công",
+      "pair_ok_t": "Ghép cặp thành công",
+      "peer_end": "Bên kia đã ngắt phiên đa nền tảng",
+      "peer_reject": "Bên kia đã từ chối yêu cầu kết nối",
+      "reconfirm_t": "Cần xác nhận mới",
+      "sync_err_t": "Đồng bộ hóa không thành công",
+      "trust_id_changed": "Danh tính của thiết bị đáng tin cậy đã thay đổi. Vui lòng xác nhận lại yêu cầu kết nối.",
+      "trust_id_err": "Lỗi xác minh danh tính của thiết bị đáng tin cậy",
+      "trust_rm_err": "Lỗi khi xóa thiết bị đáng tin cậy",
+      "trust_sync_err": "Thông tin đăng nhập tin cậy không được đồng bộ với bên kia"
+    },
+    "page": {
+      "sub_desc": "Kết nối hai máy tính, sử dụng bàn phím/chuột đa nền tảng · Đồng bộ clipboard thủ công · Kéo tệp — tự nhiên như trên một máy tính.",
+      "sub_title": "Xem trước chức năng",
+      "title": "Đa nền tảng"
+    },
+    "panel": {
+      "desc": "Tối đa 2 máy tính đã kết nối (bao gồm máy này) · Các chức năng của thiết bị được mở khóa sau khi kết nối",
+      "found": "Phát hiện thiết bị",
+      "history": {
+        "active": "Kết nối đang hoạt động",
+        "passive": "Kết nối thụ động",
+        "subtitle": "Kết nối gần đây",
+        "title": "Lịch sử kết nối"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Khác",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Quét tất cả mạng Wi-Fi của cùng một bộ định tuyến",
+        "start": "Bắt đầu quét",
+        "stop": "Dừng quét",
+        "title": "Đang quét mạng cục bộ.."
+      },
+      "tag_1": "Đáng tin cậy",
+      "title": "Kết nối máy tính"
+    },
+    "scan": {
+      "incoming_notice": "Sau khi bạn đồng ý, bên kia sẽ có thể thiết lập kết nối đa nền tảng với máy tính này.",
+      "incoming_subtitle": "Muốn kết nối với máy tính này",
+      "incoming_title": "Đã nhận yêu cầu kết nối",
+      "network_changed_cancel": "Không phải bây giờ",
+      "network_changed_confirm": "Quét lại",
+      "network_changed_desc": "Môi trường mạng đã thay đổi. Quét lại không?",
+      "network_changed_title": "Môi trường mạng đã thay đổi",
+      "rejected": "Bên kia đã từ chối yêu cầu kết nối",
+      "request_confirm": "Đang chờ xác nhận của bên kia... Yêu cầu kết nối sắp hết hạn",
+      "request_tip": "Yêu cầu kết nối đến",
+      "trust": "Tin cậy thiết bị này và tự động chấp nhận yêu cầu kết nối trong tương lai",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Kết nối tự động",
+      "automatic_connection_help": "Kết nối tự động: chọn thiết bị từ danh sách thiết bị đáng tin cậy của máy tính này. Cả hai thiết bị phải được cấu hình cho nhau để tự động kết nối sau khi khởi động Assistant.",
+      "automatic_connection_hint": "(Cả hai thiết bị phải được cấu hình)",
+      "clear_automatic_device": "Xóa thiết bị kết nối tự động",
+      "close": "Đóng",
+      "confirm": "Xác nhận",
+      "disconnect_shortcut": "Ngắt phiên đa nền tảng",
+      "disconnect_shortcut_help": "Nếu chức năng đa nền tảng không hoạt động, bạn có thể ngắt kết nối bằng tổ hợp phím này. Tổ hợp này có thể thay đổi nhưng không thể xóa.",
+      "enter_shortcut_key": "Nhập phím tùy chỉnh",
+      "no_trusted_devices": "Không có thiết bị đáng tin cậy",
+      "remove_confirmation": "Xác nhận xóa tin cậy cho {device}?",
+      "remove_device": "Xóa thiết bị đáng tin cậy",
+      "select_device": "Chọn thiết bị đáng tin cậy",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Phím tắt",
+      "system_lock_shortcut": "Khóa máy tính",
+      "title": "Tin cậy và kết nối tự động",
+      "trusted_count": "Số thiết bị đáng tin cậy ({count})",
+      "trust_help": "Thiết bị đáng tin cậy: Thiết bị đáng tin cậy có thể kết nối lần sau mà không cần yêu cầu phê duyệt trên máy tính này."
+    },
+    "step": {
+      "collapse": "Thu gọn",
+      "connected": "Đã kết nối",
+      "desc": "Quét và ghép cặp thêm máy tính trong Keychron Assistant · Sau khi kết nối, bàn phím/chuột đa nền tảng và truyền tệp sẽ khả dụng",
+      "desc_1": "Tự động phát hiện máy tính trong cùng mạng cục bộ và gửi yêu cầu kết nối",
+      "desc_2": "Bên kia nhấp « Chấp nhận » để hoàn tất ghép cặp",
+      "desc_3": "Tất cả chức năng đa nền tảng đều khả dụng",
+      "expand": "Mở rộng",
+      "local": "Máy tính này",
+      "title": "Quá trình kết nối",
+      "title_1": "Quét và gửi yêu cầu",
+      "title_2": "Xác nhận của bên kia",
+      "title_3": "Đã thiết lập kết nối",
+      "trust": "Đã kết nối · Đáng tin cậy",
+      "wait_1": "Đang chờ",
+      "wait_2": "Nhấp « Cho phép »",
+      "wait_3": "Ghép cặp thêm máy tính"
+    },
+    "tabs": {
+      "file_transfer": "Truyền tệp",
+      "settings": "Cài đặt"
+    },
+    "time": {
+      "ago": "Trước",
+      "days": "Ngày",
+      "hours": "Giờ",
+      "just_now": "Vừa xong",
+      "last": "Quá khứ",
+      "last_connection": "Kết nối gần nhất",
+      "minutes": "Phút",
+      "months": "Tháng",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Dưới",
+      "desc": "Khi con trỏ chuột vượt qua mép màn hình được chỉ định, bàn phím và chuột của máy tính có thể điều khiển thiết bị đã kết nối.",
+      "left": "Trái",
+      "off": "Tắt",
+      "right": "Phải",
+      "title": "Đặt mép vượt màn hình",
+      "top": "Trên"
+    },
+    "web": {
+      "auto_connect_target": "Mục tiêu kết nối tự động",
+      "center_cursor": "Căn giữa con trỏ",
+      "clipboard": "Bảng nhớ tạm",
+      "clipboard_desc": "Đồng bộ thủ công nội dung đã sao chép giữa các máy tính",
+      "connect_assistant": "Mở Assistant",
+      "connect_hint": "Các chức năng kết nối phải được thực hiện trong Assistant",
+      "custom_screenshot": "Ảnh chụp màn hình tùy chỉnh",
+      "direction": "Hướng",
+      "drop_box_key": "Phím tắt bảng kéo",
+      "exit_application": "Ngắt kết nối",
+      "file_transfer": "Truyền tệp",
+      "file_transfer_desc": "Chọn một tệp hoặc dùng phím tắt để mở bảng kéo",
+      "hold_ctrl": "Giữ Ctrl cho đa nền tảng",
+      "in_progress": "nhiệm vụ",
+      "items": "mục",
+      "keyboard_mouse": "Bàn phím / chuột đa nền tảng",
+      "keyboard_mouse_desc": "Chuyển điều khiển khi con trỏ vượt qua mép màn hình",
+      "loading": "Đang lấy trạng thái đa nền tảng từ Assistant...",
+      "lock_pc": "Khóa máy tính",
+      "max": "Tối đa",
+      "not_set": "Chưa đặt",
+      "off": "Tắt",
+      "on": "Bật",
+      "ongoing": "Đang tiến hành",
+      "read_only": "Chỉ đọc · Thay đổi cài đặt trong Keychron Assistant",
+      "recent_items": "Mục gần đây",
+      "save_dir": "Thư mục lưu trữ tệp",
+      "settings": "Cài đặt",
+      "settings_desc": "Thiết bị đáng tin cậy · Kết nối tự động · Phím tắt",
+      "shortcut_mapping": "Gán phím tắt",
+      "switch_pc": "Đổi máy tính",
+      "sync_mode": "Chế độ đồng bộ",
+      "target_device": "Thiết bị đích",
+      "title": "Trạng thái chức năng đa nền tảng",
+      "trusted_devices": "Số thiết bị đáng tin cậy",
+      "trust_auto_connect": "Tin cậy và kết nối tự động"
+    }
+  },
+  "debounce": {
+    "backlight": "Thời gian chế độ ngủ của đèn nền không được nhỏ hơn 5 giây.",
+    "mode": "Chế độ chống rung",
+    "press": "Số giây nhấn giữ",
+    "release": "Đặt lại giây",
+    "response": "Thời gian phản hồi (giây)",
+    "scan": "Tốc độ quét",
+    "setting": "Keyboard Bouncee Time Settings",
+    "sleep_limit": "Thời gian nghỉ không được nhỏ hơn 1 phút.",
+    "tip": "Thời gian bắt đầu tắt đèn nền tự động phải nhỏ hơn thời gian bắt đầu chế độ ngủ tự động",
+    "warning": {
+      "content": "(Lưu ý: cài đặt dưới 10 ms có thể gây rủi ro nhấp đúp. Vui lòng cấu hình cẩn thận.)",
+      "title": "Bạn có chắc chắn muốn đặt?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Trình diễn bàn phím",
+    "device_mouse": "Trình diễn chuột",
+    "exit": "Thoát chế độ trình diễn",
+    "keyboard": "Thử không cần bàn phím",
+    "mode": "Chế độ trình diễn",
+    "mouse": "Thử không cần chuột",
+    "tip": "Lưu ý: bạn đang ở chế độ trình diễn, chỉ dành cho mục đích giới thiệu và không có chức năng thực tế.",
+    "title": "Trình diễn"
+  },
+  "device": {
+    "version": "Phiên bản thiết bị"
+  },
+  "device_add": "Kết nối",
+  "device_select": {
+    "notify": "Vui lòng chọn thiết bị từ danh sách để tiếp tục",
+    "select": "Tiếp tục chọn",
+    "un_select": "Chưa chọn thiết bị"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Kiểm tra gõ phím"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Kết nối",
+      "2": "Tiếp theo",
+      "3": "Trước",
+      "6": "Tiếp theo để cập nhật",
+      "enterBootloaderMode": "Vào chế độ cập nhật",
+      "flash": "Cập nhật firmware",
+      "matchDevice": "Ghép nối thiết bị",
+      "retry": "Thử lại",
+      "startUpgrading": "Bắt đầu cập nhật"
+    },
+    "description": "Ghi chú phiên bản",
+    "downloadFailed": "Lỗi khi tải tệp firmware",
+    "error": {
+      "diff_model": "Phiên bản firmware của các thiết bị không đồng nhất",
+      "get_dfu_version": "Không thể lấy phiên bản cập nhật firmware của thiết bị"
+    },
+    "flashError": "Tải firmware thất bại",
+    "flashSuccess": "Cập nhật firmware thành công",
+    "info": {
+      "currentVersion": "Phiên bản hiện tại",
+      "latestVersion": "Phiên bản Mới nhất",
+      "updateSize": "Kích thước firmware",
+      "updateTime": "Chế độ kết nối Bluetooth"
+    },
+    "mouse": {
+      "step1_hid_device": "Nhấn lần lượt các phím K, E, Y trên bàn phím, tiếp tục bước tiếp theo khi xuất hiện thông báo kết nối thiết bị HID."
+    },
+    "notFound": "Không tìm thấy firmware mới nhất của thiết bị",
+    "productNotExist": "Không lấy được thông tin thiết bị",
+    "requestFail": "Không lấy được thiết bị; kiểm tra xem có chương trình khác đang sử dụng không.",
+    "syncQuickStart": "Đồng bộ khởi chạy nhanh",
+    "tip": {
+      "confirm": "Xác nhận",
+      "currentSelect": "Đang chọn"
+    },
+    "tips": {
+      "0": "Không có cập nhật firmware cho thiết bị hiện tại",
+      "4": "Vui lòng làm theo các bước dưới đây nếu bạn sử dụng thiết bị Windows và chưa cài đặt QMK Toolbox Driver. Nếu đã cài đặt, nhấn Tiếp theo.",
+      "5": "Nhấn nút Download Toolbox bên dưới để tải và giải nén Toolbox.",
+      "6": "Sau khi giải nén tệp, nhấp chuột phải vào biểu tượng Toolbox hoặc tìm kiếm “driver” trong thanh tìm kiếm hệ thống, sau đó chọn “Chạy với tư cách quản trị viên” để mở.",
+      "7": "Mở nó và nhấp vào menu 'Công cụ'.",
+      "8": "Nhấp 'Cài đặt Driver', tiếp tục nhấp 'có' để bắt đầu cài Driver firmware và chờ quá trình cài đặt.",
+      "9": "Sau khi cài đặt xong, bạn có thể nhấn Tiếp để bắt đầu quá trình nạp firmware.",
+      "10": "Lưu ý: Bạn có thể nhấn vào",
+      "11": "Làm theo các bước bên dưới.",
+      "12": "Trong trạng thái hiện tại, rút cáp USB bàn phím và để bàn phím ngắt kết nối.",
+      "13": "Khi bàn phím bị ngắt kết nối, nhấn và giữ phím ESC hoặc \"○\" trên bàn phím và đồng thời kết nối bàn phím với máy tính bằng cáp USB. Để bàn phím vào trạng thái chuẩn bị cập nhật firmware.",
+      "15": "Sau khi ghép nối thành công, nút 'Flash Firmware' sẽ xuất hiện, nhấn để bắt đầu cập nhật firmware.",
+      "16": "Trong khi cập nhật firmware, không ngắt kết nối thiết bị khỏi máy tính.",
+      "18": "Tải Toolbox",
+      "19": "Video hướng dẫn cài driver Toolbox",
+      "20": "để hiểu quá trình chi tiết cài đặt driver Toolbox.",
+      "22": "Nhấp nút \"Kết nối\" để kết nối thiết bị hiện tại, hệ thống sẽ tự động tìm phiên bản firmware mới nhất cho thiết bị",
+      "23": "Nhấn giữ phím Fn và phím - trên bàn phím ít nhất 5 giây để chuẩn bị cập nhật firmware cho đến khi đèn xanh nhấp nháy.",
+      "24": "Sau khi ghép nối thành công, nút “Flash Firmware” sẽ xuất hiện, nhấn vào để bắt đầu cập nhật firmware.",
+      "25": "Nhấn nút Ghép thiết bị bên dưới, chọn thiết bị bắt đầu với ({{ mode }}) và ghép nối.",
+      "26": "Cập nhật mô-đun Bluetooth ở chế độ USB.",
+      "27": "Nhấp vào nút bên dưới để lấy phiên bản firmware mới nhất.",
+      "28": "Trong khi bàn phím bị ngắt kết nối, giữ phím ở góc trên bên trái của bàn phím và đồng thời kết nối bàn phím với máy tính qua cáp USB để vào trạng thái sẵn sàng cập nhật firmware.",
+      "bl-exceeded": "Đã vượt quá số lần thử. Vui lòng kết nối lại cáp dữ liệu.",
+      "clickMatchBtn": "Nhấp vào nút « Thiết bị tương ứng » bên dưới và chọn thiết bị bắt đầu bằng {{dfuName}}.",
+      "currentDongle": "(Để cập nhật bàn phím/chuột, hãy sử dụng kết nối có dây. Bạn hiện đang ở trang bộ thu.)",
+      "link_wired_content": "Trong quá trình cập nhật không dây, chuột sẽ vào chế độ ngủ và không thể sử dụng",
+      "link_wired_title": "Kết nối cáp trước khi cập nhật",
+      "longPress": "Đầu tiên nhấn ESC, sau đó giữ phím Tab cùng lúc trong 3 giây.",
+      "matchErr": "Hiện chưa ghép cặp. Vui lòng chọn thủ công thiết bị để cập nhật.",
+      "mouseTip2": "2. Nếu liên kết đã được kết nối và ghép nối đã sẵn sàng, nhấn vào Brush firmware để bắt đầu cập nhật.",
+      "mouseTip4": "Nhấn nút Kết nối Thiết bị và chọn Bootloader.",
+      "mouseTip6": "(Không ngắt kết nối đầu thu khỏi máy tính khi đang cập nhật firmware.)",
+      "mouseTip7": "Chờ cập nhật hoàn tất – thông báo thành công sẽ xuất hiện.",
+      "patch": {
+        "1": "Bản cập nhật này là bản vá bảo mật. Vui lòng cập nhật trước theo hướng dẫn bên dưới.",
+        "2": "Ở trạng thái hiện tại, hãy ngắt cáp USB của bàn phím để ngắt kết nối bàn phím.",
+        "3": "Khi bàn phím bị ngắt kết nối, hãy tháo phím « Space » và tìm nút nhỏ trên tấm kim loại bên cạnh công tắc.",
+        "4": "Giữ nút và kết nối lại bàn phím với máy tính qua cáp USB.",
+        "5": "Nhấp vào nút « Thiết bị tương thích » bên dưới và chọn thiết bị được đánh dấu (DFU).",
+        "6": "Sau khi ghép cặp thành công, nút « Nạp firmware » sẽ xuất hiện. Nhấp vào nó để bắt đầu cập nhật bản vá bảo mật."
+      },
+      "toFlash": "Sau khi ghép cặp thành công, nút « Nạp firmware » sẽ xuất hiện. Nhấp vào nó để bắt đầu cập nhật firmware."
+    },
+    "update": {
+      "dfu_check": "Vui lòng kiểm tra xem thiết bị DFU đã chọn có đúng không."
+    },
+    "update_available": "Có phiên bản firmware có thể nâng cấp",
+    "update_latest": "Đây là phiên bản firmware mới nhất",
+    "update_success": "Cập nhật thành công, nhấn nút \"Kết nối\" để kết nối thiết bị hiện tại.",
+    "warning": "Vui lòng không tháo thiết bị hoặc làm mới trang để tránh hư hỏng thiết bị",
+    "write": "Trong quá trình ghi firmware"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Hướng dẫn sử dụng thiết bị",
+      "tutorial": "Hướng dẫn",
+      "user_feedback": "Phản hồi của người dùng"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Cách thiết lập chế độ ngủ tự động và thời gian bắt đầu tắt đèn nền trên Launcher?",
+        "set_keyboard_bounce_time": "Cách thiết lập thời gian phản hồi phím trên Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Cách thiết lập phím đèn nền trên Launcher?",
+        "set_mix_rgb": "Cách thiết lập Mix RGB trên Launcher?",
+        "set_per_key_rgb": "Cách thiết lập RGB cho từng phím trên Launcher?"
+      },
+      "bridge_firmware_update": "Cách nạp firmware cho bộ thu Keychron",
+      "create_mouse_macro": "Cách tạo macro chuột trong Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Cách khôi phục cài đặt gốc và cập nhật chương trình cơ sở trên Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Cách quản lý hồ sơ HE của bạn trên Launcher?",
+        "set_gamepad_analog_and_curves": "Cách thiết lập mô phỏng tay cầm và đường cong trên Launcher?",
+        "set_long_press_switch": "Cách thiết lập công tắc nhấn giữ trên Launcher?",
+        "set_one_key_multiple_commands": "Cách thiết lập một phím nhiều lệnh trên Launcher?",
+        "set_snap_click": "Cách thiết lập Snap Click trên Launcher?",
+        "use_he_mode": "Cách sử dụng chế độ HE trên Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Các phím Fn hoạt động như thế nào trên bàn phím Keychron?",
+        "remap_key": "Cách gán lại phím trên Launcher?",
+        "set_keymap_language": "Cách thiết lập ngôn ngữ sơ đồ phím trên Launcher?",
+        "use_different_function_layers": "Cách sử dụng các lớp chức năng khác nhau?"
+      },
+      "key_test": {
+        "custom_sounds": "Cách tùy chỉnh âm thanh bàn phím của bạn?",
+        "perform_keyboard_key_testing": "Cách thực hiện kiểm tra phím bàn phím trên Launcher?"
+      },
+      "macro": {
+        "create_macro": "Cách tạo macro trên Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Cách đặt lại chuột về cài đặt gốc trong Launcher",
+      "mouse_angle_adjustment": "Cách sử dụng cài đặt góc trong Launcher",
+      "mouse_firmware_update": "Hướng dẫn cập nhật firmware chuột",
+      "mouse_receiver_firmware_update": "Cách nạp firmware cho bộ thu Keychron",
+      "quick_start": {
+        "download_and_install_assistant": "Cách tải xuống và cài đặt Keychron-Assistant?",
+        "set_quick_start": "Cách thiết lập Khởi động nhanh trên Launcher?"
+      },
+      "set_mouse_customize_buttons": "Cách đặt nút chuột tùy chỉnh trong Launcher",
+      "set_mouse_debounce_time": "Cách thay đổi thời gian debounce của chuột trong Launcher",
+      "set_mouse_dpi_and_polling_rate": "Cách đặt DPI và tốc độ báo cáo của chuột trong Launcher",
+      "set_mouse_system_features_setting": "Cách đặt chức năng hệ thống của chuột trong Launcher"
+    },
+    "user_manual": "Hướng dẫn sử dụng"
+  },
+  "issue": {
+    "content": "Nội dung",
+    "device": "Thiết bị",
+    "email": "Email",
+    "tips": {
+      "content": "Nội dung bắt buộc",
+      "device": "Cần thiết bị",
+      "email": "Địa chỉ email không hợp lệ",
+      "input": "Vui lòng nhập nội dung",
+      "send": "Báo cáo đã gửi",
+      "title": "Tiêu đề là bắt buộc"
+    },
+    "type": {
+      "1": "Nút hỏng / không phản hồi",
+      "2": "Sự cố kết nối",
+      "3": "Sự cố phần cứng",
+      "4": "Bố cục/kích thước không phù hợp",
+      "5": "Sự cố trình điều khiển",
+      "6": "Khác",
+      "7": "Chọn loại phản hồi"
+    }
+  },
+  "keycap": {
+    "character": "Phím chữ cái",
+    "fnc": "Phím chức năng",
+    "general": "Chung",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Phím số",
+    "symbol": "Phím ký hiệu",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Giữ = phím trên (phím bổ trợ) · Nhấn = phím dưới"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Tổ hợp phím",
+      "combo_description": "Phím tắt tùy chỉnh",
+      "launch_app": "Khởi chạy ứng dụng",
+      "launch_app_description": "Khởi chạy ứng dụng bằng một chạm",
+      "launch_web": "Mở trang web",
+      "launch_web_description": "Mở trang web bằng một chạm",
+      "macro": "Macro",
+      "macro_description": "Chuỗi hành động",
+      "remap": "Gán lại",
+      "remap_description": "Gán phím khác",
+      "title": "Gán lại {{key}}"
+    },
+    "codeInput": "Nhập phím",
+    "knob_not_support": "Firmware hiện tại không hỗ trợ tùy chỉnh Knob, vui lòng cập nhật Firmware.",
+    "layer": {
+      "1": "1. Giữ sẽ tạm thời kích hoạt lớp mục tiêu; nhả phím sẽ khôi phục giá trị gốc.",
+      "2": "2. Chỉ có hiệu lực từ lớp thấp đến lớp cao; từ cao xuống thấp không có tác dụng.",
+      "3": "1. Một lần chạm để tắt/bật lớp mục tiêu; sau khi tắt, lớp hoạt động cao nhất sẽ được chấp nhận.",
+      "4": "2. Lớp mặc định không thể tắt; nếu tất cả các lớp bị tắt, lớp mặc định sẽ được chấp nhận.",
+      "5": "Chức năng giữ giống MO; 5 lần chạm tương ứng với TG.",
+      "6": "1. Chạm/giữ để kích hoạt lớp; việc kích hoạt chỉ xảy ra từ dưới lên.",
+      "7": "Snap Tap chỉ hỗ trợ phím có công tắc từ tính.",
+      "8": "Một lần chạm kích hoạt lớp mục tiêu theo một hướng, không phân biệt lớp cao và thấp.",
+      "9": "Một lần chạm tạm thời kích hoạt lớp mặc định của mục tiêu theo một hướng, không phân biệt lớp cao và thấp.",
+      "10": "1. Sau khi mất điện, bàn phím trở về lớp mặc định tương ứng với công tắc hệ thống, ví dụ Win = lớp 2, Mac = lớp 0.",
+      "11": "2. Một số mẫu bàn phím không có công tắc hệ thống vật lý và thường trở về lớp mặc định cố định, ví dụ lớp 0.",
+      "error_info": "Công tắc hệ thống của bàn phím không khớp với hệ thống máy tính; các chức năng phím bổ trợ có thể thay đổi.",
+      "tip": "Mẹo:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Chọn một hoặc nhiều phím bổ trợ và một phím chính, sau đó kích hoạt bằng một phím.",
+        "modifier_keys": "Phím bổ trợ",
+        "press_primary_key": "Nhấn phím chính",
+        "primary_key": "Phím chính",
+        "title": "Tổ hợp phím"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Nhấp vào nút này để mở ứng dụng đã gán.",
+        "no_available_apps": "Không có ứng dụng khả dụng",
+        "search_apps": "Tìm kiếm ứng dụng",
+        "title": "Khởi chạy ứng dụng"
+      },
+      "launch_web": {
+        "description": "Nhấp vào nút này để mở trang web đã gán.",
+        "title": "Mở trang web",
+        "web_page_url": "URL trang web"
+      },
+      "macro": {
+        "description": "Ghi macro trực tiếp vào trường nhập: các phím bạn nhấn sẽ được ghi lại dưới dạng chuỗi hành động.",
+        "macro_keys": "Phím macro",
+        "press_key": "Nhấn một phím để ghi",
+        "title": "Ghi macro"
+      },
+      "remap": {
+        "description": "« {{key}} » nên trở thành gì?",
+        "press_key": "Nhấn một phím để gán",
+        "primary_keys": "Phím chính",
+        "title": "Gán lại phím"
+      }
+    },
+    "reset": {
+      "all": "Xác nhận đặt lại tất cả cài đặt?",
+      "single": "Xác nhận đặt lại cài đặt phím này?",
+      "title": "Bạn có chắc muốn reset không?"
+    },
+    "tabs": {
+      "assist": "Khởi chạy nhanh",
+      "basic": "Phím Cơ bản",
+      "custom": "Tùy chỉnh",
+      "layers": "Lớp FN",
+      "macro": "Macro",
+      "media": "Lối tắt",
+      "modtap": "Giữ / Chạm",
+      "mouse": "Chuột",
+      "qmk_lighting": "Ánh sáng",
+      "special": "Phím đặc biệt",
+      "wt_lighting": "Ánh sáng"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Tùy chỉnh",
+      "default_layer": "Lớp mặc định",
+      "display": "Chọn lớp hiển thị",
+      "functional": "Lớp chức năng thực tế",
+      "funtional": "Hiện tại",
+      "warn": "Nếu phím không hoạt động, hãy chuyển công tắc hệ thống và khởi động lại thiết bị."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": "Bạn có muốn chuyển sang...",
+    "connect": {
+      "1": "Kết nối thiết bị qua cáp hoặc bộ thu 2.4G.\n(Một số mẫu chỉ hỗ trợ chế độ có dây)",
+      "2": "Nhấp « Kết nối » ở góc trên bên trái và chọn thiết bị từ danh sách."
+    },
+    "detectedKeyboardLanguage": "Chúng tôi phát hiện ngôn ngữ bàn phím của bạn là...",
+    "guide_tip": "Làm theo hướng dẫn dưới đây để kết nối thiết bị của bạn",
+    "keepCurrentSetting": "Giữ cài đặt hiện tại",
+    "lang": "Ngôn ngữ bố cục",
+    "resetSuccessContent": "Bố cục bàn phím của bạn đã được đặt lại thành công",
+    "resetSuccessTitle": "Đặt lại thành công",
+    "select_device": "Chọn thiết bị bạn muốn kết nối.",
+    "switchImmediately": "Chuyển ngay"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Độ sáng",
+    "color": "Màu sắc",
+    "common": {
+      "setting_color": "Cài màu"
+    },
+    "commonColor": "Màu phổ biến",
+    "customColor": "Tuỳ chỉnh màu sắc",
+    "decorate_light": {
+      "0": "Không",
+      "1": "Cố định",
+      "2": "Hiệu ứng đèn thở",
+      "3": "Vòng lặp màu sắc",
+      "4": "Đua ngựa"
+    },
+    "effect": "Hiệu ứng",
+    "effect speed": "Tốc độ hiệu ứng",
+    "hue": "Độ màu",
+    "layer2": "Vùng RGB",
+    "led": {
+      "sub": {
+        "title": "Mẹo: Khi đặt màu, hãy chọn dải LED bên dưới."
+      },
+      "title": "Dải sáng"
+    },
+    "level": "Cấp độ",
+    "mix": {
+      "config": "Chọn hiệu ứng",
+      "hxxg": {
+        "hue": "Màu sắc",
+        "saturability": "Độ bão hòa",
+        "speed": "Tốc độ hiệu ứng"
+      },
+      "rk": "Tính năng này cho phép bạn thiết lập 2 vùng phím khác nhau trên cùng một bàn phím với các hiệu ứng đèn RGB khác nhau. Với mỗi vùng, bạn có thể thiết lập các khoảng thời gian khác nhau trong vòng lặp, và mỗi khoảng thời gian có thể được cài đặt với các hiệu ứng đèn RGB khác nhau.",
+      "timeLine": {
+        "second_tips": "Giá trị giây nhập quá lớn hoặc quá nhỏ.",
+        "title": "Dòng thời gian"
+      },
+      "verify_duration": {
+        "tip1": "Giá trị nhập phải là một số và lớn hơn 1 nhưng nhỏ hơn 99!",
+        "tip2": "Chỉ được phép nhập tối đa hai chữ số thập phân",
+        "tip3": "Giá trị nhập vào quá lớn",
+        "tip4": "Giá trị nhập quá nhỏ"
+      }
+    },
+    "notSupport": "Thiết bị không hỗ trợ cài đặt ánh sáng",
+    "perkey": {
+      "effect": "Chọn hiệu ứng",
+      "effects": {
+        "0": "Cài đặt chung",
+        "1": "Hiệu ứng nhịp thở",
+        "2": "Phản hồi từng phím",
+        "3": "Phản hồi phím liền kề",
+        "4": "Toàn bộ bàn phím"
+      },
+      "redo": "Làm lại",
+      "region": "Chọn khu vực",
+      "region_select": "Chọn vùng",
+      "region_tip": "Chọn khu vực trên bàn phím và đặt màu. Nhấp Lưu để thay đổi màu của khu vực tương ứng",
+      "rk": "Màu của từng phím có thể được cài đặt riêng. Bạn có thể thay đổi màu phím bằng cách chọn phím, nhấp vào khu vực cài màu, thay đổi màu và lưu lại",
+      "save_warn": "Quá nhiều vùng RGB, vui lòng xóa một số vùng và thử lại.",
+      "select_tip": "Nút được chọn không tạo ra vùng.",
+      "select_warn": "Vui lòng chọn nút",
+      "undo": "Hoàn tác"
+    },
+    "saturation": "Độ bão hòa",
+    "settingAllBrightnessArea": "Cài đặt độ sáng cho tất cả các vùng",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Đèn trang trí",
+      "indication": "Đèn báo",
+      "led_light": "Điều khiển dải sáng",
+      "mix_rgb": "Trộn RGB",
+      "perkey_rgb": "Đèn RGB từng phím",
+      "screen": "Cài đặt màn hình",
+      "selection": "Đèn nền"
+    },
+    "underglow brightness": "Độ sáng"
+  },
+  "lights": {
+    "0. None": "Không có",
+    "1. Solid Color": "Màu cố định",
+    "10. Cycle Pinwheel": "Chu kỳ bánh xe",
+    "11. Cycle Spiral": "Vòng xoắn ốc",
+    "12. Dual Beacon": "Hai đèn tín hiệu",
+    "13. Rainbow Beacon": "Hiệu ứng cầu vồng",
+    "14. Jellybean Raindrops": "Giọt mưa Jellybean",
+    "15. Pixel Rain": "Mưa điểm ảnh",
+    "16. Typing Heatmap": "Bản đồ nhiệt khi gõ phím",
+    "17. Digital Rain": "Mưa số",
+    "18. Reactive Simple": "Phản hồi đơn giản",
+    "19. Reactive Multiwide": "Phản hồi đa vùng",
+    "2. Breathing": "Hiệu ứng Thở",
+    "20. Reactive Multinexus": "Phản hồi Đa liên kết",
+    "21. Splash": "Hiệu ứng khởi động",
+    "22. Solid Splash": "Hiệu ứng bắn màu đặc",
+    "23. Per Key Rgb": "Đèn RGB từng phím",
+    "3. Band Spiral Val": "Giá trị vòng xoắn",
+    "4. Cycle All": "Chu kỳ đầy đủ",
+    "5. Cycle Left Right": "Chuyển trái phải",
+    "6. Cycle Up Down": "Chu kỳ lên xuống",
+    "7. Rainbow Moving Chevron": "Mũi tên cầu vồng di chuyển",
+    "8. Cycle Out In": "Chu kỳ ra ngoài và vào trong",
+    "9. Cycle Out In Dual": "Chu kỳ ra-vào kép"
+  },
+  "macro": {
+    "allchar": "Tất cả ký tự",
+    "closeDelay": "Tắt trì hoãn",
+    "code": "Nhập mã",
+    "common": {
+      "flash": "Lưu flash",
+      "title": "Để gán macro, hãy chọn nó rồi nhấp vào phím mục tiêu trên sơ đồ phím bên trên."
+    },
+    "config": "Cấu hình",
+    "delay": "Độ trễ",
+    "delaySet": "Độ trễ thời gian",
+    "dynamicDelay": "Độ trễ động",
+    "endREC": "Dừng ghi",
+    "enterDown": "Nhấn xuống",
+    "enterUp": "Chèn lên",
+    "fixedDelay": "Độ trễ cố định",
+    "inputdelay": "Nhập thời gian trễ",
+    "inputtexct": "Nhập văn bản",
+    "insertDelay": "Chèn độ trễ",
+    "keydown": "Giữ",
+    "keyup": "Thả",
+    "loopCount": "Số vòng lặp",
+    "loopCurrentDown": "Nhấn Dừng",
+    "loopDown": "Dừng phím tùy ý",
+    "loopOne": "Một chu kỳ",
+    "loopSet": "Cài đặt chu kỳ",
+    "loopUp": "Thả dừng",
+    "macroReccord": "Ghi",
+    "macroSetup": "Cài đặt macro",
+    "mouse": "Chuột",
+    "notEqual": "Phát hiện phím đang nhấn không thả, tiếp tục?",
+    "record": "Ghi",
+    "rename": "Đổi tên",
+    "save": "Lưu",
+    "setRepeatCount": "Số lần lặp",
+    "specialText": "Ký tự đặc biệt",
+    "startREC": "Bắt đầu ghi",
+    "stop": "Dừng",
+    "text": "Văn bản",
+    "texttype": "Chỉ được nhập tiếng Anh, số và các ký tự cơ bản",
+    "tip": {
+      "clickCopy": "Nhấn để sao chép văn bản",
+      "fixDelay": "Ở đây, độ trễ cố định có nghĩa là được nhúng trong mỗi sự kiện, và sự kiện bao gồm sự kiện bị trễ.",
+      "keyDelay": "Trễ: {200}, Đơn vị: MS",
+      "keyDown": "Đặt lại: {-KC_A}",
+      "keyText": "Văn bản: ABCDEF",
+      "keyUp": "Nhấn xuống: {+KC_A}",
+      "macro_text": "Nhập macro bạn muốn thực thi…"
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Từ tính",
+      "mechanical": "Cơ học",
+      "tip": "Mẹo",
+      "title": "Thống kê công tắc"
+    },
+    "calibration": {
+      "1": "Không rút cáp USB, ngắt kết nối hoặc tắt thiết bị trong quá trình hiệu chuẩn. Nếu không, thiết bị có thể gặp sự cố",
+      "2": "Bắt đầu hiệu chuẩn",
+      "3": "Không nhấn phím bàn phím 2 giây trước khi nhấp \"Bắt đầu hiệu chuẩn\"",
+      "4": "Nhấn và giữ phím 1 giây để hoàn tất hiệu chuẩn",
+      "5": "Khi hiệu chuẩn thành công, đèn nền sẽ chuyển sang màu xanh lá.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Hồ sơ đường cong Analog",
+      "save": "Lưu độ cong",
+      "title": "Cài đặt đường cong Rocker"
+    },
+    "directive": {
+      "bottomBack": "Phản hồi bật lại",
+      "bottomIn": "Trượt vào từ dưới",
+      "bottomOut": "Chạm đáy",
+      "trigger": "Cảm biến khởi động"
+    },
+    "distance": {
+      "advance_mode": "Nâng cao",
+      "basic_mode": "Phím Cơ bản",
+      "current": "Các phím hiện tại",
+      "globalDis": "Đặt hành trình toàn bộ phím",
+      "globalRt": "Thiết lập kích hoạt tất cả các phím",
+      "limitTip": "Giá trị vượt quá giới hạn. Vui lòng nhập lại.",
+      "magnet_calibrate": "Kích hoạt demo",
+      "magnet_calibrate_point": "Điểm kích hoạt",
+      "magnet_calibrate_tip": "Thử nghiệm Trigger chỉ hỗ trợ một phím",
+      "magnet_calibrate_tip_desc": "Chọn một phím và bật nút công tắc ở góc trên bên phải để thử kích hoạt phím đã chọn",
+      "magnet_calibrate_tip_empty": "Hãy chọn một phím",
+      "profile_help": "Nhấn fn + p + z/x/c để nhanh chóng chuyển hồ sơ sang profile 1/2/3",
+      "result": "Nhập giá trị phím",
+      "sensitive": "Độ nhạy",
+      "setting": "Cài điểm nhận phím",
+      "show_mode_dis": "Khoảng cách kích hoạt",
+      "show_mode_hide": "Không có dữ liệu",
+      "show_mode_rt": "Kích hoạt nhanh",
+      "speed_trigger": "Kích hoạt nhanh",
+      "trigger_distance": "Khoảng nhận phím (Nhấn)",
+      "trigger_distance_reset": "Điểm reset phím",
+      "trigger_distance_twice": "Khoảng cách kích hoạt (nhấn)"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Xóa gán",
+      "left_emu": "Mô phỏng nhấp trái",
+      "reflect": {
+        "conflict": "Phím này đã được thiết lập"
+      },
+      "titles": {
+        "1": "Chọn nút cần điều khiển",
+        "2": "Cài nút cần điều khiển",
+        "4": "Bật hoặc tắt phím trên bàn phím",
+        "5": "Bật nếu bạn có thể gõ khi cần điều khiển joystick giả lập, tắt nếu không thể gõ.",
+        "6": "Thử nghiệm hiệu ứng Joystick",
+        "7": "Chức năng nhận diện bộ điều khiển",
+        "8": "1. Sau khi tắt, bàn phím sẽ không còn được nhận diện là bộ điều khiển.",
+        "9": "2. Sau mỗi thao tác liên quan đến chức năng này, bạn phải ngắt cáp và kết nối lại để có hiệu lực.",
+        "10": "Bộ điều khiển tiêu chuẩn",
+        "11": "Bộ điều khiển Xbox",
+        "12": "Chọn chế độ bộ điều khiển",
+        "13": "Sau khi thay đổi chế độ bộ điều khiển, bạn phải ngắt cáp và kết nối lại để thay đổi có hiệu lực.",
+        "xbox": "1. Sau khi bật/tắt Xbox, phải ngắt cáp và kết nối lại để thay đổi có hiệu lực.</br>2. Xbox không khả dụng trên macOS."
+      }
+    },
+    "mode": {
+      "default": "Mặc định",
+      "gamepad": "Tay cầm chơi game",
+      "gaming": "Chế độ chơi game"
+    },
+    "multi_cmd": {
+      "b": "Đẩy xuống dưới",
+      "fulfilled": "Bộ nhớ đầy. Xóa lệnh hiện có để thiết lập lệnh mới.",
+      "list": "Danh sách lệnh gán phím",
+      "setting": "Một phím nhiều lệnh",
+      "test": "Kiểm tra các phím"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy chỉ hỗ trợ phím có công tắc từ tính.",
+      "only_support_magnetic": "Hiện đang chọn phím cơ học. Menu này chỉ hỗ trợ công tắc từ tính."
+    },
+    "profile": "Hồ sơ",
+    "rename": "Đổi tên",
+    "simulate": "Mô phỏng",
+    "snap_tap": {
+      "absolute_priority": "Ưu tiên tuyệt đối",
+      "AP": "Đặt ưu tiên kích hoạt cao hơn cho một trong hai phím khi nhấn đồng thời.</br>*Nhấp vào biểu tượng ở giữa phím để chuyển đổi ưu tiên.",
+      "cancel_mode": "Trung lập",
+      "CM": "Có thể đặt hai nút. Khi cả hai được nhấn cùng lúc, không nút nào được kích hoạt.",
+      "create": "Tạo",
+      "key_exist": "Phím cấu hình đã tồn tại",
+      "last_key_priority": "Ưu tiên phím cuối cùng",
+      "LKP": "Hai phím có thể được thiết lập sao cho khi nhấn cùng lúc, phím được kích hoạt cuối cùng sẽ kích hoạt trong khi phím còn lại được reset.",
+      "SC": "ạn có thể thiết lập hai phím sao cho khi cả hai phím được nhấn đồng thời, phím nhấn sâu hơn sẽ kích hoạt và phím còn lại sẽ đặt lại.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Bạn có chắc chắn muốn chuyển đổi?",
+    "sure_switch_gamepad_desc": "Sau khi chuyển sang chế độ bộ điều khiển chơi game, một số nút sẽ ngừng hoạt động.",
+    "tab": {
+      "calibration": "Hiệu chỉnh",
+      "curve": "Đường cong",
+      "distance": "Điểm nhận phím",
+      "exit_calibration": "Thoát hiệu chỉnh",
+      "joystick_reflect": "Tay cầm gamepad analog",
+      "multi_cmd": "Một phím nhiều lệnh",
+      "snap_tap": "Hành động bật nhanh",
+      "toggle": "Nhấn giữ công tắc",
+      "toggle_tip": "Tính năng này cho phép bạn kích hoạt một phím liên tiếp nhiều lần chỉ với một lần nhấn.",
+      "turbo": "Turbo",
+      "turbo_tip": "Tạo hiệu ứng nhấn liên tục khi nhấn nút."
+    },
+    "toggle": {
+      "drk_guide_tip": "Chức năng này khiến bạn nhấn phím càng sâu thì số lần kích hoạt càng nhiều.",
+      "keySpeed": {
+        "times": "Số lần kích hoạt tối đa",
+        "title": "Tốc độ gõ",
+        "unit": "lần/giây"
+      },
+      "selected": "Phím đã chọn",
+      "set": "Bộ phím",
+      "title": "Mở"
+    }
+  },
+  "menu": {
+    "addconnect": "Thêm thiết bị",
+    "assist": "Bắt đầu nhanh",
+    "bluetooth_firmware": "Firmware không dây",
+    "disconnect": "Ngắt kết nối",
+    "expTools": "Công cụ mở rộng",
+    "fr_firmware": "Cập nhật receiver",
+    "help": "Trung tâm trợ giúp",
+    "issue": "Phản hồi của người dùng",
+    "keyboard_advance": "Chế độ nâng cao",
+    "keyboard_firmware": "Cập nhật Firmware",
+    "keyboard_he": "Chức năng từ tính",
+    "keyboard_light": "Đèn nền",
+    "keyboard_macro": "Macro bàn phím",
+    "keyboard_map": "Bản đồ phím",
+    "keyboard_test": "Kiểm tra phím",
+    "keyset": "Snap Action",
+    "scroll": "Cuộn nâng cao",
+    "setting": "Cài đặt",
+    "switchSetting": "Cài đặt công tắc"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Bạn có chắc chắn muốn tắt nút này?",
+      "resetAll": "Thao tác này sẽ xóa tất cả dữ liệu đã lưu. Tiếp tục?",
+      "resetBtn": "Khôi phục cài đặt gốc?"
+    },
+    "dpi": {
+      "cable": "Có dây",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (điểm trên inch) xác định độ nhạy của con trỏ — giá trị càng cao, con trỏ di chuyển càng xa với cùng một chuyển động tay.",
+      "gear": "Cấp độ",
+      "previousSetting": "Nếu không có thao tác trong {{time}} giây, sẽ tự động xác nhận. Nhấn \"Khôi phục\" để quay về cài đặt trước đó.",
+      "properties": "Cài đặt hệ thống chuột",
+      "properties_open": "Mở cài đặt hệ thống chuột",
+      "properties_tip": "Không phản hồi? Hãy tải « Assistant » và thử lại.",
+      "reportRate": "Tần số quét",
+      "reportRateDesc": "Hỗ trợ lên đến 8000 Hz",
+      "reportTip": "Điều chỉnh tần suất thiết bị gửi báo cáo về máy tính.",
+      "title": "Cài đặt DPI",
+      "wireless": "2.4GHz",
+      "xyTip": "DPI trục X điều khiển độ nhạy con trỏ theo phương ngang, DPI trục Y điều khiển độ nhạy theo phương đứng. Giá trị càng cao thì con trỏ phản ứng càng nhạy theo hướng tương ứng.",
+      "xy_split_label": "Tách X/Y"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Nút trái/phải độc lập",
+      "gear": "Cấp độ",
+      "left_btn": "Nút trái",
+      "light_blocked": "Đường dẫn quang bị chặn",
+      "light_desc": "Ở trạng thái nghỉ, chùm sáng bị chặn, vì vậy không ghi nhận cú nhấp. Nhấn nút để mở đường dẫn quang: ánh sáng đến cảm biến và kích hoạt cú nhấp. Không có tiếp điểm kim loại, không mài mòn.",
+      "light_led": "LED",
+      "light_mode": "Công tắc quang",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Đã bật",
+      "magnet_desc": "Chọn bạn phải nhấn sâu đến mức nào trước khi cú nhấp được ghi nhận. Ngắn hơn = nhanh hơn, sâu hơn = ít lỗi hơn.",
+      "magnet_mode": "Công tắc từ tính",
+      "motor_trigger": "Cài đặt phản hồi xúc giác",
+      "right_btn": "Nút phải",
+      "shared_btn": "Nút chuột",
+      "title": "Cài đặt kích hoạt nút chuột",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Cài đặt hành trình kích hoạt"
+    },
+    "key": {
+      "backward": "Nút sau",
+      "brightnessDown": "Giảm độ sáng màn hình",
+      "brightnessUp": "Tăng độ sáng màn hình",
+      "calculate": "Máy tính",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Sao chép",
+      "customDpi": "DPI tùy chỉnh",
+      "cut": "Cắt",
+      "dock": "Bật/Tắt Dock",
+      "downScroll": "Cuộn Xuống",
+      "dpiLoop": "Chu kỳ DPI",
+      "email": "Thư",
+      "forward": "Tiến",
+      "he": "Vi chuyển động quang/từ tính",
+      "home": "Hiển thị màn hình chính",
+      "homePage": "Mở trang chủ",
+      "launchPad": "Launchpad",
+      "left": "Nhấp chuột trái",
+      "leftClick": "Nhấp trái",
+      "leftDouble": "Nhấp đúp trái",
+      "leftLock": "Khóa nhấp trái",
+      "leftScroll": "Cuộn sang trái",
+      "leftScrollSustain": "Cuộn liên tục sang trái",
+      "leftTilt": "Nghiêng trái",
+      "left_lock": "Khóa nhấp trái",
+      "lickDoubleClick": "Nhấp đúp trái",
+      "light": "Hiệu ứng đèn",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Lặp",
+      "loopColorfulBreathing": "Chu kỳ thở màu",
+      "loopDpi": "Chu kỳ DPI",
+      "loopOpticalMagnetic": "Chu kỳ quang-từ",
+      "loopPollingRate": "Chu kỳ tốc độ báo cáo",
+      "middle": "Nhấp chuột giữa",
+      "middleClick": "Nhấn giữa",
+      "modeToggleAll": "Vi chuyển động quang/từ tính",
+      "mute": "Tắt tiếng",
+      "myComputer": "Tốc độ báo cáo",
+      "next": "Tiếp theo",
+      "nextDpi": "DPI tiếp theo",
+      "nextPollingRate": "Tốc độ báo cáo kế tiếp",
+      "pageDown": "Cuộn xuống trang",
+      "pageUp": "Cuộn lên trang",
+      "paste": "Dán",
+      "pause": "Phát/Tạm dừng",
+      "player": "Trình phát",
+      "prevDpi": "DPI trước",
+      "previous": "Trước",
+      "prevPollingRate": "Tần số quét trước",
+      "refresh": "Làm mới",
+      "restoreFactory": "Đặt lại nhà máy",
+      "right": "Nhấp chuột phải",
+      "rightClick": "Nhấp phải",
+      "rightScroll": "Cuộn sang phải",
+      "rightScrollSustain": "Cuộn liên tục sang phải",
+      "rightTilt": "Nghiêng sang phải",
+      "screenshot": "Chụp màn hình",
+      "scrollLeftClick": "Nghiêng phải",
+      "scrollRightClick": "Nghiêng trái",
+      "sideKey": "Phím bên",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Dừng",
+      "swichLight": "Chuyển hiệu ứng đèn",
+      "switchApp": "Chuyển ứng dụng",
+      "task": "Quản lý tác vụ",
+      "trackballToScroll": "Trackball để cuộn",
+      "upScroll": "Cuộn lên",
+      "volumeDown": "Âm lượng -",
+      "volumeUp": "Âm lượng +",
+      "webLessen": "Thu nhỏ",
+      "webMagnify": "Phóng to"
+    },
+    "keyboard": "Bàn phím",
+    "key_fun": {
+      "basic": "Nút cơ bản",
+      "disable": "Tắt nút",
+      "dpi": "DPI",
+      "game": "Phím chơi game",
+      "game_tip": "Giữ phím đã gán để tự động lặp lại các cú nhấp đã chọn, với số lần và tần suất có thể điều chỉnh.",
+      "keyboard": "Tổ hợp phím",
+      "keyboard_tip": "Chọn một hoặc nhiều phím bổ trợ rồi thêm phím tiêu chuẩn. Nhấp vào trường để nhập phím hoặc chọn mã phím bên phải.",
+      "macro": "Macro",
+      "media": "Phím đa phương tiện",
+      "pollingRate": "Tần số quét (Polling Rate)",
+      "profile": "Hồ sơ",
+      "sensitive": "Độ nhạy",
+      "shortCut": "Phím tắt"
+    },
+    "key_game": {
+      "count": "Đếm",
+      "infinite": "Không giới hạn",
+      "rate": "Tốc độ"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "Hiệu ứng đèn neon nhấp nháy",
+      "fullColorCycle": "Vòng lặp đầy đủ màu sắc",
+      "soleBreathe": "Hơi thở đơn sắc",
+      "soleFlowing": "Đua ngựa",
+      "soleLight": "Đèn cố định đơn sắc"
+    },
+    "menu": {
+      "angle": "Cài đặt góc",
+      "dpi": "Cài đặt DPI",
+      "key": "Tùy chỉnh",
+      "light": "Ánh sáng",
+      "macro": "Cài đặt macro",
+      "poll_rate": "Tần số thăm dò",
+      "profile": "Cấu hình",
+      "sys": "Nâng cao"
+    },
+    "mouse": "Chuột",
+    "polling_rate": {
+      "daily": "Văn phòng",
+      "fps20k": "Chế độ lấy mẫu cảm biến",
+      "game": "Chơi game",
+      "office_mode": "Chế độ tiêu chuẩn",
+      "office_mode_desc": "Thao tác mượt mà, quét ổn định",
+      "rage_content": "Mức tiêu thụ điện năng sẽ tăng khi bật chế độ thi đấu.",
+      "rage_desc": "Tần số quét cảm biến ≥20K để giảm độ trễ và tăng độ chính xác. Tốn nhiều điện hơn.",
+      "rage_mode": "Chế độ thi đấu",
+      "rage_title": "Xác nhận bật chế độ thi đấu?"
+    },
+    "profile_tab": {
+      "changeIcon": "Thay đổi biểu tượng",
+      "selectMode": "Chọn chế độ"
+    },
+    "scroll": {
+      "acceleration": "Tăng tốc độ",
+      "consecutive_times": "Số lần cuộn liên tục",
+      "demo": "Trình diễn cuộn",
+      "direction": "Hướng cuộn",
+      "duration": "Thời lượng cuộn",
+      "interval": "Khoảng cách cuộn (miligiây)",
+      "scroll": "Cuộn ngang",
+      "speed": "Tốc độ cuộn",
+      "step": "Bước cuộn tối thiểu",
+      "tip_acceleration": "Đặt gia tốc cuộn là bội số của giá trị hiện tại.",
+      "tip_consecutive_times": "Sau khi cuộn liên tục, tự động chuyển sang cuộn mượt mà.",
+      "tip_demo": "Tại đây bạn có thể thử các cài đặt cuộn nâng cao.",
+      "tip_direction": "Thay đổi hướng cuộn của chuột",
+      "tip_disconnect": "Để sử dụng cuộn nâng cao, bạn phải tải Assist.",
+      "tip_interval": "Khoảng cách cuộn liên tục",
+      "tip_speed": "Tăng tốc độ cuộn"
+    },
+    "shortcut_tooltip": {
+      "general": "Sau khi thiết lập, các chức năng sau áp dụng cho cả Mac và Windows.",
+      "mac": "Sau khi thiết lập, các chức năng sau chỉ áp dụng cho Mac.",
+      "win": "Sau khi thiết lập, các chức năng sau chỉ áp dụng cho Windows."
+    },
+    "sys": {
+      "angle": "Cài đặt góc",
+      "angle_correction_after": "Sau khi cài đặt",
+      "angle_correction_no": "Trước khi cài đặt",
+      "angle_preview": "Trước và sau",
+      "angle_reset_btn": "Đặt lại về 0°",
+      "backward": "Đảo ngược",
+      "battery_indicator": "Chỉ báo pin",
+      "delay": "Thời gian chống rung",
+      "forward": "Tiêu chuẩn",
+      "funConfig": "Chức năng hệ thống của chuột",
+      "keyResponseTime": "Thời gian phản hồi phím",
+      "leftLock": "Khóa nhấn trái",
+      "line": "Góc chụp chính xác",
+      "lock": "Khóa",
+      "lod": "Khoảng cách nâng",
+      "motion": "Đồng bộ chuyển động",
+      "pairBond": "Phím tắt ghép cặp",
+      "pairLimit": "Phím ghép chỉ hỗ trợ 1-3 phím",
+      "power": "Quản lý nguồn điện",
+      "respSeconds": "Thời gian phản hồi (ms)",
+      "scroll": "Hướng cuộn",
+      "sensor": "Hiệu năng cảm biến",
+      "sleep": "Chế độ ngủ của thiết bị",
+      "unlock": "Mở khóa",
+      "wave": "Điều khiển hiệu ứng gợn sóng"
+    },
+    "tip": {
+      "leftLock": "Cấu hình nhấp chuột trái đã bị khóa và không thể thay đổi."
+    },
+    "tips": {
+      "advanceDelayDesc": "Ở chế độ nâng cao, bạn có thể đặt thời gian phản hồi độc lập (0–20 ms) cho từng phím.",
+      "angleDesc": "Điều chỉnh góc cảm biến chuột để chuột hơi nghiêng thực hiện chuyển động ngang chính xác.",
+      "delayDesc": "Đặt độ trễ để ngăn kích hoạt ngẫu nhiên do nhấp nhanh hoặc rung.",
+      "factorySetDesc": "Nhấp vào nút này để xóa cài đặt hiện tại của thiết bị và khôi phục cài đặt gốc.",
+      "fps20kDesc": "Cảm biến chuột chụp 20.000 hình ảnh bề mặt mỗi giây, mang lại khả năng theo dõi chính xác không trễ.",
+      "indicatorDesc": "Công tắc này chỉ kiểm soát việc hiển thị trạng thái pin thông thường ở chế độ 2.4G.",
+      "leftLockDesc": "Khi « Khóa nhấp trái » được bật, không thể gán lại nút trái.",
+      "lineDesc": "Lọc thông minh rung nhẹ của tay, giảm sai lệch ngang và dọc.",
+      "lodCurr": "Khoảng cách nâng hiện tại của chuột",
+      "lodDesc": "Độ cao tối đa mà chuyển động của chuột vẫn được phát hiện và theo dõi.",
+      "motionDesc": "Đồng bộ đầu vào cảm biến với phản hồi của hệ thống, giảm nhảy hoặc giật con trỏ.",
+      "pairBondDesc": "Tùy chỉnh tổ hợp phím và giữ 4 giây để vào chế độ ghép cặp Bluetooth/2.4G.",
+      "scrollDirDesc": "Hướng chuyển động của nội dung trên màn hình khi lăn bánh xe chuột lên hoặc xuống",
+      "sensorDesc": "Cải thiện độ chính xác và ổn định của chuột khi vẽ đường, hình tròn và các đường dẫn khác.",
+      "sleepDesc": "Hỗ trợ chế độ ngủ tự động ở chế độ không dây khi thiết bị không hoạt động trong thời gian dài.",
+      "waveDesc": "Giảm các đường gợn sóng do rung tay để chuyển động mượt mà hơn."
+    },
+    "wheel": {
+      "adjustTimeout": "Hết thời gian hiệu chuẩn",
+      "sensitivity": "Độ nhạy"
+    }
+  },
+  "notify": {
+    "emptyHid": "Chưa chọn thiết bị HID",
+    "fail": "Thất bại",
+    "fr_not_connect": "Không thể sử dụng trình điều khiển sau khi thiết bị vào chế độ ngủ; nhấn phím bất kỳ để đánh thức.",
+    "hidAlreadyConnected": "Thiết bị HID đã kết nối",
+    "hidConfNotBrand": "Thiết bị của thương hiệu này hiện không được hỗ trợ.",
+    "hidConfNotFound": "Không tìm thấy cấu hình thiết bị HID hợp lệ",
+    "hidDeviceNotFount": "Thiết bị HID không có sẵn",
+    "hidUnconnected": "Thiết bị HID chưa kết nối",
+    "import": {
+      "layout": "Bố cục bàn phím đã được nhập thành công",
+      "title": "Nhập thành công"
+    },
+    "invalid_macro_json": "Cấu hình không hợp lệ",
+    "invalid_rgb_json": "Cấu hình không hợp lệ",
+    "keyboard_not_support_wireless": "Firmware bàn phím không hỗ trợ kết nối không dây",
+    "keycodeNotFound": "Lỗi cấu hình mã phím",
+    "limited": "Vượt quá giới hạn tối đa",
+    "macroSizeLimit": "Kích thước Macro vượt quá dung lượng khả dụng",
+    "notSupportHid": "Trình duyệt này không hỗ trợ kết nối HID, vui lòng dùng Chrome, Edge hoặc Opera để kết nối",
+    "sleep": "Không có thiết bị kết nối hoặc thiết bị đang ở chế độ ngủ",
+    "success": "Thành công",
+    "success_competitive": "Đã chuyển sang chế độ thi đấu thành công",
+    "success_connect": "Kết nối thành công",
+    "success_office": "Đã chuyển sang chế độ tiêu chuẩn thành công",
+    "unknownErr": "Lỗi không xác định"
+  },
+  "onboarding": {
+    "completed": "Hoàn tất trình hướng dẫn thành công 🎉",
+    "connect": {
+      "description": "Kết nối bàn phím với máy tính qua cáp USB, nhấp « Kết nối » và chọn thiết bị trong hộp thoại.",
+      "title": "Kết nối bàn phím của bạn"
+    },
+    "entry": "Hãy bắt đầu",
+    "flow": {
+      "connect": "Kết nối thiết bị",
+      "keymap": "Gán lại phím",
+      "light": "Hiệu ứng đèn nền"
+    },
+    "hint": "Nhấp vào vùng được đánh dấu để hoàn tất thao tác, hoặc nhấp « Bỏ qua trình hướng dẫn ».",
+    "keymap": {
+      "select_a": {
+        "description": "Nhấp « A » trong bảng chức năng bên dưới để gán phím cách cho A. Trình hướng dẫn sẽ tự động đóng sau khi hoàn tất.",
+        "title": "Bước 2 · Gán nó cho « A »"
+      },
+      "select_space": {
+        "description": "Nhấp vào phím cách ở dưới cùng của bàn phím để chọn nó.",
+        "title": "Bước 1 · Chọn phím cách"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Sử dụng bộ chọn màu bên phải để đặt màu xanh lục (kéo bộ chọn hoặc nhập RGB 0, 255, 0). Trình hướng dẫn sẽ tự động đóng.",
+        "title": "Bước 2 · Đặt thành màu xanh lục"
+      },
+      "select_static": {
+        "description": "Chọn « Solid Color » từ danh sách hiệu ứng bên dưới để đặt bàn phím thành hiệu ứng một màu tĩnh.",
+        "title": "Bước 1 · Chọn « Solid Color »"
+      }
+    },
+    "skip": "Bỏ qua trình hướng dẫn",
+    "step": "Bước"
+  },
+  "screen": {
+    "format": {
+      "limit": "Định dạng hình ảnh chỉ có thể là PNG, JPG hoặc GIF."
+    },
+    "resolution": {
+      "limit": "Kích thước hình ảnh không được vượt quá 240×240."
+    },
+    "size": {
+      "limit": "Kích thước tệp hình ảnh không được vượt quá 300 KB."
+    },
+    "upload": {
+      "format": "PNG hoặc JPG (tối đa 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Chức năng này cho phép chọn tối đa {{count}} phím."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Khoảng thời gian quét"
+    },
+    "file_extra_properties_not_supported": "Tệp chứa các thuộc tính không được hỗ trợ",
+    "file_import_failed": "Không thể nhập tệp",
+    "file_upload_no_config_file": "Không tìm thấy file cấu hình. Vui lòng tải lên",
+    "info": "Thông tin thiết bị",
+    "infos": {
+      "bluVersion": "Phiên bản Bluetooth",
+      "deviceDesc": "Phiên bản firmware",
+      "name": "Tên"
+    },
+    "json_config": "Cài đặt Json",
+    "lng": "Ngôn ngữ",
+    "log": "Ghi chú chạy",
+    "onlyview": "Không thể thay đổi cấu hình của bàn phím này.",
+    "other": "Khác",
+    "others": {
+      "debounce": {
+        "name": "Phản hồi trễ phím",
+        "tip": "Sau khi bật, thời gian phản hồi tối thiểu có thể được đặt thành 0 ms.",
+        "title": "Thay đổi giá trị tối thiểu",
+        "warning": {
+          "title": "Bạn có chắc chắn muốn bật?"
+        }
+      }
+    },
+    "theme": "Đổi chủ đề",
+    "updateLog": "Lịch sử phiên bản"
+  },
+  "snap": {
+    "list": "Danh sách gán lệnh"
+  },
+  "test": {
+    "btn": {
+      "reset": "Kiểm tra lại",
+      "reset_bindings": "Xóa liên kết"
+    },
+    "msg": {
+      "bind_success": "{{count}} phím đã được liên kết với {{audioName}}.",
+      "bind_success_single": "Phím {{keyName}} đã được liên kết với {{audioName}}.",
+      "no_key_selected": "Trước tiên hãy chọn một phím để liên kết.",
+      "reset_success": "Đặt lại thành công",
+      "storage_full": "Không đủ dung lượng lưu trữ",
+      "unsupported_format": "Định dạng âm thanh không được hỗ trợ. Vui lòng sử dụng MP3, WAV, OGG hoặc M4A.",
+      "upload_success": "Tải âm thanh thành công"
+    },
+    "per_key_sound": {
+      "desc": "Gán âm thanh duy nhất cho từng phím. Khi tắt chức năng này, tất cả phím dùng âm thanh đã chọn mặc định.",
+      "tip": "Ở chế độ không có ma trận kiểm tra, chỉ có thể đặt âm thanh phản hồi phím đồng nhất."
+    },
+    "sound": {
+      "tip": "Khi bật công tắc, kiểm tra phím sẽ có phản hồi âm thanh, bạn có thể chọn âm thanh yêu thích."
+    },
+    "sound_btn": {
+      "Balloon": "Bong bóng",
+      "CarHorn": "Còi xe",
+      "Cartoon": "Hoạt hình",
+      "CoinCollecting": "Thu thập đồng xu",
+      "custom": "Tùy chỉnh",
+      "default": "Mặc định",
+      "DogBarking": "Chó sủa",
+      "Donkey": "Lừa",
+      "Glass": "Thủy tinh",
+      "PartyHorn": "Còi tiệc",
+      "PhoneDial": "Gọi điện thoại",
+      "Punch": "Punch",
+      "RubberChicken": "Gà cao su",
+      "RubberToy": "Đồ chơi cao su",
+      "Sneeze": "Hắt xì"
+    },
+    "title": {
+      "custom_sound": "Thư viện âm thanh tùy chỉnh",
+      "per_key_sound": "Gán âm thanh cho phím",
+      "reset_custom_bindings": "Bạn có chắc chắn muốn đặt lại liên kết âm thanh?",
+      "sound": "Bật hiệu ứng âm thanh",
+      "sound_effect": "Chọn hiệu ứng âm thanh",
+      "uploaded_sounds": "Âm thanh đã ghi"
+    },
+    "upload": {
+      "browse": "Nhấp để tải lên",
+      "info": "Hỗ trợ: MP3, WAV, OGG, M4A · Giới hạn tổng: 25 MB · Độ dài âm thanh khuyến nghị: 1–2 giây",
+      "placeholder": "Kéo tệp âm thanh vào đây, hoặc"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Trước tiên hãy chọn một phím."
+    },
+    "key": {
+      "direction": "Khóa góc 8 hướng",
+      "gesture": "Chế độ cử chỉ",
+      "held": "Giữ",
+      "scroll": "Cuộn",
+      "tap": "Chạm"
+    },
+    "keycode": {
+      "key": "Phím cơ bản",
+      "modifiers": "Phím bổ trợ"
+    },
+    "key_fun": {
+      "basic": "Cơ bản",
+      "comb": "Phím kết hợp",
+      "feature": "Khóa góc",
+      "keyCombination": "Tổ hợp phím",
+      "layer": "Lớp",
+      "macro": "Macro",
+      "simulate": "Nhấn đồng thời",
+      "single": "Chạm / Giữ",
+      "special": "Phím đặc biệt",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Chỉ có thể đặt một phím tiêu chuẩn.",
+    "placeholder": {
+      "selectionKeys": "Phím lựa chọn"
+    },
+    "selectInputFirst": "Trước tiên hãy chọn trường nhập.",
+    "slide": {
+      "leftSlide": "Vuốt sang trái",
+      "rightSlide": "Vuốt sang phải",
+      "underSlide": "Vuốt xuống",
+      "upSlide": "Vuốt lên"
+    },
+    "tips": {
+      "angleGearsDesc": "Ví dụ, nếu bạn gán « 90° » cho phím 4, nhấn phím 4 sẽ đặt hướng của lớp hiện tại thành 90° (ngang).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Phím cơ bản",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcher yêu cầu file VIA json của thiết bị đã chọn. Vui lòng nhấn nút “Xác nhận” bên dưới và tải file json của thiết bị lên để sử dụng launcher. Bạn có thể lấy file VIA json từ nhà cung cấp sản phẩm.",
+      "title": "Tải lên file VIA Json"
+    }
+  }
+}
