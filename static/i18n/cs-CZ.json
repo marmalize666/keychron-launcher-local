@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Poznámka:"
+    },
+    "debounce": {
+      "defer_global": "Odskok klávesnice. Při jakékoli změně stavu se nastaví globální časovač. Po uplynutí patřičné doby bez změn se odešlou všechny změny vstupů. Jedná se o algoritmus s nejvyšším výkonem, nejnižší spotřebou paměti a odolností proti rušení.",
+      "defer_per_key": "Zdvih pro každou klávesu. Při každé změně stavu se nastaví časovač pro každou klávesu. Když po dobu zdvihu nedojde k žádné změně na dané klávese, odešle se změna stavu klávesy.",
+      "eager_defer_per_key": "Zdvih pro každé tlačítko. Při změně stavu stisknutého tlačítka je odezva okamžitá. Při změně stavu uvolněného tlačítka se nastaví časovač pro každé tlačítko. Pokud po stanovenou dobu nedojde k žádné změně na daném tlačítku, dojde ke změně stavu uvolněného tlačítka.",
+      "eager_per_key": "Zdvih pro každou klávesu. Při jakékoli změně stavu je odezva okamžitá, následovaná DEBOUNCE milisekundami bez dalšího vstupu pro danou klávesu.",
+      "none": "Není prováděno žádné zpracování zdvihu.",
+      "tip": {
+        "1": "„EAGER PER KEY“ je doporučený režim zdvihu, ve kterém klávesa reaguje okamžitě po stisknutí, ale všechny další stisky této klávesy budou ignorovány po dobu několika sekund, kterou si zvolíte.",
+        "2": "Pokud chcete vybrat jiné režimy potlačení zdvihu, klikněte na tlačítko „?“ v horní části, kde najdete vysvětlení ostatních režimů potlačení zdvihu.",
+        "3": "Pokud se délka odezvy blíží 0 ms, může dojít k problému s dvojitým kliknutím."
+      }
+    },
+    "macro": {
+      "gesture": "Vždy ponechat režim gest zapnutý",
+      "gesture_description": "Po aktivaci není nutné přiřazovat klávesu gesta.",
+      "gesture_not_configured": "Nelze otevřít. Přejděte do « Funkce klávesy – Trackball » a nastavte výstupní hodnotu.",
+      "scroll": "Vždy ponechat režim posouvání zapnutý",
+      "scroll_description": "Po aktivaci není nutné jej spojovat s klávesami gest.",
+      "title": "Chování gesta (vyberte jednu možnost)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) je technologie klávesnice, která umožňuje současné stisknutí neomezeného počtu kláves bez konfliktů nebo ztráty signálu. Vypnutí NKRO znamená, že klávesnice správně zaregistruje nanejvýš 6 současných stisků kláves.",
+      "title": "Nastavení NKRO"
+    },
+    "performance": {
+      "mode_battery": "Režim baterie",
+      "mode_high": "Režim vysokého výkonu",
+      "mode_normal": "Výchozí režim",
+      "title": "Přepínání režimu výkonu"
+    },
+    "poll_rate": "Nastavení frekvence dotazování",
+    "poll_rate_tip": {
+      "bt": "Režim připojení Bluetooth",
+      "bt_desc": "V režimu připojení Bluetooth je frekvence dotazování pevně nastavena na 125 Hz. Toto nastavení nelze změnit z důvodu omezení připojení.",
+      "fr": "Režim připojení 2,4 GHz",
+      "usb": "Režim připojení kabelu"
+    },
+    "sleep": {
+      "backlight": "Čas automatického vypnutí podsvícení",
+      "magnet": "Doba nečinnosti při skenování matice klávesnice",
+      "magnet_range": "Doba nečinnosti při skenování matice musí být delší než zpoždění vypnutí podsvícení a kratší než doba časového limitu pro přechod do režimu spánku.",
+      "magnet_tip": "Doba nečinnosti při skenování matice klávesnice s Hallovým efektem musí být delší než 60 sekund.",
+      "time": "Čas spuštění automatického režimu spánku"
+    },
+    "tips": {
+      "keepLayer_close": "2. Pokud je tato možnost vypnutá, NapePro se přepne spolu s « Vrstvou 1 », když vstoupíte na obrazovku úprav « Vrstva 1 ».",
+      "keepLayer_enable": "1. Pokud je tato možnost zapnutá, např. pokud NapePro běží na « Vrstvě 0 », zůstane na « Vrstvě 0 », i když vstoupíte na obrazovku úprav « Vrstva 1 »."
+    },
+    "title": {
+      "keepLayer": "Režim úprav vrstev"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Zařízení připojeno",
+        "idle": "Klepnutím připojte zařízení",
+        "pending": "Spouštění autorizace..."
+      },
+      "download_assistant": {
+        "idle": "Kliknutím stáhnete nejnovější Assistant"
+      },
+      "resume_assistant": {
+        "done": "Pokračovat ve zpracování",
+        "idle": "Assistant zapnut",
+        "pending": "Pokračování ve zpracování...",
+        "prompt": "Otevřel jsem jej"
+      },
+      "undo_remap": {
+        "done": "Přiřazení kláves zrušeno",
+        "idle": "Zrušit toto přiřazení kláves",
+        "pending": "Rušení..."
+      }
+    },
+    "clear_tooltip": "Vymazat konverzaci",
+    "close_tooltip": "Zavřít",
+    "deep_thinking": "Hluboké přemýšlení",
+    "generated_content_notice": "Obsah generovaný AI může obsahovat chyby. Zkontrolujte.",
+    "input_placeholder": "Zeptat se Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Zaměřit se na rychlou odpověď",
+        "label": "Rychlejší"
+      },
+      "deepseek-v4-pro": {
+        "description": "Pro složitější úkoly",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Vyvážený",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normální",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Provádění bylo dokončeno, ale nebyla přijata žádná zobrazitelná odpověď.",
+    "pin": {
+      "tooltip_off": "Odepnout",
+      "tooltip_on": "Připnout okno chatu"
+    },
+    "pinned_success": "Dialogové okno je připnuté a nelze s ním pohybovat.",
+    "quick": {
+      "connect_keyboard": "Přiřadit klávesu mezerníku na A",
+      "remap_space": "Změnit světelný efekt na Band Spiral Val",
+      "set_light": "Otevřít Discord"
+    },
+    "result": {
+      "connect_failed": "Chyba připojení: {{error}}",
+      "device_connected": "Zařízení připojeno",
+      "no_device_undo": "Není připojeno žádné zařízení, takže přiřazení nelze zrušit.",
+      "no_remap_to_undo": "Neexistuje žádné přiřazení ke zrušení.",
+      "undo_failed": "Zrušení přiřazení se nezdařilo: {{error}}",
+      "undo_success": "Poslední přiřazení zrušeno a obnoveno {{count}} kláves."
+    },
+    "select_model": "Vybrat model",
+    "status": {
+      "answering": "Odpovídá",
+      "executing": "Provádění",
+      "loading": "Načítání",
+      "thinking": "Přemýšlení",
+      "verifying": "Ověřování"
+    },
+    "stopped": "Zastaveno",
+    "title": "Keychron AI",
+    "unpinned_success": "Odepnuto",
+    "welcome": "Dobrý den! « Asistent Keychron AI » vám může pomoci připojovat zařízení, přiřazovat klávesy, přizpůsobovat efekty RGB, vytvářet makra a mnoho dalšího."
+  },
+  "application": {
+    "addr": "Rychlé spuštění webové stránky",
+    "add_addr": "Přidat adresu",
+    "apple_silicon_version": "Stáhnout pro Apple Silicon (.pkg)",
+    "app_duplicate": "Aplikace již existuje, není třeba ji přidávat znovu.",
+    "app_hint": "Můžete nastavit klávesovou zkratku, vybrat software, který chcete rychle otevřít, a poté jej přiřadit ke klávese.",
+    "app_placeholder": "Vyberte prosím aplikaci",
+    "clear_all": "Vymazat vše",
+    "desktop_old_content": "Stáhněte a nainstalujte nejnovější verzi desktopové služby, abyste mohli tuto funkci používat.",
+    "desktop_old_title": "Byla zjištěna zastaralá desktopová služba.",
+    "download_keychron_assistant": "Pokud není nainstalován, klikněte pro stažení",
+    "download_new_assistant_tip": "Stáhněte nejnovější verzi Keychron Assistant, abyste mohli používat všechny funkce.",
+    "download_zip_tip": "Upozornění: Před instalací Keychron Assist je nutné rozbalit stažený soubor.",
+    "file_not_found": "Soubor neexistuje",
+    "intel_version": "Stáhnout pro počítače Intel Mac (.dmg)",
+    "keySetting": "Tato klávesa již má zkratku!",
+    "key_no_conf": "Nebyly nastaveny žádné klávesové zkratky",
+    "limited": "Překročen maximální limit. V současné době je limit pro rychlé spuštění 5. V budoucnu plánujeme tento počet zvýšit.",
+    "need_keychron_assistant": "Tato funkce vyžaduje spuštěnou aplikaci Keychron Assistant.",
+    "no_key_selected": "Není vybrána žádná klávesa",
+    "open_assistant_no_response_tip": "Pokud se po kliknutí na « Otevřít » nic nestane, stáhněte nejnovější Assistant a zkuste to znovu.",
+    "open_tip1": "1. Funkce rychlého spuštění spočívá v propojení aplikace, kterou chcete rychle spustit, s tlačítkem. Kliknutím na toto tlačítko se aplikace rychle spustí.",
+    "open_tip2": "2. Nejprve stáhněte Assist a přidejte aplikaci pro rychlé spuštění. Poté se vraťte do spouštěče klávesnice a propojte a spusťte klávesy.",
+    "select_key_to_bind": "Vyberte klávesy na klávesnici, které chcete přiřadit k tomuto nastavení.",
+    "soft": "Aplikace pro rychlý start",
+    "submit_hint": "Vyberte software, který chcete rychle otevřít, a klikněte na [Odeslat]. Po odeslání lze rychlé otevření aktivovat a používat.",
+    "title_placeholder": "Vlastní název (volitelné)",
+    "unsupported_feature": "Nepodporovaná funkce",
+    "unsupported_feature_download_new_version": "Tato funkce není podporována. Stáhněte nejnovější verzi a vyzkoušejte ji.",
+    "url": "Rychlé otevření webové stránky",
+    "url_hint": "Můžete nastavit klávesovou zkratku, vybrat webovou adresu, kterou chcete rychle otevřít, a poté ji přiřadit ke klávese.",
+    "url_placeholder": "Zadejte platnou adresu URL."
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Pokračovat",
+      "later": "Později",
+      "openSystemPreferences": "Otevřít předvolby systému",
+      "restartMessage": "Oprávnění pro usnadnění přístupu bylo úspěšně uděleno. Pro použití je nutný restart aplikace.",
+      "restartNow": "Restartovat nyní",
+      "restartTitle": "Oprávnění uděleno",
+      "step1": "Klikněte na tlačítko níže pro přechod na stránku oprávnění pro usnadnění přístupu systému.",
+      "step2": "Najděte a zapněte přepínač Launcher Assistant pro autorizaci.",
+      "step3": "Zadejte své heslo",
+      "step4": "Po autorizaci aplikaci ukončete a znovu otevřete, aby se změny projevily.",
+      "welcomeTitle": "Vítejte v aplikaci Asistent"
+    },
+    "click_no_response_tip": "Otevřete nastavení myši v počítači a upravte možnosti ukazatele, posouvání a klikání.",
+    "common": {
+      "add": "Přidat",
+      "back": "Zpět",
+      "delete": "Smazat",
+      "info": "Informace",
+      "refresh": "Obnovit",
+      "settings": "Nastavení"
+    },
+    "hint_reset": "Byla zjištěna změna zařízení. Vzhledem k rozdílům v rozložení nemusí některé klávesy fungovat tak, jak je uvedeno v rychlém startu. Chcete resetovat nastavení, aby odpovídalo novému rozložení?",
+    "hint_reset_1": "Zjistili jsme, že jste přešli na jiné zařízení. Chcete obnovit nastavení?",
+    "hint_reset_2": "(Poznámka: Vzhledem k rozdílům v rozložení kláves mezi jednotlivými modely se může stát, že zobrazení v rychlém spuštění nebude odpovídat skutečným funkcím, což může mít za následek nefunkčnost některých kláves.)",
+    "home": {
+      "addAddress": "Přidat adresu",
+      "addSoftwareDescription": "Přidejte software, který chcete rychle otevřít, níže a poté klikněte na „Rychlý start“, abyste tlačítko v launcheru přiřadili.",
+      "delete": "smazat",
+      "onceAddedDescription": "Jakmile přidáte svou aplikaci níže, klikněte na tlačítko pro návrat zpět.",
+      "quickStartApplication": "Aplikace pro rychlý start",
+      "search": "Hledat",
+      "setUpQuickStart": "Nastavení rychlého spuštění",
+      "tooltipText1": "1. Funkce rychlého spuštění znamená přiřazení aplikace, kterou chcete rychle spustit, k určitému tlačítku. Kliknutím na tlačítko aplikaci rychle spustíte.",
+      "tooltipText2": "2. Klikněte na znaménko „+“ níže, abyste vybrali rychlý start, který chcete spustit, a klikněte na „Otevřít rychlý start“, abyste se vrátili do spouštěče, kde můžete přiřadit klávesovou zkratku a spustit program."
+    },
+    "license": {
+      "agree": "Souhlasím",
+      "disagreeAndWithdraw": "Nesouhlasit a odstoupit",
+      "userLicenseAgreement": "Licenční smlouva s uživatelem",
+      "welcomeDescription": "Prosím, souhlaste s",
+      "welcomeDescriptionEnd": "abychom vám mohli lépe sloužit",
+      "welcomeTitle": "Vítejte v aplikaci Asistent"
+    },
+    "open_title": "1. Pro použití rychlého spuštění musíte stáhnout Assist.",
+    "open_title2": "2. Kvůli aktualizacím softwaru se doporučuje stáhnout a nainstalovat nejnovější verzi Assist.",
+    "settings": {
+      "aikeyUpdate": "Vylepšení AIKey: přidány vlastní předvolby a rychlé spuštění, optimalizováno odesílání příkazů a zpracování odpovědí, výrazně zlepšena stabilita a použitelnost.",
+      "autostart": "Automatické spuštění při startu",
+      "currentLatestVersion": "Aktuální nejnovější verze",
+      "endUserLicenseAgreement": "Licenční smlouva s koncovým uživatelem",
+      "fixedKnownIssues": "Opraveny známé problémy",
+      "interfaceOptimization": "Optimalizace rozhraní",
+      "language": "jazyk",
+      "mosUpdate": "Optimalizace algoritmu posouvání/zrychlení MOS: přestavěna křivka zrychlení a strategie vzorkování pro plynulejší a konzistentnější zážitek při nízkých i vysokých rychlostech, s menším chvěním a latencí.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Ochranná známka Keychron Assistant patří společnosti Keychron.",
+      "nkroDescription2": "Zakázání NKRO znamená, že klávesnice bude správně registrovat až 6 současných stisků kláves.",
+      "selectLanguage": "vybrat jazyk",
+      "title": "Nastavení",
+      "updateLog": "Záznam aktualizací"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Magnetický spínač Gateron Jade",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast magnetický spínač",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Některé klávesy se nepodařilo kalibrovat, zkontrolujte prosím přepínač na klávesnici a nastavení kláves!",
+    "set_successfully": "Konfigurace přepínače byla úspěšně změněna.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Zkontrolujte, zda vyměněný magnetický spínač na klávesnici odpovídá vybrané možnosti magnetického spínače.",
+    "sure_content2": "Kliknutím na tlačítko „Potvrdit“ níže přejdete na stránku kalibrace, kde můžete tyto klávesy kalibrovat.",
+    "sure_title": "Jste si jisti, že chcete změnit typ spínače?",
+    "switch_type_settings": "Nastavení typu spínače",
+    "tip": {
+      "1": "Tato funkce umožňuje nastavit typ magnetického spínače celé klávesnice. Po konfiguraci se barva okraje kláves změní podle typu magnetického spínače, který vyberete. Pořadí nastavení je následující:",
+      "2": "Nejprve vyměňte všechny magnetické spínače na klávesnici (celá klávesnice podporuje pouze jeden typ magnetického spínače) a zkontrolujte, zda jsou vyměněné spínače uvedeny v seznamu níže.",
+      "3": "Vyberte níže možnost typu magnetického spínače a kliknutím na tlačítko „Nastavit všechny klávesy“ dokončete konfiguraci.",
+      "4": "Překalibrujte všechny klávesy, abyste zabránili vlivu rozdílů v typech magnetických spínačů."
+    },
+    "tip_reset": "Kliknutím na toto tlačítko pro resetování vymažete všechny dříve nakonfigurované položky rychlého spuštění.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "Magnetický spínač TTC KOM"
+  },
+  "common": {
+    "advance": "Pokročilý režim",
+    "basic": "Základní",
+    "beta_test_version": "Beta verze",
+    "cancel": "Vypnuto",
+    "cancel_btn": "Zrušit",
+    "clear": "Vymazat",
+    "close": "Vypnuto",
+    "connected": "Připojeno",
+    "connect_btn": "Připojit",
+    "connect_tip": "chce se připojit k zařízení HID",
+    "create": "Vytvořit",
+    "delete": "Odstranit",
+    "deleteConfirm": "Potvrdit obnovení těchto údajů?",
+    "disconnected": "Nepřipojeno",
+    "download": "Stáhnout",
+    "empty": "Prázdný",
+    "error": "Chyba",
+    "export": "Exportovat",
+    "general": "Obecné",
+    "hide": "Skrýt",
+    "iknow": "Rozumím",
+    "import": "Importovat",
+    "is": "Ano",
+    "keyboard": "Klávesnice",
+    "key_back": "Vrátit zpět",
+    "key_confirm": "Potvrdit",
+    "loading": "Načítání...",
+    "matrix": "Testovací matice",
+    "max_string_length": "Text překračuje maximální délku",
+    "min": "Minuty",
+    "mouse": "Myš",
+    "noResult": "Žádné výsledky",
+    "not": "Ne",
+    "notSubmit": "Neodeslaná data. Odeslat nyní?",
+    "on": "Zapnuto",
+    "open": "Zapnuto",
+    "paired": "spárováno",
+    "plugged_in": "Připojeno",
+    "plug_and_ret": "Připojte zařízení a zkuste to znovu.",
+    "plug_and_retry": "Připojte zařízení a zkuste to znovu.",
+    "recover": "Obnovit",
+    "reset": "Obnovit rozložení",
+    "resetLayout": "Obnovit rozložení",
+    "reset_single": "Jednoduchý reset",
+    "resolution_not_support": "Mapu klávesnice nelze zobrazit, protože okno prohlížeče je příliš malé.",
+    "results": "Výsledky",
+    "save": "Uložit",
+    "search": "Hledat",
+    "select": "Výběr",
+    "selectall": "Vybrat vše",
+    "status": {
+      "update_success": "Aktualizace úspěšně dokončena"
+    },
+    "submit": "Potvrdit",
+    "timeSync": "Kalibrovat čas obrazovky",
+    "turnoff": "VYPNOUT",
+    "turnon": "ZAPNOUT",
+    "type": "Typ",
+    "upload": "Nahrát",
+    "view": "Zobrazit",
+    "warring": "Varování",
+    "window_too_small": "Náhled nelze zobrazit, protože okno je příliš malé."
+  },
+  "connecting": "Připojování",
+  "cross": {
+    "btn": {
+      "active": "Multiplatformní klávesnice/myš",
+      "agree": "Přijmout",
+      "cancel": "Zrušit připojení",
+      "close": "Zavřít",
+      "connect": "Připojit",
+      "disconnect": "Odpojit",
+      "minimize": "Minimalizovat okno",
+      "quick": {
+        "connect": "Připojení jedním kliknutím"
+      },
+      "reject": "Odmítnout",
+      "reject_cancel": "cancel",
+      "trust": "Důvěryhodné zařízení",
+      "waiting": "Čekání"
+    },
+    "disconnect_confirm": {
+      "content": "Po odpojení se přenos zastaví. Již zahájené přenosy se uloží do historie, čekající soubory se zahodí.",
+      "title": "Probíhá přenos souboru"
+    },
+    "file_transfer": {
+      "average_speed": "Průměrná rychlost",
+      "change": "Změnit",
+      "clear": "Vymazat",
+      "clear_failed_desc": "Nelze vymazat místní historii přenosů",
+      "clear_failed_title": "Vymazání se nezdařilo",
+      "connected": "Připojeno",
+      "delete": "Smazat",
+      "desc": "Podporuje jakýkoli typ souboru · Stabilní přenos do připojených počítačů",
+      "direction": {
+        "receive": "Přijmout",
+        "send": "Odeslat"
+      },
+      "dir_err_desc": "Nelze použít vybranou složku pro příjem",
+      "dir_err_title": "Aktualizace složky se nezdařila",
+      "dir_ok_desc": "Nově přijaté soubory se uloží do vybrané složky",
+      "dir_ok_title": "Složka pro ukládání aktualizována",
+      "drop_unavailable_desc": "Pomocí tlačítka « Vybrat » vyberte tento soubor",
+      "drop_unavailable_title": "Nelze přečíst cestu k souboru",
+      "elapsed_label": "Uplynulý čas",
+      "enable": "Povolit přenos souborů",
+      "file_missing_desc": "Původní soubor byl přesunut nebo smazán, nelze odeslat znovu",
+      "file_missing_title": "Původní soubor neexistuje",
+      "history": "Historie přenosů",
+      "no_active": "Žádný probíhající přenos souborů",
+      "no_history": "Žádná historie přenosů souborů",
+      "open": "Nastavení",
+      "open_err_desc": "Nelze otevřít složku pro příjem souborů",
+      "open_err_title": "Nelze otevřít složku",
+      "open_folder": "Otevřít",
+      "peer_cancelled": "Druhá strana zrušila přenos",
+      "quick_send": "Rychlé odeslání",
+      "quick_send_desc": "Vyberte soubor a odešlete jej přímo do připojeného počítače",
+      "receive_failed_desc": "Příjem souboru neúplný nebo nelze zapsat lokálně",
+      "receive_failed_title": "Chyba při příjmu souboru",
+      "receiving": "Přijímání...",
+      "receiving_path": "Místní cesta příjmu",
+      "resend": "Odeslat znovu",
+      "select_button": "Vybrat soubor",
+      "select_desc": "Vyberte konkrétní soubor k přenosu",
+      "select_title": "Kliknutím vyberte soubor",
+      "sending": "Odesílání...",
+      "send_failed_desc": "Nelze odeslat vybraný soubor",
+      "send_failed_title": "Přenos souboru se nezdařil",
+      "send_to": "Odeslat do",
+      "status": {
+        "cancelled": "Zrušeno",
+        "failed": "Odeslání se nezdařilo",
+        "received": "Přijato",
+        "receive_error": "Chyba příjmu",
+        "sent": "Odesláno"
+      },
+      "title": "Přenos souborů",
+      "transfer_time": "Čas přenosu",
+      "transmitting": "Přenášení...",
+      "unsupported_file": "Formát souboru není podporován pro přenos",
+      "waiting": "Čekání na přenos"
+    },
+    "notification": {
+      "conn_end_t": "Připojení přerušeno",
+      "conn_err_t": "Chyba připojení",
+      "conn_lost_t": "Připojení přerušeno",
+      "conn_reject_t": "Žádost o připojení odmítnuta",
+      "conn_req_err": "Chyba při odesílání žádosti o připojení",
+      "hist_clear_err": "Chyba při vymazání historie připojení",
+      "hist_clear_ok": "Historie připojení vymazána",
+      "id_err_t": "Chyba ověření identity",
+      "network_lost": "Síťové připojení přerušeno, multiplatformní relace ukončena",
+      "op_err_t": "Operace se nezdařila",
+      "op_ok_t": "Operace byla úspěšná",
+      "pair_id_err": "Chyba ověření identity spárovaného zařízení",
+      "pair_ok": "Zařízení úspěšně spárováno",
+      "pair_ok_t": "Párování bylo úspěšné",
+      "peer_end": "Druhá strana odpojila multiplatformní relaci",
+      "peer_reject": "Druhá strana odmítla žádost o připojení",
+      "reconfirm_t": "Je vyžadováno nové potvrzení",
+      "sync_err_t": "Synchronizace se nezdařila",
+      "trust_id_changed": "Identita důvěryhodného zařízení se změnila. Potvrďte znovu žádost o připojení.",
+      "trust_id_err": "Chyba ověření identity důvěryhodného zařízení",
+      "trust_rm_err": "Chyba při odstraňování důvěryhodného zařízení",
+      "trust_sync_err": "Pověření důvěry nebyla synchronizována s druhou stranou"
+    },
+    "page": {
+      "sub_desc": "Připojte dva počítače, používejte multiplatformní klávesnici/myš · Synchronizujte schránku ručně · Přetahujte soubory — stejně přirozeně jako na jednom počítači.",
+      "sub_title": "Náhled funkcí",
+      "title": "Multiplatforma"
+    },
+    "panel": {
+      "desc": "Až 2 připojené počítače (včetně tohoto) · Funkce zařízení se po připojení odemknou",
+      "found": "Detekovat zařízení",
+      "history": {
+        "active": "Aktivní připojení",
+        "passive": "Pasivní připojení",
+        "subtitle": "Nedávná připojení",
+        "title": "Historie připojení"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Jiné",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Skenovat všechny sítě Wi-Fi stejného routeru",
+        "start": "Zahájit skenování",
+        "stop": "Zastavit skenování",
+        "title": "Skenování místní sítě.."
+      },
+      "tag_1": "Důvěryhodný",
+      "title": "Připojit počítač"
+    },
+    "scan": {
+      "incoming_notice": "Po vašem souhlasu bude druhá strana moci navázat multiplatformní připojení k tomuto počítači.",
+      "incoming_subtitle": "Chce se připojit k tomuto počítači",
+      "incoming_title": "Žádost o připojení přijata",
+      "network_changed_cancel": "Teď ne",
+      "network_changed_confirm": "Skenovat znovu",
+      "network_changed_desc": "Síťové prostředí se změnilo. Skenovat znovu?",
+      "network_changed_title": "Síťové prostředí změněno",
+      "rejected": "Druhá strana odmítla žádost o připojení",
+      "request_confirm": "Čekání na potvrzení druhé strany... Žádost o připojení brzy vyprší",
+      "request_tip": "Žádost o připojení k",
+      "trust": "Důvěřovat tomuto zařízení a automaticky přijímat žádosti o připojení v budoucnu",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Automatické připojení",
+      "automatic_connection_help": "Automatické připojení: Vyberte zařízení ze seznamu důvěryhodných zařízení tohoto počítače. Obě zařízení se musí vzájemně nakonfigurovat, aby se po spuštění Assistant automaticky připojila.",
+      "automatic_connection_hint": "(Obě zařízení musí být nakonfigurována)",
+      "clear_automatic_device": "Odstranit zařízení automatického připojení",
+      "close": "Zavřít",
+      "confirm": "Potvrdit",
+      "disconnect_shortcut": "Odpojit multiplatformní relaci",
+      "disconnect_shortcut_help": "Pokud multiplatformní funkce nefunguje, můžete se odpojit touto kombinací kláves. Tuto kombinaci lze změnit, ale ne odstranit.",
+      "enter_shortcut_key": "Zadat vlastní klávesu",
+      "no_trusted_devices": "Žádná důvěryhodná zařízení",
+      "remove_confirmation": "Potvrdit odebrání důvěry pro {device}?",
+      "remove_device": "Odstranit důvěryhodné zařízení",
+      "select_device": "Vybrat důvěryhodné zařízení",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Klávesová zkratka",
+      "system_lock_shortcut": "Uzamknout počítač",
+      "title": "Důvěra a automatické připojení",
+      "trusted_count": "Počet důvěryhodných zařízení ({count})",
+      "trust_help": "Důvěryhodné zařízení: Důvěryhodné zařízení se může příště připojit bez vyžadování schválení na tomto počítači."
+    },
+    "step": {
+      "collapse": "Sbalit",
+      "connected": "Připojeno",
+      "desc": "Skenujte a spárujte další počítače v Keychron Assistant · Po připojení bude k dispozici multiplatformní klávesnice/myš a přenos souborů",
+      "desc_1": "Automaticky detekovat počítače ve stejné místní síti a odeslat žádost o připojení",
+      "desc_2": "Druhá strana klikne na « Přijmout » pro dokončení párování",
+      "desc_3": "Všechny multiplatformní funkce jsou k dispozici",
+      "expand": "Rozbalit",
+      "local": "Tento počítač",
+      "title": "Proces připojení",
+      "title_1": "Skenovat a odeslat žádost",
+      "title_2": "Potvrzení druhé strany",
+      "title_3": "Připojení navázáno",
+      "trust": "Připojeno · Důvěryhodno",
+      "wait_1": "Čekání",
+      "wait_2": "Klikněte na « Povolit »",
+      "wait_3": "Párování dalších počítačů"
+    },
+    "tabs": {
+      "file_transfer": "Přenos souborů",
+      "settings": "Nastavení"
+    },
+    "time": {
+      "ago": "Před",
+      "days": "Dny",
+      "hours": "Hodiny",
+      "just_now": "Před chvílí",
+      "last": "Minulost",
+      "last_connection": "Poslední připojení",
+      "minutes": "Minuty",
+      "months": "Měsíce",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Dole",
+      "desc": "Když kurzor myši překročí zadaný okraj obrazovky, klávesnice a myš počítače mohou ovládat připojené zařízení.",
+      "left": "Vlevo",
+      "off": "Vypnuto",
+      "right": "Vpravo",
+      "title": "Nastavit okraj překročení obrazovky",
+      "top": "Nahoře"
+    },
+    "web": {
+      "auto_connect_target": "Cíl automatického připojení",
+      "center_cursor": "Vycentrovat kurzor",
+      "clipboard": "Schránka",
+      "clipboard_desc": "Ručně synchronizovat zkopírovaný obsah mezi počítači",
+      "connect_assistant": "Otevřít Assistant",
+      "connect_hint": "Funkce připojení musí být prováděny uvnitř Assistant",
+      "custom_screenshot": "Vlastní snímek obrazovky",
+      "direction": "Směr",
+      "drop_box_key": "Zkratka panelu přetažení",
+      "exit_application": "Odpojit",
+      "file_transfer": "Přenos souborů",
+      "file_transfer_desc": "Vyberte soubor nebo použijte zkratku pro otevření panelu přetažení",
+      "hold_ctrl": "Podržte Ctrl pro multiplatformu",
+      "in_progress": "úloh",
+      "items": "položek",
+      "keyboard_mouse": "Multiplatformní klávesnice / myš",
+      "keyboard_mouse_desc": "Přepnout ovládání, když kurzor překročí okraj obrazovky",
+      "loading": "Získávání multiplatformního stavu z Assistant...",
+      "lock_pc": "Uzamknout počítač",
+      "max": "Maximum",
+      "not_set": "Nenastaveno",
+      "off": "Vypnuto",
+      "on": "Zapnuto",
+      "ongoing": "Probíhá",
+      "read_only": "Pouze pro čtení · Změňte nastavení v Keychron Assistant",
+      "recent_items": "Nedávné položky",
+      "save_dir": "Složka pro ukládání souborů",
+      "settings": "Nastavení",
+      "settings_desc": "Důvěryhodná zařízení · Automatické připojení · Zkratky",
+      "shortcut_mapping": "Přiřazení zkratek",
+      "switch_pc": "Změnit počítač",
+      "sync_mode": "Režim synchronizace",
+      "target_device": "Cílové zařízení",
+      "title": "Stav multiplatformních funkcí",
+      "trusted_devices": "Počet důvěryhodných zařízení",
+      "trust_auto_connect": "Důvěra a automatické připojení"
+    }
+  },
+  "debounce": {
+    "backlight": "Doba spánku podsvícení nesmí být kratší než 5 sekund.",
+    "mode": "Režim zdvihu",
+    "press": "Doba stisku",
+    "release": "Zvednutí sekundy",
+    "response": "Odezva v sekundách",
+    "scan": "Rychlost skenování",
+    "setting": "Nastavení doby zdvihu klávesnice",
+    "sleep_limit": "Doba spánku nesmí být kratší než 1 minuta.",
+    "tip": "Čas spuštění automatického vypnutí podsvícení musí být kratší než čas spuštění automatického režimu spánku.",
+    "warning": {
+      "content": "(Poznámka: nastavení pod 10 ms může způsobit riziko dvojitého kliknutí. Konfigurujte opatrně.)",
+      "title": "Opravdu nastavit?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Demo klávesnice",
+    "device_mouse": "Demo myši",
+    "exit": "Ukončit demo režim",
+    "keyboard": "Vyzkoušet bez klávesnice",
+    "mode": "Demo režim",
+    "mouse": "Vyzkoušet bez myši",
+    "tip": "Poznámka: jste v demo režimu, který slouží pouze k prezentaci a nemá žádné skutečné funkce.",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Verze zařízení"
+  },
+  "device_add": "Připojení",
+  "device_select": {
+    "notify": "Vyberte zařízení ze seznamu a pokračujte.",
+    "select": "Tak do toho",
+    "un_select": "Není vybráno žádné zařízení"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Test psaní"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Připojení",
+      "2": "Další",
+      "3": "Předchozí",
+      "6": "Další aktualizace",
+      "enterBootloaderMode": "Vstoupit do režimu aktualizace",
+      "flash": "Flash firmwaru",
+      "matchDevice": "Shoda zařízení",
+      "retry": "Zkusit znovu",
+      "startUpgrading": "Zahájit aktualizaci"
+    },
+    "description": "Poznámky k verzi",
+    "downloadFailed": "Chyba při stahování souboru firmwaru",
+    "error": {
+      "diff_model": "Modely firmwaru zařízení se neshodují",
+      "get_dfu_version": "Nepodařilo se získat verzi aktualizace firmwaru zařízení"
+    },
+    "flashError": "Stažení firmwaru se nezdařilo",
+    "flashSuccess": "Firmware byl úspěšně aktualizován",
+    "info": {
+      "currentVersion": "Aktuální verze",
+      "latestVersion": "Nejnovější verze",
+      "updateSize": "Velikost firmwaru",
+      "updateTime": "Poslední aktualizace"
+    },
+    "mouse": {
+      "step1_hid_device": "Stiskněte postupně klávesy K, E, Y na klávesnici a pokračujte dalším krokem, jakmile se zobrazí výzva k připojení zařízení HID."
+    },
+    "notFound": "Nejnovější firmware zařízení nebyl nalezen.",
+    "productNotExist": "Informace o zařízení nebyly získány",
+    "requestFail": "Nepodařilo se získat zařízení; zkontrolujte, zda není používáno jinými programy.",
+    "syncQuickStart": "Synchronizovat rychlé spuštění",
+    "tip": {
+      "confirm": "Potvrďte",
+      "currentSelect": "Aktuálně vybráno"
+    },
+    "tips": {
+      "0": "Pro aktuální zařízení není k dispozici žádná aktualizace firmwaru.",
+      "4": "Pokud používáte zařízení se systémem Windows a nemáte nainstalovaný ovladač QMK Toolbox Driver, postupujte podle následujících kroků. Pokud jste již ovladač QMK Toolbox Driver nainstalovali, klikněte na tlačítko Další.",
+      "5": "Kliknutím na tlačítko „Download Toolbox“ (Stáhnout Toolbox) níže stáhněte a rozbalte aplikaci Toolbox.",
+      "6": "Po rozbalení souborů klikněte pravým tlačítkem na ikonu Toolbox nebo vyhledejte „driver“ v systémovém vyhledávacím poli a poté vyberte „Spustit jako správce“ pro jeho otevření.",
+      "7": "Otevřete jej a klikněte na nabídku 'Tool'.",
+      "8": "Klikněte na 'Install Drivers' (Instalovat ovladače), pokračujte kliknutím na 'yes' (Ano) pro zahájení instalace ovladačů firmwaru a vyčkejte na dokončení instalace.",
+      "9": "Po dokončení instalace můžete kliknutím na tlačítko Next (Další) zahájit proces flashování firmwaru.",
+      "10": "Poznámka: Můžete kliknout na tlačítko",
+      "11": "Postupujte podle níže uvedených kroků.",
+      "12": "V aktuálním stavu odpojte kabel USB klávesnice a nechte klávesnici odpojit.",
+      "13": "Zatímco je klávesnice odpojená, stiskněte a podržte klávesu ESC klávesnice a současně připojte klávesnici k počítači pomocí kabelu USB. nechte klávesnici přejít do stavu přípravy na aktualizaci firmwaru.",
+      "15": "Po úspěšném spárování se zobrazí tlačítko „Aktualizovat firmware“. Kliknutím na něj spustíte aktualizaci firmwaru.",
+      "16": "Během aktualizace firmwaru neodpojujte zařízení od počítače.",
+      "18": "Stáhněte si sadu nástrojů",
+      "19": "Nainstalujte instruktážní video Toolbox Driver",
+      "20": "abyste pochopili podrobný postup instalace ovladače Toolbox Driver.",
+      "22": "1.Toggle the keyboard switch to Windows mode.",
+      "23": "Stiskněte a podržte klávesy Fn a - na klávesnici po dobu nejméně 5 sekund, aby se klávesnice připravila na aktualizaci firmwaru, dokud se nerozsvítí modrá kontrolka.",
+      "24": "Po úspěšném spárování se zobrazí tlačítko „Aktualizovat firmware“. Kliknutím na něj spusťte aktualizaci firmwaru.",
+      "25": "Klikněte na tlačítko „Přiřadit zařízení“ níže, vyberte zařízení, které začíná ({{ mode }}), a přiřaďte jej.",
+      "26": "Aktualizujte modul Bluetooth v režimu USB.",
+      "27": "Klikněte na tlačítko níže pro získání nejnovější verze firmwaru.",
+      "28": "Při odpojené klávesnici podržte klávesu v levém horním rohu klávesnice a současně připojte klávesnici k počítači přes USB kabel, aby se dostala do stavu připravenosti k aktualizaci firmwaru.",
+      "bl-exceeded": "Překročen počet pokusů. Znovu připojte datový kabel.",
+      "clickMatchBtn": "Klikněte na tlačítko « Odpovídající zařízení » níže a vyberte zařízení začínající na {{dfuName}}.",
+      "currentDongle": "(Pro aktualizaci klávesnice/myši použijte kabelové připojení. Právě jste na stránce přijímače.)",
+      "link_wired_content": "Během bezdrátové aktualizace přejde myš do režimu spánku a nelze ji používat",
+      "link_wired_title": "Před aktualizací připojte kabel",
+      "longPress": "Nejprve stiskněte ESC, poté podržte klávesu Tab současně po dobu 3 sekund.",
+      "matchErr": "Aktuálně nespárováno. Vyberte ručně zařízení k aktualizaci.",
+      "mouseTip2": "2. Pokud je propojení již propojeno a shoda je již k dispozici. Klepnutím na firmware brush jej spustíte.",
+      "mouseTip4": "Klepněte na tlačítko Připojit zařízení a vyberte možnost Zavaděč.",
+      "mouseTip6": "(Během aktualizace firmwaru neodpojujte přijímač od počítače.)",
+      "mouseTip7": "Počkejte, až se aktualizace dokončí – zobrazí se zpráva o úspěšném dokončení.",
+      "patch": {
+        "1": "Tato aktualizace je bezpečnostní záplata. Nejprve proveďte aktualizaci podle níže uvedeného návodu.",
+        "2": "V aktuálním stavu odpojte USB kabel klávesnice, abyste klávesnici odpojili.",
+        "3": "Při odpojené klávesnici odstraňte klávesu « Mezerník » a najděte malé tlačítko na kovovém plátku vedle přepínače.",
+        "4": "Podržte tlačítko a znovu připojte klávesnici k počítači přes USB kabel.",
+        "5": "Klikněte na tlačítko « Odpovídající zařízení » níže a vyberte zařízení označené (DFU).",
+        "6": "Po úspěšném spárování se objeví tlačítko « Flash firmware ». Klikněte na něj pro zahájení aktualizace bezpečnostní záplaty."
+      },
+      "toFlash": "Po úspěšném spárování se objeví tlačítko « Flash firmware ». Klikněte na něj pro zahájení aktualizace firmwaru."
+    },
+    "update": {
+      "dfu_check": "Zkontrolujte, zda je vybrané zařízení DFU správné."
+    },
+    "update_available": "K dispozici je aktualizovatelná verze firmwaru.",
+    "update_latest": "Toto je nejnovější verze firmwaru.",
+    "update_success": "Aktualizace byla úspěšná, klikněte na tlačítko „Připojit“ pro připojení aktuálního zařízení.",
+    "warning": "Během procesu zápisu firmwaru nevyjímejte zařízení ani neobnovujte stránku, abyste zabránili případnému poškození zařízení.",
+    "write": "Zápis"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Návod k zařízení",
+      "tutorial": "Návod",
+      "user_feedback": "Uživatelská zpětná vazba"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Jak nastavit automatický režim spánku a čas začátku vypnutí podsvícení v Launcher?",
+        "set_keyboard_bounce_time": "Jak nastavit dobu odezvy klávesnice v Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Jak nastavit klávesy podsvícení v Launcher?",
+        "set_mix_rgb": "Jak nastavit Mix RGB v Launcher?",
+        "set_per_key_rgb": "Jak nastavit RGB pro každou klávesu v Launcher?"
+      },
+      "bridge_firmware_update": "Jak flashnout firmware přijímače Keychron",
+      "create_mouse_macro": "Jak vytvořit makro myši v Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Jak obnovit tovární nastavení a aktualizovat firmware v Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Jak spravovat svůj HE profil v Launcher?",
+        "set_gamepad_analog_and_curves": "Jak nastavit analog gamepadu a křivky v Launcher?",
+        "set_long_press_switch": "Jak nastavit spínač dlouhého stisku v Launcher?",
+        "set_one_key_multiple_commands": "Jak nastavit více příkazů na jednu klávesu v Launcher?",
+        "set_snap_click": "Jak nastavit Snap Click v Launcher?",
+        "use_he_mode": "Jak používat režim HE v Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Jak fungují klávesy Fn na klávesnicích Keychron?",
+        "remap_key": "Jak přemapovat klávesu v Launcher?",
+        "set_keymap_language": "Jak nastavit jazyk mapování kláves v Launcher?",
+        "use_different_function_layers": "Jak používat různé funkční vrstvy?"
+      },
+      "key_test": {
+        "custom_sounds": "Jak přizpůsobit zvuk vaší klávesnice?",
+        "perform_keyboard_key_testing": "Jak provést test kláves klávesnice v Launcher?"
+      },
+      "macro": {
+        "create_macro": "Jak vytvořit makro v Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Jak resetovat myš na tovární nastavení v Launcher",
+      "mouse_angle_adjustment": "Jak používat nastavení úhlu v Launcher",
+      "mouse_firmware_update": "Návod k aktualizaci firmwaru myši",
+      "mouse_receiver_firmware_update": "Jak flashnout firmware přijímače Keychron",
+      "quick_start": {
+        "download_and_install_assistant": "Jak stáhnout a nainstalovat Keychron-Assistant?",
+        "set_quick_start": "Jak nastavit rychlý start v Launcher?"
+      },
+      "set_mouse_customize_buttons": "Jak nastavit vlastní tlačítka myši v Launcher",
+      "set_mouse_debounce_time": "Jak upravit debounce čas myši v Launcher",
+      "set_mouse_dpi_and_polling_rate": "Jak nastavit DPI a polling rate myši v Launcher",
+      "set_mouse_system_features_setting": "Jak nastavit systémové funkce myši v Launcher"
+    },
+    "user_manual": "Uživatelská příručka"
+  },
+  "issue": {
+    "content": "Obsah",
+    "device": "Zařízení",
+    "email": "E-mail",
+    "tips": {
+      "content": "Obsah je povinný",
+      "device": "Zařízení je povinné",
+      "email": "Neplatná e-mailová adresa",
+      "input": "Zadejte obsah",
+      "send": "Odeslaná zpráva",
+      "title": "Název je povinný"
+    },
+    "type": {
+      "1": "Vadné tlačítko / žádná odezva",
+      "2": "Problémy s připojením",
+      "3": "Hardwarová porucha",
+      "4": "Nevhodné rozložení / rozměry",
+      "5": "Problém s ovladačem",
+      "6": "Jiné",
+      "7": "Vyberte typ zpětné vazby"
+    }
+  },
+  "keycap": {
+    "character": "Abecední klávesy",
+    "fnc": "Funkční klávesy",
+    "general": "Obecné",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Číselné klávesy",
+    "symbol": "Klávesy symbolů",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Podržení = horní klávesa (modifikátor) · Klepnutí = spodní klávesa"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Kombinace kláves",
+      "combo_description": "Vlastní klávesová zkratka",
+      "launch_app": "Spustit aplikaci",
+      "launch_app_description": "Spustit aplikaci jedním kliknutím",
+      "launch_web": "Otevřít webovou stránku",
+      "launch_web_description": "Otevřít webovou stránku jedním kliknutím",
+      "macro": "Makro",
+      "macro_description": "Série akcí",
+      "remap": "Přiřadit znovu",
+      "remap_description": "Přiřadit jinou klávesu",
+      "title": "Přiřadit znovu {{key}}"
+    },
+    "codeInput": "Vstup klávesy",
+    "knob_not_support": "Aktuální firmware nepodporuje přizpůsobení knoflíku, aktualizujte firmware.",
+    "layer": {
+      "1": "1. Podržení dočasně aktivuje cílovou vrstvu; uvolnění klávesy obnoví původní hodnotu.",
+      "2": "2. Platí pouze od nižší vrstvy k vyšší; od vyšší vrstvy k nižší nemá žádný účinek.",
+      "3": "1. Jedno kliknutí vypne/zapne cílovou vrstvu; po vypnutí se přijme nejvyšší aktivní vrstva.",
+      "4": "2. Výchozí vrstva nemůže být vypnuta; pokud jsou všechny vrstvy vypnuty, přijme se výchozí vrstva.",
+      "5": "Funkce podržení je identická s MO; 5 kliknutí odpovídá TG.",
+      "6": "1. Kliknutí/podržení aktivuje vrstvu; aktivace probíhá pouze zdola nahoru.",
+      "7": "Snap Tap podporuje pouze klávesy s magnetickým spínačem.",
+      "8": "Jedno kliknutí aktivuje cílovou vrstvu jednosměrně, bez rozlišování vysokých a nízkých vrstev.",
+      "9": "Jedno kliknutí dočasně aktivuje výchozí vrstvu cíle jednosměrně, bez rozlišování vysokých a nízkých vrstev.",
+      "10": "1. Po výpadku napájení se klávesnice vrátí do výchozí vrstvy odpovídající systémovému přepínači, např. Win = vrstva 2, Mac = vrstva 0.",
+      "11": "2. Některé modely klávesnic nemají fyzický systémový přepínač a obvykle se vracejí do pevné výchozí vrstvy, např. vrstva 0.",
+      "error_info": "Systémový přepínač vaší klávesnice neodpovídá systému počítače; funkce modifikátorů se mohou změnit.",
+      "tip": "Tip:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Vyberte jednu nebo více modifikačních kláves a hlavní klávesu, poté aktivujte jedinou klávesou.",
+        "modifier_keys": "Modifikační klávesy",
+        "press_primary_key": "Stiskněte hlavní klávesu",
+        "primary_key": "Hlavní klávesa",
+        "title": "Kombinace kláves"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Klikněte na toto tlačítko pro otevření přiřazené aplikace.",
+        "no_available_apps": "Žádné dostupné aplikace",
+        "search_apps": "Hledat aplikace",
+        "title": "Spustit aplikaci"
+      },
+      "launch_web": {
+        "description": "Klikněte na toto tlačítko pro otevření přiřazené webové stránky.",
+        "title": "Otevřít webovou stránku",
+        "web_page_url": "URL webové stránky"
+      },
+      "macro": {
+        "description": "Nahrávejte makro přímo do vstupního pole: klávesy, které stisknete, budou zaznamenány jako sekvence akcí.",
+        "macro_keys": "Klávesy makra",
+        "press_key": "Stiskněte klávesu k nahrání",
+        "title": "Nahrát makro"
+      },
+      "remap": {
+        "description": "V co se má « {{key}} » změnit?",
+        "press_key": "Stiskněte klávesu k přiřazení",
+        "primary_keys": "Hlavní klávesy",
+        "title": "Přiřadit klávesy znovu"
+      }
+    },
+    "reset": {
+      "all": "Potvrdit resetování všech nastavení?",
+      "single": "Potvrdit resetování nastavení této klávesy?",
+      "title": "Opravdu chcete provést resetování?"
+    },
+    "tabs": {
+      "assist": "Rychlé spuštění",
+      "basic": "Základní",
+      "custom": "Vlastní",
+      "layers": "Vrstva",
+      "macro": "Makro",
+      "media": "Média",
+      "modtap": "Podržení / Klepnutí",
+      "mouse": "Myš",
+      "qmk_lighting": "Osvětlení",
+      "special": "Speciální",
+      "wt_lighting": "Osvětlení"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Vlastní",
+      "default_layer": "Výchozí vrstva",
+      "display": "Vybrat zobrazovací vrstvu",
+      "functional": "Skutečná funkční vrstva",
+      "funtional": "Aktuální",
+      "warn": "Pokud klávesy nefungují, přepněte systémový přepínač a znovu zapněte zařízení."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": "Chcete přejít na...",
+    "connect": {
+      "1": "Připojte zařízení přes kabel nebo přijímač 2.4G.\n(Některé modely podporují pouze kabelový režim)",
+      "2": "Klikněte na « Připojit » v levém horním rohu a vyberte zařízení ze seznamu."
+    },
+    "detectedKeyboardLanguage": "Zjistili jsme, že jazyk vaší klávesnice je...",
+    "guide_tip": "Postupujte podle níže uvedeného návodu pro připojení zařízení",
+    "keepCurrentSetting": "Ponechat aktuální nastavení",
+    "lang": "Jazyk rozvržení",
+    "resetSuccessContent": "Rozložení klávesnice bylo úspěšně resetováno.",
+    "resetSuccessTitle": "Resetování úspěšné",
+    "select_device": "Vyberte zařízení, které chcete připojit.",
+    "switchImmediately": "Přepnout"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Jas",
+    "color": "Barva",
+    "common": {
+      "setting_color": "Nastavení barvy"
+    },
+    "commonColor": "Běžné barvy",
+    "customColor": "Definovat barvy",
+    "decorate_light": {
+      "0": "Žádné",
+      "1": "Stálý",
+      "2": "Dýchání",
+      "3": "Cyklus odstínů",
+      "4": "Dostihy"
+    },
+    "effect": "Efekt",
+    "effect speed": "Rychlost",
+    "hue": "Chromatičnost",
+    "layer2": "RGB zóna",
+    "led": {
+      "sub": {
+        "title": "Tip: při nastavování barvy vyberte LED pásek níže."
+      },
+      "title": "Světelný pruh"
+    },
+    "level": "Úroveň",
+    "mix": {
+      "config": "Nastavení světelných efektů",
+      "hxxg": {
+        "hue": "Odstín",
+        "saturability": "Sytost",
+        "speed": "Rychlost"
+      },
+      "rk": "Tato funkce umožňuje nastavit na stejné klávesnici 2 různé klávesové zóny pro různé RGB světelné efekty. Pro každou zónu můžete nastavit různé časové intervaly ve smyčce a každý časový interval lze nastavit s různými RGB světelnými efekty.",
+      "timeLine": {
+        "second_tips": "Nastavená doba je příliš krátká či příliš dlouhá.",
+        "title": "Časová osa"
+      },
+      "verify_duration": {
+        "tip1": "Vstupní hodnota by měla být číslo větší než 1 a menší než 99!",
+        "tip2": "Lze zadat pouze dvě desetinná místa",
+        "tip3": "Zadaná hodnota je příliš velká.",
+        "tip4": "Zadaná hodnota je příliš malá."
+      }
+    },
+    "notSupport": "Zařízení nepodporuje nastavení světla",
+    "perkey": {
+      "effect": "Výběr efektu",
+      "effects": {
+        "0": "Obecné",
+        "1": "Dýchání",
+        "2": "Odezva jednoho tlačítka",
+        "3": "Odezva sousedící klávesy",
+        "4": "Celá klávesnice"
+      },
+      "redo": "opakovat",
+      "region": "Výběr oblasti",
+      "region_select": "Vyberte oblast",
+      "region_tip": "Vyberte oblast na klávesnici a nastavte barvu. Kliknutím na tlačítko Uložit změníte barvu příslušné oblasti.",
+      "rk": "Barvu každého tlačítka lze nastavit individuálně. Barvu tlačítka můžete změnit tak, že jej vyberete, kliknete na oblast, kde je barva nastavena, změníte barvu a uložíte ji.",
+      "save_warn": "Příliš mnoho zón RGB, prosím, smažte některé zóny RGB a zkuste to znovu.",
+      "select_tip": "Vybrané tlačítko nevytvoří oblast",
+      "select_warn": "Vyberte tlačítko",
+      "undo": "zpět"
+    },
+    "saturation": "Sytost",
+    "settingAllBrightnessArea": "Nastavení jasu všech zón",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Ozdobné světlo",
+      "indication": "Indikátorové lampy",
+      "led_light": "Ovládání světelného pruhu",
+      "mix_rgb": "Mix RGB",
+      "perkey_rgb": "RGB pro každou klávesu",
+      "screen": "Nastavení obrazovky",
+      "selection": "Podsvícení"
+    },
+    "underglow brightness": "Jas"
+  },
+  "lights": {
+    "0. None": "Žádné",
+    "1. Solid Color": "Jednobarevné",
+    "10. Cycle Pinwheel": "Cyklus větrník",
+    "11. Cycle Spiral": "Cyklus spirála",
+    "12. Dual Beacon": "Dvojitý maják",
+    "13. Rainbow Beacon": "Duhový maják",
+    "14. Jellybean Raindrops": "Kapky deště",
+    "15. Pixel Rain": "Pixelový déšť",
+    "16. Typing Heatmap": "Teplotní mapa psaní",
+    "17. Digital Rain": "Digitální rain",
+    "18. Reactive Simple": "Reaktivní jednoduchý",
+    "19. Reactive Multiwide": "Reaktivní víceúrovňový",
+    "2. Breathing": "Dýchání",
+    "20. Reactive Multinexus": "Reaktivní multinexus",
+    "21. Splash": "Jednobarevný rozstřik",
+    "22. Solid Splash": "Stálý rozstřik",
+    "23. Per Key Rgb": "Jednotlivé klávesy RGB",
+    "3. Band Spiral Val": "Spirála",
+    "4. Cycle All": "Úplný cyklus",
+    "5. Cycle Left Right": "Cyklus vlevo-vpravo",
+    "6. Cycle Up Down": "Cyklus nahoru-dolů",
+    "7. Rainbow Moving Chevron": "Duhový přechod",
+    "8. Cycle Out In": "Cyklus ven a dovnitř",
+    "9. Cycle Out In Dual": "Cyklus duální vnějšek-vnitřek"
+  },
+  "macro": {
+    "allchar": "Všechny znaky",
+    "closeDelay": "Zakázat zpoždění",
+    "code": "Zadání kódu",
+    "common": {
+      "flash": "Flash úložiště",
+      "title": "Pro přiřazení makra jej vyberte a poté klikněte na cílovou klávesu na mapě kláves výše."
+    },
+    "config": "Konfigurace",
+    "delay": "Zpoždění",
+    "delaySet": "Časové zpoždění",
+    "dynamicDelay": "Dynamické zpoždění",
+    "endREC": "Zastavit nahrávání",
+    "enterDown": "Vložit dolů",
+    "enterUp": "Vložit nahoru",
+    "fixedDelay": "Pevné zpoždění",
+    "inputdelay": "Zadání doby zpoždění",
+    "inputtexct": "Zadejte text",
+    "insertDelay": "Vložení zpoždění",
+    "keydown": "Stisknout",
+    "keyup": "Uvolnit",
+    "loopCount": "Počet smyček",
+    "loopCurrentDown": "Stiskněte tlačítko Stop",
+    "loopDown": "Libovolná klávesa Stop",
+    "loopOne": "Jedna smyčka",
+    "loopSet": "Nastavení smyčky",
+    "loopUp": "Uvolněte tlačítko Stop",
+    "macroReccord": "Záznam makra",
+    "macroSetup": "Nastavení makra",
+    "mouse": "Myš",
+    "notEqual": "Nebylo detektováno, že byla klávesa uvolněna. Pokračovat?",
+    "record": "Nahrávání",
+    "rename": "Přejmenovat",
+    "save": "Uložit",
+    "setRepeatCount": "Počet opakování",
+    "specialText": "Textová specifičnost",
+    "startREC": "Zahájit nahrávání",
+    "stop": "Zastavit",
+    "text": "Text",
+    "texttype": "Lze zadávat pouze anglická písmena, číslice a základní symboly.",
+    "tip": {
+      "clickCopy": "Kliknutím zkopírujete text",
+      "fixDelay": "Zde pevné zpoždění znamená, že je zabudováno do každé události a událost obsahuje zpožděnou událost.",
+      "keyDelay": "Zpoždění: {200}, Jednotka: MS",
+      "keyDown": "Resetovat: {-KC_A}",
+      "keyText": "Text: ABCDEF",
+      "keyUp": "Stiskněte: {+KC_A}",
+      "macro_text": "Zadejte makro, které chcete spustit"
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnetický",
+      "mechanical": "Mechanický",
+      "tip": "Tip",
+      "title": "Statistiky spínačů"
+    },
+    "calibration": {
+      "1": "Během kalibrace neodpojujte kabel USB, neodpojujte zařízení ani jej nevypínejte. V opačném případě může dojít k selhání zařízení.",
+      "2": "Spuštění kalibrace",
+      "3": "Před zahájením kalibrace neklikejte na žádnou klávesu klávesnice po dobu dvou sekund.",
+      "4": "K dokončení kalibrace stiskněte a podržte klávesu po dobu jedné sekundy.",
+      "5": "Pokud je kalibrace úspěšná, bude na pozadí svítit zelená kontrolka.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Nastavení křivky analogu",
+      "save": "Uložit křivku",
+      "title": "Nastavení křivky joysticku"
+    },
+    "directive": {
+      "bottomBack": "Odraz zpět",
+      "bottomIn": "Vstup zespodu",
+      "bottomOut": "Dosáhnout dna",
+      "trigger": "Spouštěč spuštění"
+    },
+    "distance": {
+      "advance_mode": "Pokročilý režim",
+      "basic_mode": "Základní",
+      "current": "Aktuální klávesy",
+      "globalDis": "Nastavit všechny operační vzdálenosti",
+      "globalRt": "Nastavit všechny spouštěče kláves",
+      "limitTip": "Hodnota překračuje limit. Zadejte znovu.",
+      "magnet_calibrate": "Ukázka spouště",
+      "magnet_calibrate_point": "Bod spuštění",
+      "magnet_calibrate_tip": "Ukázka spouště podporuje pouze jednu klávesu",
+      "magnet_calibrate_tip_desc": "Vyberte klávesu a zapnutím spínacího tlačítka vpravo nahoře předveďte spuštění vybrané klávesy.",
+      "magnet_calibrate_tip_empty": "Vyberte klávesu",
+      "profile_help": "Stisknutím kláves „fn“ + „p“ + „z / x / c“ můžete rychle přepnout profil na profil 1 / 2 / 3.",
+      "result": "Hodnoty vstupních kláves",
+      "sensitive": "Citlivost",
+      "setting": "Nastavení vzdálenosti aktivace",
+      "show_mode_dis": "Vzdálenost spuštění",
+      "show_mode_hide": "Žádná data",
+      "show_mode_rt": "Rychlé spuštění",
+      "speed_trigger": "Rychlá spoušť",
+      "trigger_distance": "(Stiskněte) Vzdálenost spouště",
+      "trigger_distance_reset": "(Uvolnění) Vzdálenost resetování",
+      "trigger_distance_twice": "(Stiskněte) Vzdálenost spouště"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Vymazat přiřazení",
+      "left_emu": "Emulovat levý",
+      "reflect": {
+        "conflict": "Klávesa je již nastavena"
+      },
+      "titles": {
+        "1": "Výběr tlačítka joysticku",
+        "2": "Nastavení tlačítka joysticku",
+        "4": "Povolení nebo zakázání tlačítek klávesnice",
+        "5": "Povolte, pokud můžete psát při simulaci joysticku, zakažte, pokud nemůžete psát při simulaci joysticku.",
+        "6": "Ukázka efektu joysticku",
+        "7": "Funkce rozpoznávání ovladače",
+        "8": "1. Po vypnutí klávesnice již nebude rozpoznávána jako ovladač.",
+        "9": "2. Po každé operaci související s touto funkcí musíte kabel odpojit a znovu připojit, aby se projevila.",
+        "10": "Standardní ovladač",
+        "11": "Ovladač Xbox",
+        "12": "Výběr režimu ovladače",
+        "13": "Po změně režimu ovladače musíte kabel odpojit a znovu připojit, aby se změna projevila.",
+        "xbox": "1. Po zapnutí/vypnutí Xbox je třeba kabel odpojit a znovu připojit, aby se změna projevila.</br>2. Xbox není k dispozici na macOS."
+      }
+    },
+    "mode": {
+      "default": "Výchozí",
+      "gamepad": "Herní ovladač",
+      "gaming": "Herní režim"
+    },
+    "multi_cmd": {
+      "b": "Dole vevnitř",
+      "fulfilled": "Nedostatek místa. Smažte existující příkaz pro možnost přidání nového.",
+      "list": "Seznam přidělených příkazů",
+      "setting": "Více příkazů jednou klávesou",
+      "test": "Testovací klávesy"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy podporuje pouze klávesy s magnetickým spínačem.",
+      "only_support_magnetic": "Aktuálně jsou vybrány mechanické klávesy. Tato nabídka podporuje pouze magnetické spínače."
+    },
+    "profile": "Konfigurace",
+    "rename": "Přejmenovat",
+    "simulate": "Simulovat",
+    "snap_tap": {
+      "absolute_priority": "Absolutní priorita",
+      "AP": "Přiřaďte vyšší prioritu spuštění jedné ze dvou kláves při současném stisknutí.</br>*Kliknutím na ikonu ve středu klávesy přepnete prioritu.",
+      "cancel_mode": "Neutrální",
+      "CM": "Můžete nastavit dvě tlačítka. Když jsou obě stisknuta současně, žádné z nich se nespustí.",
+      "create": "vytvořit",
+      "key_exist": "Konfigurační klíč existuje",
+      "last_key_priority": "Priorita poslední klávesy",
+      "LKP": "Při výběru dvou kláves jsou dvě klávesy svázány tak, aby poslední spuštěná klávesa zůstala spuštěná a druhá klávesa byla uvolněna.",
+      "SC": "Dvě klávesy můžete nastavit tak, aby při současném stisknutí obou kláves bylo možné, aby se jedna stisknutá hlouběji spustila a druhá resetovala.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Opravdu přepnout?",
+    "sure_switch_gamepad_desc": "Po přepnutí do herního ovladačového režimu některá tlačítka přestanou fungovat.",
+    "tab": {
+      "calibration": "Kalibrace",
+      "curve": "Křivka",
+      "distance": "Vzdálenost aktivace",
+      "exit_calibration": "Ukončení kalibrace",
+      "joystick_reflect": "Analogový gamepad",
+      "multi_cmd": "Více příkazů jednou klávesou",
+      "snap_tap": "Akce přichycení",
+      "toggle": "Dlouhé stisknutí přepínače",
+      "toggle_tip": "Tato funkce umožňuje spustit klávesu rychle a nepřetržitě jediným stisknutím.",
+      "turbo": "Turbo",
+      "turbo_tip": "Vytváří efekt nepřetržitého klikání při stisknutí tlačítka."
+    },
+    "toggle": {
+      "drk_guide_tip": "Tato funkce způsobí, že čím hlouběji stisknete klávesu, tím vícekrát se spustí.",
+      "keySpeed": {
+        "times": "Maximální počet spuštění",
+        "title": "Rychlost psaní",
+        "unit": "krát/s"
+      },
+      "selected": "Vybrané klávesy",
+      "set": "Nastavené klávesy",
+      "title": "Zapnuto"
+    }
+  },
+  "menu": {
+    "addconnect": "Přidat zařízení",
+    "assist": "Rychlý start",
+    "bluetooth_firmware": "Bezdrátový firmware",
+    "disconnect": "Odpojeno",
+    "expTools": "Nástroje rozšíření",
+    "fr_firmware": "Aktualizace přijímače",
+    "help": "Centrum nápovědy",
+    "issue": "Nahlášení chyby",
+    "keyboard_advance": "Pokročilý režim",
+    "keyboard_firmware": "Aktualizace firmwaru",
+    "keyboard_he": "Magnetické funkce",
+    "keyboard_light": "Osvětlení",
+    "keyboard_macro": "Makra klávesnice",
+    "keyboard_map": "Klávesy",
+    "keyboard_test": "Test kláves",
+    "keyset": "Snap Action",
+    "scroll": "Vylepšené posouvání",
+    "setting": "Nastavení",
+    "switchSetting": "Nastavení přepínače"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Opravdu vypnout toto tlačítko?",
+      "resetAll": "Tato operace odstraní všechna uložená data. Pokračovat?",
+      "resetBtn": "Obnovit výchozí nastavení?"
+    },
+    "dpi": {
+      "cable": "Kabelové",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (bodů na palec) definuje citlivost kurzoru — čím vyšší hodnota, tím dále se kurzor pohybuje při stejném pohybu ruky.",
+      "gear": "Úrovně",
+      "previousSetting": "Pokud po dobu {{time}} sekund nedojde k žádné akci, dojde k automatickému potvrzení. Kliknutím na „Zpět“ se vrátíte k předchozímu nastavení.",
+      "properties": "Systémová nastavení myši",
+      "properties_open": "Otevřít systémová nastavení myši",
+      "properties_tip": "Žádná reakce? Stáhněte « Assistant » a zkuste to znovu.",
+      "reportRate": "Rychlost odezvy",
+      "reportRateDesc": "Podporuje až 8000 Hz",
+      "reportTip": "Nastavte, jak často zařízení odesílá hlášení do počítače.",
+      "title": "Nastavení DPI",
+      "wireless": "2.4GHz",
+      "xyTip": "DPI osy X řídí citlivost kurzoru ve vodorovném směru, DPI osy Y řídí citlivost ve svislém směru. Vyšší hodnoty zvyšují odezvu kurzoru v příslušném směru.",
+      "xy_split_label": "Oddělení X/Y"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Nezávislá levá/pravá tlačítka",
+      "gear": "Úroveň",
+      "left_btn": "Levé tlačítko",
+      "light_blocked": "Optická dráha blokována",
+      "light_desc": "V klidu je světelný paprsek blokován, takže se nezaznamená žádné kliknutí. Stiskněte tlačítko, aby světelná dráha vedla: světlo dosáhne senzoru a spustí kliknutí. Bez kovových kontaktů, bez opotřebení.",
+      "light_led": "LED",
+      "light_mode": "Optický spínač",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Spuštěno",
+      "magnet_desc": "Vyberte, jak hluboko musíte stisknout, než se zaznamená kliknutí. Kratší = rychlejší, hlubší = méně chyb.",
+      "magnet_mode": "Magnetický spínač",
+      "motor_trigger": "Nastavení haptické zpětné vazby",
+      "right_btn": "Pravé tlačítko",
+      "shared_btn": "Tlačítka myši",
+      "title": "Nastavení spouštění tlačítek myši",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Nastavení zdvihu spuštění"
+    },
+    "key": {
+      "backward": "Zadní tlačítko",
+      "brightnessDown": "Snížit jas obrazovky",
+      "brightnessUp": "Zvýšit jas obrazovky",
+      "calculate": "Kalkulačka",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Kopírovat",
+      "customDpi": "Vlastní DPI",
+      "cut": "Vyjmout",
+      "dock": "Dock Zap/Vyp",
+      "downScroll": "Posunout dolů",
+      "dpiLoop": "Cyklus DPI",
+      "email": "Pošta",
+      "forward": "Vpřed",
+      "he": "Optický / magnetický mikropohyb",
+      "home": "Zobrazit plochu",
+      "homePage": "Otevřít domovskou stránku",
+      "launchPad": "Launchpad",
+      "left": "Levé tlačítko myši",
+      "leftClick": "Kliknutí levým tlačítkem myši",
+      "leftDouble": "Dvojité kliknutí levým",
+      "leftLock": "Zámek levého kliknutí",
+      "leftScroll": "Posun doleva",
+      "leftScrollSustain": "Nepřetržité posouvání doleva",
+      "leftTilt": "Levý náklon",
+      "left_lock": "Zámek levého kliknutí",
+      "lickDoubleClick": "Dvojité kliknutí levým",
+      "light": "Efekt lampy",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Smyčka",
+      "loopColorfulBreathing": "Barevný dechový cyklus",
+      "loopDpi": "Cyklus DPI",
+      "loopOpticalMagnetic": "Opticko-magnetický cyklus",
+      "loopPollingRate": "Cyklus polling rate",
+      "middle": "Prostřední tlačítko myši",
+      "middleClick": "Kliknutí kolečkem myši",
+      "modeToggleAll": "Optický / magnetický mikropohyb",
+      "mute": "Ztlumit",
+      "myComputer": "Můj počítač",
+      "next": "Další",
+      "nextDpi": "Další DPI",
+      "nextPollingRate": "Další polling rate",
+      "pageDown": "Stránka dolů",
+      "pageUp": "Stránka nahoru",
+      "paste": "Vložit",
+      "pause": "Přehrávání/pauza",
+      "player": "přehrávač",
+      "prevDpi": "Předchozí DPI",
+      "previous": "Předchozí",
+      "prevPollingRate": "Předchozí úroveň odezvy",
+      "refresh": "Obnovit",
+      "restoreFactory": "Tovární reset",
+      "right": "Pravé tlačítko myši",
+      "rightClick": "Kliknutí pravým tlačítkem myši",
+      "rightScroll": "Posunout doprava",
+      "rightScrollSustain": "Nepřetržité posouvání doprava",
+      "rightTilt": "Pravý náklon",
+      "screenshot": "Snímek obrazovky",
+      "scrollLeftClick": "Pravý náklon",
+      "scrollRightClick": "Levý náklon",
+      "sideKey": "Boční tlačítko",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Zastavit",
+      "swichLight": "Přepínání světelných efektů",
+      "switchApp": "Přepnutí aplikace",
+      "task": "Ovládací centrum",
+      "trackballToScroll": "Trackball na posouvání",
+      "upScroll": "Posun nahoru",
+      "volumeDown": "Hlasitost -",
+      "volumeUp": "Hlasitost +",
+      "webLessen": "Oddálit",
+      "webMagnify": "Přiblížit"
+    },
+    "keyboard": "Klávesnice",
+    "key_fun": {
+      "basic": "Základní tlačítka",
+      "disable": "Vypnout tlačítko",
+      "dpi": "DPI",
+      "game": "Herní klávesy",
+      "game_tip": "Podržte přiřazenou klávesu pro automatické opakování vybraných stisknutí, s nastavitelným počtem a frekvencí.",
+      "keyboard": "Kombinace kláves",
+      "keyboard_tip": "Vyberte jednu nebo více modifikačních kláves a poté přidejte standardní klávesu. Klikněte na pole pro zadání klávesy nebo vyberte kód klávesy vpravo.",
+      "macro": "Makro",
+      "media": "Multimediální klávesy",
+      "pollingRate": "Frekvence",
+      "profile": "Profil",
+      "sensitive": "Citlivost",
+      "shortCut": "Klávesové zkratky"
+    },
+    "key_game": {
+      "count": "Počet",
+      "infinite": "Neomezeno",
+      "rate": "Rychlost"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "Blikající neonová světla",
+      "fullColorCycle": "Plný barevný cyklus",
+      "soleBreathe": "Dýchání",
+      "soleFlowing": "Dostihy",
+      "soleLight": "Jednobarevné"
+    },
+    "menu": {
+      "angle": "Nastavení úhlu",
+      "dpi": "Nastavení DPI",
+      "key": "Přizpůsobení",
+      "light": "Nastavení světelných efektů",
+      "macro": "Nastavení makra",
+      "poll_rate": "Frekvence dotazování",
+      "profile": "Profil",
+      "sys": "Pokročilé"
+    },
+    "mouse": "Myš",
+    "polling_rate": {
+      "daily": "Kancelář",
+      "fps20k": "Režim vzorkování senzoru",
+      "game": "Hry",
+      "office_mode": "Standardní režim",
+      "office_mode_desc": "Plynulý provoz, stabilní skenování",
+      "rage_content": "Spotřeba energie se zvýší, když je zapnutý konkurenční režim.",
+      "rage_desc": "Frekvence skenování senzoru ≥20K pro nižší latenci a vyšší přesnost. Spotřebovává více energie.",
+      "rage_mode": "Konkurenční režim",
+      "rage_title": "Potvrdit aktivaci konkurenčního režimu?"
+    },
+    "profile_tab": {
+      "changeIcon": "Změnit ikonu",
+      "selectMode": "Vybrat režim"
+    },
+    "scroll": {
+      "acceleration": "Zrychlení rychlosti",
+      "consecutive_times": "Počet nepřetržitých posouvání",
+      "demo": "Demo posouvání",
+      "direction": "Směr posouvání",
+      "duration": "Doba posouvání",
+      "interval": "Interval posouvání (ms)",
+      "scroll": "Horizontální posouvání",
+      "speed": "Rychlost posouvání",
+      "step": "Minimální krok posouvání",
+      "tip_acceleration": "Nastavit zrychlení posouvání jako násobek aktuální hodnoty.",
+      "tip_consecutive_times": "Po nepřetržitém posouvání se automaticky přepne na plynulé posouvání.",
+      "tip_demo": "Zde si můžete vyzkoušet nastavení vylepšeného posouvání.",
+      "tip_direction": "Změnit směr posouvání myši",
+      "tip_disconnect": "Pro použití vylepšeného posouvání musíte stáhnout Assist.",
+      "tip_interval": "Interval nepřetržitého posouvání",
+      "tip_speed": "Zvýšit rychlost posouvání"
+    },
+    "shortcut_tooltip": {
+      "general": "Po konfiguraci se následující funkce použijí jak na Mac, tak na Windows.",
+      "mac": "Po konfiguraci se následující funkce použijí pouze na Mac.",
+      "win": "Po konfiguraci se následující funkce použijí pouze na Windows."
+    },
+    "sys": {
+      "angle": "Nastavení úhlu",
+      "angle_correction_after": "Po nastavení",
+      "angle_correction_no": "Před nastavením",
+      "angle_preview": "Před a po",
+      "angle_reset_btn": "Resetovat na 0°",
+      "backward": "Invertovat",
+      "battery_indicator": "Indikátor baterie",
+      "delay": "Doba odezvy",
+      "forward": "Standardní",
+      "funConfig": "Systémové funkce myši",
+      "keyResponseTime": "Doba odezvy kláves",
+      "leftLock": "Uzamknout levé tlačítko myši",
+      "line": "Přichycení úhlu",
+      "lock": "Uzamknout",
+      "lod": "Vzdálenost liftoff",
+      "motion": "Synchronizace pohybu",
+      "pairBond": "Zkratka párování",
+      "pairLimit": "Párovací klávesy podporují pouze 1–3 klávesy",
+      "power": "Správa napájení",
+      "respSeconds": "Doba odezvy (ms)",
+      "scroll": "Směr rolování",
+      "sensor": "Výkon snímače",
+      "sleep": "Režim spánku zařízení",
+      "unlock": "Odemknout",
+      "wave": "Řízení zvlnění"
+    },
+    "tip": {
+      "leftLock": "Konfigurace levého tlačítka myši je uzamčena a nelze ji konfigurovat."
+    },
+    "tips": {
+      "advanceDelayDesc": "V pokročilém režimu můžete nastavit nezávislou dobu odezvy (0–20 ms) pro každou klávesu.",
+      "angleDesc": "Upravte úhel senzoru myši, aby mírně nakloněná myš prováděla přesné horizontální pohyby.",
+      "delayDesc": "Nastavte zpoždění, abyste předešli náhodným spuštěním kvůli rychlým kliknutím nebo chvění.",
+      "factorySetDesc": "Kliknutí na toto tlačítko vymaže aktuální nastavení zařízení a obnoví tovární nastavení.",
+      "fps20kDesc": "Senzor myši zachytí 20 000 snímků povrchu podložky za sekundu, což poskytuje přesné sledování bez latence.",
+      "indicatorDesc": "Tento přepínač řídí pouze zobrazení normálního stavu baterie v režimu 2.4G.",
+      "leftLockDesc": "Když je « Zámek levého kliknutí » zapnutý, levé tlačítko nelze přiřadit znovu.",
+      "lineDesc": "Inteligentně filtruje lehké chvění ruky, snižuje horizontální a vertikální odchylky.",
+      "lodCurr": "Aktuální vzdálenost liftoff myši",
+      "lodDesc": "Maximální výška, na které jsou pohyby myši stále detekovány a sledovány.",
+      "motionDesc": "Synchronizuje vstup senzoru s odezvou systému, snižuje skoky nebo trhnutí kurzoru.",
+      "pairBondDesc": "Přizpůsobte kombinaci kláves a podržte ji po dobu 4 sekund pro vstup do režimu párování Bluetooth/2.4G.",
+      "scrollDirDesc": "Směr pohybu obsahu na obrazovce, když se kolečko myši posouvá nahoru nebo dolů",
+      "sensorDesc": "Zlepšuje přesnost a stabilitu myši při kreslení čar, kruhů a dalších trajektorií.",
+      "sleepDesc": "Podporuje automatický režim spánku v bezdrátovém režimu, když je zařízení delší dobu neaktivní.",
+      "waveDesc": "Snižuje vlnité trajektorie způsobené chvěním ruky pro plynulejší pohyby."
+    },
+    "wheel": {
+      "adjustTimeout": "Časový limit kalibrace",
+      "sensitivity": "Citlivost"
+    }
+  },
+  "notify": {
+    "emptyHid": "Není vybráno žádné zařízení HID",
+    "fail": "Neúspěch",
+    "fr_not_connect": "Ovladač nelze použít poté, co zařízení přejde do režimu spánku; stiskněte libovolnou klávesu pro jeho aktivaci.",
+    "hidAlreadyConnected": "Připojeno zařízení HID",
+    "hidConfNotBrand": "Zařízení této značky nejsou v současnosti podporována.",
+    "hidConfNotFound": "Nebyla nalezena platná konfigurace zařízení HID",
+    "hidDeviceNotFount": "HID zařízení není přítomno",
+    "hidUnconnected": "Zařízení HID není připojeno",
+    "import": {
+      "layout": "Rozložení klávesnice bylo úspěšně importováno.",
+      "title": "Import úspěšný"
+    },
+    "invalid_macro_json": "Neplatná konfigurace",
+    "invalid_rgb_json": "Nesprávná konfigurace",
+    "keyboard_not_support_wireless": "Firmware klávesnice v současné době nepodporuje bezdrátové připojení.",
+    "keycodeNotFound": "Chyba konfigurace klíčového kódu",
+    "limited": "Překročen maximální limit",
+    "macroSizeLimit": "Velikost makra přesahuje dostupnou velikost",
+    "notSupportHid": "Zařízení nepodporuje služby HID",
+    "sleep": "Není připojeno žádné zařízení nebo je zařízení v režimu spánku.",
+    "success": "Úspěch",
+    "success_competitive": "Úspěšně přepnuto do konkurenčního režimu",
+    "success_connect": "Připojení bylo úspěšné",
+    "success_office": "Úspěšně přepnuto do standardního režimu",
+    "unknownErr": "Neznámá chyba"
+  },
+  "onboarding": {
+    "completed": "Průvodce úspěšně dokončen 🎉",
+    "connect": {
+      "description": "Připojte klávesnici k počítači USB kabelem, klikněte na « Připojit » a vyberte zařízení v dialogovém okně.",
+      "title": "Připojte svou klávesnici"
+    },
+    "entry": "Začínáme",
+    "flow": {
+      "connect": "Připojit zařízení",
+      "keymap": "Přiřadit klávesy znovu",
+      "light": "Efekty podsvícení"
+    },
+    "hint": "Klikněte na zvýrazněnou oblast pro dokončení akce, nebo na « Přeskočit průvodce ».",
+    "keymap": {
+      "select_a": {
+        "description": "Klikněte na « A » v panelu funkcí níže pro přiřazení mezerníku na A. Průvodce se po dokončení automaticky zavře.",
+        "title": "Krok 2 · Přiřaďte jej na « A »"
+      },
+      "select_space": {
+        "description": "Klikněte na mezerník ve spodní části klávesnice pro jeho výběr.",
+        "title": "Krok 1 · Vyberte mezerník"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Použijte výběr barev vpravo pro nastavení barvy na zelenou (přetáhněte výběr nebo zadejte RGB 0, 255, 0). Průvodce se automaticky zavře.",
+        "title": "Krok 2 · Nastavte na zelenou"
+      },
+      "select_static": {
+        "description": "Vyberte « Solid Color » ze seznamu efektů níže pro nastavení klávesnice na statický monochromatický efekt.",
+        "title": "Krok 1 · Vyberte « Solid Color »"
+      }
+    },
+    "skip": "Přeskočit průvodce",
+    "step": "KROK"
+  },
+  "screen": {
+    "format": {
+      "limit": "Formát obrázku může být pouze PNG, JPG nebo GIF."
+    },
+    "resolution": {
+      "limit": "Velikost obrázku nesmí překročit 240×240."
+    },
+    "size": {
+      "limit": "Velikost souboru obrázku nesmí překročit 300 KB."
+    },
+    "upload": {
+      "format": "PNG nebo JPG (max 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Tato funkce umožňuje vybrat maximálně {{count}} kláves."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Interval skenování"
+    },
+    "file_extra_properties_not_supported": "Soubor obsahuje nepodporované atributy.",
+    "file_import_failed": "Import souboru se nezdařil",
+    "file_upload_no_config_file": "Konfigurační soubor nebyl nalezen. Nahrajte jej prosím.",
+    "info": "Informace o zařízení",
+    "infos": {
+      "bluVersion": "Verze Bluetooth",
+      "deviceDesc": "Verze firmwaru",
+      "name": "Název"
+    },
+    "json_config": "Nastavení Json",
+    "lng": "Jazyk",
+    "log": "Poznámky ke spuštění",
+    "onlyview": "Konfiguraci této klávesnice nelze změnit.",
+    "other": "Jiné",
+    "others": {
+      "debounce": {
+        "name": "Odezva se zpožděním kláves",
+        "tip": "Po aktivaci lze minimální dobu odezvy nastavit na 0 ms.",
+        "title": "Upravit minimální hodnotu",
+        "warning": {
+          "title": "Opravdu aktivovat?"
+        }
+      }
+    },
+    "theme": "Změna motivu",
+    "updateLog": "Historie verzí"
+  },
+  "snap": {
+    "list": "Seznam přiřazení příkazů"
+  },
+  "test": {
+    "btn": {
+      "reset": "Testovat znovu",
+      "reset_bindings": "Vymazat propojení"
+    },
+    "msg": {
+      "bind_success": "{{count}} kláves bylo propojeno s {{audioName}}.",
+      "bind_success_single": "Klávesa {{keyName}} byla propojena s {{audioName}}.",
+      "no_key_selected": "Nejprve vyberte klávesu k propojení.",
+      "reset_success": "Reset byl úspěšný",
+      "storage_full": "Nedostatek úložného prostoru",
+      "unsupported_format": "Formát zvuku není podporován. Použijte MP3, WAV, OGG nebo M4A.",
+      "upload_success": "Zvuk byl úspěšně nahrán"
+    },
+    "per_key_sound": {
+      "desc": "Přiřaďte každé klávese jedinečný zvuk. Když je tato funkce vypnutá, všechny klávesy používají výchozí vybraný zvuk.",
+      "tip": "V režimu bez testovací matice můžete nastavit pouze jednotný zvuk odezvy kláves."
+    },
+    "sound": {
+      "tip": "Když je přepínač zapnutý, testování kláves bude doprovázeno zvukovou zpětnou vazbou a můžete si vybrat svůj oblíbený zvuk."
+    },
+    "sound_btn": {
+      "Balloon": "Balónek",
+      "CarHorn": "CarHorn",
+      "Cartoon": "Kreslený",
+      "CoinCollecting": "Sbírání mincí",
+      "custom": "Vlastní",
+      "default": "Výchozí",
+      "DogBarking": "Štěkot psa",
+      "Donkey": "Osel",
+      "Glass": "Sklo",
+      "PartyHorn": "Párty trumpeta",
+      "PhoneDial": "Vytáčení telefonu",
+      "Punch": "Punch",
+      "RubberChicken": "Gumové kuře",
+      "RubberToy": "Gumová hračka",
+      "Sneeze": "Kýchnutí"
+    },
+    "title": {
+      "custom_sound": "Vlastní knihovna zvuků",
+      "per_key_sound": "Přiřazení zvuku na klávesu",
+      "reset_custom_bindings": "Opravdu resetovat zvuková propojení?",
+      "sound": "Povolit zvukové efekty",
+      "sound_effect": "Výběr zvukových efektů",
+      "uploaded_sounds": "Nahrané zvuky"
+    },
+    "upload": {
+      "browse": "Klikněte pro nahrání",
+      "info": "Podporováno: MP3, WAV, OGG, M4A · Celkový limit: 25 MB · Doporučená délka zvuku: 1–2 sekundy",
+      "placeholder": "Přetáhněte sem zvukové soubory, nebo"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Nejprve vyberte klávesu."
+    },
+    "key": {
+      "direction": "Zámek úhlu 8 směrů",
+      "gesture": "Režim gest",
+      "held": "Podržení",
+      "scroll": "Posouvání",
+      "tap": "Klepnutí"
+    },
+    "keycode": {
+      "key": "Základní klávesa",
+      "modifiers": "Modifikátory"
+    },
+    "key_fun": {
+      "basic": "Základ",
+      "comb": "Kombinovaná klávesa",
+      "feature": "Zámek úhlu",
+      "keyCombination": "Kombinace kláves",
+      "layer": "Vrstva",
+      "macro": "Makro",
+      "simulate": "Současné stisknutí",
+      "single": "Klepnutí / Podržení",
+      "special": "Speciální klávesy",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Můžete nastavit pouze jednu standardní klávesu.",
+    "placeholder": {
+      "selectionKeys": "Výběrové klávesy"
+    },
+    "selectInputFirst": "Nejprve vyberte vstupní pole.",
+    "slide": {
+      "leftSlide": "Přejetí doleva",
+      "rightSlide": "Přejetí doprava",
+      "underSlide": "Přejetí dolů",
+      "upSlide": "Přejetí nahoru"
+    },
+    "tips": {
+      "angleGearsDesc": "Například, pokud přiřadíte « 90° » klávese 4, kliknutí na klávesu 4 nastaví směr aktuální vrstvy na 90° (na šířku).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Základní klávesy",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Spouštěč vyžaduje soubor VIA json vybraného zařízení. Klikněte na tlačítko „Potvrdit“ níže a nahrajte soubor json vybraného zařízení, abyste mohli spouštěč používat. Soubor VIA json můžete získat od dodavatele produktu.",
+      "title": "Přes soubor Json"
+    }
+  }
+}
