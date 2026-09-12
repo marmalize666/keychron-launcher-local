@@ -1,0 +1,1706 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Huomautus:"
+    },
+    "debounce": {
+      "defer_global": "Kohinanpoisto näppäimistökohtaisesti. Jokaisella tilan muutoksella asetetaan yleinen ajastin. Kun on kulunut DEBOUNCE-millisekunnin verran ilman muutoksia, kaikki syötemuutokset lähetetään. Tämä on suorituskykyisin algoritmi, jolla on pienin muistinkäyttö ja joka kestää kohinaa.",
+      "defer_per_key": "Kohinanpoisto näppäinkohtaisesti. Jokaisella tilan muutoksella asetetaan näppäinkohtainen ajastin. Kun kyseisellä näppäimellä on kulunut DEBOUNCE-millisekunnin verran ilman muutoksia, näppäimen tilan muutos lähetetään.",
+      "eager_defer_per_key": "Kohinanpoisto näppäinkohtaisesti. Näppäimen painalluksen tilan muutoksella vaste on välitön, minkä jälkeen kyseiseltä näppäimeltä ei oteta uutta syötettä DEBOUNCE-millisekunnin aikana. Näppäimen vapautuksen tilan muutoksella asetetaan näppäinkohtainen ajastin. Kun kyseisellä näppäimellä on kulunut DEBOUNCE-millisekunnin verran ilman muutoksia, näppäimen vapautuksen tilan muutos lähetetään.",
+      "eager_per_key": "Kohinanpoisto näppäinkohtaisesti. Jokaisella tilan muutoksella vaste on välitön, minkä jälkeen kyseiseltä näppäimeltä ei oteta uutta syötettä DEBOUNCE-millisekunnin aikana.",
+      "none": "Kohinanpoistoa ei suoriteta.",
+      "tip": {
+        "1": "”Eager Per Key” on suositeltu kohinanpoistotila: kun painat näppäintä, se reagoi välittömästi, mutta kaikki kyseisen näppäimen myöhemmät syötteet ohitetaan valitsemiesi vastesekuntien ajan.",
+        "2": "Jos haluat pienentää vasteajan alle 10 ms:iin, tee säätö kohdassa Asetukset – Muut.",
+        "3": "Kun vasteaika on lähellä 0 ms:ää, kaksoisnapsautusongelma voi ilmetä."
+      }
+    },
+    "macro": {
+      "gesture": "Pidä eletila aina päällä",
+      "gesture_description": "Kun tämä on käytössä, sinun ei tarvitse määrittää elenäppäintä.",
+      "gesture_not_configured": "Sitä ei voi avata. Aseta ensin lähtöarvo kohdassa ”Näppäintoiminto – Ohjauspallo”.",
+      "scroll": "Pidä vieritystila aina päällä",
+      "scroll_description": "Aktivoinnin jälkeen elenäppäimiin ei tarvitse yhdistää mitään.",
+      "title": "Eleiden toiminta (valitse yksi)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) on näppäimistön syöttötekniikka, joka mahdollistaa rajattoman määrän näppäinten yhtäaikaisen painamisen ilman syöttöristiriitoja tai hukattuja signaaleja. NKRO:n poistaminen käytöstä tarkoittaa, että näppäimistö rekisteröi oikein enintään 6 samanaikaista näppäinpainallusta.",
+      "title": "NKRO-asetus"
+    },
+    "performance": {
+      "mode_battery": "Akkutila",
+      "mode_high": "Suorituskykytila",
+      "mode_normal": "Oletustila",
+      "title": "Suorituskykytilan vaihto"
+    },
+    "poll_rate": "Kyselytaajuuden asetukset",
+    "poll_rate_tip": {
+      "bt": "Bluetooth-yhteystila",
+      "bt_desc": "Bluetooth-yhteystilassa kyselytaajuus on kiinteä 125 Hz. Tätä asetusta ei voi muuttaa yhteysrajoitusten vuoksi.",
+      "fr": "2,4 GHz -yhteystila",
+      "usb": "Langallinen tila"
+    },
+    "sleep": {
+      "backlight": "Taustavalon automaattisen sammutuksen aikakatkaisu",
+      "magnet": "Näppäimistömatriisin skannauksen joutenoloaika",
+      "magnet_range": "Matriisin skannauksen joutenoloajan on oltava suurempi kuin taustavalon sammutusviive ja pienempi kuin lepotilan aikakatkaisu.",
+      "magnet_tip": "Hall-ilmiönäppäimistön matriisin skannauksen joutenoloajan on oltava yli 60 sekuntia",
+      "time": "Automaattisen lepotilan aikakatkaisu"
+    },
+    "tips": {
+      "keepLayer_close": "2. Jos tämä asetus on poistettu käytöstä, NapePro vaihtuu tason 1 mukaan, kun siirryt tason 1 muokkausnäkymään.",
+      "keepLayer_enable": "1. Jos tämä asetus on käytössä, esimerkiksi jos NapePro toimii tasolla ”Taso 0”, NapePro säilyttää ”Taso 0” -näppäinmäärityksen, vaikka vaihtaisit ”Taso 1” -muokkausnäkymään."
+    },
+    "title": {
+      "keepLayer": "Tason muokkaustila"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Laite yhdistetty",
+        "idle": "Yhdistä laite napauttamalla",
+        "pending": "Käynnistetään valtuutusta..."
+      },
+      "download_assistant": {
+        "idle": "Lataa uusin Assistant napsauttamalla"
+      },
+      "resume_assistant": {
+        "done": "Jatka käsittelyä",
+        "idle": "Assistant käytössä",
+        "pending": "Käsittely jatkuu…",
+        "prompt": "Olen avannut sen"
+      },
+      "undo_remap": {
+        "done": "Näppäimen uudelleenmääritys kumottu",
+        "idle": "Kumoa tämä näppäimen uudelleenmääritys",
+        "pending": "Kumotaan..."
+      }
+    },
+    "clear_tooltip": "Tyhjennä keskustelu",
+    "close_tooltip": "suljettu",
+    "deep_thinking": "Syväajattelu",
+    "generated_content_notice": "Tekoälyn luoma sisältö voi sisältää virheitä. Tarkista tiedot.",
+    "input_placeholder": "Kysy Keychron AI:lta",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Keskittyy nopeaan vasteeseen",
+        "label": "Nopeampi"
+      },
+      "deepseek-v4-pro": {
+        "description": "Monimutkaisempiin tehtäviin",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Tasapainoinen",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normaali",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Suoritus valmis, mutta näytettävää vastausta ei saatu.",
+    "pin": {
+      "tooltip_off": "Poista kiinnitys",
+      "tooltip_on": "Kiinnitä keskusteluikkuna"
+    },
+    "pinned_success": "Keskusteluikkuna on kiinnitetty, eikä sitä voi vetää.",
+    "quick": {
+      "connect_keyboard": "Määritä välilyöntinäppäin uudelleen A:ksi",
+      "remap_space": "Vaihda valaistustehoste tilaan Band Spiral Val",
+      "set_light": "Auta minua avaamaan Discord"
+    },
+    "result": {
+      "connect_failed": "Yhdistäminen epäonnistui: {{error}}",
+      "device_connected": "Laite yhdistetty",
+      "no_device_undo": "Yhtäkään laitetta ei ole yhdistetty, joten uudelleenmääritystä ei voi kumota.",
+      "no_remap_to_undo": "Kumottavaa uudelleenmääritystä ei ole.",
+      "undo_failed": "Uudelleenmäärityksen kumoaminen epäonnistui: {{error}}",
+      "undo_success": "Viimeisin uudelleenmääritys kumottiin ja palautettiin {{count}} näppäin(tä)."
+    },
+    "select_model": "Valitse malli",
+    "status": {
+      "answering": "Vastataan",
+      "executing": "Suoritetaan",
+      "loading": "Ladataan",
+      "thinking": "Ajatellaan",
+      "verifying": "Vahvistetaan"
+    },
+    "stopped": "Pysäytetty",
+    "title": "Keychron AI",
+    "unpinned_success": "Kiinnitys poistettu",
+    "welcome": "Hei! ”Keychron AI Assistant” voi auttaa sinua yhdistämään laitteita, määrittämään näppäimiä uudelleen, mukauttamaan valaistustehosteita, luomaan makroja ja paljon muuta. Kysy minulta vapaasti mitä tahansa!"
+  },
+  "application": {
+    "addr": "Verkkosivun pikakäynnistys",
+    "add_addr": "Lisää osoite",
+    "apple_silicon_version": "Lataa Apple Silicon -versio (.pkg)",
+    "app_duplicate": "Sovellus on jo olemassa, sitä ei tarvitse lisätä uudelleen.",
+    "app_hint": "Voit asettaa pikanäppäimen, valita nopeasti avattavan ohjelmiston ja sitten sitoa sen näppäimeen.",
+    "app_placeholder": "Valitse sovellus",
+    "clear_all": "Tyhjennä kaikki",
+    "desktop_old_content": "Lataa ja asenna työpöytäpalvelun uusin versio käyttääksesi tätä ominaisuutta.",
+    "desktop_old_title": "Havaittiin vanhentunut työpöytäpalvelu.",
+    "download_keychron_assistant": "Jos sitä ei ole vielä asennettu, lataa se napsauttamalla.",
+    "download_new_assistant_tip": "Lataa uusin Keychron Assistant käyttääksesi kaikkia ominaisuuksia.",
+    "download_zip_tip": "Huomautus: Ennen Keychron Assistin asentamista sinun on purettava ladattu tiedosto.",
+    "file_not_found": "Tiedostoa ei ole olemassa",
+    "intel_version": "Lataa Intel Mac -versio (.dmg)",
+    "keySetting": "Tällä näppäimellä on jo pikanäppäin!",
+    "key_no_conf": "Pikanäppäimiä ei ole asetettu",
+    "limited": "Enimmäisraja ylitetty. Tällä hetkellä pikakäynnistysten raja on 5. Aiomme kasvattaa tätä määrää tulevaisuudessa.",
+    "need_keychron_assistant": "Tämä ominaisuus edellyttää, että Keychron Assistant on käynnissä.",
+    "no_key_selected": "Näppäintä ei ole valittu",
+    "open_assistant_no_response_tip": "Jos mitään ei tapahdu ”Avaa”-napsautuksen jälkeen, lataa uusin Assistant ja yritä uudelleen.",
+    "open_tip1": "1. Pikakäynnistystoiminto tarkoittaa nopeasti käynnistettävän sovelluksen sitomista tiettyyn näppäimeen; napsauta näppäintä käynnistääksesi sen nopeasti.",
+    "open_tip2": "2. Lataa ensin Assist ja lisää sitten sovellus, jonka haluat käynnistää nopeasti. Palaa lopuksi launcheriin näppäimen sidontaa ja käynnistystä varten.",
+    "select_key_to_bind": "Valitse näppäimistöstä näppäimet, joihin tämä asetus sidotaan",
+    "soft": "Pikakäynnistyssovellus",
+    "submit_hint": "Valitse ohjelmisto, jonka haluat avata nopeasti, ja napsauta sitten [Lähetä]. Lähetyksen jälkeen pikakäynnistys voidaan ottaa käyttöön.",
+    "title_placeholder": "Mukautettu otsikko (valinnainen)",
+    "unsupported_feature": "Ominaisuutta ei tueta",
+    "unsupported_feature_download_new_version": "Tätä ominaisuutta ei tueta. Lataa uusin versio kokeillaksesi sitä.",
+    "url": "Avaa verkkosivu nopeasti",
+    "url_hint": "Voit asettaa pikanäppäimen, valita nopeasti avattavan verkko-osoitteen ja sitten sitoa sen näppäimeen.",
+    "url_placeholder": "Anna kelvollinen URL-osoite"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Jatka",
+      "later": "Myöhemmin",
+      "openSystemPreferences": "Avaa Järjestelmäasetukset",
+      "restartMessage": "Käyttöoikeus myönnettiin onnistuneesti. Sovellus on käynnistettävä uudelleen, jotta muutos tulee voimaan.",
+      "restartNow": "Käynnistä uudelleen nyt",
+      "restartTitle": "Käyttölupa myönnetty",
+      "step1": "Napsauta alla olevaa painiketta siirtyäksesi järjestelmän käyttöoikeuksien lupasivulle",
+      "step2": "Etsi ja ota käyttöön Launcher Assistant -kytkimen valtuutus",
+      "step3": "Anna salasanasi",
+      "step4": "Valtuutuksen jälkeen sulje sovellus ja avaa se uudelleen, jotta muutos tulee voimaan\"",
+      "welcomeTitle": "Tervetuloa käyttämään Assistantia"
+    },
+    "click_no_response_tip": "Avaa tietokoneesi hiiriasetukset osoittimen, vierityksen ja napsautuksen asetuksia varten.",
+    "common": {
+      "add": "Lisää",
+      "back": "Takaisin",
+      "delete": "Poista",
+      "info": "Tiedot",
+      "refresh": "Päivitä",
+      "settings": "Asetukset"
+    },
+    "hint_reset": "Laitteen vaihto havaittu. Asettelun eroista johtuen jotkin näppäimet eivät ehkä toimi Pikakäynnistyksessä näytetyllä tavalla. Nollataanko asetukset uuteen asetteluun sopiviksi?",
+    "hint_reset_1": "Havaittiin, että olet vaihtanut toiseen laitteeseen. Haluatko nollata asetuksesi?",
+    "hint_reset_2": "(Huomautus: Mallien näppäinasettelujen erojen vuoksi Pikakäynnistyksen näyttö ei ehkä vastaa todellisia toimintoja, jolloin näppäimet eivät toimi.)",
+    "home": {
+      "addAddress": "Lisää osoite",
+      "addSoftwareDescription": "Lisää alle ohjelmisto, jonka haluat avata nopeasti, ja napsauta sitten 「Pikakäynnistys」 sitoaksesi näppäimen launcherissa",
+      "delete": "poista",
+      "onceAddedDescription": "Kun olet lisännyt sovelluksesi alle, palaa takaisin napsauttamalla painiketta",
+      "quickStartApplication": "Pikakäynnistyssovellus",
+      "search": "Haku",
+      "setUpQuickStart": "Määritä pikakäynnistys",
+      "tooltipText1": "1. Pikakäynnistystoiminto tarkoittaa nopeasti käynnistettävän sovelluksen sitomista tiettyyn näppäimeen; napsauta näppäintä käynnistääksesi sen nopeasti.",
+      "tooltipText2": "2. Napsauta alla olevaa \\\"+\\\"-merkkiä valitaksesi pikakäynnistyksen, jonka haluat käynnistää, ja napsauta \\\"Avaa pikakäynnistys\\\" palataksesi launcheriin näppäimen sidontaa ja käynnistystä varten."
+    },
+    "license": {
+      "agree": "Hyväksy",
+      "disagreeAndWithdraw": "Hylkää ja peruuta",
+      "userLicenseAgreement": "Käyttäjän lisenssisopimus",
+      "welcomeDescription": "Hyväksy",
+      "welcomeDescriptionEnd": "jotta voimme palvella sinua paremmin",
+      "welcomeTitle": "Tervetuloa käyttämään Assistantia"
+    },
+    "open_title": "1. Pikakäynnistyksen käyttö edellyttää Assistin lataamista",
+    "open_title2": "2. Ohjelmistopäivityksen vuoksi on suositeltavaa ladata ja asentaa Assistin uusin versio.",
+    "settings": {
+      "aikeyUpdate": "AIKey-parannukset: mukautettavat mallit ja pikalaukaisu, parannettu komentojen välitys ja vasteiden käsittely, mikä tarjoaa paremman vakauden ja käytettävyyden.",
+      "autostart": "Käynnistä automaattisesti käynnistyksen yhteydessä",
+      "currentLatestVersion": "Tämä on jo uusin versio",
+      "endUserLicenseAgreement": "Loppukäyttäjän lisenssisopimus",
+      "fixedKnownIssues": "Korjattu tunnettuja ongelmia",
+      "interfaceOptimization": "Käyttöliittymän optimointi",
+      "language": "kieli",
+      "mosUpdate": "MOS-vierityksen/kiihdytyksen optimointi: uudistettu kiihdytyskäyrä ja näytteenottostrategia sujuvampaan ja tasaisempaan hallintaan sekä matalilla että korkeilla nopeuksilla, vähemmällä värinällä ja viiveellä.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Keychron Assistant -tavaramerkin omistaa Keychron tai se on rekisteröity asianmukaisille viranomaisille. Kaikki muut tavaramerkit ovat omistajiensa omaisuutta.",
+      "nkroDescription2": "NKRO:n poistaminen käytöstä tarkoittaa, että näppäimistö rekisteröi oikein enintään 6 samanaikaista näppäinpainallusta.",
+      "selectLanguage": "Valitse kieli",
+      "title": "Asetukset",
+      "updateLog": "Päivitysloki"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Magnetic Switch",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetic Switc",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Joidenkin näppäinten kalibrointi epäonnistui. Tarkista näppäimistön kytkin ja näppäimen asetus!",
+    "set_successfully": "Kytkinmääritys muutettiin onnistuneesti.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Tarkista, vastaako näppäimistöön vaihdettu magneettikytkin valittua magneettikytkinvaihtoehtoa.",
+    "sure_content2": "Napsauta alla olevaa ”Vahvista”-painiketta, niin siirryt kalibrointisivulle kalibroimaan nämä näppäimet.",
+    "sure_title": "Haluatko varmasti vaihtaa kytkintyypin?",
+    "switch_type_settings": "Kytkintyypin asetukset",
+    "tip": {
+      "1": "Tämä ominaisuus mahdollistaa koko näppäimistön magneettikytkintyypin asettamisen. Määrityksen jälkeen näppäimen reunuksen väri muuttuu valitsemasi magneettikytkintyypin mukaan. Vaiheet ovat seuraavat:",
+      "2": "Vaihda ensin kaikki näppäimistön magneettikytkimet (koko näppäimistö voi tukea vain yhtä magneettikytkintyyppiä) ja tarkista, näkyvätkö vaihdetut kytkimet alla olevassa luettelossa.",
+      "3": "Valitse alla oleva magneettikytkintyyppivaihtoehto ja suorita määritys loppuun napsauttamalla painiketta \"Aseta kaikki näppäimet\".",
+      "4": "Kalibroi kaikki näppäimet uudelleen välttääksesi magneettikytkintyyppien erojen vaikutuksen."
+    },
+    "tip_reset": "Tämän nollauspainikkeen napsauttaminen tyhjentää kaikki aiemmin määritetyt pikakäynnistyskohteet.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Magnetic Switch"
+  },
+  "common": {
+    "advance": "Lisäasetukset",
+    "basic": "Perus",
+    "beta_test_version": "Beta-testi",
+    "cancel": "Sulje",
+    "cancel_btn": "Peruuta",
+    "clear": "Tyhjennä",
+    "close": "Pois",
+    "connected": "Yhdistetty",
+    "connect_btn": "Yhdistä",
+    "connect_tip": "haluaa yhdistää HID-laitteeseen",
+    "create": "Luo",
+    "delete": "Poista",
+    "deleteConfirm": "Vahvistetaanko tämän datan nollaus?",
+    "disconnected": "Ei yhdistetty",
+    "download": "Lataa",
+    "empty": "Tyhjä",
+    "error": "Virhe",
+    "export": "Vie",
+    "general": "Yleinen",
+    "hide": "Piilota",
+    "iknow": "Kuittaa",
+    "import": "Tuo",
+    "is": "Kyllä",
+    "keyboard": "Näppäimistö",
+    "key_back": "Palauta",
+    "key_confirm": "Vahvista",
+    "loading": "Ladataan...",
+    "matrix": "Testaa matriisi",
+    "max_string_length": "Teksti ylittää enimmäispituuden rajan",
+    "min": "Minuutti",
+    "mouse": "Hiiri",
+    "noResult": "Ei tuloksia",
+    "not": "Ei",
+    "notSubmit": "Lähettämätöntä dataa. Lähetetäänkö nyt?",
+    "on": "Päällä",
+    "open": "Avaa",
+    "paired": "paritettu",
+    "plugged_in": "Kytketty",
+    "plug_and_ret": "Kytke laite ja yritä uudelleen.",
+    "plug_and_retry": "Kytke laite ja yritä uudelleen",
+    "recover": "Palauta",
+    "reset": "Nollaa",
+    "resetLayout": "Nollaa asettelu",
+    "reset_single": "Yksittäinen nollaus",
+    "resolution_not_support": "Näppäimistökarttaa ei voi näyttää, koska selainikkuna on liian pieni.",
+    "results": "Tulokset",
+    "save": "Tallenna",
+    "search": "Haku",
+    "select": "Valitse",
+    "selectall": "Valitse kaikki",
+    "status": {
+      "update_success": "Päivitys onnistui"
+    },
+    "submit": "Vahvista",
+    "timeSync": "Kalibroi näytön aika",
+    "turnoff": "KYTKE POIS",
+    "turnon": "KYTKE PÄÄLLE",
+    "type": "Tyyppi",
+    "upload": "Vahvista lähetys",
+    "view": "Näytä",
+    "warring": "Varoitus",
+    "window_too_small": "Esikatselua ei voi näyttää, koska ikkuna on liian pieni"
+  },
+  "connecting": "Yhdistetään",
+  "cross": {
+    "btn": {
+      "active": "Näppäimistön/hiiren näyttöjenvälinen käyttö",
+      "agree": "Hyväksy",
+      "cancel": "Peruuta",
+      "close": "Sulje",
+      "connect": "Yhdistä",
+      "disconnect": "Katkaise yhteys",
+      "minimize": "Pienennä",
+      "quick": {
+        "connect": "Pikayhdistä"
+      },
+      "reject": "Hylkää",
+      "reject_cancel": "Peruuta",
+      "trust": "Luota laitteeseen",
+      "waiting": "Odotetaan..."
+    },
+    "disconnect_confirm": {
+      "content": "Yhteyden katkaiseminen pysäyttää tiedostonsiirrot. Aloitetut siirrot tallennetaan historiaan, ja odottavat tiedostot hylätään.",
+      "title": "Tiedostonsiirto käynnissä"
+    },
+    "file_transfer": {
+      "average_speed": "Keskim. nopeus",
+      "change": "Muuta",
+      "clear": "Tyhjennä",
+      "clear_failed_desc": "Paikallista siirtohistoriaa ei voitu tyhjentää",
+      "clear_failed_title": "Tyhjennys epäonnistui",
+      "connected": "Yhdistetty",
+      "delete": "Poista",
+      "desc": "Mikä tahansa tiedostotyyppi · Vakaa siirto yhdistettyihin tietokoneisiin",
+      "direction": {
+        "receive": "Vastaanota",
+        "send": "Lähetä"
+      },
+      "dir_err_desc": "Valittua vastaanottokansiota ei voi käyttää",
+      "dir_err_title": "Kansion päivitys epäonnistui",
+      "dir_ok_desc": "Uudet tiedostot tallennetaan valittuun kansioon",
+      "dir_ok_title": "Tallennuskansio päivitetty",
+      "drop_unavailable_desc": "Valitse tämä tiedosto ”Valitse”-painikkeella",
+      "drop_unavailable_title": "Tiedostopolkua ei voi lukea",
+      "elapsed_label": "Kulunut aika",
+      "enable": "Ota tiedostonsiirto käyttöön",
+      "file_missing_desc": "Alkuperäinen tiedosto on siirretty tai poistettu, eikä sitä voi lähettää uudelleen.",
+      "file_missing_title": "Alkuperäistä tiedostoa ei ole olemassa",
+      "history": "Siirtohistoria",
+      "no_active": "Ei aktiivisia siirtoja",
+      "no_history": "Ei siirtohistoriaa",
+      "open": "Asetukset",
+      "open_err_desc": "Vastaanottokansiota ei voi avata",
+      "open_err_title": "Kansiota ei voi avata",
+      "open_folder": "Avaa",
+      "peer_cancelled": "Toinen laite peruutti siirron",
+      "quick_send": "Pikalähetys",
+      "quick_send_desc": "Valitse tiedostot ja lähetä ne suoraan yhdistettyyn tietokoneeseen",
+      "receive_failed_desc": "Tiedosto on epätäydellinen tai sitä ei voitu tallentaa paikallisesti",
+      "receive_failed_title": "Tiedoston vastaanotto epäonnistui",
+      "receiving": "Vastaanotetaan",
+      "receiving_path": "Paikallinen tallennuspolku",
+      "resend": "Lähetä uudelleen",
+      "select_button": "Valitse tiedostot",
+      "select_desc": "Valitse tietyt siirrettävät tiedostot",
+      "select_title": "Valitse tiedostot napsauttamalla",
+      "sending": "Lähetetään",
+      "send_failed_desc": "Valittua tiedostoa ei voi lähettää",
+      "send_failed_title": "Tiedostonsiirto epäonnistui",
+      "send_to": "Lähetä kohteeseen",
+      "status": {
+        "cancelled": "Peruutettu",
+        "failed": "Epäonnistui",
+        "received": "Vastaanotettu",
+        "receive_error": "Vastaanottovirhe",
+        "sent": "Lähetetty"
+      },
+      "title": "Tiedostonsiirto",
+      "transfer_time": "Siirtoaika",
+      "transmitting": "Siirretään",
+      "unsupported_file": "Tiedostomuotoa ei tueta siirtoa varten",
+      "waiting": "Odottaa"
+    },
+    "notification": {
+      "conn_end_t": "Yhteys katkaistu",
+      "conn_err_t": "Yhteys epäonnistui",
+      "conn_lost_t": "Yhteys menetetty",
+      "conn_reject_t": "Yhteyspyyntö hylätty",
+      "conn_req_err": "Yhteyspyynnön lähetys epäonnistui",
+      "hist_clear_err": "Yhteyshistorian tyhjennys epäonnistui",
+      "hist_clear_ok": "Yhteyshistoria tyhjennetty",
+      "id_err_t": "Vahvistus epäonnistui",
+      "network_lost": "Verkkoyhteys menetetty. Näyttöjen välinen istunto päättyi.",
+      "op_err_t": "Toiminto epäonnistui",
+      "op_ok_t": "Onnistui",
+      "pair_id_err": "Pariksi liitetyn laitteen vahvistus epäonnistui",
+      "pair_ok": "Laite liitetty pariksi onnistuneesti",
+      "pair_ok_t": "Liitetty pariksi",
+      "peer_end": "Toinen laite päätti näyttöjen välisen istunnon",
+      "peer_reject": "Toinen laite hylkäsi pyynnön",
+      "reconfirm_t": "Uudelleenvahvistus vaaditaan",
+      "sync_err_t": "Synkronointi epäonnistui",
+      "trust_id_changed": "Luotetun laitteen tunniste muuttui. Vahvista yhteyspyyntö uudelleen.",
+      "trust_id_err": "Luotetun laitteen vahvistus epäonnistui",
+      "trust_rm_err": "Luotetun laitteen poisto epäonnistui",
+      "trust_sync_err": "Luottamustietoja ei synkronoitu toiseen laitteeseen"
+    },
+    "page": {
+      "sub_desc": "Yhdistä kaksi tietokonetta · Näppäimistö/hiiri näyttöjen välillä · Leikepöydän manuaalinen synkronointi · Suora tiedostojen veto — luontevaa kuin yksi tietokone",
+      "sub_title": "Ominaisuuden esikatselu",
+      "title": "Näyttöjen välillä"
+    },
+    "panel": {
+      "desc": "Enintään 2 tietokonetta yhdistettynä (mukaan lukien paikallinen) · Laiteominaisuudet käytettävissä parinmuodostuksen jälkeen",
+      "found": "laitetta löytyi",
+      "history": {
+        "active": "Lähtevä",
+        "passive": "Saapuva",
+        "subtitle": "Äskettäin yhdistetyt",
+        "title": "Yhteyshistoria"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Muu",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Etsitään kaikkia samassa Wi-Fi-reitittimessä olevia tietokoneita",
+        "start": "Aloita haku",
+        "stop": "Lopeta haku",
+        "title": "Etsitään paikallisverkosta.."
+      },
+      "tag_1": "Luotettu",
+      "title": "Yhdistä tietokone"
+    },
+    "scan": {
+      "incoming_notice": "Hyväksymisen jälkeen toinen osapuoli voi muodostaa näytönjakoyhteyden tähän tietokoneeseen",
+      "incoming_subtitle": "Pyynnöt yhdistää tähän tietokoneeseen",
+      "incoming_title": "Saapuva yhteyspyyntö",
+      "network_changed_cancel": "Ei nyt",
+      "network_changed_confirm": "Etsi uudelleen",
+      "network_changed_desc": "Verkkoympäristö on muuttunut. Etsitäänkö uudelleen?",
+      "network_changed_title": "Verkko muuttui",
+      "rejected": "Toinen laite hylkäsi yhteyspyynnön",
+      "request_confirm": "Odotetaan vastapuolen vahvistusta... Pyyntö vanhenee",
+      "request_tip": "Pyydä yhteyttä kohteeseen",
+      "trust": "Luota tähän laitteeseen tulevia yhteyksiä varten.",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Yhdistä laite automaattisesti",
+      "automatic_connection_help": "Automaattinen yhteys: Valitse laite tämän tietokoneen luotettujen laitteiden luettelosta. Molempien laitteiden on määritettävä toisensa, jotta yhteys muodostuu automaattisesti Assistantin käynnistyessä.",
+      "automatic_connection_hint": "(Molemmat laitteet on määritettävä)",
+      "clear_automatic_device": "Tyhjennä automaattisesti yhdistettävä laite",
+      "close": "Sulje",
+      "confirm": "Vahvista",
+      "disconnect_shortcut": "Katkaise näyttöjen välinen yhteys",
+      "disconnect_shortcut_help": "Jos näytönjako lakkaa toimimasta, voit katkaista yhteyden tällä pikanäppäimellä. Tätä pikanäppäintä voi muuttaa, mutta sitä ei voi poistaa.",
+      "enter_shortcut_key": "Syötä mukautettu näppäin",
+      "no_trusted_devices": "Ei luotettuja laitteita",
+      "remove_confirmation": "Lopetetaanko luottamus laitteeseen {device}?",
+      "remove_device": "Poista luotettu laite",
+      "select_device": "Valitse luotettu laite",
+      "shortcut_hint": "（Tukee kirjaimia, numeroita ja näppäimiä F1–F12; tyhjennä painamalla askelpalautinta tai Delete）",
+      "shortcut_keys": "Pikanäppäimet",
+      "system_lock_shortcut": "Lukitse näyttö",
+      "title": "Luottamus ja automaattinen yhdistäminen",
+      "trusted_count": "Luotetut laitteet ({count})",
+      "trust_help": "Luotettu laite: Luotettu laite voi muodostaa yhteyden seuraavalla kerralla ilman hyväksyntää tällä tietokoneella."
+    },
+    "step": {
+      "collapse": "Tiivistä",
+      "connected": "Yhdistetty",
+      "desc": "Etsi ja liitä toinen tietokone pariksi Keychron Assistantissa · Kun yhteys on muodostettu, näyttöjen välinen näppäimistön ja hiiren ohjaus sekä tiedostonsiirto ovat käytettävissä",
+      "desc_1": "Etsi automaattisesti tietokoneet samasta lähiverkosta ja lähetä pyyntö",
+      "desc_2": "Toinen osapuoli suorittaa parinmuodostuksen napsauttamalla \"Salli\"",
+      "desc_3": "Kaikki näyttöjen väliset ominaisuudet käytettävissä",
+      "expand": "Laajenna",
+      "local": "Paikallinen",
+      "title": "Yhteyden muodostus",
+      "title_1": "Etsi ja pyydä",
+      "title_2": "Toinen osapuoli vahvistaa",
+      "title_3": "Yhdistetty",
+      "trust": "Yhdistetty · Luotettu",
+      "wait_1": "Odotetaan",
+      "wait_2": "Napsauttamaan \"Salli\"",
+      "wait_3": "Muodostetaan paria toisen tietokoneen kanssa"
+    },
+    "tabs": {
+      "file_transfer": "Tiedostonsiirto",
+      "settings": "Asetukset"
+    },
+    "time": {
+      "ago": "sitten",
+      "days": "päivää",
+      "hours": "tuntia",
+      "just_now": "juuri nyt",
+      "last": "Viimeksi",
+      "last_connection": "Viimeisin yhteys",
+      "minutes": "minuuttia",
+      "months": "kuukautta",
+      "seconds": "s"
+    },
+    "view": {
+      "bottom": "Alhaalla",
+      "desc": "Kun hiiren osoitin ylittää määritetyn näytön reunan, näppäimistösi ja hiiresi ohjaavat yhdistettyä laitetta.",
+      "left": "Vasemmalla",
+      "off": "Pois",
+      "right": "Oikealla",
+      "title": "Aseta näytön ylitysreuna",
+      "top": "Ylhäällä"
+    },
+    "web": {
+      "auto_connect_target": "Automaattisen yhdistämisen kohde",
+      "center_cursor": "Keskitä osoitin",
+      "clipboard": "Leikepöytä",
+      "clipboard_desc": "Synkronoi kopioitu sisältö manuaalisesti tietokoneiden välillä",
+      "connect_assistant": "Avaa Assistant",
+      "connect_hint": "Yhteystoiminto on suoritettava Assistantissa.",
+      "custom_screenshot": "Mukautettu kuvakaappaus",
+      "direction": "Suunta",
+      "drop_box_key": "Pudotuslaatikon pikanäppäin",
+      "exit_application": "Katkaise yhteys",
+      "file_transfer": "Tiedostonsiirto",
+      "file_transfer_desc": "Valitse tiedostoja tai avaa pudotuslaatikko pikanäppäimellä",
+      "hold_ctrl": "Pidä Ctrl pohjassa ylittääksesi näytöt",
+      "in_progress": "tehtävää",
+      "items": "kohdetta",
+      "keyboard_mouse": "Näppäimistön / hiiren jakaminen",
+      "keyboard_mouse_desc": "Vaihda ohjaus, kun osoitin ylittää näytön reunan",
+      "loading": "Haetaan näyttöjen välistä tilaa Assistantista…",
+      "lock_pc": "Lukitse tietokone",
+      "max": "Enintään",
+      "not_set": "Ei",
+      "off": "Pois",
+      "on": "Päällä",
+      "ongoing": "Käynnissä",
+      "read_only": "Vain katselu · Muuta asetuksia Keychron Assistantissa",
+      "recent_items": "Viimeisimmät kohteet",
+      "save_dir": "Tallennuskansio",
+      "settings": "Asetukset",
+      "settings_desc": "Luotetut laitteet · Automaattinen yhdistäminen · Pikanäppäimet",
+      "shortcut_mapping": "Pikanäppäinten määritys",
+      "switch_pc": "Vaihda tietokonetta",
+      "sync_mode": "Synkronointitila",
+      "target_device": "Kohdelaite",
+      "title": "Näyttöjen välinen tila",
+      "trusted_devices": "Luotetut laitteet",
+      "trust_auto_connect": "Luottamus ja automaattinen yhdistäminen"
+    }
+  },
+  "debounce": {
+    "backlight": "Taustavalon lepoaika ei voi olla alle 5 sekuntia.",
+    "mode": "Värähtelynpoistotila",
+    "press": "Painallussekunnit",
+    "release": "Nollaussekunnit",
+    "response": "Vasteaika",
+    "scan": "Skannausnopeus",
+    "setting": "Näppäimistön värähtelyajan asetukset",
+    "sleep_limit": "Lepoaika ei voi olla alle 1 minuutti.",
+    "tip": "Automaattisen taustavalon sammutuksen alkamisajan on oltava aikaisempi kuin automaattisen lepotilan alkamisaika.",
+    "warning": {
+      "content": "(Huomaa: Alle 10 ms:n asetus voi aiheuttaa kaksoisnapsautuksia. Aseta harkiten.)",
+      "title": "Haluatko varmasti asettaa sen?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Näppäimistön esittely",
+    "device_mouse": "Hiiren esittely",
+    "exit": "Poistu esittelytilasta",
+    "keyboard": "Kokeile ilman näppäimistöä ",
+    "mode": "Esittelytila",
+    "mouse": "Kokeile ilman hiirtä",
+    "tip": "Huomaa: Tämä on tällä hetkellä esittelytilassa ja toimii vain esityksenä ilman todellista toiminnallisuutta",
+    "title": "Esittely"
+  },
+  "device": {
+    "version": "Laitteen versio"
+  },
+  "device_add": "Yhdistä",
+  "device_select": {
+    "notify": "Valitse laite luettelosta jatkaaksesi.",
+    "select": "Jatka",
+    "un_select": "Laitetta ei valittu"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Kirjoitustesti"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Yhdistä",
+      "2": "Seuraava",
+      "3": "Edellinen",
+      "6": "Seuraavaksi päivitä",
+      "enterBootloaderMode": "Siirry päivitystilaan",
+      "flash": "Kirjoita laiteohjelmisto",
+      "matchDevice": "Kohdista laite",
+      "retry": "Yritä uudelleen",
+      "startUpgrading": "Aloita päivitys"
+    },
+    "description": "Kuvaus",
+    "downloadFailed": "Laiteohjelmistotiedoston lataus epäonnistui",
+    "error": {
+      "diff_model": "Laitteiden laiteohjelmistomallit eivät täsmää",
+      "get_dfu_version": "Laitteen laiteohjelmiston päivitysversion haku epäonnistui"
+    },
+    "flashError": "Laiteohjelmiston päivitys epäonnistui",
+    "flashSuccess": "Laiteohjelmisto päivitetty onnistuneesti",
+    "info": {
+      "currentVersion": "Nykyinen versio",
+      "latestVersion": "Uusin versio",
+      "updateSize": "Laiteohjelmiston koko",
+      "updateTime": "Viimeisin päivitys"
+    },
+    "mouse": {
+      "step1_hid_device": "Paina näppäimistön näppäimiä K, E, Y järjestyksessä ja jatka seuraavaan vaiheeseen, kun HID-laitteen yhteyskehote tulee näkyviin."
+    },
+    "notFound": "Laitteen uusinta laiteohjelmistoa ei löytynyt",
+    "productNotExist": "Laitetietoja ei saatu",
+    "requestFail": "Laitteen haku epäonnistui; tarkista, onko se muiden ohjelmien käytössä.",
+    "syncQuickStart": "Synkronoi pikakäynnistys",
+    "tip": {
+      "confirm": "Vahvista",
+      "currentSelect": "Tällä hetkellä valittu"
+    },
+    "tips": {
+      "0": "Tälle laitteelle ei ole saatavilla laiteohjelmistopäivitystä.",
+      "4": "Noudata alla olevia ohjeita, jos käytät Windows-laitetta etkä ole asentanut QMK Toolbox Driver-ajuria. Jos olet jo asentanut QMK Toolbox Driver-ajurin, napsauta Seuraava.",
+      "5": "Napsauta alla olevaa \"Lataa Toolbox\" -painiketta ladataksesi ja purkaaksesi Toolboxin.",
+      "6": "Kun olet purkanut tiedostot, napsauta Toolbox-kuvaketta hiiren kakkospainikkeella tai etsi ”driver” järjestelmän hakupalkista ja valitse sitten ”Suorita järjestelmänvalvojana” avataksesi sen.",
+      "7": "Avaa se ja napsauta valikkoa \"Tool\".",
+      "8": "Napsauta \"Install Drivers\", jatka napsauttamalla \"yes\" aloittaaksesi laiteohjelmistoajurien asennuksen ja odota asennuksen valmistumista.",
+      "9": "Kun asennus on valmis, voit napsauttaa Seuraava aloittaaksesi laiteohjelmiston kirjoituksen.",
+      "10": "Huomaa: Voit napsauttaa",
+      "11": "Noudata alla olevia ohjeita.",
+      "12": "Irrota nykyisessä tilassa näppäimistön USB-kaapeli ja anna näppäimistön katketa.",
+      "13": "Kun näppäimistö on irrotettu, pidä painettuna näppäimistön ESC tai \"○\" ja liitä samalla näppäimistö tietokoneeseen USB-kaapelilla. Anna näppäimistön siirtyä laiteohjelmiston päivitykseen valmistautumisen tilaan.",
+      "15": "Kun yhdistäminen onnistuu, \"Kirjoita laiteohjelmisto\" -painike tulee näkyviin. Aloita laiteohjelmiston päivitys napsauttamalla sitä.",
+      "16": "Älä katkaise laitteen yhteyttä laiteohjelmiston päivityksen aikana.",
+      "18": "Lataa Toolbox",
+      "19": "Toolbox-ajurin asennuksen ohjevideo",
+      "20": "ymmärtääksesi Toolbox-ajurin asennuksen yksityiskohtaisen prosessin.",
+      "22": "Napsauta \"Yhdistä\"-painiketta yhdistääksesi nykyisen laitteen, ja järjestelmä etsii automaattisesti laitteen uusimman laiteohjelmistoversion",
+      "23": "Pidä näppäimistön Fn- ja - -näppäintä painettuna vähintään 5 sekuntia valmistellaksesi näppäimistön laiteohjelmiston päivitykseen, kunnes sininen merkkivalo syttyy.",
+      "24": "Kun yhdistäminen onnistuu, \"Kirjoita laiteohjelmisto\" -painike tulee näkyviin. Aloita laiteohjelmiston päivitys napsauttamalla sitä.",
+      "25": "Napsauta alla olevaa Kohdista laite -painiketta, valitse laite, joka alkaa ({{ mode }}), ja yhdistä se.",
+      "26": "Päivitä Bluetooth-moduuli USB-tilassa.",
+      "27": "Napsauta alla olevaa painiketta saadaksesi uusimman laiteohjelmistoversion.",
+      "28": "Kun näppäimistö on irrotettu, pidä näppäimistön vasemman yläkulman näppäintä painettuna ja yhdistä samalla näppäimistö tietokoneeseen USB-kaapelilla. Anna näppäimistön siirtyä laiteohjelmiston päivitystä valmistelevaan tilaan.",
+      "bl-exceeded": "Yritysten enimmäismäärä ylitetty, kytke datakaapeli uudelleen.",
+      "clickMatchBtn": "Napsauta alla olevaa \"Kohdista laite\" -painiketta, valitse laite, joka alkaa {{dfuName}}, ja yhdistä se",
+      "currentDongle": "(Käytä langallista yhteyttä näppäimistön/hiiren päivittämiseen. Tällä sivulla näkyy nyt vastaanotin.)",
+      "link_wired_content": "Hiiri siirtyy lepotilaan langattoman laiteohjelmiston päivityksen aikana, mikä tekee siitä toimimattoman",
+      "link_wired_title": "Yhdistä langallisella yhteydellä ennen päivittämistä",
+      "longPress": "Paina ensin ESC ja paina sitten samanaikaisesti Tab-näppäintä 3 sekunnin ajan.",
+      "matchErr": "Ei tällä hetkellä liitetty pariksi. Valitse päivitettävä laite manuaalisesti.",
+      "mouseTip2": "2. Jos link on jo liitetty ja yhdistäminen on jo käytettävissä. Napsauta Kirjoita laiteohjelmisto aloittaaksesi kirjoituksen.",
+      "mouseTip4": "Napsauta alla olevaa \"Yhdistä\"-painiketta, valitse \"Bootloader-laite\" ja yhdistä se.",
+      "mouseTip6": "(Älä irrota vastaanotinta tietokoneesta laiteohjelmiston kirjoituksen aikana.)",
+      "mouseTip7": "Odota päivityksen valmistumista - onnistumisilmoitus tulee näkyviin.",
+      "patch": {
+        "1": "Tämä päivitys on tietoturvapäivitys. Päivitä ensin noudattamalla alla olevia ohjeita.",
+        "2": "Irrota nykyisessä tilassa näppäimistön USB-kaapeli katkaistaksesi yhteyden.",
+        "3": "Kun näppäimistö on irrotettu, poista välilyöntinäppäimen näppäinhattu ja paikanna kytkimen vieressä oleva pieni metallipainike.",
+        "4": "Pidä painiketta painettuna ja yhdistä näppäimistö uudelleen tietokoneeseen USB-kaapelilla.",
+        "5": "Napsauta alla olevaa Kohdista laite -painiketta, valitse sitten laite, jonka nimessä on (DFU), ja liitä se pariksi.",
+        "6": "Kun parinmuodostus onnistuu, Kirjoita laiteohjelmisto -painike tulee näkyviin. Aloita tietoturvapäivityksen päivittäminen napsauttamalla sitä."
+      },
+      "toFlash": "Kun yhdistäminen onnistuu, \"Kirjoita laiteohjelmisto\" -painike tulee näkyviin. Aloita laiteohjelmiston päivitys napsauttamalla sitä"
+    },
+    "update": {
+      "dfu_check": "Tarkista, että valittu DFU-laite on oikea."
+    },
+    "update_available": "Saatavilla on päivitettävä laiteohjelmistoversio",
+    "update_latest": "Tämä on uusin laiteohjelmistoversio",
+    "update_success": "Päivitys onnistui, yhdistä nykyinen laite napsauttamalla \"Yhdistä\"-painiketta.",
+    "warning": "Älä irrota laitetta tai päivitä sivua, jotta laite ei vaurioidu.",
+    "write": "Laiteohjelmiston kirjoituksen aikana"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Laitteen käyttöopas",
+      "tutorial": "Opastus",
+      "user_feedback": "Käyttäjäpalaute"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Kuinka asettaa automaattinen lepotila ja taustavalon sammutuksen alkamisaika Launcherissa?",
+        "set_keyboard_bounce_time": "Kuinka asettaa näppäimistön värähtelyaika Launcherissa?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Kuinka asettaa taustavalonäppäimet Launcherissa?",
+        "set_mix_rgb": "Kuinka asettaa Mix RGB Launcherissa?",
+        "set_per_key_rgb": "Kuinka asettaa näppäinkohtainen RGB Launcherissa?"
+      },
+      "bridge_firmware_update": "Kuinka kirjoittaa laiteohjelmisto Keychron-vastaanottimelle",
+      "create_mouse_macro": "Kuinka luoda hiirimakro Launcherissa",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Kuinka palauttaa tehdasasetukset ja päivittää laiteohjelmisto Launcherissa?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Kuinka hallita HE-profiiliasi Launcherissa?",
+        "set_gamepad_analog_and_curves": "Kuinka asettaa peliohjaimen analogiatoiminto ja peliohjaimen käyrät Launcherissa?",
+        "set_long_press_switch": "Kuinka asettaa pitkän painalluksen kytkin Launcherissa?",
+        "set_one_key_multiple_commands": "Kuinka määrittää useita komentoja yhdelle näppäimelle?",
+        "set_snap_click": "Kuinka asettaa Snap Click Launcherissa?",
+        "use_he_mode": "Kuinka käyttää HE-tilaa Keychron Launcherissa?"
+      },
+      "keymap": {
+        "fn_keys_function": "Kuinka Fn-näppäinyhdistelmät toimivat Keychron-näppäimistöissä?",
+        "remap_key": "Kuinka määrittää näppäin uudelleen Launcherissa?",
+        "set_keymap_language": "Kuinka asettaa näppäinkartan kieli Launcherissa?",
+        "use_different_function_layers": "Tasojen vaihtaminen ja vaihtokytkentä: tehokas näppäimistön mukauttaminen?"
+      },
+      "key_test": {
+        "custom_sounds": "Kuinka mukauttaa näppäimistön ääntä?",
+        "perform_keyboard_key_testing": "Kuinka suorittaa näppäimistön näppäintesti Launcherissa?"
+      },
+      "macro": {
+        "create_macro": "Kuinka luoda makro Launcherissa?"
+      },
+      "make_mouse_factory_reset_setting": "Kuinka palauttaa hiiren tehdasasetukset Launcherissa",
+      "mouse_angle_adjustment": "Kuinka käyttää kulman säätöä Launcherissa",
+      "mouse_firmware_update": "Hiiren laiteohjelmiston päivitysopas",
+      "mouse_receiver_firmware_update": "Kuinka kirjoittaa laiteohjelmisto Keychron-vastaanottimelle",
+      "quick_start": {
+        "download_and_install_assistant": "Kuinka ladata ja asentaa Keychron Assist?",
+        "set_quick_start": "Kuinka käyttää pikakäynnistystä Launcherissa?"
+      },
+      "set_mouse_customize_buttons": "Kuinka asettaa hiiren mukautettavat painikkeet Launcherissa",
+      "set_mouse_debounce_time": "Kuinka asettaa hiiren värähtelyaika Launcherissa",
+      "set_mouse_dpi_and_polling_rate": "Kuinka asettaa hiiren DPI ja pollausnopeus Launcherissa",
+      "set_mouse_system_features_setting": "Kuinka asettaa hiiren järjestelmäominaisuudet Launcherissa"
+    },
+    "user_manual": "Käyttöopas"
+  },
+  "issue": {
+    "content": "Sisältö",
+    "device": "Laite",
+    "email": "Sähköposti",
+    "tips": {
+      "content": "Sisältö on pakollinen",
+      "device": "Laite on pakollinen",
+      "email": "Virheellinen sähköpostiosoite",
+      "input": "Syötä sisältö",
+      "send": "Raportti lähetetty",
+      "title": "Otsikko on pakollinen"
+    },
+    "type": {
+      "1": "Painikkeen toimintahäiriö / ei vastausta",
+      "2": "Yhteysongelmat",
+      "3": "Laitteistovika",
+      "4": "Asettelu/mitoitus on sopimaton",
+      "5": "Ajuriongelma",
+      "6": "Muu",
+      "7": "Valitse kysymyksen tyyppi"
+    }
+  },
+  "keycap": {
+    "character": "Kirjainnäppäimet",
+    "fnc": "Toimintonäppäimet",
+    "general": "Yleiset",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Numeronäppäimet",
+    "symbol": "Symbolinäppäimet",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Pidä = ylempi näppäin (muokkausnäppäin) · Paina = alempi näppäin"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Näppäinyhdistelmä",
+      "combo_description": "Mukautettu pikanäppäin",
+      "launch_app": "Käynnistä sovellus",
+      "launch_app_description": "Käynnistä sovellus yhdellä napsautuksella",
+      "launch_web": "Avaa verkkosivu",
+      "launch_web_description": "Avaa verkkosivu yhdellä napsautuksella",
+      "macro": "Makro",
+      "macro_description": "Sarja toimintoja",
+      "remap": "Uudelleenmääritä näppäin",
+      "remap_description": "Määritä toinen näppäin",
+      "title": "Muuta {{key}}"
+    },
+    "codeInput": "Syötä näppäinpainallus",
+    "knob_not_support": "Nykyinen laiteohjelmisto ei tue säätöpyörän mukauttamista, päivitä laiteohjelmisto.",
+    "layer": {
+      "1": "1. Pidä painettuna aktivoidaksesi kohdetaso tilapäisesti; alkuperäinen arvo palautuu, kun näppäin vapautetaan.",
+      "2": "2. Se toimii vain alemmalta tasolta ylemmälle tasolle sovellettuna; ylemmältä tasolta alemmalle tasolle soveltaminen ei toimi.",
+      "3": "1. Napsauta poistaaksesi käytöstä / aktivoidaksesi kohdetason; kun kohdetaso on poistettu käytöstä, valitaan korkein aktiivinen taso.",
+      "4": "2. Oletustasoa ei voi poistaa käytöstä; jos kaikki tasot on poistettu käytöstä, käytetään oletustasoa.",
+      "5": "Pitkän painalluksen toiminto on sama kuin MO; 5 napsautuksen toiminto on sama kuin TG",
+      "6": "1. Aktivoi taso napsauttamalla/pitämällä painettuna; aktivointi on mahdollista vain alemmalta tasolta ylemmälle.",
+      "7": "Snap Tap tukee vain magneettikytkinnäppäimiä",
+      "8": "Napsauta aktivoidaksesi kohdetaso yksisuuntaisesti erottelematta ylempiä ja alempia tasoja.",
+      "9": "Yksittäisen kohteen napsautus aktivoi väliaikaisesti kohteen oletustason erottelematta ylempiä ja alempia tasoja.",
+      "10": "1. Kun näppäimistön virta katkeaa, se palautuu järjestelmäkytkimen asetusta vastaavalle oletustasolle (esim. Windows vastaa tasoa 2 ja macOS tasoa 0).",
+      "11": "2. Joistakin näppäimistömalleista puuttuu fyysinen järjestelmäkytkin; ne palautuvat yleensä kiinteälle oletustasolle, kuten tasolle 0.",
+      "error_info": "Näppäimistön järjestelmäasetus ei vastaa tietokoneesi järjestelmää; muuntonäppäinten toiminnot voivat muuttua.",
+      "tip": "vihje:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Valitse yksi tai useampi muokkausnäppäin ja päänäppäin, ja laukaise sitten yhdellä näppäimellä.",
+        "modifier_keys": "Muokkausnäppäimet",
+        "press_primary_key": "Paina päänäppäintä",
+        "primary_key": "Päänäppäin",
+        "title": "Näppäinyhdistelmä"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Paina tätä painiketta avataksesi määritetyn sovelluksen.",
+        "no_available_apps": "Ei käytettävissä olevia sovelluksia",
+        "search_apps": "Hae sovelluksia",
+        "title": "Käynnistä sovellus"
+      },
+      "launch_web": {
+        "description": "Paina tätä painiketta avataksesi määritetyn verkkosivun.",
+        "title": "Avaa verkkosivu",
+        "web_page_url": "Verkkosivun URL-osoite"
+      },
+      "macro": {
+        "description": "Tallenna makro suoraan syöttökenttään: painamasi näppäimet tallennetaan toimintosarjana.",
+        "macro_keys": "Makronäppäimet",
+        "press_key": "Paina tallennettava näppäin",
+        "title": "Tallenna makro"
+      },
+      "remap": {
+        "description": "Miksi “{{key}}” pitäisi muuttaa?",
+        "press_key": "Paina määritettävä näppäin",
+        "primary_keys": "Päänäppäimet",
+        "title": "Muuta näppäimiä"
+      }
+    },
+    "reset": {
+      "all": "Vahvista kaikkien asetusten nollaus?",
+      "single": "Vahvista tämän näppäimen asetusten nollaus?",
+      "title": "Haluatko varmasti nollata?"
+    },
+    "tabs": {
+      "assist": "Pikakäynnistys",
+      "basic": "Perus",
+      "custom": "Mukautettu",
+      "layers": "Taso",
+      "macro": "Makro",
+      "media": "Media",
+      "modtap": "Pidä / Paina",
+      "mouse": "Hiiri",
+      "qmk_lighting": "Valaistus",
+      "special": "Erikoisnäppäimet",
+      "wt_lighting": "Valaistus"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Mukautettu",
+      "default_layer": "Oletustaso",
+      "display": "Valitse näytettävä taso",
+      "functional": "Todellinen toimintataso",
+      "funtional": "Nykyinen",
+      "warn": "Jos näppäimet eivät toimi, vaihda järjestelmäkytkin ja käynnistä uudelleen."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": ".Haluatko vaihtaa kohteeseen...",
+    "connect": {
+      "1": "Yhdistä laitteesi kaapelilla tai 2.4G-vastaanottimella. \n(jotkin mallit tukevat vain langallista tilaa)",
+      "2": "Napsauta vasemmassa yläkulmassa olevaa \"Yhdistä\"-painiketta ja valitse määritettävä laite."
+    },
+    "detectedKeyboardLanguage": "Havaitsimme, että näppäimistösi kieli on...",
+    "guide_tip": "Yhdistä laitteesi noudattamalla alla olevaa opasta",
+    "keepCurrentSetting": "Säilytä nykyiset asetukset",
+    "lang": "Asettelun kieli",
+    "resetSuccessContent": "Näppäimistön asettelu on nollattu onnistuneesti",
+    "resetSuccessTitle": "Nollaus onnistui",
+    "select_device": "Valitse yhdistettävä laite",
+    "switchImmediately": "Vaihda nyt"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Kirkkaus",
+    "color": "Väri",
+    "common": {
+      "setting_color": "Värin asetus"
+    },
+    "commonColor": "Yleiset värit",
+    "customColor": "Määritä värit",
+    "decorate_light": {
+      "0": "Ei mitään",
+      "1": "Kiinteä",
+      "2": "Hengittävä",
+      "3": "Värikierto",
+      "4": "Juokseva valo"
+    },
+    "effect": "Tehoste",
+    "effect speed": "Nopeus",
+    "hue": "Sävy",
+    "layer2": "RGB-alue",
+    "led": {
+      "sub": {
+        "title": "Vihje: Valitse LED-nauha alta sen väriä asettaessasi."
+      },
+      "title": "Valopalkki"
+    },
+    "level": "Taso",
+    "mix": {
+      "config": "Valotehosteen asetukset",
+      "hxxg": {
+        "hue": "Sävy",
+        "saturability": "Kylläisyys",
+        "speed": "Nopeus"
+      },
+      "rk": "Tämä ominaisuus mahdollistaa 2 erilaisen näppäinalueen määrittämisen samalle näppäimistölle eri RGB-valotehosteita varten. Kullekin alueelle voit asettaa eri aikajaksoja silmukkaan, ja jokaiselle aikajaksolle voidaan asettaa eri RGB-valotehosteet.",
+      "timeLine": {
+        "second_tips": "Sekuntien syöte on liian suuri tai liian pieni.",
+        "title": "Aikajana"
+      },
+      "verify_duration": {
+        "tip1": "Syötetyn arvon tulee olla luku, joka on suurempi kuin 1 ja pienempi kuin 99!",
+        "tip2": "Vain kaksi desimaalia voidaan syöttää",
+        "tip3": "Syötetty arvo on liian suuri",
+        "tip4": "Syötetty arvo on liian pieni"
+      }
+    },
+    "notSupport": "Laite ei tue valaistusasetuksia",
+    "perkey": {
+      "effect": "Tehosteen valinta",
+      "effects": {
+        "0": "Yleinen",
+        "1": "Hengittävä",
+        "2": "Yksittäisen näppäimen vaste",
+        "3": "Viereisten näppäinten vaste",
+        "4": "Koko näppäimistö"
+      },
+      "redo": "tee uudelleen",
+      "region": "Alueen valinta",
+      "region_select": "Valitse alue",
+      "region_tip": "Valitse alue näppäimistön näppäimistä ja aseta väri. Napsauta Tallenna muuttaaksesi vastaavan alueen väriä.",
+      "rk": "Kunkin näppäimen värin voi asettaa erikseen. Voit muuttaa näppäimen väriä valitsemalla sen, napsauttamalla aluetta, jossa väri asetetaan, muuttamalla väriä ja tallentamalla sen.",
+      "save_warn": "Liian monta RGB-aluetta, poista joitakin RGB-alueita ja yritä uudelleen.",
+      "select_tip": "Valittu näppäin ei luo aluetta",
+      "select_warn": "Valitse näppäin",
+      "undo": "kumoa"
+    },
+    "saturation": "Kylläisyys",
+    "settingAllBrightnessArea": "Kaikkien alueiden kirkkauden asetus",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Koristevalo",
+      "indication": "Merkkivalo",
+      "led_light": "Valonauhan ohjaus",
+      "mix_rgb": "Sekoita RGB",
+      "perkey_rgb": "Näppäinkohtainen RGB",
+      "screen": "Näytön säätö",
+      "selection": "Taustavalo"
+    },
+    "underglow brightness": "Kirkkaus"
+  },
+  "lights": {
+    "0. None": "Ei mitään",
+    "1. Solid Color": "Yhtenäinen väri",
+    "10. Cycle Pinwheel": "Kiertävä tuuliviiri",
+    "11. Cycle Spiral": "Kiertävä spiraali",
+    "12. Dual Beacon": "Kaksoismajakka",
+    "13. Rainbow Beacon": "Sateenkaarimajakka",
+    "14. Jellybean Raindrops": "Karkkisadepisarat",
+    "15. Pixel Rain": "Pikselisade",
+    "16. Typing Heatmap": "Kirjoituksen lämpökartta",
+    "17. Digital Rain": "Digitaalinen sade",
+    "18. Reactive Simple": "Reagoiva yksinkertainen",
+    "19. Reactive Multiwide": "Reagoiva monileveä",
+    "2. Breathing": "Hengittävä",
+    "20. Reactive Multinexus": "Reagoiva monikeskus",
+    "21. Splash": "Roiske",
+    "22. Solid Splash": "Yhtenäinen roiske",
+    "23. Per Key Rgb": "Näppäinkohtainen RGB",
+    "3. Band Spiral Val": "Nauhaspiraali (kirkkaus)",
+    "4. Cycle All": "Kierrä kaikki",
+    "5. Cycle Left Right": "Kierrä vasen-oikea",
+    "6. Cycle Up Down": "Kierrä ylös-alas",
+    "7. Rainbow Moving Chevron": "Liikkuva sateenkaarikulma",
+    "8. Cycle Out In": "Kierrä ulos-sisään",
+    "9. Cycle Out In Dual": "Kierrä ulos-sisään kaksois"
+  },
+  "macro": {
+    "allchar": "Kaikki merkit",
+    "closeDelay": "Poista viive käytöstä",
+    "code": "Koodin syöttö",
+    "common": {
+      "flash": "Vilkkuminen",
+      "title": "Määritä makro valitsemalla se ja napsauttamalla sitten yllä olevaa hiiren painiketta."
+    },
+    "config": "Määritykset",
+    "delay": "Viiveet",
+    "delaySet": "Aikaviive",
+    "dynamicDelay": "Dynaaminen viive",
+    "endREC": "Lopeta tallennus",
+    "enterDown": "Lisää alaspainallus",
+    "enterUp": "Lisää vapautus",
+    "fixedDelay": "Kiinteä viive",
+    "inputdelay": "Syötä viiveaika",
+    "inputtexct": "Syötä teksti",
+    "insertDelay": "Lisää viive",
+    "keydown": "Paina alas",
+    "keyup": "Vapauta",
+    "loopCount": "Silmukoiden määrä",
+    "loopCurrentDown": "Pysäytä painalluksella",
+    "loopDown": "Pysäytä millä tahansa näppäimellä",
+    "loopOne": "Suorita kerran",
+    "loopSet": "Silmukka-asetukset",
+    "loopUp": "Pysäytä vapautuksella",
+    "macroReccord": "Tallenna",
+    "macroSetup": "Makro",
+    "mouse": "Hiiri",
+    "notEqual": "Havaittu, että virtaava näppäin ei ole vapautettu, jatketaanko?",
+    "record": "Tallenna",
+    "rename": "Nimeä uudelleen",
+    "save": "Tallenna",
+    "setRepeatCount": "Toistojen määrä",
+    "specialText": "Tekstin erityisyys",
+    "startREC": "Aloita tallennus",
+    "stop": "Pysäytä",
+    "text": "Teksti",
+    "texttype": "Vain englanninkielisiä kirjaimia, numeroita ja perussymboleja voi syöttää.",
+    "tip": {
+      "clickCopy": "Napsauta kopioidaksesi tekstin",
+      "fixDelay": "Tässä kiinteä viive tarkoittaa, että se on upotettu jokaiseen tapahtumaan, ja tapahtuma sisältää viivetapahtuman.",
+      "keyDelay": "Viive: {200}, Yksikkö: MS",
+      "keyDown": "Nollaa: {-KC_A}",
+      "keyText": "Teksti: ABCDEF",
+      "keyUp": "Paina alas: {+KC_A}",
+      "macro_text": "Syötä suoritettava makro.."
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magneettinen",
+      "mechanical": "Mekaaninen",
+      "tip": "vihje",
+      "title": "Kytkintilastot"
+    },
+    "calibration": {
+      "1": "Älä irrota USB-kaapelia, katkaise laitteen yhteyttä tai sammuta laitetta kalibroinnin aikana. Muuten laite voi kaatua.",
+      "2": "Aloita kalibrointi",
+      "3": "Älä paina mitään näppäintä 2 sekunnin sisällä ennen kuin napsautat \"Aloita kalibrointi\".",
+      "4": "Pidä näppäintä painettuna 1 sekunti kalibroinnin viimeistelemiseksi.",
+      "5": "Kun kalibrointi onnistuu, taustavalo muuttuu vihreäksi.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Analogisen käyrän profiili",
+      "save": "Tallenna kaarevuus",
+      "title": "Sauvakäyrän asetukset"
+    },
+    "directive": {
+      "bottomBack": "Kimmotus",
+      "bottomIn": "Pohjalle sisään",
+      "bottomOut": "Pohjalta ulos",
+      "trigger": "Aloituslaukaisu"
+    },
+    "distance": {
+      "advance_mode": "Edistynyt",
+      "basic_mode": "Perus",
+      "current": "Nykyiset näppäimet",
+      "globalDis": "Valitse kaikki",
+      "globalRt": "Aseta kaikkien näppäinten laukaisimet",
+      "limitTip": "Arvo on ylittänyt rajan. Täytä uudelleen.",
+      "magnet_calibrate": "Laukaisudemo",
+      "magnet_calibrate_point": "Laukaisupiste",
+      "magnet_calibrate_tip": "Laukaisudemo tukee vain yhtä näppäintä",
+      "magnet_calibrate_tip_desc": "Valitse näppäin ja käännä oikeassa yläkulmassa oleva kytkinpainike päälle esitelläksesi valitun näppäimen laukaisua.",
+      "magnet_calibrate_tip_empty": "Valitse näppäin",
+      "profile_help": "paina \"fn\" + \"p\" + \"z / x / c\", voit nopeasti vaihtaa profiiliksi profiili 1 / 2 / 3",
+      "result": "Syötä näppäinarvot",
+      "sensitive": "Herkkyys",
+      "setting": "Aseta aktivointimatka",
+      "show_mode_dis": "Aktivointimatka",
+      "show_mode_hide": "Ei tietoja",
+      "show_mode_rt": "Pikalaukaisu",
+      "speed_trigger": "Pikalaukaisu",
+      "trigger_distance": "(Painallus) Laukaisumatka",
+      "trigger_distance_reset": "(Vapautus) Nollausmatka",
+      "trigger_distance_twice": "(Painallus) Laukaisumatka"
+    },
+    "dkr": {
+      "desc": "Enimmäislaukaisumäärä: (6-100)",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Tyhjennä määritys",
+      "left_emu": "Emuloi vasenta",
+      "reflect": {
+        "conflict": "Tämä näppäin on jo asetettu"
+      },
+      "titles": {
+        "1": "Ohjaussauvan painikkeen valinta",
+        "2": "Ohjaussauvan painikkeen asetus",
+        "4": "Ota näppäimistön näppäimet käyttöön tai poista käytöstä",
+        "5": "Ota käyttöön, jos voit kirjoittaa ohjaussauvan simuloinnin aikana, poista käytöstä, jos et voi kirjoittaa ohjaussauvan simuloinnin aikana.",
+        "6": "Ohjaussauvan tehostedemo",
+        "7": "Ohjaimen tunnistusominaisuus",
+        "8": "1. Poistettuna näppäimistöä ei enää tunnisteta ohjaimeksi.",
+        "9": "2. Kun olet suorittanut mitä tahansa tähän ominaisuuteen liittyviä toimintoja, sinun on irrotettava ja liitettävä kaapeli uudelleen, jotta muutokset tulevat voimaan.",
+        "10": "Vakio-ohjain",
+        "11": "Xbox-ohjain",
+        "12": "Ohjaintilan valinta",
+        "13": "Kun olet vaihtanut ohjaintilaan, sinun on irrotettava ja liitettävä kaapeli uudelleen, jotta muutos tulee voimaan.",
+        "xbox": "1. Muutokset tulevat voimaan vasta, kun kaapeli irrotetaan ja liitetään uudelleen Xboxin ollessa päällä tai pois päältä.</br>2. Xbox ei ole yhteensopiva macOS-järjestelmän kanssa."
+      }
+    },
+    "mode": {
+      "default": "Oletus",
+      "gamepad": "Peliohjain",
+      "gaming": "Pelaaminen"
+    },
+    "multi_cmd": {
+      "b": "Pohjalle sisään",
+      "fulfilled": "Tila täynnä. Poista olemassa oleva komento asettaaksesi uuden.",
+      "list": "Sidotut komennot",
+      "setting": "Yksi näppäin, useita komentoja",
+      "test": "Testinäppäimet"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy tukee vain magneettikytkinnäppäimiä",
+      "only_support_magnetic": "Mekaaniset kytkinnäppäimet on valittu. Tämä valikko tukee vain magneettikytkinnäppäimiä."
+    },
+    "profile": "Profiili",
+    "rename": "Nimeä uudelleen",
+    "simulate": "Simuloi",
+    "snap_tap": {
+      "absolute_priority": "Absoluuttinen etusija",
+      "AP": "Määritä toiselle kahdesta näppäimestä korkeampi laukaisuetusija, kun niitä painetaan samanaikaisesti.</br>*Napsauta näppäimen keskikuvaketta vaihtaaksesi etusijaa.",
+      "cancel_mode": "Neutraali",
+      "CM": "Voit asettaa kaksi näppäintä. Kun molempia näppäimiä painetaan samanaikaisesti, kumpikaan niistä ei laukea.",
+      "create": "luo",
+      "key_exist": "Määritysnäppäin on jo olemassa",
+      "last_key_priority": "Viimeisen näppäimen etusija",
+      "LKP": "Kaksi näppäintä voidaan asettaa siten, että kun molempia näppäimiä painetaan samanaikaisesti, viimeksi laukaistu näppäin laukeaa samalla kun toinen näppäin nollautuu.",
+      "SC": "Voit asettaa kaksi näppäintä siten, että kun molempia näppäimiä painetaan samanaikaisesti, syvemmälle painettu laukeaa ja toinen nollautuu.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Haluatko varmasti vaihtaa?",
+    "sure_switch_gamepad_desc": "Kun olet vaihtanut peliohjaintilaan, jotkin painikkeet eivät enää toimi.",
+    "tab": {
+      "calibration": "Kalibrointi",
+      "curve": "Käyrä",
+      "distance": "Aktivointimatka",
+      "exit_calibration": "Poistu kalibroinnista",
+      "joystick_reflect": "Peliohjainsimulointi",
+      "multi_cmd": "Yksi näppäin, useita komentoja",
+      "snap_tap": "SOCD",
+      "toggle": "Pitkän painalluksen kytkin",
+      "toggle_tip": "Tämä ominaisuus mahdollistaa näppäimen nopean peräkkäisen laukaisun yhdellä painalluksella.",
+      "turbo": "Turboahdettu",
+      "turbo_tip": "Tuottaa jatkuvan napsautustehosteen painiketta painettaessa"
+    },
+    "toggle": {
+      "drk_guide_tip": "Tämä ominaisuus mahdollistaa: mitä syvemmälle painat näppäintä, sitä useammin se laukeaa.",
+      "keySpeed": {
+        "times": "Enimmäislaukaisumäärä",
+        "title": "Näppäinpainalluksen nopeus",
+        "unit": "kertaa"
+      },
+      "selected": "Valitut näppäimet",
+      "set": "Näppäimet asetettu",
+      "title": "Avaa"
+    }
+  },
+  "menu": {
+    "addconnect": "Lisää laite",
+    "assist": "Pikakäynnistys",
+    "bluetooth_firmware": "Langaton laiteohjelmisto",
+    "disconnect": "Katkaise yhteys",
+    "expTools": "Laajennustyökalut",
+    "fr_firmware": "Vastaanottimen päivitys",
+    "help": "Ohjekeskus",
+    "issue": "Palaute",
+    "keyboard_advance": "Edistynyt tila",
+    "keyboard_firmware": "Laiteohjelmiston päivitys",
+    "keyboard_he": "HE-tila",
+    "keyboard_light": "Taustavalo",
+    "keyboard_macro": "Makro",
+    "keyboard_map": "Näppäinkartta",
+    "keyboard_test": "Näppäintesti",
+    "keyset": "Snap Action",
+    "scroll": "Parannettu vieritys",
+    "setting": "Asetukset",
+    "switchSetting": "Kytkinasetukset"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Haluatko varmasti poistaa tämän painikkeen käytöstä?",
+      "resetAll": "Tämä toiminto poistaa kaikki tallennetut tiedot. Jatketaanko?",
+      "resetBtn": "Palautetaanko oletusasetukset?"
+    },
+    "dpi": {
+      "cable": "Langallinen",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (pistettä tuumaa kohti) asettaa kohdistimen herkkyyden — suurempi arvo siirtää kohdistinta kauemmas samalla käden liikkeellä.",
+      "gear": "Tasot",
+      "previousSetting": "Jos toimintoa ei tapahdu {{time}} sekuntiin, se vahvistetaan automaattisesti. Napsauta \"Palauta\" palataksesi edellisiin asetuksiin.",
+      "properties": "Järjestelmän hiiriasetukset",
+      "properties_open": "Avaa järjestelmän hiiriasetukset",
+      "properties_tip": "Eikö mitään avautunut? Yritä uudelleen Assistantin lataamisen jälkeen.",
+      "reportRate": "Kyselytaajuus",
+      "reportRateDesc": "Tukee jopa 8000 Hz",
+      "reportTip": "Säädä, kuinka usein laite lähettää raportteja tietokoneelle.",
+      "title": "DPI‑asetukset",
+      "wireless": "2.4GHz",
+      "xyTip": "X‑akselin DPI säätää kohdistimen herkkyyttä vaakasuunnassa, Y‑akselin DPI säätää herkkyyttä pystysuunnassa. Suuremmat arvot tekevät kohdistimesta herkemmän vastaavassa suunnassa.",
+      "xy_split_label": "X/Y-jako"
+    },
+    "he": {
+      "deep": "Syvä",
+      "distinguish_key": "Erilliset vasen/oikea-painikkeet",
+      "gear": "taso",
+      "left_btn": "Vasen painike",
+      "light_blocked": "Optinen reitti estetty",
+      "light_desc": "Lepotilassa valonsäde on estetty, joten napsautusta ei rekisteröidy. Paina painiketta tyhjentääksesi reitin — valo saavuttaa anturin ja laukaisee napsautuksen, eikä metallikoskettimia ole kulumassa tai aiheuttamassa kaksoisnapsautuksia ajan myötä.",
+      "light_led": "LED",
+      "light_mode": "Optinen kytkin",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Laukaistu",
+      "magnet_desc": "Valitse, kuinka syvälle painetaan ennen kuin napsautus rekisteröidään. Matalampi = nopeampi, syvempi = vähemmän virhenapsautuksia.",
+      "magnet_mode": "Magneettikytkin",
+      "motor_trigger": "Tuntoaistipalautteen asetukset",
+      "right_btn": "Oikea painike",
+      "shared_btn": "Hiiren painikkeet",
+      "title": "Hiiren painikkeen laukaisuasetukset",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Aktivointiasetukset"
+    },
+    "key": {
+      "backward": "Takaisin",
+      "brightnessDown": "Vähennä kirkkautta",
+      "brightnessUp": "Lisää kirkkautta",
+      "calculate": "Laskin",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Kopioi",
+      "customDpi": "Mukautettu DPI",
+      "cut": "Leikkaa",
+      "dock": "Telakka päälle/pois",
+      "downScroll": "Vieritä alas",
+      "dpiLoop": "Selaa DPI-arvoja",
+      "email": "Sähköposti",
+      "forward": "Eteenpäin",
+      "he": "Optinen / magneettinen mikroliike",
+      "home": "Näytä työpöytä",
+      "homePage": "Avaa aloitussivu",
+      "launchPad": "Launchpad",
+      "left": "Vasen napsautus",
+      "leftClick": "Vasen napsautus",
+      "leftDouble": "Kaksoisnapsautus vasemmalla",
+      "leftLock": "Vasemman painikkeen lukitus",
+      "leftScroll": "Vieritä vasemmalle",
+      "leftScrollSustain": "Jatkuva vieritys vasemmalle",
+      "leftTilt": "Kallista vasemmalle",
+      "left_lock": "Vasemman painikkeen lukitus",
+      "lickDoubleClick": "Kaksoisnapsautus vasemmalla",
+      "light": "Valotehoste",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Toisto",
+      "loopColorfulBreathing": "Värikäs hengitysjakso",
+      "loopDpi": "Selaa DPI-arvoja",
+      "loopOpticalMagnetic": "Optinen-magneettinen jakso",
+      "loopPollingRate": "Selaa pollausnopeuksia",
+      "middle": "Keskinapsautus",
+      "middleClick": "Keskinapsautus",
+      "modeToggleAll": "Optinen / magneettinen mikroliike",
+      "mute": "Mykistä",
+      "myComputer": "Oma tietokone",
+      "next": "Seuraava",
+      "nextDpi": "Seuraava DPI",
+      "nextPollingRate": "Seuraava pollausnopeus",
+      "pageDown": "Sivu alas",
+      "pageUp": "Sivu ylös",
+      "paste": "Liitä",
+      "pause": "Toista/keskeytä",
+      "player": "soitin",
+      "prevDpi": "Edellinen DPI",
+      "previous": "Edellinen",
+      "prevPollingRate": "Edellinen pollausnopeus",
+      "refresh": "Päivitä",
+      "restoreFactory": "Tehdasasetusten palautus",
+      "right": "Oikea napsautus",
+      "rightClick": "Oikea napsautus",
+      "rightScroll": "Vieritä oikealle",
+      "rightScrollSustain": "Jatkuva vieritys oikealle",
+      "rightTilt": "Kallista oikealle",
+      "screenshot": "Kuvakaappaus",
+      "scrollLeftClick": "Kallista oikealle",
+      "scrollRightClick": "Kallista vasemmalle",
+      "sideKey": "Sivupainike",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Pysäytä",
+      "swichLight": "Valoefektin vaihto",
+      "switchApp": "Vaihda sovellusta",
+      "task": "Mission Control",
+      "trackballToScroll": "Ohjauspallo vieritykseen",
+      "upScroll": "Vieritä ylös",
+      "volumeDown": "Vähennä äänenvoimakkuutta",
+      "volumeUp": "Lisää äänenvoimakkuutta",
+      "webLessen": "Loitonna",
+      "webMagnify": "Lähennä"
+    },
+    "keyboard": "Näppäimistö",
+    "key_fun": {
+      "basic": "Peruspainikkeet",
+      "disable": "Poista painike käytöstä",
+      "dpi": "DPI",
+      "game": "Pelinäppäimet",
+      "game_tip": "Pidä määritettyä näppäintä pohjassa toistaaksesi valittuja näppäinpainalluksia; määrä ja nopeus ovat säädettävissä.",
+      "keyboard": "Näppäinyhdistelmät",
+      "keyboard_tip": "Valitse yksi tai useampi muunnosnäppäin ja lisää sitten tavallinen näppäin. Napsauta kenttää ja paina näppäintä tai valitse näppäin oikealta.",
+      "macro": "Makro",
+      "media": "Multimedianäppäimet",
+      "pollingRate": "Pollausnopeus",
+      "profile": "Profiili",
+      "sensitive": "Herkkyys",
+      "shortCut": "Pikanäppäimet"
+    },
+    "key_game": {
+      "count": "Määrä",
+      "infinite": "Rajaton",
+      "rate": "Nopeus"
+    },
+    "light": {
+      "colorFlowing": "Warwick-virtaus",
+      "flashLight": "Vilkkuvat neonvalot",
+      "fullColorCycle": "Täysvärikierto",
+      "soleBreathe": "Yksivärinen hengitys",
+      "soleFlowing": "Juoksuvalo",
+      "soleLight": "Yksivärinen tasainen valo"
+    },
+    "menu": {
+      "angle": "Kulman säätö",
+      "dpi": "DPI-asetukset",
+      "key": "Mukauta",
+      "light": "Valo",
+      "macro": "Makro",
+      "poll_rate": "Pollausnopeus",
+      "profile": "Profiili",
+      "sys": "Lisäasetukset"
+    },
+    "mouse": "Hiiri",
+    "polling_rate": {
+      "daily": "Toimisto",
+      "fps20k": "Anturin näytteenottotila",
+      "game": "Pelaaminen",
+      "office_mode": "Vakiotila",
+      "office_mode_desc": "Sujuva toiminta ja vakaa skannaus.",
+      "rage_content": "Virrankulutus kasvaa, kun kilpailutila on käytössä.",
+      "rage_desc": "≥20K anturin skannausnopeus pienemmällä viiveellä ja suuremmalla tarkkuudella. Kuluttaa enemmän virtaa.",
+      "rage_mode": "Kilpailutila",
+      "rage_title": "Vahvistetaanko kilpailutilan käyttöönotto?"
+    },
+    "profile_tab": {
+      "changeIcon": "Vaihda kuvake",
+      "selectMode": "Valitse tila"
+    },
+    "scroll": {
+      "acceleration": "Nopeuden kiihdytys",
+      "consecutive_times": "Jatkuvan vierityksen kerrat",
+      "demo": "Vierityksen esittely",
+      "direction": "Vierityssuunta",
+      "duration": "Vierityksen kesto",
+      "interval": "Vieritysväli (ms)",
+      "scroll": "Vaakasuora vieritys",
+      "speed": "Vieritysnopeus",
+      "step": "Pienin vieritysaskel",
+      "tip_acceleration": "Aseta vierityksen kiihtyvyys nykyisen arvon kerrannaiseksi.",
+      "tip_consecutive_times": "Jatkuvan vierityksen jälkeen se vaihtuu automaattisesti pehmeään vieritykseen",
+      "tip_demo": "Voit kokeilla parannettua aaltoasetusta täällä",
+      "tip_direction": "Muuta hiiren vierityksen suuntaa",
+      "tip_disconnect": "Vierityksen parannus vaatii Assistin lataamisen toimiakseen",
+      "tip_interval": "Jatkuvan vierityksen aikaväli",
+      "tip_speed": "Kasvata vieritysnopeutta"
+    },
+    "shortcut_tooltip": {
+      "general": "Seuraavien toimintojen asetukset tulevat voimaan sekä Mac- että Windows-järjestelmissä",
+      "mac": "Seuraavat toimintoasetukset tulevat voimaan vain Mac-järjestelmässä",
+      "win": "Seuraavat toimintoasetukset tulevat voimaan vain Windows-järjestelmässä"
+    },
+    "sys": {
+      "angle": "Kulman säätö",
+      "angle_correction_after": "Säädön jälkeen",
+      "angle_correction_no": "Ennen säätöä",
+      "angle_preview": "Ennen ja jälkeen",
+      "angle_reset_btn": "Nollaa arvoon 0°",
+      "backward": "Käänteinen",
+      "battery_indicator": "Akun merkkivalo",
+      "delay": "Debounce-aika",
+      "forward": "Vakio",
+      "funConfig": "Järjestelmäominaisuudet",
+      "keyResponseTime": "Näppäimen vasteaika",
+      "leftLock": "Vasemman napsautuksen lukitus",
+      "line": "Kulman tarttuminen",
+      "lock": "Lukitse",
+      "lod": "Nostoetäisyys",
+      "motion": "Motion Sync",
+      "pairBond": "Laiteparin muodostuksen pikanäppäin",
+      "pairLimit": "Laiteparin muodostus tukee vain 1–3 näppäintä",
+      "power": "Virranhallinta",
+      "respSeconds": "Vasteaika (ms)",
+      "scroll": "Vierityssuunta",
+      "sensor": "Anturin suorituskyky",
+      "sleep": "Laitteen lepotila",
+      "unlock": "Poista lukitus",
+      "wave": "Väreiden hallinta"
+    },
+    "tip": {
+      "leftLock": "Vasemman napsautuksen määritys on lukittu, eikä sitä voi muokata."
+    },
+    "tips": {
+      "advanceDelayDesc": "Lisäasetustilassa voit asettaa itsenäisen vasteviiveen (0–20 ms) jokaiselle näppäimelle erikseen.",
+      "angleDesc": "Säädä hiiren anturin kulmaa niin, että hieman kallistettuna pidetty hiiri seuraa silti tarkasti vaaka-akselilla.",
+      "delayDesc": "Aseta viive välttääksesi virheelliset laukaisut nopeista hiiren napsautuksista tai värinästä.",
+      "factorySetDesc": "Tämän napsauttaminen poistaa laitteen nykyiset asetukset ja palauttaa sen tehdasasetuksiin",
+      "fps20kDesc": "Hiiren anturi kaappaa 20 000 kuvaa hiirimaton pinnasta sekunnissa, mikä tuottaa tarkkaa ja viiveetöntä seurantaa hiiren liikkeille.",
+      "indicatorDesc": "Tämä kytkin ohjaa vain normaalin akkutilan näyttämistä 2.4G-tilassa",
+      "leftLockDesc": "Kun vasemman napsautuksen lukitus on päällä, vasenta painiketta ei voi määrittää uudelleen.",
+      "lineDesc": "Suodattaa älykkäästi pienet käden värinät vähentääkseen liikeradan poikkeamaa vaaka- ja pystyakselilla.",
+      "lodCurr": "Hiiren nykyinen nostoetäisyys",
+      "lodDesc": "Suurin korkeus, jolla hiiren liike vielä havaitaan ja seurataan.",
+      "motionDesc": "Synkronoi anturin syötteen järjestelmän vasteen kanssa vähentääkseen kohdistimen nykimistä tai viivettä.",
+      "pairBondDesc": "Mukauta näppäinyhdistelmä ja paina sitä yhtäaikaisesti 4 sekunnin ajan siirtyäksesi Bluetooth-/2.4G-pariutustilaan.",
+      "scrollDirDesc": "Suunta, johon näytön sisältö liikkuu, kun hiiren rullaa vieritetään ylös tai alas",
+      "sensorDesc": "Parantaa hiiren tarkkuutta ja vakautta piirrettäessä suoria, ympyränmuotoisia ja muita liikeratoja.",
+      "sleepDesc": "Tukee automaattista lepotilaa, kun laite on käyttämättömänä aikakatkaisun ajan langattomassa tilassa.",
+      "waveDesc": "Vähentää käden vapinan aiheuttamia aaltoilevia kohdistinjälkiä sujuvamman liikkeen saavuttamiseksi."
+    },
+    "wheel": {
+      "adjustTimeout": "Kalibroinnin aikakatkaisu",
+      "sensitivity": "Herkkyys"
+    }
+  },
+  "notify": {
+    "emptyHid": "HID-laitetta ei ole valittu",
+    "fail": "Epäonnistui",
+    "fr_not_connect": "Ohjainta ei voi käyttää laitteen siirryttyä lepotilaan; voit herättää laitteen koskettamalla mitä tahansa sen painiketta",
+    "hidAlreadyConnected": "HID-laite yhdistetty",
+    "hidConfNotBrand": "Tätä tuotemerkkiä ei tueta tällä hetkellä",
+    "hidConfNotFound": "Kelvollista HID-laitteen määritystä ei löytynyt",
+    "hidDeviceNotFount": "HID-laitetta ei ole",
+    "hidUnconnected": "HID-laitetta ei ole yhdistetty",
+    "import": {
+      "layout": "Näppäimistöasettelusi on tuotu onnistuneesti",
+      "title": "Tuonti onnistui"
+    },
+    "invalid_macro_json": "Virheellinen makromääritys",
+    "invalid_rgb_json": "Virheellinen määritys",
+    "keyboard_not_support_wireless": "Näppäimistön laiteohjelmisto ei tue langatonta yhteyttä",
+    "keycodeNotFound": "Näppäinkoodin määritysvirhe",
+    "limited": "Enimmäisraja ylitetty",
+    "macroSizeLimit": "Makron koko ylittää käytettävissä olevan koon",
+    "notSupportHid": "Tämä selain ei tue HID-yhteyttä. Käytä yhteyden muodostamiseen Chrome-, Edge- tai Opera-selainta",
+    "sleep": "Ei yhdistettyä laitetta tai laite on lepotilassa",
+    "success": "Onnistui",
+    "success_competitive": "Vaihdettu kilpailutilaan",
+    "success_connect": "Yhteys onnistui",
+    "success_office": "Vaihdettu vakiotilaan",
+    "unknownErr": "Tuntematon virhe"
+  },
+  "onboarding": {
+    "completed": "Opas suoritettu 🎉",
+    "connect": {
+      "description": "Yhdistä näppäimistö tietokoneeseen USB-kaapelilla, napsauta “Yhdistä” ja valitse sitten laitteesi valintaikkunasta.",
+      "title": "Yhdistä näppäimistösi"
+    },
+    "entry": "Aloittaminen",
+    "flow": {
+      "connect": "Yhdistä laite",
+      "keymap": "Muuta näppäimiä",
+      "light": "Taustavalaistustehosteet"
+    },
+    "hint": "Napsauta korostettua aluetta suorittaaksesi toiminnon tai napsauta “Ohita opas”.",
+    "keymap": {
+      "select_a": {
+        "description": "Napsauta “A” alla olevassa toimintopaneelissa muuttaaksesi välilyöntinäppäimen A:ksi. Opas sulkeutuu automaattisesti, kun olet valmis.",
+        "title": "Vaihe 2 · Muuta se “A”:ksi"
+      },
+      "select_space": {
+        "description": "Napsauta välilyöntinäppäintä näppäimistön alaosassa valitaksesi sen.",
+        "title": "Vaihe 1 · Valitse välilyöntinäppäin"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Käytä oikealla olevaa värinvalitsinta asettaaksesi värin vihreäksi (vedä valitsinta tai syötä RGB 0, 255, 0). Opas sulkeutuu automaattisesti, kun olet valmis.",
+        "title": "Vaihe 2 · Aseta se vihreäksi"
+      },
+      "select_static": {
+        "description": "Valitse “Solid Color” alla olevasta valotehosteluettelosta asettaaksesi näppäimistön staattiseen yksiväritehosteeseen.",
+        "title": "Vaihe 1 · Valitse “Solid Color”"
+      }
+    },
+    "skip": "Ohita opas",
+    "step": "VAIHE"
+  },
+  "screen": {
+    "format": {
+      "limit": "Kuvan muoto voi olla vain PNG, JPG tai GIF"
+    },
+    "resolution": {
+      "limit": "Kuvan koko ei voi ylittää 240×240"
+    },
+    "size": {
+      "limit": "Kuvatiedoston koko ei voi ylittää 300 kt"
+    },
+    "upload": {
+      "format": "PNG tai JPG (enint. 500 kt)"
+    }
+  },
+  "selection": {
+    "limitation": "Tällä toiminnolla voi valita enintään {{count}} näppäintä"
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Skannausväli"
+    },
+    "file_extra_properties_not_supported": "Tiedosto sisältää ominaisuuksia, joita ei tueta",
+    "file_import_failed": "Tiedoston tuonti epäonnistui",
+    "file_upload_no_config_file": "Määritystiedostoa ei havaittu. Lataa se",
+    "info": "Laitteen tiedot",
+    "infos": {
+      "bluVersion": "Bluetooth-versio",
+      "deviceDesc": "Laiteohjelmiston versio",
+      "name": "Nimi"
+    },
+    "json_config": "JSON-asetus",
+    "lng": "Kieli",
+    "log": "Julkaisutiedot",
+    "onlyview": "Tämän näppäimistön määritystä ei voi muokata.",
+    "other": "Muut",
+    "others": {
+      "debounce": {
+        "name": "Näppäimen viivevaste",
+        "tip": "Käyttöönoton jälkeen pienimmäksi viivevasteeksi voidaan asettaa 0 ms",
+        "title": "Säädä pienintä arvoa",
+        "warning": {
+          "title": "Haluatko varmasti ottaa sen käyttöön?"
+        }
+      }
+    },
+    "theme": "Ulkoasu",
+    "updateLog": "Versiohistoria"
+  },
+  "snap": {
+    "list": "Sidotut komennot"
+  },
+  "test": {
+    "btn": {
+      "reset": "Testaa uudelleen",
+      "reset_bindings": "Tyhjennä sidonnat"
+    },
+    "msg": {
+      "bind_success": "{{count}} näppäintä on sidottu kohteeseen {{audioName}}",
+      "bind_success_single": "{{keyName}}-näppäin on sidottu kohteeseen {{audioName}}",
+      "no_key_selected": "Valitse ensin sidottava näppäin",
+      "reset_success": "Nollaus onnistui",
+      "storage_full": "Tallennustila ei riitä",
+      "unsupported_format": "Äänimuotoa ei tueta. Käytä muotoa MP3, WAV, OGG tai M4A.",
+      "upload_success": "Ääni ladattu onnistuneesti"
+    },
+    "per_key_sound": {
+      "desc": "Määritä jokaiselle näppäimelle oma ääni. Kun tämä ominaisuus on poistettu käytöstä, kaikki näppäimet käyttävät oletuksena valittua ääntä.",
+      "tip": "Muussa kuin Test Matrix -tilassa voit asettaa vain yhtenäisen näppäimen vasteäänen."
+    },
+    "sound": {
+      "tip": "Kun kytkin on päällä, näppäintestissä on äänipalaute, ja voit valita haluamasi äänen."
+    },
+    "sound_btn": {
+      "Balloon": "Ilmapallo",
+      "CarHorn": "Auton torvi",
+      "Cartoon": "Piirretty",
+      "CoinCollecting": "Kolikon keräys",
+      "custom": "Mukautettu",
+      "default": "Oletus",
+      "DogBarking": "Koiran haukunta",
+      "Donkey": "Aasi",
+      "Glass": "Lasi",
+      "PartyHorn": "Juhlatorvi",
+      "PhoneDial": "Puhelimen valinta",
+      "Punch": "Isku",
+      "RubberChicken": "Kumikana",
+      "RubberToy": "Kumilelu",
+      "Sneeze": "Aivastus"
+    },
+    "title": {
+      "custom_sound": "Mukautettu äänikirjasto",
+      "per_key_sound": "Näppäinkohtainen äänimääritys",
+      "reset_custom_bindings": "Haluatko varmasti nollata äänisidonnat?",
+      "sound": "Ota äänitehosteet käyttöön",
+      "sound_effect": "Äänitehosteen valinta",
+      "uploaded_sounds": "Ladatut äänet"
+    },
+    "upload": {
+      "browse": "selaa ladataksesi",
+      "info": "Tuetut: MP3, WAV, OGG, M4A ·  Kokonaisraja: 25 MB  ·  Suositeltu ääni: 1–2 sekuntia",
+      "placeholder": "Vedä ja pudota äänitiedostot tähän, tai"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Valitse ensin näppäin."
+    },
+    "key": {
+      "direction": "8-suuntainen kulman tarttuminen",
+      "gesture": "Eletila",
+      "held": "Pidä pohjassa",
+      "scroll": "Vieritä",
+      "tap": "Napauta"
+    },
+    "keycode": {
+      "key": "näppäin",
+      "modifiers": "Muuntonäppäimet"
+    },
+    "key_fun": {
+      "basic": "Perus",
+      "comb": "Yhdistelmänäppäin",
+      "feature": "Kulman tarttuminen",
+      "keyCombination": "Näppäinyhdistelmä",
+      "layer": "Taso",
+      "macro": "Makro",
+      "simulate": "Paina yhtäaikaisesti",
+      "single": "Napauta / pidä pohjassa",
+      "special": "Erikoisnäppäimet",
+      "trackball": "Ohjauspallo"
+    },
+    "onlyOneNormalKey": "Voit asettaa vain yhden tavallisen näppäimen.",
+    "placeholder": {
+      "selectionKeys": "Valintanäppäimet"
+    },
+    "selectInputFirst": "Valitse ensin syöttökenttä.",
+    "slide": {
+      "leftSlide": "Pyyhkäise vasemmalle",
+      "rightSlide": "Pyyhkäise oikealle",
+      "underSlide": "Pyyhkäise alas",
+      "upSlide": "Pyyhkäise ylös"
+    },
+    "tips": {
+      "angleGearsDesc": "Jos esimerkiksi määrität näppäimelle 4 arvon \"90°\", näppäimen 4 napsauttaminen asettaa nykyisen tason suunnaksi 90° (vaakasuora).",
+      "directionDesc": "Esimerkiksi: Kun näppäin 4 on sidottu \"kahdeksansuuntaisen navigoinnin\" toimintoon, näppäimen 4 napsauttaminen kääntää ohjauspalloa myötäpäivään 45 astetta. Toistuvat napsautukset kääntävät sitä uudelleen 45 astetta, ja niin edelleen.",
+      "disTapLayer": "Tason voi asettaa vain pitkällä painalluksella",
+      "disTwoMs": "Kahta hiiren näppäintä ei voi asettaa samanaikaisesti",
+      "gestureDesc": "Esimerkiksi: Kun näppäin 4 on määritetty \"eletilaan\" ja haluttu tulostettava näppäinarvo on sidottu \"ohjauspallo\"-sarakkeeseen, painamalla näppäintä 4 ja liu'uttamalla ohjauspalloa ylös, alas, vasemmalle tai oikealle voidaan tulostaa asetettu näppäinarvo.",
+      "held": "Pohjassa pidettäessä",
+      "knobNotSupportSet": "Tätä toimintoa ei voi asettaa säätimelle",
+      "layerDesc1": "Tukee tasoja 0–7, ja kunkin tason näppäimet voidaan asettaa sitomaan eri kulmia ja toimintoja.",
+      "layerDesc2": "Esimerkiksi tason 0 näppäin 4 voidaan sitoa toimintoon \"vieritä ylös ja alas\", ja tason 1 näppäin 4 voidaan sitoa toimintoon \"kahdeksansuuntainen vaihto\".",
+      "layerHeaderDesc": "Oletustaso on 0. Alla olevilla komennoilla tasoja otetaan käyttöön ja poistetaan käytöstä. Jos useita tasoja on aktiivisena yhtä aikaa, korkeimman numeron tason näppäinmääritys on etusijalla. Käytä `MO(n)`-komentoa tilapäisiin tasoihin ja `TO(n)`-komentoa tason vaihtoon. *Huomautus: koska `TG(n)`:n päälle/pois-tilaa on hallittava itse, tahaton taso voi jäädä aktiiviseksi.",
+      "layerMODesc": "Tämä näppäin aktivoi n:nnen tason vain painettaessa. Vapauta näppäin, ja järjestelmä palaa alkutilaansa. Tämä toiminto on erittäin hyödyllinen, kun haluat käyttää tilapäisesti eri tasoa, samaan tapaan kuin Fn-näppäin.",
+      "layerTGDesc": "Vaihtaa tason n päälle/pois-tilaa. Jos taso n on pois päältä, ota se käyttöön; jos se on käytössä, poista se käytöstä. Tila pysyy muuttumattomana, kun painike vapautetaan, kunnes sitä painetaan uudelleen. Koska tasojen päälle/pois-tilaa on jatkuvasti valvottava, `MO(n)`- tai `TO(n)`-komennon käyttö on yleensä kätevämpää.",
+      "layerTODesc": "Paina tätä painiketta kerran vaihtaaksesi tasolle n. Tällöin kaikki tasot – oletustasoa lukuun ottamatta – poistetaan käytöstä. Tämä ominaisuus on ihanteellinen, kun haluat määrittää tietyn tason ensisijaiseksi työskentelytasoksesi.",
+      "scrollDesc": "Esimerkiksi: Kun näppäin 4 on sidottu toimintoon \"vieritä ylös ja alas\", näppäintä 4 painettaessa ohjauspallo voi ohjata ikkunan pystysuuntaista liikettä.Esimerkiksi: Kun näppäin 4 on sidottu toimintoon \"vieritä ylös ja alas\", näppäintä 4 painettaessa ohjauspallo voi ohjata ikkunan pystysuuntaista liikettä.",
+      "selectKey": "Valintanäppäimet",
+      "simulateAlreadyAddRow": "Lähetä ensin nykyinen luettelon sisältö ennen kuin lisäät uusia.",
+      "simulateAlreadyExists": "Tämä numeronäppäinyhdistelmä on jo olemassa.",
+      "simulateAntiGhosting": "Tämä näppäinyhdistelmä on nollaustoimintoa varten. Aseta muita yhdistelmiä",
+      "simulateMaxLen": "Enintään neljä näppäintä voidaan valita",
+      "simulateMaxList": "Suurin tallennusmäärä ylitetty",
+      "simulateMinLen": "Valitse vähintään kaksi näppäintä",
+      "tap": "Napautettaessa",
+      "title_placeholder": "Anna otsikko"
+    },
+    "title": {
+      "advanceFeatures": "Tason lisäasetukset",
+      "basickey": "Perusnäppäimet",
+      "bindList": "Sidotut komennot",
+      "defaultFeatures": "Kulman lukitus",
+      "dpiReturnRate": "DPI / kyselytaajuus",
+      "gesture": "Ohjauspallon ele",
+      "modifierKey": "Muuntonäppäimet"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcher tarvitsee valitun laitteen VIA-json-tiedoston. Napsauta alla olevaa ”Vahvista”-painiketta ja lataa valitun laitteen json-tiedosto käyttääksesi Launcheria. Saat VIA-json-tiedoston tuotteen toimittajalta.",
+      "title": "VIA-json-tiedoston lataus"
+    }
+  }
+}
