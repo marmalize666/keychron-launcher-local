@@ -1,0 +1,1706 @@
+{
+  "advance": {
+    "common": {
+      "notice": "注意："
+    },
+    "debounce": {
+      "defer_global": "按键盘去抖动。任何状态改变时，都会设置一个全局计时器。当 DEBOUNCE 毫秒内没有发生任何变化时，所有输入变化都会被推送。这是性能最高、内存占用最低且抗噪声的算法。",
+      "defer_per_key": "按按键去抖动。任何状态改变时，都会设置一个按键计时器。当该按键在 DEBOUNCE 毫秒内没有发生任何变化时，会推送按键状态变化。",
+      "eager_defer_per_key": "按按键去抖动。按键按下状态改变时，会立即响应，然后在 DEBOUNCE 毫秒内该按键不再有输入。按键弹起状态改变时，会设置一个按键计时器。当该键在 DEBOUNCE 毫秒内没有发生任何变化时，将按下按键状态改变。",
+      "eager_per_key": "按按键去抖动。任何状态改变时，都会立即响应，然后在 DEBOUNCE 毫秒内该按键不再有输入。",
+      "none": "不执行去抖动处理。",
+      "tip": {
+        "1": "“EAGER PER KEY” 是推荐的去抖模式：按下按键时立即响应，但在您设定的响应时间内，该按键的后续输入将被忽略。",
+        "2": "如需将响应秒数调整至10以下，请前往设置-其他里进行操作",
+        "3": "当响应时间接近 0 毫秒 时，可能会出现连击问题。"
+      }
+    },
+    "macro": {
+      "gesture": "手势模式为永久启用",
+      "gesture_description": "启用后，无需再与手势按钮关联",
+      "gesture_not_configured": "无法开启，请先前往“按键功能-轨迹球”设置输出值",
+      "scroll": "滚动模式为永久启用",
+      "scroll_description": "启用后，无需再与手势按钮关联。",
+      "title": "宏功能操作面板（只能选择一种）"
+    },
+    "nkro": {
+      "desc": "全键无冲是一种键盘输入技术，支持同时按下任意数量的按键而不会产生输入冲突或信号丢失。禁用全键无冲后，键盘将仅支持最多6键无冲突输入。",
+      "title": "全键无冲设置"
+    },
+    "performance": {
+      "mode_battery": "省电模式",
+      "mode_high": "高性能模式",
+      "mode_normal": "常规模式",
+      "title": "性能模式切换"
+    },
+    "poll_rate": "回报率设置",
+    "poll_rate_tip": {
+      "bt": "蓝牙连接模式",
+      "bt_desc": "在蓝牙连接模式下，回报率固定为125Hz。由于连接限制，该设置不可更改。",
+      "fr": "2.4G连接模式",
+      "usb": "有线连接模式"
+    },
+    "sleep": {
+      "backlight": "自动熄灭背光时间",
+      "magnet": "磁轴键盘矩阵扫描空闲时间",
+      "magnet_range": "矩阵扫描空闲时间必须大于背光熄灭时间且小于睡眠时间",
+      "magnet_tip": "磁轴键盘矩阵扫描空闲时间不能小于60秒",
+      "time": "自动睡眠模式时间"
+    },
+    "tips": {
+      "keepLayer_close": "2.如果禁用该选项，则当您转到“图层1”编辑屏幕时，NapePro将与“图层1”一起切换",
+      "keepLayer_enable": "1.如果启用该选项，则例如，如果NapePro在“层0”上运行，则即使您转到“层1”编辑屏幕，NapePro仍将保留“层0”键映射。"
+    },
+    "title": {
+      "keepLayer": "图层编辑模式"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "设备已连接",
+        "idle": "点击连接设备",
+        "pending": "正在调起授权…"
+      },
+      "download_assistant": {
+        "idle": "点击下载最新 Assistant"
+      },
+      "resume_assistant": {
+        "done": "继续处理",
+        "idle": "已开启Assistant",
+        "pending": "继续处理中…",
+        "prompt": "我已打开"
+      },
+      "undo_remap": {
+        "done": "已撤销改键",
+        "idle": "撤销这次改键",
+        "pending": "正在撤销…"
+      }
+    },
+    "clear_tooltip": "清空对话",
+    "close_tooltip": "关闭",
+    "deep_thinking": "深度思考",
+    "generated_content_notice": "AI生成可能有误请核实",
+    "input_placeholder": "问 Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "专注于快速响应",
+        "label": "更快"
+      },
+      "deepseek-v4-pro": {
+        "description": "专注于更复杂的任务",
+        "label": "专业"
+      },
+      "mimo-v2_5-pro": {
+        "description": "均衡",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "普通",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "已执行完成，但没有收到可显示的回复。",
+    "pin": {
+      "tooltip_off": "取消固定",
+      "tooltip_on": "Pin the chat window"
+    },
+    "pinned_success": "对话窗口已固定不可拖拽",
+    "quick": {
+      "connect_keyboard": "帮我把空格键改成A",
+      "remap_space": "帮我把灯光改成\"正旋波\"",
+      "set_light": "帮我打开微信"
+    },
+    "result": {
+      "connect_failed": "连接失败: {{error}}",
+      "device_connected": "设备已连接",
+      "no_device_undo": "未连接任何设备，因此无法撤销按键重映射。",
+      "no_remap_to_undo": "没有可撤销的重映射。",
+      "undo_failed": "无法撤销按键重映射：{{error}}",
+      "undo_success": "撤销了上一次按键重映射，并恢复了 {{count}} 个按键。"
+    },
+    "select_model": "选择模型",
+    "status": {
+      "answering": "正在回复",
+      "executing": "执行中",
+      "loading": "加载中",
+      "thinking": "思考中",
+      "verifying": "验证中"
+    },
+    "stopped": "已停止",
+    "title": "Keychron AI",
+    "unpinned_success": "已取消固定",
+    "welcome": "嗨！''Keychron AI 助手''能够帮您''连接设备、重映射按键、自定义 RGB 灯效、创建宏指令'', 以及更多操作。欢迎随时向我提问！"
+  },
+  "application": {
+    "addr": "快捷开启网页",
+    "add_addr": "地址添加",
+    "apple_silicon_version": "下载Apple 芯片版 (.pkg）",
+    "app_duplicate": "该应用已存在，无需重复添加。",
+    "app_hint": "可以设置一个快捷键, 选择你想快捷开启的软件，然后绑定在一个键上。",
+    "app_placeholder": "请选择应用",
+    "clear_all": "全部删除",
+    "desktop_old_content": "请下载并安装新版桌面服务以使用该功能",
+    "desktop_old_title": "检测到旧版桌面服务",
+    "download_keychron_assistant": "若未下载，请点击下载安装",
+    "download_new_assistant_tip": "请下载新版本 Keychron Assistant 以使用完整功能。",
+    "download_zip_tip": "注意：安装Keychron Assist之前，需要解压下载的文件。",
+    "file_not_found": "文件不存在",
+    "intel_version": "下载Intel 芯片版 (.dmg)",
+    "keySetting": "此按键已有快捷键！",
+    "key_no_conf": "未设置快捷开启键",
+    "limited": "超出最大限制。 目前，快速启动次数限制为 5 次。我们计划在未来增加此数量。",
+    "need_keychron_assistant": "该功能需要先开启Keychron Assistant应用。",
+    "no_key_selected": "\n未选择任何键",
+    "open_assistant_no_response_tip": "若点击“开启”无反应，请下载最新的Assistant后重试",
+    "open_tip1": "1. 快速启动功能是指：将你想要快速启动的应用程序绑定到某个按钮上，点击该按钮即可快速启动应用。",
+    "open_tip2": "2. 请先下载 Assist，然后添加你想要快速启动的应用程序。最后返回键盘启动器进行按键绑定和启动。",
+    "select_key_to_bind": "请从键盘上选择按键来绑定此设置",
+    "soft": "快捷开启软件",
+    "submit_hint": "请选择你想快捷开启的软件，然后点击【提交】，提交后该快捷开启才能激活使用",
+    "title_placeholder": "自定义标题（选填）",
+    "unsupported_feature": "不支持此功能",
+    "unsupported_feature_download_new_version": "不支持此功能，请下载新版本体验",
+    "url": "快捷开启网页",
+    "url_hint": "可以设置一个快捷键, 选择你想快捷开启的网页网址，然后绑定在一个键上。",
+    "url_placeholder": "请输入有效的网址"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "继续",
+      "later": "稍后",
+      "openSystemPreferences": "打开系统偏好设置",
+      "restartMessage": "辅助功能权限已成功获取，需要重启应用以生效。",
+      "restartNow": "立即重启",
+      "restartTitle": "权限已获取",
+      "step1": "点击下方按钮进入系统辅助权限页面",
+      "step2": "找到并打开Launcher Assistant开关授权",
+      "step3": "请输入您的密码",
+      "step4": "授权后请退出应用并重新打开才会生效",
+      "welcomeTitle": "欢迎使用助手"
+    },
+    "click_no_response_tip": "打开您电脑的鼠标设置，以调整指针、滚动和点击选项。",
+    "common": {
+      "add": "添加",
+      "back": "返回",
+      "delete": "删除",
+      "info": "信息",
+      "refresh": "刷新",
+      "settings": "设置"
+    },
+    "hint_reset": "检测到设备变更。由于布局差异，某些按键可能无法像“快捷开启”中所示那样工作。是否要重置设置以匹配新布局？",
+    "hint_reset_1": "检测到您已切换到其他设备。要重置设置吗？",
+    "hint_reset_2": "（注意：由于型号之间的按键布局存在差异，快速启动显示可能与实际功能不匹配，导致按键不起作用。）",
+    "home": {
+      "addAddress": "添加地址",
+      "addSoftwareDescription": "在下面添加您想要快速打开的软件，然后点击「快速启动」在启动器中绑定按钮",
+      "delete": "删除",
+      "onceAddedDescription": "添加应用后，点击按钮返回",
+      "quickStartApplication": "快速启动应用",
+      "search": "搜索",
+      "setUpQuickStart": "设置快速启动",
+      "tooltipText1": "1. 快速启动功能是指将您想要快速启动的应用程序绑定在某个按钮上，点击按钮即可快速启动。",
+      "tooltipText2": "2. 点击下方的号选择您想要快速启动的应用，然后点击'打开快速启动'返回启动器进行按键绑定和启动。"
+    },
+    "license": {
+      "agree": "同意",
+      "disagreeAndWithdraw": "不同意并退出",
+      "userLicenseAgreement": "用户许可协议",
+      "welcomeDescription": "请同意",
+      "welcomeDescriptionEnd": "以便我们更好地为您服务",
+      "welcomeTitle": "欢迎使用助手"
+    },
+    "open_title": "1、您需要下载Assistant才能使用Quick start",
+    "open_title2": "2、因软件更新建议下载安装最新的Assist",
+    "settings": {
+      "aikeyUpdate": "AIKey 功能升级：新增自定义模板与快捷触发，优化指令派发与响应处理，显著提升稳定性与易用性。",
+      "autostart": "开机自启动",
+      "currentLatestVersion": "当前已是最新版本",
+      "endUserLicenseAgreement": "最终用户许可协议",
+      "fixedKnownIssues": "修复已知问题",
+      "interfaceOptimization": "界面优化",
+      "language": "语言",
+      "mosUpdate": "MOS 滚动/加速度算法优化：重构加速度曲线与采样策略，在低速与高速场景下获得更平滑、一致的操控体验，降低抖动与延迟。",
+      "nkroDescription1": "版权所有 © 2025 Keychron Assistant, Keychron Assistant 商标均为 Keychron 所有或已注册，所有其他商标均是各自所有者的财产",
+      "nkroDescription2": "禁用NKRO意味着键盘将正确注册最多6个同时按键。",
+      "selectLanguage": "选择语言",
+      "title": "设置",
+      "updateLog": "更新日志"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "佳达隆玉龙轴",
+    "Gateron_Jade_Magnetic_Switch": "佳达隆磁玉Gaming轴",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron 高特青柠轴",
+    "Lime-fast_Magnetic_Switch": "Keychron快速青柠轴",
+    "set_error": "某个按键校准失败，请检查键盘上的轴体和该按键的设置",
+    "set_successfully": "磁轴配置已成功更改。",
+    "Starry_Pupil_Magnetic_HE_Switch": "环诺星瞳 RGB磁轴",
+    "sure_content1": "检查键盘上更换的磁轴是否与所选的磁轴选项一致。",
+    "sure_content2": "点击下方的“确认”按钮，就会进入校准页面，对这些按键进行校准。",
+    "sure_title": "您确定要更改磁轴类型吗？",
+    "switch_type_settings": "轴体类型设置",
+    "tip": {
+      "1": "此功能允许您设置整个键盘的磁轴类型。配置完成后，按键边框颜色将根据您选择的磁轴类型而变化，设置顺序如下：",
+      "2": "首先更换键盘上的磁轴（整个键盘只能支持一种磁轴），并检查更换的磁轴是否在下面的列表中。",
+      "3": "选择下方的磁轴选项，点击“设置所有按键”按钮完成配置。",
+      "4": "重新校准所有按键，以避免磁轴差异的影响。"
+    },
+    "tip_reset": "点击此重置按钮将清除所有之前配置的快速启动项。",
+    "TTC_Horse_Switch": "贺岁定制马轴",
+    "TTC_KOM_Magnetic_Switch": "TTC 万磁王轴"
+  },
+  "common": {
+    "advance": "高级",
+    "basic": "基础",
+    "beta_test_version": "公测版",
+    "cancel": "关闭",
+    "cancel_btn": "取消",
+    "clear": "清空",
+    "close": "关闭",
+    "connected": "已连接",
+    "connect_btn": "连接",
+    "connect_tip": "想连接到 HID 设备",
+    "create": "新建",
+    "delete": "删除",
+    "deleteConfirm": "确认重置当前数据?",
+    "disconnected": "未连接",
+    "download": "下载",
+    "empty": "暂无",
+    "error": "异常",
+    "export": "导出",
+    "general": "通用",
+    "hide": "隐藏",
+    "iknow": "我已知晓",
+    "import": "导入",
+    "is": "是",
+    "keyboard": "键盘",
+    "key_back": "恢复",
+    "key_confirm": "确认",
+    "loading": "资源加载中...",
+    "matrix": "矩阵测试",
+    "max_string_length": "文本超出最大限制长度",
+    "min": "分钟",
+    "mouse": "鼠标",
+    "noResult": "无结果",
+    "not": "否",
+    "notSubmit": "有未提交的数据,是否提交",
+    "on": "开",
+    "open": "开启",
+    "paired": "已配对",
+    "plugged_in": "已接入",
+    "plug_and_ret": "请将设备插线后重试",
+    "plug_and_retry": "请将设备插线后重试",
+    "recover": "恢复",
+    "reset": "重置",
+    "resetLayout": "重置",
+    "reset_single": "单键重置",
+    "resolution_not_support": "因窗口太小无法显示键盘预览",
+    "results": "个结果",
+    "save": "保存",
+    "search": "搜索",
+    "select": "选择",
+    "selectall": "选择所有",
+    "status": {
+      "update_success": "更新成功"
+    },
+    "submit": "提交",
+    "timeSync": "校准屏幕时间",
+    "turnoff": "关闭",
+    "turnon": "开启",
+    "type": "类型",
+    "upload": "确认上传",
+    "view": "查看",
+    "warring": "异常提醒",
+    "window_too_small": "因窗口太小，预览图无法显示"
+  },
+  "connecting": "连接中...",
+  "cross": {
+    "btn": {
+      "active": "键鼠跨屏",
+      "agree": "同意",
+      "cancel": "取消连接",
+      "close": "关闭",
+      "connect": "连接",
+      "disconnect": "断开连接",
+      "minimize": "窗口缩小化",
+      "quick": {
+        "connect": "一键连接"
+      },
+      "reject": "拒绝",
+      "reject_cancel": "取消",
+      "trust": "信任设备",
+      "waiting": "等待中"
+    },
+    "disconnect_confirm": {
+      "content": "断开连接后将停止传输，已开始的传输会写入历史记录，等待传输的文件将直接丢弃。",
+      "title": "当前文件传输中"
+    },
+    "file_transfer": {
+      "average_speed": "平均速率",
+      "change": "更改",
+      "clear": "清除",
+      "clear_failed_desc": "无法清除本地传输历史",
+      "clear_failed_title": "清除失败",
+      "connected": "已连接",
+      "delete": "删除",
+      "desc": "支持任意文件类型 · 稳定传输至已连接的电脑",
+      "direction": {
+        "receive": "接收",
+        "send": "发送"
+      },
+      "dir_err_desc": "无法使用所选的文件接收目录",
+      "dir_err_title": "目录更新失败",
+      "dir_ok_desc": "新接收的文件将保存到所选目录",
+      "dir_ok_title": "保存目录已更新",
+      "drop_unavailable_desc": "请使用“选择”按钮选取该文件",
+      "drop_unavailable_title": "无法读取文件路径",
+      "elapsed_label": "用时",
+      "enable": "启用文件传输",
+      "file_missing_desc": "原文件已被移动或删除，无法重新发送",
+      "file_missing_title": "原文件不存在",
+      "history": "传输历史",
+      "no_active": "当前没有正在传输的文件",
+      "no_history": "暂无文件传输历史",
+      "open": "设置",
+      "open_err_desc": "无法打开文件接收目录",
+      "open_err_title": "无法打开目录",
+      "open_folder": "打开",
+      "peer_cancelled": "对方取消传输",
+      "quick_send": "快速发送",
+      "quick_send_desc": "选择文件并直接发送至已连接的电脑",
+      "receive_failed_desc": "文件接收不完整或无法写入本地",
+      "receive_failed_title": "文件接收失败",
+      "receiving": "接收中",
+      "receiving_path": "本地接收路径",
+      "resend": "重新发送",
+      "select_button": "选择文件",
+      "select_desc": "选择指定的文件进行传输",
+      "select_title": "点击选择文件",
+      "sending": "发送中",
+      "send_failed_desc": "无法发送所选文件",
+      "send_failed_title": "文件传输失败",
+      "send_to": "发送至",
+      "status": {
+        "cancelled": "已取消",
+        "failed": "发送失败",
+        "received": "已接收",
+        "receive_error": "接收异常",
+        "sent": "已发送"
+      },
+      "title": "文件传输",
+      "transfer_time": "传输时间",
+      "transmitting": "正在传输",
+      "unsupported_file": "当前文件格式不支持传输",
+      "waiting": "等待传输"
+    },
+    "notification": {
+      "conn_end_t": "连接已断开",
+      "conn_err_t": "连接失败",
+      "conn_lost_t": "连接中断",
+      "conn_reject_t": "连接请求已拒绝",
+      "conn_req_err": "连接请求发送失败",
+      "hist_clear_err": "清除连接历史失败",
+      "hist_clear_ok": "连接历史已清除",
+      "id_err_t": "身份校验失败",
+      "network_lost": "网络连接已中断，跨屏已结束",
+      "op_err_t": "操作失败",
+      "op_ok_t": "操作成功",
+      "pair_id_err": "配对设备身份校验失败",
+      "pair_ok": "设备已成功完成配对",
+      "pair_ok_t": "配对成功",
+      "peer_end": "对方已断开跨屏连接",
+      "peer_reject": "对方已拒绝连接请求",
+      "reconfirm_t": "需要重新确认",
+      "sync_err_t": "同步失败",
+      "trust_id_changed": "受信任设备身份已变化，请重新确认连接请求",
+      "trust_id_err": "受信任设备身份校验失败",
+      "trust_rm_err": "移除受信任设备失败",
+      "trust_sync_err": "信任凭据未同步到对方"
+    },
+    "page": {
+      "sub_desc": "一套键鼠可跨屏使用两台电脑 · 剪贴板手动同步 · 文件即时传输 — 像用同一台电脑一样自然",
+      "sub_title": "功能示意",
+      "title": "设备跨屏"
+    },
+    "panel": {
+      "desc": "最多 2 台电脑互联（含本机）· 互联建立后设备功能可启用",
+      "found": "发现设备",
+      "history": {
+        "active": "主动连接",
+        "passive": "被动连接",
+        "subtitle": "最近连接",
+        "title": "连接历史"
+      },
+      "network": {
+        "ethernet": "以太网",
+        "other": "其他",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "扫描同路由器下所有 Wi-Fi 网络",
+        "start": "开始扫描",
+        "stop": "停止扫描",
+        "title": "正在扫描局域网.."
+      },
+      "tag_1": "已信任",
+      "title": "连接电脑"
+    },
+    "scan": {
+      "incoming_notice": "同意后，对方将可以与此电脑建立跨屏连接",
+      "incoming_subtitle": "希望连接到此电脑",
+      "incoming_title": "收到连接请求",
+      "network_changed_cancel": "暂不",
+      "network_changed_confirm": "重新扫描",
+      "network_changed_desc": "检测到网络环境发生变化，是否重新扫描？",
+      "network_changed_title": "网络环境已变化",
+      "rejected": "对方已拒绝连接请求",
+      "request_confirm": "正在等待对方确认...连接请求即将超时",
+      "request_tip": "请求连接到",
+      "trust": "信任该设备，下次自动接受连接请求",
+      "unavailable": "对方设备暂时无法连接"
+    },
+    "settings": {
+      "automatic_connection": "自动连接设备",
+      "automatic_connection_help": "自动连接：可在本机信任设备列表内选择一台设备进行自动连接，需双方都设置才能实现启动 Assistant 后自动连接。",
+      "automatic_connection_hint": "（需要两台设备均完成配置）",
+      "clear_automatic_device": "清除自动连接设备",
+      "close": "关闭",
+      "confirm": "确认",
+      "disconnect_shortcut": "断开跨屏连接",
+      "disconnect_shortcut_help": "当跨屏功能故障时，可通过快捷按键来断开连接。此快捷按键仅可修改，不可删除。",
+      "enter_shortcut_key": "输入自定义按键",
+      "no_trusted_devices": "暂无已信任设备",
+      "remove_confirmation": "是否确认取消信任{device}",
+      "remove_device": "移除已信任设备",
+      "select_device": "选择已信任设备",
+      "shortcut_hint": "（支持字母、数字和 F1–F12；按退格键或 Delete 清除设置）",
+      "shortcut_keys": "快捷键",
+      "system_lock_shortcut": "系统电脑锁屏",
+      "title": "信任与自动连接",
+      "trusted_count": "当前已信任设备数量（{count}）",
+      "trust_help": "信任设备：受信任设备下次连接时将不需要本机的同意即可连接"
+    },
+    "step": {
+      "collapse": "收起",
+      "connected": "已连接",
+      "desc": "在Keychron Assistant内扫描并配对其它电脑 · 连接成功后，键鼠跨屏,文件传输即可启用",
+      "desc_1": "自动发现同局域网下的电脑并发起连接请求",
+      "desc_2": "对方点击\"同意\"完成配对",
+      "desc_3": "所有跨屏功能可启用",
+      "expand": "展开",
+      "local": "本机",
+      "title": "连接流程",
+      "title_1": "扫描并发起请求",
+      "title_2": "对方确认",
+      "title_3": "互联建立",
+      "trust": "已连接 · 已信任",
+      "wait_1": "等待",
+      "wait_2": "点击“允许”",
+      "wait_3": "正在配对其它电脑"
+    },
+    "tabs": {
+      "file_transfer": "文件传输",
+      "settings": "设置"
+    },
+    "time": {
+      "ago": "前",
+      "days": "天",
+      "hours": "小时",
+      "just_now": "刚刚",
+      "last": "过去",
+      "last_connection": "上次连接",
+      "minutes": "分钟",
+      "months": "月",
+      "seconds": "秒"
+    },
+    "view": {
+      "bottom": "下方",
+      "desc": "当鼠标光标跨越指定的屏幕边缘时，计算机的键盘和鼠标将可以操作已连接的设备。",
+      "left": "左侧",
+      "off": "关闭",
+      "right": "右侧",
+      "title": "设置屏幕跨越边缘",
+      "top": "顶部"
+    },
+    "web": {
+      "auto_connect_target": "自动连接目标",
+      "center_cursor": "居中光标",
+      "clipboard": "剪贴板",
+      "clipboard_desc": "在电脑之间手动同步复制内容",
+      "connect_assistant": "打开Assistant",
+      "connect_hint": "连接功能需要在Assistant内进行",
+      "custom_screenshot": "自定义截图",
+      "direction": "方向",
+      "drop_box_key": "投放框快捷键",
+      "exit_application": "断开连接",
+      "file_transfer": "文件传输",
+      "file_transfer_desc": "选择文件或用快捷键唤起投放框",
+      "hold_ctrl": "按住 Ctrl 跨屏",
+      "in_progress": "个任务",
+      "items": "项",
+      "keyboard_mouse": "键盘 / 鼠标跨屏",
+      "keyboard_mouse_desc": "光标越过屏幕边缘时切换控制",
+      "loading": "正在从 Assistant 获取跨屏状态…",
+      "lock_pc": "锁定电脑",
+      "max": "最多",
+      "not_set": "未设置",
+      "off": "关闭",
+      "on": "开启",
+      "ongoing": "进行中",
+      "read_only": "仅查看 · 请在 Keychron Assistant 中修改设置",
+      "recent_items": "最近项目",
+      "save_dir": "文件保存目录",
+      "settings": "设置",
+      "settings_desc": "受信任设备 · 自动连接 · 快捷键",
+      "shortcut_mapping": "快捷键映射",
+      "switch_pc": "切换电脑",
+      "sync_mode": "同步模式",
+      "target_device": "目标设备",
+      "title": "跨屏功能状态",
+      "trusted_devices": "信任设备数",
+      "trust_auto_connect": "信任与自动连接"
+    }
+  },
+  "debounce": {
+    "backlight": "背光睡眠时间不得小于5秒",
+    "mode": "模式",
+    "press": "按下秒数",
+    "release": "抬起秒数",
+    "response": "响应秒数",
+    "scan": "扫描率",
+    "setting": "键盘按键延时响应设置",
+    "sleep_limit": "睡眠时间不得小于1分钟",
+    "tip": "背光关闭时间不得大于睡眠时间",
+    "warning": {
+      "content": "(注意：10ms以下可能会有连击的风险，请谨慎设置)",
+      "title": "您确定要设置吗"
+    }
+  },
+  "demo": {
+    "device_keyboard": "键盘演示",
+    "device_mouse": "鼠标演示",
+    "exit": "退出演示",
+    "keyboard": "键盘演示",
+    "mode": "演示模式",
+    "mouse": "鼠标演示",
+    "tip": "请注意：当前为演示模式，仅作为展示无实际功能",
+    "title": "演示"
+  },
+  "device": {
+    "version": "设备版本"
+  },
+  "device_add": "连接",
+  "device_select": {
+    "notify": "请从设备列表中选择一个以继续操作",
+    "select": "继续选择",
+    "un_select": "未选择设备"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "打字测试"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "连接",
+      "2": "下一步",
+      "3": "上一步",
+      "6": "前往更新",
+      "enterBootloaderMode": "进入升级模式",
+      "flash": "刷入固件",
+      "matchDevice": "匹配设备",
+      "retry": "重试",
+      "startUpgrading": "开始升级"
+    },
+    "description": "更新说明",
+    "downloadFailed": "固件文件下载失败",
+    "error": {
+      "diff_model": "设备固件型号不一致",
+      "get_dfu_version": "设备固件更新版本获取失败"
+    },
+    "flashError": "固件更新失败",
+    "flashSuccess": "固件更新成功",
+    "info": {
+      "currentVersion": "当前版本",
+      "latestVersion": "最新版本",
+      "updateSize": "固件大小",
+      "updateTime": "更新时间"
+    },
+    "mouse": {
+      "step1_hid_device": "按顺序依次按下键盘上的 K、E、Y 三个字母键，待出现 HID 设备连接提示后，继续进行下一步操作。"
+    },
+    "notFound": "未查到该设备的最新固件",
+    "productNotExist": "未获取到设备信息",
+    "requestFail": "获取设备失败，请检查设备是否被其他程序占用",
+    "syncQuickStart": "同步快捷开启",
+    "tip": {
+      "confirm": "请确认",
+      "currentSelect": "当前选中"
+    },
+    "tips": {
+      "0": "当前设备并无固件可更新。",
+      "4": "如果在使用Windows的设备，且没有安装过QMK Toolbox Driver, 请按以下步骤操作。已经安装过QMK Toolbox Driver的，请点击下一步。",
+      "5": "点击下方，“下载Toolbox”按钮，下载并解压Toolbox。",
+      "6": "解压好后，右键点击Toolbox图标或是在系统搜索栏内搜索“driver”，并点击“以管理员身份运行”打开。",
+      "7": "打开后点击菜单“Tool”",
+      "8": "点击”Install Drivers”,继续点击“yes”开始安装固件Drivers，并等待安装。",
+      "9": "安装完成后，可以点击下一步，开始刷入固件流程。",
+      "10": "注：可以点击",
+      "11": "请按照以下步骤操作",
+      "12": "在目前的状态下，拔掉键盘USB线，让键盘断联。",
+      "13": "在键盘断联的情况下，按住键盘ESC或空格下的轻触开关，并同时用USB线让键盘与电脑连接，让键盘进入准备更新固件的状态。",
+      "15": "匹配成功后，会出现＂刷入固件＂按钮，点击即可开始更新固件。",
+      "16": "刷入固件过程中，不要让设备与电脑断联。",
+      "18": "下载ToolBox",
+      "19": "安装Toolbox Driver教学视频",
+      "20": "，了解安装Toolbox Driver详细流程。",
+      "22": "点击【连接】按钮，连接当前设备，系统将自动查找该设备的最新版本固件",
+      "23": "按住键盘 Fn 和 - 键至少5秒，让键盘进入准备更新固件的状态，直到蓝色指示灯亮起",
+      "24": "匹配成功后，会出现“刷入固件“按钮，点击可开始跟新固件。",
+      "25": "点击下方匹配设备按钮，并选择开头为({{ mode }})的设备并匹配。",
+      "26": "如需升级蓝牙模组请使用有线连接",
+      "27": "点击下方按键，以获取最新版本的固件。",
+      "28": "在键盘断联的情况下，按住键盘左上角按键，并同时用USB线让键盘与电脑连接，让键盘进入准备更新固件的状态。",
+      "bl-exceeded": "超出重试次数，请重新连接数据线",
+      "clickMatchBtn": "点击下方“匹配设备”按钮，并选择开头为 {{dfuName}} 的设备并匹配",
+      "currentDongle": "(升级键盘/鼠标更新请使用有线连接,当前是接收器页面）",
+      "link_wired_content": "无线升级中鼠标会进入休眠无法操作",
+      "link_wired_title": "请插上有线再进行升级",
+      "longPress": "先按ESC，再按Tab键同时保持3s",
+      "matchErr": "当前未配对，请手动选择需要升级的设备",
+      "mouseTip2": "2.如果已经链接，且已经匹配。则点击刷入固件，开始刷入。",
+      "mouseTip4": "点击`连接设备`按钮，选择Bootloader",
+      "mouseTip6": "固件升级时请勿断开电脑与设备的连接",
+      "mouseTip7": "升级完成时将会提示成功信息",
+      "patch": {
+        "1": "本次更新为安全性补丁，请先按照以下教程进行更新。",
+        "2": "在目前状态下，拔掉键盘USB线，让键盘断链。",
+        "3": "在键盘断链的情况下，拔掉按键‘空格’的键帽，并找到轴体旁边的小型金属片按钮。",
+        "4": "按住按钮并用USB线让键盘与电脑连接。",
+        "5": "点击下方的匹配设备按钮，并选择带有(DFU)的设备并匹配。",
+        "6": "匹配成功后，会出现‘刷入固件’按钮，点击即可开始更新安全性补丁。"
+      },
+      "toFlash": "匹配成功后，会出现 “刷入固件”按钮，点击即可开始更新固件"
+    },
+    "update": {
+      "dfu_check": "请检查选择的DFU设备是否正确"
+    },
+    "update_available": "有可升级的固件版本",
+    "update_latest": "已是最新版本固件",
+    "update_success": "更新成功，点击“连接”按钮连接当前设备。",
+    "warning": "请不要移除设备或刷新页面，以免对设备造成任何潜在的损坏。",
+    "write": "写入中"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "设备手册",
+      "tutorial": "教程",
+      "user_feedback": "用户反馈"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "如何在 Launcher 上设置自动睡眠模式和背光关闭启动时间？",
+        "set_keyboard_bounce_time": "如何在 Launcher 上设置键盘反弹时间？"
+      },
+      "backlight": {
+        "set_backlight_keys": "如何在 Launcher 上设置背光按键？",
+        "set_mix_rgb": "如何在 Launcher 上设置混合 RGB？",
+        "set_per_key_rgb": "如何在 Launcher 上设置逐键 RGB？"
+      },
+      "bridge_firmware_update": "如何为 Keychron 接收器刷写固件",
+      "create_mouse_macro": "如何在Launcher中创建鼠标宏",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "如何在 Launcher 上恢复出厂设置并更新固件？"
+      },
+      "he_mode": {
+        "manage_he_profile": "如何在 Launcher 上管理您的 HE 配置文件？",
+        "set_gamepad_analog_and_curves": "如何在 Launcher 上设置手柄模拟和曲线？",
+        "set_long_press_switch": "如何在 Launcher 上设置长按开关？",
+        "set_one_key_multiple_commands": "如何在 Launcher 上设置一键多指令？",
+        "set_snap_click": "如何在 Launcher 上设置 Snap Click？",
+        "use_he_mode": "如何在 Keychron Launcher 上使用 HE 模式？"
+      },
+      "keymap": {
+        "fn_keys_function": "Keychron 键盘上的 Fn 键如何发挥作用？",
+        "remap_key": "如何在 Launcher 上改键？",
+        "set_keymap_language": "如何在 Launcher 上设置按键语言？",
+        "use_different_function_layers": "如何使用不同的功能层？"
+      },
+      "key_test": {
+        "custom_sounds": "如何为你的键盘自定义声音?",
+        "perform_keyboard_key_testing": "如何在 Launcher 上进行键盘按键测试？"
+      },
+      "macro": {
+        "create_macro": "如何在 Launcher 上创建宏？"
+      },
+      "make_mouse_factory_reset_setting": "如何在Launcher中对鼠标进行恢复出厂设置",
+      "mouse_angle_adjustment": "如何使用Launcher上的角度调整功能",
+      "mouse_firmware_update": "鼠标固件更新教程",
+      "mouse_receiver_firmware_update": "如何为 Keychron 接收器刷写固件",
+      "quick_start": {
+        "download_and_install_assistant": "如何下载并安装 Keychron Assist？",
+        "set_quick_start": "如何在 Launcher 上设置快速启动？"
+      },
+      "set_mouse_customize_buttons": "如何在Launcher中设置鼠标自定义按键",
+      "set_mouse_debounce_time": "如何在Launcher上设置鼠标防抖时间",
+      "set_mouse_dpi_and_polling_rate": "如何在Launcher中设置鼠标 DPI 和回报率",
+      "set_mouse_system_features_setting": "如何在Launcher中设置鼠标系统功能"
+    },
+    "user_manual": "用户手册"
+  },
+  "issue": {
+    "content": "内容",
+    "device": "型号",
+    "email": "邮箱",
+    "tips": {
+      "content": "内容不能为空",
+      "device": "设备型号不能为空",
+      "email": "请输入正确的邮箱",
+      "input": "请输入",
+      "send": "您的问题已提交，后续将会更新修复",
+      "title": "标题不能为空"
+    },
+    "type": {
+      "1": "按键失灵/无响应",
+      "2": "连接问题",
+      "3": "硬件故障",
+      "4": "布局/尺寸不合适",
+      "5": "驱动问题",
+      "6": "其他",
+      "7": "请选择反馈类型"
+    }
+  },
+  "keycap": {
+    "character": "字母键",
+    "fnc": "功能键",
+    "general": "通用",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "数字键",
+    "symbol": "符号键",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": " 按住 = 上方按键（修饰键）；单点 = 下方按键 "
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "组合键",
+      "combo_description": "自定义快捷键",
+      "launch_app": "启动应用",
+      "launch_app_description": "一键启动应用",
+      "launch_web": "启动网页",
+      "launch_web_description": "一键启动网页",
+      "macro": "宏",
+      "macro_description": "一系列操作",
+      "remap": "改键",
+      "remap_description": "分配其他按键",
+      "title": "修改 {{key}}"
+    },
+    "codeInput": "键码输入",
+    "knob_not_support": "当前固件不支持修改旋钮,请更新固件驱动",
+    "layer": {
+      "1": "1、长按临时激活目标层，一旦松开按键会恢复原有值",
+      "2": "2、从低向高层才会生效，从高到低层使用不会生效",
+      "3": "1、单击关闭/激活目标层，关闭目标层后会取激活状态的最高层",
+      "4": "2、默认层无法关闭，所有层都关闭后取默认层",
+      "5": "长按功能同MO、单击5次功能同TG",
+      "6": "1、单击/长按激活层，只能从低向高激活",
+      "7": "2、单击只会触发激活层键值一次，长按会一直触发激活层键值",
+      "8": "单击单向激活目标层，不区分高低层",
+      "9": "单击单项临时激活目标默认层，不区分高低层",
+      "10": "1、键盘断电后会恢复至系统开关对应的默认层，例如：win对应layer 2，mac对应layer 0",
+      "11": "2、部分键盘型号没有物理系统开关，通常会恢复至固定的默认层如：layer 0",
+      "error_info": "您的键盘系统开关和电脑系统不一致，修饰键功能可能改变",
+      "tip": "提示："
+    },
+    "modal": {
+      "combo": {
+        "description": "选择一个或多个修饰键和一个主键，然后通过一个按键触发。",
+        "modifier_keys": "修饰键",
+        "press_primary_key": "请按下主键",
+        "primary_key": "主键",
+        "title": "组合键"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "点击此按钮打开已分配的应用。",
+        "no_available_apps": "暂无可用应用",
+        "search_apps": "搜索应用",
+        "title": "启动 APP"
+      },
+      "launch_web": {
+        "description": "点击此按钮打开已分配的网页。",
+        "title": "启动网页",
+        "web_page_url": "网页 URL"
+      },
+      "macro": {
+        "description": "直接在输入框中录制宏：你按下的按键将被记录为一系列操作。",
+        "macro_keys": "宏按键",
+        "press_key": "请按下要录制的按键",
+        "title": "录制宏"
+      },
+      "remap": {
+        "description": "“{{key}}”应改为什么？",
+        "press_key": "请按下要分配的按键",
+        "primary_keys": "主按键",
+        "title": "改键"
+      }
+    },
+    "reset": {
+      "all": "确认重置所有设置吗？",
+      "single": "确认重置此键的设置吗？",
+      "title": "您确定要重置吗？"
+    },
+    "tabs": {
+      "assist": "快捷启动",
+      "basic": "基本",
+      "custom": "自定义",
+      "layers": "层",
+      "macro": "宏",
+      "media": "媒体",
+      "modtap": "长按/短按",
+      "mouse": "鼠标",
+      "qmk_lighting": "灯光",
+      "special": "特殊键",
+      "wt_lighting": "灯光"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "自定义",
+      "default_layer": "默认层",
+      "display": "选中显示层",
+      "functional": "实际功能层",
+      "funtional": "当前",
+      "warn": "按键失效时请切换系统开关重新上电"
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": "。是否切换到",
+    "connect": {
+      "1": "使用有线或2.4G接收器连接您的设备\n（部分型号仅支持有线模式）",
+      "2": "点击左上角的“连接”，然后从列表中选择您的设备"
+    },
+    "detectedKeyboardLanguage": "我们检测到您的键盘语言为",
+    "guide_tip": "按照下面的指南连接您的设备",
+    "keepCurrentSetting": "保持当前设置",
+    "lang": "Layout语言",
+    "resetSuccessContent": "你的键盘布局已被重置",
+    "resetSuccessTitle": "重置成功",
+    "select_device": "请选择您想要连接的设备",
+    "switchImmediately": "立即切换"
+  },
+  "light": {
+    "ai": {
+      "generate": "生成",
+      "generating": "生成中",
+      "han_not_allowed": "请输入有效字符",
+      "placeholder": "输入一个字母 / 数字 / 符号",
+      "tip": "输入字符后点击生成，字形会按当前键盘布局在主键区居中显示"
+    },
+    "brightness": "灯效亮度",
+    "color": "颜色",
+    "common": {
+      "setting_color": "设置颜色"
+    },
+    "commonColor": "常用颜色选择",
+    "customColor": "自定义颜色",
+    "decorate_light": {
+      "0": "无",
+      "1": "单色灯效",
+      "2": "呼吸灯效",
+      "3": "循环灯效",
+      "4": "跑马灯效"
+    },
+    "effect": "灯效",
+    "effect speed": "速度",
+    "hue": "色相",
+    "layer2": "选区",
+    "led": {
+      "sub": {
+        "title": "提示：设置灯条颜色时请选中下方的灯条"
+      },
+      "title": "灯条"
+    },
+    "level": "级",
+    "mix": {
+      "config": "灯效设置",
+      "hxxg": {
+        "hue": "色相",
+        "saturability": "饱和度",
+        "speed": "速度"
+      },
+      "rk": "此功能可以让你在同一个键盘上，设置2块不同的键区，实现不同的灯效。每个区域，可以在一个循环设置不同时间段，每个时间段可以设置不同的灯效。",
+      "timeLine": {
+        "second_tips": "秒数输入过大或者过小",
+        "title": "时间线"
+      },
+      "verify_duration": {
+        "tip1": "输入的值应该是数字,且应该大于1,小于99！",
+        "tip2": "只能够输入两位小数",
+        "tip3": "输入的值过大",
+        "tip4": "输入的值过小"
+      }
+    },
+    "notSupport": "该设备不支持灯光设置",
+    "perkey": {
+      "effect": "效果选择",
+      "effects": {
+        "0": "常规",
+        "1": "呼吸",
+        "2": "单键响应",
+        "3": "邻近按键响应",
+        "4": "整个键盘响应"
+      },
+      "redo": "下一步",
+      "region": "区域选择",
+      "region_select": "选择区域",
+      "region_tip": "在键盘按键中选择区域，并设置颜色。点击保存，可以把相应区域改色。",
+      "rk": "可以单独设置每一颗按键的颜色。选择相应按键，点击设置颜色的区域，更改颜色，并且保存，就能更改相应按键的颜色。",
+      "save_warn": "选区过多，请删除选区后再试",
+      "select_tip": "选泽的按键未建立区域",
+      "select_warn": "请选择按键",
+      "undo": "上一步"
+    },
+    "saturation": "饱和度",
+    "settingAllBrightnessArea": "设置所有灯层亮度",
+    "tabs": {
+      "ai_light": "AI灯效",
+      "decorate_light": "装饰灯",
+      "indication": "指示灯",
+      "led_light": "灯条控制",
+      "mix_rgb": "Mix RGB",
+      "perkey_rgb": "Per-key RGB",
+      "screen": "屏幕调节",
+      "selection": "灯效选择"
+    },
+    "underglow brightness": "亮度"
+  },
+  "lights": {
+    "0. None": "无",
+    "1. Solid Color": "单色常亮",
+    "10. Cycle Pinwheel": "旋转齿轮",
+    "11. Cycle Spiral": "光谱螺旋",
+    "12. Dual Beacon": "双灯标",
+    "13. Rainbow Beacon": "光谱灯标",
+    "14. Jellybean Raindrops": "繁星点点",
+    "15. Pixel Rain": "繁星点点2",
+    "16. Typing Heatmap": "打字热图",
+    "17. Digital Rain": "漫天飞雪",
+    "18. Reactive Simple": "踏雪无痕",
+    "19. Reactive Multiwide": "踏雪无痕2",
+    "2. Breathing": "单色呼吸",
+    "20. Reactive Multinexus": "一石二鸟",
+    "21. Splash": "川流不息2",
+    "22. Solid Splash": "川流不息3",
+    "23. Per Key Rgb": "单键RGB",
+    "3. Band Spiral Val": "正旋波",
+    "4. Cycle All": "光谱循环",
+    "5. Cycle Left Right": "随波逐流",
+    "6. Cycle Up Down": "碧波荡漾",
+    "7. Rainbow Moving Chevron": "川流不息",
+    "8. Cycle Out In": "重峦叠嶂",
+    "9. Cycle Out In Dual": "双重旋波"
+  },
+  "macro": {
+    "allchar": "字符",
+    "closeDelay": "关闭延时",
+    "code": "宏文本",
+    "common": {
+      "flash": "闪存",
+      "title": "通过选择宏和点击上方键位图中的目标按键来分配宏"
+    },
+    "config": "配置",
+    "delay": "延时",
+    "delaySet": "延时设置",
+    "dynamicDelay": "动态延时",
+    "endREC": "停止录制",
+    "enterDown": "向下插入",
+    "enterUp": "向上插入",
+    "fixedDelay": "固定延时",
+    "inputdelay": "请输入延时",
+    "inputtexct": "输入文本",
+    "insertDelay": "插入延时",
+    "keydown": "按下",
+    "keyup": "抬起",
+    "loopCount": "循环次数",
+    "loopCurrentDown": "直到再次按下",
+    "loopDown": "直到按任意键",
+    "loopOne": "单次触发",
+    "loopSet": "循环设置",
+    "loopUp": "直到放开",
+    "macroReccord": "宏记录",
+    "macroSetup": "宏设置",
+    "mouse": "鼠标",
+    "notEqual": "检测到以下按键未抬起,是否继续保存？",
+    "record": "录制",
+    "rename": "重命名",
+    "save": "保存",
+    "setRepeatCount": "设置重复次数",
+    "specialText": "特殊文本",
+    "startREC": "开始录制",
+    "stop": "停止",
+    "text": "文本",
+    "texttype": "仅支持英文字符和符号",
+    "tip": {
+      "clickCopy": "点击即可复制文本",
+      "fixDelay": "此处固定延时表示在每个事件中嵌入，事件包含延迟事件",
+      "keyDelay": "延时: {200},单位MS",
+      "keyDown": "键位抬起: {-KC_A}",
+      "keyText": "纯文本: ABCDEF",
+      "keyUp": "键位按下: {+KC_A}",
+      "macro_text": "请输入需要执行的宏文本"
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "磁轴",
+      "mechanical": "机械轴",
+      "tip": "tip",
+      "title": "轴体统计"
+    },
+    "calibration": {
+      "1": "校准过程中不可拔出USB线、断开设备连接、关闭设备。否则设备可能会出现设备死机状况。",
+      "2": "开始校准",
+      "3": "点击“开始校准“前尽量不要按键减少误差",
+      "4": "按下按键并保持1秒钟，完成校准",
+      "5": "校准成功的按键，背景灯会显示绿色",
+      "6": "部分按键如：五向旋钮，无需校准。"
+    },
+    "curve": {
+      "mock": "曲线预设模式",
+      "save": "保存曲率",
+      "title": "摇杆曲线设置"
+    },
+    "directive": {
+      "bottomBack": "回弹",
+      "bottomIn": "底部划入",
+      "bottomOut": "触底",
+      "trigger": "启动触发"
+    },
+    "distance": {
+      "advance_mode": "高级模式",
+      "basic_mode": "基础模式",
+      "current": "当前按键",
+      "globalDis": "选择所有",
+      "globalRt": "设置全局灵敏度",
+      "limitTip": "数值已超出请重新填写",
+      "magnet_calibrate": "演示磁轴",
+      "magnet_calibrate_point": "触发点",
+      "magnet_calibrate_tip": "只可选择一个键位演示行程",
+      "magnet_calibrate_tip_desc": "选择一个按键，并点击下方'开始演示'按钮，可以演示当前按键的触发",
+      "magnet_calibrate_tip_empty": "请选择一个键位",
+      "profile_help": "按下\"fn\" + \"p\" + \"z/x/c\"能够快速切换配置1/2/3",
+      "result": "输入值",
+      "sensitive": "灵敏度",
+      "setting": "触发行程设置",
+      "show_mode_dis": "行程",
+      "show_mode_hide": "隐藏",
+      "show_mode_rt": "快速触发",
+      "speed_trigger": "快速触发设置",
+      "trigger_distance": "(按下) 触发距离",
+      "trigger_distance_reset": "(松开) 重置距离",
+      "trigger_distance_twice": "(按下) 触发距离"
+    },
+    "dkr": {
+      "desc": "最大触发次数:(6-100)",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "清除映射",
+      "left_emu": "左摇杆模拟",
+      "reflect": {
+        "conflict": "该按键已设置"
+      },
+      "titles": {
+        "1": "手柄按键选择",
+        "2": "手柄按键设置",
+        "4": "键盘按键是否启用",
+        "5": "在模拟手柄的时候可以打字则选择开启，模拟手柄的时候不能打字选择关闭",
+        "6": "手柄效果演示",
+        "7": "手柄识别功能",
+        "8": "1.关闭后键盘将不再被识别为手柄",
+        "9": "2.该功能的所有操作后都需插拔线才能生效",
+        "10": "普通手柄",
+        "11": "Xbox手柄",
+        "12": "手柄模式选择",
+        "13": "切换手柄模式后需要插拔线才能生效",
+        "xbox": "1.开启/关闭xbox后必须插拔线才能生效</br>2.macos系统不可用xbox"
+      }
+    },
+    "mode": {
+      "default": "默认模式",
+      "gamepad": "游戏手柄",
+      "gaming": "电竞模式"
+    },
+    "multi_cmd": {
+      "b": "下行触底",
+      "fulfilled": "指令空间已满，请先删除现有指令之后，在设置",
+      "list": "指令列表",
+      "setting": "一键多指令设置",
+      "test": "测试按键"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "迅捷模式仅支持磁轴按键",
+      "only_support_magnetic": "当前选择的是机械轴。此功能仅支持磁轴。"
+    },
+    "profile": "配置",
+    "rename": "重命名",
+    "simulate": "曲线演示",
+    "snap_tap": {
+      "absolute_priority": "绝对优先",
+      "AP": "两键同时按下时，为其中一键分配更高触发优先级。</br>*点击按键中心图标切换优先级。",
+      "cancel_mode": "抵消",
+      "CM": "可以设置两个按键，两个键在同时按下的时候，两个按键都不会被触发",
+      "create": "创建",
+      "key_exist": "与当前存在的按键冲突",
+      "last_key_priority": "后输入优先",
+      "LKP": "可以设置两个按键，两个键在同时按下的时候，最后一个触发的按键触发的同时，另外一个键释放。",
+      "SC": "可以设置两个按键，两个按键同时按下的时候，可以让按得更深的一个触发，另外一个按键释放。",
+      "snap_click": "迅捷"
+    },
+    "sure_switch_gamepad": "确定要切换吗？",
+    "sure_switch_gamepad_desc": "切换到游戏手柄模式后部分按键将无法生效",
+    "tab": {
+      "calibration": "校准",
+      "curve": "曲线",
+      "distance": "行程设置",
+      "exit_calibration": "退出校准",
+      "joystick_reflect": "手柄模拟",
+      "multi_cmd": "一键多指令",
+      "snap_tap": "SOCD",
+      "toggle": "长按开关",
+      "toggle_tip": "这个功能可以让你只按一次，就能快速连续触发某个按键。",
+      "turbo": "涡轮增压",
+      "turbo_tip": "这个功能可以让你按压某个按键时，产生持续点击的效果"
+    },
+    "toggle": {
+      "drk_guide_tip": "这个功能允许你按一个键越深，它触发的次数就越多。",
+      "keySpeed": {
+        "times": "最大触发次数",
+        "title": "按键速度",
+        "unit": "次/秒"
+      },
+      "selected": "已选按键",
+      "set": "已设置按键",
+      "title": "开启"
+    }
+  },
+  "menu": {
+    "addconnect": "连接新设备",
+    "assist": "快捷开启",
+    "bluetooth_firmware": "无线更新",
+    "disconnect": "断开连接",
+    "expTools": "拓展工具",
+    "fr_firmware": "接收器更新",
+    "help": "帮助中心",
+    "issue": "用户反馈",
+    "keyboard_advance": "高级模式",
+    "keyboard_firmware": "固件更新",
+    "keyboard_he": "磁轴功能",
+    "keyboard_light": "按键背光",
+    "keyboard_macro": "键盘宏",
+    "keyboard_map": "键盘键位",
+    "keyboard_test": "键盘测试",
+    "keyset": "增强按键",
+    "scroll": "滚动增强",
+    "setting": "设置",
+    "switchSetting": "轴体设置"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "确定要禁用该按键吗？",
+      "resetAll": "该操作会删除所有已经保存的数据,是否继续?",
+      "resetBtn": "是否恢复成默认设置?"
+    },
+    "dpi": {
+      "cable": "有线",
+      "customDPITips": "可自定义DPI值并绑定到键位上，按住该键值将会触发",
+      "dpiTip": "DPI（每英寸点数）用于设定光标灵敏度——数值越高，在相同的手部移动幅度下，光标移动的距离越远。",
+      "gear": "档位数",
+      "previousSetting": "如果{{time}}秒内没有操作，它将自动确认。点击“恢复”可恢复到之前的设置。",
+      "properties": "鼠标系统设置",
+      "properties_open": "打开鼠标系统设置",
+      "properties_tip": "没有反应？请下载“Assistant”后重试。",
+      "reportRate": "回报率",
+      "reportRateDesc": "支持高达8000Hz",
+      "reportTip": "调整设备向电脑回送报告的频率。",
+      "title": "DPI 设置",
+      "wireless": "2.4GHz",
+      "xyTip": "X 轴 DPI 控制鼠标水平方向光标灵敏度，Y 轴 DPI 控制垂直方向光标灵敏度，数值越高，对应方向移动光标响应越灵敏。",
+      "xy_split_label": "分离 X/Y"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "左右键分离",
+      "gear": "档",
+      "left_btn": "左键",
+      "light_blocked": "光路阻断",
+      "light_desc": "未按下时光束被遮挡，不会触发。按下按键即可让光路导通——光线到达感光元件并触发点击；全程无金属触点，不会磨损，也不会随时间出现双击。",
+      "light_led": "光源",
+      "light_mode": "光学微动",
+      "light_pd": "感光元件",
+      "light_triggered": "已触发",
+      "magnet_desc": "设置点击触发所需的按压行程：越浅触发越快，越深越不易误触。",
+      "magnet_mode": "磁轴微动",
+      "motor_trigger": "触觉反馈设置",
+      "right_btn": "右键",
+      "shared_btn": "鼠标按键",
+      "title": "鼠标按键触发设置",
+      "travel_tip": "行程过低容易误触",
+      "trigger_point": "触发行程设置"
+    },
+    "key": {
+      "backward": "后侧键",
+      "brightnessDown": "屏幕亮度减少",
+      "brightnessUp": "屏幕亮度增加",
+      "calculate": "计算器",
+      "colorSwitch": "灯效颜色切换",
+      "copy": "复制",
+      "customDpi": "自定义DPI",
+      "cut": "剪切",
+      "dock": "程序坞 开/关",
+      "downScroll": "向下滚动",
+      "dpiLoop": "DPI 循环",
+      "email": "邮件",
+      "forward": "前侧键",
+      "he": "Optical / Magnetic micro motion",
+      "home": "显示桌面",
+      "homePage": "打开主页",
+      "launchPad": "启动台",
+      "left": "左键",
+      "leftClick": "左键",
+      "leftDouble": "左键双击",
+      "leftLock": "左键锁定",
+      "leftScroll": "向左滚动",
+      "leftScrollSustain": "向左持续滚动",
+      "leftTilt": "左倾",
+      "left_lock": "Left Click Lock",
+      "lickDoubleClick": "左键双击",
+      "light": "灯效",
+      "lightModeSwitch": "七彩呼吸循环",
+      "loop": "循环",
+      "loopColorfulBreathing": "七彩呼吸循环",
+      "loopDpi": "DPI 循环",
+      "loopOpticalMagnetic": "光磁微动循环",
+      "loopPollingRate": "回报率循环",
+      "middle": "中键",
+      "middleClick": "中键",
+      "modeToggleAll": "光磁微动循环",
+      "mute": "静音",
+      "myComputer": "我的电脑",
+      "next": "下一曲",
+      "nextDpi": "下一档 DPI",
+      "nextPollingRate": "下一档回报率",
+      "pageDown": "Page Down",
+      "pageUp": "Page Up",
+      "paste": "粘贴",
+      "pause": "播放/暂停",
+      "player": "播放器",
+      "prevDpi": "上一档 DPI",
+      "previous": "上一曲",
+      "prevPollingRate": "上一档回报率",
+      "refresh": "刷新",
+      "restoreFactory": "恢复出厂设置",
+      "right": "右键",
+      "rightClick": "右键",
+      "rightScroll": "向右滚动",
+      "rightScrollSustain": "向右持续滚动",
+      "rightTilt": "右倾",
+      "screenshot": "截图",
+      "scrollLeftClick": "右倾",
+      "scrollRightClick": "左倾",
+      "sideKey": "侧键",
+      "speedSwitch": "灯效速度切换",
+      "stop": "停止",
+      "swichLight": "灯效切换",
+      "switchApp": "切换应用",
+      "task": "调度中心",
+      "trackballToScroll": "轨迹球转滚动",
+      "upScroll": "向上滚动",
+      "volumeDown": "音量-",
+      "volumeUp": "音量+",
+      "webLessen": "缩小",
+      "webMagnify": "放大"
+    },
+    "keyboard": "键盘",
+    "key_fun": {
+      "basic": "基础按键",
+      "disable": "禁用",
+      "dpi": "DPI",
+      "game": "游戏增强键",
+      "game_tip": "按住映射按键后，可自动重复输出所选按键，并支持自定义次数与频率。",
+      "keyboard": "键盘组合键",
+      "keyboard_tip": "可多选修饰键，再添加普通键。点击输入框后按键录入，或从右侧选择键码。",
+      "macro": "宏",
+      "media": "多媒体键",
+      "pollingRate": "回报率",
+      "profile": "配置",
+      "sensitive": "灵敏度",
+      "shortCut": "快捷键"
+    },
+    "key_game": {
+      "count": "次数",
+      "infinite": "无限",
+      "rate": "速率"
+    },
+    "light": {
+      "colorFlowing": "流光溢彩",
+      "flashLight": "霓虹闪烁",
+      "fullColorCycle": "全彩循环",
+      "soleBreathe": "单色呼吸",
+      "soleFlowing": "单色跑马",
+      "soleLight": "单色常亮"
+    },
+    "menu": {
+      "angle": "角度调整",
+      "dpi": "DPI 设置",
+      "key": "按键功能",
+      "light": "灯效设置",
+      "macro": "宏设置",
+      "poll_rate": "回报率",
+      "profile": "配置",
+      "sys": "高级功能"
+    },
+    "mouse": "鼠标",
+    "polling_rate": {
+      "daily": "日常办公",
+      "fps20k": "传感器采样模式",
+      "game": "游戏竞技",
+      "office_mode": "常规模式",
+      "office_mode_desc": "流畅操控，稳定扫描",
+      "rage_content": "开启电竞模式后功耗将增加。",
+      "rage_desc": "传感器扫描速率 ≥ 20 kHz。具备极低延迟与精准追踪能力，但代价是功耗较高。",
+      "rage_mode": "电竞模式",
+      "rage_title": "确认开启电竞模式？"
+    },
+    "profile_tab": {
+      "changeIcon": "更换图标",
+      "selectMode": "选择模式"
+    },
+    "scroll": {
+      "acceleration": "加速度",
+      "consecutive_times": "连续滚动次数",
+      "demo": "滚轮演示",
+      "direction": "滚轮方向",
+      "duration": "持续时间",
+      "interval": "滚动间隔(ms)",
+      "scroll": "横向滚动",
+      "speed": "滚动速度",
+      "step": "最小滚动步长",
+      "tip_acceleration": "将滚动加速设置为当前值的倍数。",
+      "tip_consecutive_times": "连续滚动后将会自动切换为平滑滚动",
+      "tip_demo": "您可以在此处试用增强型浪动设置",
+      "tip_direction": "改变滚轮滚动方向",
+      "tip_disconnect": "您需要下载Assist才能使用它",
+      "tip_interval": "连续滚动间隔时间",
+      "tip_speed": "增加滚动速度"
+    },
+    "shortcut_tooltip": {
+      "general": "以下功能设置后，Mac系统和Windows系统都能生效",
+      "mac": "以下功能设置后，仅在Mac系统能生效",
+      "win": "以下功能设置后，仅在Windows系统能生效"
+    },
+    "sys": {
+      "angle": "角度调整",
+      "angle_correction_after": "调节后",
+      "angle_correction_no": "调节前",
+      "angle_preview": "调节效果前后对比",
+      "angle_reset_btn": "重置为 0°",
+      "backward": "反向",
+      "battery_indicator": "电量指示",
+      "delay": "按键延迟响应",
+      "forward": "正向",
+      "funConfig": "鼠标系统功能",
+      "keyResponseTime": "按键快速响应",
+      "leftLock": "鼠标左键锁定",
+      "line": "直线修正",
+      "lock": "锁定",
+      "lod": "鼠标LOD高度",
+      "motion": "Motion Sync",
+      "pairBond": "配对组合键",
+      "pairLimit": "配对键仅支持1-3个键",
+      "power": "休眠模式",
+      "respSeconds": "响应秒数（毫秒）",
+      "scroll": "滚动方向",
+      "sensor": "Sensor画线性能",
+      "sleep": "设备休眠",
+      "unlock": "解锁",
+      "wave": "波纹控制"
+    },
+    "tip": {
+      "leftLock": "左键配置已锁定，无法配置。"
+    },
+    "tips": {
+      "advanceDelayDesc": "在高级模式下，您可以为每个键单独设置独立的响应延迟（0-20毫秒）。",
+      "angleDesc": "调整鼠标传感器角度，使倾斜状态下的鼠标也能实现精准的水平移动。",
+      "delayDesc": "设置延迟时间，避免因鼠标快速点击或抖动导致的误触发。",
+      "factorySetDesc": "单击此按钮将清除设备的当前设置并恢复为出厂默认设置",
+      "fps20kDesc": "鼠标传感器每秒捕捉 20,000 帧鼠标垫表面图像，为鼠标移动提供精准无延迟的追踪效果。",
+      "indicatorDesc": "该开关仅控制 2.4G 模式的普通电量状态显示",
+      "leftLockDesc": "当“左键锁定”开启时，左键无法重新映射。",
+      "lineDesc": "智能过滤轻微的手部抖动，以减少水平与垂直方向的轨迹偏差。",
+      "lodCurr": "当前鼠标作用高度",
+      "lodDesc": "可以检测和跟踪鼠标移动的最大工作距离。",
+      "motionDesc": "同步传感器数据与系统响应节奏，减少光标跳动或卡顿。",
+      "pairBondDesc": "自定义组合键，同时按下4秒，进入蓝牙/2.4G配对模式。",
+      "scrollDirDesc": "设置鼠标滚轮向上或向下滚动时屏幕上内容的移动方向",
+      "sensorDesc": "提高鼠标绘制直线、圆形和其他轨迹时的精度和稳定性。",
+      "sleepDesc": "支持在无线模式下，设备闲置超时后自动休眠。",
+      "waveDesc": "减少手部微抖带来的波浪形轨迹，让光标移动更平滑。"
+    },
+    "wheel": {
+      "adjustTimeout": "校准超时",
+      "sensitivity": "灵敏度"
+    }
+  },
+  "notify": {
+    "emptyHid": "未选择任何HID设备",
+    "fail": "操作失败",
+    "fr_not_connect": "设备进入休眠后无法使用驱动,可触碰设备任意按键唤醒",
+    "hidAlreadyConnected": "HID设备已连接",
+    "hidConfNotBrand": "暂不支持当前品牌设备",
+    "hidConfNotFound": "未发现有效的HID设备配置",
+    "hidDeviceNotFount": "HID设备不存在",
+    "hidUnconnected": "HID设备未连接",
+    "import": {
+      "layout": "您的键盘布局已导入成功",
+      "title": "导入成功"
+    },
+    "invalid_macro_json": "无效的宏配置",
+    "invalid_rgb_json": "无效的配置",
+    "keyboard_not_support_wireless": "键盘固件暂不支持无线",
+    "keycodeNotFound": "键位CODE配置有误",
+    "limited": "已超过最大限制",
+    "macroSizeLimit": "宏大小超过可用大小",
+    "notSupportHid": "该设备不支持HID服务",
+    "sleep": "无连接设备或设备已休眠",
+    "success": "操作成功",
+    "success_competitive": "成功切换到电竞模式",
+    "success_connect": "连接成功",
+    "success_office": "成功切换到常规模式",
+    "unknownErr": "未知错误"
+  },
+  "onboarding": {
+    "completed": "已成功完成引导 🎉",
+    "connect": {
+      "description": "用数据线把键盘接上电脑，点这里「连接」，在弹窗里选择你的设备。",
+      "title": "连接你的键盘"
+    },
+    "entry": "新手引导",
+    "flow": {
+      "connect": "连接设备",
+      "keymap": "按键改键",
+      "light": "背光灯效"
+    },
+    "hint": "请点击亮起处完成操作，或点「跳过引导」",
+    "keymap": {
+      "select_a": {
+        "description": "在下方功能面板点字母「A」，就把空格键改成了 A。改好后本引导会自动关闭。",
+        "title": "第 2 步 · 改成「A」"
+      },
+      "select_space": {
+        "description": "先在键盘上点一下最下方的「空格键」，把它选中。",
+        "title": "第 1 步 · 点选「空格键」"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "在右侧取色器里把颜色调成绿色（拖动色块或输入 RGB 0,255,0）。设好后本引导会自动关闭。",
+        "title": "第 2 步 · 调成绿色"
+      },
+      "select_static": {
+        "description": "在下方灯效列表里点「单色常亮」，把键盘设成静态单色灯效。",
+        "title": "第 1 步 · 选「单色常亮」"
+      }
+    },
+    "skip": "跳过引导",
+    "step": "步骤"
+  },
+  "screen": {
+    "format": {
+      "limit": "图片格式只能为PNG,JPG,GIF"
+    },
+    "resolution": {
+      "limit": "图片尺寸不能超过240*240"
+    },
+    "size": {
+      "limit": "图片文件大小不能超过300KB"
+    },
+    "upload": {
+      "format": "PNG or JPG(max. 500KB)"
+    }
+  },
+  "selection": {
+    "limitation": "该功能最多可选择{{count}}个键位"
+  },
+  "setting": {
+    "debounce": {
+      "scan": "扫描间隔"
+    },
+    "file_extra_properties_not_supported": "文件中有额外不被支持的属性内容",
+    "file_import_failed": "导入文件失败",
+    "file_upload_no_config_file": "未识别到配置文件，请上传",
+    "info": "设备信息",
+    "infos": {
+      "bluVersion": "蓝牙版本",
+      "deviceDesc": "固件版本",
+      "name": "产品名"
+    },
+    "json_config": "Json配置",
+    "lng": "语言",
+    "log": "运行日志",
+    "onlyview": "该键盘不可修改配置",
+    "other": "其他",
+    "others": {
+      "debounce": {
+        "name": "按键延时响应",
+        "tip": "开启后延时响应最小可设置为0ms",
+        "title": "调整最小值",
+        "warning": {
+          "title": "您确定要开启吗"
+        }
+      }
+    },
+    "theme": "主题切换",
+    "updateLog": "版本记录"
+  },
+  "snap": {
+    "list": "SOCD按键列表"
+  },
+  "test": {
+    "btn": {
+      "reset": "重新测试",
+      "reset_bindings": "清除绑定"
+    },
+    "msg": {
+      "bind_success": "已将 {{count}} 个按键绑定到 {{audioName}}",
+      "bind_success_single": "{{keyName}} 键已绑定到 {{audioName}}",
+      "no_key_selected": "请先选中要绑定的按键",
+      "reset_success": "重置成功",
+      "storage_full": "存储空间不足",
+      "unsupported_format": "不支持的音频格式,请使用MP3、WAV、OGG或M4A",
+      "upload_success": "音频上传成功"
+    },
+    "per_key_sound": {
+      "desc": "为每个按键分配独立音效。禁用该功能时，所有按键默认使用所选音效。",
+      "tip": "在非测试矩阵模式下，仅可设置统一的按键响应音效。"
+    },
+    "sound": {
+      "tip": "当开关打开时，按键测试会有声音反馈，你可以选择自己喜欢的声音。"
+    },
+    "sound_btn": {
+      "Balloon": "Balloon",
+      "CarHorn": "Car Horn",
+      "Cartoon": "Cartoon",
+      "CoinCollecting": "Coin Collecting",
+      "custom": "自定义",
+      "default": "默认",
+      "DogBarking": "Dog Barking",
+      "Donkey": "Donkey",
+      "Glass": "Glass",
+      "PartyHorn": "Party Horn",
+      "PhoneDial": "Phone Dial",
+      "Punch": "Punch",
+      "RubberChicken": "Rubber Chicken",
+      "RubberToy": "Rubber Toy",
+      "Sneeze": "Sneeze"
+    },
+    "title": {
+      "custom_sound": "自定义音效库",
+      "per_key_sound": "单按键音效分配",
+      "reset_custom_bindings": "确定重置音频绑定吗？",
+      "sound": "启用声音效果",
+      "sound_effect": "音效选择",
+      "uploaded_sounds": "已上传音效"
+    },
+    "upload": {
+      "browse": "点击上传",
+      "info": "支持格式：MP3、WAV、OGG、M4A・总大小上限：25 MB・推荐音频时长：1–2 秒",
+      "placeholder": "拖拽音频文件到这，或者"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "请先选择按键"
+    },
+    "key": {
+      "direction": "八向切换",
+      "gesture": "手势模式",
+      "held": "长按",
+      "scroll": "上下滚动",
+      "tap": "轻触"
+    },
+    "keycode": {
+      "key": "基础键",
+      "modifiers": "修饰键"
+    },
+    "key_fun": {
+      "basic": "基本",
+      "comb": "组合",
+      "feature": "角度",
+      "keyCombination": "修饰组合键",
+      "layer": "图层",
+      "macro": "宏",
+      "simulate": "同时按压",
+      "single": "短按/长按",
+      "special": "特殊键",
+      "trackball": "轨迹球"
+    },
+    "onlyOneNormalKey": "只能设置一个常规键",
+    "placeholder": {
+      "selectionKeys": "选择键"
+    },
+    "selectInputFirst": "请先选择输入框",
+    "slide": {
+      "leftSlide": "左滑动",
+      "rightSlide": "右滑动",
+      "underSlide": "下滑动",
+      "upSlide": "上滑动"
+    },
+    "tips": {
+      "angleGearsDesc": "例如，如果将“90°”分配给键 4，则单击键 4 会将当前图层的方向设置为 90°（横向）。",
+      "directionDesc": "例如：当键4绑定了“八向切换”后，那么点击键4时，轨迹球会顺时针旋转45度，重复点击会再次旋转45度，依次类推",
+      "disTapLayer": "层只能在长按设置",
+      "disTwoMs": "不能同时设置两个鼠标键",
+      "gestureDesc": "例如：当键4绑定了“手势模式” ，并且在 “轨迹球”一栏绑定想要输出的键值，那么后续按压键4 并且上下左右滑动轨迹球，便可输出上述设置的键值",
+      "held": "按住超过200毫秒时间",
+      "knobNotSupportSet": "旋钮无法设置此功能",
+      "layerDesc1": "支持0-7层，每层按键都可设置绑定不同角度和功能；",
+      "layerDesc2": "例如：0层的键4可绑定 “上下滚动”，1层的键4可绑定 “八向切换”",
+      "layerHeaderDesc": "默认层为 0。 下方列出的命令用于启用和禁用层。 如果多个层同时处于激活状态，则层编号最高的那个层的键位映射将具有优先权。 通常建议：对于仅供临时使用的层，请使用 `MO(n)`；对于旨在用于切换的层，请使用 `TO(n)`。 *注：由于 `TG(n)` 需要您手动管理其开启/关闭状态，因此存在某个非预期的层意外保持激活状态的可能性。",
+      "layerMODesc": "此键仅在按下时激活第 n 层。 松开按键后，系统将恢复到初始状态。 当您想要临时使用不同的层时，此功能非常有用，类似于 Fn 键。",
+      "layerTGDesc": "切换图层 n 的开启/关闭状态。 如果图层 n 已关闭，则启用它；如果已启用，则禁用它。 按键释放后状态保持不变，直到再次按下才会恢复。 由于需要持续关注图层的开启/关闭状态，通常使用 MO(n) 或 TO(n) 会更方便。",
+      "layerTODesc": "按下此按钮一次即可切换到图层 n。 此时，除默认图层外的所有图层都将被禁用。 当您希望使用特定图层作为主要工作图层时，此功能非常适用。",
+      "scrollDesc": "例如：当键4绑定了“上下滚动”后，那么按压键4时，轨迹球可控制窗口垂直移动；",
+      "selectKey": "选择按键",
+      "simulateAlreadyAddRow": "请先提交当前列表内容后再添加",
+      "simulateAlreadyExists": "该数字键组合已存在",
+      "simulateAntiGhosting": "该按键组合为复位功能，请设置其他组合",
+      "simulateMaxLen": "最多只能选择4个按键",
+      "simulateMaxList": "超出最大存储数量",
+      "simulateMinLen": "请选择至少2个按键",
+      "tap": "按住在200毫秒内松手",
+      "title_placeholder": "请输入标题"
+    },
+    "title": {
+      "advanceFeatures": "高阶功能",
+      "basickey": "基础按键",
+      "bindList": "命令绑定列表",
+      "defaultFeatures": "默认功能",
+      "dpiReturnRate": "DPI/回报率",
+      "gesture": "轨迹球手势",
+      "modifierKey": "修饰键"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcher需要所选设备的 VIA json 文件。请点击下方的“确认”按钮，并上传所选设备的 json 文件以使用Launcher。您可以从产品服务提供商处获取 VIA json 文件。",
+      "title": "VIA Json文件上传"
+    }
+  }
+}
