@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Opmerking:"
+    },
+    "debounce": {
+      "defer_global": "Terugslag per toetsenbord. Bij elke statusverandering wordt er een globale timer gezet. Wanneer er milliseconden geen veranderingen plaatsvinden worden alle invoerveranderingen geactiveerd. Dit is het hoogste prestatie algoritme met het laagste geheugengebruik.",
+      "defer_per_key": "Slaat de toetsaanslag terug. Er wordt een toetstimer ingesteld voor elke statuswijziging. Als de toets niet binnen milliseconden van de terugslag verandert, wordt de statuswijziging van de toets geactiveerd.",
+      "eager_defer_per_key": "Terugslag op een toetsaanslag. Als een toets naar beneden gedrukt is en daar van status veranderd is de reactie instantaan. Hierna volgt bij de terugslag voor milliseconden geen invoer voor die toets. Bij een omhoog staande toets statusverandering wordt er een per toets een timer gezet. Wanneer er gedurende de terugslag milliseconden geen invoer plaatsvindt, verandert de toets van status.",
+      "eager_per_key": "Terugslag per toets. Bij elke statusverandering is de reactie instantaan. Hierna is er geen verdere actie voor die toets voor TERUGSLAG milliseconden.",
+      "none": "Er wordt geen terugslag uitgevoerd.",
+      "tip": {
+        "1": "\"EAGER PER KEY\" is de aanbevolen terugslag modus: een toetsaanslag reageert meteen, maar de daaropvolgende invoer van die toets wordt genegeerd binnen de door jou ingestelde reactietijd.",
+        "2": "Om een andere terugslag modus te selecteren; klik bovenin op de \"?\" knop voor meer uitleg over de andere terugslag-modi.",
+        "3": "Er bestaat een kans dat er dubbelklik problemen ontstaan als de reactiesnelheid te dichtbij 0 ms ingesteld wordt."
+      }
+    },
+    "macro": {
+      "gesture": "Gebarenmodus altijd ingeschakeld houden",
+      "gesture_description": "Na activering hoeft er geen gebarentoets te worden toegewezen.",
+      "gesture_not_configured": "Kan niet openen. Ga naar « Toetsfunctie – Trackball » om de uitvoerwaarde in te stellen.",
+      "scroll": "Scrollmodus altijd ingeschakeld houden",
+      "scroll_description": "Na activering hoeft deze niet aan gebarentoetsen te worden gekoppeld.",
+      "title": "Gedrag van het gebaar (selecteer één optie)"
+    },
+    "nkro": {
+      "desc": "De toetsenbord technologie NKRO (N-Key Rollover) zorgt ervoor dat er geen signalen verloren gaan of conflicten ontstaan wanneer je meerdere toetsen tegelijkertijd indrukt.",
+      "title": "NKRO Instelling"
+    },
+    "performance": {
+      "mode_battery": "Batterijmodus",
+      "mode_high": "Hoogwaardige modus",
+      "mode_normal": "Standaardmodus",
+      "title": "Schakelen tussen Prestatiemodus"
+    },
+    "poll_rate": "Pollingsnelheid instellingen",
+    "poll_rate_tip": {
+      "bt": "Bluetooth verbinding modus",
+      "bt_desc": "In Bluetooth-modus is de pollingsnelheid vast ingesteld op 125 Hz. Vanwege verbindingsbeperkingen kan deze instelling niet worden gewijzigd.",
+      "fr": "2.4GHz connectie modus",
+      "usb": "Kabelverbinding modus"
+    },
+    "sleep": {
+      "backlight": "Automatische uitschakeling achtergrondverlichting starttijd",
+      "magnet": "Rusttijd van het Matrix Scannen van het toetsenbord",
+      "magnet_range": "De Matrix Scannen rusttijd moet langer zijn dan de achtergrondverlichting uitschakelvertraging en korter dan de slaap time-out periode.",
+      "magnet_tip": "Voor Hall Effect toetsenborden moet de rusttijd van het Matrix scannen langer zijn dan 60 seconden.",
+      "time": "Automatische slaapmodus starttijd"
+    },
+    "tips": {
+      "keepLayer_close": "2. Als deze optie is uitgeschakeld, schakelt NapePro samen met « Laag 1 » wanneer u het bewerkingsscherm « Laag 1 » opent.",
+      "keepLayer_enable": "1. Als deze optie is ingeschakeld, blijft NapePro bijvoorbeeld op « Laag 0 » draaien, zelfs als u het bewerkingsscherm « Laag 1 » opent."
+    },
+    "title": {
+      "keepLayer": "Bewerkingsmodus voor lagen"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Apparaat verbonden",
+        "idle": "Tik om het apparaat te verbinden",
+        "pending": "Autorisatie starten..."
+      },
+      "download_assistant": {
+        "idle": "Klik om de nieuwste Assistant te downloaden"
+      },
+      "resume_assistant": {
+        "done": "Doorgaan met verwerken",
+        "idle": "Assistant ingeschakeld",
+        "pending": "Verwerking voortzetten...",
+        "prompt": "Ik heb het geopend"
+      },
+      "undo_remap": {
+        "done": "Toetshertoewijzing ongedaan gemaakt",
+        "idle": "Deze toetshertoewijzing ongedaan maken",
+        "pending": "Ongedaan maken..."
+      }
+    },
+    "clear_tooltip": "Gesprek wissen",
+    "close_tooltip": "Sluiten",
+    "deep_thinking": "Diep nadenken",
+    "generated_content_notice": "Door AI gegenereerde inhoud kan fouten bevatten. Controleer dit.",
+    "input_placeholder": "Vraag het aan Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Focus op snel antwoord",
+        "label": "Sneller"
+      },
+      "deepseek-v4-pro": {
+        "description": "Voor complexere taken",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Gebalanceerd",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normaal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "De uitvoering is voltooid, maar er is geen weer te geven antwoord ontvangen.",
+    "pin": {
+      "tooltip_off": "Losmaken",
+      "tooltip_on": "Chatvenster vastzetten"
+    },
+    "pinned_success": "Het dialoogvenster is vastgezet en kan niet worden verplaatst.",
+    "quick": {
+      "connect_keyboard": "Spatietoets hertoewijzen aan A",
+      "remap_space": "Lichteffect wijzigen naar Band Spiral Val",
+      "set_light": "Discord openen"
+    },
+    "result": {
+      "connect_failed": "Verbindingsfout: {{error}}",
+      "device_connected": "Apparaat verbonden",
+      "no_device_undo": "Er is geen apparaat verbonden, dus de hertoewijzing kan niet ongedaan worden gemaakt.",
+      "no_remap_to_undo": "Er is geen hertoewijzing om ongedaan te maken.",
+      "undo_failed": "Herroewijzing ongedaan maken mislukt: {{error}}",
+      "undo_success": "Laatste hertoewijzing ongedaan gemaakt en {{count}} toets(en) hersteld."
+    },
+    "select_model": "Model selecteren",
+    "status": {
+      "answering": "Antwoordt",
+      "executing": "Uitvoeren",
+      "loading": "Laden",
+      "thinking": "Denken",
+      "verifying": "Controleren"
+    },
+    "stopped": "Gestopt",
+    "title": "Keychron AI",
+    "unpinned_success": "Losgemaakt",
+    "welcome": "Hallo! De « Keychron AI Assistant » kan u helpen apparaten te verbinden, toetsen opnieuw toe te wijzen, RGB-effecten aan te passen, macro's te maken en nog veel meer."
+  },
+  "application": {
+    "addr": "Open snel een webpagina",
+    "add_addr": "Adres toevoegen",
+    "apple_silicon_version": "Download voor Apple Silicon (.pkg)",
+    "app_duplicate": "Deze applicatie bestaat al. Het is niet nodig om deze opnieuw toe te voegen.",
+    "app_hint": "Het is mogelijk om een sneltoets in te stellen. Klik op de software die je snel wil kunnen open en koppel deze vervolgens aan een toets.",
+    "app_placeholder": "Selecteer een toepassing",
+    "clear_all": "Alles wissen",
+    "desktop_old_content": "Download en installeer de nieuwste versie van de desktopdienst om deze functie te gebruiken.",
+    "desktop_old_title": "Verouderde desktopdienst gedetecteerd.",
+    "download_keychron_assistant": "Nog niet geïnstalleerd? Klik om te downloaden",
+    "download_new_assistant_tip": "Download de nieuwste versie van Keychron Assistant om alle functies te gebruiken.",
+    "download_zip_tip": "Opmerking: voordat je de Keychron Assistent installeerd, moet het gedownloade bestand uitgepakt worden.",
+    "file_not_found": "Het bestand bestaat niet",
+    "intel_version": "Download voor Intel Macs (.dmg)",
+    "keySetting": "Deze toets heeft al een snelkoppeling!",
+    "key_no_conf": "Er zijn geen sneltoetsen ingesteld",
+    "limited": "Het maximale limiet is overschreden. Momenteel is het limiet voor snelle start mogelijkheden 5. Dit maximum zal in de toekomst waarschijnlijk verhoogd worden.",
+    "need_keychron_assistant": "Voor deze functie moet Keychron Assistent actief zijn",
+    "no_key_selected": "Geen toets geselecteerd",
+    "open_assistant_no_response_tip": "Als er niets gebeurt na klikken op « Openen », download dan de nieuwste Assistant en probeer het opnieuw.",
+    "open_tip1": "1. De snelle startfunctie koppelt de app die u snel wilt starten aan een knop. Door op die knop te klikken, start de app snel.",
+    "open_tip2": "2. Download eerst Assist en voeg de app toe die u snel wilt starten. Ga daarna terug naar de toetsenbordlauncher om toetsen te koppelen en te starten.",
+    "select_key_to_bind": "Selecteer een toets van het toetsenbord om deze instelling te binden",
+    "soft": "Start applicatie",
+    "submit_hint": "Selecteer de software die je snel wil kunnen openen en klik op [Indienen]. Na het indienen kun je de snelkoppeling activeren en gebruiken.",
+    "title_placeholder": "Aangepaste titel (optioneel)",
+    "unsupported_feature": "Functie niet ondersteund",
+    "unsupported_feature_download_new_version": "Deze functie wordt niet ondersteund. Download de nieuwste versie om het te proberen.",
+    "url": "Open snel een webpagina",
+    "url_hint": "Je kunt een sneltoets instellen voor een website. Kopieer het webadres dat je snel wil kunnen openen en koppel dit aan een toets",
+    "url_placeholder": "Vul een geldige URL in"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Ga verder",
+      "later": "Later",
+      "openSystemPreferences": "Open Systeemvoorkeuren",
+      "restartMessage": "De toegankelijkheidsmachtiging is met succes verleend. De app moet opnieuw worden gestart om toe te passen.",
+      "restartNow": "Nu opnieuw starten",
+      "restartTitle": "Machtiging verleend",
+      "step1": "Klik op de knop hieronder om naar de pagina voor systeemtoegankelijkheidsmachtigingen te gaan.",
+      "step2": "Zoek en schakel de Launcher Assistant-schakelaar in om te autoriseren.",
+      "step3": "Voer uw wachtwoord in",
+      "step4": "Na autorisatie, sluit u de app en opent u deze opnieuw om de wijzigingen toe te passen.",
+      "welcomeTitle": "Welkom bij de Assistent"
+    },
+    "click_no_response_tip": "Open de muisinstellingen van uw computer om de opties voor aanwijzer, scrollen en klikken aan te passen.",
+    "common": {
+      "add": "Toevoegen",
+      "back": "Terugkeren",
+      "delete": "Verwijderen",
+      "info": "Info",
+      "refresh": "Vernieuwen",
+      "settings": "Instellingen"
+    },
+    "hint_reset": "Er is een apparaatwijziging gedetecteerd. Vanwege een verschil in indeling werken mogelijk sommige toetsen niet zoals weergegeven in Snelle Start. Wil je de instellingen opnieuw instellen voor de nieuwe indeling?",
+    "hint_reset_1": "Gedetecteerd dat u naar een ander apparaat bent overgeschakeld. Wilt u uw instellingen resetten?",
+    "hint_reset_2": "(Opmerking: Vanwege verschillen in de toetsindeling tussen modellen kan het zijn dat de snelle start knoppen die je hebt ingesteld niet meer goed werken.)",
+    "home": {
+      "addAddress": "Adres toevoegen",
+      "addSoftwareDescription": "Voeg hieronder de software toe die je snel wil kunnen openen en klik vervolgens op \"Snelle start\" om de knop te koppelen in de launcher.",
+      "delete": "Verwijderen",
+      "onceAddedDescription": "Wanneer je de app hieronder hebt toegevoegd; klik op de knop om terug te gaan.",
+      "quickStartApplication": "Snelle Start Applicatie",
+      "search": "Zoeken",
+      "setUpQuickStart": "Snelstart instellen",
+      "tooltipText1": "1. Met de snelle start functie kun je toepassingen die je snel op wil starten koppelen aan een knop. Na het koppelen kun je de gekozen toepassing snel starten door op de gekoppelde knop te drukken.",
+      "tooltipText2": "2. Klik op het \\\"+\\\" teken om de toepassing te selecteren die je snel wil starten. Klik vervolgens op \"Snelle Start Openen\" om terug te keren naar de launcher, toetsen toe te wijzen en de toepassing te starten."
+    },
+    "license": {
+      "agree": "Akkoord",
+      "disagreeAndWithdraw": "Weigeren en terugkeren",
+      "userLicenseAgreement": "Gebruikerslicentieovereenkomst",
+      "welcomeDescription": "Ga akkoord met de",
+      "welcomeDescriptionEnd": "zodat we je beter van dienst kunnen zijn",
+      "welcomeTitle": "Welkom bij de Assistent"
+    },
+    "open_title": "1. U moet Assist downloaden om snelle start te gebruiken.",
+    "open_title2": "2. Vanwege software-updates is het raadzaam de nieuwste versie van Assist te downloaden en te installeren.",
+    "settings": {
+      "aikeyUpdate": "AIKey-upgrade: aangepaste presets en snelle activering toegevoegd, opdrachtverzending en antwoordverwerking geoptimaliseerd, stabiliteit en gebruiksgemak aanzienlijk verbeterd.",
+      "autostart": "Automatisch starten bij opstarten",
+      "currentLatestVersion": "huidigeLaatsteVersie",
+      "endUserLicenseAgreement": "Eindgebruikerslicentieovereenkomst",
+      "fixedKnownIssues": "Bekende problemen opgelost",
+      "interfaceOptimization": "Interface optimalisatie",
+      "language": "taal",
+      "mosUpdate": "MOS scroll-/versnellingsalgoritme geoptimaliseerd: acceleratiecurve en bemonsteringsstrategie herbouwd voor een vloeiendere en consistentere ervaring bij lage en hoge snelheden, met minder trillingen en latentie.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Het merk Keychron Assistant is eigendom van Keychron.",
+      "nkroDescription2": "Bij het uitzetten van NKRO zal het toetsenbord tot 6 toetsaanslagen tegelijkertijd correct registeren.",
+      "selectLanguage": "selecteerTaal",
+      "title": "Instellingen",
+      "updateLog": "Bijwerkingsnotities"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Magnetische Switch",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetic Switch",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Bij één of meer toetsen is het kalibreren mislukt. Controleer de switch op het toetsenbord en de toets instelling!",
+    "set_successfully": "De switch configuratie is succesvol aangepast.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Controleer of de vervangende switch op het toetsenbord klopt met de geselecteerde switch optie.",
+    "sure_content2": "Klik op de \"Bevestig\" knop onderin. Hiermee ga je naar de kalibratie pagina om deze toetsen te kalibreren.",
+    "sure_title": "Weet je zeker dat je het switch type wil veranderen?",
+    "switch_type_settings": "Switch Type Instellingen",
+    "tip": {
+      "1": "Met deze functie kun je voor het hele toetsenbord het type magnetische switch instellen. Na de configuratie verandert de kleur van de toetsrand afhankelijk van het type switch dat je kiest. De instellingsvolgorde is als volgt:",
+      "2": "Vervang eerst alle magnetische switches op het toetsenbord (het volledige toetsenbord ondersteunt maar één magnetische switch type) en controleer of de vervangende switches in de lijst hieronder staan.",
+      "3": "Kies het magnetische switch type hieronder en klik op de knop \"Alle knoppen instellen\" om de configuratie te voltooien.",
+      "4": "Herkalibreer alle toetsen om het verschil tussen de magnetische switch types te herstellen."
+    },
+    "tip_reset": "Als je op deze reset knop drukt, worden alle eerder geconfigureerde snelle start instellingen verwijderd.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Magnetische Switch"
+  },
+  "common": {
+    "advance": "Geavanceerde",
+    "basic": "Basis",
+    "beta_test_version": "Bètaversie",
+    "cancel": "Sluiten",
+    "cancel_btn": "Annuleer",
+    "clear": "Verwijderen",
+    "close": "Sluiten",
+    "connected": "Verbonden",
+    "connect_btn": "Verbinden",
+    "connect_tip": "wil verbinden met een HID apparaat",
+    "create": "Creëren",
+    "delete": "Verwijderen",
+    "deleteConfirm": "Bevestigen dat je deze data wilt resetten?",
+    "disconnected": "Niet verbonden",
+    "download": "Downloaden",
+    "empty": "Leeg",
+    "error": "Fout",
+    "export": "Exporteren",
+    "general": "Algemeen",
+    "hide": "Verbergen",
+    "iknow": "Begrepen",
+    "import": "Importeren",
+    "is": "Ja",
+    "keyboard": "Toetsenbord",
+    "key_back": "Herstellen",
+    "key_confirm": "Bevestig",
+    "loading": "Wordt geladen...",
+    "matrix": "Testmatrix",
+    "max_string_length": "De tekst overschrijdt de maximale lengte",
+    "min": "Minuten",
+    "mouse": "Muis",
+    "noResult": "Geen resultaten",
+    "not": "Nee",
+    "notSubmit": "Niet-ingediende gegevens. Nu indienen?",
+    "on": "aan",
+    "open": "Aan",
+    "paired": "gekoppeld",
+    "plugged_in": "Verbonden",
+    "plug_and_ret": "Verbind het apparaat en probeer het opnieuw.",
+    "plug_and_retry": "Verbind het apparaat en probeer het opnieuw.",
+    "recover": "Herstellen",
+    "reset": "Indeling resetten",
+    "resetLayout": "Indeling resetten",
+    "reset_single": "Enkelvoudige reset",
+    "resolution_not_support": "De toetsenbordkaart kan niet worden weergegeven omdat het browservenster te klein is.",
+    "results": "Resultaten",
+    "save": "Opslaan",
+    "search": "Zoeken",
+    "select": "Selecteren",
+    "selectall": "Selecteer alles",
+    "status": {
+      "update_success": "Succesvol bijgewerkt"
+    },
+    "submit": "Bevestigen",
+    "timeSync": "Schermtijd kalibreren",
+    "turnoff": "Sluiten",
+    "turnon": "Aan",
+    "type": "Type",
+    "upload": "Uploaden",
+    "view": "Bekijken",
+    "warring": "Waarschuwing",
+    "window_too_small": "Het voorbeeld kan niet worden weergegeven omdat het venster te klein is."
+  },
+  "connecting": "Aan het verbinden",
+  "cross": {
+    "btn": {
+      "active": "Multiplatform toetsenbord/muis",
+      "agree": "Accepteren",
+      "cancel": "Verbinding annuleren",
+      "close": "Sluiten",
+      "connect": "Verbinden",
+      "disconnect": "Verbinding verbreken",
+      "minimize": "Venster minimaliseren",
+      "quick": {
+        "connect": "Verbinding met één klik"
+      },
+      "reject": "Weigeren",
+      "reject_cancel": "cancel",
+      "trust": "Vertrouwd apparaat",
+      "waiting": "Wachten"
+    },
+    "disconnect_confirm": {
+      "content": "Na het verbreken van de verbinding stopt de overdracht. Reeds gestarte overdrachten worden opgeslagen in de geschiedenis, wachtende bestanden worden weggegooid.",
+      "title": "Bestandsoverdracht bezig"
+    },
+    "file_transfer": {
+      "average_speed": "Gemiddelde snelheid",
+      "change": "Wijzigen",
+      "clear": "Wissen",
+      "clear_failed_desc": "Kan lokale overdrachtsgeschiedenis niet wissen",
+      "clear_failed_title": "Wissen mislukt",
+      "connected": "Verbonden",
+      "delete": "Verwijderen",
+      "desc": "Ondersteunt elk bestandstype · Stabiele overdracht naar verbonden computers",
+      "direction": {
+        "receive": "Ontvangen",
+        "send": "Verzenden"
+      },
+      "dir_err_desc": "Kan de geselecteerde ontvangstmap niet gebruiken",
+      "dir_err_title": "Map bijwerken mislukt",
+      "dir_ok_desc": "Nieuw ontvangen bestanden worden opgeslagen in de geselecteerde map",
+      "dir_ok_title": "Opslagmap bijgewerkt",
+      "drop_unavailable_desc": "Gebruik de knop « Selecteren » om dit bestand te kiezen",
+      "drop_unavailable_title": "Kan bestandspad niet lezen",
+      "elapsed_label": "Verstreken tijd",
+      "enable": "Bestandsoverdracht inschakelen",
+      "file_missing_desc": "Het originele bestand is verplaatst of verwijderd, kan niet opnieuw worden verzonden",
+      "file_missing_title": "Het originele bestand bestaat niet",
+      "history": "Overdrachtsgeschiedenis",
+      "no_active": "Geen bestandsoverdracht bezig",
+      "no_history": "Geen overdrachtsgeschiedenis",
+      "open": "Instellingen",
+      "open_err_desc": "Kan de map voor het ontvangen van bestanden niet openen",
+      "open_err_title": "Kan de map niet openen",
+      "open_folder": "Openen",
+      "peer_cancelled": "De andere partij heeft de overdracht geannuleerd",
+      "quick_send": "Snel verzenden",
+      "quick_send_desc": "Selecteer een bestand en verzend het rechtstreeks naar de verbonden computer",
+      "receive_failed_desc": "Bestandsontvangst onvolledig of kan niet lokaal worden geschreven",
+      "receive_failed_title": "Fout bij ontvangen van bestand",
+      "receiving": "Ontvangen...",
+      "receiving_path": "Lokaal ontvangstpad",
+      "resend": "Opnieuw verzenden",
+      "select_button": "Bestand selecteren",
+      "select_desc": "Selecteer een specifiek bestand om over te dragen",
+      "select_title": "Klik om een bestand te selecteren",
+      "sending": "Verzenden...",
+      "send_failed_desc": "Kan het geselecteerde bestand niet verzenden",
+      "send_failed_title": "Bestandsoverdracht mislukt",
+      "send_to": "Verzenden naar",
+      "status": {
+        "cancelled": "Geannuleerd",
+        "failed": "Verzenden mislukt",
+        "received": "Ontvangen",
+        "receive_error": "Ontvangstfout",
+        "sent": "Verzonden"
+      },
+      "title": "Bestandsoverdracht",
+      "transfer_time": "Overdrachtstijd",
+      "transmitting": "Overdragen...",
+      "unsupported_file": "Het bestandsformaat wordt niet ondersteund voor overdracht",
+      "waiting": "Wachten op overdracht"
+    },
+    "notification": {
+      "conn_end_t": "Verbinding verbroken",
+      "conn_err_t": "Verbindingsfout",
+      "conn_lost_t": "Verbinding verbroken",
+      "conn_reject_t": "Verbindingsverzoek geweigerd",
+      "conn_req_err": "Fout bij verzenden van verbindingsverzoek",
+      "hist_clear_err": "Fout bij wissen van verbindingsgeschiedenis",
+      "hist_clear_ok": "Verbindingsgeschiedenis gewist",
+      "id_err_t": "Identiteitsverificatie mislukt",
+      "network_lost": "Netwerkverbinding verbroken, multiplatformsessie beëindigd",
+      "op_err_t": "Bewerking mislukt",
+      "op_ok_t": "Bewerking geslaagd",
+      "pair_id_err": "Identiteitsverificatie van gekoppeld apparaat mislukt",
+      "pair_ok": "Apparaat succesvol gekoppeld",
+      "pair_ok_t": "Koppeling geslaagd",
+      "peer_end": "De andere partij heeft de multiplatformsessie verbroken",
+      "peer_reject": "De andere partij heeft het verbindingsverzoek geweigerd",
+      "reconfirm_t": "Nieuwe bevestiging vereist",
+      "sync_err_t": "Synchronisatie mislukt",
+      "trust_id_changed": "De identiteit van het vertrouwde apparaat is gewijzigd. Bevestig het verbindingsverzoek opnieuw.",
+      "trust_id_err": "Identiteitsverificatie van vertrouwd apparaat mislukt",
+      "trust_rm_err": "Fout bij verwijderen van vertrouwd apparaat",
+      "trust_sync_err": "De vertrouwensreferenties zijn niet gesynchroniseerd met de andere partij"
+    },
+    "page": {
+      "sub_desc": "Verbind twee computers, gebruik het multiplatform toetsenbord/muis · Synchroniseer het klembord handmatig · Sleep bestanden — zo natuurlijk als op één computer.",
+      "sub_title": "Functievoorbeeld",
+      "title": "Multiplatform"
+    },
+    "panel": {
+      "desc": "Tot 2 verbonden computers (inclusief deze) · Apparaatfuncties worden na verbinding vrijgemaakt",
+      "found": "Apparaten detecteren",
+      "history": {
+        "active": "Actieve verbinding",
+        "passive": "Passieve verbinding",
+        "subtitle": "Recente verbindingen",
+        "title": "Verbindingsgeschiedenis"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Overig",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Alle Wi-Fi-netwerken van dezelfde router scannen",
+        "start": "Scan starten",
+        "stop": "Scan stoppen",
+        "title": "Lokaal netwerk scannen.."
+      },
+      "tag_1": "Vertrouwd",
+      "title": "Computer verbinden"
+    },
+    "scan": {
+      "incoming_notice": "Na uw goedkeuring kan de andere partij een multiplatformverbinding met deze computer tot stand brengen.",
+      "incoming_subtitle": "Wil verbinding maken met deze computer",
+      "incoming_title": "Verbindingsverzoek ontvangen",
+      "network_changed_cancel": "Niet nu",
+      "network_changed_confirm": "Opnieuw scannen",
+      "network_changed_desc": "De netwerkomgeving is gewijzigd. Opnieuw scannen?",
+      "network_changed_title": "Netwerkomgeving gewijzigd",
+      "rejected": "De andere partij heeft het verbindingsverzoek geweigerd",
+      "request_confirm": "Wachten op bevestiging van de andere partij... Het verbindingsverzoek verloopt binnenkort",
+      "request_tip": "Verbindingsverzoek aan",
+      "trust": "Vertrouw op dit apparaat en accepteer in de toekomst automatisch verbindingsverzoeken",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Automatische verbinding",
+      "automatic_connection_help": "Automatische verbinding: Selecteer een apparaat uit de lijst met vertrouwde apparaten van deze computer. Beide apparaten moeten elkaar configureren om na het starten van Assistant automatisch te verbinden.",
+      "automatic_connection_hint": "(Beide apparaten moeten worden geconfigureerd)",
+      "clear_automatic_device": "Apparaat voor automatische verbinding verwijderen",
+      "close": "Sluiten",
+      "confirm": "Bevestigen",
+      "disconnect_shortcut": "Multiplatformsessie verbreken",
+      "disconnect_shortcut_help": "Als de multiplatformfunctie niet werkt, kunt u verbreken met deze toetscombinatie. Deze combinatie kan worden gewijzigd maar niet verwijderd.",
+      "enter_shortcut_key": "Aangepaste toets invoeren",
+      "no_trusted_devices": "Geen vertrouwde apparaten",
+      "remove_confirmation": "Vertrouwen voor {device} intrekken?",
+      "remove_device": "Vertrouwd apparaat verwijderen",
+      "select_device": "Vertrouwd apparaat selecteren",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Sneltoets",
+      "system_lock_shortcut": "Computer vergrendelen",
+      "title": "Vertrouwen en automatische verbinding",
+      "trusted_count": "Aantal vertrouwde apparaten ({count})",
+      "trust_help": "Vertrouwd apparaat: Een vertrouwd apparaat kan de volgende keer verbinding maken zonder goedkeuring op deze computer te vereisen."
+    },
+    "step": {
+      "collapse": "Samenvouwen",
+      "connected": "Verbonden",
+      "desc": "Scan en koppel andere computers in Keychron Assistant · Na verbinding zijn het multiplatform toetsenbord/muis en bestandsoverdracht beschikbaar",
+      "desc_1": "Detecteer automatisch computers in hetzelfde lokale netwerk en verzend een verbindingsverzoek",
+      "desc_2": "De andere partij klikt op « Accepteren » om de koppeling te voltooien",
+      "desc_3": "Alle multiplatformfuncties zijn beschikbaar",
+      "expand": "Uitvouwen",
+      "local": "Deze computer",
+      "title": "Verbindingsproces",
+      "title_1": "Scannen en verzoek verzenden",
+      "title_2": "Bevestiging van de andere partij",
+      "title_3": "Connection Established",
+      "trust": "Verbonden · Vertrouwd",
+      "wait_1": "Wachten",
+      "wait_2": "Klik op « Toestaan »",
+      "wait_3": "Andere computers koppelen"
+    },
+    "tabs": {
+      "file_transfer": "Bestandsoverdracht",
+      "settings": "Instellingen"
+    },
+    "time": {
+      "ago": "Vóór",
+      "days": "Dagen",
+      "hours": "Uren",
+      "just_now": "Zojuist",
+      "last": "Verleden",
+      "last_connection": "Laatste verbinding",
+      "minutes": "Minuten",
+      "months": "Maanden",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Onder",
+      "desc": "Wanneer de muiscursor de opgegeven schermrand overschrijdt, kunnen het toetsenbord en de muis van de computer het verbonden apparaat bedienen.",
+      "left": "Links",
+      "off": "Uitgeschakeld",
+      "right": "Rechts",
+      "title": "Schermoverschrijdingsrand instellen",
+      "top": "Boven"
+    },
+    "web": {
+      "auto_connect_target": "Doel voor automatische verbinding",
+      "center_cursor": "Cursor centreren",
+      "clipboard": "Klembord",
+      "clipboard_desc": "Gekopieerde inhoud handmatig synchroniseren tussen computers",
+      "connect_assistant": "Assistant openen",
+      "connect_hint": "Verbindingsfuncties moeten binnen Assistant worden uitgevoerd",
+      "custom_screenshot": "Aangepaste schermafbeelding",
+      "direction": "Richting",
+      "drop_box_key": "Sneltoets neerzetpaneel",
+      "exit_application": "Verbinding verbreken",
+      "file_transfer": "Bestandsoverdracht",
+      "file_transfer_desc": "Selecteer een bestand of gebruik de sneltoets om het neerzetpaneel te openen",
+      "hold_ctrl": "Ctrl ingedrukt houden voor multiplatform",
+      "in_progress": "taken",
+      "items": "items",
+      "keyboard_mouse": "Multiplatform toetsenbord / muis",
+      "keyboard_mouse_desc": "Besturing wisselen wanneer de cursor de schermrand overschrijdt",
+      "loading": "Multiplatformstatus ophalen van Assistant...",
+      "lock_pc": "Computer vergrendelen",
+      "max": "Maximum",
+      "not_set": "Niet ingesteld",
+      "off": "Uitgeschakeld",
+      "on": "Ingeschakeld",
+      "ongoing": "Bezig",
+      "read_only": "Alleen-lezen · Wijzig instellingen in Keychron Assistant",
+      "recent_items": "Recente items",
+      "save_dir": "Map voor bestandsopslag",
+      "settings": "Instellingen",
+      "settings_desc": "Vertrouwde apparaten · Automatische verbinding · Sneltoetsen",
+      "shortcut_mapping": "Sneltoetsen toewijzen",
+      "switch_pc": "Van computer wisselen",
+      "sync_mode": "Synchronisatiemodus",
+      "target_device": "Doelapparaat",
+      "title": "Status van multiplatformfuncties",
+      "trusted_devices": "Aantal vertrouwde apparaten",
+      "trust_auto_connect": "Vertrouwen en automatische verbinding"
+    }
+  },
+  "debounce": {
+    "backlight": "De slaaptijd van de achtergrondverlichting mag niet korter zijn dan 5 seconden",
+    "mode": "Debounce-modus",
+    "press": "Indrukseconden",
+    "release": "Resetseconden",
+    "response": "Reactieseconden",
+    "scan": "Scansnelheid",
+    "setting": "Toetsenbordbouncetijd instellingen",
+    "sleep_limit": "De slaaptijd kan niet minder zijn dan 1 minuut.",
+    "tip": "De starttijd van de automatische uitschakeling van de achtergrondverlichting moet eerder zijn dan de starttijd van de automatische slaapstand.",
+    "warning": {
+      "content": "(Opmerking: instellingen onder 10 ms kunnen dubbelklikrisico veroorzaken. Stel zorgvuldig in.)",
+      "title": "Echt instellen?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Toetsenborddemo",
+    "device_mouse": "Muisdemo",
+    "exit": "Demonodus verlaten",
+    "keyboard": "Zonder toetsenbord proberen",
+    "mode": "Demonodus",
+    "mouse": "Zonder muis proberen",
+    "tip": "Opmerking: u bevindt zich in de demonodus, die alleen voor presentatie dient en geen echte functies heeft.",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Apparaatversie"
+  },
+  "device_add": "Verbinden",
+  "device_select": {
+    "notify": "Kies een apparaat van de lijst om door te gaan.",
+    "select": "Ga door met selecteren",
+    "un_select": "Geen apparaat geselecteerd"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Type test"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Verbinden",
+      "2": "Volgende",
+      "3": "Vorige",
+      "6": "Volgende update",
+      "enterBootloaderMode": "Updatemodus invoeren",
+      "flash": "Firmware bijwerken",
+      "matchDevice": "Apparaat matchen",
+      "retry": "Opnieuw proberen",
+      "startUpgrading": "Update starten"
+    },
+    "description": "Release-opmerkingen",
+    "downloadFailed": "Fout bij downloaden van firmwarebestand",
+    "error": {
+      "diff_model": "De firmware modelen van de apparaten zijn inconsistent",
+      "get_dfu_version": "Het is niet gelukt om de firmware bijwerkingsversie van het apparaat te verkrijgen"
+    },
+    "flashError": "Downloaden van firmware mislukt",
+    "flashSuccess": "Firmware succesvol bijgewerkt",
+    "info": {
+      "currentVersion": "Huidige versie",
+      "latestVersion": "Laatste Versie",
+      "updateSize": "Firmwaregrootte",
+      "updateTime": "Laatste Update"
+    },
+    "mouse": {
+      "step1_hid_device": "Druk op de K, E en Y toetsen in die volgorde en ga naar de volgende stap zodra de opdracht voor het verbinden van het HID-apparaat verschijnt."
+    },
+    "notFound": "De nieuwste firmware voor dit apparaat is niet gevonden",
+    "productNotExist": "Apparaat informatie niet gevonden",
+    "requestFail": "Apparaat zoeken mislukt; check of het apparaat niet in gebruik is door een ander programma.",
+    "syncQuickStart": "Snelle start synchroniseren",
+    "tip": {
+      "confirm": "Bevestig alstublieft",
+      "currentSelect": "Momenteel geselecteerd"
+    },
+    "tips": {
+      "0": "Voor dit apparaat is er momenteel geen firmware-update beschikbaar.",
+      "4": "Als je een Windows-apparaat gebruikt en de QMK Toolbox Driver nog niet hebt geïnstalleerd, volg dan de onderstaande stappen. Als je de QMK Toolbox Driver al hebt geïnstalleerd, klik dan op 'Volgende'.",
+      "5": "Klik op de knop 'Toolbox downloaden' hieronder om Toolbox te downloaden en uit te pakken.",
+      "6": "Pak de bestanden uit, klik met de rechtermuisknop op het Toolbox-pictogram of zoek naar “driver” in de zoekbalk van het systeem en selecteer vervolgens “Als administrator uitvoeren” om het te openen.",
+      "7": "Open het en klik op het menu 'Tool'",
+      "8": "Klik op 'Installeer drivers', klik daarna op 'Ja' om de firmware drivers te installeren en wacht op de installatie.",
+      "9": "Nadat de installatie compleet is; klik op 'Volgende' om te beginnen met het bijwerken van de firmware.",
+      "10": "Opmerking: Je kunt klikken",
+      "11": "Volg de onderstaande stappen.",
+      "12": "Ontkoppel het toetsenbord van de USB-kabel",
+      "13": "Houd de ESC toetsenbord ingedrukt en doe tegelijkertijd de USB kabel weer terug in het toetsenbord. Het toetsenbord zal zich voorbereiden op het updaten van de firmware.",
+      "15": "Als dit gelukt is, zal er een knop verschijnen met 'Firmware bijwerken'. Klik die aan.",
+      "16": "Verbind het apparaat niet los van de computer tijdens de firmware-update.",
+      "18": "Toolbox downloaden",
+      "19": "Toolbox Driver installatie instructievideo",
+      "20": ", voor een gedetailleerde uitleg over het installeren van de Toolbox Driver",
+      "22": "Klik de \"Verbind\" knop om het huidige apparaat te verbinden. Het systeem zal automatisch de firmware versie van het apparaat testen.",
+      "23": "Maak het toetsenbord gereed voor een firmware bijwerking door de Fn en nummer 1 toets samen minstens 5 seconden vast te houden totdat het blauwe indicatielampje oplicht.",
+      "24": "Nadat het matchen succesvol is zal de \"Brush firmware\" knop verschijnen. Klik hier op om de firmware bij te werken.",
+      "25": "Klik op \"Apparaat matchen' hieronder, selecteer het apparaat dat begint met ({{ modus }}) en match het.",
+      "26": "Update de Bluetooth-module in USB-modus.",
+      "27": "Klik op de knop hieronder om de nieuwste firmwareversie te verkrijgen.",
+      "28": "Met het toetsenbord losgekoppeld, houdt u de toets in de linkerbovenhoek van het toetsenbord ingedrukt en sluit u het toetsenbord tegelijkertijd via USB-kabel op de computer aan om het in gereedheid voor firmware-update te brengen.",
+      "bl-exceeded": "Aantal pogingen overschreden. Sluit de datakabel opnieuw aan.",
+      "clickMatchBtn": "Klik op de knop « Overeenkomende apparaten » hieronder en selecteer het apparaat dat begint met {{dfuName}}.",
+      "currentDongle": "(Gebruik een bedrade verbinding voor toetsenbord/muis-update. U bevindt zich momenteel op de pagina van de ontvanger.)",
+      "link_wired_content": "Tijdens de draadloze update gaat de muis in de slaapstand en kan niet worden gebruikt",
+      "link_wired_title": "Sluit vóór de update een kabel aan",
+      "longPress": "Druk eerst op ESC en houd vervolgens de Tab-toets gedurende 3 seconden tegelijkertijd ingedrukt.",
+      "matchErr": "Momenteel niet gekoppeld. Selecteer handmatig het apparaat dat u wilt updaten.",
+      "mouseTip2": "2. Als het apparaat gekoppeld en gematcht is, klik op 'Firmware bijwerken' om te starten.",
+      "mouseTip4": "Klik op 'Apparaat verbinden' en selecteer Bootloader",
+      "mouseTip6": "(Koppel de ontvanger niet los van de computer tijdens het flashen van de firmware)",
+      "mouseTip7": "Wacht op de voltooiing van de bijwerking - een \"succes\" bericht zal verschijnen.",
+      "patch": {
+        "1": "Deze update is een beveiligingspatch. Volg eerst de onderstaande tutorial om te updaten.",
+        "2": "In de huidige staat, koppelt u de USB-kabel van het toetsenbord los om het toetsenbord te verbreken.",
+        "3": "Met het toetsenbord losgekoppeld, verwijdert u de « Spatiebalk » en vindt u het kleine metalen plaattje naast de schakelaar.",
+        "4": "Houd de knop ingedrukt en sluit het toetsenbord opnieuw aan op de computer via USB-kabel.",
+        "5": "Klik op de knop « Overeenkomende apparaten » hieronder en selecteer het apparaat gemarkeerd (DFU).",
+        "6": "Na succesvolle koppeling verschijnt een knop « Firmware flashen ». Klik erop om de beveiligingspatch-update te starten."
+      },
+      "toFlash": "Na succesvolle koppeling verschijnt een knop « Firmware flashen ». Klik erop om de firmware-update te starten."
+    },
+    "update": {
+      "dfu_check": "Controleer of het geselecteerde DFU-apparaat correct is."
+    },
+    "update_available": "Er is een verbeterde firmware versie",
+    "update_latest": "Dit is de laatste firmware versie",
+    "update_success": "Bijwerken succesvol. Klik op de \"Verbind\" knop om te verbinden met het huidige apparaat.",
+    "warning": "Het apparaat verwijderen of de pagina verversen tijdens het bijwerken van de firmware kan het apparaat mogelijk beschadigen. Doe dit niet.",
+    "write": "Schrijven"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Apparaathandleiding",
+      "tutorial": "Handleiding",
+      "user_feedback": "Gebruikersfeedback"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Hoe de automatische slaapstand en starttijd voor achtergrondverlichting uit in te stellen op de Launcher?",
+        "set_keyboard_bounce_time": "Hoe de bounce-tijd van het toetsenbord in te stellen op de Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Hoe achtergrondverlichtingstoetsen in te stellen op de Launcher?",
+        "set_mix_rgb": "Hoe Mix RGB in te stellen op de Launcher?",
+        "set_per_key_rgb": "Hoe RGB per toets in te stellen op de Launcher?"
+      },
+      "bridge_firmware_update": "Hoe de firmware van de Keychron-ontvanger te flashen",
+      "create_mouse_macro": "Hoe een muismacro in Launcher te maken",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Hoe de fabrieksinstellingen te herstellen en de firmware bij te werken op de Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Hoe u uw HE-profiel op de Launcher beheert?",
+        "set_gamepad_analog_and_curves": "Hoe Gamepad Analog en curven in te stellen op de Launcher?",
+        "set_long_press_switch": "Hoe u de lang-indrukken schakelaar instelt op de Launcher?",
+        "set_one_key_multiple_commands": "Hoe u meerdere commando's voor één toets instelt op de Launcher?",
+        "set_snap_click": "Hoe Snap Click in te stellen op de Launcher?",
+        "use_he_mode": "Hoe HE-modus te gebruiken op Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Hoe werken Fn-toetsen op Keychron-toetsenborden?",
+        "remap_key": "Hoe een toets te herprogrammeren op de Launcher?",
+        "set_keymap_language": "Hoe de taal van de toetsenbordindeling in te stellen op de Launcher?",
+        "use_different_function_layers": "Hoe de verschillende functielagen te gebruiken?"
+      },
+      "key_test": {
+        "custom_sounds": "Hoe het geluid van uw toetsenbord aan te passen?",
+        "perform_keyboard_key_testing": "Hoe een toetsenbordtest uit te voeren op de Launcher?"
+      },
+      "macro": {
+        "create_macro": "Hoe een macro te maken op de Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Hoe de muis in Launcher naar fabrieksinstellingen te resetten",
+      "mouse_angle_adjustment": "Hoe de hoekaanpassing in Launcher te gebruiken",
+      "mouse_firmware_update": "Tutorial voor firmware-update van de muis",
+      "mouse_receiver_firmware_update": "Hoe de firmware van de Keychron-ontvanger te flashen",
+      "quick_start": {
+        "download_and_install_assistant": "Hoe de Keychron-Assistant te downloaden en te installeren?",
+        "set_quick_start": "Hoe de Snelstart in te stellen op de Launcher?"
+      },
+      "set_mouse_customize_buttons": "Hoe aangepaste muisknoppen in Launcher in te stellen",
+      "set_mouse_debounce_time": "Hoe de debounce-tijd van de muis in Launcher aan te passen",
+      "set_mouse_dpi_and_polling_rate": "Hoe DPI en polling rate van de muis in Launcher in te stellen",
+      "set_mouse_system_features_setting": "Hoe systeemfuncties van de muis in Launcher in te stellen"
+    },
+    "user_manual": "Gebruikershandleiding"
+  },
+  "issue": {
+    "content": "Inhoud",
+    "device": "Apparaat",
+    "email": "E-mail",
+    "tips": {
+      "content": "Inhoud is verplicht",
+      "device": "Apparaat is verplicht",
+      "email": "Ongeldig emailadres",
+      "input": "Vul een inhoud in",
+      "send": "Rapport verzonden",
+      "title": "Titel is verplicht"
+    },
+    "type": {
+      "1": "Defecte knop / geen reactie",
+      "2": "Verbindingsproblemen",
+      "3": "Hardwarestoring",
+      "4": "Ongeschikte lay-out / afmetingen",
+      "5": "Stuurprogrammaprobleem",
+      "6": "Overig",
+      "7": "Selecteer het type feedback"
+    }
+  },
+  "keycap": {
+    "character": "Lettertoetsen",
+    "fnc": "Functietoetsen",
+    "general": "Algemeen",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Cijfertoetsen",
+    "symbol": "Symbooltoetsen",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Ingedrukt houden = bovenste toets (modifier) · Tikken = onderste toets"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Toetscombinatie",
+      "combo_description": "Aangepaste sneltoets",
+      "launch_app": "App starten",
+      "launch_app_description": "App starten met één klik",
+      "launch_web": "Webpagina openen",
+      "launch_web_description": "Webpagina openen met één klik",
+      "macro": "Macro",
+      "macro_description": "Een reeks acties",
+      "remap": "Her toewijzen",
+      "remap_description": "Een andere toets toewijzen",
+      "title": "{{key}} hertoewijzen"
+    },
+    "codeInput": "Toetsinvoer",
+    "knob_not_support": "Huidige firmware onsteunt geen knop personalisatie. Werk de firmware bij.",
+    "layer": {
+      "1": "1. Ingedrukt houden activeert tijdelijk de doel-laag; het loslaten van de toets herstelt de oorspronkelijke waarde.",
+      "2": "2. Werkt alleen van een lagere laag naar een hogere laag; van een hogere laag naar een lagere laag heeft het geen effect.",
+      "3": "1. Eén klik schakelt de doel-laag uit/in; na uitschakelen wordt de hoogste actieve laag aangenomen.",
+      "4": "2. De standaardlaag kan niet worden uitgeschakeld; als alle lagen zijn uitgeschakeld, wordt de standaardlaag aangenomen.",
+      "5": "De ingedrukt-houden functie is identiek aan MO; 5 klikken zijn gelijk aan TG.",
+      "6": "1. Klikken/ingedrukt houden activeert een laag; activering vindt alleen van laag naar hoog plaats.",
+      "7": "Snap Tap ondersteunt alleen toetsen met een magnetische schakelaar.",
+      "8": "Eén klik activeert de doel-laag op eenrichtingswijze, zonder onderscheid tussen hoge en lage lagen.",
+      "9": "Eén klik activeert tijdelijk de standaardlaag van het doel op eenrichtingswijze, zonder onderscheid tussen hoge en lage lagen.",
+      "10": "1. Na een stroomstoring keert het toetsenbord terug naar de standaardlaag die overeenkomt met de systeemschakelaar, bijv. Win = laag 2, Mac = laag 0.",
+      "11": "2. Sommige toetsenbordmodellen hebben geen fysieke systeemschakelaar en keren meestal terug naar een vaste standaardlaag, bijv. laag 0.",
+      "error_info": "De systeemschakelaar van uw toetsenbord komt niet overeen met het systeem van de computer; de functies van de modifiers kunnen veranderen.",
+      "tip": "Tip:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Selecteer een of meer modificatortoetsen en een hoofdttoets en activeer vervolgens met één toets.",
+        "modifier_keys": "Modificatortoetsen",
+        "press_primary_key": "Druk op de hoofdttoets",
+        "primary_key": "Hoofdttoets",
+        "title": "Toetscombinatie"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Klik op deze knop om de toegewezen app te openen.",
+        "no_available_apps": "Geen apps beschikbaar",
+        "search_apps": "Apps zoeken",
+        "title": "App starten"
+      },
+      "launch_web": {
+        "description": "Klik op deze knop om de toegewezen webpagina te openen.",
+        "title": "Webpagina openen",
+        "web_page_url": "URL van de webpagina"
+      },
+      "macro": {
+        "description": "Neem een macro direct op in het invoerveld: de toetsen die u indrukt worden geregistreerd als een reeks acties.",
+        "macro_keys": "Macrotoetsen",
+        "press_key": "Druk op de toets die u wilt opnemen",
+        "title": "Macro opnemen"
+      },
+      "remap": {
+        "description": "Waar moet « {{key}} » in veranderen?",
+        "press_key": "Druk op de toets die u wilt toewijzen",
+        "primary_keys": "Hoofdtoetsen",
+        "title": "Toetsen hertoewijzen"
+      }
+    },
+    "reset": {
+      "all": "Weet je zeker dat je alle instellingen wilt resetten?",
+      "single": "Wil je de instellingen van deze toets resetten?",
+      "title": "Weet je zeker dat je wil resetten?"
+    },
+    "tabs": {
+      "assist": "Snelle start",
+      "basic": "Basis",
+      "custom": "Personalisatie",
+      "layers": "Laag",
+      "macro": "Macro",
+      "media": "Media",
+      "modtap": "Ingedrukt houden / Tikken",
+      "mouse": "Muis",
+      "qmk_lighting": "Verlichting",
+      "special": "Speciale toets",
+      "wt_lighting": "Verlichting"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Aangepast",
+      "default_layer": "Standaardlaag",
+      "display": "Weergavelaag selecteren",
+      "functional": "Werkelijke functionele laag",
+      "funtional": "Huidig",
+      "warn": "Als de toetsen niet werken, schakelt u de systeemschakelaar om en zet u het apparaat opnieuw aan."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": "Wil je wisselen naar...",
+    "connect": {
+      "1": "Verbind uw apparaat via kabel of 2.4G-ontvanger.\n(Sommige modellen ondersteunen alleen de bedrade modus)",
+      "2": "Klik op « Verbinden » linksboven en selecteer uw apparaat uit de lijst."
+    },
+    "detectedKeyboardLanguage": "We detecteren dat je toetsenbordtaal ... is",
+    "guide_tip": "Volg de onderstaande uitleg om je apparaat te verbinden",
+    "keepCurrentSetting": "Behoud huidige instellingen",
+    "lang": "Layout taal",
+    "resetSuccessContent": "De toetsenbord indeling is succesvol gereset",
+    "resetSuccessTitle": "Opnieuw instellen gelukt",
+    "select_device": "Selecteer het apparaat dat u wilt verbinden.",
+    "switchImmediately": "Schakel nu over"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Helderheid",
+    "color": "Kleur",
+    "common": {
+      "setting_color": "Kleur instellen"
+    },
+    "commonColor": "Veelgekozen kleuren",
+    "customColor": "Definieer kleuren",
+    "decorate_light": {
+      "0": "Geen",
+      "1": "Effen",
+      "2": "Ademend",
+      "3": "Tint circuleren",
+      "4": "Paardenrace"
+    },
+    "effect": "Effect",
+    "effect speed": "Snelheid",
+    "hue": "Tint",
+    "layer2": "RGB-zone",
+    "led": {
+      "sub": {
+        "title": "Tip: selecteer de LED-balk hieronder bij het instellen van de kleur."
+      },
+      "title": "Lichtbalk"
+    },
+    "level": "Niveau",
+    "mix": {
+      "config": "Lichteffect instellingen",
+      "hxxg": {
+        "hue": "Tint",
+        "saturability": "Verzadiging",
+        "speed": "Snelheid"
+      },
+      "rk": "Met deze functie kun je 2 verschillende zones op het toetsenbord instellen met andere effecten. Voor elke zone kun je verschillende tempos instellen voor een herhalend patroon en/of andere kleuren instellen.",
+      "timeLine": {
+        "second_tips": "De secondeninvoer is te groot of te klein",
+        "title": "Tijdlijn"
+      },
+      "verify_duration": {
+        "tip1": "De invoerwaarde moet een getal zijn, en moet groter zijn dan 1 en minder dan 99!",
+        "tip2": "Er kunnen slechts twee decimalen worden ingevoerd",
+        "tip3": "De ingevulde waarde is te groot",
+        "tip4": "De ingevulde waarde is te klein"
+      }
+    },
+    "notSupport": "Dit apparaat ondersteunt geen lichtinstellingen",
+    "perkey": {
+      "effect": "Effect selectie",
+      "effects": {
+        "0": "Algemeen",
+        "1": "Ademen",
+        "2": "Eén-toets reactie",
+        "3": "Aangrenzende toets reactie",
+        "4": "Het volledige toetsenbord"
+      },
+      "redo": "Volgende",
+      "region": "Gebiedsselectie",
+      "region_select": "Selecteer de laag",
+      "region_tip": "Selecteer het gebied in de toetsenbordtoetsen en stel de kleur in. Klik Opslaan om de kleur van het gebied te veranderen.",
+      "rk": "De kleur van elke toets kan individueel worden ingesteld. Verander de kleur door de toets te selecteren, te klikken op het gebied waar de kleur is ingesteld, de kleur aan te passen, en dan op te slaan.",
+      "save_warn": "Te veel RGB zones. Verwijder een paar RGB zones en probeer het opnieuw.",
+      "select_tip": "De geselecteerde knop maakt geen regio",
+      "select_warn": "Selecteer de knop",
+      "undo": "Vorige"
+    },
+    "saturation": "Verzadiging",
+    "settingAllBrightnessArea": "Helderheid van alle zones instellen",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Decoratieve verlichting",
+      "indication": "Indicatielampje",
+      "led_light": "Besturing van de lichtstrip",
+      "mix_rgb": "Meng RGB",
+      "perkey_rgb": "Per-toets RGB",
+      "screen": "Schermaanpassing",
+      "selection": "Achtergrondverlichting"
+    },
+    "underglow brightness": "Helderheid"
+  },
+  "lights": {
+    "0. None": "Geen",
+    "1. Solid Color": "Effen kleur",
+    "10. Cycle Pinwheel": "Circuleer molen",
+    "11. Cycle Spiral": "Circuleer spiraal",
+    "12. Dual Beacon": "Dubbele lichtbron",
+    "13. Rainbow Beacon": "Regenboog lichtbron",
+    "14. Jellybean Raindrops": "Jellybean regendruppels",
+    "15. Pixel Rain": "Pixel regen",
+    "16. Typing Heatmap": "Typ warmtekaart",
+    "17. Digital Rain": "Sneeuw",
+    "18. Reactive Simple": "Reactief Simpel",
+    "19. Reactive Multiwide": "Reactief Multibreed",
+    "2. Breathing": "Ademen",
+    "20. Reactive Multinexus": "Reactieve Multinexus",
+    "21. Splash": "Plons",
+    "22. Solid Splash": "Effen splash",
+    "23. Per Key Rgb": "Per toets RGB",
+    "3. Band Spiral Val": "Golvend",
+    "4. Cycle All": "Volledige cyclus",
+    "5. Cycle Left Right": "Circuleer Links Rechts",
+    "6. Cycle Up Down": "Circuleer Omhoog Omlaag",
+    "7. Rainbow Moving Chevron": "Bewegende regenboog visgraat",
+    "8. Cycle Out In": "Cyclus naar buiten en naar binnen",
+    "9. Cycle Out In Dual": "Circuleer buiten binnen dubbel"
+  },
+  "macro": {
+    "allchar": "Alle Karakters",
+    "closeDelay": "Vertraging uitzetten",
+    "code": "Code invoer",
+    "common": {
+      "flash": "Flash-opslag",
+      "title": "Om een macro toe te wijzen, selecteert u deze en klikt u vervolgens op de doelttoets in de toetsenkaart hierboven."
+    },
+    "config": "Configuratie",
+    "delay": "Vertragingen",
+    "delaySet": "Tijdsvertraging",
+    "dynamicDelay": "Dynamische vertraging",
+    "endREC": "Opname stoppen",
+    "enterDown": "Onder invoegen",
+    "enterUp": "Boven invoegen",
+    "fixedDelay": "Vaste vertraging",
+    "inputdelay": "Voer vertragingstijd in",
+    "inputtexct": "Vul tekst in",
+    "insertDelay": "Vertraging invoegen",
+    "keydown": "Indrukken",
+    "keyup": "Loslaten",
+    "loopCount": "Herhalingsaantal",
+    "loopCurrentDown": "Stop indrukken",
+    "loopDown": "Willekeurige toets Stop",
+    "loopOne": "Enkele lus",
+    "loopSet": "Lusinstellingen",
+    "loopUp": "Stop loslaten",
+    "macroReccord": "Opnemen",
+    "macroSetup": "Macro-instellingen",
+    "mouse": "Muis",
+    "notEqual": "Niet vrijgegeven toets gedetecteerd. Doorgaan?",
+    "record": "Opnemen",
+    "rename": "Hernoemen",
+    "save": "Opslaan",
+    "setRepeatCount": "Aantal herhalingen",
+    "specialText": "Speciale tekst",
+    "startREC": "Opname starten",
+    "stop": "Stoppen",
+    "text": "Tekst",
+    "texttype": "Alleen Engelse tekens en symbolen worden ondersteund",
+    "tip": {
+      "clickCopy": "Klik om de tekst te kopiëren",
+      "fixDelay": "Hier betekend het de vastgestelde vertraging tussen elk evenement.",
+      "keyDelay": "Vertraging: {200}, Eenheid:MS",
+      "keyDown": "Loslaten: {-KC A}",
+      "keyText": "Tekst: ABCDF",
+      "keyUp": "Indrukken: {+KC A}",
+      "macro_text": "Vul de uit te voeren macro in."
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnetisch",
+      "mechanical": "Mechanisch",
+      "tip": "Tip",
+      "title": "Schakelaarstatistieken"
+    },
+    "calibration": {
+      "1": "Laat de USB-kabel aangesloten, ontkoppel het apparaat niet en schakel het apparaat niet uit tijdens de kalibratie. Anders kan het apparaat vastlopen.",
+      "2": "Start de kalibratie",
+      "3": "Druk gedurende de 2 seconden voordat je op \"Start de kalibratie\" klikt, geen enkele toets in.",
+      "4": "Houd de toets 1 seconde ingedrukt om de kalibratie te voltooien.",
+      "5": "De achtergrondverlichting wordt groen als de kalibratie gelukt is.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Analoog Krommingsprofiel",
+      "save": "Sla kromming op",
+      "title": "Rocker Kromming instellingen"
+    },
+    "directive": {
+      "bottomBack": "Terugkaatsen",
+      "bottomIn": "Binnenkomst vanaf onderaan",
+      "bottomOut": "Bodem bereiken",
+      "trigger": "Starttrigger"
+    },
+    "distance": {
+      "advance_mode": "Geavanceerde modus",
+      "basic_mode": "Basis",
+      "current": "Huidige toetsen",
+      "globalDis": "Selecteer alles",
+      "globalRt": "Alle toetsreacties instellen",
+      "limitTip": "De waarde overschrijdt de limiet. Voer het opnieuw in.",
+      "magnet_calibrate": "Reactie demo",
+      "magnet_calibrate_point": "Reactiepunt",
+      "magnet_calibrate_tip": "Er kan maar één toets geselecteerd worden voor de reactie demo",
+      "magnet_calibrate_tip_desc": "Selecteer een toets en klik hieronder op de knop 'Start demo' om de activering van de huidige toets te demonsteren.",
+      "magnet_calibrate_tip_empty": "Selecteer een toets",
+      "profile_help": "druk op \"fn\"+ \"p\"+ \"z / x / c\" om snel te wisselen tussen profiel 1 / 2 / 3",
+      "result": "Toetswaardes invoeren",
+      "sensitive": "Gevoeligheid",
+      "setting": "Stel de bedieningsafstand in",
+      "show_mode_dis": "Slagafstand",
+      "show_mode_hide": "Verbergen",
+      "show_mode_rt": "Snelle Trigger",
+      "speed_trigger": "Snelle Trigger",
+      "trigger_distance": "(Druk) reactie afstand",
+      "trigger_distance_reset": "(Loslaat-) Reset afstand",
+      "trigger_distance_twice": "(Druk) reactie afstand"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Toewijzing wissen",
+      "left_emu": "Links nabootsen",
+      "reflect": {
+        "conflict": "Toets is al ingesteld"
+      },
+      "titles": {
+        "1": "Joystick knopselectie",
+        "2": "Joystick knopinstelling",
+        "4": "Toetsenbordtoetsen in- of uitschakelen",
+        "5": "Zet aan of uit dat je kunt typen wanneer de joystick in gebruik is",
+        "6": "Joystick effect demo",
+        "7": "Functie voor controllerherkenning",
+        "8": "1. Wanneer uitgeschakeld, wordt het toetsenbord niet langer als controller herkend.",
+        "9": "2. Na elke bewerking met betrekking tot deze functie moet u de kabel loskoppelen en opnieuw aansluiten om deze toe te passen.",
+        "10": "Standaardcontroller",
+        "11": "Xbox-controller",
+        "12": "Selectie van controllermodus",
+        "13": "Na het wijzigen van de controllermodus moet u de kabel loskoppelen en opnieuw aansluiten om de wijziging toe te passen.",
+        "xbox": "1. Na het in-/uitschakelen van Xbox moet de kabel worden losgekoppeld en opnieuw aangesloten om de wijziging toe te passen.</br>2. Xbox is niet beschikbaar op macOS."
+      }
+    },
+    "mode": {
+      "default": "Standaard",
+      "gamepad": "Spelcontroller",
+      "gaming": "Gamemodus"
+    },
+    "multi_cmd": {
+      "b": "Bodem In",
+      "fulfilled": "Ruimte vol. Verwijder een bestaande opdracht om een nieuwe in te stellen.",
+      "list": "Lijst met opdrachtbindingen",
+      "setting": "Multi-commandotoets",
+      "test": "Test toetsen"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy ondersteunt alleen toetsen met een magnetische schakelaar.",
+      "only_support_magnetic": "Er zijn momenteel mechanische toetsen geselecteerd. Dit menu ondersteunt alleen magnetische schakelaars."
+    },
+    "profile": "Profiel",
+    "rename": "Hernoemen",
+    "simulate": "Simuleren",
+    "snap_tap": {
+      "absolute_priority": "Absolute prioriteit",
+      "AP": "Wijs een hogere activeringsprioriteit toe aan een van de twee toetsen wanneer ze tegelijkertijd worden ingedrukt.</br>*Klik op het pictogram in het midden van de toets om de prioriteit te wisselen.",
+      "cancel_mode": "Neutraal",
+      "CM": "U kunt twee knoppen instellen. Wanneer beide tegelijkertijd worden ingedrukt, wordt geen van beide geactiveerd.",
+      "create": "Maken",
+      "key_exist": "De configuratiesleutel bestaat al",
+      "last_key_priority": "Prioriteit voor de laatste toets",
+      "LKP": "Kies twee toetsen. Zodra de twee toetsen aan elkaar gekoppeld zijn, is het mogelijk om een actie te activeren door de toets verder in te drukken en los te laten door de toets minder ver los te laten.",
+      "SC": "Je hebt de mogelijkheid om twee toetsen zo in te stellen dat bij gelijktijdige bediening alleen de diepst ingedrukte toets een actie activeert. De andere toets wordt genegeerd.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Echt overschakelen?",
+    "sure_switch_gamepad_desc": "Na het overschakelen naar de gamecontroller-modus zullen sommige knoppen niet meer werken.",
+    "tab": {
+      "calibration": "Kalibratie",
+      "curve": "Kromming",
+      "distance": "Bedieningsafstand",
+      "exit_calibration": "Kalibratie verlaten",
+      "joystick_reflect": "Analoge gamepad",
+      "multi_cmd": "Eén toets, meerdere acties",
+      "snap_tap": "Klikactie",
+      "toggle": "Lang indrukken schakelaar",
+      "toggle_tip": "Met deze functie kun je een toets meerdere keren snel achter elkaar activeren met één keer drukken.",
+      "turbo": "Turbo",
+      "turbo_tip": "Produceert een continu klikeffect wanneer u op een knop drukt."
+    },
+    "toggle": {
+      "drk_guide_tip": "Deze functie zorgt ervoor dat hoe dieper u een toets indrukt, hoe vaker deze wordt geactiveerd.",
+      "keySpeed": {
+        "times": "Maximaal aantal activeringen",
+        "title": "Typesnelheid",
+        "unit": "keer/s"
+      },
+      "selected": "Geselecteerde toetsen",
+      "set": "Toetsen ingesteld",
+      "title": "Aan"
+    }
+  },
+  "menu": {
+    "addconnect": "Apparaat toevoegen",
+    "assist": "Start",
+    "bluetooth_firmware": "Draadloze Firmware",
+    "disconnect": "Loskoppelen",
+    "expTools": "Extensiegereedschappen",
+    "fr_firmware": "Ontvanger bijwerken",
+    "help": "Helpcentrum",
+    "issue": "Bugrapport",
+    "keyboard_advance": "Geavanceerde modus",
+    "keyboard_firmware": "Firmware bijwerken",
+    "keyboard_he": "Magnetische functies",
+    "keyboard_light": "Achtergrondverlichting",
+    "keyboard_macro": "Toetsenbordmacro's",
+    "keyboard_map": "Toetsenbordindeling",
+    "keyboard_test": "Toetstest",
+    "keyset": "Snap Action",
+    "scroll": "Verbeterd scrollen",
+    "setting": "Instellingen",
+    "switchSetting": "Knop Instelling"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Echt deze knop uitschakelen?",
+      "resetAll": "Deze handeling verwijdert alle opgeslagen informatie. Doorgaan?",
+      "resetBtn": "Standaardinstellingen herstellen?"
+    },
+    "dpi": {
+      "cable": "Bedraad",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (dots per inch) definieert de gevoeligheid van de cursor — hoe hoger de waarde, hoe verder de cursor beweegt bij dezelfde handbeweging.",
+      "gear": "Niveaus",
+      "previousSetting": "Als er geen actie is voor {{tijd}} seconden zal er een automatische bevestiging plaatsvinden. Klik \"Terugdraaien\" om terug te gaan naar de vorige instellingen.",
+      "properties": "Systeeminstellingen van de muis",
+      "properties_open": "Systeeminstellingen van de muis openen",
+      "properties_tip": "Geen reactie? Download « Assistant » en probeer het opnieuw.",
+      "reportRate": "Pollingsnelheid",
+      "reportRateDesc": "Ondersteunt tot 8000 Hz",
+      "reportTip": "Pas aan hoe vaak het apparaat aan de computer rapporteert",
+      "title": "DPI‑instellingen",
+      "wireless": "2.4GHz",
+      "xyTip": "De DPI van de X‑as regelt de cursorgevoeligheid in horizontale richting, de DPI van de Y‑as regelt de gevoeligheid in verticale richting. Hogere waarden maken de cursor responsiever in de overeenkomstige richting.",
+      "xy_split_label": "X/Y-scheiding"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Onafhankelijke linker-/rechterknoppen",
+      "gear": "Niveau",
+      "left_btn": "Linkerknop",
+      "light_blocked": "Optisch pad geblokkeerd",
+      "light_desc": "In rust is de lichtstraal geblokkeerd, dus er wordt geen klik geregistreerd. Druk op de knop om het lichtpad te geleiden: het licht bereikt de sensor en activeert de klik. Geen metalen contacten, geen slijtage.",
+      "light_led": "LED",
+      "light_mode": "Optische schakelaar",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Geactiveerd",
+      "magnet_desc": "Kies hoe diep u moet drukken voordat een klik wordt geregistreerd. Korter = sneller, dieper = minder fouten.",
+      "magnet_mode": "Magnetische schakelaar",
+      "motor_trigger": "Instellingen voor haptische feedback",
+      "right_btn": "Rechterknop",
+      "shared_btn": "Muisknoppen",
+      "title": "Instellingen voor muisknop‑triggering",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Instellingen voor activeringsslag"
+    },
+    "key": {
+      "backward": "Achterknop",
+      "brightnessDown": "Schermhelderheid verlagen",
+      "brightnessUp": "Schermhelderheid verhogen",
+      "calculate": "Rekenmachine",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Kopiëren",
+      "customDpi": "Aangepaste DPI",
+      "cut": "Knippen",
+      "dock": "Dock Aan/Uit",
+      "downScroll": "Scroll naar beneden",
+      "dpiLoop": "DPI-cyclus",
+      "email": "E-mail",
+      "forward": "Vooruit",
+      "he": "Optisch / magnetisch micro-beweging",
+      "home": "Bureaublad weergeven",
+      "homePage": "Open homepagina",
+      "launchPad": "Launchpad",
+      "left": "Linkerklik",
+      "leftClick": "Linkerklik",
+      "leftDouble": "Dubbelklik links",
+      "leftLock": "Klikvergrendeling links",
+      "leftScroll": "Scrol links",
+      "leftScrollSustain": "Continu naar links scrollen",
+      "leftTilt": "Kantel naar links",
+      "left_lock": "Klikvergrendeling links",
+      "lickDoubleClick": "Dubbelklik links",
+      "light": "Effect",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "herhaling",
+      "loopColorfulBreathing": "Kleurrijke ademhalingscyclus",
+      "loopDpi": "DPI-cyclus",
+      "loopOpticalMagnetic": "Optisch-magnetische cyclus",
+      "loopPollingRate": "Polling rate cyclus",
+      "middle": "Middel Klik",
+      "middleClick": "Middel Klik",
+      "modeToggleAll": "Optisch / magnetisch micro-beweging",
+      "mute": "Dempen",
+      "myComputer": "Mijn computer",
+      "next": "Volgende",
+      "nextDpi": "Volgende DPI",
+      "nextPollingRate": "Volgende polling rate",
+      "pageDown": "Pagina omlaag",
+      "pageUp": "Pagina omhoog",
+      "paste": "Plakken",
+      "pause": "Afspelen/Pauzeren",
+      "player": "Speler",
+      "prevDpi": "Vorige DPI",
+      "previous": "Vorige",
+      "prevPollingRate": "Vorige Pollingsnelheid",
+      "refresh": "Vernieuwen",
+      "restoreFactory": "Fabrieksreset",
+      "right": "Rechtsklik",
+      "rightClick": "Rechtsklik",
+      "rightScroll": "Scrol rechts",
+      "rightScrollSustain": "Continu naar rechts scrollen",
+      "rightTilt": "Scrol linkerklik",
+      "screenshot": "Schermafbeelding",
+      "scrollLeftClick": "Scrol linkerklik",
+      "scrollRightClick": "Kantel naar links",
+      "sideKey": "Zijknop",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Stoppen",
+      "swichLight": "Lichteffectschakeling",
+      "switchApp": "Van toepassing wisselen",
+      "task": "Missiecontrole",
+      "trackballToScroll": "Trackball naar scrollen",
+      "upScroll": "Scrol omhoog",
+      "volumeDown": "Volume -",
+      "volumeUp": "Volume +",
+      "webLessen": "Uitzoomen",
+      "webMagnify": "Inzoomen"
+    },
+    "keyboard": "Toetsenbord",
+    "key_fun": {
+      "basic": "Basisknoppen",
+      "disable": "Knop uitschakelen",
+      "dpi": "DPI",
+      "game": "Gametoetsen",
+      "game_tip": "Houd de toegewezen toets ingedrukt om de geselecteerde toetsaanslagen automatisch te herhalen, met instelbaar aantal en frequentie.",
+      "keyboard": "Toetscombinaties",
+      "keyboard_tip": "Selecteer een of meer modificatortoetsen en voeg vervolgens een standaardtoets toe. Klik op het veld om een toets in te voeren of selecteer een toetscode rechts.",
+      "macro": "Macro",
+      "media": "Multimedia Toetsen",
+      "pollingRate": "Pollingsnelheid",
+      "profile": "Profiel",
+      "sensitive": "Gevoeligheid",
+      "shortCut": "Sneltoets"
+    },
+    "key_game": {
+      "count": "Telling",
+      "infinite": "Ongelimiteerd",
+      "rate": "Snelheid"
+    },
+    "light": {
+      "colorFlowing": "Ambilight",
+      "flashLight": "Knipperde Neonverlichting",
+      "fullColorCycle": "Volledige kleuren ciculatie",
+      "soleBreathe": "Ademen",
+      "soleFlowing": "Paardenraces",
+      "soleLight": "Effen kleur"
+    },
+    "menu": {
+      "angle": "Hoekaanpassing",
+      "dpi": "DPI‑instellingen",
+      "key": "Personaliseren",
+      "light": "Lichteffect instellingen",
+      "macro": "Macro-instellingen",
+      "poll_rate": "Pollingsnelheid",
+      "profile": "Profiel",
+      "sys": "Geavanceerd"
+    },
+    "mouse": "Muis",
+    "polling_rate": {
+      "daily": "Kantoor",
+      "fps20k": "Sensor bemonsteringsmodus",
+      "game": "Game",
+      "office_mode": "Standaardmodus",
+      "office_mode_desc": "Vloeiende werking, stabiele scan",
+      "rage_content": "Het energieverbruik zal toenemen wanneer de competitieve modus is ingeschakeld.",
+      "rage_desc": "Sensorscanfrequentie ≥20K voor minder latentie en meer precisie. Verbruikt meer energie.",
+      "rage_mode": "Competitieve modus",
+      "rage_title": "Activering van de competitieve modus bevestigen?"
+    },
+    "profile_tab": {
+      "changeIcon": "Verander icoon",
+      "selectMode": "Selecteer Modus"
+    },
+    "scroll": {
+      "acceleration": "Snelheidsversnelling",
+      "consecutive_times": "Aantal continue scrolls",
+      "demo": "Scroll-demo",
+      "direction": "Scrollrichting",
+      "duration": "Scrollduur",
+      "interval": "Scrollinterval (ms)",
+      "scroll": "Horizontaal scrollen",
+      "speed": "Scrollsnelheid",
+      "step": "Minimale scrollstap",
+      "tip_acceleration": "Stel de scrollversnelling in als een veelvoud van de huidige waarde.",
+      "tip_consecutive_times": "Na continu scrollen schakelt het automatisch over naar vloeiend scrollen.",
+      "tip_demo": "U kunt de instellingen voor verbeterd scrollen hier uitproberen.",
+      "tip_direction": "De scrollrichting van de muis wijzigen",
+      "tip_disconnect": "Om verbeterd scrollen te gebruiken, moet u Assist downloaden.",
+      "tip_interval": "Intervaltijd van continu scrollen",
+      "tip_speed": "Scrollsnelheid verhogen"
+    },
+    "shortcut_tooltip": {
+      "general": "Na configuratie worden de volgende functies zowel op Mac als Windows toegepast.",
+      "mac": "Na configuratie worden de volgende functies alleen op Mac toegepast.",
+      "win": "Na configuratie worden de volgende functies alleen op Windows toegepast."
+    },
+    "sys": {
+      "angle": "Hoekaanpassing",
+      "angle_correction_after": "Na aanpassing",
+      "angle_correction_no": "Vóór aanpassing",
+      "angle_preview": "Vóór en na",
+      "angle_reset_btn": "Resetten naar 0°",
+      "backward": "Omkeren",
+      "battery_indicator": "Batterij-indicator",
+      "delay": "Debounce tijd",
+      "forward": "Standaard",
+      "funConfig": "Systeemfuncties van de muis",
+      "keyResponseTime": "Toetsresponsietijd",
+      "leftLock": "Linker klikvergrendeling",
+      "line": "Rechtelijn correctie",
+      "lock": "Vergrendelen",
+      "lod": "Liftoff-afstand",
+      "motion": "Bewegingssynchronisatie",
+      "pairBond": "Koppelingssneltoets",
+      "pairLimit": "Toetsen koppelen ondersteunt maar 1-3 toetsen tegelijkertijd",
+      "power": "Energiebeheer",
+      "respSeconds": "Responstijd",
+      "scroll": "Scrollrichting",
+      "sensor": "Sensorprestaties",
+      "sleep": "Apparaat slaapstand",
+      "unlock": "Ontgrendel",
+      "wave": "Rimpelcontrole"
+    },
+    "tip": {
+      "leftLock": "Linkerklik configuratie is vergrendeld en kan niet worden geconfigureerd."
+    },
+    "tips": {
+      "advanceDelayDesc": "In de geavanceerde modus kunt u voor elke toets een onafhankelijke responsietijd (0–20 ms) instellen.",
+      "angleDesc": "Pas de hoek van de muissensor aan zodat een licht gekantelde muis nauwkeurige horizontale bewegingen maakt.",
+      "delayDesc": "Stel een vertraging in om accidentele activeringen door snelle klikken of trillingen te voorkomen.",
+      "factorySetDesc": "Klikken op deze knop wist de huidige apparaatinstellingen en herstelt de fabrieksinstellingen.",
+      "fps20kDesc": "De muissensor legt 20 000 beelden van het muismat-oppervlak per seconde vast, voor nauwkeurig en latentiearm volgen.",
+      "indicatorDesc": "Deze schakelaar regelt alleen de weergave van de normale batterijstatus in de 2.4G-modus.",
+      "leftLockDesc": "Wanneer « Klikvergrendeling links » is ingeschakeld, kan de linkerknop niet opnieuw worden toegewezen.",
+      "lineDesc": "Filtert slim lichte handtrillingen om horizontale en verticale afwijkingen te verminderen.",
+      "lodCurr": "Huidige liftoff-afstand van de muis",
+      "lodDesc": "De maximale hoogte waarop muisbewegingen nog worden gedetecteerd en gevolgd.",
+      "motionDesc": "Synchroniseert sensorinvoer met de systeemrespons om sprongen of schokken van de cursor te verminderen.",
+      "pairBondDesc": "Pas de toetscombinatie aan en houd deze 4 seconden ingedrukt om de Bluetooth/2.4G-koppelingsmodus in te gaan.",
+      "scrollDirDesc": "De richting van de beweging van inhoud op het scherm wanneer het muiswiel omhoog of omlaag scrolt",
+      "sensorDesc": "Verbetert de precisie en stabiliteit van de muis bij het tekenen van lijnen, cirkels en andere trajecten.",
+      "sleepDesc": "Ondersteunt automatische slaapstand in de draadloze modus wanneer het apparaat een tijdje inactief is.",
+      "waveDesc": "Vermindert golvende trajecten veroorzaakt door handtrillingen voor vloeiendere bewegingen."
+    },
+    "wheel": {
+      "adjustTimeout": "Kalibratie time-out",
+      "sensitivity": "Gevoeligheid"
+    }
+  },
+  "notify": {
+    "emptyHid": "Geen HID-apparaat geselecteerd",
+    "fail": "Niet gelukt",
+    "fr_not_connect": "Het stuurprogramma kan niet worden gebruikt nadat het apparaat in slaapstand gaat; druk op een willekeurige toets om het te activeren.",
+    "hidAlreadyConnected": "HID-apparaat verbonden",
+    "hidConfNotBrand": "Apparaten van dit merk worden momenteel niet ondersteund.",
+    "hidConfNotFound": "Geen geldige HID-apparaatconfiguratie gevonden",
+    "hidDeviceNotFount": "HID-apparaat niet aanwezig",
+    "hidUnconnected": "HID-apparaat niet verbonden",
+    "import": {
+      "layout": "De toetsenbord indeling is succesvol geimporteerd",
+      "title": "Importeren succesvol"
+    },
+    "invalid_macro_json": "Ongeldige macro configuratie",
+    "invalid_rgb_json": "Ongeldige configuratie",
+    "keyboard_not_support_wireless": "De toetsenbordfirware ondersteunt geen draadloze verbinding",
+    "keycodeNotFound": "Sleutelcode configuratie fout",
+    "limited": "Maximaal limiet overschreden",
+    "macroSizeLimit": "Macro is groter dan toegestaan",
+    "notSupportHid": "Deze browser ondersteunt geen HID verbinding. Gebruik alsjeblieft Chrome, Edge of Opera om te verbinden",
+    "sleep": "Apparaat niet verbonden of het apparaat is in slaapmodus",
+    "success": "Succesvol",
+    "success_competitive": "Succesvol overgeschakeld naar de competitieve modus",
+    "success_connect": "Verbinding geslaagd",
+    "success_office": "Succesvol overgeschakeld naar de standaardmodus",
+    "unknownErr": "Onbekende fout"
+  },
+  "onboarding": {
+    "completed": "Gids succesvol voltooid 🎉",
+    "connect": {
+      "description": "Verbind uw toetsenbord met een USB-kabel met de computer, klik op « Verbinden » en selecteer uw apparaat in het dialoogvenster.",
+      "title": "Verbind uw toetsenbord"
+    },
+    "entry": "Aan de slag",
+    "flow": {
+      "connect": "Apparaat verbinden",
+      "keymap": "Toetsen hertoewijzen",
+      "light": "Backlight-effecten"
+    },
+    "hint": "Klik op het gemarkeerde gebied om de actie te voltooien, of op « Gids overslaan ».",
+    "keymap": {
+      "select_a": {
+        "description": "Klik op « A » in het functiepaneel hieronder om de Spatiebalk naar A te hertoewijzen. De gids sluit automatisch wanneer klaar.",
+        "title": "Stap 2 · Her toe te wijzen aan « A »"
+      },
+      "select_space": {
+        "description": "Klik op de Spatiebalk onderaan het toetsenbord om deze te selecteren.",
+        "title": "Stap 1 · Selecteer de Spatiebalk"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Gebruik de kleurkiezer rechts om de kleur op groen te zetten (sleep de kiezer of voer RGB 0, 255, 0 in). De gids sluit automatisch.",
+        "title": "Stap 2 · Stel het in op groen"
+      },
+      "select_static": {
+        "description": "Selecteer « Solid Color » in de lijst met effecten hieronder om het toetsenbord in een statisch monochroom effect te zetten.",
+        "title": "Stap 1 · Selecteer « Solid Color »"
+      }
+    },
+    "skip": "Gids overslaan",
+    "step": "STAP"
+  },
+  "screen": {
+    "format": {
+      "limit": "Het afbeeldingsformaat kan alleen PNG, JPG of GIF zijn."
+    },
+    "resolution": {
+      "limit": "De afbeeldingsgrootte kan niet groter zijn dan 240×240."
+    },
+    "size": {
+      "limit": "De bestandsgrootte van de afbeelding kan niet groter zijn dan 300 KB."
+    },
+    "upload": {
+      "format": "PNG of JPG (max 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Met deze functie kunt u maximaal {{count}} toetsen selecteren."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Scaninterval"
+    },
+    "file_extra_properties_not_supported": "Het bestand bevat niet-ondersteunde kenmerken",
+    "file_import_failed": "Importeren mislukt",
+    "file_upload_no_config_file": "Het configuratiebestand wordt niet herkend. Probeer het opnieuw.",
+    "info": "Apparaat informatie",
+    "infos": {
+      "bluVersion": "Bluetooth-versie",
+      "deviceDesc": "Firmwareversie",
+      "name": "Naam"
+    },
+    "json_config": "Json-configuratie",
+    "lng": "taal",
+    "log": "Logboek",
+    "onlyview": "De configuratie van dit toetsenbord kan niet worden gewijzigd.",
+    "other": "Overig",
+    "others": {
+      "debounce": {
+        "name": "Toetsresponsie met vertraging",
+        "tip": "Na activering kan de minimale responsietijd op 0 ms worden ingesteld.",
+        "title": "Minimale waarde aanpassen",
+        "warning": {
+          "title": "Echt activeren?"
+        }
+      }
+    },
+    "theme": "Themawisseling",
+    "updateLog": "Versiegeschiedenis"
+  },
+  "snap": {
+    "list": "Lijst met opdrachtbindingen"
+  },
+  "test": {
+    "btn": {
+      "reset": "Opnieuw testen",
+      "reset_bindings": "Koppelingen wissen"
+    },
+    "msg": {
+      "bind_success": "{{count}} toetsen zijn gekoppeld aan {{audioName}}.",
+      "bind_success_single": "De toets {{keyName}} is gekoppeld aan {{audioName}}.",
+      "no_key_selected": "Selecteer eerst de toets die u wilt koppelen.",
+      "reset_success": "Reset geslaagd",
+      "storage_full": "Onvoldoende opslagruimte",
+      "unsupported_format": "Audioformaat niet ondersteund. Gebruik MP3, WAV, OGG of M4A.",
+      "upload_success": "Audio succesvol geüpload"
+    },
+    "per_key_sound": {
+      "desc": "Wijs aan elke toets een uniek geluid toe. Wanneer deze functie is uitgeschakeld, gebruiken alle toetsen het standaard geselecteerde geluid.",
+      "tip": "In de modus zonder testmatrix kunt u alleen één uniform toetsresponsie-geluid instellen."
+    },
+    "sound": {
+      "tip": "Wanneer de knop aan staat geeft het toetstesten geluidsfeedback en kun je een favoriet geluid uitkiezen."
+    },
+    "sound_btn": {
+      "Balloon": "Ballon",
+      "CarHorn": "Toeter",
+      "Cartoon": "Tekenfilm",
+      "CoinCollecting": "Muntjes verzamelen",
+      "custom": "Aangepast",
+      "default": "Standaard",
+      "DogBarking": "Blaffende hond",
+      "Donkey": "Ezel",
+      "Glass": "Glas",
+      "PartyHorn": "Feesttoeter",
+      "PhoneDial": "Telefoonkiesgeluid",
+      "Punch": "Punch",
+      "RubberChicken": "Rubberen kip",
+      "RubberToy": "Rubber geluid",
+      "Sneeze": "Nies"
+    },
+    "title": {
+      "custom_sound": "Aangepaste geluidsbibliotheek",
+      "per_key_sound": "Geluidstoewijzing per toets",
+      "reset_custom_bindings": "Echt de audiokoppelingen resetten?",
+      "sound": "Geluidseffecten inschakelen",
+      "sound_effect": "Geluidseffect Selectie",
+      "uploaded_sounds": "Geüploade geluiden"
+    },
+    "upload": {
+      "browse": "Klik om te uploaden",
+      "info": "Ondersteund: MP3, WAV, OGG, M4A · Totaal limiet: 25 MB · Aanbevolen audioduur: 1–2 seconden",
+      "placeholder": "Sleep hier uw audiobestanden naartoe, of"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Selecteer eerst een toets."
+    },
+    "key": {
+      "direction": "Hoekvergrendeling 8 richtingen",
+      "gesture": "Gebarenmodus",
+      "held": "Ingedrukt houden",
+      "scroll": "Scrollen",
+      "tap": "Tikken"
+    },
+    "keycode": {
+      "key": "Basis toets",
+      "modifiers": "Modifiers"
+    },
+    "key_fun": {
+      "basic": "Basis",
+      "comb": "Combinatietoets",
+      "feature": "Hoekvergrendeling",
+      "keyCombination": "Toetscombinatie",
+      "layer": "Laag",
+      "macro": "Macro",
+      "simulate": "Gelijktijdig indrukken",
+      "single": "Tikken / Ingedrukt houden",
+      "special": "Speciale toetsen",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "U kunt slechts één standaardtoets instellen.",
+    "placeholder": {
+      "selectionKeys": "Selectietoetsen"
+    },
+    "selectInputFirst": "Selecteer eerst een invoerveld.",
+    "slide": {
+      "leftSlide": "Naar links vegen",
+      "rightSlide": "Naar rechts vegen",
+      "underSlide": "Naar beneden vegen",
+      "upSlide": "Naar boven vegen"
+    },
+    "tips": {
+      "angleGearsDesc": "Bijvoorbeeld: als u « 90° » aan toets 4 toewijst, klikken op toets 4 stelt de richting van de huidige laag in op 90° (liggend).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Basistoetsen",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "De Launcher vereist de VIA JSON van het geselecteerde apparaat. Klik de knop \"Bevestig\" hieronder en upload het JSON bestand van het geselecteerde apparaat om de launcher te gebruiken. Je kunt het VIA JSON bestand verkrijgen bij de fabrikant van het apparaat.",
+      "title": "VIA JSON bestand Uploaden"
+    }
+  }
+}
