@@ -1,11 +1,16 @@
 # 本地运行产物
 *.log
-
-# 诊断脚本与截图（开发期产物）
-_diag*.js
-_final*.png
-_demo_state*.png
-
-# Python
 __pycache__/
 *.pyc
+
+# 开发期诊断脚本与截图（不入库）
+_diag*
+_final*
+_demo_*
+_probe*
+_verify*
+_keymap*
+_dl_*
+_gen_*
+_inject_*
+_layouts_api*
