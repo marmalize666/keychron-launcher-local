@@ -1,0 +1,1702 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Meddelande:"
+    },
+    "debounce": {
+      "defer_global": "Debouncing per tangentbord. Vid varje tillståndsförändring startas en global timer. När DEBOUNCE millisekunder har passerat utan några förändringar, skickas alla inmatningsförändringar. Detta är den mest högpresterande algoritmen med lägst minnesanvändning och är motståndskraftig mot brus.",
+      "defer_per_key": "Debouncing per tangent. Vid varje tillståndsförändring startas en timer för den enskilda tangenten. När DEBOUNCE millisekunder har passerat utan ytterligare förändringar för den tangenten, registreras och skickas tangentens statusförändring.",
+      "eager_defer_per_key": "Debouncing per tangent. Vid en nedtryckning registreras åtgärden omedelbart, följt av DEBOUNCE millisekunder utan ytterligare inmatning för den tangenten. Vid en uppsläppning startas en timer för den specifika tangenten. När DEBOUNCE millisekunder har passerat utan ytterligare förändringar, registreras och skickas uppsläppningen för tangenten.",
+      "eager_per_key": "Debouncing per tangent. Vid varje tillståndsförändring sker reaktionen omedelbart, följt av DEBOUNCE millisekunder utan ytterligare inmatning för den tangenten.",
+      "none": "Ingen debounce behandling utförs.",
+      "tip": {
+        "1": "”EAGER PER KEY” är det rekommenderade debounceläget där tangenten svarar omedelbart vid nedtryckning, men ytterligare inmatningar på den tangenten ignoreras under den valda svarstiden.",
+        "2": "Om du vill välja andra debouncelägen, klicka på ”?”-knappen högst upp för att få en förklaring av de andra debounce lägena.",
+        "3": "När svarstiden är nära 0 ms kan problem med dubbelklick uppstå."
+      }
+    },
+    "macro": {
+      "gesture": "Håll gestläget alltid på",
+      "gesture_description": "Efter aktivering behöver ingen gesttangent tilldelas.",
+      "gesture_not_configured": "Kan inte öppna. Gå till « Tangentfunktion – Trackball » för att ställa in utdatavärdet.",
+      "scroll": "Håll rullningsläget alltid på",
+      "scroll_description": "Efter aktivering behöver det inte kopplas till gesttangenter.",
+      "title": "Gestbeteende (välj ett alternativ)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) är en tangentbordsinmatningsteknik som möjliggör samtidig nedtryckning av ett obegränsat antal tangenter utan några inmatningskonflikter eller tappade signaler. Att inaktivera NKRO innebär att tangentbordet korrekt registrerar upp till 6 samtidiga tangenttryckningar.",
+      "title": "NKRO-inställning"
+    },
+    "performance": {
+      "mode_battery": "Batteriläge",
+      "mode_high": "Högprestandaläge",
+      "mode_normal": "Standardläge",
+      "title": "Växla prestandaläge"
+    },
+    "poll_rate": "Polling Rate Inställning",
+    "poll_rate_tip": {
+      "bt": "Bluetooth-anslutningsläge",
+      "bt_desc": "I Bluetooth-anslutningsläge är avsökningsfrekvensen fast på 125Hz. Denna inställning kan inte ändras på grund av begränsningar i anslutningen.",
+      "fr": "2,4 GHz-anslutningsläge",
+      "usb": "Kabelanslutningsläge"
+    },
+    "sleep": {
+      "backlight": "Starttid för automatisk avstängning av bakgrundsbelysning",
+      "magnet": "Tangentbordsmatrisens vilotid",
+      "magnet_range": "Matrisens vilotid måste vara längre än tiden för att bakgrundsbelysningen ska stängas av och kortare än vilolägets timeout.",
+      "magnet_tip": "Hall-effekt-tangentbordets matrisavläsning kräver att vilotiden är mer än 60 sekunder",
+      "time": "Starttid för automatiskt viloläge"
+    },
+    "tips": {
+      "keepLayer_close": "2. Om det här alternativet är avstängt växlar NapePro tillsammans med « Lager 1 » när du öppnar redigeringsskärmen « Lager 1 ».",
+      "keepLayer_enable": "1. Om det här alternativet är på, och NapePro till exempel kör på « Lager 0 », förblir det på « Lager 0 » även om du öppnar redigeringsskärmen « Lager 1 »."
+    },
+    "title": {
+      "keepLayer": "Lagerredigeringsläge"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Enhet ansluten",
+        "idle": "Tryck för att ansluta enheten",
+        "pending": "Startar auktorisering..."
+      },
+      "download_assistant": {
+        "idle": "Klicka för att ladda ner senaste Assistant"
+      },
+      "resume_assistant": {
+        "done": "Fortsätt bearbeta",
+        "idle": "Assistant aktiverad",
+        "pending": "Fortsätter bearbetningen...",
+        "prompt": "Jag har öppnat den"
+      },
+      "undo_remap": {
+        "done": "Tastomtilldelning ångrad",
+        "idle": "Ångra denna tomtilldelning",
+        "pending": "Ångrar..."
+      }
+    },
+    "clear_tooltip": "Rensa konversation",
+    "close_tooltip": "Stäng",
+    "deep_thinking": "Djup eftertanke",
+    "generated_content_notice": "AI-genererat innehåll kan innehålla fel. Kontrollera.",
+    "input_placeholder": "Fråga Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Fokusera på snabbt svar",
+        "label": "Snabbare"
+      },
+      "deepseek-v4-pro": {
+        "description": "För mer komplexa uppgifter",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Balanserad",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Exekveringen slutfördes, men inget visningsbart svar mottogs.",
+    "pin": {
+      "tooltip_off": "Lossa",
+      "tooltip_on": "Fäst chattfönstret"
+    },
+    "pinned_success": "Dialogfönstret är fäst och kan inte flyttas.",
+    "quick": {
+      "connect_keyboard": "Omtilldela mellanslagstangenten till A",
+      "remap_space": "Ändra ljuseffekten till Band Spiral Val",
+      "set_light": "Öppna Discord"
+    },
+    "result": {
+      "connect_failed": "Anslutningsfel: {{error}}",
+      "device_connected": "Enhet ansluten",
+      "no_device_undo": "Ingen enhet är ansluten, så omtilldelningen kan inte ångras.",
+      "no_remap_to_undo": "Det finns ingen omtilldelning att ångra.",
+      "undo_failed": "Det gick inte att ångra omtilldelningen: {{error}}",
+      "undo_success": "Senaste omtilldelningen ångrad och {{count}} tangent(er) återställd(a)."
+    },
+    "select_model": "Välj modell",
+    "status": {
+      "answering": "Svarar",
+      "executing": "Exekverar",
+      "loading": "Laddar",
+      "thinking": "Tänker",
+      "verifying": "Verifierar"
+    },
+    "stopped": "Stoppad",
+    "title": "Keychron AI",
+    "unpinned_success": "Lossad",
+    "welcome": "Hej! « Keychron AI Assistant » kan hjälpa dig att ansluta enheter, omtilldela tangenter, anpassa RGB-effekter, skapa makron och mycket mer."
+  },
+  "application": {
+    "addr": "Snabbstart av webbsida",
+    "add_addr": "Lägg till adress",
+    "apple_silicon_version": "Ladda ner för Apple Silicon (.pkg)",
+    "app_duplicate": "Applikationen finns redan, det är inte nödvändigt att lägga till den igen.",
+    "app_hint": "Du kan ställa in en snabbkommando-tangent, välja programvaran du vill öppna snabbt och sedan binda den till en tangent.",
+    "app_placeholder": "Vänligen välj en applikation",
+    "clear_all": "Rensa allt",
+    "desktop_old_content": "Ladda ner och installera den senaste versionen av skrivbordstjänsten för att använda den här funktionen.",
+    "desktop_old_title": "Föråldrad skrivbordstjänst upptäcktes.",
+    "download_keychron_assistant": "Om det inte är installerat, klicka för att ladda ner",
+    "download_new_assistant_tip": "Ladda ner den senaste versionen av Keychron Assistant för att använda alla funktioner.",
+    "download_zip_tip": "Meddelande: Innan du installerar Keychron Assist måste du packa upp den nedladdade filen.",
+    "file_not_found": "Filen finns inte",
+    "intel_version": "Ladda ner för Intel Macs (.dmg)",
+    "keySetting": "Den här tangenten har redan en genväg!",
+    "key_no_conf": "Inga snabbkommandon har ställts in",
+    "limited": "Maxgräns överskriden. För närvarande är gränsen för snabbstarter 5. Vi planerar att öka detta antal i framtiden.",
+    "need_keychron_assistant": "Denna funktion kräver att Keychron Assistant är igång",
+    "no_key_selected": "Ingen tangent vald",
+    "open_assistant_no_response_tip": "Om ingenting händer efter att du klickat på « Öppna », ladda ner senaste Assistant och försök igen.",
+    "open_tip1": "1. Snabbstartsfunktionen innebär att du kopplar appen du vill starta snabbt till en knapp. Genom att klicka på knappen startar appen snabbt.",
+    "open_tip2": "2. Ladda först ner Assist och lägg till appen som ska startas snabbt. Gå sedan tillbaka till tangentbordslanseringen för att koppla och starta tangenter.",
+    "select_key_to_bind": "Välj tangenter från tangentbordet för att binda denna inställning",
+    "soft": "Snabbstart-applikation",
+    "submit_hint": "Välj den programvara du vill öppna snabbt och klicka sedan på [Submit]. Efter inskickning kan snabböppning aktiveras och användas.",
+    "title_placeholder": "Anpassad titel (valfritt)",
+    "unsupported_feature": "Funktionen stöds inte",
+    "unsupported_feature_download_new_version": "Den här funktionen stöds inte. Ladda ner den senaste versionen för att prova den.",
+    "url": "Öppna en webbsida snabbt",
+    "url_hint": "Du kan ställa in en snabbkommando-tangent, välja den webbadress du vill öppna snabbt och sedan binda den till en tangent.",
+    "url_placeholder": "Vänligen ange en giltig URL"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Fortsätt",
+      "later": "Senare",
+      "openSystemPreferences": "Öppna Systeminställningar",
+      "restartMessage": "Åtkomstbehörigheten beviljades. En omstart av appen krävs för att tillämpa den.",
+      "restartNow": "Starta om nu",
+      "restartTitle": "Behörighet beviljad",
+      "step1": "Klicka på knappen nedan för att komma till sidan för systemets åtkomstbehörigheter.",
+      "step2": "Hitta och aktivera Launcher Assistant-brytaren för att auktorisera.",
+      "step3": "Ange ditt lösenord",
+      "step4": "Efter auktorisering, avsluta appen och öppna den igen för att tillämpa ändringarna.",
+      "welcomeTitle": "Välkommen till Assistant"
+    },
+    "click_no_response_tip": "Öppna musinställningarna på din dator för att justera pekare-, rullnings- och klickalternativ.",
+    "common": {
+      "add": "Lägg till",
+      "back": "Tillbaka",
+      "delete": "Ta bort",
+      "info": "Info",
+      "refresh": "Uppdatera",
+      "settings": "Inställningar"
+    },
+    "hint_reset": "Enhetsbyte upptäckt. På grund av skillnader i layout kanske vissa tangenter inte fungerar som visas i Snabbstart. Vill du återställa inställningarna för att matcha den nya layouten?",
+    "hint_reset_1": "Upptäckte att du har bytt till en annan enhet. Vill du återställa dina inställningar?",
+    "hint_reset_2": "(Obs: På grund av skillnader i layout mellan modeller kan Snabbstart-vyn avvika från de faktiska funktionerna, vilket kan leda till att vissa tangenter inte fungerar.)",
+    "home": {
+      "addAddress": "Lägg till adress",
+      "addSoftwareDescription": "Lägg till programvaran du vill öppna snabbt nedan och klicka sedan på 「Quick Start」 för att binda knappen i startprogrammet",
+      "delete": "radera",
+      "onceAddedDescription": "När du har lagt till din app nedan, klicka på knappen för att gå tillbaka",
+      "quickStartApplication": "Snabbstart-applikation",
+      "search": "Sök",
+      "setUpQuickStart": "Konfigurera snabbstart",
+      "tooltipText1": "1. Snabbstartsfunktionen innebär att du binder den applikation du vill starta snabbt till en viss knapp. Klicka på knappen för att starta direkt.",
+      "tooltipText2": "2. Klicka på \\\"+\\\" tecknet nedan för att välja den snabbstart du vill starta och klicka på \\\"Open Quick Start\\\" för att återgå till startprogrammet för att binda och starta."
+    },
+    "license": {
+      "agree": "Acceptera",
+      "disagreeAndWithdraw": "Avböj och återkalla",
+      "userLicenseAgreement": "Slutanvändarlicensavtal",
+      "welcomeDescription": "Vänligen godkänn",
+      "welcomeDescriptionEnd": "så att vi kan ge dig bättre service",
+      "welcomeTitle": "Välkommen till Assistant"
+    },
+    "open_title": "1. Du måste ladda ner Assist för att använda snabbstart.",
+    "open_title2": "2. På grund av programuppdateringar rekommenderas att du laddar ner och installerar den senaste versionen av Assist.",
+    "settings": {
+      "aikeyUpdate": "AIKey-uppgradering: anpassade förinställningar och snabb utlösning tillagda, kommandoöverföring och svarsbearbetning optimerade, stabilitet och användarvänlighet avsevärt förbättrade.",
+      "autostart": "Starta automatiskt vid uppstart",
+      "currentLatestVersion": "Senaste tillgängliga versionen",
+      "endUserLicenseAgreement": "Slutanvändarlicensavtal",
+      "fixedKnownIssues": "Fixade kända problem",
+      "interfaceOptimization": "Gränssnittsoptimering",
+      "language": "språk",
+      "mosUpdate": "MOS rullnings-/accelerationsalgoritm optimerad: accelerationskurva och samplingsstrategi ombyggda för en smidigare och mer konsekvent upplevelse vid låga och höga hastigheter, med mindre skakning och latens.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. Varumärket Keychron Assistant tillhör Keychron.",
+      "nkroDescription2": "Att inaktivera NKRO innebär att tangentbordet korrekt registrerar upp till 6 samtidiga tangenttryckningar.",
+      "selectLanguage": "VäljSpråk",
+      "title": "Inställningar",
+      "updateLog": "Uppdateringslogg"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Magnetisk Brytare",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetisk Brytare",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Vissa tangenter kunde inte kalibreras, kontrollera brytaren på tangentbordet och tangentens inställning!",
+    "set_successfully": "Växlingskonfigurationen har ändrats framgångsrikt.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Kontrollera att den utbytta magnetiska brytaren på tangentbordet överensstämmer med det valda alternativet för magnetisk brytare.",
+    "sure_content2": "Klicka på knappen ”Bekräfta” nedan så kommer du till kalibreringssidan för att kalibrera dessa tangenter.",
+    "sure_title": "Är du säker på att du vill ändra brytartyp?",
+    "switch_type_settings": "Inställningar för brytartyp",
+    "tip": {
+      "1": "Denna funktion gör det möjligt att ställa in hela tangentbordets magnetiska brytartyp. När det är konfigurerat ändras tangenternas kantfärg beroende på den valda brytartypen. Inställningsordningen är följande:",
+      "2": "Byt först ut alla magnetiska brytare på tangentbordet (hela tangentbordet kan endast stödja en typ av magnetisk brytare) och kontrollera om de utbytta brytarna finns med i listan nedan.",
+      "3": "Välj typen av magnetisk brytare nedan och klicka på knappen ”Ställ in alla tangenter” för att slutföra konfigurationen.",
+      "4": "Kalibrera om alla tangenter för att undvika påverkan av olika typer av magnetiska brytare."
+    },
+    "tip_reset": "Om du klickar på denna återställningsknapp raderas alla tidigare konfigurerade snabbstartsalternativ.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Magnetisk Brytare"
+  },
+  "common": {
+    "advance": "Avancerat",
+    "basic": "Grundläggande",
+    "beta_test_version": "Betaversion",
+    "cancel": "Stäng",
+    "cancel_btn": "Avbryt",
+    "clear": "Rensa",
+    "close": "Av",
+    "connected": "Ansluten",
+    "connect_btn": "Anslut",
+    "connect_tip": "vill ansluta till en HID-enhet",
+    "create": "Skapa",
+    "delete": "Radera",
+    "deleteConfirm": "Bekräfta återställning av denna data?",
+    "disconnected": "Ej ansluten",
+    "download": "Ladda ner",
+    "empty": "Tom",
+    "error": "Fel",
+    "export": "Exportera",
+    "general": "Allmänt",
+    "hide": "Dölj",
+    "iknow": "Jag förstår",
+    "import": "Importera",
+    "is": "Ja",
+    "keyboard": "Tangentbord",
+    "key_back": "Återställ",
+    "key_confirm": "Bekräfta",
+    "loading": "Laddar...",
+    "matrix": "Testmatris",
+    "max_string_length": "Texten överskrider maximal längd",
+    "min": "Minuter",
+    "mouse": "Mus",
+    "noResult": "Inga resultat",
+    "not": "Nej",
+    "notSubmit": "Ej inskickad data. Skicka nu?",
+    "on": "på",
+    "open": "På",
+    "paired": "parade",
+    "plugged_in": "Ansluten",
+    "plug_and_ret": "Anslut enheten och försök igen.",
+    "plug_and_retry": "Anslut enheten och försök igen.",
+    "recover": "Återställ",
+    "reset": "Återställ",
+    "resetLayout": "Återställ layout",
+    "reset_single": "Enkel återställning",
+    "resolution_not_support": "Tangentbordskartan kan inte visas eftersom webbläsarfönstret är för litet",
+    "results": "Resultat",
+    "save": "Spara",
+    "search": "Sök",
+    "select": "Välj",
+    "selectall": "Markera allt",
+    "status": {
+      "update_success": "Uppdaterad framgångsrikt"
+    },
+    "submit": "Bekräfta",
+    "timeSync": "Kalibrera skärmtid",
+    "turnoff": "STÄNG AV",
+    "turnon": "SLÅ PÅ",
+    "type": "Typ",
+    "upload": "Ladda upp",
+    "view": "Visa",
+    "warring": "Varning",
+    "window_too_small": "Förhandsvisning kan inte visas eftersom fönstret är för litet"
+  },
+  "connecting": "Ansluter",
+  "cross": {
+    "btn": {
+      "active": "Multiplattforms tangentbord/mus",
+      "agree": "Acceptera",
+      "cancel": "Avbryt anslutning",
+      "close": "Stäng",
+      "connect": "Anslut",
+      "disconnect": "Koppla från",
+      "minimize": "Minimera fönster",
+      "quick": {
+        "connect": "Anslutning med ett klick"
+      },
+      "reject": "Avvisa",
+      "reject_cancel": "cancel",
+      "trust": "Betrodd enhet",
+      "waiting": "Väntar"
+    },
+    "disconnect_confirm": {
+      "content": "Efter frånkoppling stoppas överföringen. Redan påbörjade överföringar sparas i historiken, väntande filer kasseras.",
+      "title": "Filöverföring pågår"
+    },
+    "file_transfer": {
+      "average_speed": "Medelhastighet",
+      "change": "Ändra",
+      "clear": "Rensa",
+      "clear_failed_desc": "Det gick inte att rensa lokal överföringshistorik",
+      "clear_failed_title": "Rensning misslyckades",
+      "connected": "Ansluten",
+      "delete": "Ta bort",
+      "desc": "Stöder alla filtyper · Stabil överföring till anslutna datorer",
+      "direction": {
+        "receive": "Ta emot",
+        "send": "Skicka"
+      },
+      "dir_err_desc": "Det gick inte att använda den valda mottagningsmappen",
+      "dir_err_title": "Mappuppdatering misslyckades",
+      "dir_ok_desc": "Nya mottagna filer sparas i den valda mappen",
+      "dir_ok_title": "Sparmapp uppdaterad",
+      "drop_unavailable_desc": "Använd knappen « Välj » för att välja den här filen",
+      "drop_unavailable_title": "Det gick inte att läsa filsökvägen",
+      "elapsed_label": "Förfluten tid",
+      "enable": "Aktivera filöverföring",
+      "file_missing_desc": "Originalfilen har flyttats eller tagits bort, kan inte skickas igen",
+      "file_missing_title": "Originalfilen finns inte",
+      "history": "Överföringshistorik",
+      "no_active": "Ingen filöverföring pågår",
+      "no_history": "Ingen filöverföringshistorik",
+      "open": "Inställningar",
+      "open_err_desc": "Det gick inte att öppna mappen för att ta emot filer",
+      "open_err_title": "Det gick inte att öppna mappen",
+      "open_folder": "Öppna",
+      "peer_cancelled": "Den andra parten avbröt överföringen",
+      "quick_send": "Snabb överföring",
+      "quick_send_desc": "Välj en fil och skicka den direkt till den anslutna datorn",
+      "receive_failed_desc": "Filöverföring ofullständig eller kan inte skrivas lokalt",
+      "receive_failed_title": "Fel vid mottagande av filen",
+      "receiving": "Tar emot...",
+      "receiving_path": "Lokal mottagningssökväg",
+      "resend": "Skicka igen",
+      "select_button": "Välj fil",
+      "select_desc": "Välj en specifik fil att överföra",
+      "select_title": "Klicka för att välja en fil",
+      "sending": "Skickar...",
+      "send_failed_desc": "Det gick inte att skicka den valda filen",
+      "send_failed_title": "Filöverföring misslyckades",
+      "send_to": "Skicka till",
+      "status": {
+        "cancelled": "Avbruten",
+        "failed": "Skicka misslyckades",
+        "received": "Mottagen",
+        "receive_error": "Mottagningsfel",
+        "sent": "Skickad"
+      },
+      "title": "Filöverföring",
+      "transfer_time": "Överföringstid",
+      "transmitting": "Överför...",
+      "unsupported_file": "Filformatet stöds inte för överföring",
+      "waiting": "Väntar på överföring"
+    },
+    "notification": {
+      "conn_end_t": "Anslutning avbruten",
+      "conn_err_t": "Anslutningsfel",
+      "conn_lost_t": "Anslutning avbruten",
+      "conn_reject_t": "Anslutningsbegäran avvisad",
+      "conn_req_err": "Fel vid sändning av anslutningsbegäran",
+      "hist_clear_err": "Fel vid rensning av anslutningshistorik",
+      "hist_clear_ok": "Anslutningshistorik rensad",
+      "id_err_t": "Identitetsverifiering misslyckades",
+      "network_lost": "Nätverksanslutning avbruten, multiplattformssession avslutad",
+      "op_err_t": "Operationen misslyckades",
+      "op_ok_t": "Operationen lyckades",
+      "pair_id_err": "Identitetsverifiering av parad enhet misslyckades",
+      "pair_ok": "Enheten parades framgångsrikt",
+      "pair_ok_t": "Parning lyckades",
+      "peer_end": "Den andra parten kopplade från multiplattformssessionen",
+      "peer_reject": "Den andra parten avvisade anslutningsbegäran",
+      "reconfirm_t": "Ny bekräftelse krävs",
+      "sync_err_t": "Synkronisering misslyckades",
+      "trust_id_changed": "Identiteten för den betrodda enheten har ändrats. Bekräfta anslutningsbegäran igen.",
+      "trust_id_err": "Identitetsverifiering av betrodd enhet misslyckades",
+      "trust_rm_err": "Fel vid borttagning av betrodd enhet",
+      "trust_sync_err": "Förtroendeuppgifterna synkroniserades inte med den andra parten"
+    },
+    "page": {
+      "sub_desc": "Anslut två datorer, använd multiplattforms tangentbord/mus · Synkronisera urklippet manuellt · Dra och släpp filer — lika naturligt som på en enda dator.",
+      "sub_title": "Förhandsvisning av funktioner",
+      "title": "Multiplattform"
+    },
+    "panel": {
+      "desc": "Upp till 2 anslutna datorer (inklusive denna) · Enhetens funktioner låses upp efter anslutning",
+      "found": "Upptäck enheter",
+      "history": {
+        "active": "Aktiv anslutning",
+        "passive": "Passiv anslutning",
+        "subtitle": "Senaste anslutningar",
+        "title": "Anslutningshistorik"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Övrigt",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Skanna alla Wi-Fi-nätverk på samma router",
+        "start": "Starta skanning",
+        "stop": "Stoppa skanning",
+        "title": "Skannar lokalt nätverk.."
+      },
+      "tag_1": "Betrodd",
+      "title": "Anslut dator"
+    },
+    "scan": {
+      "incoming_notice": "Efter ditt godkännande kan den andra parten upprätta en multiplattformsanslutning till den här datorn.",
+      "incoming_subtitle": "Vill ansluta till den här datorn",
+      "incoming_title": "Anslutningsbegäran mottagen",
+      "network_changed_cancel": "Inte nu",
+      "network_changed_confirm": "Skanna igen",
+      "network_changed_desc": "Nätverksmiljön har ändrats. Skanna igen?",
+      "network_changed_title": "Nätverksmiljö ändrad",
+      "rejected": "Den andra parten avvisade anslutningsbegäran",
+      "request_confirm": "Väntar på bekräftelse från den andra parten... Anslutningsbegäran håller på att gå ut",
+      "request_tip": "Anslutningsbegäran till",
+      "trust": "Lita på den här enheten och acceptera automatiskt anslutningsbegäranden i framtiden",
+      "unavailable": "This device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Automatisk anslutning",
+      "automatic_connection_help": "Automatisk anslutning: Välj en enhet från listan över betrodda enheter på den här datorn. Båda enheterna måste konfigurera varandra för att ansluta automatiskt efter att Assistant startats.",
+      "automatic_connection_hint": "(Båda enheterna måste konfigureras)",
+      "clear_automatic_device": "Ta bort enhet för automatisk anslutning",
+      "close": "Stäng",
+      "confirm": "Bekräfta",
+      "disconnect_shortcut": "Koppla från multiplattformssessionen",
+      "disconnect_shortcut_help": "Om multiplattformsfunktionen inte fungerar kan du koppla från med den här tangentkombinationen. Kombinationen kan ändras men inte tas bort.",
+      "enter_shortcut_key": "Ange anpassad tangent",
+      "no_trusted_devices": "Inga betrodda enheter",
+      "remove_confirmation": "Bekräfta återkallande av förtroende för {device}?",
+      "remove_device": "Ta bort betrodd enhet",
+      "select_device": "Välj betrodd enhet",
+      "shortcut_hint": "Supports letters, numbers, and F1–F12; press Backspace or Delete to clear",
+      "shortcut_keys": "Tangentbordsgenväg",
+      "system_lock_shortcut": "Lås datorn",
+      "title": "Förtroende och automatisk anslutning",
+      "trusted_count": "Antal betrodda enheter ({count})",
+      "trust_help": "Betrodd enhet: En betrodd enhet kan ansluta nästa gång utan att kräva godkännande på den här datorn."
+    },
+    "step": {
+      "collapse": "Minimera",
+      "connected": "Ansluten",
+      "desc": "Skanna och para andra datorer i Keychron Assistant · Efter anslutning är multiplattforms tangentbord/mus och filöverföring tillgängliga",
+      "desc_1": "Upptäck automatiskt datorer i samma lokala nätverk och skicka en anslutningsbegäran",
+      "desc_2": "Den andra parten klickar på « Acceptera » för att slutföra parningen",
+      "desc_3": "Alla multiplattformsfunktioner är tillgängliga",
+      "expand": "Expandera",
+      "local": "Den här datorn",
+      "title": "Anslutningsprocess",
+      "title_1": "Skanna och skicka begäran",
+      "title_2": "Bekräftelse från den andra parten",
+      "title_3": "Anslutning upprättad",
+      "trust": "Ansluten · Betrodd",
+      "wait_1": "Väntar",
+      "wait_2": "Klicka på « Tillåt »",
+      "wait_3": "Parning av andra datorer"
+    },
+    "tabs": {
+      "file_transfer": "Filöverföring",
+      "settings": "Inställningar"
+    },
+    "time": {
+      "ago": "Före",
+      "days": "Dagar",
+      "hours": "Timmar",
+      "just_now": "Just nu",
+      "last": "Förflutet",
+      "last_connection": "Senaste anslutning",
+      "minutes": "Minuter",
+      "months": "Månader",
+      "seconds": "seconds"
+    },
+    "view": {
+      "bottom": "Nedre",
+      "desc": "När muspekaren korsar den angivna skärmkanten kan datorns tangentbord och mus styra den anslutna enheten.",
+      "left": "Vänster",
+      "off": "Avaktiverad",
+      "right": "Höger",
+      "title": "Ställ in skärmkorsningskant",
+      "top": "Övre"
+    },
+    "web": {
+      "auto_connect_target": "Mål för automatisk anslutning",
+      "center_cursor": "Centrera pekaren",
+      "clipboard": "Urklipp",
+      "clipboard_desc": "Synkronisera kopierat innehåll manuellt mellan datorer",
+      "connect_assistant": "Öppna Assistant",
+      "connect_hint": "Anslutningsfunktioner måste utföras inom Assistant",
+      "custom_screenshot": "Anpassad skärmbild",
+      "direction": "Riktning",
+      "drop_box_key": "Genväg för släpppanelen",
+      "exit_application": "Koppla från",
+      "file_transfer": "Filöverföring",
+      "file_transfer_desc": "Välj en fil eller använd genvägen för att öppna släpppanelen",
+      "hold_ctrl": "Håll Ctrl för multiplattform",
+      "in_progress": "uppgifter",
+      "items": "objekt",
+      "keyboard_mouse": "Multiplattforms tangentbord / mus",
+      "keyboard_mouse_desc": "Växla styrning när pekaren korsar skärmkanten",
+      "loading": "Hämtar multiplattformsstatus från Assistant...",
+      "lock_pc": "Lås datorn",
+      "max": "Max",
+      "not_set": "Inte inställd",
+      "off": "Avaktiverad",
+      "on": "Aktiverad",
+      "ongoing": "Pågår",
+      "read_only": "Endast läsning · Ändra inställningar i Keychron Assistant",
+      "recent_items": "Senaste objekt",
+      "save_dir": "Mapp för filsökväg",
+      "settings": "Inställningar",
+      "settings_desc": "Betrodda enheter · Automatisk anslutning · Genvägar",
+      "shortcut_mapping": "Genvägstilldelning",
+      "switch_pc": "Byt dator",
+      "sync_mode": "Synkroniseringsläge",
+      "target_device": "Målenhet",
+      "title": "Status för multiplattformsfunktioner",
+      "trusted_devices": "Antal betrodda enheter",
+      "trust_auto_connect": "Förtroende och automatisk anslutning"
+    }
+  },
+  "debounce": {
+    "backlight": "Bakgrundsbelysningens vilotid kan inte vara kortare än 5 sekunder.",
+    "mode": "Antistuds-läge",
+    "press": "Nedtryckt tid i sekunder",
+    "release": "Återställningstid i sekunder",
+    "response": "Svarstid i sekunder",
+    "scan": "Sökhastighet",
+    "setting": "Tangentbord Studstid-inställningar",
+    "sleep_limit": "Sömntiden kan inte vara kortare än 1 minut.",
+    "tip": "Starttiden för automatisk bakgrundsbelysning avstängning måste vara tidigare än starttiden för viloläget.",
+    "warning": {
+      "content": "(Obs: inställningar under 10 ms kan orsaka dubbelklicksrisk. Ställ in med försiktighet.)",
+      "title": "Vill du verkligen ställa in?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Tangentbordsdemo",
+    "device_mouse": "Musdemo",
+    "exit": "Lämna demoläget",
+    "keyboard": "Prova utan tangentbord",
+    "mode": "Demoläge",
+    "mouse": "Prova utan mus",
+    "tip": "Obs: du är i demoläget, som endast är för presentation och har inga riktiga funktioner.",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Enhetsversion"
+  },
+  "device_add": "Anslut",
+  "device_select": {
+    "notify": "Välj en enhet från listan för att fortsätta.",
+    "select": "Fortsätt",
+    "un_select": "Ingen enhet vald"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Skrivtest"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Återanslut",
+      "2": "Nästa",
+      "3": "Föregående",
+      "6": "Nästa att uppdateras",
+      "enterBootloaderMode": "Gå in i uppdateringsläge",
+      "flash": "Flasha firmware",
+      "matchDevice": "Matcha enhet",
+      "retry": "Försök igen",
+      "startUpgrading": "Starta uppdatering"
+    },
+    "description": "Versionsanteckningar",
+    "downloadFailed": "Fel vid nedladdning av firmwarefil",
+    "error": {
+      "diff_model": "Enheternas firmwaremodeller överensstämmer inte",
+      "get_dfu_version": "Det gick inte att hämta enhetens firmwareuppdateringsversion"
+    },
+    "flashError": "Nedladdning av firmware misslyckades",
+    "flashSuccess": "Firmware uppdaterad framgångsrikt",
+    "info": {
+      "currentVersion": "Nuvarande version",
+      "latestVersion": "Senaste version",
+      "updateSize": "Firmwarestorlek",
+      "updateTime": "Senaste uppdatering"
+    },
+    "mouse": {
+      "step1_hid_device": "Tryck på tangenterna K, E, Y på tangentbordet i ordning och fortsätt till nästa steg när HID-enhetsanslutningsmeddelandet visas."
+    },
+    "notFound": "Den senaste firmware-versionen för enheten hittades inte",
+    "productNotExist": "Enhetsinformation ej hämtad",
+    "requestFail": "Misslyckades med att hitta enheten; kontrollera om den används av andra program.",
+    "syncQuickStart": "Synkronisera snabbstart",
+    "tip": {
+      "confirm": "Bekräfta",
+      "currentSelect": "För närvarande vald"
+    },
+    "tips": {
+      "0": "Ingen firmwareuppdatering tillgänglig för nuvarande enhet.",
+      "4": "Följ stegen nedan om du använder en Windows-enhet och inte har installerat QMK Toolbox Driver-drivrutinen. Om du redan har installerat QMK Toolbox Driver-drivrutinen, klicka på Nästa.",
+      "5": "Klicka på knappen \"Ladda ner Toolbox\" nedan för att ladda ner och packa upp Toolbox.",
+      "6": "När du har packat upp filerna högerklickar du på Toolbox-ikonen eller söker efter ”driver” i systemets sökfält och väljer sedan ”Kör som administratör” för att öppna det.",
+      "7": "Öppna Toolbox och klicka på menyn \"Verktyg\".",
+      "8": "Klicka på \"Installera drivrutiner\", klicka sedan på \"Ja\" för att starta installationen av firmware-drivrutinerna och vänta tills installationen är klar.",
+      "9": "När installationen är klar, kan du klicka på Nästa för att starta processen för att flasha firmware.",
+      "10": "Notering: Du kan klicka",
+      "11": "Följ stegen nedan.",
+      "12": "Koppla ur tangentbordets USB-kabel och låt tangentbordet kopplas bort.",
+      "13": "När tangentbordet är frånkopplat, håll ned ESC på tangentbordet och anslut tangentbordet till datorn med USB-kabeln. Låt tangentbordet komma i förberedelsestillstånd för firmwareuppdatering.",
+      "15": "Efter en lyckad matchning kommer knappen \"Flasha firmware\" att visas, klicka på den för att börja uppdatera firmware.",
+      "16": "Koppla inte bort enheten från datorn under firmwareuppdateringen.",
+      "18": "Ladda ned Toolbox",
+      "19": "Installera Toolbox Driver instruktionsvideo",
+      "20": "för att förstå den detaljerade processen för att installera Toolbox-drivrutinen.",
+      "22": "Klicka på knappen ”Anslut” för att ansluta den aktuella enheten. Systemet söker automatiskt efter den senaste firmware-versionen för enheten.",
+      "23": "Håll ned tangentbordets Fn- och -tangent i minst 5 sekunder för att förbereda tangentbordet för uppdatering av firmware, tills den blå indikatorn tänds.",
+      "24": "När matchningen lyckats visas knappen ”Flash Firmware”, klicka för att starta uppdateringen av firmware.",
+      "25": "Klicka på knappen ”Matcha enhet” nedan, välj enheten som börjar med ({{ mode }}) och matcha den.",
+      "26": "Uppdatera Bluetooth-modulen i USB-läge.",
+      "27": "Klicka på knappen nedan för att få den senaste firmwareversionen.",
+      "28": "Med tangentbordet frånkopplat, håll tangenten i det övre vänstra hörnet intryckt och anslut tangentbordet samtidigt till datorn via USB-kabel för att få det i beredskap för firmwareuppdatering.",
+      "bl-exceeded": "Antal försök överskridet. Anslut datakabeln igen.",
+      "clickMatchBtn": "Klicka på knappen « Matchande enheter » nedan och välj enheten som börjar med {{dfuName}}.",
+      "currentDongle": "(Använd en trådbunden anslutning för tangentbords-/musuppdatering. Du är för närvarande på sidan för mottagaren.)",
+      "link_wired_content": "Under den trådlösa uppdateringen går musen i viloläge och kan inte användas",
+      "link_wired_title": "Anslut en kabel före uppdateringen",
+      "longPress": "Tryck först på ESC och håll sedan ned Tab-tangenten samtidigt i 3 sekunder.",
+      "matchErr": "För närvarande inte parad. Välj manuellt vilken enhet som ska uppdateras.",
+      "mouseTip2": "2. Om länken redan är kopplad och matchningen är redan tillgänglig. Klicka på Borsta firmware för att starta borsten.",
+      "mouseTip4": "Klicka på knappen Anslut enhet och välj Bootloader.",
+      "mouseTip6": "(Koppla inte bort mottagaren från datorn medan firmware uppdateras.)",
+      "mouseTip7": "Vänta tills uppdateringen är klar – ett meddelande om lyckad uppdatering visas.",
+      "patch": {
+        "1": "Den här uppdateringen är en säkerhetskorrigering. Följ först handledningen nedan för att uppdatera.",
+        "2": "I det aktuella tillståndet, koppla bort tangentbordets USB-kabel för att koppla från tangentbordet.",
+        "3": "Med tangentbordet frånkopplat, ta bort « Mellanslag » och hitta den lilla metallplåtsknappen bredvid strömbrytaren.",
+        "4": "Håll knappen intryckt och anslut tangentbordet igen till datorn via USB-kabel.",
+        "5": "Klicka på knappen « Matchande enheter » nedan och välj enheten markerad (DFU).",
+        "6": "Efter lyckad parning visas en knapp « Flasha firmware ». Klicka på den för att starta säkerhetskorrigeringsuppdateringen."
+      },
+      "toFlash": "Efter lyckad parning visas en knapp « Flasha firmware ». Klicka på den för att starta firmwareuppdateringen."
+    },
+    "update": {
+      "dfu_check": "Kontrollera att den valda DFU-enheten är korrekt."
+    },
+    "update_available": "Det finns en uppgraderingsbar firmware-version",
+    "update_latest": "Detta är den senaste firmware-versionen",
+    "update_success": "Uppdateringen lyckades. Klicka på knappen ”Anslut” för att ansluta den aktuella enheten.",
+    "warning": "Ta inte bort enheten eller uppdatera sidan under firmware-skrivprocessen för att förhindra eventuell skada på enheten.",
+    "write": "Skriver"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Enhetsmanual",
+      "tutorial": "Handledning",
+      "user_feedback": "Användarfeedback"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "Hur ställer man in automatiskt viloläge och starttid för avstängning av bakgrundsbelysning i Launcher?",
+        "set_keyboard_bounce_time": "Hur ställer man in tangentbordets studstid i Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "Hur ställer man in bakgrundsbelysta tangenter i Launcher?",
+        "set_mix_rgb": "Hur ställer man in Mix RGB i Launcher?",
+        "set_per_key_rgb": "Hur ställer man in RGB per tangent i Launcher?"
+      },
+      "bridge_firmware_update": "Hur man flashar firmware för Keychron-mottagaren",
+      "create_mouse_macro": "Hur man skapar en musmakro i Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "Hur återställer man fabriksinställningar och uppdaterar firmware i Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "Hur hanterar du din HE-profil på Launcher?",
+        "set_gamepad_analog_and_curves": "Hur ställer man in Gamepad Analog och kurvor i Launcher?",
+        "set_long_press_switch": "Hur ställer man in långtrycksbrytare i Launcher?",
+        "set_one_key_multiple_commands": "Hur ställer man in flera kommandon på en tangent i Launcher?",
+        "set_snap_click": "Hur ställer man in Snap Click i Launcher?",
+        "use_he_mode": "Hur använder man HE-läge på Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "Hur fungerar Fn-tangenterna på Keychron-tangentbord?",
+        "remap_key": "Hur mappar man om en tangent i Launcher?",
+        "set_keymap_language": "Hur ställer man in språk för tangentbordsmappning i Launcher?",
+        "use_different_function_layers": "Hur använder man de olika funktionslagren?"
+      },
+      "key_test": {
+        "custom_sounds": "Hur man anpassar ljudet på ditt tangentbord?",
+        "perform_keyboard_key_testing": "Hur utför man tangentbordstest i Launcher?"
+      },
+      "macro": {
+        "create_macro": "Hur skapar man ett makro i Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "Hur man återställer musen till fabriksinställningar i Launcher",
+      "mouse_angle_adjustment": "Hur man använder vinkeljustering i Launcher",
+      "mouse_firmware_update": "Handledning för firmwareuppdatering av musen",
+      "mouse_receiver_firmware_update": "Hur man flashar firmware för Keychron-mottagaren",
+      "quick_start": {
+        "download_and_install_assistant": "Hur laddar man ner och installerar Keychron-Assistant?",
+        "set_quick_start": "Hur ställer man in snabbstart i Launcher?"
+      },
+      "set_mouse_customize_buttons": "Hur man ställer in anpassade musknappar i Launcher",
+      "set_mouse_debounce_time": "Hur man justerar debounce-tiden för musen i Launcher",
+      "set_mouse_dpi_and_polling_rate": "Hur man ställer in DPI och polling rate för musen i Launcher",
+      "set_mouse_system_features_setting": "Hur man ställer in systemfunktioner för musen i Launcher"
+    },
+    "user_manual": "Användarmanual"
+  },
+  "issue": {
+    "content": "Innehåll",
+    "device": "Enhet",
+    "email": "E-post",
+    "tips": {
+      "content": "Innehåll krävs",
+      "device": "Enhet krävs",
+      "email": "Ogiltig e-postadress",
+      "input": "Ange innehåll",
+      "send": "Rapport skickad",
+      "title": "Titel krävs"
+    },
+    "type": {
+      "1": "Defekt knapp / ingen respons",
+      "2": "Anslutningsproblem",
+      "3": "Hårdvarufel",
+      "4": "Olämplig layout / dimensioner",
+      "5": "Driverproblem",
+      "6": "Övrigt",
+      "7": "Välj feedbacktyp"
+    }
+  },
+  "keycap": {
+    "character": "Bokstavstangenter",
+    "fnc": "Funktionstangenter",
+    "general": "Allmänt",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Siffertangenter",
+    "symbol": "Symboltangenter",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": "Håll ned = övre tangent (modifierare) · Tryck = nedre tangent"
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Tangentkombination",
+      "combo_description": "Anpassad tangentbordsgenväg",
+      "launch_app": "Starta app",
+      "launch_app_description": "Starta app med ett klick",
+      "launch_web": "Öppna webbsida",
+      "launch_web_description": "Öppna webbsida med ett klick",
+      "macro": "Makro",
+      "macro_description": "En serie åtgärder",
+      "remap": "Omtilldela",
+      "remap_description": "Tilldela en annan tangent",
+      "title": "Omtilldela {{key}}"
+    },
+    "codeInput": "Tangentinmatning",
+    "knob_not_support": "Den nuvarande firmware-versionen stöder inte rattanpassning, uppdatera firmware.",
+    "layer": {
+      "1": "1. Hålla ned aktiverar tillfälligt mållagret; släppa tangenten återställer det ursprungliga värdet.",
+      "2": "2. Gäller endast från ett lägre lager till ett högre; från ett högre till ett lägre har det ingen effekt.",
+      "3": "1. Ett klick stänger av/aktiverar mållagret; efter avstängning antas det högsta aktiva lagret.",
+      "4": "2. Standardlagret kan inte stängas av; om alla lager är avstängda antas standardlagret.",
+      "5": "Håll-ned-funktionen är identisk med MO; 5 klick motsvarar TG.",
+      "6": "1. Klick/håll ned aktiverar ett lager; aktivering sker endast från låg till hög.",
+      "7": "Snap Tap stöder endast tangenter med magnetomkopplare.",
+      "8": "Ett klick aktiverar mållagret enkelriktat, utan att skilja mellan höga och låga lager.",
+      "9": "Ett klick aktiverar tillfälligt målets standardlager enkelriktat, utan att skilja mellan höga och låga lager.",
+      "10": "1. Efter ett strömavbrott återgår tangentbordet till standardlagret som motsvarar systembrytaren, t.ex. Win = lager 2, Mac = lager 0.",
+      "11": "2. Vissa tangentbordsmodeller har ingen fysisk systembrytare och återgår vanligtvis till ett fast standardlager, t.ex. lager 0.",
+      "error_info": "Systembrytaren på ditt tangentbord matchar inte datorns system; modifierarfunktionerna kan ändras.",
+      "tip": "Tips:"
+    },
+    "modal": {
+      "combo": {
+        "description": "Välj en eller flera modifierartangenter och en huvudtangent, aktivera sedan med en enda tangent.",
+        "modifier_keys": "Modifierartangenter",
+        "press_primary_key": "Tryck på huvudtangenten",
+        "primary_key": "Huvudtangent",
+        "title": "Tangentkombination"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Klicka på den här knappen för att öppna den tilldelade appen.",
+        "no_available_apps": "Inga appar tillgängliga",
+        "search_apps": "Sök appar",
+        "title": "Starta app"
+      },
+      "launch_web": {
+        "description": "Klicka på den här knappen för att öppna den tilldelade webbsidan.",
+        "title": "Öppna webbsida",
+        "web_page_url": "URL för webbsidan"
+      },
+      "macro": {
+        "description": "Spela in en makro direkt i inmatningsfältet: tangenterna du trycker registreras som en serie åtgärder.",
+        "macro_keys": "Makrotangenter",
+        "press_key": "Tryck på tangenten som ska spelas in",
+        "title": "Spela in makro"
+      },
+      "remap": {
+        "description": "Vad ska « {{key}} » bli?",
+        "press_key": "Tryck på tangenten som ska tilldelas",
+        "primary_keys": "Huvudtangenter",
+        "title": "Omtilldela tangenter"
+      }
+    },
+    "reset": {
+      "all": "Bekräfta att du vill återställa alla inställningar?",
+      "single": "Bekräfta att du vill återställa denna tangents inställningar?",
+      "title": "Är du säker på att du vill återställa?"
+    },
+    "tabs": {
+      "assist": "Snabbstart",
+      "basic": "Grundläggande",
+      "custom": "Anpassad",
+      "layers": "Lager",
+      "macro": "Makro",
+      "media": "Media",
+      "modtap": "Håll ned / Tryck",
+      "mouse": "Mus",
+      "qmk_lighting": "Belysning",
+      "special": "Special",
+      "wt_lighting": "Belysning"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Anpassad",
+      "default_layer": "Standardlager",
+      "display": "Välj visningslager",
+      "functional": "Faktiskt funktionslager",
+      "funtional": "Aktuell",
+      "warn": "Om tangenterna inte fungerar, växla systembrytaren och slå på enheten igen."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": ".Vill du byta till...",
+    "connect": {
+      "1": "Anslut din enhet via kabel eller 2.4G-mottagare.\n(Vissa modeller stöder endast trådbundet läge)",
+      "2": "Klicka på « Anslut » uppe till vänster och välj din enhet från listan."
+    },
+    "detectedKeyboardLanguage": "Vi upptäckte att tangentbordets språk är...",
+    "guide_tip": "Följ guiden nedan för att ansluta din enhet",
+    "keepCurrentSetting": "Behåll nuvarande inställningar",
+    "lang": "Layoutspråk",
+    "resetSuccessContent": "Din tangentbordslayout har återställts framgångsrikt",
+    "resetSuccessTitle": "Återställning lyckades",
+    "select_device": "Välj den enhet du vill ansluta.",
+    "switchImmediately": "Byt nu"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Ljusstyrka",
+    "color": "Färg",
+    "common": {
+      "setting_color": "Färginställning"
+    },
+    "commonColor": "Vanliga färger",
+    "customColor": "Definiera färger",
+    "decorate_light": {
+      "0": "Ingen",
+      "1": "Fast",
+      "2": "Andning (ljuseffekt)",
+      "3": "Cykla genom nyanser (Hue)",
+      "4": "Hästkapplöpning"
+    },
+    "effect": "Effekt",
+    "effect speed": "Hastighet",
+    "hue": "Kromaticitet",
+    "layer2": "RGB-zon",
+    "led": {
+      "sub": {
+        "title": "Tips: välj LED-fältet nedan när du ställer in dess färg."
+      },
+      "title": "Ljusfält"
+    },
+    "level": "Nivå",
+    "mix": {
+      "config": "Ljuseffektinställningar",
+      "hxxg": {
+        "hue": "Nyans",
+        "saturability": "Mättnad",
+        "speed": "Hastighet"
+      },
+      "rk": "Denna funktion gör det möjligt att skapa två olika tangentzoner på samma tangentbord för olika RGB-ljuseffekter. För varje zon kan du ställa in olika tidsperioder i en loop, och varje period kan ha olika RGB-effekter.",
+      "timeLine": {
+        "second_tips": "Inmatningen för sekunder är för stor eller för liten.",
+        "title": "Tidslinje"
+      },
+      "verify_duration": {
+        "tip1": "Indatavärdet måste vara ett tal och ska vara större än 1 och mindre än 99!",
+        "tip2": "Endast två decimaler kan anges",
+        "tip3": "Det angivna värdet är för stort",
+        "tip4": "Det angivna värdet är för litet"
+      }
+    },
+    "notSupport": "Enheten stöder inte ljusinställningar",
+    "perkey": {
+      "effect": "Effektval",
+      "effects": {
+        "0": "Allmän",
+        "1": "Andas",
+        "2": "Enkla nyckelsvar",
+        "3": "Närliggande nyckelsvar",
+        "4": "Hela tangentbordet"
+      },
+      "redo": "Gör om",
+      "region": "Områdesval",
+      "region_select": "Välj Område",
+      "region_tip": "Välj området i tangentbordstangenterna och ställ in färgen. Klicka på Spara för att ändra färgen på motsvarande område.",
+      "rk": "Färgen på varje tangent kan ställas in individuellt. Du kan ändra färgen genom att välja tangenten, klicka i färginställningsområdet, ändra färg och spara.",
+      "save_warn": "För många RGB-zoner, vänligen ta bort några och försök igen.",
+      "select_tip": "Den valda knappen skapar inte någon region",
+      "select_warn": "Välj knapp",
+      "undo": "Ångra"
+    },
+    "saturation": "Mättnad",
+    "settingAllBrightnessArea": "Justera ljusstyrkan för alla zoner",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Dekorativ belysning",
+      "indication": "Indikatorlampa",
+      "led_light": "Kontroll av ljusbandet",
+      "mix_rgb": "Blandad ljuseffekt",
+      "perkey_rgb": "Per-tangent ljuseffekt",
+      "screen": "Skärmjustering",
+      "selection": "Bakgrundsbelysning"
+    },
+    "underglow brightness": "Ljusstyrka"
+  },
+  "lights": {
+    "0. None": "Ingen",
+    "1. Solid Color": "Solid färg",
+    "10. Cycle Pinwheel": "Cykla Väderkvarn",
+    "11. Cycle Spiral": "Cykla Spiral",
+    "12. Dual Beacon": "Dubbelfyr",
+    "13. Rainbow Beacon": "Regnbågsfyr",
+    "14. Jellybean Raindrops": "Jellybean Droppar",
+    "15. Pixel Rain": "Pixelregn",
+    "16. Typing Heatmap": "Skrivvärmekarta",
+    "17. Digital Rain": "Digitalt Regn",
+    "18. Reactive Simple": "Reaktiv Enkel",
+    "19. Reactive Multiwide": "Reaktiv Bred",
+    "2. Breathing": "Andas",
+    "20. Reactive Multinexus": "Reaktiv Multi-nexus",
+    "21. Splash": "Stänk",
+    "22. Solid Splash": "Solid Stänk",
+    "23. Per Key Rgb": "Per Tangent RGB",
+    "3. Band Spiral Val": "Bandspiral Val",
+    "4. Cycle All": "Fullständig cykel",
+    "5. Cycle Left Right": "Cykla vänster höger",
+    "6. Cycle Up Down": "Cykla upp ner",
+    "7. Rainbow Moving Chevron": "Regnbågseffekt Rörlig Chevron",
+    "8. Cycle Out In": "Cykel utåt och inåt",
+    "9. Cycle Out In Dual": "Cykla Ut In Dubbel"
+  },
+  "macro": {
+    "allchar": "Alla tecken",
+    "closeDelay": "Inaktivera fördröjning",
+    "code": "Kodindata",
+    "common": {
+      "flash": "Flash-lagring",
+      "title": "För att tilldela en makro, välj den och klicka sedan på måltangenten i tangentkartan ovan."
+    },
+    "config": "Konfiguration",
+    "delay": "Fördröjning",
+    "delaySet": "Tidsfördröjning",
+    "dynamicDelay": "Dynamisk fördröjning",
+    "endREC": "Stoppa inspelning",
+    "enterDown": "Infoga ner",
+    "enterUp": "Infoga upp",
+    "fixedDelay": "Fast fördröjning",
+    "inputdelay": "Ange fördröjningstid",
+    "inputtexct": "Ange text",
+    "insertDelay": "Infoga fördröjning",
+    "keydown": "Tryck ned",
+    "keyup": "Släpp",
+    "loopCount": "Antal loopar",
+    "loopCurrentDown": "Tryck för att stoppa",
+    "loopDown": "Valfri tangent stopp",
+    "loopOne": "Enkel loop",
+    "loopSet": "Loopinställningar",
+    "loopUp": "Släpp för att stoppa",
+    "macroReccord": "Spelning",
+    "macroSetup": "Makroinställningar",
+    "mouse": "Mus",
+    "notEqual": "Identifiera flytande tangent inte släppt, fortsätt?",
+    "record": "Inspelning",
+    "rename": "Byt namn",
+    "save": "Spara",
+    "setRepeatCount": "Antal repetitioner",
+    "specialText": "Textspecifikation",
+    "startREC": "Starta inspelning",
+    "stop": "Stoppa",
+    "text": "Infoga text",
+    "texttype": "Endast engelska, siffror och grundläggande symboler kan anges.",
+    "tip": {
+      "clickCopy": "Klicka för att kopiera texten",
+      "fixDelay": "Här innebär fast fördröjning att den är inbäddad i varje händelse, och händelsen innehåller den fördröjda åtgärden.",
+      "keyDelay": "Fördröjning: {200}, Enhet",
+      "keyDown": "Återställ: {-KC_A}",
+      "keyText": "Text: ABCDEF",
+      "keyUp": "Tryck ned: {+KC_A}",
+      "macro_text": "Ange makrot som du vill köra"
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnetisk",
+      "mechanical": "Mekanisk",
+      "tip": "Tips",
+      "title": "Brytarstatistik"
+    },
+    "calibration": {
+      "1": "Koppla inte ur USB-kabeln, koppla från enheten eller stäng av enheten under kalibreringen. Annars kan enheten drabbas av en krasch.",
+      "2": "Starta kalibrering",
+      "3": "Tryck inte på tangentbordstangenten 2 sekunder innan du klickar på \"Starta kalibrering\".",
+      "4": "Håll ned tangenten i 1 sekund för att slutföra kalibreringen.",
+      "5": "När kalibreringen är lyckad kommer bakgrundsbelysningen att vara grön.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Analog kurvprofil",
+      "save": "Spara krökning",
+      "title": "Rocker-kurvinställningar"
+    },
+    "directive": {
+      "bottomBack": "Studsa tillbaka",
+      "bottomIn": "Infällning från underkant",
+      "bottomOut": "Nå botten",
+      "trigger": "Startutlösare"
+    },
+    "distance": {
+      "advance_mode": "Avancerat",
+      "basic_mode": "Grundläggande",
+      "current": "Nuvarande tangenter",
+      "globalDis": "Ange alla arbetsavstånd",
+      "globalRt": "Ange alla tangenttriggers",
+      "limitTip": "Värdet överstiger gränsen. Ange igen.",
+      "magnet_calibrate": "Trigger-demo",
+      "magnet_calibrate_point": "Triggerpunkt",
+      "magnet_calibrate_tip": "Trigger-demonstrationen stöder endast en tangent",
+      "magnet_calibrate_tip_desc": "Välj en tangent och slå på switchknappen uppe till höger för att demonstrera utlösningen av vald tangent.",
+      "magnet_calibrate_tip_empty": "Vänligen välj en tangent",
+      "profile_help": "tryck på \"fn\" + \"p\" + \"z / x / c\", kan du snabbt växla profilen till profil 1 / 2 / 3",
+      "result": "Inmatade tangentvärden",
+      "sensitive": "Känslighet",
+      "setting": "Ange aktiveringsavstånd",
+      "show_mode_dis": "Utlösningsavstånd",
+      "show_mode_hide": "Inga data",
+      "show_mode_rt": "Snabb utlösning",
+      "speed_trigger": "Rapid trigger",
+      "trigger_distance": "(Tryck) Trigger-avstånd",
+      "trigger_distance_reset": "(Släpp) Återställningsavstånd",
+      "trigger_distance_twice": "(Tryck) Trigger-avstånd"
+    },
+    "dkr": {
+      "desc": "Max trigger count",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Rensa tilldelning",
+      "left_emu": "Emulera vänster",
+      "reflect": {
+        "conflict": "Den här tangenten är redan inställd"
+      },
+      "titles": {
+        "1": "Joystick-knappval",
+        "2": "Joystick-knappinställning",
+        "4": "Aktivera eller inaktivera tangentbordstangenter",
+        "5": "Aktivera om du kan skriva medan joysticken simuleras, inaktivera om du inte kan skriva medan joysticken simuleras.",
+        "6": "Joystick-effektdemo",
+        "7": "Funktion för kontrolligenkänning",
+        "8": "1. När den är avaktiverad känns tangentbordet inte längre igen som en kontroll.",
+        "9": "2. Efter varje åtgärd relaterad till den här funktionen måste du koppla ur och återansluta kabeln för att tillämpa den.",
+        "10": "Standardkontroll",
+        "11": "Xbox-kontroll",
+        "12": "Val av kontrolläge",
+        "13": "Efter att ha ändrat kontrolläge måste du koppla ur och återansluta kabeln för att tillämpa ändringen.",
+        "xbox": "1. Efter att ha aktiverat/avaktiverat Xbox måste kabeln kopplas ur och återanslutas för att tillämpa ändringen.</br>2. Xbox är inte tillgängligt på macOS."
+      }
+    },
+    "mode": {
+      "default": "Standard",
+      "gamepad": "Gamepad",
+      "gaming": "Spelläge"
+    },
+    "multi_cmd": {
+      "b": "Botten in",
+      "fulfilled": "Utrymmet fullt. Radera befintligt kommando för att ange ett nytt.",
+      "list": "Kommandolista",
+      "setting": "En tangent flera kommandon",
+      "test": "Testa tangenter"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy stöder endast tangenter med magnetomkopplare.",
+      "only_support_magnetic": "Mekaniska tangenter är för närvarande valda. Den här menyn stöder endast magnetomkopplare."
+    },
+    "profile": "Profil",
+    "rename": "Byt namn",
+    "simulate": "Simulera",
+    "snap_tap": {
+      "absolute_priority": "Absolut prioritet",
+      "AP": "Tilldela högre utlösningsprioritet till en av de två tangenterna när de trycks samtidigt.</br>*Klicka på ikonen i mitten av tangenten för att växla prioritet.",
+      "cancel_mode": "Neutral",
+      "CM": "Du kan ställa in två knappar. När båda trycks samtidigt utlöses ingen av dem.",
+      "create": "Skapa",
+      "key_exist": "Konfignyckeln existerar redan",
+      "last_key_priority": "Prioritet för sista tangenten",
+      "LKP": "Två tangenter kan ställas in så att när båda tangenterna trycks ner samtidigt, aktiveras den sist utlösta tangenten samtidigt som den andra återställs.\n\nVid val av två tangenter binds dessa så att den sist utlösta tangenten förblir aktiverad medan den andra återställs.",
+      "SC": "Du kan ställa in två tangenter så att när båda tangenterna trycks samtidigt, kan den som trycks djupare utlösa och den andra återställs.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Vill du verkligen växla?",
+    "sure_switch_gamepad_desc": "Efter att ha växlat till spellkontrolläge slutar vissa knappar att fungera.",
+    "tab": {
+      "calibration": "Kalibrering",
+      "curve": "Kurva",
+      "distance": "Aktiveringsavstånd",
+      "exit_calibration": "Avsluta kalibrering",
+      "joystick_reflect": "Analog styrspak",
+      "multi_cmd": "En tangent flera kommandon",
+      "snap_tap": "Snap-funktion",
+      "toggle": "Långtryck för att växla",
+      "toggle_tip": "Den här funktionen gör att du kan utlösa en tangent snabbt och kontinuerligt med bara ett tryck.",
+      "turbo": "Turbo",
+      "turbo_tip": "Producerar en kontinuerlig klickeffekt när du trycker på en knapp."
+    },
+    "toggle": {
+      "drk_guide_tip": "Den här funktionen gör att ju djupare du trycker på en tangent, desto fler gånger utlöses den.",
+      "keySpeed": {
+        "times": "Maximalt antal utlösningar",
+        "title": "Skrivhastighet",
+        "unit": "gånger/s"
+      },
+      "selected": "Valda tangenter",
+      "set": "Tangenter inställda",
+      "title": "Öppna"
+    }
+  },
+  "menu": {
+    "addconnect": "Lägg till enhet",
+    "assist": "Snabbstart",
+    "bluetooth_firmware": "Trådlös firmware",
+    "disconnect": "Koppla från",
+    "expTools": "Verktyg för tillägg",
+    "fr_firmware": "Mottagaruppdatering",
+    "help": "Hjälpcenter",
+    "issue": "Buggrapport",
+    "keyboard_advance": "Avancerat läge",
+    "keyboard_firmware": "Firmware-uppdatering",
+    "keyboard_he": "Magnetiska funktioner",
+    "keyboard_light": "Bakgrundsbelysning",
+    "keyboard_macro": "Tangentbordsmakron",
+    "keyboard_map": "Tangentbordskarta",
+    "keyboard_test": "Tangentest",
+    "keyset": "Snap Action",
+    "scroll": "Förbättrad rullning",
+    "setting": "Inställningar",
+    "switchSetting": "Inställning för växling"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Vill du verkligen avaktivera den här knappen?",
+      "resetAll": "Denna operation kommer att radera alla sparade data. Fortsätt?",
+      "resetBtn": "Återställ till standardinställningar?"
+    },
+    "dpi": {
+      "cable": "Trådbunden",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (punkter per tum) definierar pekarens känslighet — ju högre värde, desto längre rör sig pekaren med samma handrörelse.",
+      "gear": "Nivåer",
+      "previousSetting": "Om ingen åtgärd vidtas inom {{time}} sekunder bekräftas det automatiskt. Klicka på \"Ångra\" för att återgå till de tidigare inställningarna.",
+      "properties": "Systeminställningar för musen",
+      "properties_open": "Öppna systeminställningarna för musen",
+      "properties_tip": "Ingen reaktion? Ladda ner « Assistant » och försök igen.",
+      "reportRate": "Rapporteringshastighet",
+      "reportRateDesc": "Stöder upp till 8000 Hz",
+      "reportTip": "Justera hur ofta enheten skickar rapporter till datorn.",
+      "title": "DPI‑inställningar",
+      "wireless": "2.4GHz",
+      "xyTip": "X‑axelns DPI styr markörkänsligheten i horisontell riktning, Y‑axelns DPI styr känsligheten i vertikal riktning. Högre värden gör markören mer responsiv i motsvarande riktning.",
+      "xy_split_label": "X/Y-separation"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Oberoende vänster/höger-knappar",
+      "gear": "Nivå",
+      "left_btn": "Vänster knapp",
+      "light_blocked": "Optisk bana blockerad",
+      "light_desc": "I vila är ljusstrålen blockerad, så inget klick registreras. Tryck på knappen för att leda ljusbanan: ljuset når sensorn och utlöser klicket. Inga metallkontakter, inget slitage.",
+      "light_led": "LED",
+      "light_mode": "Optisk brytare",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Utlöst",
+      "magnet_desc": "Välj hur djupt du ska trycka innan ett klick registreras. Kortare = snabbare, djupare = färre misstag.",
+      "magnet_mode": "Magnetisk brytare",
+      "motor_trigger": "Inställningar för haptisk återkoppling",
+      "right_btn": "Höger knapp",
+      "shared_btn": "Musknappar",
+      "title": "Inställningar för musknappstriggning",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Inställningar för utlösningsslag"
+    },
+    "key": {
+      "backward": "Bakre knapp",
+      "brightnessDown": "Minska skärmens ljusstyrka",
+      "brightnessUp": "Öka skärmens ljusstyrka",
+      "calculate": "Kalkylator",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Kopiera",
+      "customDpi": "Anpassad DPI",
+      "cut": "Klipp ut",
+      "dock": "Dock På/Av",
+      "downScroll": "Rulla nedåt",
+      "dpiLoop": "DPI-cykel",
+      "email": "E-post",
+      "forward": "Framåt",
+      "he": "Optisk / magnetisk mikrorörelse",
+      "home": "Visa skrivbord",
+      "homePage": "Öppna startsida",
+      "launchPad": "Launchpad",
+      "left": "Vänsterklick",
+      "leftClick": "Vänsterklicka",
+      "leftDouble": "Dubbelklick vänster",
+      "leftLock": "Vänsterklickslås",
+      "leftScroll": "Scrolla åt vänster",
+      "leftScrollSustain": "Kontinuerlig rullning åt vänster",
+      "leftTilt": "Luta åt vänster",
+      "left_lock": "Vänsterklickslås",
+      "lickDoubleClick": "Dubbelklick vänster",
+      "light": "Lampeffekt",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Loop",
+      "loopColorfulBreathing": "Färgglad andningscykel",
+      "loopDpi": "DPI-cykel",
+      "loopOpticalMagnetic": "Optisk-magnetisk cykel",
+      "loopPollingRate": "Polling rate-cykel",
+      "middle": "Mittenklick",
+      "middleClick": "Mittenklicka",
+      "modeToggleAll": "Optisk / magnetisk mikrorörelse",
+      "mute": "Tyst",
+      "myComputer": "Min dator",
+      "next": "Nästa",
+      "nextDpi": "Nästa DPI",
+      "nextPollingRate": "Nästa polling rate",
+      "pageDown": "Sida ner",
+      "pageUp": "Page Up",
+      "paste": "Klistra in",
+      "pause": "Spela/Pausa",
+      "player": "Spelare",
+      "prevDpi": "Föregående DPI",
+      "previous": "Föregående",
+      "prevPollingRate": "Föregående Polling Rate",
+      "refresh": "Uppdatera",
+      "restoreFactory": "Fabriksåterställning",
+      "right": "Högerklick",
+      "rightClick": "Högerklicka",
+      "rightScroll": "Scrolla åt höger",
+      "rightScrollSustain": "Kontinuerlig rullning åt höger",
+      "rightTilt": "Luta åt höger",
+      "screenshot": "Skärmdump",
+      "scrollLeftClick": "Rulla vänster klick",
+      "scrollRightClick": "Rulla höger klick",
+      "sideKey": "Sidoknapp",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Stopp",
+      "swichLight": "Växla ljuseffekt",
+      "switchApp": "Byt applikation",
+      "task": "Mission Control",
+      "trackballToScroll": "Trackball till rullning",
+      "upScroll": "Rulla uppåt",
+      "volumeDown": "Volym -",
+      "volumeUp": "Volym +",
+      "webLessen": "Zooma ut",
+      "webMagnify": "Zooma in"
+    },
+    "keyboard": "Tangentbord",
+    "key_fun": {
+      "basic": "Grundknappar",
+      "disable": "Inaktivera knapp",
+      "dpi": "DPI",
+      "game": "Speltangenter",
+      "game_tip": "Håll ned den tilldelade tangenten för att automatiskt upprepa de valda tangenttryckningarna, med anpassningsbart antal och frekvens.",
+      "keyboard": "Tangentkombinationer",
+      "keyboard_tip": "Välj en eller flera modifierartangenter och lägg sedan till en standardtangent. Klicka på fältet för att ange en tangent eller välj en tangentkod till höger.",
+      "macro": "Makro",
+      "media": "Multimediatangenter",
+      "pollingRate": "Pollingfrekvens",
+      "profile": "Profil",
+      "sensitive": "Känslighet",
+      "shortCut": "Snabbkommandon"
+    },
+    "key_game": {
+      "count": "Räkna",
+      "infinite": "Obegränsat",
+      "rate": "Hastighet"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "Av blinkande neonljus",
+      "fullColorCycle": "Full färgcykel",
+      "soleBreathe": "Andas",
+      "soleFlowing": "Hästkapplöpning",
+      "soleLight": "Solid färg"
+    },
+    "menu": {
+      "angle": "Vinkeljustering",
+      "dpi": "DPI‑inställningar",
+      "key": "Anpassa",
+      "light": "Ljus",
+      "macro": "Makroinställningar",
+      "poll_rate": "Pollingfrekvens",
+      "profile": "Profil",
+      "sys": "Avancerat"
+    },
+    "mouse": "Mus",
+    "polling_rate": {
+      "daily": "Kontor",
+      "fps20k": "Sensorsamplingsläge",
+      "game": "Spel",
+      "office_mode": "Standardläge",
+      "office_mode_desc": "Smidig drift, stabil skanning",
+      "rage_content": "Energiförbrukningen ökar när det tävlingsinriktade läget är aktiverat.",
+      "rage_desc": "Sensorskanfrekvens ≥20K för lägre latens och högre precision. Förbrukar mer energi.",
+      "rage_mode": "Tävlingsinriktat läge",
+      "rage_title": "Bekräfta aktivering av det tävlingsinriktade läget?"
+    },
+    "profile_tab": {
+      "changeIcon": "Byt Ikon",
+      "selectMode": "Välj läge"
+    },
+    "scroll": {
+      "acceleration": "Hastighetsacceleration",
+      "consecutive_times": "Antal kontinuerliga rullningar",
+      "demo": "Rullningsdemo",
+      "direction": "Rullningsriktning",
+      "duration": "Rullningslängd",
+      "interval": "Rullningsintervall (ms)",
+      "scroll": "Horisontell rullning",
+      "speed": "Rullningshastighet",
+      "step": "Minsta rullningssteg",
+      "tip_acceleration": "Ställ in rullningsaccelerationen som en multipel av det aktuella värdet.",
+      "tip_consecutive_times": "Efter kontinuerlig rullning växlar den automatiskt till mjuk rullning.",
+      "tip_demo": "Du kan prova inställningarna för förbättrad rullning här.",
+      "tip_direction": "Ändra musens rullningsriktning",
+      "tip_disconnect": "För att använda förbättrad rullning måste du ladda ner Assist.",
+      "tip_interval": "Intervalltid för kontinuerlig rullning",
+      "tip_speed": "Öka rullningshastigheten"
+    },
+    "shortcut_tooltip": {
+      "general": "Efter konfigurering gäller följande funktioner både på Mac och Windows.",
+      "mac": "Efter konfigurering gäller följande funktioner endast på Mac.",
+      "win": "Efter konfigurering gäller följande funktioner endast på Windows."
+    },
+    "sys": {
+      "angle": "Vinkeljustering",
+      "angle_correction_after": "Efter justering",
+      "angle_correction_no": "Före justering",
+      "angle_preview": "Före och efter",
+      "angle_reset_btn": "Återställ till 0°",
+      "backward": "Invertera",
+      "battery_indicator": "Batteriindikator",
+      "delay": "Antistudstid",
+      "forward": "Standard",
+      "funConfig": "Systemfunktioner för musen",
+      "keyResponseTime": "Tangenternas svarstid",
+      "leftLock": "Vänsterklick lås",
+      "line": "Vinkeljustering",
+      "lock": "Lås",
+      "lod": "Liftoff-avstånd",
+      "motion": "Rörelsesynk",
+      "pairBond": "Parningsgenväg",
+      "pairLimit": "Parning av tangenter stöder endast 1–3 tangenter",
+      "power": "Energihantering",
+      "respSeconds": "Svarstid (millisekunder)",
+      "scroll": "Rullningsriktning",
+      "sensor": "Sensorprestanda",
+      "sleep": "Enhetens viloläge",
+      "unlock": "Lås upp",
+      "wave": "Ripple-kontroll"
+    },
+    "tip": {
+      "leftLock": "Vänsterklick-konfiguration är låst och kan inte konfigureras."
+    },
+    "tips": {
+      "advanceDelayDesc": "I det avancerade läget kan du ställa in en oberoende svarstid (0–20 ms) för varje tangent.",
+      "angleDesc": "Justera vinkeln på mussensorn så att en lätt lutad mus gör exakta horisontella rörelser.",
+      "delayDesc": "Ställ in en fördröjning för att undvika oavsiktliga utlösningar från snabba klick eller skakningar.",
+      "factorySetDesc": "Att klicka på den här knappen rensar enhetens aktuella inställningar och återställer fabriksinställningarna.",
+      "fps20kDesc": "Mussensorn fångar 20 000 bilder av musmattans yta per sekund, för exakt och latensfri spårning.",
+      "indicatorDesc": "Den här brytaren styr endast visningen av det normala batteritillståndet i 2.4G-läge.",
+      "leftLockDesc": "När « Vänsterklickslås » är aktiverat kan den vänstra knappen inte omtilldelas.",
+      "lineDesc": "Filtrerar intelligent lätta handskakningar för att minska horisontella och vertikala avvikelser.",
+      "lodCurr": "Musens aktuella liftoff-avstånd",
+      "lodDesc": "Den maximala höjden där musrörelser fortfarande detekteras och spåras.",
+      "motionDesc": "Synkroniserar sensorinmatning med systemets svar för att minska hopp eller ryck i pekaren.",
+      "pairBondDesc": "Anpassa tangentkombinationen och håll den nedtryckt i 4 sekunder för att gå in i Bluetooth/2.4G-parningsläge.",
+      "scrollDirDesc": "Riktningen för innehållets rörelse på skärmen när mushjulet rullar uppåt eller nedåt",
+      "sensorDesc": "Förbättrar musens precision och stabilitet vid ritning av linjer, cirklar och andra banor.",
+      "sleepDesc": "Stöder automatisk viloläge i trådlöst läge när enheten är inaktiv en stund.",
+      "waveDesc": "Minskar vågiga banor som orsakas av handskakningar för mjukare rörelser."
+    },
+    "wheel": {
+      "adjustTimeout": "Tidsgräns för kalibrering",
+      "sensitivity": "Känslighet"
+    }
+  },
+  "notify": {
+    "emptyHid": "Ingen HID-enhet vald",
+    "fail": "Misslyckades",
+    "fr_not_connect": "Drivrutinen kan inte användas efter att enheten går i viloläge; tryck på valfri tangent för att aktivera den.",
+    "hidAlreadyConnected": "HID-enhet ansluten",
+    "hidConfNotBrand": "Enheter från detta märke stöds för närvarande inte.",
+    "hidConfNotFound": "Ingen giltig HID-enhetskonfiguration hittades",
+    "hidDeviceNotFount": "HID-enhet saknas",
+    "hidUnconnected": "HID-enhet ej ansluten",
+    "import": {
+      "layout": "Din tangentbordslayout har importerats framgångsrikt",
+      "title": "Import lyckades"
+    },
+    "invalid_macro_json": "Ogiltig konfiguration",
+    "invalid_rgb_json": "Ogiltig konfiguration",
+    "keyboard_not_support_wireless": "Tangentbordsfirmware stöder för närvarande inte trådlöst",
+    "keycodeNotFound": "Tangentskods-konfigurationsfel",
+    "limited": "Maximalt antal överskridet",
+    "macroSizeLimit": "Makrostorlek överskrider tillgängligt utrymme",
+    "notSupportHid": "Den här webbläsaren stöder inte HID-anslutning, använd Chrome, Edge eller Opera för att ansluta",
+    "sleep": "Ingen enhet ansluten eller enheten är i viloläge",
+    "success": "Lyckades",
+    "success_competitive": "Växlade framgångsrikt till det tävlingsinriktade läget",
+    "success_connect": "Anslutning lyckades",
+    "success_office": "Växlade framgångsrikt till standardläget",
+    "unknownErr": "Okänt fel"
+  },
+  "onboarding": {
+    "completed": "Guiden slutfördes framgångsrikt 🎉",
+    "connect": {
+      "description": "Anslut tangentbordet till datorn med en USB-kabel, klicka på « Anslut » och välj din enhet i dialogrutan.",
+      "title": "Anslut ditt tangentbord"
+    },
+    "entry": "Komma igång",
+    "flow": {
+      "connect": "Anslut enhet",
+      "keymap": "Omtilldela tangenter",
+      "light": "Bakgrundsbelysningseffekter"
+    },
+    "hint": "Klicka på det markerade området för att slutföra åtgärden, eller på « Hoppa över guide ».",
+    "keymap": {
+      "select_a": {
+        "description": "Klicka på « A » i funktionspanelen nedan för att omtilldela mellanslagstangenten till A. Guiden stängs automatiskt när den är klar.",
+        "title": "Steg 2 · Omtilldela den till « A »"
+      },
+      "select_space": {
+        "description": "Klicka på mellanslagstangenten längst ner på tangentbordet för att välja den.",
+        "title": "Steg 1 · Välj mellanslagstangenten"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Använd färgväljaren till höger för att ställa in färgen på grön (dra väljaren eller ange RGB 0, 255, 0). Guiden stängs automatiskt.",
+        "title": "Steg 2 · Ställ in den på grön"
+      },
+      "select_static": {
+        "description": "Välj « Solid Color » i listan över effekter nedan för att ställa in tangentbordet på en statisk monokrom effekt.",
+        "title": "Steg 1 · Välj « Solid Color »"
+      }
+    },
+    "skip": "Hoppa över guide",
+    "step": "STEG"
+  },
+  "screen": {
+    "format": {
+      "limit": "Bildformatet kan endast vara PNG, JPG eller GIF."
+    },
+    "resolution": {
+      "limit": "Bildstorleken får inte överstiga 240×240."
+    },
+    "size": {
+      "limit": "Bildfilens storlek får inte överstiga 300 KB."
+    },
+    "upload": {
+      "format": "PNG eller JPG (max 500 KB)"
+    }
+  },
+  "selection": {
+    "limitation": "Den här funktionen gör att du kan välja högst {{count}} tangenter."
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Scan-intervall"
+    },
+    "file_extra_properties_not_supported": "Filen innehåller attribut som inte stöds.",
+    "file_import_failed": "Det gick inte att importera filen",
+    "file_upload_no_config_file": "Konfigurationsfilen upptäcktes inte. Vänligen ladda upp.",
+    "info": "Enhetsinformation",
+    "infos": {
+      "bluVersion": "Bluetooth-version",
+      "deviceDesc": "Firmwareversion",
+      "name": "Namn"
+    },
+    "json_config": "Json-inställning",
+    "lng": "Språk",
+    "log": "Köranteckningar",
+    "onlyview": "Konfigurationen av det här tangentbordet kan inte ändras.",
+    "other": "Övrigt",
+    "others": {
+      "debounce": {
+        "name": "Tangenternas svarsfördröjning",
+        "tip": "Efter aktivering kan den minsta svarstiden ställas in på 0 ms.",
+        "title": "Justera minimivärdet",
+        "warning": {
+          "title": "Vill du verkligen aktivera?"
+        }
+      }
+    },
+    "theme": "Temabyte",
+    "updateLog": "Versionshistorik"
+  },
+  "snap": {
+    "list": "Lista över kommandobindningar"
+  },
+  "test": {
+    "btn": {
+      "reset": "Testa igen",
+      "reset_bindings": "Rensa kopplingar"
+    },
+    "msg": {
+      "bind_success": "{{count}} tangenter har kopplats till {{audioName}}.",
+      "bind_success_single": "Tangenten {{keyName}} har kopplats till {{audioName}}.",
+      "no_key_selected": "Välj först tangenten som ska kopplas.",
+      "reset_success": "Återställning lyckades",
+      "storage_full": "Otillräckligt lagringsutrymme",
+      "unsupported_format": "Ljudformatet stöds inte. Använd MP3, WAV, OGG eller M4A.",
+      "upload_success": "Ljud uppladdat framgångsrikt"
+    },
+    "per_key_sound": {
+      "desc": "Tilldela ett unikt ljud till varje tangent. När den här funktionen är avaktiverad använder alla tangenter det standardvalda ljudet.",
+      "tip": "I läget utan testmatris kan du endast ställa in ett enhetligt tangentresponsljud."
+    },
+    "sound": {
+      "tip": "När strömbrytaren är på får tangenttestet ljudåterkoppling, och du kan välja det ljud du föredrar."
+    },
+    "sound_btn": {
+      "Balloon": "Ballong",
+      "CarHorn": "CarHorn",
+      "Cartoon": "Tecknad",
+      "CoinCollecting": "Myntsamling",
+      "custom": "Anpassad",
+      "default": "Standard",
+      "DogBarking": "Hundskall",
+      "Donkey": "Åsna",
+      "Glass": "Glas",
+      "PartyHorn": "Partytuta",
+      "PhoneDial": "Telefonuppringning",
+      "Punch": "Punch",
+      "RubberChicken": "Gummikyckling",
+      "RubberToy": "Gummileksak",
+      "Sneeze": "Nysning"
+    },
+    "title": {
+      "custom_sound": "Anpassad ljudbibliotek",
+      "per_key_sound": "Ljudtilldelning per tangent",
+      "reset_custom_bindings": "Vill du verkligen återställa ljudkopplingarna?",
+      "sound": "Aktivera ljudeffekter",
+      "sound_effect": "Val av ljudeffekt",
+      "uploaded_sounds": "Uppladdade ljud"
+    },
+    "upload": {
+      "browse": "Klicka för att ladda upp",
+      "info": "Stöds: MP3, WAV, OGG, M4A · Totalt limit: 25 MB · Rekommenderad ljudlängd: 1–2 sekunder",
+      "placeholder": "Dra och släpp ljudfilerna här, eller"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Välj först en tangent."
+    },
+    "key": {
+      "direction": "Vinkellås 8 riktningar",
+      "gesture": "Gestläge",
+      "held": "Håll ned",
+      "scroll": "Rulla",
+      "tap": "Tryck"
+    },
+    "keycode": {
+      "key": "Grundtangent",
+      "modifiers": "Modifierare"
+    },
+    "key_fun": {
+      "basic": "Bas",
+      "comb": "Kombinationstangent",
+      "feature": "Vinkellås",
+      "keyCombination": "Tangentkombination",
+      "layer": "Lager",
+      "macro": "Makro",
+      "simulate": "Tryck samtidigt",
+      "single": "Tryck / Håll ned",
+      "special": "Speciella tangenter",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "Du kan bara ställa in en standardtangent.",
+    "placeholder": {
+      "selectionKeys": "Valtangenter"
+    },
+    "selectInputFirst": "Välj först ett inmatningsfält.",
+    "slide": {
+      "leftSlide": "Svep åt vänster",
+      "rightSlide": "Svep åt höger",
+      "underSlide": "Svep nedåt",
+      "upSlide": "Svep uppåt"
+    },
+    "tips": {
+      "angleGearsDesc": "Till exempel, om du tilldelar « 90° » till tangent 4, kommer klick på tangent 4 att ställa in det aktuella lagrets riktning till 90° (liggande).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "tap": "On tap",
+      "title_placehokder": "Custom Title (Optional)",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Grundläggande tangenter",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Startprogrammet kräver VIA-jsonfilen för den valda enheten. Klicka på knappen ”Bekräfta” nedan och ladda upp json-filen för den valda enheten för att använda startprogrammet. Du kan få VIA-jsonfilen från produktleverantören.",
+      "title": "VIA Json-filuppladdning"
+    }
+  }
+}
