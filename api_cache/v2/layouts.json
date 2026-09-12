@@ -1,0 +1,111 @@
+{
+ "code": 200,
+ "msg": "success",
+ "data": [
+  {
+   "id": "019e3a83-e20a-737b-8dc2-96d2f8340f24",
+   "layout_name": "English (US)",
+   "layout": "us",
+   "langs": "en-US",
+   "sort": 0
+  },
+  {
+   "id": "019e3a83-d651-75bb-b588-e041bedad4fa",
+   "layout_name": "日本語",
+   "layout": "japan",
+   "langs": "ja-JP",
+   "sort": 1
+  },
+  {
+   "id": "019e3a83-ab4f-735b-8399-e2bd9a82a12a",
+   "layout_name": "English (UK)",
+   "layout": "uk",
+   "langs": "en-UK",
+   "sort": 2
+  },
+  {
+   "id": "019e3a83-b322-726d-87a1-a3b2813c90f0",
+   "layout_name": "Deutsch",
+   "layout": "de",
+   "langs": "de-DE",
+   "sort": 3
+  },
+  {
+   "id": "019e3a83-c6af-74a8-a5be-349c46f7e97d",
+   "layout_name": "Français",
+   "layout": "franch",
+   "langs": "fr-FR",
+   "sort": 5
+  },
+  {
+   "id": "019e3a83-a382-73bc-a75c-fe33ce4da175",
+   "layout_name": "Swiss",
+   "layout": "swiss",
+   "langs": "de-CH,fr-CH,it-CH",
+   "sort": 6
+  },
+  {
+   "id": "019e3a83-ce7f-77f2-a2ec-422d7f8a54ec",
+   "layout_name": "Español",
+   "layout": "Spanish",
+   "langs": "es-ES,es-LA",
+   "sort": 7
+  },
+  {
+   "id": "019e3a83-a764-77fe-8366-b427f148665a",
+   "layout_name": "Italiano",
+   "layout": "Italiano",
+   "langs": "en-IT, en-SM",
+   "sort": 8
+  },
+  {
+   "id": "019e3a83-af38-71a9-98ed-2100ba73a5d0",
+   "layout_name": "Türkçe",
+   "layout": "Turkey",
+   "langs": "en-TR",
+   "sort": 9
+  },
+  {
+   "id": "019e3a83-baef-75d3-a9ad-6bb9cece31e6",
+   "layout_name": "українська мова",
+   "layout": "Ukraine",
+   "langs": "en-UA",
+   "sort": 10
+  },
+  {
+   "id": "019e3a83-bed9-714c-8161-c896fb3aa6d1",
+   "layout_name": "čeština",
+   "layout": "Czech",
+   "langs": "en-CZ",
+   "sort": 12
+  },
+  {
+   "id": "019e3a83-e9da-77ac-b73e-f922ec25fd0c",
+   "layout_name": "slovenščina",
+   "layout": "Slovenia",
+   "langs": "sk",
+   "sort": 13
+  },
+  {
+   "id": "019e3a83-e5f2-76c0-a703-3d5d6a3cd0de",
+   "layout_name": "magyar nyelv",
+   "layout": "Hungary",
+   "langs": "en-HUN",
+   "sort": 14
+  },
+  {
+   "id": "019e3a83-de20-7594-a89a-fa17ba439c07",
+   "layout_name": "slovenčina",
+   "layout": "Slovakia",
+   "langs": "en-US",
+   "sort": 17
+  },
+  {
+   "id": "019e3a83-ca95-77ed-9ac0-c8c817f51e48",
+   "layout_name": "ภาษาไทย",
+   "layout": "Thai",
+   "langs": "th-TH",
+   "sort": 18
+  }
+ ]
+}
