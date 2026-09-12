@@ -1,0 +1,1706 @@
+{
+  "advance": {
+    "common": {
+      "notice": "Notice:"
+    },
+    "debounce": {
+      "defer_global": "Debouncing per keyboard. On any state change, a global timer is set. When DEBOUNCE milliseconds of no changes has occurred, all input changes are pushed. This is the highest performance algorithm with lowest memory usage and is noise-resistant.",
+      "defer_per_key": "Debouncing per key. On any state change, a per-key timer is set. When DEBOUNCE milliseconds of no changes have occurred on that key, the key status change is pushed.",
+      "eager_defer_per_key": "Debouncing per key. On a key-down state change, response is immediate, followed by DEBOUNCE milliseconds of no further input for that key. On a key-up state change, a per-key timer is set. When DEBOUNCE milliseconds of no changes have occurred on that key, the key-up status change is pushed.",
+      "eager_per_key": "Debouncing per key. On any state change, response is immediate, followed by DEBOUNCE milliseconds of no further input for that key.",
+      "none": "No debounce processing is performed.",
+      "tip": {
+        "1": "“Eager Per Key” is the recommended debounce mode: when you press a key, it responds immediately， but all further inputs of that key will be ignored in response seconds you choose.",
+        "2": "If you want to reduce the response time to less than 10 ms, please go to Settings - Other to make the adjustment.",
+        "3": "When the response time is close to 0 ms, the double-click problem may occur."
+      }
+    },
+    "macro": {
+      "gesture": "Always keep Gesture Mode on",
+      "gesture_description": "When enabled, you don't need to assign a gesture button.",
+      "gesture_not_configured": "It cannot be opened. Please go to the \"Button Function - Trackball\" setting to set the output value first.",
+      "scroll": "Always keep Scroll Mode on",
+      "scroll_description": "After activation, there is no need to associate with the gesture buttons.",
+      "title": "Gesture Behavior (select one)"
+    },
+    "nkro": {
+      "desc": "NKRO (N-Key Rollover) is a keyboard input technology that allows simultaneous pressing of an unlimited number of keys without any input conflicts or dropped signals. Disabling NKRO means the keyboard will correctly register up to 6 simultaneous key presses.",
+      "title": "NKRO Setting"
+    },
+    "performance": {
+      "mode_battery": "Battery Mode",
+      "mode_high": "Performance Mode",
+      "mode_normal": "Default Mode",
+      "title": "Performance Mode Switching"
+    },
+    "poll_rate": "Polling Rate Settings",
+    "poll_rate_tip": {
+      "bt": "Bluetooth connection mode",
+      "bt_desc": "In Bluetooth connection mode, the polling rate is fixed at 125Hz. This setting can’t be changed due to connection limitations.",
+      "fr": "2.4GHz connection mode",
+      "usb": "Wired Mode"
+    },
+    "sleep": {
+      "backlight": "Auto Backlight-Off Timeout",
+      "magnet": "Keyboard Matrix Scanning Idle Time",
+      "magnet_range": "The matrix scanning idle time must be greater than the backlight turn-off delay and less than the sleep timeout period.",
+      "magnet_tip": "Hall Effect Keyboard Matrix Scanning Idle Time Must More Than 60 Seconds",
+      "time": "Auto-Sleep Timeout"
+    },
+    "tips": {
+      "keepLayer_close": "2. If this option is disabled, NapePro will switch along with Layer 1 when you go to the Layer 1 editing screen.",
+      "keepLayer_enable": "1. If this option is enabled, for example, if NapePro is running on \"Layer 0\", NapePro will retain the \"Layer 0\" key mapping even if you switch to the \"Layer 1\" editing screen."
+    },
+    "title": {
+      "keepLayer": "Layer Editing Mode"
+    }
+  },
+  "ai_chat": {
+    "action": {
+      "connect_device": {
+        "done": "Device connected",
+        "idle": "Tap to connect the device",
+        "pending": "Launching authorization..."
+      },
+      "download_assistant": {
+        "idle": "Click to download the latest Assistant"
+      },
+      "resume_assistant": {
+        "done": "Continue processing",
+        "idle": "Assistant enabled",
+        "pending": "Processing continues…",
+        "prompt": "I have opened it"
+      },
+      "undo_remap": {
+        "done": "Key remapping undone",
+        "idle": "Undo this key remapping",
+        "pending": "Undoing..."
+      }
+    },
+    "clear_tooltip": "Clear conversation",
+    "close_tooltip": "closed",
+    "deep_thinking": "Deep Thinking",
+    "generated_content_notice": "The AI-generated content may contain errors. Please verify.",
+    "input_placeholder": "Ask Keychron AI",
+    "model": {
+      "deepseek-v4-flash": {
+        "description": "Focus on rapid response",
+        "label": "Faster"
+      },
+      "deepseek-v4-pro": {
+        "description": "For more complex tasks",
+        "label": "Pro"
+      },
+      "mimo-v2_5-pro": {
+        "description": "Balanced",
+        "label": "MiMo V2.5 Pro"
+      },
+      "mimo-v2_5": {
+        "description": "Normal",
+        "label": "MiMo V2.5"
+      }
+    },
+    "no_reply": "Execution completed, but no displayable response was received.",
+    "pin": {
+      "tooltip_off": "Unpin",
+      "tooltip_on": "Pin the chat window"
+    },
+    "pinned_success": "The dialog window has been fixed and cannot be dragged.",
+    "quick": {
+      "connect_keyboard": "Remap the Space key to A",
+      "remap_space": "Change the lighting effect to Band Spiral Val",
+      "set_light": "Help me open Discord"
+    },
+    "result": {
+      "connect_failed": "Failed to connect: {{error}}",
+      "device_connected": "Device connected",
+      "no_device_undo": "No device is connected, so the remap cannot be undone.",
+      "no_remap_to_undo": "There is no remap to undo.",
+      "undo_failed": "Failed to undo the remap: {{error}}",
+      "undo_success": "Undid the last remap and restored {{count}} key(s)."
+    },
+    "select_model": "Select Model",
+    "status": {
+      "answering": "Replying",
+      "executing": "Executing",
+      "loading": "Loading",
+      "thinking": "Thinking",
+      "verifying": "Verifying"
+    },
+    "stopped": "Stopped",
+    "title": "Keychron AI",
+    "unpinned_success": "Unpinned",
+    "welcome": "Hi! \"Keychron AI Assistant\" can help you connect devices, remap keys, customize lighting effects, create macros, and more. Feel free to ask me anything!"
+  },
+  "application": {
+    "addr": "Quick launch webpage",
+    "add_addr": "Add address",
+    "apple_silicon_version": "Download for Apple Silicon (.pkg)",
+    "app_duplicate": "The application already exists, no need to add it again.",
+    "app_hint": "You can set a shortcut key, select the software you want to open quickly, and then bind it to a key.",
+    "app_placeholder": "Please select an application",
+    "clear_all": "Clear All",
+    "desktop_old_content": "Please download and install the latest version of the desktop service to use this feature.",
+    "desktop_old_title": "Detected an outdated desktop service.",
+    "download_keychron_assistant": "If it isn't installed yet, click to download it.",
+    "download_new_assistant_tip": "Download the latest Keychron Assistant to use all features.",
+    "download_zip_tip": "Notice：Before installing Keychron Assist，you need to decompress the downloaded file.",
+    "file_not_found": "File does not exist",
+    "intel_version": "Download for Intel Macs (.dmg)",
+    "keySetting": "This key already has a shortcut!",
+    "key_no_conf": "No shortcut keys have been set",
+    "limited": "Maximum limit exceeded. Currently, the limit for quick launches is 5. We plan to increase this number in the future.",
+    "need_keychron_assistant": "This feature requires Keychron Assistant to be running.",
+    "no_key_selected": "No key selected",
+    "open_assistant_no_response_tip": "If nothing happens after clicking \"Open\", download the latest Assistant and try again.",
+    "open_tip1": "1.The guick start function refers to binding the application you want to start quickly On a certain button, click the button to start quickly.",
+    "open_tip2": "2.Please download Assist first and then add the application you want to start quickly. Finally, return to the launcher for keybinding and starting.",
+    "select_key_to_bind": "Please select keys from the keyboard to bind this setting",
+    "soft": "Quick Start Application",
+    "submit_hint": "Please select the software you want to quickly open, and then click [Submit]. After submission, the quick opening can be activated and used.",
+    "title_placeholder": "Custom title (optional)",
+    "unsupported_feature": "Unsupported feature",
+    "unsupported_feature_download_new_version": "This feature is not supported. Please download the latest version to try it.",
+    "url": "Quickly open a web page",
+    "url_hint": "You can set a shortcut key, select the web address you want to open quickly, and then bind it to a key.",
+    "url_placeholder": "Please enter a valid URL"
+  },
+  "assist": {
+    "accessibility": {
+      "continueText": "Continue",
+      "later": "Later",
+      "openSystemPreferences": "Open System Preferences",
+      "restartMessage": "Accessibility permission has been successfully granted. The app needs to be restarted to take effect.",
+      "restartNow": "Restart Now",
+      "restartTitle": "Permission Granted",
+      "step1": "Click the button below to enter the system accessibility permission page",
+      "step2": "Find and turn on the Launcher Assistant switch authorization",
+      "step3": "Please enter your password",
+      "step4": "After authorization, please exit the app and reopen it to take effect\"",
+      "welcomeTitle": "Welcome To Use Assistant"
+    },
+    "click_no_response_tip": "Open your computer’s mouse settings for pointer, scroll, and click options.",
+    "common": {
+      "add": "Add",
+      "back": "Back",
+      "delete": "Delete",
+      "info": "Info",
+      "refresh": "Refresh",
+      "settings": "Settings"
+    },
+    "hint_reset": "Device change detected. Due to layout differences, some keys may not work as shown in Quick Start. Reset settings to match the new layout?",
+    "hint_reset_1": "Detected that you’ve switched to a different device. Would you like to reset your settings?",
+    "hint_reset_2": "(Note: Due to differences in key layouts between models, the Quick Start display may not match the actual functions, resulting in non-functional keys.)",
+    "home": {
+      "addAddress": "Add address",
+      "addSoftwareDescription": "Add the software you want to open quickly below, and then click 「Quick Start」 to bind the button in the launcher",
+      "delete": "delete",
+      "onceAddedDescription": "Once you've added your app below, click the button to go back",
+      "quickStartApplication": "Quick Start Application",
+      "search": "Search",
+      "setUpQuickStart": "Set Up Quick Start",
+      "tooltipText1": "1. The quick start function refers to binding the application you want to start quickly on a certain button, click the button to start quickly.",
+      "tooltipText2": "2. Click the \\\"+\\\" sign below to select the quick start you want to start and click \\\"Open Quick Start\\\" to go back to the launcher to keybind and start."
+    },
+    "license": {
+      "agree": "Agree",
+      "disagreeAndWithdraw": "Disagree And Withdraw",
+      "userLicenseAgreement": "User License Agreement",
+      "welcomeDescription": "Please agree to the",
+      "welcomeDescriptionEnd": "so that we can better serve you",
+      "welcomeTitle": "Welcome To Use Assistant"
+    },
+    "open_title": "1.Quick start work You need to download Assist to use it",
+    "open_title2": "2. It is recommended to download and install the latest version of Assist due to the software update.",
+    "settings": {
+      "aikeyUpdate": "AIKey enhancements: customizable templates and quick trigger, improved command dispatch and response handling, delivering better stability and usability.",
+      "autostart": "Start Automatically at Boot",
+      "currentLatestVersion": "currentLatestVersion",
+      "endUserLicenseAgreement": "End User License Agreement",
+      "fixedKnownIssues": "Fixed known issues",
+      "interfaceOptimization": "Interface optimization",
+      "language": "language",
+      "mosUpdate": "MOS scrolling/acceleration optimization: reworked acceleration curve and sampling strategy for smoother, more consistent control at both low and high speeds, with reduced jitter and latency.",
+      "nkroDescription1": "Copyright © 2025 Keychron Assistant. The Keychron Assistant trademark is owned by Keychron or is registered with the relevant authorities. All other trademarks are the property of their respective owners.",
+      "nkroDescription2": "Disabling NKRO means the keyboard will correctly register up to 6 simultaneous key presses.",
+      "selectLanguage": "selectLanguage",
+      "title": "Settings",
+      "updateLog": "Update Log"
+    }
+  },
+  "axis": {
+    "Gateron_Jade_dragon_Switch": "Gateron Jade dragon",
+    "Gateron_Jade_Magnetic_Switch": "Gateron Jade Magnetic Switch",
+    "Keychron_Lime-fast_Magnetic_Switch": "Keychron Lime-fast Magnetic Switc",
+    "Lime-fast_Magnetic_Switch": "Keychron Quick Lemon Switch",
+    "set_error": "Some key failed to calibrate, please check the switch on the keyboard and the key’s setting !",
+    "set_successfully": "Switch configuration has been changed successfully.",
+    "Starry_Pupil_Magnetic_HE_Switch": "Starry Pupil Magnetic HE Switch",
+    "sure_content1": "Check whether the replaced magnetic switch on the keyboard is consistent with the selected magnetic switch option.",
+    "sure_content2": "Click the “Confirm” button below, you will enter the calibration page to calibrate these keys.",
+    "sure_title": "Are You Sure To Change Switch Type ?",
+    "switch_type_settings": "Switch Type Settings",
+    "tip": {
+      "1": "This feature allows you to set the whole keyboard’s magnetic switch type. After configuring it, the key border color will change according to the magnetic switch type you choose. The steps are as follows:",
+      "2": "Replace all the magnetic switches on the keyboard first (the whole keyboard can only support one magnetic switch type)and check whether the replaced switches appear in the list below.",
+      "3": "Choose the magnetic switch type option below and click the button \"Set all keys\" to complete configuration.",
+      "4": "Recalibrate all keys to avoid the impact of differences in magnetic switch types."
+    },
+    "tip_reset": "Clicking this reset button will clear all previously configureed quick launch items.",
+    "TTC_Horse_Switch": "TTC Horse Switch",
+    "TTC_KOM_Magnetic_Switch": "TTC KOM Magnetic Switch"
+  },
+  "common": {
+    "advance": "Advanced",
+    "basic": "Basic",
+    "beta_test_version": "Beta Test",
+    "cancel": "Close",
+    "cancel_btn": "Cancel",
+    "clear": "Clear",
+    "close": "Off",
+    "connected": "Connected",
+    "connect_btn": "Connect",
+    "connect_tip": "wants to connect to an HID device",
+    "create": "Create",
+    "delete": "Delete",
+    "deleteConfirm": "Confirm to reset this data?",
+    "disconnected": "Not Connected",
+    "download": "Download",
+    "empty": "Empty",
+    "error": "Error",
+    "export": "Export",
+    "general": "General",
+    "hide": "Hide",
+    "iknow": "Acknowledged",
+    "import": "Import",
+    "is": "Yes",
+    "keyboard": "Keyboard",
+    "key_back": "Revert",
+    "key_confirm": "Confirm",
+    "loading": "Loading...",
+    "matrix": "Test Matrix",
+    "max_string_length": "Text exceeds maximum length limit",
+    "min": "Minute",
+    "mouse": "Mouse",
+    "noResult": "No results",
+    "not": "No",
+    "notSubmit": "Unsubmitted data. Submit now?",
+    "on": "On",
+    "open": "Open",
+    "paired": "paired",
+    "plugged_in": "Plugged in",
+    "plug_and_ret": "Please plug in the device and try again.",
+    "plug_and_retry": "Please plug in the device and try again",
+    "recover": "Recover",
+    "reset": "Reset",
+    "resetLayout": "Reset Layout",
+    "reset_single": "Single Reset",
+    "resolution_not_support": "The keyboard map cannot be displayed because the browser window is too small.",
+    "results": "Results",
+    "save": "Save",
+    "search": "Search",
+    "select": "Select",
+    "selectall": "Select All",
+    "status": {
+      "update_success": "Updated Successfully"
+    },
+    "submit": "Confirm",
+    "timeSync": "Calibrate screen time",
+    "turnoff": "TURN OFF",
+    "turnon": "TURN ON",
+    "type": "Type",
+    "upload": "Confirm upload",
+    "view": "View",
+    "warring": "Warning",
+    "window_too_small": "The preview cannot be displayed because the window is too small"
+  },
+  "connecting": "Connecting",
+  "cross": {
+    "btn": {
+      "active": "Keyboard/ Mouse cross-screen",
+      "agree": "Agree",
+      "cancel": "Cancel",
+      "close": "Close",
+      "connect": "Connect",
+      "disconnect": "Disconnect",
+      "minimize": "Minimize",
+      "quick": {
+        "connect": "Quick Connect"
+      },
+      "reject": "Reject",
+      "reject_cancel": "Cancel",
+      "trust": "Trust Device",
+      "waiting": "Waiting..."
+    },
+    "disconnect_confirm": {
+      "content": "Disconnecting will stop file transfers. Started transfers will be saved to history, and waiting files will be discarded.",
+      "title": "File transfer in progress"
+    },
+    "file_transfer": {
+      "average_speed": "Avg. Speed",
+      "change": "Change",
+      "clear": "Clear",
+      "clear_failed_desc": "Unable to clear local transfer history",
+      "clear_failed_title": "Clear Failed",
+      "connected": "Connected",
+      "delete": "Delete",
+      "desc": "Any file type · Stable transfer to connected computers",
+      "direction": {
+        "receive": "Receive",
+        "send": "Send"
+      },
+      "dir_err_desc": "The selected receive folder can't be used",
+      "dir_err_title": "Folder Update Failed",
+      "dir_ok_desc": "New files will be saved to the selected folder",
+      "dir_ok_title": "Save Folder Updated",
+      "drop_unavailable_desc": "Please use the “Select” button to pick this file",
+      "drop_unavailable_title": "Can't Read File Path",
+      "elapsed_label": "Elapsed Time",
+      "enable": "Enable File Transfer",
+      "file_missing_desc": "Original file has been moved or deleted and cannot be resent.",
+      "file_missing_title": "Original file does not exist",
+      "history": "Transfer History",
+      "no_active": "No active transfers",
+      "no_history": "No transfer history",
+      "open": "Settings",
+      "open_err_desc": "Unable to open the receive folder",
+      "open_err_title": "Can't Open Folder",
+      "open_folder": "Open",
+      "peer_cancelled": "The other device canceled the transfer",
+      "quick_send": "Quick Send",
+      "quick_send_desc": "Select files and send directly to the connected PC",
+      "receive_failed_desc": "File incomplete or couldn't be saved locally",
+      "receive_failed_title": "File Receive Failed",
+      "receiving": "Receiving",
+      "receiving_path": "Local Save Path",
+      "resend": "Resend",
+      "select_button": "Select Files",
+      "select_desc": "Choose specific files to transfer",
+      "select_title": "Click to Select Files",
+      "sending": "Sending",
+      "send_failed_desc": "Unable to send the selected file",
+      "send_failed_title": "File Transfer Failed",
+      "send_to": "Send To",
+      "status": {
+        "cancelled": "Cancelled",
+        "failed": "Failed",
+        "received": "Received",
+        "receive_error": "Receive Error",
+        "sent": "Sent"
+      },
+      "title": "File Transfer",
+      "transfer_time": "Transfer Time",
+      "transmitting": "Transferring",
+      "unsupported_file": "The File format is not supported for transfer",
+      "waiting": "Waiting"
+    },
+    "notification": {
+      "conn_end_t": "Disconnected",
+      "conn_err_t": "Connection Failed",
+      "conn_lost_t": "Connection Lost",
+      "conn_reject_t": "Connection Request Declined",
+      "conn_req_err": "Failed to send connection request",
+      "hist_clear_err": "Failed to clear connection history",
+      "hist_clear_ok": "Connection history cleared",
+      "id_err_t": "Verification Failed",
+      "network_lost": "Network connection lost. Cross-screen session ended.",
+      "op_err_t": "Operation Failed",
+      "op_ok_t": "Success",
+      "pair_id_err": "Paired device verification failed",
+      "pair_ok": "Device paired successfully",
+      "pair_ok_t": "Paired",
+      "peer_end": "The other device ended the cross-screen session",
+      "peer_reject": "The other device declined the request",
+      "reconfirm_t": "Reconfirmation Required",
+      "sync_err_t": "Sync Failed",
+      "trust_id_changed": "Trusted device identity changed. Please reconfirm the connection request.",
+      "trust_id_err": "Trusted device verification failed",
+      "trust_rm_err": "Failed to remove trusted device",
+      "trust_sync_err": "Trust credentials not synced to the other device"
+    },
+    "page": {
+      "sub_desc": "Connect two PCs · Keyboard/Mouse across screens · Clipboard manual sync · Direct  file drag — natural as one PC",
+      "sub_title": "Feature Preview",
+      "title": "Cross - Screen"
+    },
+    "panel": {
+      "desc": "Up to 2 PCs connected (incl. local) · Device features available after pairing",
+      "found": "devices found",
+      "history": {
+        "active": "Outgoing",
+        "passive": "Incoming",
+        "subtitle": "Recently Connected",
+        "title": "Connection History"
+      },
+      "network": {
+        "ethernet": "Ethernet",
+        "other": "Other",
+        "wifi": "Wi-Fi"
+      },
+      "scan": {
+        "desc": "Scanning all PCs on the same Wi-Fi router",
+        "start": "Start scanning",
+        "stop": "Stop scanning",
+        "title": "Scanning local Network.."
+      },
+      "tag_1": "Trusted",
+      "title": "Connect PC"
+    },
+    "scan": {
+      "incoming_notice": "同意后，对方将可以与此电脑建立跨屏连接",
+      "incoming_subtitle": "Requests to connect to this computer",
+      "incoming_title": "Incoming Connection Request",
+      "network_changed_cancel": "Not Now",
+      "network_changed_confirm": "Rescan",
+      "network_changed_desc": "The network environment has changed. Rescan?",
+      "network_changed_title": "Network Changed",
+      "rejected": "The connection request was rejected by the other device",
+      "request_confirm": "Waiting For Peer Confirmation... Request Expires In",
+      "request_tip": "Request Connection To",
+      "trust": "Trust this device for future connections.",
+      "unavailable": "This other device is temporarily unavailable"
+    },
+    "settings": {
+      "automatic_connection": "Auto-Connect Device",
+      "automatic_connection_help": "Automatic connection: Select a device from this computer's trusted-device list. Both devices must configure each other to connect automatically after Assistant starts.",
+      "automatic_connection_hint": "(Both devices must be set up)",
+      "clear_automatic_device": "Clear Auto-Connect Device",
+      "close": "Close",
+      "confirm": "Confirm",
+      "disconnect_shortcut": "Disconnect Cross-Screen",
+      "disconnect_shortcut_help": "If cross-screen stops working, use this keyboard shortcut to disconnect. This shortcut can be changed, but it cannot be deleted.",
+      "enter_shortcut_key": "Enter Custom Key",
+      "no_trusted_devices": "No Trusted Devices",
+      "remove_confirmation": "Stop trusting {device}?",
+      "remove_device": "Remove Trusted Device",
+      "select_device": "Select Trusted Device",
+      "shortcut_hint": "（Supports letters, numbers, and F1–F12; press Backspace or Delete to clear）",
+      "shortcut_keys": "Shortcuts",
+      "system_lock_shortcut": "Lock Screen",
+      "title": "Trust & Auto-Connect",
+      "trusted_count": "Trusted Devices ({count})",
+      "trust_help": "Trust: A trusted device can connect next time without requiring approval on this computer."
+    },
+    "step": {
+      "collapse": "Collapse",
+      "connected": "Connected",
+      "desc": "Scan and pair another PC in Keychron Assistant · Once connected, cross-screen keyboard and mouse control, file transfer become available",
+      "desc_1": "Auto-discover PCs on the same local area network and send request",
+      "desc_2": "Other side clicks \"Allow\" to complete pairing",
+      "desc_3": "All cross-screen features available",
+      "expand": "Expand",
+      "local": "Local",
+      "title": "Connection Flow",
+      "title_1": "Scan & Request",
+      "title_2": "Other Side Confirms",
+      "title_3": "Connectioned",
+      "trust": "Connected · Trusted",
+      "wait_1": "Waiting For",
+      "wait_2": "To Click “Allow”",
+      "wait_3": "Pairing With Another PC"
+    },
+    "tabs": {
+      "file_transfer": "File Transfer",
+      "settings": "Settings"
+    },
+    "time": {
+      "ago": "ago",
+      "days": "days",
+      "hours": "hours",
+      "just_now": "just now",
+      "last": "Last",
+      "last_connection": "Last connection",
+      "minutes": "minutes",
+      "months": "months",
+      "seconds": "s"
+    },
+    "view": {
+      "bottom": "Bottom",
+      "desc": "When mouse cursor crosses the specified screen edge, your Keyboard and Mouse will operate the connected device.",
+      "left": "Left",
+      "off": "Off",
+      "right": "Right",
+      "title": "Set Screen-Crossing Edge",
+      "top": "Top"
+    },
+    "web": {
+      "auto_connect_target": "Auto-Connect Target",
+      "center_cursor": "Center Cursor",
+      "clipboard": "Clipboard",
+      "clipboard_desc": "Manually sync copied content between PCs",
+      "connect_assistant": "Open Assistant",
+      "connect_hint": "The connection function needs to be done within Assistant.",
+      "custom_screenshot": "Custom Screenshot",
+      "direction": "Direction",
+      "drop_box_key": "Drop Box Shortcut",
+      "exit_application": "Disconnect",
+      "file_transfer": "File Transfer",
+      "file_transfer_desc": "Select files or press the shortcut to open the drop box",
+      "hold_ctrl": "Hold Ctrl to cross screens",
+      "in_progress": "tasks",
+      "items": "items",
+      "keyboard_mouse": "Keyboard / Mouse Sharing",
+      "keyboard_mouse_desc": "Switch control when the cursor crosses the screen edge",
+      "loading": "Getting cross-screen status from Assistant…",
+      "lock_pc": "Lock PC",
+      "max": "Max",
+      "not_set": "No",
+      "off": "Off",
+      "on": "On",
+      "ongoing": "In Progress",
+      "read_only": "View only · Change settings in Keychron Assistant",
+      "recent_items": "Recent Items",
+      "save_dir": "Save Folder",
+      "settings": "Settings",
+      "settings_desc": "Trusted devices · Auto-connect · Shortcuts",
+      "shortcut_mapping": "Shortcut Mapping",
+      "switch_pc": "Switch PC",
+      "sync_mode": "Sync Mode",
+      "target_device": "Target Device",
+      "title": "Cross-Screen Status",
+      "trusted_devices": "Trusted Devices",
+      "trust_auto_connect": "Trust & Auto-Connect"
+    }
+  },
+  "debounce": {
+    "backlight": "The backlight sleep time cannot be less than 5 seconds.",
+    "mode": "Debounce Mode",
+    "press": "Press Down seconds",
+    "release": "Reset seconds",
+    "response": "Response Time",
+    "scan": "Scan Rate",
+    "setting": "Keyboard Bounce Time Settings",
+    "sleep_limit": "The sleep time cannot be less than 1 minute.",
+    "tip": "The starting time of the auto backlight off must be less than the starting time of auto sleep mode.",
+    "warning": {
+      "content": "(Note: Setting below 10ms may risk double-clicks. Please set with caution.)",
+      "title": "Are you sure you want to set it?"
+    }
+  },
+  "demo": {
+    "device_keyboard": "Keyboard demo",
+    "device_mouse": "Mouse demo",
+    "exit": "Exit Demo Mode",
+    "keyboard": "Try Without a Keyboard ",
+    "mode": "Demo Mode",
+    "mouse": "Try Without a Mouse",
+    "tip": "Please note: This is currently in demo mode and serves only as a demonstration with no actual functionality",
+    "title": "Demo"
+  },
+  "device": {
+    "version": "Device Version"
+  },
+  "device_add": "Connect",
+  "device_select": {
+    "notify": "Please choose a device from the list to continue.",
+    "select": "Continue",
+    "un_select": "No device selected"
+  },
+  "exp_tools": {
+    "title": {
+      "type_test": "Type Test"
+    }
+  },
+  "firmware": {
+    "button": {
+      "1": "Connect",
+      "2": "Next",
+      "3": "Previous",
+      "6": "Next To Update",
+      "enterBootloaderMode": "Enter upgrade mode",
+      "flash": "Flash Firmware",
+      "matchDevice": "Match Device",
+      "retry": "Retry",
+      "startUpgrading": "Start Upgrading"
+    },
+    "description": "Description",
+    "downloadFailed": "The firmware file download failed",
+    "error": {
+      "diff_model": "The firmware models of the devices are inconsistent",
+      "get_dfu_version": "Failed to obtain device firmware update version"
+    },
+    "flashError": "Firmware upgrade failed",
+    "flashSuccess": "Firmware updated successfully",
+    "info": {
+      "currentVersion": "Current version",
+      "latestVersion": "Latest Version",
+      "updateSize": "Firmware size",
+      "updateTime": "Last Update"
+    },
+    "mouse": {
+      "step1_hid_device": "Press the K, E, Y keys on the keyboard in order, and continue to the next step once the HID device connection prompt appears."
+    },
+    "notFound": "The latest firmware of the device was not found",
+    "productNotExist": "Device information not obtained",
+    "requestFail": "Failed to obtain the device; check if it's in use by other programs.",
+    "syncQuickStart": "Sync Quick Start",
+    "tip": {
+      "confirm": "Please confirm",
+      "currentSelect": "Currently selected"
+    },
+    "tips": {
+      "0": "No firmware update is available for this device.",
+      "4": "Please follow the steps below if you use a Windows device and have not installed QMK Toolbox Driver. If you have already installed QMK Toolbox Driver, click Next.",
+      "5": "Click the 'Download Toolbox' button below to download and unzip Toolbox.",
+      "6": "After unzipping Toolbox, right-click the Toolbox icon, or search for “driver” in the system search bar, then select “Run as administrator” to open it.",
+      "7": "Open it and click on the menu 'Tool'.",
+      "8": "Click 'Install Drivers', continue to click 'yes' to start installing firmware Drivers, and wait for the installation.",
+      "9": "After the installation is complete, you can click Next to start the process of flashing the firmware.",
+      "10": "Note: You can click",
+      "11": "Follow the steps below.",
+      "12": "In the current state, unplug the keyboard USB cable and let the keyboard disconnect.",
+      "13": "While the keyboard is disconnected, press and hold the ESC or \"○\" of the keyboard and simultaneously connect the keyboard to the computer with the USB cable.Let the keyboard enter the state of preparing to update the firmware.",
+      "15": "After successful matching, the 'Flash Firmware' button will appear, click it to start updating the firmware.",
+      "16": "Do not disconnect the device during the firmware update.",
+      "18": "Download Toolbox",
+      "19": "Install Toolbox Driver instructional video",
+      "20": "to understand the detailed process of installing Toolbox Driver.",
+      "22": "Click the \"Connect\" button to connect the current device, and the system will automatically find the latest firmware version of the device",
+      "23": "Press and hold the keyboard Fn and - key for at least 5 seconds to get the keyboard ready to update firmware until the blue indicator lights up.",
+      "24": "After the match is successful, the “Flash Firmware” button will appear, click to start updating the firmware.",
+      "25": "Click the Match Device button below, select the device that starts with ({{ mode }}), and match it.",
+      "26": "Please upgrade the Bluetooth module in USB mode.",
+      "27": "Click the button below to get the latest firmware version.",
+      "28": "While the keyboard is disconnected, press and hold the key in the upper left corner of the keyboard and simultaneously connect the keyboard to the computer with the USB cable.Let the keyboard enter the state of preparing to update the firmware.",
+      "bl-exceeded": "超出重试次数，请重新连接数据线",
+      "clickMatchBtn": "Click the 'Matching Device' button below and select the device starting with {{dfuName}} and match it",
+      "currentDongle": "(Please use a wired connection to upgrade your keyboard/mouse. This page is currently showing the receiver.)",
+      "link_wired_content": "The mouse enters sleep mode during the wireless firmware update, rendering it inoperable",
+      "link_wired_title": "Please connect via a wired connection before upgrading",
+      "longPress": "First press ESC, then press the Tab key simultaneously for 3 seconds.",
+      "matchErr": "Currently unpaired. Please manually select the device to be upgraded.",
+      "mouseTip2": "2. If the link is already linked and the match is already available. Click on the Brush firmware to start the brush.",
+      "mouseTip4": "Click the “Connect” button below, select the “Bootloader device”, and connect it.",
+      "mouseTip6": "(Do not disconnect the receiver from the computer while flashing firmware.)",
+      "mouseTip7": "Wait for the update to complete - a success message will appear.",
+      "patch": {
+        "1": "This update is a security patch. Please follow the steps below to update first.",
+        "2": "In the current state, unplug the keyboard’s USB cable to disconnect it.",
+        "3": "While the keyboard is disconnected, remove the keycap of the Space key and locate the small metal button next to the switch.",
+        "4": "Hold down the button and reconnect the keyboard to the computer using the USB cable.",
+        "5": "Click the Match Device button below, then select the device labeled (DFU) and pair it.",
+        "6": "After a successful pairing, a Flash Firmware button will appear. Click it to begin updating the security patch."
+      },
+      "toFlash": "After a successful match, a \"Flash Firmware\" button will appear. Click it to start updating the firmware"
+    },
+    "update": {
+      "dfu_check": "请检查选择的DFU设备是否正确"
+    },
+    "update_available": "There is an upgradeable firmware version",
+    "update_latest": "This is the latest firmware version",
+    "update_success": "Update successfully, click the \"Connect\" button to connect the current device.",
+    "warning": "Please Do Not Remove The Device Or Refresh The Page To Prevent Any Potential Damage To The Device.",
+    "write": "During Firmware Writing"
+  },
+  "help": {
+    "tab": {
+      "device_manual": "Device Manual",
+      "tutorial": "Tutorial",
+      "user_feedback": "Feedback"
+    },
+    "tutorial": {
+      "advance_mode": {
+        "set_auto_sleep_mode": "How to Set Auto Sleep Mode and Backlight Off Starting Time on Launcher?",
+        "set_keyboard_bounce_time": "How to Set Keyboard Bounce Time on Launcher?"
+      },
+      "backlight": {
+        "set_backlight_keys": "How To Set Backlight Keys on Launcher?",
+        "set_mix_rgb": "How to Set Mix RGB on Launcher?",
+        "set_per_key_rgb": "How to Set Per-key RGB on Launcher?"
+      },
+      "bridge_firmware_update": "How to Flash the Firmware for the Keychron Receiver",
+      "create_mouse_macro": "How to Create a Mouse Macro on Launcher",
+      "firmware_update": {
+        "restore_factory_settings_and_update": "How to Restore Factory Settings and Update Firmware on Launcher?"
+      },
+      "he_mode": {
+        "manage_he_profile": "How to Manage Your HE Profile on Launcher?",
+        "set_gamepad_analog_and_curves": "How to Set Gamepad Analog and Gamepad Curves on Launcher?",
+        "set_long_press_switch": "How to Set Long-Press Switch on Launcher?",
+        "set_one_key_multiple_commands": "How to Assign Multiple Commands to One Key?",
+        "set_snap_click": "How to Set Snap Click on Launcher?",
+        "use_he_mode": "How to use HE mode on Keychron Launcher?"
+      },
+      "keymap": {
+        "fn_keys_function": "How do Fn Key combinations work on Keychron keyboards?",
+        "remap_key": "How to Remap a Key on Launcher?",
+        "set_keymap_language": "How to Set Keymap Language on Launcher?",
+        "use_different_function_layers": "Switching and Toggling Layers: Efficient Keyboard Customization?"
+      },
+      "key_test": {
+        "custom_sounds": "How to customize the sound of your keyboard?",
+        "perform_keyboard_key_testing": "How to Perform Keyboard Key Testing on Launcher?"
+      },
+      "macro": {
+        "create_macro": "How to Create a Macro on Launcher?"
+      },
+      "make_mouse_factory_reset_setting": "How to Make Mouse Factory Reset Setting on Launcher",
+      "mouse_angle_adjustment": "How to Use the Angle Adjustment on Launcher",
+      "mouse_firmware_update": "Mouse Firmware Update Tutorial",
+      "mouse_receiver_firmware_update": "How to Flash the Firmware for the Keychron Receiver",
+      "quick_start": {
+        "download_and_install_assistant": "How to Download and Install Keychron Assist?",
+        "set_quick_start": "How to use Quick Start on the launcher?"
+      },
+      "set_mouse_customize_buttons": "How to Set Mouse Customize Buttons on Launcher",
+      "set_mouse_debounce_time": "How to Set Mouse Debounce Time on Launcher",
+      "set_mouse_dpi_and_polling_rate": "How to Set Mouse DPI and Polling Rate on Launcher",
+      "set_mouse_system_features_setting": "How to Set Mouse System Features Setting on Launcher"
+    },
+    "user_manual": "User Manual"
+  },
+  "issue": {
+    "content": "Content",
+    "device": "Device",
+    "email": "Email",
+    "tips": {
+      "content": "Content is Required",
+      "device": "Device Is Required",
+      "email": "Invalid Email Address",
+      "input": "Please input a content",
+      "send": "Report Sent",
+      "title": "Title Is Required"
+    },
+    "type": {
+      "1": "Button malfunction/no response",
+      "2": "Connection issues",
+      "3": "Hardware failure",
+      "4": "Layout/dimension is inappropriate",
+      "5": "Driving Problem",
+      "6": "Other",
+      "7": "Please select the type of question"
+    }
+  },
+  "keycap": {
+    "character": "Letter Keys",
+    "fnc": "Function Keys",
+    "general": "General",
+    "linux": "Linux",
+    "mac": "Mac",
+    "number": "Number Keys",
+    "symbol": "Symbol Keys",
+    "win": "Windows"
+  },
+  "keycode": {
+    "modtap": {
+      "1": " Hold = the upper key (modifier)  ·  Tap = the lower key "
+    }
+  },
+  "keymap": {
+    "action_menu": {
+      "combo": "Key Combo",
+      "combo_description": "Custom Key Shortcut",
+      "launch_app": "Launch App",
+      "launch_app_description": "One-Click App Launch",
+      "launch_web": "Launch Web",
+      "launch_web_description": "One-Click Web Launch",
+      "macro": "Macro",
+      "macro_description": "A series of actions",
+      "remap": "Remap",
+      "remap_description": "Assign Another Key",
+      "title": "Remap the {{key}}"
+    },
+    "codeInput": "Enter a Keystroke",
+    "knob_not_support": "Current firmware does not support knob customization, please update the firmware.",
+    "layer": {
+      "1": "1. Press and hold to temporarily activate the target layer; the original value is restored once the key is released.",
+      "2": "2. It only takes effect when applied from a lower layer to a higher layer; applying it from a higher layer to a lower layer will not work.",
+      "3": "1. Click to turn off/activate the target layer; after turning off the target layer, the highest active layer will be selected.",
+      "4": "2. The default layer cannot be turned off; if all layers are turned off, the default layer is used.",
+      "5": "Long-press function is the same as MO; 5-click function is the same as TG",
+      "6": "1. Click/long-press to activate a layer; activation is only possible from a lower level to a higher level.",
+      "7": "Snap Tap only supports magnetic switch keys",
+      "8": "Click to activate the target layer in a one-way manner, without distinguishing between upper and lower layers.",
+      "9": "Clicking a single item temporarily activates the target's default layer, without distinguishing between upper and lower layers.",
+      "10": "1. After the keyboard loses power, it reverts to the default layer corresponding to the system switch setting (e.g., Windows corresponds to Layer 2, and macOS corresponds to Layer 0).",
+      "11": "2. Some keyboard models lack a physical system switch; they typically revert to a fixed default layer, such as Layer 0.",
+      "error_info": "Your keyboard system setting does not match your computer system; modifier key functions may change.",
+      "tip": "tip："
+    },
+    "modal": {
+      "combo": {
+        "description": "Select one or more modifier keys and a primary key, then trigger with one key.",
+        "modifier_keys": "Modifier keys",
+        "press_primary_key": "Press the primary key",
+        "primary_key": "Primary key",
+        "title": "Key Combo"
+      },
+      "launch_app": {
+        "app": "App",
+        "description": "Press this button to open the assigned app.",
+        "no_available_apps": "No available apps",
+        "search_apps": "Search Apps",
+        "title": "Launch APP"
+      },
+      "launch_web": {
+        "description": "Press this button to open the assigned web page.",
+        "title": "Launch Web",
+        "web_page_url": "Web page URL"
+      },
+      "macro": {
+        "description": "Record a macro directly in the input box: the keys you press will be recorded as a sequence of actions.",
+        "macro_keys": "Macro keys",
+        "press_key": "Press the key to record",
+        "title": "Record Macro"
+      },
+      "remap": {
+        "description": "What should “{{key}}” become?",
+        "press_key": "Press the key to assign",
+        "primary_keys": "Primary keys",
+        "title": "Remap Keys"
+      }
+    },
+    "reset": {
+      "all": "Confirm to reset all settings ?",
+      "single": "Confirm to reset this key's settings ?",
+      "title": "Are You Sure To Reset ?"
+    },
+    "tabs": {
+      "assist": "Quick Start",
+      "basic": "Basic",
+      "custom": "Custom",
+      "layers": "Layer",
+      "macro": "Macro",
+      "media": "Media",
+      "modtap": "Hold / Tap",
+      "mouse": "Mouse",
+      "qmk_lighting": "Lighting",
+      "special": "Special Keys",
+      "wt_lighting": "Lighting"
+    }
+  },
+  "layer": {
+    "tip": {
+      "custom_layer": "Custom",
+      "default_layer": "Default layer",
+      "display": "Select display layer",
+      "functional": "Actual functional layer",
+      "funtional": "当前",
+      "warn": "If the buttons fail to function, please switch the system switch and power on again."
+    }
+  },
+  "layout": {
+    "confirmSwitchTo": ".Would you like to switch to...",
+    "connect": {
+      "1": "Connect your device using a cable or 2.4G receiver. \n(some models only support wired mode)",
+      "2": "Click the \"Connect\" button in the top left corner and select the device you want to set up."
+    },
+    "detectedKeyboardLanguage": "We detected that your keyboard language is...",
+    "guide_tip": "Follow the guide below to connect your device",
+    "keepCurrentSetting": "Keep current settings",
+    "lang": "Layout Language",
+    "resetSuccessContent": "Your keyboard layout has been reset successfully",
+    "resetSuccessTitle": "Reset successfully",
+    "select_device": "Please select the device you want to connect",
+    "switchImmediately": "Switch now"
+  },
+  "light": {
+    "ai": {
+      "generate": "Generate",
+      "generating": "generating",
+      "han_not_allowed": "Please enter valid characters.",
+      "placeholder": "Enter a letter / number / symbol",
+      "tip": "Enter a character and click Generate. The glyph will be centered in the main key area according to the current keyboard layout."
+    },
+    "brightness": "Brightness",
+    "color": "Color",
+    "common": {
+      "setting_color": "Setting Color"
+    },
+    "commonColor": "Common Colors",
+    "customColor": "Define Colors",
+    "decorate_light": {
+      "0": "None",
+      "1": "Solid",
+      "2": "Breathing",
+      "3": "Cycle Hue",
+      "4": "Horse Race"
+    },
+    "effect": "Effect",
+    "effect speed": "Speed",
+    "hue": "Chromaticity",
+    "layer2": "RGB Zone",
+    "led": {
+      "sub": {
+        "title": "Tip: Please select the LED strip below when setting its color."
+      },
+      "title": "Light bar"
+    },
+    "level": "Level",
+    "mix": {
+      "config": "Lighting Effect Settings",
+      "hxxg": {
+        "hue": "Hue",
+        "saturability": "Saturation",
+        "speed": "Speed"
+      },
+      "rk": "This feature allows you to set up 2 different key zones on the same keyboard for different RGB light effects. For each zone, you can set different time periods in a loop, and each time period can be set with different RGB light effects.",
+      "timeLine": {
+        "second_tips": "The input for seconds is too large or too small.",
+        "title": "Timeline"
+      },
+      "verify_duration": {
+        "tip1": "The input value should be a number and should be greater than 1 and less than 99!",
+        "tip2": "Only two decimals can be entered",
+        "tip3": "The entered value is too large",
+        "tip4": "The entered value is too small"
+      }
+    },
+    "notSupport": "Device doesn't support light settings",
+    "perkey": {
+      "effect": "Effect Selection",
+      "effects": {
+        "0": "General",
+        "1": "Breathing",
+        "2": "Single Key Response",
+        "3": "Neighboring key response",
+        "4": "Whole Keyboard"
+      },
+      "redo": "redo",
+      "region": "Area Selection",
+      "region_select": "Select Area",
+      "region_tip": "Select the area in the keyboard keys and set the color. Click Save to change the color of the corresponding area.",
+      "rk": "The color of each key can be set individually. You can change the color of the key by selecting it, clicking on the area where the color is set, changing the color, and saving it.",
+      "save_warn": "Too many rgb zones, please delete some rgb zones and try again.",
+      "select_tip": "The selected button does not create a region",
+      "select_warn": "Please select button",
+      "undo": "undo"
+    },
+    "saturation": "Saturation",
+    "settingAllBrightnessArea": "Setting All Zone's Brightness",
+    "tabs": {
+      "ai_light": "AI Light Effects",
+      "decorate_light": "Decorate Light",
+      "indication": "Indicator Light",
+      "led_light": "Light strip control",
+      "mix_rgb": "Mix RGB",
+      "perkey_rgb": "Per-key RGB",
+      "screen": "Srceen adjustment",
+      "selection": "Backlight"
+    },
+    "underglow brightness": "Brightness"
+  },
+  "lights": {
+    "0. None": "None",
+    "1. Solid Color": "Solid Color",
+    "10. Cycle Pinwheel": "Cycle Pinwheel",
+    "11. Cycle Spiral": "Cycle Spiral",
+    "12. Dual Beacon": "Dual Beacon",
+    "13. Rainbow Beacon": "Rainbow Beacon",
+    "14. Jellybean Raindrops": "Jellybean Raindrops",
+    "15. Pixel Rain": "Pixel Rain",
+    "16. Typing Heatmap": "Typing Heatmap",
+    "17. Digital Rain": "Digital Rain",
+    "18. Reactive Simple": "Reactive Simple",
+    "19. Reactive Multiwide": "Reactive Multiwide",
+    "2. Breathing": "Breathing",
+    "20. Reactive Multinexus": "Reactive Multinexus",
+    "21. Splash": "Splash",
+    "22. Solid Splash": "Solid Splash",
+    "23. Per Key Rgb": "Per Key RGB",
+    "3. Band Spiral Val": "Band Spiral Val",
+    "4. Cycle All": "Cycle All",
+    "5. Cycle Left Right": "Cycle Left Right",
+    "6. Cycle Up Down": "Cycle Up Down",
+    "7. Rainbow Moving Chevron": "Rainbow Moving Chevron",
+    "8. Cycle Out In": "Cycle Out In",
+    "9. Cycle Out In Dual": "Cycle Out In Dual"
+  },
+  "macro": {
+    "allchar": "All Characters",
+    "closeDelay": "Disable Delay",
+    "code": "Code Input",
+    "common": {
+      "flash": "Flash",
+      "title": "To assign a macro, select it, then click a button on the mouse above."
+    },
+    "config": "Configuration",
+    "delay": "Delays",
+    "delaySet": "Time Delay",
+    "dynamicDelay": "Dynamic Delay",
+    "endREC": "Stop Recording",
+    "enterDown": "Insert down",
+    "enterUp": "Insert up",
+    "fixedDelay": "Fixed Delay",
+    "inputdelay": "Enter Delay Time",
+    "inputtexct": "Enter Text",
+    "insertDelay": "Insert Delay",
+    "keydown": "Press Down",
+    "keyup": "Release",
+    "loopCount": "Loop Count",
+    "loopCurrentDown": "Stop on Press",
+    "loopDown": "Stop on Any Key",
+    "loopOne": "Loop One",
+    "loopSet": "Loop Settings",
+    "loopUp": "Stop on Release",
+    "macroReccord": "Record",
+    "macroSetup": "Macro",
+    "mouse": "Mouse",
+    "notEqual": "Detect Flowing Key Is Not Release, Continues?",
+    "record": "Record",
+    "rename": "Rename",
+    "save": "Save",
+    "setRepeatCount": "Repeat Count",
+    "specialText": "Textual Specificity",
+    "startREC": "Start Recording",
+    "stop": "Stop",
+    "text": "Text",
+    "texttype": "Only English, numbers and basic symbols can be entered.",
+    "tip": {
+      "clickCopy": "Click to copy the text",
+      "fixDelay": "Here, the fixed delay indicates that it is embedded in each event, and the event contains the delayed event.",
+      "keyDelay": "Delay: {200},Unit:MS",
+      "keyDown": "Reset: {-KC_A}",
+      "keyText": "Text: ABCDEF",
+      "keyUp": "Press Down: {+KC_A}",
+      "macro_text": "Enter the macro you want to execute.."
+    }
+  },
+  "magnet": {
+    "axis_type": {
+      "magnetic": "Magnetic",
+      "mechanical": "Mechanical",
+      "tip": "tip",
+      "title": "Switch Statistics"
+    },
+    "calibration": {
+      "1": "Do not unplug the USB cable, disconnect the device, or turn off the device during calibration. Otherwise, the device may crash.",
+      "2": "Start Calibration",
+      "3": "Avoid pressing any keys before clicking \"Start Calibration\" to minimize errors.",
+      "4": "Press and hold the key for 1 second to complete calibration.",
+      "5": "When calibration is successful, the backlight will turn green.",
+      "6": "Certain controls, such as the five-way knob, do not require calibration."
+    },
+    "curve": {
+      "mock": "Anolog Curve Profile",
+      "save": "Save Curvature",
+      "title": "Rocker Curve Settings"
+    },
+    "directive": {
+      "bottomBack": "BounceBack",
+      "bottomIn": "Bottom In",
+      "bottomOut": "Bottom Out",
+      "trigger": "Starting Trigger"
+    },
+    "distance": {
+      "advance_mode": "Advanced",
+      "basic_mode": "Basic",
+      "current": "Current Keys",
+      "globalDis": "Select All",
+      "globalRt": "Set All Key Triggers",
+      "limitTip": "The value has exceeded the limit. Please fill in again.",
+      "magnet_calibrate": "Trigger Demo",
+      "magnet_calibrate_point": "Trigger Point",
+      "magnet_calibrate_tip": "Trigger Demo supports only a single key",
+      "magnet_calibrate_tip_desc": "Select a key and turn on the switch button upper right to demonstrate the trigger of the selected key.",
+      "magnet_calibrate_tip_empty": "Please select a key",
+      "profile_help": "press \"fn\" + \"p\" + \"z / x / c\", you can quickly switch the profile to profile 1 / 2 / 3",
+      "result": "Input Key Values",
+      "sensitive": "Sensitivity",
+      "setting": "Set Actuation Distance",
+      "show_mode_dis": "Actuation Distance",
+      "show_mode_hide": "No Data",
+      "show_mode_rt": "Rapid Trigger",
+      "speed_trigger": "Rapid Trigger",
+      "trigger_distance": "(Press) Trigger Distance",
+      "trigger_distance_reset": "(Release) Reset Distance",
+      "trigger_distance_twice": "(Press) Trigger Distance"
+    },
+    "dkr": {
+      "desc": "Max trigger count:(6-100)",
+      "title": "PDO"
+    },
+    "joystick": {
+      "clear": "Clear Mapping",
+      "left_emu": "Emulate Left",
+      "reflect": {
+        "conflict": "This key has been set"
+      },
+      "titles": {
+        "1": "Joystick Button Selection",
+        "2": "Joystick Button Setting",
+        "4": "Enable or disable keyboard keys",
+        "5": "Enable if you can type while the joystick is being simulated, disable if you cannot type while the joystick is being simulated.",
+        "6": "Joystick Effect Demo",
+        "7": "Controller Recognition Feature",
+        "8": "1.Once disabled, the keyboard will no longer be recognized as a controller.",
+        "9": "2.After performing any operations related to this feature, you must unplug and replug the cable for the changes to take effect.",
+        "10": "Standard Controller",
+        "11": "Xbox Controller",
+        "12": "Controller mode selection",
+        "13": "After switching to controller mode, you must unplug and replug the cable for the change to take effect.",
+        "xbox": "1.The changes will take effect only after the cable is unplugged and plugged in again when the Xbox is turned on or off.</br>2.The Xbox is not compatible with the macOS system."
+      }
+    },
+    "mode": {
+      "default": "Default",
+      "gamepad": "Gamepad",
+      "gaming": "Gaming"
+    },
+    "multi_cmd": {
+      "b": "Bottom In",
+      "fulfilled": "Space full. Delete existing command to set a new one.",
+      "list": "Bound Commands",
+      "setting": "One Key Multiple Commands",
+      "test": "Test Keys"
+    },
+    "notify": {
+      "only_magnetic_support_snap_tap": "Rappy Snappy only supports magnetic switch keys",
+      "only_support_magnetic": "Mechanical switch keys are selected. This menu only supports magnetic switch keys."
+    },
+    "profile": "Profile",
+    "rename": "Rename",
+    "simulate": "Simulate",
+    "snap_tap": {
+      "absolute_priority": "Absolute Priority",
+      "AP": "Assign a higher trigger priority to one of the two keys when pressed simultaneously.</br>*Click the key’s center icon to switch priority.",
+      "cancel_mode": "Neutral",
+      "CM": "You can set two buttons. When the two buttons are pressed simultaneously, neither of the two buttons will trigger.",
+      "create": "create",
+      "key_exist": "The config key is exist",
+      "last_key_priority": "Last Key Priority",
+      "LKP": "Two keys can be set up so that when both keys are pressed at the same time, the last triggered key triggers at the same time as the other key resets.",
+      "SC": "You can set up two keys so that when both keys are pressed at the same time, you can have the one pressed deeper trigger and the other reset.",
+      "snap_click": "Rappy Snappy"
+    },
+    "sure_switch_gamepad": "Are you sure you want to switch?",
+    "sure_switch_gamepad_desc": "After switching to the game controller mode, some buttons will no longer function.",
+    "tab": {
+      "calibration": "Calibration",
+      "curve": "Curve",
+      "distance": "Actuation Distance",
+      "exit_calibration": "Exit Calibration",
+      "joystick_reflect": "Gamepad Analog",
+      "multi_cmd": "One Key Multiple Commands",
+      "snap_tap": "SOCD",
+      "toggle": "Long-Press Switch",
+      "toggle_tip": "This feature allows you to trigger a key in quick succession with one press.",
+      "turbo": "Turbocharged",
+      "turbo_tip": "Produces a continuous clicking effect when pressing a button"
+    },
+    "toggle": {
+      "drk_guide_tip": "This feature allows you to press a key deeper, the more times it triggers.",
+      "keySpeed": {
+        "times": "Max Trigger Count",
+        "title": "Key Press Speed",
+        "unit": "times"
+      },
+      "selected": "Selected Keys",
+      "set": "Keys Set",
+      "title": "Open"
+    }
+  },
+  "menu": {
+    "addconnect": "Add device",
+    "assist": "Quick Start",
+    "bluetooth_firmware": "Wireless Firmware",
+    "disconnect": "Disconnect",
+    "expTools": "Expansion Tools",
+    "fr_firmware": "Receiver Update",
+    "help": "Help Center",
+    "issue": "Feedback",
+    "keyboard_advance": "Advanced Mode",
+    "keyboard_firmware": "Firmware Update",
+    "keyboard_he": "HE Mode",
+    "keyboard_light": "Backlight",
+    "keyboard_macro": "Macro",
+    "keyboard_map": "Keymap",
+    "keyboard_test": "Key Test",
+    "keyset": "Snap Action",
+    "scroll": "Enhanced Scrolling",
+    "setting": "Settings",
+    "switchSetting": "Switch Settings"
+  },
+  "mouse": {
+    "common": {
+      "disableKey": "Are you sure you want to disable this button?",
+      "resetAll": "This operation will delete all saved data. Continue?",
+      "resetBtn": "Restore to default settings?"
+    },
+    "dpi": {
+      "cable": "Wired",
+      "customDPITips": "Custom DPI values can be set and assigned to specific keys; holding down the key will trigger the corresponding setting.",
+      "dpiTip": "DPI (dots per inch) sets cursor sensitivity — a higher value moves the cursor farther for the same hand movement.",
+      "gear": "Levels",
+      "previousSetting": "If there is no action for {{time}} seconds, it will auto-confirm. Click \"Revert\" to return to the previous settings.",
+      "properties": "System Mouse Settings",
+      "properties_open": "Open System Mouse Settings",
+      "properties_tip": "Nothing opened? Please try again after downloading Assistant.",
+      "reportRate": "Polling Rate",
+      "reportRateDesc": "Supports up to 8000Hz",
+      "reportTip": "Adjust how often the device sends reports back to the computer.",
+      "title": "DPI Settings",
+      "wireless": "2.4GHz",
+      "xyTip": "X‑axis DPI controls the cursor sensitivity in the horizontal direction, while Y‑axis DPI controls the sensitivity in the vertical direction. Higher values make the cursor more responsive in the corresponding direction.",
+      "xy_split_label": "X/Y Split"
+    },
+    "he": {
+      "deep": "Deep",
+      "distinguish_key": "Independent left/right buttons",
+      "gear": "gear",
+      "left_btn": "Left button",
+      "light_blocked": "Optical path blocked",
+      "light_desc": "At rest, the light beam is blocked, so no click registers. Press the button to clear the path — light reaches the sensor and fires the click, with no metal contacts to wear out or double-click over time.",
+      "light_led": "LED",
+      "light_mode": "Optical Switch",
+      "light_pd": "Image Sensor",
+      "light_triggered": "Triggered",
+      "magnet_desc": "Choose how far to press before a click registers. Shallower = faster, deeper = fewer mis-clicks.",
+      "magnet_mode": "Magnetic Switch",
+      "motor_trigger": "Haptic Feedback Settings",
+      "right_btn": "Right button",
+      "shared_btn": "Mouse Buttons",
+      "title": "Mouse Button Trigger Settings",
+      "travel_tip": "Prone to accidental activation",
+      "trigger_point": "Actuation Settings"
+    },
+    "key": {
+      "backward": "Back",
+      "brightnessDown": "Brightness Down",
+      "brightnessUp": "Brightness Up",
+      "calculate": "Calculator",
+      "colorSwitch": "Lamp color switching",
+      "copy": "Copy",
+      "customDpi": "Custom DPI",
+      "cut": "Cut",
+      "dock": "Dock On/Off",
+      "downScroll": "Scroll Down",
+      "dpiLoop": "Cycle DPI",
+      "email": "Mail",
+      "forward": "Forward",
+      "he": "Optical / Magnetic micro motion",
+      "home": "Show Desktop",
+      "homePage": "Open Homepage",
+      "launchPad": "Launchpad",
+      "left": "Left Click",
+      "leftClick": "Left Click",
+      "leftDouble": "Double Left-Click",
+      "leftLock": "Left-click lock",
+      "leftScroll": "Scroll Left",
+      "leftScrollSustain": "Continuous Scroll Left",
+      "leftTilt": "Tilt Left",
+      "left_lock": "Left Click Lock",
+      "lickDoubleClick": "Double Left-Click",
+      "light": "Lamp Effect",
+      "lightModeSwitch": "Cycle Colorful Breathing",
+      "loop": "Loop",
+      "loopColorfulBreathing": "Cycle Colorful Breathing",
+      "loopDpi": "Cycle DPI",
+      "loopOpticalMagnetic": "Cycle Optical Magnetic",
+      "loopPollingRate": "Cycle Polling Rate",
+      "middle": "Middle Click",
+      "middleClick": "Middle Click",
+      "modeToggleAll": "Cycle Optical Magnetic",
+      "mute": "Mute",
+      "myComputer": "My Computer",
+      "next": "Next",
+      "nextDpi": "Next DPI",
+      "nextPollingRate": "Next Polling Rate",
+      "pageDown": "Page Down",
+      "pageUp": "Page Up",
+      "paste": "Paste",
+      "pause": "Play/Pause",
+      "player": "player",
+      "prevDpi": "Previous DPI",
+      "previous": "Previous",
+      "prevPollingRate": "Previous Polling Rate",
+      "refresh": "Refresh",
+      "restoreFactory": "Factory Reset",
+      "right": "Right Click",
+      "rightClick": "Right Click",
+      "rightScroll": "Scroll Right",
+      "rightScrollSustain": "Continuous Scroll Right",
+      "rightTilt": "Tilt Right",
+      "screenshot": "Screenshot",
+      "scrollLeftClick": "Tilt Right",
+      "scrollRightClick": "Tilt Left",
+      "sideKey": "Side Key",
+      "speedSwitch": "Lamp speed switching",
+      "stop": "Stop",
+      "swichLight": "Light Effect Switching",
+      "switchApp": "Switch Application",
+      "task": "Mission Control",
+      "trackballToScroll": "Trackball To Scroll",
+      "upScroll": "Scroll Up",
+      "volumeDown": "Volume Down",
+      "volumeUp": "Volume Up",
+      "webLessen": "Zoom Out",
+      "webMagnify": "Zoom In"
+    },
+    "keyboard": "Keyboard",
+    "key_fun": {
+      "basic": "Basic Buttons",
+      "disable": "Disable Button",
+      "dpi": "DPI",
+      "game": "Gaming Keys",
+      "game_tip": "Hold the mapped key to repeatedly output selected keystrokes, with adjustable count and rate.",
+      "keyboard": "Key Combinations",
+      "keyboard_tip": "Select one or more modifier keys, then add a standard key. Click the field and press a key, or choose one from the right.",
+      "macro": "Macro",
+      "media": "Multimedia Keys",
+      "pollingRate": "Polling Rate",
+      "profile": "Profile",
+      "sensitive": "Sensitivity",
+      "shortCut": "Shortcut Keys"
+    },
+    "key_game": {
+      "count": "Count",
+      "infinite": "Unlimited",
+      "rate": "Rate"
+    },
+    "light": {
+      "colorFlowing": "Warwick Streamer",
+      "flashLight": "Of flashing neon lights",
+      "fullColorCycle": "Full Color Cycle",
+      "soleBreathe": "Monochromatic Respiration",
+      "soleFlowing": "Horse racing",
+      "soleLight": "Monochrome Steady Light"
+    },
+    "menu": {
+      "angle": "Angle Adjustment",
+      "dpi": "DPI Settings",
+      "key": "Customize",
+      "light": "Light",
+      "macro": "Macro",
+      "poll_rate": "Polling Rate",
+      "profile": "Profile",
+      "sys": "Advanced"
+    },
+    "mouse": "Mouse",
+    "polling_rate": {
+      "daily": "Office",
+      "fps20k": "Sensor Sampling Mode",
+      "game": "Gaming",
+      "office_mode": "Standard Mode",
+      "office_mode_desc": "Smooth operation with stable scanning.",
+      "rage_content": "Power consumption will increase when Competitive Mode is enabled.",
+      "rage_desc": "≥20K sensor scan rate for lower latency and higher precision. Uses more power.",
+      "rage_mode": "Competitive Mode",
+      "rage_title": "Confirm enabling Competitive Mode?"
+    },
+    "profile_tab": {
+      "changeIcon": "Change Icon",
+      "selectMode": "Select Mode"
+    },
+    "scroll": {
+      "acceleration": "Speed Acceleration",
+      "consecutive_times": "Continuous scrolling times",
+      "demo": "Scroll Demo",
+      "direction": "Scroll Direction",
+      "duration": "Scroll Duration",
+      "interval": "Rolling interval (ms)",
+      "scroll": "Horizontal Scroll",
+      "speed": "Scroll Speed",
+      "step": "Minimum Scroll Step",
+      "tip_acceleration": "Set scrolling acceleration to a multiple of the current value.",
+      "tip_consecutive_times": "After continuous scrolling, it will automatically switch to smooth scrolling",
+      "tip_demo": "You can try out the enhanced wave setting here",
+      "tip_direction": "Change the direction of mouse scrolling",
+      "tip_disconnect": "Scroll Enhanced work You need to download Assist to use it",
+      "tip_interval": "Continuous scrolling interval time",
+      "tip_speed": "Increase the scroll speed"
+    },
+    "shortcut_tooltip": {
+      "general": "After setting the following functions, they will take effect on both Mac and Windows systems",
+      "mac": "The following function Settings will only take effect on the Mac system",
+      "win": "The following function Settings will only take effect on the Windows system"
+    },
+    "sys": {
+      "angle": "Angle Adjustment",
+      "angle_correction_after": "After Adjustment",
+      "angle_correction_no": "Before Adjustment",
+      "angle_preview": "Before & After",
+      "angle_reset_btn": "Reset to 0°",
+      "backward": "Reverse",
+      "battery_indicator": "Battery Indicator",
+      "delay": "Debounce Time",
+      "forward": "Standard",
+      "funConfig": "System Features",
+      "keyResponseTime": "Key Response Time",
+      "leftLock": "Left Click Lock",
+      "line": "Angle Snap",
+      "lock": "Lock",
+      "lod": "Lift-off Distance",
+      "motion": "Motion Sync",
+      "pairBond": "Pairing Shortcut",
+      "pairLimit": "Pairing keys support only 1-3 keys",
+      "power": "Power Management",
+      "respSeconds": "Response Time (ms)",
+      "scroll": "Scrolling Direction",
+      "sensor": "Sensor Performance",
+      "sleep": "Device Sleep",
+      "unlock": "Unlock",
+      "wave": "Ripple Control"
+    },
+    "tip": {
+      "leftLock": "Left-click configuration is locked and cannot be configured."
+    },
+    "tips": {
+      "advanceDelayDesc": "In Advanced Mode, you can set an independent response delay (0–20 ms) for each key individually.",
+      "angleDesc": "Adjust the mouse sensor angle so that a mouse held at a slight tilt still tracks precisely on the horizontal axis.",
+      "delayDesc": "Set delay to avoid false triggers from rapid mouse clicks/jitter.",
+      "factorySetDesc": "Clicking this will erase the current settings of your device and restore it to factory defaults",
+      "fps20kDesc": "The mouse sensor captures 20,000 frames of the mouse pad surface image per second, delivering accurate and lag-free tracking for mouse movements.",
+      "indicatorDesc": "This switch only controls the display of normal battery status in 2.4G mode",
+      "leftLockDesc": "While Left-Click Lock is on, the left button cannot be remapped.",
+      "lineDesc": "Intelligently filters minor hand jitters to reduce trajectory deviation along the horizontal and vertical axes.",
+      "lodCurr": "Current mouse lift-off distance",
+      "lodDesc": "The maximum height at which mouse movement is still detected and tracked.",
+      "motionDesc": "Syncs sensor input with system response to reduce cursor stuttering or lag.",
+      "pairBondDesc": "Customize the key combination, and press it simultaneously for 4 seconds to enter Bluetooth/2.4G pairing mode.",
+      "scrollDirDesc": "The direction of on-screen content movement when the mouse wheel is scrolled up or down",
+      "sensorDesc": "Enhances the precision and stability of the mouse when drawing linear, circular, and other trajectories.",
+      "sleepDesc": "Supports automatic sleep when the device is idle for a timeout in wireless mode.",
+      "waveDesc": "Reduces wavy cursor trails caused by hand tremors for smoother motion."
+    },
+    "wheel": {
+      "adjustTimeout": "Calibration timeout",
+      "sensitivity": "Sensitivity"
+    }
+  },
+  "notify": {
+    "emptyHid": "No HID Device Selected",
+    "fail": "Failed",
+    "fr_not_connect": "The driver cannot be used after the device enters sleep mode; you can wake the device by touching any of its buttons",
+    "hidAlreadyConnected": "HID Device Connected",
+    "hidConfNotBrand": "This Brand Is Currently Not Supportd",
+    "hidConfNotFound": "No Valid HID Device Configuration Found",
+    "hidDeviceNotFount": "HID Device Not Present",
+    "hidUnconnected": "HID Device Not Connected",
+    "import": {
+      "layout": "Your keyboard layout has been imported successfully",
+      "title": "Import Successful"
+    },
+    "invalid_macro_json": "Invalid Macro Configuration",
+    "invalid_rgb_json": "Invalid Configuration",
+    "keyboard_not_support_wireless": "The Keyboard FIrmware Not Support Wireless",
+    "keycodeNotFound": "Keycode Configuration Error",
+    "limited": "Maximum Limit Exceeded",
+    "macroSizeLimit": "Macro Size Exceeds Available Size",
+    "notSupportHid": "This browser doesn't not support HID connection, please use Chrome, Edge or Opera browser to connect",
+    "sleep": "No connected device or the device is in sleep mode",
+    "success": "Succeed",
+    "success_competitive": "Switch to Competitive Mode",
+    "success_connect": "Successful connection",
+    "success_office": "Switch to Standard Mode",
+    "unknownErr": "Unknown Error"
+  },
+  "onboarding": {
+    "completed": "Guide completed 🎉",
+    "connect": {
+      "description": "Connect your keyboard to your computer with a USB cable, click “Connect”, then select your device in the dialog.",
+      "title": "Connect your keyboard"
+    },
+    "entry": "Getting started",
+    "flow": {
+      "connect": "Connect device",
+      "keymap": "Remap keys",
+      "light": "Backlight effects"
+    },
+    "hint": "Click the highlighted area to complete the action, or click “Skip tour”.",
+    "keymap": {
+      "select_a": {
+        "description": "Click “A” in the function panel below to remap the Space key to A. The tour will close automatically when complete.",
+        "title": "Step 2 · Remap it to “A”"
+      },
+      "select_space": {
+        "description": "Click the Space key at the bottom of the keyboard to select it.",
+        "title": "Step 1 · Select the Space key"
+      }
+    },
+    "light": {
+      "select_green": {
+        "description": "Use the color picker on the right to set the color to green (drag the picker or enter RGB 0, 255, 0). The tour will close automatically when complete.",
+        "title": "Step 2 · Set it to green"
+      },
+      "select_static": {
+        "description": "Select “Solid Color” from the lighting effects below to set the keyboard to a static single-color effect.",
+        "title": "Step 1 · Select “Solid Color”"
+      }
+    },
+    "skip": "Skip tour",
+    "step": "STEP"
+  },
+  "screen": {
+    "format": {
+      "limit": "The image format can only be PNG, JPG, or GIF"
+    },
+    "resolution": {
+      "limit": "The image size cannot exceed 240×240"
+    },
+    "size": {
+      "limit": "The image file size cannot exceed 300KB"
+    },
+    "upload": {
+      "format": "PNG or JPG(max. 500KB)"
+    }
+  },
+  "selection": {
+    "limitation": "该功能最多可选择{{count}}个键位"
+  },
+  "setting": {
+    "debounce": {
+      "scan": "Scan Interval"
+    },
+    "file_extra_properties_not_supported": "The file contains unsupported attributes",
+    "file_import_failed": "Failed to import file",
+    "file_upload_no_config_file": "Configuration file not detected. Please upload",
+    "info": "Device Info",
+    "infos": {
+      "bluVersion": "Bluetooth Version",
+      "deviceDesc": "Firmware Version",
+      "name": "Name"
+    },
+    "json_config": "Json Setting",
+    "lng": "Language",
+    "log": "Release Notes",
+    "onlyview": "This keyboard cannot have its configuration modified.",
+    "other": "Other",
+    "others": {
+      "debounce": {
+        "name": "Key Delay Response",
+        "tip": "After enabling, the minimum delay response can be set to 0ms",
+        "title": "Adjust Minimum Value",
+        "warning": {
+          "title": "Are you sure you want to enable it?"
+        }
+      }
+    },
+    "theme": "Appearance",
+    "updateLog": "Version History"
+  },
+  "snap": {
+    "list": "Bound Commands"
+  },
+  "test": {
+    "btn": {
+      "reset": "Retest",
+      "reset_bindings": "Clear Bindings"
+    },
+    "msg": {
+      "bind_success": "{{count}} keys have been bound to {{audioName}}",
+      "bind_success_single": "{{keyName}} key has been bound to {{audioName}}",
+      "no_key_selected": "Please select the key to bind first",
+      "reset_success": "Reset successful",
+      "storage_full": "Insufficient storage space",
+      "unsupported_format": "Unsupported audio format. Please use MP3, WAV, OGG or M4A.",
+      "upload_success": "Audio uploaded successfully"
+    },
+    "per_key_sound": {
+      "desc": "Assign a unique sound to each key. When this feature is disabled, all keys will use the selected sound by default.",
+      "tip": "In non-Test Matrix mode, you can only set a unified key response sound."
+    },
+    "sound": {
+      "tip": "When the switch is on, key testing will have sound feedback, and you can choose your preferred sound."
+    },
+    "sound_btn": {
+      "Balloon": "Balloon",
+      "CarHorn": "Car Horn",
+      "Cartoon": "Cartoon",
+      "CoinCollecting": "Coin Collecting",
+      "custom": "Custom",
+      "default": "Default",
+      "DogBarking": "Dog Barking",
+      "Donkey": "Donkey",
+      "Glass": "Glass",
+      "PartyHorn": "Party Horn",
+      "PhoneDial": "Phone Dial",
+      "Punch": "Punch",
+      "RubberChicken": "Rubber Chicken",
+      "RubberToy": "Rubber Toy",
+      "Sneeze": "Sneeze"
+    },
+    "title": {
+      "custom_sound": "Custom Sound Library",
+      "per_key_sound": "Per-Key Sound Assignment",
+      "reset_custom_bindings": "Are you sure you want to reset the audio bindings?",
+      "sound": "Enable Sound Effects",
+      "sound_effect": "Sound Effect Selection",
+      "uploaded_sounds": "Uploaded Sounds"
+    },
+    "upload": {
+      "browse": "browse to upload",
+      "info": "Supported: MP3, WAV, OGG, M4A,·  Total limit: 25 MB  ·  Recommended audio: 1-2 Seconds",
+      "placeholder": "Drag & drop audio files here, or"
+    }
+  },
+  "trackball": {
+    "distance": {
+      "magnet_calibrate_tip_empty": "Please select a key first."
+    },
+    "key": {
+      "direction": "8-Way Angle Snap",
+      "gesture": "Gesture Mode",
+      "held": "Hold",
+      "scroll": "Scroll",
+      "tap": "Tap"
+    },
+    "keycode": {
+      "key": "key",
+      "modifiers": "Modifiers"
+    },
+    "key_fun": {
+      "basic": "Basic",
+      "comb": "Combination Key",
+      "feature": "Angle Snap",
+      "keyCombination": "Key Combination",
+      "layer": "Layer",
+      "macro": "Macro",
+      "simulate": "Press Simultaneously",
+      "single": "Tap / Hold",
+      "special": "Special Keys",
+      "trackball": "Trackball"
+    },
+    "onlyOneNormalKey": "You can set only one standard key.",
+    "placeholder": {
+      "selectionKeys": "Selection Keys"
+    },
+    "selectInputFirst": "Please select an input field first.",
+    "slide": {
+      "leftSlide": "Swipe Left",
+      "rightSlide": "Swipe Right",
+      "underSlide": "Swipe Down",
+      "upSlide": "Swipe Up"
+    },
+    "tips": {
+      "angleGearsDesc": "For example, if you assign \"90°\" to key 4, clicking key 4 will set the orientation of the current layer to 90° (horizontal).",
+      "directionDesc": "For example: When key 4 is bound to the \"eight-way navigation\" function, then when key 4 is clicked, the trackball will rotate clockwise by 45 degrees. Repeated clicks will cause another 45-degree rotation, and so on.",
+      "disTapLayer": "The layer can only be set by long-pressing",
+      "disTwoMs": "Two mouse keys cannot be set simultaneously",
+      "gestureDesc": "For example: When key 4 is assigned to \"gesture mode\", and the desired key value to be output is bound in the \"trackball\" column, then by pressing key 4 and sliding the trackball up, down, left, or right, the set key value can be output.",
+      "held": "While held",
+      "knobNotSupportSet": "The knob cannot set this function",
+      "layerDesc1": "Supports 0-7 layers, and each layer's keys can be set to bind different angles and functions.",
+      "layerDesc2": "For example, key 4 on layer 0 can be bound to \"scroll up and down\", and key 4 on layer 1 can be bound to \"eight-directional switching\".",
+      "layerHeaderDesc": "The default layer is 0. The commands listed below are used to enable and disable layers. If multiple layers are active simultaneously, the keymap of the layer with the highest number takes precedence. As a general rule, it is recommended to use `MO(n)` for layers intended for temporary use, and `TO(n)` for layers intended for switching. *Note: Since `TG(n)` requires you to manually manage its on/off state, there is a possibility that an unintended layer may remain active.",
+      "layerMODesc": "This key activates the nth layer only when pressed. Release the key, and the system will return to its initial state. This function is very useful when you want to temporarily use a different layer, similar to the Fn key.",
+      "layerTGDesc": "Toggle the on/off state of layer n. If layer n is off, enable it; if it is enabled, disable it. The state remains unchanged after the button is released until it is pressed again. Since it's necessary to continuously monitor the on/off state of layers, using MO(n) or TO(n) is usually more convenient.",
+      "layerTODesc": "Press this button once to switch to Layer n. At this point, all layers—except for the default layer—will be disabled. This feature is ideal when you wish to designate a specific layer as your primary working layer.",
+      "scrollDesc": "For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.For example: When key 4 is bound to \"scrolling up and down\", then when key 4 is pressed, the trackball can control the vertical movement of the window.",
+      "selectKey": "Selection Keys",
+      "simulateAlreadyAddRow": "Please submit the current list content first before adding more.",
+      "simulateAlreadyExists": "This combination of digit keys already exists.",
+      "simulateAntiGhosting": "This key combination is for reset function. Please set other combinations",
+      "simulateMaxLen": "A maximum of four keys can be selected",
+      "simulateMaxList": "Exceeded the maximum storage quantity",
+      "simulateMinLen": "Please select at least two keys",
+      "tap": "On tap",
+      "title_placeholder": "Please Enter a title"
+    },
+    "title": {
+      "advanceFeatures": "Advanced Layer Controls",
+      "basickey": "Basic Keys",
+      "bindList": "Bound Commands",
+      "defaultFeatures": "Snap Angle",
+      "dpiReturnRate": "DPI / Polling Rate",
+      "gesture": "Trackball Gesture",
+      "modifierKey": "Modifiers"
+    }
+  },
+  "via": {
+    "upload": {
+      "tip": "Launcher requires the VIA json of the selected device. Please click the button “Confirm” below and upload the json file of the selected device to use launcher. You can get the VIA json file from the product provider.",
+      "title": "VIA Json File Upload"
+    }
+  }
+}
